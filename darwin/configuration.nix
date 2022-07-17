@@ -3,6 +3,7 @@
 {
   imports = [
     ./homebrew
+    ./spacebar
   ];
 
   nix.package = pkgs.nixUnstable;
