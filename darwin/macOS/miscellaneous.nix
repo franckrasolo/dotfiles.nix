@@ -5,6 +5,9 @@
     # automatically hide and show the menu bar
     _HIHideMenuBar = true;
 
+    # use a dark menu bar and Dock
+    AppleInterfaceStyle = "Dark";
+
     # enable subpixel font rendering on non-Apple LCDs
     # see https://github.com/kevinSuttle/macOS-Defaults/issues/17#issuecomment-266633501
     AppleFontSmoothing  = 1;
@@ -63,4 +66,7 @@
   };
 
   system.defaults.SoftwareUpdate.AutomaticallyInstallMacOSUpdates = false;
+
+  # disable transparency in menus and windows
+  system.defaults.universalaccess.reduceTransparency = false;
 }
