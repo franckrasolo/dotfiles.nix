@@ -16,7 +16,6 @@
     defaults write NSGlobalDomain AppleLocale -string "en_GB@currency=GBP"
 
     # use a dark menu bar and Dock
-    defaults write NSGlobalDomain AppleInterfaceStyle -string "Dark"
     osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to True'
 
     # enable subpixel anti-aliasing (font smoothing)
@@ -25,9 +24,6 @@
 
     # disable transparency in the menu bar
     defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
-
-    # restore default transparency in menus and windows
-    defaults write com.apple.universalaccess reduceTransparency -bool false
 
     # set default handlers for Apple UTIs, URL schemes, file extensions, and MIME types
 #   duti $XDG_CONFIG_HOME/duti/   # must run *after* home-manager
