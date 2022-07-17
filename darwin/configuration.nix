@@ -48,12 +48,13 @@
   environment.shells         = with pkgs; [ zsh nushell ];
   environment.systemPackages = with pkgs; [ cacert duti ];
 
-  # do not require sudo for frequently used commands
+  # skip sudo authn for frequently used commands
   environment.etc."sudoers.d/10-nix-commands".text = ''
     ${user.accountName} ALL=(ALL:ALL) NOPASSWD: \
       /run/current-system/sw/bin/darwin-rebuild, \
       /run/current-system/sw/bin/nix-build, \
       /run/current-system/sw/bin/nix-channel, \
+      /run/current-system/sw/bin/nix-collect-garbage, \
       /run/current-system/sw/bin/nix-env, \
       /nix/store/*/activate, \
       /usr/bin/dscacheutil, \
