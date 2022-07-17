@@ -3,6 +3,7 @@
 {
   imports = [
     ./homebrew
+    ./skhd
     ./spacebar
   ];
 
