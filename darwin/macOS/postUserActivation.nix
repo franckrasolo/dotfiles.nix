@@ -19,10 +19,6 @@
     defaults write NSGlobalDomain AppleInterfaceStyle -string "Dark"
     osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to True'
 
-    # expand the Save panel by default
-    defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode  -bool true
-    defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
-
     # enable subpixel anti-aliasing (font smoothing)
     # https://dev.to/mrahmadawais/onedevminute-fixing-terrible-blurry-font-rendering-issue-in-macos-mojave--lck
     defaults write NSGlobalDomain CGFontRenderingFontSmoothingDisabled -bool false
