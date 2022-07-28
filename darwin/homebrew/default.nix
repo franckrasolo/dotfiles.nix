@@ -19,6 +19,7 @@
     casks = [
       "alfred"
       "alacritty"
+      "bunch"
       "cloudflare-warp"
       "daisydisk"
       "discord"
