@@ -12,6 +12,9 @@
     # close System Preferences to prevent any overriding of settings that are about to change
     osascript -e 'tell application "System Preferences" to quit'
 
+    # apply different wallpapers to each desktop
+    open 'x-bunch://setPref?configDir=~/.xdg/config/bunches'
+
     defaults write NSGlobalDomain AppleLanguages -array "en"
     defaults write NSGlobalDomain AppleLocale -string "en_GB@currency=GBP"
 

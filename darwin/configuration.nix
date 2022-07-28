@@ -86,7 +86,10 @@
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;
-    users."${user.accountName}" = (import ../home { inherit pkgs user; });
+    users."${user.accountName}" = pkgs.lib.mkMerge [
+      (import ../home { inherit pkgs user; })
+      { xdg.configFile."bunches".source = ./bunches; }
+    ];
   };
 
   fonts = {
