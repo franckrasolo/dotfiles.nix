@@ -20,6 +20,7 @@
   services.nix-daemon.enable = true;
   nix.useDaemon = true;
 
+  nixpkgs.config.allowBroken = true;
   nixpkgs.config.allowUnfree = true;
 
   nix.binaryCaches = [
