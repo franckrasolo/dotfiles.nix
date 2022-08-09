@@ -21,9 +21,6 @@
   nix.useDaemon = true;
 
   nixpkgs.config.allowUnfree = true;
-  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (pkgs.lib.getName pkg) [
-    "1password"
-  ];
 
   nix.binaryCaches = [
     "https://hydra.iohk.io" # for haskell.nix
