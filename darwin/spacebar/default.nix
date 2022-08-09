@@ -5,7 +5,7 @@
     enable  = true;
     package = pkgs.spacebar;
     config  = {
-      text_font        = ''"Ubuntu:Bold:14"'';
+      text_font        = ''"Ubuntu:Medium:14"'';
       icon_font        = ''"Font Awesome 6 Free:Solid:12"'';
       background_color = "0xff000000";
       foreground_color = "0xffa8a8a8";
