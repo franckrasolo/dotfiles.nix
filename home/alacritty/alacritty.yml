@@ -1,0 +1,56 @@
+# Imports are loaded in order, skipping all missing files, with the importing
+# file being loaded last. If a field is already present in a previous import, it
+# will be replaced.
+#
+# All imports must either be absolute paths starting with `/`, or paths relative
+# to the user's home directory starting with `~/`.
+import:
+  - "~/.xdg/config/alacritty/bell.yaml"
+  - "~/.xdg/config/alacritty/colours.yaml"
+  - "~/.xdg/config/alacritty/cursor.yaml"
+  - "~/.xdg/config/alacritty/font.yaml"
+  - "~/.xdg/config/alacritty/hints.yaml"
+  - "~/.xdg/config/alacritty/key_bindings.yaml"
+  - "~/.xdg/config/alacritty/mouse_bindings.yaml"
+  - "~/.xdg/config/alacritty/window.yaml"
+  - "~/.xdg/config/alacritty/debug.yaml"
+
+# Directory the shell is started in. If this is unset, or `None`, the working
+# directory of the parent process will be used.
+working_directory: "/Users/franck.rasolo/dev/dotfiles.nix"
+
+# Any items in the `env` entry below will be added as
+# environment variables. Some entries may override variables
+# set by alacritty itself.
+#env:
+  # TERM variable
+  #
+  # This value is used to set the `$TERM` environment variable for
+  # each instance of Alacritty. If it is not present, alacritty will
+  # check the local terminfo database and use `alacritty` if it is
+  # available, otherwise `xterm-256color` is used.
+  #TERM: alacritty
+
+# Live config reload (changes require restart)
+#live_config_reload: true
+
+# Shell
+#
+# You can set `shell.program` to the path of your favorite shell, e.g.
+# `/bin/fish`. Entries in `shell.args` are passed unmodified as arguments to the
+# shell.
+#
+# Default:
+#   - (macOS) /bin/bash --login
+#   - (Linux/BSD) user login shell
+#   - (Windows) powershell
+#shell:
+#  program: /bin/bash
+#  args:
+#    - --login
+
+# Send ESC (\x1b) before characters when alt is pressed.
+#alt_send_esc: true
+
+# Offer IPC using `alacritty msg` (unix only)
+#ipc_socket: true
