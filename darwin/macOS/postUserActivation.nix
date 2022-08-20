@@ -9,6 +9,8 @@
     launchctl setenv DOCKER_CONFIG    ~/.xdg/config/docker
     launchctl setenv KUBECONFIG       ~/.xdg/config/kube
 
+    sudo launchctl limit maxfiles 245760 2147483647
+
     # close System Preferences to prevent any overriding of settings that are about to change
     osascript -e 'tell application "System Preferences" to quit'
 
