@@ -68,5 +68,5 @@
   system.defaults.SoftwareUpdate.AutomaticallyInstallMacOSUpdates = false;
 
   # disable transparency in menus and windows
-  system.defaults.universalaccess.reduceTransparency = false;
+#  system.defaults.universalaccess.reduceTransparency = false;
 }
