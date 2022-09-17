@@ -46,7 +46,6 @@
       "megasync"
       "obsidian"
       "pop"
-      "screen"
       "secretive"
       "sonos-s1-controller"
       "spotify"
