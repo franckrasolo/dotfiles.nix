@@ -53,7 +53,6 @@
       "temurin17"
       "tuple"
       "tweeten"
-      "twitch"
       "vlc"
       "wavebox"
       {
