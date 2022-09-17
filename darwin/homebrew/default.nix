@@ -39,13 +39,16 @@
       "jetbrains-toolbox"
       "keycastr"
       "kitty"
+      {
+        name = "loopback";
+        args = { require_sha = false; }; # missing sha256 checksum
+      }
       "megasync"
       "obsidian"
       "pop"
       "screen"
       "secretive"
       "sonos-s1-controller"
-      "soundflower"
       "spotify"
       "teamviewer"
       "temurin17"
