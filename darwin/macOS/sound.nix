@@ -1,6 +1,6 @@
 {
   system.defaults.NSGlobalDomain = {
-    "com.apple.sound.beep.volume"   = "0.6065307";
+    "com.apple.sound.beep.volume"   = 0.6065;
     "com.apple.sound.beep.feedback" = 0;
 
     # disable flash with system beep

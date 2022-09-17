@@ -1,12 +1,16 @@
 {
   homebrew = {
     enable     = true;
-    autoUpdate = true;
-    cleanup    = "zap";
 
     global = {
-      brewfile = true;
-      noLock   = true;
+      autoUpdate = true;
+      brewfile   = true;
+    };
+
+    onActivation = {
+      autoUpdate = true;
+      upgrade    = true;
+      cleanup    = "zap";
     };
 
     taps = [

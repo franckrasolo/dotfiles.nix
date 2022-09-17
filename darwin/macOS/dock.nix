@@ -1,8 +1,8 @@
 {
   system.defaults.dock = {
     autohide = true;
-    autohide-delay = "0.0";
-    autohide-time-modifier = ".0";
+    autohide-delay = 0.0;
+    autohide-time-modifier = 0.0;
     dashboard-in-overlay = true;
     launchanim = false;
     mineffect  = "scale";

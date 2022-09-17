@@ -50,7 +50,7 @@
           system  = "aarch64-darwin";
           inputs  = { inherit nix-darwin pkgs; };
           modules = [
-            { nix.extraOptions = ''extra-platforms = x86_64-darwin aarch64-darwin''; }
+            { nix.extraOptions = ''extra-platforms = aarch64-darwin x86_64-darwin''; }
             ./darwin/configuration.nix
             home-manager.darwinModules.home-manager
             sops-nix.nixosModules.sops

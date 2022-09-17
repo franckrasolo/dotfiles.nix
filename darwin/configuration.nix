@@ -10,9 +10,8 @@
 
   nix.package = pkgs.nixUnstable;
   nix.extraOptions = ''
-    gc-keep-outputs = false
-    gc-keep-derivations = false
-    auto-optimise-store = true
+    keep-outputs = false
+    keep-derivations = false
     experimental-features = nix-command flakes
   '';
 
@@ -23,21 +22,23 @@
   nixpkgs.config.allowBroken = true;
   nixpkgs.config.allowUnfree = true;
 
-  nix.binaryCaches = [
-    "https://hydra.iohk.io" # for haskell.nix
-  ];
+  nix.settings = {
+    auto-optimise-store = true;
 
-  nix.binaryCachePublicKeys = [
-    "hydra.iohk.io:f/Ea+s+dFdN+3Y/G+FDgSq+a5NEWhJGzdjvKNGv0/EQ="
-  ];
+    trusted-substituters = [
+      "https://cache.iog.io" # for haskell.nix
+    ];
 
-  nix.trustedBinaryCaches = config.nix.binaryCaches;
+    trusted-public-keys = [
+      "hydra.iohk.io:f/Ea+s+dFdN+3Y/G+FDgSq+a5NEWhJGzdjvKNGv0/EQ="
+    ];
 
-  nix.allowedUsers = [ user.accountName ];
-  nix.trustedUsers = [ user.accountName "root" ];
+    allowed-users = [ user.accountName ];
+    trusted-users = [ user.accountName "root" ];
 
-  nix.maxJobs    = 48;  # max 3 jobs per core
-  nix.buildCores = 16;  # total number of logical cores: sysctl -n hw.ncpu
+    max-jobs = 48;  # max 3 jobs per core
+    cores    = 16;  # total number of logical cores: sysctl -n hw.ncpu
+  };
 
   # used for backwards compatibility (check the change log first)
   system.stateVersion = 4;

@@ -38,7 +38,7 @@
     NSAutomaticWindowAnimationsEnabled = false;
     NSUseAnimatedFocusRing   = false;
     NSScrollAnimationEnabled = true;
-    NSWindowResizeTime = "0.001";
+    NSWindowResizeTime = 0.001;
 #   WebKitDeveloperExtras = true;
 
     # always expand the print panel
@@ -51,7 +51,7 @@
     # enable spring loading (expose) for directories
     "com.apple.springing.enabled" = true;
 
-    "com.apple.springing.delay" = "0.00";
+    "com.apple.springing.delay" = 0.0;
     "com.apple.swipescrolldirection" = true;
   };
 
