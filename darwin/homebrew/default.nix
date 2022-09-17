@@ -21,6 +21,12 @@
     ];
 
     casks = [
+      {
+        # 1Password warns that it will neither fill nor save logins
+        # in browsers when it isn't installed under /Applications
+        name = "1password";
+        args = { appdir = "/Applications"; };
+      }
       "alfred"
       "alacritty"
       "bunch"
@@ -48,21 +54,16 @@
       "twitch"
       "vlc"
       "wavebox"
+      {
+        # Zoom must also be installed under /Applications
+        name = "zoom";
+        args = { appdir = "/Applications"; };
+      }
     ];
 
-    masApps = {};
-
-    extraConfig = ''
-      # usage: https://github.com/Homebrew/homebrew-bundle
-
-      cask_args appdir: "~/Library/Homebrew/Applications", require_sha: "true"
-
-      # 1Password warns that it will neither fill nor save logins in browsers
-      # when it isn't installed under /Applications
-      cask "1password", args: { appdir: "/Applications", require_sha: "true" }
-
-      # Zoom must also be installed under /Applications
-      cask "zoom", args: { appdir: "/Applications", require_sha: "true" }
-    '';
+    caskArgs = {
+      appdir = "~/Library/Homebrew/Applications";
+      require_sha = true;
+    };
   };
 }
