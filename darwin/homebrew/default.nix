@@ -29,6 +29,10 @@
       }
       "alfred"
       "alacritty"
+      {
+        name = "audio-hijack";
+        args = { require_sha = false; }; # missing sha256 checksum
+      }
       "bunch"
       "cloudflare-warp"
       "daisydisk"
@@ -39,10 +43,6 @@
       "jetbrains-toolbox"
       "keycastr"
       "kitty"
-      {
-        name = "loopback";
-        args = { require_sha = false; }; # missing sha256 checksum
-      }
       "megasync"
       "obsidian"
       "pop"
