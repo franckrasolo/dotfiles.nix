@@ -30,6 +30,10 @@
       "alfred"
       "alacritty"
       {
+        name = "amadeus-pro";
+        args = { require_sha = false; }; # missing sha256 checksum
+      }
+      {
         name = "audio-hijack";
         args = { require_sha = false; }; # missing sha256 checksum
       }
