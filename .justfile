@@ -8,3 +8,7 @@ _targets:
 # removes obsolete artifacts from older nix-darwin configurations
 @gc:
   sudo nix-collect-garbage --delete-old
+
+# updates the top-level flake lock file
+@update:
+  nix flake update
