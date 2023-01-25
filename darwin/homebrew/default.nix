@@ -50,7 +50,10 @@
       "megasync"
       "obsidian"
       "pop"
-      "secretive"
+      {
+        name = "secretive";
+        args = { appdir = "/Applications"; };
+      }
       "sonos-s1-controller"
       "spotify"
       "teamviewer"
