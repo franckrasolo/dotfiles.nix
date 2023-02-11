@@ -62,6 +62,7 @@
       "tweeten"
       "vlc"
       "wavebox"
+      "wezterm"
       {
         # Zoom must also be installed under /Applications
         name = "zoom";
