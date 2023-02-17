@@ -28,4 +28,6 @@ return {
 
   enable_scroll_bar = false,
   scrollback_lines = 100000,
+
+  send_composed_key_when_left_alt_is_pressed = true,
 }
