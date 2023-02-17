@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-22.11-darwin";
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
     nix-darwin = {
       url = "github:LnL7/nix-darwin";
@@ -20,11 +21,19 @@
     };
   };
 
-  outputs = inputs@{ self, nixpkgs, nix-darwin, home-manager, sops-nix }:
+  outputs = { self, nixpkgs, nixpkgs-unstable, nix-darwin, home-manager, sops-nix }:
     let
       platforms = [ "x86_64-darwin" "aarch64-darwin" ];
 
-      pkgs = nixpkgs;
+      overlay = final: prev: {
+        unstable = import nixpkgs-unstable {
+          inherit (prev) system;
+          config.allowBroken = true;
+          config.allowUnfree = true;
+        };
+      };
+      # makes "pkgs.unstable" available in configuration.nix
+      overlayModule = ({ config, pkgs, ... }: { nixpkgs.overlays = [ overlay ]; });
 
       user = rec {
         fullName = "Franck Rasolo";
@@ -36,8 +45,9 @@
       darwinConfigurations = {
         mbp64 = nix-darwin.lib.darwinSystem {
           system  = "x86_64-darwin";
-          inputs  = { inherit nix-darwin pkgs; };
+          inputs  = { inherit nix-darwin nixpkgs; };
           modules = [
+            overlayModule
             ./darwin/configuration.nix
             home-manager.darwinModules.home-manager
             sops-nix.nixosModules.sops
@@ -47,9 +57,10 @@
 
         m1m64 = nix-darwin.lib.darwinSystem {
           system  = "aarch64-darwin";
-          inputs  = { inherit nix-darwin pkgs; };
+          inputs  = { inherit nix-darwin nixpkgs; };
           modules = [
             { nix.extraOptions = ''extra-platforms = aarch64-darwin x86_64-darwin''; }
+            overlayModule
             ./darwin/configuration.nix
             home-manager.darwinModules.home-manager
             sops-nix.nixosModules.sops
