@@ -64,10 +64,12 @@
       /usr/bin/renice
   '';
 
-  # register any MITM certificates
-  security.pki.certificateFiles = [
-#   "/etc/static/ssl/certs/nscacert.pem"
-  ];
+  security = {
+    # register additional (MITM) certificates
+    pki.certificateFiles = [
+#     "/etc/static/ssl/certs/nscacert.pem"
+    ];
+  };
 
   programs.nix-index.enable = true;
 
