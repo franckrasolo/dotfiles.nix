@@ -65,6 +65,8 @@
   '';
 
   security = {
+    pam.enableSudoTouchIdAuth = true;
+
     # register additional (MITM) certificates
     pki.certificateFiles = [
 #     "/etc/static/ssl/certs/nscacert.pem"

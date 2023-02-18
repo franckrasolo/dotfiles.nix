@@ -8,7 +8,6 @@
     ./trackpad.nix
     ./sound.nix
     ./miscellaneous.nix
-    ./pam.nix
     ./postUserActivation.nix
   ];
 }
