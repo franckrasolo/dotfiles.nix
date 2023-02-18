@@ -65,9 +65,9 @@
   '';
 
   # register any MITM certificates
- security.pki.certificateFiles = [
+  security.pki.certificateFiles = [
 #   "/etc/static/ssl/certs/nscacert.pem"
- ];
+  ];
 
   programs.nix-index.enable = true;
 
