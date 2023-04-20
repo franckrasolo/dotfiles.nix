@@ -4,6 +4,13 @@ return {
   font = wezterm.font("JetBrainsMono Nerd Font", { weight = "Bold", italic = false }),
   font_size = 15.0,
   color_scheme = "UltraDark",
+  colors = {
+    selection_bg = "#99CD8C",
+    selection_fg = "black",
+
+    copy_mode_inactive_highlight_bg = { Color = "#E8BF6A" },
+    copy_mode_inactive_highlight_fg = { AnsiColor = "Black" },
+  },
   freetype_load_target = "Light",
   freetype_render_target = "HorizontalLcd",
 
