@@ -1,3 +1,5 @@
+{ pkgs, ... }:
+
 {
   system.activationScripts.postUserActivation.enable = true;
   system.activationScripts.postUserActivation.text = ''
@@ -8,6 +10,9 @@
     launchctl setenv GRADLE_USER_HOME ~/.xdg/local/share/gradle
     launchctl setenv DOCKER_CONFIG    ~/.xdg/config/docker
     launchctl setenv KUBECONFIG       ~/.xdg/config/kube
+
+    # 1Password integration requires the CLI binary at a specific location
+    sudo cp -v ${pkgs.unstable._1password}/bin/op /usr/local/bin/op
 
     # close System Preferences to prevent any overriding of settings that are about to change
     osascript -e 'tell application "System Preferences" to quit'
