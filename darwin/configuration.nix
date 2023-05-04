@@ -59,8 +59,10 @@
       /run/current-system/sw/bin/nix-collect-garbage, \
       /run/current-system/sw/bin/nix-env, \
       /nix/store/*/activate, \
+      /etc/profiles/per-user/${user.accountName}/bin/openconnect, \
       /usr/bin/dscacheutil, \
       /usr/bin/killall, \
+      /usr/bin/pkill, \
       /usr/bin/renice
   '';
 
