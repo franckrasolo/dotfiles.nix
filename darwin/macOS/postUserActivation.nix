@@ -2,7 +2,7 @@
 
 {
   system.activationScripts.postUserActivation.enable = true;
-  system.activationScripts.postUserActivation.text = ''
+  system.activationScripts.postUserActivation.text = with pkgs.unstable; ''
     launchctl setenv XDG_CACHE_HOME   ~/.xdg/cache
     launchctl setenv XDG_CONFIG_HOME  ~/.xdg/config
     launchctl setenv XDG_DATA_HOME    ~/.xdg/local/share
@@ -12,7 +12,7 @@
     launchctl setenv KUBECONFIG       ~/.xdg/config/kube
 
     # 1Password integration requires the CLI binary at a specific location
-    sudo cp -v ${pkgs.unstable._1password}/bin/op /usr/local/bin/op
+    sudo ${coreutils}/bin/cp ${_1password}/bin/op /usr/local/bin/op
 
     # close System Preferences to prevent any overriding of settings that are about to change
     osascript -e 'tell application "System Preferences" to quit'

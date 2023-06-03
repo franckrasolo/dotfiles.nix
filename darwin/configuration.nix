@@ -51,7 +51,7 @@
   environment.systemPackages = with pkgs; [ cacert duti ];
 
   # skip sudo authn for frequently used commands
-  environment.etc."sudoers.d/10-nix-commands".text = ''
+  environment.etc."sudoers.d/10-nix-commands".text = with pkgs.unstable; ''
     ${user.accountName} ALL=(ALL:ALL) NOPASSWD: \
       /run/current-system/sw/bin/darwin-rebuild, \
       /run/current-system/sw/bin/nix-build, \
@@ -59,6 +59,7 @@
       /run/current-system/sw/bin/nix-collect-garbage, \
       /run/current-system/sw/bin/nix-env, \
       /nix/store/*/activate, \
+      ${coreutils}/bin/cp ${_1password}/bin/op /usr/local/bin/op, \
       /etc/profiles/per-user/${user.accountName}/bin/openconnect, \
       /usr/bin/dscacheutil, \
       /usr/bin/killall, \
