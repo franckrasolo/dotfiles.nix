@@ -30,6 +30,7 @@
           inherit (prev) system;
           config.allowBroken = true;
           config.allowUnfree = true;
+          config.packageOverrides = prev: import ./pkgs { inherit (prev) pkgs; };
         };
       };
       # makes "pkgs.unstable" available in configuration.nix
