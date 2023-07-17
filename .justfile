@@ -5,7 +5,7 @@ _targets:
 @switch:
   darwin-rebuild switch --flake . --fallback
 
-# removes obsolete artifacts from older nix-darwin configurations
+# removes obsolete artifacts from older nix-darwin generations
 @gc:
   sudo nix-collect-garbage --delete-old
 
