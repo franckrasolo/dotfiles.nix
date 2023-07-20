@@ -1,3 +1,9 @@
 {
-  "accentColor": ""
+  "accentColor": "#cea050",
+  "interfaceFontFamily": "Ubuntu",
+  "cssTheme": "Minimal",
+  "theme": "obsidian",
+  "baseFontSize": 18,
+  "textFontFamily": "",
+  "monospaceFontFamily": "JetBrainsMono Nerd Font Mono"
 }
