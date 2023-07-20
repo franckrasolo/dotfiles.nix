@@ -1,5 +1,5 @@
 { pkgs }:
 
 {
-  dooit = pkgs.callPackage ./dooit.nix { };
+  #nixPackage = pkgs.callPackage ./nixPackage.nix { };
 }
