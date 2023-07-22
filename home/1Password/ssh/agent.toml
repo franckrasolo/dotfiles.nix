@@ -1,0 +1,4 @@
+[[ssh-keys]]
+item = "GitHub Personal SSH Key"
+vault = "Personal"
+account = "my.1password.com"
