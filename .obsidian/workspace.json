@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "c3e556908bca675f",
+        "id": "064f2e23799aa958",
         "type": "tabs",
         "children": [
           {
-            "id": "c74736a5a66c9c23",
+            "id": "a8c25a0af09b195d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 232.50260543823242
   },
   "right": {
     "id": "e9c452c8a6ec5e7b",
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "README.md"
+              }
             }
           },
           {
@@ -128,14 +136,21 @@
               "type": "git-history-view",
               "state": {}
             }
+          },
+          {
+            "id": "db9e566bc0cc4aa4",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 388.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -147,12 +162,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "62e4506d29209c01",
+  "active": "a8c25a0af09b195d",
   "lastOpenFiles": [
-    "docs/ideas.md",
-    "docs/todos.md",
-    "wiki/Untitled.md",
+    "darwin/NixOS.png",
     "docs/notes.md",
+    "docs/todos.md",
+    "docs/ideas.md",
+    "Untitled.md",
+    "wiki/Untitled.md",
     "docs",
     "README.md"
   ]
