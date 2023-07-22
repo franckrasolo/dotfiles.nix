@@ -4,6 +4,6 @@
   "cssTheme": "Minimal",
   "theme": "obsidian",
   "baseFontSize": 18,
-  "textFontFamily": "",
+  "textFontFamily": "Ubuntu",
   "monospaceFontFamily": "JetBrainsMono Nerd Font Mono"
 }
