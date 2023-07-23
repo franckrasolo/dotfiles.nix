@@ -64,8 +64,17 @@
               "type": "bookmarks",
               "state": {}
             }
+          },
+          {
+            "id": "e45a8fb4098599a9",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -150,7 +159,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 388.5
+    "width": 373.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -159,18 +168,19 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false
     }
   },
   "active": "a8c25a0af09b195d",
   "lastOpenFiles": [
-    "darwin/NixOS.png",
-    "docs/notes.md",
-    "docs/todos.md",
     "docs/ideas.md",
+    "README.md",
+    "docs/notes.md",
+    "darwin/NixOS.png",
+    "docs/todos.md",
     "Untitled.md",
     "wiki/Untitled.md",
-    "docs",
-    "README.md"
+    "docs"
   ]
 }
