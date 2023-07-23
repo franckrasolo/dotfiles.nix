@@ -16,8 +16,8 @@
   "profiles": {
     "darwinExternalDefault": {
       "args": [],
-      "executable": "/System/Applications/Utilities/Terminal.app/Contents/macOS/Terminal",
-      "name": "",
+      "executable": "/opt/homebrew/bin/wezterm",
+      "name": "WezTerm",
       "platforms": {
         "darwin": true
       },
