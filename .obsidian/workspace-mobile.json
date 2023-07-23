@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "9f67c319f3fa7079",
+        "id": "cf542ff163316728",
         "type": "tabs",
         "children": [
           {
-            "id": "49ab5597c98e3233",
+            "id": "c764610b65253dac",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -67,6 +71,14 @@
           "type": "bookmarks",
           "state": {}
         }
+      },
+      {
+        "id": "c90441f23fc8fef1",
+        "type": "leaf",
+        "state": {
+          "type": "recent-files",
+          "state": {}
+        }
       }
     ],
     "currentTab": 0
@@ -81,6 +93,7 @@
         "state": {
           "type": "backlink",
           "state": {
+            "file": "README.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -97,6 +110,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
+            "file": "README.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -107,7 +121,9 @@
         "type": "leaf",
         "state": {
           "type": "outline",
-          "state": {}
+          "state": {
+            "file": "README.md"
+          }
         }
       },
       {
@@ -123,6 +139,9 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-plugin-update-tracker:Plugin Update Tracker": false,
+      "templater-obsidian:Templater": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -131,6 +150,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "49ab5597c98e3233",
-  "lastOpenFiles": []
+  "active": "c764610b65253dac",
+  "lastOpenFiles": [
+    "README.md",
+    "home/1Password/ssh/agent.toml",
+    "/pkgs/default.nix",
+    "/home/1Password/ssh/agent.toml",
+    "/flake.lock",
+    "/darwin/macOS/keyboard.nix",
+    "home/1Password/ssh",
+    "home/1Password",
+    "/home/1Password/ssh",
+    "/home/1Password"
+  ]
 }
