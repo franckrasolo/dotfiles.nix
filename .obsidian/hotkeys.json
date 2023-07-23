@@ -59,5 +59,13 @@
       ],
       "key": "Backspace"
     }
+  ],
+  "terminal:open-terminal.integrated.root": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "F12"
+    }
   ]
 }
