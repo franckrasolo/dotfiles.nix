@@ -1,0 +1,21 @@
+{
+  "recentFiles": [
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "ideas",
+      "path": "docs/ideas.md"
+    },
+    {
+      "basename": "notes",
+      "path": "docs/notes.md"
+    }
+  ],
+  "omittedPaths": [
+    ""
+  ],
+  "maxLength": null,
+  "openType": "tab"
+}
