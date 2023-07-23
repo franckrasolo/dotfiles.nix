@@ -4,13 +4,15 @@
   "dataview",
   "find-unlinked-files",
   "highlightr-plugin",
+  "obsidian-admonition",
+  "obsidian-excalidraw-plugin",
   "obsidian-git",
   "obsidian-minimal-settings",
   "obsidian-plugin-update-tracker",
   "obsidian-smarter-md-hotkeys",
+  "quickadd",
   "recent-files-obsidian",
   "settings-search",
   "templater-obsidian",
-  "url-into-selection",
-  "obsidian-admonition"
+  "url-into-selection"
 ]
