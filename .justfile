@@ -16,3 +16,7 @@ _targets:
 # lists fingerprints of all SSH keys the 1Password SSH agent can access
 @ssh-keys:
   SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock ssh-add -l
+
+# fixes line separators from CRLF to LF for all Obsidian community plugins and themes
+@fix-line-separators:
+  fd '.+' .obsidian/{plugins,themes} --exec dos2unix {} \;
