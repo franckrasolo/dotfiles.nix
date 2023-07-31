@@ -112,7 +112,7 @@ disableStartupPopups: false
 #   'prompt' for default prompting behaviour
 #   'create' to skip and initialize a new repo
 #   'skip' to skip without creating a new repo
-#   'quit' to exit immediately if run outside of the Git repository
+#   'quit' to exit immediately if run outside the Git repository
 notARepository: 'prompt'
 promptToReturnFromSubprocess: true # display confirmation when subprocess terminates
 keybinding:
