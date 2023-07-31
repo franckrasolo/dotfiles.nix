@@ -5,24 +5,24 @@ gui:
   sidePanelWidth: 0.3333          # number from 0 to 1
   expandFocusedSidePanel: false
   mainPanelSplitMode: 'flexible'  # one of 'horizontal' | 'flexible' | 'vertical'
-  language: 'auto'                # one of 'auto' | 'en' | 'zh' | 'pl' | 'nl' | 'ja' | 'ko' | 'ru'
-  timeFormat: '02 Jan 06'         # https://pkg.go.dev/time#Time.Format
-  shortTimeFormat: '3:04PM'
+  language: 'en'                  # one of 'auto' | 'en' | 'zh' | 'pl' | 'nl' | 'ja' | 'ko' | 'ru'
+  timeFormat: '01 Aug 2023'       # https://pkg.go.dev/time#Time.Format
+  shortTimeFormat: '01:30pm'
   theme:
     activeBorderColor:
-      - green
+      - '#7DE8A6'
       - bold
     inactiveBorderColor:
-      - white
+      - '#A9B7C6'
     searchingActiveBorderColor:
       - cyan
       - bold
     optionsTextColor:
       - blue
     selectedLineBgColor:
-      - blue                      # set to `default` to have no background colour
+      - '#204469'                 # set to `default` to have no background colour
     selectedRangeBgColor:
-      - blue
+      - '#204469'
     cherryPickedCommitBgColor:
       - cyan
     cherryPickedCommitFgColor:
@@ -30,7 +30,7 @@ gui:
     unstagedChangesColor:
       - red
     defaultFgColor:
-      - default
+      - '#A9B7C6'
   commitLength:
     show: true
   mouseEvents: true
@@ -43,7 +43,7 @@ gui:
   showBottomLine: true            # for hiding the bottom information line (unless it has important information to tell you)
   showCommandLog: true
   showIcons: false                # deprecated: use nerdFontsVersion instead
-  nerdFontsVersion: ""            # nerd fonts version to use ("2" or "3"); empty means don't show nerd font icons
+  nerdFontsVersion: "3"           # nerd fonts version to use ("2" or "3"); empty means don't show nerd font icons
   commandLogSize: 8
   splitDiff: 'auto'               # one of 'auto' | 'always'
   skipRewordInEditorWarning: false # for skipping the confirmation before launching the reword editor
@@ -73,7 +73,7 @@ git:
   skipHookPrefix: WIP
   # The main branches. We colour commits green if they belong to one of these branches,
   # so that you can easily see which commits are unique to your branch (coloured in yellow)
-  mainBranches: [main, master]
+  mainBranches: [main, master, trunk]
   autoFetch: true
   autoRefresh: true
   # If fetchAll is set to true, lazygit will pass the --all flag when running git fetch
@@ -95,9 +95,9 @@ os:
   openLink: ''
 refresher:
   # File/submodule refresh interval in seconds. Auto-refresh can be disabled via option 'git.autoRefresh'.
-  refreshInterval: 10
+  refreshInterval: 300
   # Re-fetch interval in seconds. Auto-fetch can be disabled via option 'git.autoFetch'.
-  fetchInterval: 60
+  fetchInterval: 600
 update:
   method: prompt                  # can be: prompt | background | never
   days: 14                        # how often an update is checked for
