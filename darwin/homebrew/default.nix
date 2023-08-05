@@ -15,7 +15,6 @@
 
     taps = [
       "homebrew/bundle"
-      "homebrew/cask"
       "homebrew/cask-versions"
       "martido/homebrew-graph"
     ];
