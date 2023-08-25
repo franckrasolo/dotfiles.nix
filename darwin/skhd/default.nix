@@ -19,6 +19,7 @@
       };
     in
       with builtins; concatStringsSep "\n" (map (f: import f { inherit skhdEnv; }) [
+        ./exclusions.nix
         ./launchers.nix
       ]);
   };
