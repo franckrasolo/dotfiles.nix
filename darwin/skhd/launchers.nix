@@ -11,6 +11,6 @@ fn - f : sops -d ~/dev/dotfiles.nix/secrets/bootstrap.yaml | sed -n 3p | sed -E 
 fn - l : printf "" | pbcopy
 fn - g : ~/.xdg/local/bin/goland
 fn - i : ~/.xdg/local/bin/idea
-fn - p : open -a /System/Applications/System\ Preferences.app
+fn - p : open -a /System/Applications/System\ Settings.app
 fn - z : open -a /Applications/zoom.us.app
 ''
