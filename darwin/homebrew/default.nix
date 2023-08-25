@@ -46,6 +46,14 @@
       "jetbrains-toolbox"
       "keycastr"
       "kitty"
+      {
+        name = "logitech-options";
+        args = { require_sha = false; }; # missing sha256 checksum
+      }
+      {
+        name = "logi-options-plus";
+        args = { require_sha = false; }; # missing sha256 checksum
+      }
       "megasync"
       "obsidian"
       "pop"
