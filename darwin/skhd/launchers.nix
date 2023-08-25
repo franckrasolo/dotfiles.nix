@@ -1,16 +1,16 @@
 { ... }:
 
 ''
-fn - k : open -n -a /Applications/kitty.app --args --directory ~/dev/dotfiles.nix --single-instance
-fn - y : open -n -a /Applications/Alacritty.app --args --config-file ~/.xdg/config/alacritty/alacritty.yml
-fn - w : open -n -a /opt/homebrew/bin/wezterm
-fn - 1 : open -a /Applications/1Password.app
-fn - a : open -a /Applications/Alfred\ 5.app
-fn - c : sops -d ~/dev/dotfiles.nix/secrets/bootstrap.yaml | sed -n 1p | sed -E 's/opmk: //' | tr -d '\n' | pbcopy
-fn - f : sops -d ~/dev/dotfiles.nix/secrets/bootstrap.yaml | sed -n 3p | sed -E 's/s2p2: //' | tr -d '\n' | pbcopy
-fn - l : printf "" | pbcopy
-fn - g : ~/.xdg/local/bin/goland
-fn - i : ~/.xdg/local/bin/idea
-fn - p : open -a /System/Applications/System\ Settings.app
-fn - z : open -a /Applications/zoom.us.app
+lcmd + lshift - k : open -n -a /Applications/kitty.app --args --directory ~/dev/dotfiles.nix --single-instance
+lcmd + lshift - y : open -n -a /Applications/Alacritty.app --args --config-file ~/.xdg/config/alacritty/alacritty.yml
+lcmd + lshift - w : open -n -a /opt/homebrew/bin/wezterm
+lcmd + lshift - 1 : open -a /Applications/1Password.app
+lcmd + lshift - a : open -a /Applications/Alfred\ 5.app
+lcmd + lshift - c : sops -d ~/dev/dotfiles.nix/secrets/bootstrap.yaml | sed -n 1p | sed -E 's/opmk: //' | tr -d '\n' | pbcopy
+lcmd + lshift - f : sops -d ~/dev/dotfiles.nix/secrets/bootstrap.yaml | sed -n 3p | sed -E 's/s2p2: //' | tr -d '\n' | pbcopy
+lcmd + lshift - l : printf "" | pbcopy
+lcmd + lshift - g : ~/.xdg/local/bin/goland
+lcmd + lshift - i : ~/.xdg/local/bin/idea
+lcmd + lshift - s : open -a /System/Applications/System\ Settings.app
+lcmd + lshift - z : open -a /Applications/zoom.us.app
 ''
