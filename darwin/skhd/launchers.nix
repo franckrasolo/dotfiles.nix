@@ -1,7 +1,6 @@
 { ... }:
 
 ''
-lcmd + lshift - k : open -n -a /Applications/kitty.app --args --directory ~/dev/dotfiles.nix --single-instance
 lcmd + lshift - y : open -n -a /Applications/Alacritty.app --args --config-file ~/.xdg/config/alacritty/alacritty.yml
 lcmd + lshift - w : open -n -a /opt/homebrew/bin/wezterm
 lcmd + lshift - 1 : open -a /Applications/1Password.app
