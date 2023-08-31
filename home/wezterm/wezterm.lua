@@ -1,4 +1,6 @@
 local wezterm = require "wezterm"
+local action = wezterm.action
+local mod = "ALT|SHIFT"
 
 return {
   font = wezterm.font("JetBrainsMono Nerd Font", { weight = "Bold", italic = false }),
@@ -37,4 +39,14 @@ return {
   scrollback_lines = 100000,
 
   send_composed_key_when_left_alt_is_pressed = true,
+
+  keys = {
+    { mods = mod, key = "|", action = action.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
+    { mods = mod, key = "_", action = action.SplitVertical({ domain = "CurrentPaneDomain" }) },
+    { mods = mod, key = "LeftArrow", action = action.ActivatePaneDirection "Left" },
+    { mods = mod, key = "RightArrow", action = action.ActivatePaneDirection "Right" },
+    { mods = mod, key = "UpArrow", action = action.ActivatePaneDirection "Up" },
+    { mods = mod, key = "DownArrow", action = action.ActivatePaneDirection "Down" },
+    { mods = mod, key = "Enter", action = action.TogglePaneZoomState },
+  }
 }
