@@ -41,6 +41,14 @@ return {
   send_composed_key_when_left_alt_is_pressed = true,
 
   keys = {
+    {
+      mods = "CMD|SHIFT",
+      key = "K",
+      action = action.Multiple {
+        action.ClearScrollback "ScrollbackAndViewport",
+        action.SendKey { mods = "CTRL", key = "L" },
+      },
+    },
     { mods = mod, key = "|", action = action.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
     { mods = mod, key = "_", action = action.SplitVertical({ domain = "CurrentPaneDomain" }) },
     { mods = mod, key = "LeftArrow", action = action.ActivatePaneDirection "Left" },
