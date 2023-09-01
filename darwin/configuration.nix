@@ -47,8 +47,8 @@
   services.activate-system.enable = true;
 
   environment.darwinConfig   = "$HOME/dev/dotfiles.nix/darwin/configuration.nix";
-  environment.shells         = with pkgs; [ zsh nushell ];
-  environment.systemPackages = with pkgs; [ cacert duti ];
+  environment.shells         = with pkgs.unstable; [ zsh nushell ];
+  environment.systemPackages = with pkgs.unstable; [ cacert duti ];
 
   # skip sudo authn for frequently used commands
   environment.etc."sudoers.d/10-nix-commands".text = with pkgs.unstable; ''
@@ -84,7 +84,7 @@
   users.users."${user.accountName}" = {
     description = user.fullName;
     home = user.homeDirectory;
-    shell = pkgs.zsh;
+    shell = pkgs.unstable.zsh;
   };
 
   time.timeZone = "Europe/London";
@@ -100,7 +100,7 @@
 
   fonts = {
     fontDir.enable = true;
-    fonts = with pkgs; [
+    fonts = with pkgs.unstable; [
       font-awesome
       ubuntu_font_family
       (nerdfonts.override { fonts = [ "Hasklig" "JetBrainsMono" ]; })
