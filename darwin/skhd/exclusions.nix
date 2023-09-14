@@ -4,7 +4,7 @@
 .blacklist [
   "IntelliJ IDEA"
   "PyCharm"
-  "RustRover"
+  "RustRover-EAP"
   "Tuple"
 ]
 ''
