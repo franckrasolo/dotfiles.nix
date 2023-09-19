@@ -17,6 +17,11 @@
       "homebrew/bundle"
       "homebrew/cask-versions"
       "martido/homebrew-graph"
+      "snyk/tap"
+    ];
+
+    brews = [
+      "snyk"
     ];
 
     casks = [
