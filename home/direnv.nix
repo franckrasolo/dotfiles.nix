@@ -1,3 +1,5 @@
+{ user, ... }:
+
 {
   programs.direnv = {
     enable = true;
@@ -9,6 +11,12 @@
         load_dotenv = true;
         strict_env = false;
         warn_timeout = "3s";
+      };
+      whitelist = {
+        exact = [
+          "${user.homeDirectory}/dev/dotfiles.nix"
+          "${user.homeDirectory}/dev/Rust/slice.rs"
+        ];
       };
     };
     stdlib = ''
