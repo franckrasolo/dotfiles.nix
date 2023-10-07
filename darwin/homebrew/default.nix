@@ -21,6 +21,7 @@
     ];
 
     brews = [
+      "opslevel/tap/cli"
       "snyk"
     ];
 
