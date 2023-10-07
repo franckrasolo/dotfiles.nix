@@ -11,7 +11,7 @@ _targets:
 
 # updates the top-level flake lock file
 @update:
-  nix flake update
+  nix flake update --commit-lock-file --commit-lockfile-summary "update Nix flake inputs"
 
 # lists fingerprints of all SSH keys the 1Password SSH agent can access
 @ssh-keys:
