@@ -9,7 +9,7 @@
       global = {
         disable_stdin = false;
         load_dotenv = true;
-        strict_env = false;
+        strict_env = true;
         warn_timeout = "3s";
       };
       whitelist = {
