@@ -17,6 +17,7 @@
       "homebrew/bundle"
       "homebrew/cask-versions"
       "martido/homebrew-graph"
+      "opslevel/tap"
       "snyk/tap"
     ];
 
