@@ -72,6 +72,7 @@
       "spotify"
       "teamviewer"
       "temurin17"
+      "temurin21"
       "tuple"
       "tweeten"
       "vlc"
