@@ -45,7 +45,6 @@
       }
       "bunch"
       "cloudflare-warp"
-      "corretto"
       "daisydisk"
       "discord"
       "docker"
