@@ -71,7 +71,6 @@
       "sonos-s1-controller"
       "spotify"
       "teamviewer"
-      "temurin"
       "temurin17"
       "temurin19"
       "tuple"
