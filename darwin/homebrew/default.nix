@@ -17,11 +17,13 @@
       "homebrew/bundle"
       "homebrew/cask-versions"
       "martido/homebrew-graph"
+      "modularml/packages"
       "opslevel/tap"
       "snyk/tap"
     ];
 
     brews = [
+      "modular"
       "opslevel/tap/cli"
       "snyk"
     ];
