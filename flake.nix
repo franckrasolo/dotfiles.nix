@@ -31,6 +31,9 @@
           config.allowBroken = true;
           config.allowUnfree = true;
           config.packageOverrides = prev: import ./pkgs { inherit (prev) pkgs; };
+          config.permittedInsecurePackages = [
+            "libxls-1.6.2"
+          ];
         };
       };
       # makes "pkgs.unstable" available in configuration.nix
