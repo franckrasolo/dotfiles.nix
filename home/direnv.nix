@@ -13,6 +13,9 @@
         warn_timeout = "3s";
       };
       whitelist = {
+        prefix = [
+          "${user.homeDirectory}/dev/mojo"
+        ];
         exact = [
           "${user.homeDirectory}/dev/dotfiles.nix"
           "${user.homeDirectory}/dev/Rust/slice.rs"
