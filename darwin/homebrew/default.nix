@@ -71,7 +71,10 @@
       }
       {
         name = "megasync";
-        args = { require_sha = false; }; # missing sha256 checksum
+        args = {
+          appdir = "/Applications";
+          require_sha = false; # missing sha256 checksum
+        };
       }
       "obsidian"
       "pop"
