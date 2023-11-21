@@ -55,7 +55,10 @@
         args = { require_sha = false; }; # missing sha256 checksum
       }
       "discord"
-      "docker"
+      {
+        name = "docker";
+        args = { appdir = "/Applications"; };
+      }
       "dropbox"
       "expressvpn"
       "jetbrains-toolbox"
