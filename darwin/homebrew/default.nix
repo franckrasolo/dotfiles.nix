@@ -46,8 +46,14 @@
         args = { require_sha = false; }; # missing sha256 checksum
       }
       "bunch"
-      "cloudflare-warp"
-      "daisydisk"
+      {
+        name = "cloudflare-warp";
+        args = { require_sha = false; }; # missing sha256 checksum
+      }
+      {
+        name = "daisydisk";
+        args = { require_sha = false; }; # missing sha256 checksum
+      }
       "discord"
       "docker"
       "dropbox"
@@ -63,7 +69,10 @@
         name = "logi-options-plus";
         args = { require_sha = false; }; # missing sha256 checksum
       }
-      "megasync"
+      {
+        name = "megasync";
+        args = { require_sha = false; }; # missing sha256 checksum
+      }
       "obsidian"
       "pop"
       {
@@ -71,7 +80,10 @@
         args = { appdir = "/Applications"; };
       }
       "sonos-s1-controller"
-      "spotify"
+      {
+        name = "spotify";
+        args = { require_sha = false; }; # missing sha256 checksum
+      }
       "teamviewer"
       "temurin17"
       "temurin21"
