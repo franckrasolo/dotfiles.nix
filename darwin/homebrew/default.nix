@@ -80,6 +80,7 @@
         };
       }
       "obsidian"
+      "orbstack"
       "pop"
       {
         name = "secretive";
