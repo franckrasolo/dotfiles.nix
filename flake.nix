@@ -59,7 +59,7 @@
           specialArgs = { inherit user; };
         };
 
-        m1m64 = nix-darwin.lib.darwinSystem {
+        m3max = nix-darwin.lib.darwinSystem {
           system  = "aarch64-darwin";
           inputs  = { inherit nix-darwin nixpkgs; };
           modules = [
@@ -75,7 +75,7 @@
 
       checks = {
         x86_64-darwin.mbp64  = self.nix-darwin-configurations.mbp64.system;
-        aarch64-darwin.m1m64 = self.nix-darwin-configurations.m1m64.system;
+        aarch64-darwin.m3max = self.nix-darwin-configurations.m3max.system;
       };
     };
 }
