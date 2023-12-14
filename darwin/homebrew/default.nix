@@ -92,8 +92,6 @@
         args = { require_sha = false; }; # missing sha256 checksum
       }
       "teamviewer"
-      "temurin17"
-      "temurin21"
       "tuple"
       "tweeten"
       "vlc"
