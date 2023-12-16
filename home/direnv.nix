@@ -15,6 +15,7 @@
       whitelist = {
         prefix = [
           "${user.homeDirectory}/dev/mojo"
+          "${user.homeDirectory}/dev/Kotlin/fork-handles"
         ];
         exact = [
           "${user.homeDirectory}/dev/dotfiles.nix"
