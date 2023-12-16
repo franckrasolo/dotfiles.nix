@@ -45,6 +45,10 @@
         name = "audio-hijack";
         args = { require_sha = false; }; # missing sha256 checksum
       }
+      {
+        name = "beeper";
+        args = { require_sha = false; }; # missing sha256 checksum
+      }
       "bunch"
       {
         name = "cloudflare-warp";
