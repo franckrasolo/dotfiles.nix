@@ -44,6 +44,10 @@
         accountName = "franck.rasolo";
         homeDirectory = "/Users/${accountName}";
       };
+
+      forAllSystems = f: nixpkgs.lib.genAttrs platforms (system: f {
+        pkgs = import nixpkgs { inherit system; };
+      });
     in
     {
       darwinConfigurations = {
@@ -77,5 +81,14 @@
         x86_64-darwin.mbp64  = self.nix-darwin-configurations.mbp64.system;
         aarch64-darwin.m3max = self.nix-darwin-configurations.m3max.system;
       };
+
+      devShells = forAllSystems ({ pkgs }: with pkgs; {
+        default = mkShell rec {
+          shellHook = ''
+            # health checks for Nix flake inputs
+            nix run "github:DeterminateSystems/flake-checker"
+          '';
+        };
+      });
     };
 }
