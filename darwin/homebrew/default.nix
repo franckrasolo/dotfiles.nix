@@ -87,6 +87,7 @@
       "obsidian"
       "orbstack"
       "pop"
+      "raindropio"
       {
         name = "secretive";
         args = { appdir = "/Applications"; };
