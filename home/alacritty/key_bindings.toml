@@ -1,0 +1,316 @@
+# Key bindings are specified as a list of objects. For example, this is the
+# default paste binding:
+#
+# `- { key: V, mods: Control|Shift, action: Paste }`
+#
+# Each key binding will specify a:
+#
+# - `key`: Identifier of the key pressed
+#
+#    - A-Z
+#    - F1-F24
+#    - Key0-Key9
+#
+#    A full list with available key codes can be found here:
+#    https://docs.rs/glutin/*/glutin/event/enum.VirtualKeyCode.html#variants
+#
+#    Instead of using the name of the keys, the `key` field also supports using
+#    the scancode of the desired key. Scancodes have to be specified as a
+#    decimal number. This command will allow you to display the hex scancodes
+#    for certain keys:
+#
+#       `showkey --scancodes`.
+#
+# Then exactly one of:
+#
+# - `chars`: Send a byte sequence to the running application
+#
+#    The `chars` field writes the specified string to the terminal. This makes
+#    it possible to pass escape sequences. To find escape codes for bindings
+#    like `PageUp` (`"\x1b[5~"`), you can run the command `showkey -a` outside
+#    of tmux. Note that applications use terminfo to map escape sequences back
+#    to keys. It is therefore required to update the terminfo when changing an
+#    escape sequence.
+#
+# - `action`: Execute a predefined action
+#
+#   - ToggleViMode
+#   - SearchForward
+#       Start searching toward the right of the search origin.
+#   - SearchBackward
+#       Start searching toward the left of the search origin.
+#   - Copy
+#   - Paste
+#   - IncreaseFontSize
+#   - DecreaseFontSize
+#   - ResetFontSize
+#   - ScrollPageUp
+#   - ScrollPageDown
+#   - ScrollHalfPageUp
+#   - ScrollHalfPageDown
+#   - ScrollLineUp
+#   - ScrollLineDown
+#   - ScrollToTop
+#   - ScrollToBottom
+#   - ClearHistory
+#       Remove the terminal's scrollback history.
+#   - Hide
+#       Hide the Alacritty window.
+#   - Minimize
+#       Minimize the Alacritty window.
+#   - Quit
+#       Quit Alacritty.
+#   - ToggleFullscreen
+#   - SpawnNewInstance
+#       Spawn a new instance of Alacritty.
+#   - CreateNewWindow
+#       Create a new Alacritty window from the current process.
+#   - ClearLogNotice
+#       Clear Alacritty's UI warning and error notice.
+#   - ClearSelection
+#       Remove the active selection.
+#   - ReceiveChar
+#   - None
+#
+# - Vi mode exclusive actions:
+#
+#   - Open
+#       Perform the action of the first matching hint under the vi mode cursor
+#       with `mouse.enabled` set to `true`.
+#   - ToggleNormalSelection
+#   - ToggleLineSelection
+#   - ToggleBlockSelection
+#   - ToggleSemanticSelection
+#       Toggle semantic selection based on `selection.semantic_escape_chars`.
+#
+# - Vi mode exclusive cursor motion actions:
+#
+#   - Up
+#       One line up.
+#   - Down
+#       One line down.
+#   - Left
+#       One character left.
+#   - Right
+#       One character right.
+#   - First
+#       First column, or beginning of the line when already at the first column.
+#   - Last
+#       Last column, or beginning of the line when already at the last column.
+#   - FirstOccupied
+#       First non-empty cell in this terminal row, or first non-empty cell of
+#       the line when already at the first cell of the row.
+#   - High
+#       Top of the screen.
+#   - Middle
+#       Center of the screen.
+#   - Low
+#       Bottom of the screen.
+#   - SemanticLeft
+#       Start of the previous semantically separated word.
+#   - SemanticRight
+#       Start of the next semantically separated word.
+#   - SemanticLeftEnd
+#       End of the previous semantically separated word.
+#   - SemanticRightEnd
+#       End of the next semantically separated word.
+#   - WordLeft
+#       Start of the previous whitespace separated word.
+#   - WordRight
+#       Start of the next whitespace separated word.
+#   - WordLeftEnd
+#       End of the previous whitespace separated word.
+#   - WordRightEnd
+#       End of the next whitespace separated word.
+#   - Bracket
+#       Character matching the bracket at the cursor's location.
+#   - SearchNext
+#       Beginning of the next match.
+#   - SearchPrevious
+#       Beginning of the previous match.
+#   - SearchStart
+#       Start of the match to the left of the vi mode cursor.
+#   - SearchEnd
+#       End of the match to the right of the vi mode cursor.
+#
+# - Search mode exclusive actions:
+#   - SearchFocusNext
+#       Move the focus to the next search match.
+#   - SearchFocusPrevious
+#       Move the focus to the previous search match.
+#   - SearchConfirm
+#   - SearchCancel
+#   - SearchClear
+#       Reset the search regex.
+#   - SearchDeleteWord
+#       Delete the last word in the search regex.
+#   - SearchHistoryPrevious
+#       Go to the previous regex in the search history.
+#   - SearchHistoryNext
+#       Go to the next regex in the search history.
+#
+# - macOS exclusive actions:
+#   - ToggleSimpleFullscreen
+#       Enter fullscreen without occupying another space.
+#
+# - Linux/BSD exclusive actions:
+#
+#   - CopySelection
+#       Copy from the selection buffer.
+#   - PasteSelection
+#       Paste from the selection buffer.
+#
+# - `command`: Fork and execute a specified command plus arguments
+#
+#    The `command` field must be a map containing a `program` string and an
+#    `args` array of command line parameter strings. For example:
+#       `{ program: "alacritty", args: ["-e", "vttest"] }`
+#
+# And optionally:
+#
+# - `mods`: Key modifiers to filter binding actions
+#
+#    - Command
+#    - Control
+#    - Option
+#    - Super
+#    - Shift
+#    - Alt
+#
+#    Multiple `mods` can be combined using `|` like this:
+#       `mods: Control|Shift`.
+#    Whitespace and capitalization are relevant and must match the example.
+#
+# - `mode`: Indicate a binding for only specific terminal reported modes
+#
+#    This is mainly used to send applications the correct escape sequences
+#    when in different modes.
+#
+#    - AppCursor
+#    - AppKeypad
+#    - Search
+#    - Alt
+#    - Vi
+#
+#    A `~` operator can be used before a mode to apply the binding whenever
+#    the mode is *not* active, e.g. `~Alt`.
+#
+# Bindings are always filled by default, but will be replaced when a new
+# binding with the same triggers is defined. To unset a default binding, it can
+# be mapped to the `ReceiveChar` action. Alternatively, you can use `None` for
+# a no-op if you do not wish to receive input characters for that binding.
+#
+# If the same trigger is assigned to multiple actions, all of them are executed
+# in the order they were defined in.
+keyboard.bindings = [
+#    { key = "Paste",                                    action = "Paste"          },
+#    { key = "Copy",                                     action = "Copy"           },
+#    { key = "L",              mods = "Control",         action = "ClearLogNotice" },
+#    { key = "L",              mods = "Control",         chars = '\x0c',                     mode = "~Vi|~Search" },
+#    { key = "PageUp",         mods = "Shift",           action = "ScrollPageUp",            mode = "~Alt" },
+#    { key = "PageDown",       mods = "Shift",           action = "ScrollPageDown",          mode = "~Alt" },
+#    { key = "Home",           mods = "Shift",           action = "ScrollToTop",             mode = "~Alt" },
+#    { key = "End",            mods = "Shift",           action = "ScrollToBottom",          mode = "~Alt" },
+
+    # Vi Mode
+#    { key = "Space",          mods = "Shift|Control",   action = "ToggleViMode",            mode = "~Search" },
+#    { key = "Space",          mods = "Shift|Control",   action = "ScrollToBottom",          mode = "Vi|~Search" },
+#    { key = "Escape",                                   action = "ClearSelection",          mode = "Vi|~Search" },
+#    { key = "I",                                        action = "ToggleViMode",            mode = "Vi|~Search" },
+#    { key = "I",                                        action = "ScrollToBottom",          mode = "Vi|~Search" },
+#    { key = "C",              mods = "Control",         action = "ToggleViMode",            mode = "Vi|~Search" },
+#    { key = "Y",              mods = "Control",         action = "ScrollLineUp",            mode = "Vi|~Search" },
+#    { key = "E",              mods = "Control",         action = "ScrollLineDown",          mode = "Vi|~Search" },
+#    { key = "G",                                        action = "ScrollToTop",             mode = "Vi|~Search" },
+#    { key = "G",              mods = "Shift",           action = "ScrollToBottom",          mode = "Vi|~Search" },
+#    { key = "B",              mods = "Control",         action = "ScrollPageUp",            mode = "Vi|~Search" },
+#    { key = "F",              mods = "Control",         action = "ScrollPageDown",          mode = "Vi|~Search" },
+#    { key = "U",              mods = "Control",         action = "ScrollHalfPageUp",        mode = "Vi|~Search" },
+#    { key = "D",              mods = "Control",         action = "ScrollHalfPageDown",      mode = "Vi|~Search" },
+#    { key = "Y",                                        action = "Copy",                    mode = "Vi|~Search" },
+#    { key = "Y",                                        action = "ClearSelection",          mode = "Vi|~Search" },
+#    { key = "Copy",                                     action = "ClearSelection",          mode = "Vi|~Search" },
+#    { key = "V",                                        action = "ToggleNormalSelection",   mode = "Vi|~Search" },
+#    { key = "V",              mods = "Shift",           action = "ToggleLineSelection",     mode = "Vi|~Search" },
+#    { key = "V",              mods = "Control",         action = "ToggleBlockSelection",    mode = "Vi|~Search" },
+#    { key = "V",              mods = "Alt",             action = "ToggleSemanticSelection", mode = "Vi|~Search" },
+#    { key = "Return",                                   action = "Open",                    mode = "Vi|~Search" },
+#    { key = "K",                                        action = "Up",                      mode = "Vi|~Search" },
+#    { key = "J",                                        action = "Down",                    mode = "Vi|~Search" },
+#    { key = "H",                                        action = "Left",                    mode = "Vi|~Search" },
+#    { key = "L",                                        action = "Right",                   mode = "Vi|~Search" },
+#    { key = "Up",                                       action = "Up",                      mode = "Vi|~Search" },
+#    { key = "Down",                                     action = "Down",                    mode = "Vi|~Search" },
+#    { key = "Left",                                     action = "Left",                    mode = "Vi|~Search" },
+#    { key = "Right",                                    action = "Right",                   mode = "Vi|~Search" },
+#    { key = "Key0",                                     action = "First",                   mode = "Vi|~Search" },
+#    { key = "Key4",           mods = "Shift",           action = "Last",                    mode = "Vi|~Search" },
+#    { key = "Key6",           mods = "Shift",           action = "FirstOccupied",           mode = "Vi|~Search" },
+#    { key = "H",              mods = "Shift",           action = "High",                    mode = "Vi|~Search" },
+#    { key = "M",              mods = "Shift",           action = "Middle",                  mode = "Vi|~Search" },
+#    { key = "L",              mods = "Shift",           action = "Low",                     mode = "Vi|~Search" },
+#    { key = "B",                                        action = "SemanticLeft",            mode = "Vi|~Search" },
+#    { key = "W",                                        action = "SemanticRight",           mode = "Vi|~Search" },
+#    { key = "E",                                        action = "SemanticRightEnd",        mode = "Vi|~Search" },
+#    { key = "B",              mods = "Shift",           action = "WordLeft",                mode = "Vi|~Search" },
+#    { key = "W",              mods = "Shift",           action = "WordRight",               mode = "Vi|~Search" },
+#    { key = "E",              mods = "Shift",           action = "WordRightEnd",            mode = "Vi|~Search" },
+#    { key = "Key5",           mods = "Shift",           action = "Bracket",                 mode = "Vi|~Search" },
+#    { key = "Slash",                                    action = "SearchForward",           mode = "Vi|~Search" },
+#    { key = "Slash",          mods = "Shift",           action = "SearchBackward",          mode = "Vi|~Search" },
+#    { key = "N",                                        action = "SearchNext",              mode = "Vi|~Search" },
+#    { key = "N",              mods = "Shift",           action = "SearchPrevious",          mode = "Vi|~Search" },
+
+    # Search Mode
+#    { key = "Return",                                   action = "SearchConfirm",           mode = "Search|Vi" },
+#    { key = "Escape",                                   action = "SearchCancel",            mode = "Search" },
+#    { key = "C",              mods = "Control",         action = "SearchCancel",            mode = "Search" },
+#    { key = "U",              mods = "Control",         action = "SearchClear",             mode = "Search" },
+#    { key = "W",              mods = "Control",         action = "SearchDeleteWord",        mode = "Search" },
+#    { key = "P",              mods = "Control",         action = "SearchHistoryPrevious",   mode = "Search" },
+#    { key = "N",              mods = "Control",         action = "SearchHistoryNext",       mode = "Search" },
+#    { key = "Up",                                       action = "SearchHistoryPrevious",   mode = "Search" },
+#    { key = "Down",                                     action = "SearchHistoryNext",       mode = "Search" },
+#    { key = "Return",                                   action = "SearchFocusNext",         mode = "Search|~Vi" },
+#    { key = "Return",         mods = "Shift",           action = "SearchFocusPrevious",     mode = "Search|~Vi" },
+
+    # (Windows, Linux, and BSD only)
+#    { key = "V",              mods = "Control|Shift",   action = "Paste",                   mode = "~Vi" },
+#    { key = "C",              mods = "Control|Shift",   action = "Copy"             },
+#    { key = 'F',              mods = "Control|Shift",   action = "SearchForward",           mode = "~Search" },
+#    { key = "B",              mods = "Control|Shift",   action = "SearchBackward",          mode = "~Search" },
+#    { key = "C",              mods = "Control|Shift",   action = "ClearSelection",          mode = "Vi|~Search" },
+#    { key = "Insert",         mods = "Shift",           action = "PasteSelection"   },
+#    { key = "Key0",           mods = "Control",         action = "ResetFontSize"    },
+#    { key = "Equals",         mods = "Control",         action = "IncreaseFontSize" },
+#    { key = "Plus",           mods = "Control",         action = "IncreaseFontSize" },
+#    { key = "NumpadAdd",      mods = "Control",         action = "IncreaseFontSize" },
+#    { key = "Minus",          mods = "Control",         action = "DecreaseFontSize" },
+#    { key = "NumpadSubtract", mods = "Control",         action = "DecreaseFontSize" },
+
+    # (Windows only)
+#    { key = "Return",         mods = "Alt",                        action = "ToggleFullscreen" },
+
+    # (macOS only)
+#    { key = "K",              mods = "Command",         chars = '\x0c',                     mode = "~Vi|~Search" },
+#    { key = "K",              mods = "Command",         action = "ClearHistory",            mode = "~Vi|~Search" },
+#    { key = "Key0",           mods = "Command",         action = "ResetFontSize"    },
+#    { key = "Equals",         mods = "Command",         action = "IncreaseFontSize" },
+#    { key = "Plus",           mods = "Command",         action = "IncreaseFontSize" },
+#    { key = "NumpadAdd",      mods = "Command",         action = "IncreaseFontSize" },
+#    { key = "Minus",          mods = "Command",         action = "DecreaseFontSize" },
+#    { key = "NumpadSubtract", mods = "Command",         action = "DecreaseFontSize" },
+#    { key = "V",              mods = "Command",         action = "Paste"            },
+#    { key = "C",              mods = "Command",         action = "Copy"             },
+#    { key = "C",              mods = "Command",         action = "ClearSelection",          mode = "Vi|~Search" },
+#    { key = "H",              mods = "Command",         action = "Hide"             },
+#    { key = "H",              mods = "Command|Alt",     action = "HideOtherApplications" },
+#    { key = "M",              mods = "Command",         action = "Minimize"         },
+#    { key = "Q",              mods = "Command",         action = "Quit"             },
+#    { key = "W",              mods = "Command",         action = "Quit"             },
+#    { key = "N",              mods = "Command",         action = "SpawnNewInstance" },
+#    { key = "F",              mods = "Command|Control", action = "ToggleFullscreen" },
+#    { key = "F",              mods = "Command",         action = "SearchForward",           mode = "~Search" },
+#    { key = "B",              mods = "Command",         action = "SearchBackward",          mode = "~Search" },
+    { key = "N",              mods = "Command",         action = "CreateNewWindow" },
+]
