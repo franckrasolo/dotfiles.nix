@@ -8,7 +8,6 @@
     ./spacebar
   ];
 
-  nix.package = pkgs.nixUnstable;
   nix.extraOptions = ''
     keep-outputs = false
     keep-derivations = false
@@ -17,6 +16,7 @@
 
   # auto-upgrade both the nix package and the daemon service
   services.nix-daemon.enable = true;
+  nix.package = pkgs.nixUnstable;
   nix.useDaemon = true;
 
   nixpkgs.config.allowBroken = true;
