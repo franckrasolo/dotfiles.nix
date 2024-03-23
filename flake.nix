@@ -14,14 +14,9 @@
       url = "github:nix-community/home-manager/release-23.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    sops-nix = {
-      url = "github:Mic92/sops-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, nix-darwin, home-manager, sops-nix }:
+  outputs = { self, nixpkgs, nixpkgs-unstable, nix-darwin, home-manager }:
     let
       platforms = [ "x86_64-darwin" "aarch64-darwin" ];
 
@@ -58,7 +53,6 @@
             overlayModule
             ./darwin/configuration.nix
             home-manager.darwinModules.home-manager
-            sops-nix.nixosModules.sops
           ];
           specialArgs = { inherit user; };
         };
@@ -71,7 +65,6 @@
             overlayModule
             ./darwin/configuration.nix
             home-manager.darwinModules.home-manager
-            sops-nix.nixosModules.sops
           ];
           specialArgs = { inherit user; };
         };
