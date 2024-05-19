@@ -15,7 +15,6 @@
 
     taps = [
       "homebrew/bundle"
-      "homebrew/cask-versions"
       "localsend/localsend"
       "martido/homebrew-graph"
       "modularml/packages"
