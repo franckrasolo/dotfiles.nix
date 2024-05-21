@@ -18,12 +18,10 @@
       "localsend/localsend"
       "martido/homebrew-graph"
       "modularml/packages"
-      "opslevel/tap"
     ];
 
     brews = [
       "modular"
-      "opslevel/tap/cli"
     ];
 
     casks = [
