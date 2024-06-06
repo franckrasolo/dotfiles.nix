@@ -48,7 +48,11 @@
 
   environment.darwinConfig   = "$HOME/dev/dotfiles.nix/darwin/configuration.nix";
   environment.shells         = with pkgs.unstable; [ zsh nushell ];
-  environment.systemPackages = with pkgs.unstable; [ cacert duti sketchybar ];
+  environment.systemPackages = with pkgs.unstable; [
+    cacert
+    duti
+    sketchybar
+  ];
 
   # skip sudo authn for frequently used commands
   environment.etc."sudoers.d/10-nix-commands".text = with pkgs.unstable; ''
