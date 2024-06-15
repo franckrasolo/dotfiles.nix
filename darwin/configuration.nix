@@ -103,12 +103,9 @@
     ];
   };
 
-  fonts = {
-    fontDir.enable = true;
-    fonts = with pkgs.unstable; [
-      font-awesome
-      ubuntu_font_family
-      (nerdfonts.override { fonts = [ "Hasklig" "JetBrainsMono" ]; })
-    ];
-  };
+  fonts.packages = with pkgs.unstable; [
+    font-awesome
+    ubuntu_font_family
+    (nerdfonts.override { fonts = [ "Hasklig" "JetBrainsMono" ]; })
+  ];
 }
