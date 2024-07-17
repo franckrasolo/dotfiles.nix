@@ -1,0 +1,54 @@
+"            _   _
+"   ______ _| |_| |__  _   _ _ __ __ _
+"  |_  / _` | __| '_ \| | | | '__/ _` |
+"   / / (_| | |_| | | | |_| | | | (_| |
+"  /___\__,_|\__|_| |_|\__,_|_|  \__,_|
+"
+
+" see also https://www.maketecheasier.com/cheatsheet/zathura-keyboard-shortcuts/
+
+set adjust-open width
+set continuous-hist-save true
+set database sqlite
+set font "monospace semibold 14"
+set recolor false
+set selection-clipboard clipboard
+set window-width 1536
+set window-height 1000
+
+" GUI options to show
+" c: command line
+" s: statusbar
+" h: horizontal scrollbar
+" v: vertical scrollbar
+set guioptions "s"
+
+set window-title-basename true
+set window-title-home-tilde true
+set window-title-page false
+
+set statusbar-basename false
+set statusbar-home-tilde true
+
+set statusbar-bg "#34bf91"
+set statusbar-fg "#383838"
+
+" dual page mode
+set first-page-column 1
+set pages-per-row 1
+
+" stop at page boundaries
+set scroll-page-aware true
+set scroll-full-overlap 0.01
+set scroll-step 100
+
+" toggle full screen mode
+map [normal]     <C-Space> toggle_fullscreen
+map [fullscreen] <C-Space> toggle_fullscreen
+
+" toggle dark/light mode
+set recolor-lightcolor "#181818"
+map [normal]     t recolor toggle
+map [fullscreen] t recolor toggle
+
+" vim: ft=vim
