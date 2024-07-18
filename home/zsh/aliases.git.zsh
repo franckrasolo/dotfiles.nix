@@ -1,0 +1,6 @@
+alias gcgl="git config --global --list"
+alias gcll="git config --local --list"
+alias gd="git diff"
+alias gs="git status"
+alias lg="lazygit"
+alias gpr="git pull --rebase"

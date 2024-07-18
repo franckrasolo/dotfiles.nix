@@ -1,0 +1,101 @@
+export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:=$HOME/.xdg/config}
+export  XDG_CACHE_HOME=${XDG_CACHE_HOME:=$HOME/.xdg/cache}
+export   XDG_DATA_HOME=${XDG_DATA_HOME:=$HOME/.xdg/local/share}
+export  XDG_STATE_HOME=${XDG_DATA_HOME:=$HOME/.xdg/local/state}
+export    XDG_BIN_HOME=${XDG_BIN_HOME:=$HOME/.xdg/local/bin}
+export XDG_RUNTIME_DIR=${XDG_RUNTIME_DIR:=$HOME/.xdg/local/run}
+
+export SOPS_AGE_KEY_FILE=$HOME/dev/dotfiles.nix/secrets/bootstrap-key.txt
+export SOPS_AGE_RECIPIENTS="age1dewzp62nhlvgjgfqzj6lrrkp2rj7zg94l9e0962mk9jktxcgjy9q4ht96s"
+
+export GNUPGHOME=$XDG_DATA_HOME/gnupg
+export GPG_TTY=$(tty)
+
+LOCALE=en_GB.UTF-8
+export LANGUAGE=$LOCALE
+export LC_CTYPE=$LOCALE
+export LC_NUMERIC=$LOCALE
+export LC_TIME=$LOCALE
+export LC_COLLATE=$LOCALE
+export LC_MONETARY=$LOCALE
+export LC_MESSAGES=$LOCALE
+export LC_PAPER=$LOCALE
+export LC_NAME=$LOCALE
+export LC_ADDRESS=$LOCALE
+export LC_TELEPHONE=$LOCALE
+export LC_MEASUREMENT=$LOCALE
+export LC_IDENTIFICATION=$LOCALE
+
+export ANTIBODY_HOME=$XDG_CACHE_HOME/antibody
+export BAT_CACHE_PATH=$XDG_CACHE_HOME/bat
+export BAT_CONFIG_DIR=$XDG_CONFIG_HOME/bat
+
+export DOCKER_CONFIG=$XDG_CONFIG_HOME/docker  # https://github.com/docker/for-mac/issues/2635
+export KUBECONFIG=$XDG_CONFIG_HOME/kube
+export KREW_ROOT=$XDG_DATA_HOME/krew
+export PATH=$KREW_ROOT/bin:$PATH              # https://krew.sigs.k8s.io/docs/user-guide/quickstart/
+export K9SCONFIG=$XDG_CONFIG_HOME/k9s
+export MINIKUBE_HOME=$XDG_DATA_HOME/minikube
+
+export CC=/etc/profiles/per-user/$USER/bin/gcc
+export GRADLE_USER_HOME=$XDG_DATA_HOME/gradle
+export GHCUP_USE_XDG_DIRS=true
+export STACK_ROOT=$XDG_DATA_HOME/stack
+export GOPATH=$XDG_DATA_HOME/go
+export CARGO_HOME=$XDG_DATA_HOME/cargo
+export RUSTUP_HOME=$XDG_DATA_HOME/rustup
+
+export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
+export NVM_DIR=$XDG_DATA_HOME/nvm
+export PYENV_ROOT=$XDG_DATA_HOME/pyenv
+
+export HTTPIE_CONFIG_DIR=$XDG_CONFIG_HOME/httpie
+export PARALLEL_HOME=$XDG_CONFIG_HOME/parallel
+export RIPGREP_CONFIG_PATH=$XDG_CONFIG_HOME/ripgrep/rg.conf
+
+export NAVI_PATH=$XDG_DATA_HOME/navi
+export NAVI_CONFIG=$XDG_CONFIG_HOME/navi/config.yaml
+
+export PATH=$XDG_BIN_HOME:$HOME/.local/bin:$PATH
+export PATH=$HOME/Library/Application\ Support/JetBrains/Toolbox/scripts:$PATH # for NixIDEA / JetBrains IDEs?
+export PATH=$XDG_DATA_HOME/npm/bin:$PATH # for grain
+export PATH=$HOME/dev/roc:$PATH
+
+# disable for earthly
+export SSH_AUTH_SOCK=$HOME/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
+
+export GRAPHVIZ_DOT=/etc/profiles/per-user/$USER/bin/dot
+export SPACEMACSDIR=$XDG_CONFIG_HOME/spacemacs
+export TASKDATA=$XDG_DATA_HOME/tasks
+export TASKRC=$XDG_CONFIG_HOME/task/taskrc
+export TIMEWARRIORDB=$XDG_DATA_HOME/timewarrior
+export ZDOTDIR=$XDG_CONFIG_HOME/zsh
+export _ZO_DATA_DIR=$XDG_DATA_HOME
+
+export EDITOR="nvim"
+export LESS="-RX" # with colour support
+export LESSHISTFILE=-
+export PAGER="less"
+export TERM="xterm-256color"
+export JUST_CHOOSER=$(echo $(echo '
+  fzf
+    --height=40%
+    --preview-window=right:60%:wrap
+    --preview="just --show {} | bat --language=Makefile --color=always --style=plain"
+  || true
+'))
+export VISUAL="nvr -cc split --remote-wait +'set bufhidden=wipe'"
+
+# colours in man pages paginated with bat
+# - https://github.com/sharkdp/bat#man
+export MANPAGER="col -bx | bat --language=man --plain --color=always --theme='Solarized (dark)'"
+export MANROFFOPT="-c"
+
+# colours in man pages paginated with less
+export LESS_TERMCAP_mb=$'\e[1;34m'       # begin blinking
+export LESS_TERMCAP_md=$'\e[1;32m'       # begin bold
+export LESS_TERMCAP_me=$'\e[0m'          # end mode
+export LESS_TERMCAP_so=$'\e[01;33m'      # begin standout-mode - info box
+export LESS_TERMCAP_se=$'\e[0m'          # end standout-mode
+export LESS_TERMCAP_us=$'\e[1;38;5;192m' # begin underline
+export LESS_TERMCAP_ue=$'\e[0m'          # end underline
