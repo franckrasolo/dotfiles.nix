@@ -52,7 +52,7 @@ let
     bottom
     gdu
     htop
-    neofetch
+    fastfetch
     nushell
     pueue
 
