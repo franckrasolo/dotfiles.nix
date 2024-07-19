@@ -1,0 +1,186 @@
+[user]
+  name  = Franck Rasolo
+  email = franckrasolo@users.noreply.github.com
+  # safe to commit: https://stackoverflow.com/a/48067999/1189538
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEL6SY+GmIe3OH8TY2udJkwTwwsamEGTnjrlkA42G7Ij
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+  allowedSignersFile = "/Users/franck.rasolo/.xdg/config/git/allowed_signers"
+
+[commit]
+  gpgSign = true
+
+[tag]
+  gpgSign = true
+
+[init]
+  defaultBranch = trunk
+
+[github]
+  user = franckrasolo
+
+[http]
+  sslVerify = true
+
+[credential]
+  helper = cache --timeout=3600
+
+[core]
+  autocrlf = input
+  excludesFile = ~/.xdg/config/git/ignore
+  ignoreCase = false
+  safecrlf = true
+  whitespace = -indent-with-non-tab,space-before-tab,tab-in-indent,trailing-space,-cr-at-eol
+  pager = delta
+
+[pager]
+  diff = delta
+
+[apply]
+  whitespace = warn
+
+[remote]
+  pushdefault = origin
+
+[branch]
+  autoSetupMerge  = true
+  autoSetupRebase = always
+
+[push]
+  default = simple
+
+[rebase]
+  autoStash  = true
+  whitespace = warn
+
+[pull]
+  ff = only
+  rebase = true
+
+[stash]
+  showPatch = true
+
+[log]
+  decorate = full
+  showSignature = true
+
+[format]
+  pretty = '%C(yellow)%h%Creset %C(magenta)%cd%Creset %d %s'
+
+[merge]
+  tool = splice
+
+[mergetool "splice"]
+  cmd = "nvim -f $BASE $LOCAL $REMOTE $MERGED -c 'SpliceInit'"
+  trustExitCode = true
+
+[alias]
+  aa = add --all
+  ca = commit --amend
+  ci = commit
+  ce = commit --allow-empty
+  co = checkout
+  dc = diff --cached
+  di = diff
+  s  = status
+  st = stash
+  br = branch
+
+  tags = tag -l
+  branches = branch -a
+  remotes  = remote -v
+
+  fix = commit -a --amend --no-edit
+  nb  = checkout -b
+  upstream-clone = clone -o upstream
+  delete = "! f() { git branch -d $1 && git push origin -d $1; }; f"
+  undo = reset HEAD~
+
+  ec  = config --global -e
+  cob = checkout -b
+  ri  = rebase -i --autosquash
+  fixup = commit --fixup
+
+  df = diff --color-words='[^[:space:]]'
+  sh = show --color-words='[^[:space:]]'
+
+  # https://github.com/so-fancy/diff-so-fancy/blob/master/pro-tips.md
+  dsf   = '!f() { [ -z "$GIT_PREFIX" ] || cd "$GIT_PREFIX" && git diff --color "$@" | diff-so-fancy  | less --tabs=4 -RFX } f'
+  patch = !git --no-pager diff --no-color # use as: git patch > changes.patch
+
+  logs = log --all --graph --pretty=format:'%C(bold blue)%h%C(reset) | %C(dim green)%ai%C(reset) | %C(dim bold white)%an%C(reset) | %C(bold white)%s%C(reset)%C(auto)%d%C(reset)' --decorate=short
+
+  # common aliases: http://gitimmersion.com/lab_11.html
+  type = cat-file -t
+  dump = cat-file -p
+
+[color]
+  ui     = true
+  branch = auto
+  diff   = auto
+  status = auto
+  showBranch = auto
+
+[color "branch"]
+  current = yellow reverse
+  local   = yellow
+  remote  = green
+
+[color "diff"]
+  meta   = yellow
+  frag   = magenta bold
+  commit = yellow bold
+  old    = red bold
+  new    = green bold
+  whitespace = red reverse
+
+[color "diff-highlight"]
+  oldNormal    = red bold
+  oldHighlight = red bold 52
+  newNormal    = green bold
+  newHighlight = green bold 22
+
+[color "status"]
+  added     = green bold
+  changed   = yellow bold
+  untracked = red dim
+
+[diff-so-fancy]
+  markEmptyLines  = true
+  changeHunkIndicators = true
+  stripLeadingSymbols  = true
+  useUnicodeRuler = true
+
+[delta]
+  navigate = true  # use n and N to move between diff sections
+  light = false    # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+
+  features = side-by-side line-numbers decorations
+  syntax-theme = Dracula
+  plus-style   = syntax "#003800"
+  minus-style  = syntax "#3f0001"
+
+[interactive]
+  diffFilter = delta --color-only
+
+[merge]
+  conflictstyle = diff3
+
+[diff]
+  colorMoved = default
+
+[delta "decorations"]
+  commit-decoration-style = bold yellow box ul
+  file-style = bold yellow ul
+  file-decoration-style = none
+  hunk-header-decoration-style = cyan box ul
+
+[delta "line-numbers"]
+  line-numbers-left-style  = cyan
+  line-numbers-right-style = cyan
+  line-numbers-minus-style = 124
+  line-numbers-plus-style  = 28
