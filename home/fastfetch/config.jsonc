@@ -72,7 +72,7 @@
         },
         {
             "type": "poweradapter",
-            "key": "│  power    ├─",
+            "key": "│  power     ├─",
             "keyColor": "green"
         },
         {
