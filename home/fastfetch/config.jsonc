@@ -1,0 +1,243 @@
+//   _____         _    __      _       _
+//  |  ___|_ _ ___| |_ / _| ___| |_ ___| |__
+//  | |_ / _` / __| __| |_ / _ \ __/ __| '_ \
+//  |  _| (_| \__ \ |_|  _|  __/ || (__| | | |
+//  |_|  \__,_|___/\__|_|  \___|\__\___|_| |_|
+//
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "kitty-direct",
+        "source": "${XDG_CONFIG_HOME}/fastfetch/system-vendor-logo.jpeg",
+        "width": 36,
+        "height": 16,
+        "padding": {
+            "top": 10
+        }
+    },
+    "display": {
+        "keyWidth": 18,
+        "separator": ""
+    },
+    "modules": [
+        {
+            "type": "custom",
+            "key": "╭─────────────╮",
+            "keyColor": "green"
+        },
+        {
+            "type": "host",
+            "key": "│ 󰌢 device    ├─",
+            "keyColor": "green"
+        },
+        {
+            "type": "cpu",
+            "key": "│ 󰻠 cpu       ├─",
+            "keyColor": "green"
+        },
+        {
+            "type": "gpu",
+            "key": "│ 󰍛 gpu       ├─",
+            "keyColor": "green"
+        },
+        {
+            "type": "disk",
+            "key": "│  disk      ├─",
+            "keyColor": "green"
+        },
+        {
+            "type": "memory",
+            "key": "│ 󰑭 memory    ├─",
+            "keyColor": "green"
+        },
+        {
+            "type": "swap",
+            "key": "│ 󰓡 swap      ├─",
+            "keyColor": "green"
+        },
+        {
+            "type": "display",
+            "key": "│ 󰍹 display   ├─",
+            "keyColor": "green"
+        },
+        {
+            "type": "brightness",
+            "key": "│ 󰃞 brightn.  ├─",
+            "keyColor": "green"
+        },
+        {
+            "type": "battery",
+            "key": "│  battery   ├─",
+            "keyColor": "green"
+        },
+        {
+            "type": "poweradapter",
+            "key": "│  power    ├─",
+            "keyColor": "green"
+        },
+        {
+            "type": "gamepad",
+            "key": "│   gamepad   ├─",
+            "keyColor": "green"
+        },
+        {
+            "type": "bluetooth",
+            "key": "│  bluetooth ├─",
+            "keyColor": "green"
+        },
+        {
+            "type": "custom",
+            "key": "╰─────────────╯",
+            "keyColor": "green"
+        },
+        {
+            "type": "custom",
+            "key": "╭─────────────╮",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "os",
+            "key": "│  system    ├─",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "kernel",
+            "key": "│  kernel    ├─",
+            "format": "{1} {2}",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "uptime",
+            "key": "│ 󰅐 uptime    ├─",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "packages",
+            "key": "│ 󰏖 packages  ├─",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "publicip",
+            "key": "│ 󰩠 public    ├─",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "localip",
+            "key": "│ 󰩟 local     ├─",
+            "format": "{1} ({ifname})",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "dns",
+            "key": "│   • dns     ├─",
+            "keyColor": "yellow",
+            "showType": "ipv4"
+        },
+        {
+            "type": "localip",
+            "key": "│   • mac     ├─",
+            "keyColor": "yellow",
+            "format": "{mac}",
+            "showIpv4": false,
+            "showMac": true
+        },
+        {
+            "type": "wifi",
+            "key": "│   wi-fi    ├─",
+            "format": "{4}", // ssid
+            "keyColor": "yellow"
+        },
+        {
+            "type": "custom",
+            "key": "╰─────────────╯",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "custom",
+            "key": "╭─────────────╮",
+            "keyColor": "blue"
+        },
+        {
+            "type": "title",
+            "key": "│  user      ├─",
+            "format": "{1}@{2}.local",
+            "keyColor": "blue"
+        },
+        {
+            "type": "shell",
+            "key": "│  shell     ├─",
+            "keyColor": "blue"
+        },
+        {
+            "type": "terminal",
+            "key": "│  terminal  ├─",
+            "keyColor": "blue"
+        },
+        {
+            "type": "terminalfont",
+            "key": "│  tty font  ├─",
+            "keyColor": "blue"
+        },
+        {
+            "type": "locale",
+            "key": "│   locale   ├─",
+            "keyColor": "blue"
+        },
+        {
+            "type": "lm",
+            "key": "│ 󰧨 lm?   ├─",
+            "keyColor": "blue"
+        },
+        {
+            "type": "de",
+            "key": "│  desktop   ├─",
+            "keyColor": "blue"
+        },
+        {
+            "type": "wm",
+            "key": "│  windows   ├─",
+            "keyColor": "blue"
+        },
+        {
+            "type": "wmtheme",
+            "key": "│ 󰉼 theme     ├─",
+            "keyColor": "blue"
+        },
+        {
+            "type": "colors",
+            "key": "│  colors    ├─",
+            "keyColor": "blue",
+            "symbol": "circle"
+        },
+        {
+            "type": "icons",
+            "key": "│ 󰀻 icons   ├─",
+            "keyColor": "blue"
+        },
+        {
+            "type": "wallpaper",
+            "key": "╰─󰸉 wallpaper   ├─",
+            "keyColor": "blue"
+        },
+        {
+            "type": "sound",
+            "key": "│   sound    ├─",
+            "keyColor": "blue"
+        },
+        {
+            "type": "player",
+            "key": "│ 󰥠 player    ├─",
+            "keyColor": "blue"
+        },
+        {
+            "type": "media",
+            "key": "│ 󰝚 media     ├─",
+            "keyColor": "blue"
+        },
+        {
+            "type": "custom",
+            "key": "╰─────────────╯",
+            "keyColor": "blue"
+        }
+    ]
+}
