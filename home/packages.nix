@@ -109,6 +109,7 @@ let
   ];
 
   dataTools = [
+    python312Packages.demjson3
     fq
     ijq
     jnv
