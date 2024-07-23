@@ -52,6 +52,7 @@ return {
           border = "double",
         },
         mappings = {
+          -- keybindings: https://github.com/SmiteshP/nvim-navbuddy#-customise
           ["j"] = actions.next_sibling(),
           ["k"] = actions.previous_sibling(),
           ["h"] = actions.parent(),
