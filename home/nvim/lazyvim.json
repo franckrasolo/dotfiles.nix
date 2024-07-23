@@ -1,0 +1,9 @@
+{
+  "extras": [
+    "lazyvim.plugins.extras.ui.alpha",
+  ],
+  "news": {
+    "NEWS.md": "6296"
+  },
+  "version": 6
+}
