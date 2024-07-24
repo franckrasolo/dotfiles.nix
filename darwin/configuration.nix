@@ -104,7 +104,9 @@
   };
 
   fonts.packages = with pkgs.unstable; [
+    cascadia-code
     font-awesome
+    monaspace
     ubuntu_font_family
     (nerdfonts.override { fonts = [ "Hasklig" "JetBrainsMono" ]; })
   ];
