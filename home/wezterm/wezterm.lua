@@ -3,8 +3,18 @@ local action = wezterm.action
 local mod = "ALT|SHIFT"
 
 return {
-  font = wezterm.font("JetBrainsMono Nerd Font", { weight = "Bold", italic = false }),
+  font = wezterm.font { family = "Cascadia Code", weight = "DemiBold", italic = false },
+  font_size = 15.8,
+--[[
+  font = wezterm.font { family = "JetBrainsMono Nerd Font", weight = "DemiBold", italic = false },
+  font = wezterm.font { family = "Monaspace Argon", weight = "DemiBold", italic = false, stretch = "UltraCondensed",
+    harfbuzz_features = {
+      'calt=1', 'clig=1', 'liga=1',
+      'ss01=1', 'ss02=1', 'ss03=1', 'ss04=1', 'ss05=1', 'ss06=1', 'ss07=1', 'ss08=1', 'ss09=1',
+    }
+  },
   font_size = 15.0,
+]]
   color_scheme = "UltraDark",
   colors = {
     selection_bg = "#99CD8C",
