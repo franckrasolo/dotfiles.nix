@@ -19,8 +19,8 @@ return {
   text_background_opacity = 1.0,
   window_background_opacity = 0.875,
   window_decorations = "RESIZE",
-  initial_cols = 186,
-  initial_rows = 57,
+  initial_cols = 188,
+  initial_rows = 43,
   adjust_window_size_when_changing_font_size = false,
   native_macos_fullscreen_mode = true,
   window_padding = {
