@@ -15,6 +15,8 @@ return {
   },
   font_size = 15.0,
 ]]
+  line_height = 1.075,
+
   color_scheme = "UltraDark",
   colors = {
     selection_bg = "#99CD8C",
