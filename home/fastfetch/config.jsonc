@@ -10,9 +10,9 @@
         "type": "kitty-direct",
         "source": "${XDG_CONFIG_HOME}/fastfetch/system-vendor-logo.jpeg",
         "width": 36,
-        "height": 16,
+        "height": 18,
         "padding": {
-            "top": 10
+            "top": 11
         }
     },
     "display": {
