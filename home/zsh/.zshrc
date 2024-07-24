@@ -40,7 +40,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(direnv hook zsh)"
 eval "$(luarocks path --bin)"
 eval "$(pdm --pep582 zsh)"
-eval "$(navi widget zsh)"
 eval "$(zoxide init zsh)"
 
 set +o errexit

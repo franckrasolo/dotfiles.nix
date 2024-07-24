@@ -29,7 +29,6 @@ let
     hyperfine
     just
     lsd
-    navi
     pkgs.ripgrep
     pkgs.ripgrep-all
     sd
