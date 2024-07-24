@@ -94,7 +94,6 @@
       }
       "teamviewer"
       "tuple"
-      "tweeten"
       "vlc"
       "wezterm"
       {
