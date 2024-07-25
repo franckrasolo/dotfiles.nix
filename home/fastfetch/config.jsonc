@@ -149,7 +149,6 @@
         {
             "type": "wifi",
             "key": "│  wi-fi     ├─",
-            "format": "{4}", // ssid
             "keyColor": "yellow"
         },
         {
