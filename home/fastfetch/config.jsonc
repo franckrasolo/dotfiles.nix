@@ -108,8 +108,8 @@
         {
             "type": "kernel",
             "key": "│  kernel    ├─",
-            "format": "{1} {2}",
-            "keyColor": "yellow"
+            "keyColor": "yellow",
+            "format": "{1} {2}"
         },
         {
             "type": "uptime",
@@ -129,8 +129,8 @@
         {
             "type": "localip",
             "key": "│ 󰩟 local     ├─",
-            "format": "{1} ({ifname})",
-            "keyColor": "yellow"
+            "keyColor": "yellow",
+            "format": "{1} ({ifname})"
         },
         {
             "type": "dns",
@@ -165,8 +165,8 @@
         {
             "type": "title",
             "key": "│  user      ├─",
-            "format": "{1}@{2}.local",
-            "keyColor": "blue"
+            "keyColor": "blue",
+            "format": "{1}@{2}.local"
         },
         {
             "type": "shell",
