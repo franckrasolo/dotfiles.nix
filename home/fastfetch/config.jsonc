@@ -12,7 +12,7 @@
         "width": 36,
         "height": 16,
         "padding": {
-            "top": 12
+            "top": 14
         }
     },
     "display": {
@@ -83,6 +83,11 @@
         {
             "type": "bluetooth",
             "key": "│  bluetooth ├─",
+            "keyColor": "green"
+        },
+        {
+            "type": "sound",
+            "key": "│  sound     ├─",
             "keyColor": "green"
         },
         {
@@ -217,11 +222,6 @@
         {
             "type": "wallpaper",
             "key": "╰─󰸉 wallpaper   ├─",
-            "keyColor": "blue"
-        },
-        {
-            "type": "sound",
-            "key": "│  sound     ├─",
             "keyColor": "blue"
         },
         {
