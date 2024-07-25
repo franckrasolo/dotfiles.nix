@@ -180,7 +180,7 @@
         },
         {
             "type": "locale",
-            "key": "│   locale   ├─",
+            "key": "│  locale   ├─",
             "keyColor": "blue"
         },
         {
@@ -221,7 +221,7 @@
         },
         {
             "type": "sound",
-            "key": "│   sound    ├─",
+            "key": "│  sound    ├─",
             "keyColor": "blue"
         },
         {
