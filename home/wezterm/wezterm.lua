@@ -3,7 +3,7 @@ local action = wezterm.action
 local mod = "ALT|SHIFT"
 
 return {
-  font = wezterm.font { family = "Cascadia Code", weight = "DemiBold", italic = false },
+  font = wezterm.font { family = "Cascadia Code", weight = "Medium", italic = false },
   font_size = 15.8,
 --[[
   font = wezterm.font { family = "JetBrainsMono Nerd Font", weight = "DemiBold", italic = false },
