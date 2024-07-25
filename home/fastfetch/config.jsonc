@@ -76,11 +76,6 @@
             "keyColor": "green"
         },
         {
-            "type": "gamepad",
-            "key": "│   gamepad   ├─",
-            "keyColor": "green"
-        },
-        {
             "type": "sound",
             "key": "│  sound     ├─",
             "keyColor": "green"
@@ -188,11 +183,6 @@
             "keyColor": "blue"
         },
         {
-            "type": "lm",
-            "key": "│ 󰧨 lm?   ├─",
-            "keyColor": "blue"
-        },
-        {
             "type": "de",
             "key": "│  desktop   ├─",
             "keyColor": "blue"
@@ -212,16 +202,6 @@
             "key": "│ \uDB83\uDE0C colors    ├─",
             "keyColor": "blue",
             "symbol": "circle"
-        },
-        {
-            "type": "icons",
-            "key": "│ 󰀻 icons   ├─",
-            "keyColor": "blue"
-        },
-        {
-            "type": "wallpaper",
-            "key": "╰─󰸉 wallpaper   ├─",
-            "keyColor": "blue"
         },
         {
             "type": "player",
