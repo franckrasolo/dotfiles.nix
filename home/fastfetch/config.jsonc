@@ -56,16 +56,6 @@
             "keyColor": "green"
         },
         {
-            "type": "display",
-            "key": "│ 󰍹 display   ├─",
-            "keyColor": "green"
-        },
-        {
-            "type": "brightness",
-            "key": "│ 󰃞 brightn.  ├─",
-            "keyColor": "green"
-        },
-        {
             "type": "battery",
             "key": "│  battery   ├─",
             "keyColor": "green"
@@ -76,18 +66,28 @@
             "keyColor": "green"
         },
         {
+            "type": "display",
+            "key": "│ 󰍹 display   ├─",
+            "keyColor": "green"
+        },
+        {
+            "type": "brightness",
+            "key": "│ 󰃞 brightn.  ├─",
+            "keyColor": "green"
+        },
+        {
             "type": "gamepad",
             "key": "│   gamepad   ├─",
             "keyColor": "green"
         },
         {
-            "type": "bluetooth",
-            "key": "│  bluetooth ├─",
+            "type": "sound",
+            "key": "│  sound     ├─",
             "keyColor": "green"
         },
         {
-            "type": "sound",
-            "key": "│  sound     ├─",
+            "type": "bluetooth",
+            "key": "│  bluetooth ├─",
             "keyColor": "green"
         },
         {
