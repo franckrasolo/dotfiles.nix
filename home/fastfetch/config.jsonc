@@ -143,7 +143,7 @@
         },
         {
             "type": "wifi",
-            "key": "│   wi-fi    ├─",
+            "key": "│  wi-fi     ├─",
             "format": "{4}", // ssid
             "keyColor": "yellow"
         },
@@ -180,7 +180,7 @@
         },
         {
             "type": "locale",
-            "key": "│  locale   ├─",
+            "key": "│  locale    ├─",
             "keyColor": "blue"
         },
         {
@@ -221,7 +221,7 @@
         },
         {
             "type": "sound",
-            "key": "│  sound    ├─",
+            "key": "│  sound     ├─",
             "keyColor": "blue"
         },
         {
