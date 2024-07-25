@@ -5,7 +5,7 @@ _targets:
 
 # applies the latest nix-darwin configuration
 @switch:
-  darwin-rebuild switch --flake . --fallback
+  darwin-rebuild switch --flake . --fallback --option eval-cache false
 
 # removes derivations from older nix-darwin generations
 @gc:
