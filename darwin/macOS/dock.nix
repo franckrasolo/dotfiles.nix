@@ -15,8 +15,7 @@
     # enable spring loading (hold a dragged file over an icon to drop/open it there)
     enable-spring-load-actions-on-all-items = true;
 
-    # do not automatically rearrange spaces based on the most recent one
-    mru-spaces   = false;
+    # do not show recent applications in the dock
     show-recents = false;
 
     # show indicator lights for open applications

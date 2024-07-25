@@ -7,6 +7,7 @@
     ./keyboard.nix
     ./trackpad.nix
     ./sound.nix
+    ./spaces.nix
     ./miscellaneous.nix
     ./postUserActivation.nix
   ];
