@@ -2,6 +2,41 @@ local wezterm = require "wezterm"
 local action = wezterm.action
 local mod = "ALT|SHIFT"
 
+-- adjust font & window size on startup
+wezterm.on('gui-startup', function(cmd)
+	local screen = wezterm.gui.screens().active
+	local _, _, mux_window = wezterm.mux.spawn_window(cmd or {})
+  local gui_window = mux_window:gui_window()
+
+  -- MacBook Pro 16" 2023
+	if screen.width <= 3456 then
+    local margin = 40
+    local status_bar_height = 26
+
+    gui_window:set_config_overrides { font_size = 18 }
+    gui_window:set_inner_size(
+        screen.width - 2 * margin,
+        screen.height - status_bar_height - 2 * margin
+    )
+    gui_window:set_position(
+        screen.x + margin,
+        screen.y + status_bar_height + 15 + margin
+    )
+	else
+    local margin = 10
+    local height_ratio = 0.475
+
+    gui_window:set_inner_size(
+        screen.width / 2 - 2 * margin,
+        (screen.height - margin) * height_ratio
+    )
+		gui_window:set_position(
+        screen.x + margin,
+        screen.y + (screen.height - margin) * (1 - height_ratio)
+    )
+	end
+end)
+
 return {
   font = wezterm.font { family = "Cascadia Code", weight = "DemiBold", italic = false },
   font_size = 15.7,
@@ -31,8 +66,6 @@ return {
   text_background_opacity = 1.0,
   window_background_opacity = 0.875,
   window_decorations = "RESIZE",
-  initial_cols = 188,
-  initial_rows = 43,
   adjust_window_size_when_changing_font_size = false,
   native_macos_fullscreen_mode = true,
   window_padding = {
