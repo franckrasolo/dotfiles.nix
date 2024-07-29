@@ -38,6 +38,7 @@ source "${ZSH_CONFIG_HOME}/prompt.zsh"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 #eval "$(brew shellenv)"
 eval "$(direnv hook zsh)"
+eval "$(luarocks path --bin)"
 eval "$(pdm --pep582 zsh)"
 eval "$(zoxide init zsh)"
 
