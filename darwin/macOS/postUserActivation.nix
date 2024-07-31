@@ -37,9 +37,6 @@
 #   duti $XDG_CONFIG_HOME/duti/   # must run *after* home-manager
     duti ~/dev/dotfiles.nix/home/duti/
 
-    # set Hammerspoon's initialisation script
-    defaults write org.hammerspoon.Hammerspoon MJConfigFile "~/dev/dotfiles.nix/darwin/hammerspoon/init.lua"
-
     # apply changes immediately
     killall Dock
     killall SystemUIServer

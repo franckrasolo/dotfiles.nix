@@ -3,6 +3,7 @@
 {
   imports = [
     ./homebrew
+    ./hammerspoon
     ./macOS
     ./skhd
     ./spacebar
