@@ -1,4 +1,4 @@
-{ config, user, pkgs, ... }:
+{ config, user, pkgs, lib, ... }:
 
 {
   homebrew.casks = [
@@ -23,7 +23,13 @@
     }
   ];
 
-  system.activationScripts.postUserActivation.text = ''
+  system.activationScripts.postUserActivation.text =
+    let
+      rocks = [
+        "moonscript"
+      ];
+      installRockCommand = rock: "/etc/profiles/per-user/${user.accountName}/bin/luarocks --local install ${rock}";
+    in ''
     # configure Hammerspoon preferences
     defaults write org.hammerspoon.Hammerspoon HSAppleScriptEnabledKey           -bool true
     defaults write org.hammerspoon.Hammerspoon HSAutoLoadExtensions              -bool true
@@ -39,6 +45,9 @@
 
     # add a login item for Hammerspoon
     osascript -e 'tell application "System Events" to make login item at end with properties { name: "Hammerspoon", path:"/Applications/Hammerspoon.app", hidden:false }'
+
+    # install LuaRocks dependencies
+    ${lib.concatStringsSep "\n" (map installRockCommand rocks)}
 
     # restart Hammerspoon to pick up changes
     killall Hammerspoon || true
