@@ -82,8 +82,8 @@ let
     rlwrap
 
     kotlin
-    luajit
-    luajitPackages.luarocks
+    lua54Packages.lua
+    lua54Packages.luarocks
 
     helix
     neovim

@@ -5,7 +5,7 @@ local os_arch = "arm"
 arch = "macosx-" .. os_arch
 config_files = {
    user = {
-      file = luarocks_conf_dir .. "/config-5.1.lua",
+      file = luarocks_conf_dir .. "/config-5.4.lua",
    }
 }
 home_tree = luarocks_data_dir
@@ -15,5 +15,6 @@ rocks_trees = {
       root = luarocks_data_dir
    }
 }
+processor = os_arch
 target_cpu = os_arch
-user_agent = "LuaRocks/3.9.1 " .. arch
+user_agent = "LuaRocks/3.11.1 " .. arch
