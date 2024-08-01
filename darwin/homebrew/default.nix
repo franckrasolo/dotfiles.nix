@@ -61,6 +61,10 @@
       }
       "dropbox"
       "expressvpn"
+      {
+        name = "hammerspoon";
+        args = { appdir = "/Applications"; };
+      }
       "jetbrains-toolbox"
       "keycastr"
       "kitty"

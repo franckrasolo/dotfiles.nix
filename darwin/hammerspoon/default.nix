@@ -1,13 +1,6 @@
 { config, user, pkgs, lib, ... }:
 
 {
-  homebrew.casks = [
-    {
-      name = "hammerspoon";
-      args = { appdir = "/Applications"; };
-    }
-  ];
-
   home-manager.users.${user.accountName} = pkgs.lib.mkMerge [
     ({ config, ... }: with config.lib.file; {
       xdg.configFile."hammerspoon".source = mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/darwin/hammerspoon";
