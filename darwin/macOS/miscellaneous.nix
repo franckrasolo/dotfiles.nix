@@ -8,6 +8,9 @@
     # enforce dark mode
     AppleInterfaceStyle = "Dark";
 
+    # do not automatically switch between light and dark mode
+    AppleInterfaceStyleSwitchesAutomatically = false;
+
     # enable subpixel font rendering on non-Apple LCDs
     # see https://github.com/kevinSuttle/macOS-Defaults/issues/17#issuecomment-266633501
     AppleFontSmoothing  = 1;
