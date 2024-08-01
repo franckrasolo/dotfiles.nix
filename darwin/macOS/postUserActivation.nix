@@ -10,10 +10,6 @@
     defaults write NSGlobalDomain AppleLanguages -array "en"
     defaults write NSGlobalDomain AppleLocale -string "en_GB@currency=GBP"
 
-    # enable subpixel anti-aliasing (font smoothing)
-    # https://dev.to/mrahmadawais/onedevminute-fixing-terrible-blurry-font-rendering-issue-in-macos-mojave--lck
-    defaults write NSGlobalDomain CGFontRenderingFontSmoothingDisabled -bool false
-
     # disable transparency in the menu bar
     defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
   '';
