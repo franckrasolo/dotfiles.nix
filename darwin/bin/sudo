@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+if [ "$*" != "--reset-timestamp" ]; then
+  /usr/bin/sudo "$@"
+fi

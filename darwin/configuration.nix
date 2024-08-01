@@ -83,6 +83,8 @@
   };
 
   system.activationScripts.preUserActivation.text = with pkgs.unstable; ''
+    export PATH=~/dev/dotfiles.nix/darwin/bin:$PATH
+
     launchctl setenv XDG_CACHE_HOME   ~/.xdg/cache
     launchctl setenv XDG_CONFIG_HOME  ~/.xdg/config
     launchctl setenv XDG_DATA_HOME    ~/.xdg/local/share
