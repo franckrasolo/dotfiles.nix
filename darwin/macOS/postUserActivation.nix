@@ -1,19 +1,6 @@
-{ pkgs, ... }:
-
 {
   system.activationScripts.postUserActivation.enable = true;
-  system.activationScripts.postUserActivation.text = with pkgs.unstable; ''
-    launchctl setenv XDG_CACHE_HOME   ~/.xdg/cache
-    launchctl setenv XDG_CONFIG_HOME  ~/.xdg/config
-    launchctl setenv XDG_DATA_HOME    ~/.xdg/local/share
-    launchctl setenv XDG_STATE_HOME   ~/.xdg/local/state
-    launchctl setenv GRADLE_USER_HOME ~/.xdg/local/share/gradle
-    launchctl setenv DOCKER_CONFIG    ~/.xdg/config/docker
-    launchctl setenv KUBECONFIG       ~/.xdg/config/kube
-
-    # 1Password integration requires the CLI binary at a specific location
-    sudo ${coreutils}/bin/cp ${_1password}/bin/op /usr/local/bin/op
-
+  system.activationScripts.postUserActivation.text = ''
     # close System Preferences to prevent any overriding of settings that are about to change
     osascript -e 'tell application "System Preferences" to quit'
 
@@ -32,10 +19,6 @@
 
     # disable transparency in the menu bar
     defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
-
-    # set default handlers for Apple UTIs, URL schemes, file extensions, and MIME types
-#   duti $XDG_CONFIG_HOME/duti/   # must run *after* home-manager
-    duti ~/dev/dotfiles.nix/home/duti/
 
     # apply changes immediately
     killall Dock
