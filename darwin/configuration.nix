@@ -99,6 +99,11 @@
     duti ~/dev/dotfiles.nix/home/duti/
   '';
 
+  system.activationScripts.postUserActivation.text = ''
+    # load Bunch automations – https://bunchapp.co/
+    open 'x-bunch://setPref?configDir=~/.xdg/config/bunches'
+  '';
+
   programs.nix-index.enable = true;
 
   # create /etc/<shell>rc that loads the nix-darwin environment
