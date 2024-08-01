@@ -16,10 +16,6 @@
     AppleFontSmoothing  = 1;
     AppleShowScrollBars = "WhenScrolling";
 
-    AppleMeasurementUnits = "Centimeters";
-    AppleMetricUnits      = 1;
-    AppleTemperatureUnit  = "Celsius";
-
     # disable automatic typography options
     NSAutomaticCapitalizationEnabled     = false;
     NSAutomaticDashSubstitutionEnabled   = false;
@@ -56,11 +52,6 @@
 
     "com.apple.springing.delay" = 0.0;
     "com.apple.swipescrolldirection" = true;
-  };
-
-  home-manager.users.${user.accountName}.targets.darwin.defaults.NSGlobalDomain = {
-    AppleLanguages = [ "en" ];
-    AppleLocale    = "en_GB@currency=GBP";
   };
 
   system.defaults.LaunchServices = {

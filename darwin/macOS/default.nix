@@ -5,6 +5,7 @@
     ./dock.nix
     ./finder.nix
     ./keyboard.nix
+    ./languages.nix
     ./menuExtraClock.nix
     ./trackpad.nix
     ./sound.nix
