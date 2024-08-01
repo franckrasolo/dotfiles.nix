@@ -58,6 +58,11 @@
     "com.apple.swipescrolldirection" = true;
   };
 
+  home-manager.users.${user.accountName}.targets.darwin.defaults.NSGlobalDomain = {
+    AppleLanguages = [ "en" ];
+    AppleLocale    = "en_GB@currency=GBP";
+  };
+
   system.defaults.LaunchServices = {
     # disable the "Are you sure you want to open this application?" dialog
     LSQuarantine = false;

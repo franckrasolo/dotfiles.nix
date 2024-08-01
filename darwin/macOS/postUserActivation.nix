@@ -6,8 +6,5 @@
 
     # load Bunch automations
     open 'x-bunch://setPref?configDir=~/.xdg/config/bunches'
-
-    defaults write NSGlobalDomain AppleLanguages -array "en"
-    defaults write NSGlobalDomain AppleLocale -string "en_GB@currency=GBP"
   '';
 }
