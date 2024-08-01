@@ -10,9 +10,6 @@
     defaults write NSGlobalDomain AppleLanguages -array "en"
     defaults write NSGlobalDomain AppleLocale -string "en_GB@currency=GBP"
 
-    # use a dark menu bar and Dock
-    osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to True'
-
     # enable subpixel anti-aliasing (font smoothing)
     # https://dev.to/mrahmadawais/onedevminute-fixing-terrible-blurry-font-rendering-issue-in-macos-mojave--lck
     defaults write NSGlobalDomain CGFontRenderingFontSmoothingDisabled -bool false

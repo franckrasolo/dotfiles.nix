@@ -5,7 +5,7 @@
     # automatically hide and show the menu bar
     _HIHideMenuBar = true;
 
-    # use a dark menu bar and Dock
+    # enforce dark mode
     AppleInterfaceStyle = "Dark";
 
     # enable subpixel font rendering on non-Apple LCDs
