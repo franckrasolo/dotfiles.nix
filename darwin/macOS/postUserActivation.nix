@@ -16,9 +16,5 @@
 
     # disable transparency in the menu bar
     defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
-
-    # apply changes immediately
-    killall Dock
-    killall SystemUIServer
   '';
 }
