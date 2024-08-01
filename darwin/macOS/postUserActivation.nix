@@ -9,8 +9,5 @@
 
     defaults write NSGlobalDomain AppleLanguages -array "en"
     defaults write NSGlobalDomain AppleLocale -string "en_GB@currency=GBP"
-
-    # disable transparency in the menu bar
-    defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
   '';
 }
