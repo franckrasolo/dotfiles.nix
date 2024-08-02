@@ -63,8 +63,8 @@
       /run/current-system/sw/bin/nix-build, \
       /run/current-system/sw/bin/nix-channel, \
       /run/current-system/sw/bin/nix-collect-garbage, \
-      /run/current-system/sw/bin/nix-env, \
-      /nix/store/*/activate, \
+      ${pkgs.coreutils}/bin/env nix-env -p /nix/var/nix/profiles/system --set /nix/store/*, \
+      ${pkgs.coreutils}/bin/env /nix/store/*/activate, \
       ${coreutils}/bin/cp ${_1password}/bin/op /usr/local/bin/op, \
       /etc/profiles/per-user/${user.accountName}/bin/openconnect, \
       /usr/bin/dscacheutil, \
@@ -83,7 +83,7 @@
   };
 
   system.activationScripts.preUserActivation.text = with pkgs.unstable; ''
-    export PATH=~/dev/dotfiles.nix/darwin/bin:$PATH
+    export PATH=${user.homeDirectory}/dev/dotfiles.nix/darwin/bin:$PATH
 
     launchctl setenv XDG_CACHE_HOME   ~/.xdg/cache
     launchctl setenv XDG_CONFIG_HOME  ~/.xdg/config
