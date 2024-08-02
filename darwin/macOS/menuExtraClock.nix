@@ -1,3 +1,5 @@
+{ user, ... }:
+
 {
   system.defaults.menuExtraClock = {
     IsAnalog   = false;
@@ -7,5 +9,9 @@
     ShowDayOfMonth = true;
     ShowDayOfWeek  = true;
     ShowSeconds    = true;
+  };
+
+  home-manager.users.${user.accountName}.targets.darwin.defaults."com.apple.menuextra.clock" = {
+    FlashDateSeparators = true;
   };
 }
