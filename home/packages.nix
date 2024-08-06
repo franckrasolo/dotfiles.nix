@@ -20,6 +20,7 @@ let
     delta
     dos2unix
     dua
+    dyff
     eza
     fd
     fzf
