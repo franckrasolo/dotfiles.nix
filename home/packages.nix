@@ -8,6 +8,7 @@ let
     gnupg
     openssl
     sops
+    teller
   ];
 
   coreTools = [
