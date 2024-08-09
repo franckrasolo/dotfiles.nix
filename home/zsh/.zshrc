@@ -40,6 +40,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(direnv hook zsh)"
 eval "$(pdm --pep582 zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+source <(fx --comp zsh)
 
 set +o errexit
 $profiling && zprof || true
