@@ -33,10 +33,6 @@
   home = {
     enableNixpkgsReleaseCheck = false;
 
-    file = {
-      ".zshenv".source = ./zsh/zshenv;
-    };
-
     sessionVariables = {
       PAGER  = "less -FR";
       EDITOR = "nvim";
