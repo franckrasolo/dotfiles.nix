@@ -6,6 +6,7 @@
     ./bat
     (import ./direnv { inherit user; })
     ./fzf
+    (import ./nvim { inherit config pkgs user; })
     (import ./zsh { inherit config pkgs user; })
   ];
 
@@ -23,7 +24,6 @@
       "git".source         = mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/home/git";
       "lazygit".source     = mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/home/lazygit";
       "luarocks".source    = ./luarocks;
-      "nvim".source        = mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/home/nvim";
       "ripgrep".source     = ./ripgrep;
       "wezterm".source     = mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/home/wezterm";
       "zathura".source     = mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/home/zathura";
@@ -32,14 +32,6 @@
 
   home = {
     enableNixpkgsReleaseCheck = false;
-
-    sessionVariables = {
-      PAGER  = "less -FR";
-      EDITOR = "nvim";
-      VISUAL = "nvr -cc split --remote-wait +'set bufhidden=wipe'";
-      TERM   = "xterm-256color";
-    };
-
     extraOutputsToInstall = [ "man" ];
     stateVersion = "24.05";
   };

@@ -88,8 +88,6 @@ let
     lua54Packages.luarocks
 
     helix
-    neovim
-    neovim-remote
     tree-sitter
   ];
 
