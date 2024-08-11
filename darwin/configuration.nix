@@ -5,6 +5,7 @@
     ./homebrew
     ./hammerspoon
     ./macOS
+    ./jankyborders
     ./skhd
     ./spacebar
   ];
