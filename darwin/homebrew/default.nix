@@ -84,7 +84,10 @@
         };
       }
       "obsidian"
-      "orbstack"
+      {
+        name = "orbstack";
+        args = { appdir = "/Applications"; };
+      }
       "pop"
       "raindropio"
       {
