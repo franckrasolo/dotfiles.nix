@@ -160,25 +160,21 @@ run = 'layout floating'
 
 [[on-window-detected]]
 if.app-id = 'com.apple.iCal'
-if.during-aerospace-startup = true
 check-further-callbacks = false
 run = 'move-node-to-workspace C'
 
 [[on-window-detected]]
 if.app-id = 'dev.kdrag0n.MacVirt'
-if.during-aerospace-startup = true
 check-further-callbacks = false
 run = 'move-node-to-workspace C'
 
 [[on-window-detected]]
 if.app-id = 'org.localsend.localsendApp'
-if.during-aerospace-startup = true
 check-further-callbacks = false
 run = 'move-node-to-workspace C'
 
 [[on-window-detected]]
 if.app-id = 'com.spotify.client'
-if.during-aerospace-startup = true
 check-further-callbacks = false
 run = 'move-node-to-workspace S'
 
