@@ -2,8 +2,8 @@
 
 {
   system.defaults.NSGlobalDomain = {
-    # automatically hide and show the menu bar
-    _HIHideMenuBar = true;
+    # do not automatically hide and show the menu bar
+    _HIHideMenuBar = false;
 
     # enforce dark mode
     AppleInterfaceStyle = "Dark";
