@@ -134,35 +134,23 @@ run = 'move-node-to-workspace 2'
 [[on-window-detected]]
 if.app-id = 'com.duckduckgo.macos.browser'
 check-further-callbacks = false
-run = 'move-node-to-workspace 4'
+run = 'move-node-to-workspace 3'
 
 [[on-window-detected]]
 if.app-id = 'org.mozilla.firefox'
 check-further-callbacks = false
-run = 'move-node-to-workspace 4'
+run = 'move-node-to-workspace 3'
 
 [[on-window-detected]]
 if.app-id = 'com.operasoftware.Opera'
 check-further-callbacks = false
-run = 'move-node-to-workspace 4'
-
-[[on-window-detected]]
-if.app-id = 'com.jetbrains.intellij'
-if.during-aerospace-startup = true
-check-further-callbacks = true
-run = 'move-node-to-workspace 5'
+run = 'move-node-to-workspace 3'
 
 [[on-window-detected]]
 if.app-id = 'com.jetbrains.intellij'
 if.during-aerospace-startup = false
 check-further-callbacks = true
 run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.jetbrains.rustrover'
-if.during-aerospace-startup = true
-check-further-callbacks = true
-run = 'move-node-to-workspace 6'
 
 [[on-window-detected]]
 if.app-id = 'com.jetbrains.rustrover'
