@@ -16,6 +16,7 @@
     taps = [
       "homebrew/bundle"
       "martido/homebrew-graph"
+      "localsend/localsend"
       "modularml/packages"
       "nikitabobko/tap"
     ];
@@ -70,6 +71,7 @@
       "jetbrains-toolbox"
       "keycastr"
       "kitty"
+      "localsend"
       {
         name = "logitech-options";
         args = { require_sha = false; }; # missing sha256 checksum

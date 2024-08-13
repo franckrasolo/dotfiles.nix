@@ -58,7 +58,6 @@ let
     pueue
 
     lf
-    localsend
     socat
     vifm
     watchman
