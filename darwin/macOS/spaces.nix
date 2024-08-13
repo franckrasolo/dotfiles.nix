@@ -8,4 +8,7 @@
 
   # one space spans across all physical displays
   system.defaults.spaces.spans-displays = true;
+
+  # reduce motion when switching Spaces or opening apps
+  system.defaults.universalaccess.reduceMotion = true;
 }

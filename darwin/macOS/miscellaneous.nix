@@ -66,12 +66,7 @@
 
   system.defaults.SoftwareUpdate.AutomaticallyInstallMacOSUpdates = false;
 
-  system.defaults.universalaccess = {
-    # disable animation when switching screens or opening apps
-    reduceMotion = true;
-
-    # disable transparency in the menu bar and elsewhere
-    # see https://github.com/mathiasbynens/dotfiles/issues/820#issuecomment-498324762
-    reduceTransparency = true;
-  };
+  # disable transparency in the menu bar and elsewhere
+  # see https://github.com/mathiasbynens/dotfiles/issues/820#issuecomment-498324762
+  system.defaults.universalaccess.reduceTransparency = true;
 }
