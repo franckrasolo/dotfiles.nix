@@ -115,6 +115,7 @@ let
     jnv
     jq
     yq-go
+    tabiew
   ];
 
   graphicalTools = [
