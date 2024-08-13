@@ -5,6 +5,7 @@
     ./homebrew
     ./hammerspoon
     ./macOS
+    ./aerospace
     ./jankyborders
     ./skhd
     ./spacebar

@@ -17,6 +17,7 @@
       "homebrew/bundle"
       "martido/homebrew-graph"
       "modularml/packages"
+      "nikitabobko/tap"
     ];
 
     brews = [
@@ -30,6 +31,7 @@
         name = "1password";
         args = { appdir = "/Applications"; };
       }
+      "aerospace"
       "alfred"
       "alacritty"
       {

@@ -1,0 +1,199 @@
+start-at-login = true
+
+after-login-command = []
+
+after-startup-command = [
+    'workspace 0', 'layout v_accordion',
+    'workspace 1', 'layout h_tiles',
+    'workspace 2', 'layout h_tiles',
+    'workspace 4', 'layout v_accordion',
+    'workspace 5', 'layout v_tiles',
+    'workspace 6', 'layout v_tiles',
+    'workspace 7', 'layout v_tiles',
+    'workspace 8', 'layout v_tiles',
+    'workspace 9', 'layout v_tiles',
+    'workspace C', 'layout h_tiles',
+    'workspace S', 'layout floating',
+    'workspace Z', 'layout floating'
+]
+
+enable-normalization-flatten-containers = true
+enable-normalization-opposite-orientation-for-nested-containers = true
+
+default-root-container-layout = 'tiles'
+accordion-padding = 20
+
+default-root-container-orientation = 'horizontal'
+
+key-mapping.preset = 'qwerty'
+
+on-focus-changed = 'move-mouse window-lazy-center'
+on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+
+[gaps]
+outer.left   = [{monitor."LG TV SSCR2" = 12 }, 7]
+outer.bottom = [{monitor."LG TV SSCR2" = 10 }, 7]
+outer.top    = [{monitor."LG TV SSCR2" = 7 }, 10]
+outer.right  = [{monitor."LG TV SSCR2" = 12 }, 7]
+
+inner.horizontal = 10
+inner.vertical   = [{monitor."LG TV SSCR2" = 10 }, 15]
+
+[mode.main.binding]
+alt-enter = 'exec-and-forget open -n -a /opt/homebrew/bin/wezterm'
+alt-slash = 'layout tiles horizontal vertical'
+alt-comma = 'layout accordion horizontal vertical'
+alt-shift-space = 'layout floating tiling' # i3: toggle between floating and tiling layout
+
+alt-h = 'focus left'
+alt-j = 'focus down'
+alt-k = 'focus up'
+alt-l = 'focus right'
+
+alt-shift-h = 'move left'
+alt-shift-j = 'move down'
+alt-shift-k = 'move up'
+alt-shift-l = 'move right'
+
+alt-shift-minus = 'resize smart -50'
+alt-shift-equal = 'resize smart +50'
+
+alt-f = 'fullscreen'
+alt-shift-f = 'macos-native-fullscreen'
+
+alt-0 = 'workspace 0'
+alt-1 = 'workspace 1'
+alt-2 = 'workspace 2'
+alt-4 = 'workspace 4'
+alt-5 = 'workspace 5'
+alt-6 = 'workspace 6'
+alt-7 = 'workspace 7'
+alt-8 = 'workspace 8'
+alt-9 = 'workspace 9'
+alt-c = 'workspace C'
+alt-s = 'workspace S'
+alt-z = 'workspace Z'
+
+alt-shift-0 = 'move-node-to-workspace 0'
+alt-shift-1 = 'move-node-to-workspace 1'
+alt-shift-2 = 'move-node-to-workspace 2'
+alt-shift-4 = 'move-node-to-workspace 4'
+alt-shift-5 = 'move-node-to-workspace 5'
+alt-shift-6 = 'move-node-to-workspace 6'
+alt-shift-7 = 'move-node-to-workspace 7'
+alt-shift-8 = 'move-node-to-workspace 8'
+alt-shift-9 = 'move-node-to-workspace 9'
+alt-shift-c = 'move-node-to-workspace C'
+alt-shift-s = 'move-node-to-workspace S'
+alt-shift-z = 'move-node-to-workspace Z'
+
+alt-tab = 'workspace-back-and-forth'
+alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
+
+alt-shift-semicolon = 'mode service'
+
+[mode.service.binding]
+enter = ['reload-config', 'mode main']
+esc = 'mode main'
+r = ['layout tiling', 'move up', 'mode main']
+
+alt-shift-h = ['join-with left',  'mode main']
+alt-shift-j = ['join-with down',  'mode main']
+alt-shift-k = ['join-with up',    'mode main']
+alt-shift-l = ['join-with right', 'mode main']
+
+[[on-window-detected]]
+if.app-id = 'io.raindrop.macapp'
+check-further-callbacks = true
+run = 'move-node-to-workspace 0'
+
+[[on-window-detected]]
+if.app-id = 'com.github.wez.wezterm'
+if.during-aerospace-startup = false
+check-further-callbacks = true
+run = 'layout tiling'
+
+[[on-window-detected]]
+if.app-id = 'com.jetbrains.pycharm'
+if.during-aerospace-startup = false
+check-further-callbacks = true
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.microsoft.VSCode'
+check-further-callbacks = true
+run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+if.app-id = 'li.zihua.medis2'
+check-further-callbacks = true
+run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+if.app-id = 'com.duckduckgo.macos.browser'
+check-further-callbacks = false
+run = 'move-node-to-workspace 4'
+
+[[on-window-detected]]
+if.app-id = 'org.mozilla.firefox'
+check-further-callbacks = false
+run = 'move-node-to-workspace 4'
+
+[[on-window-detected]]
+if.app-id = 'com.operasoftware.Opera'
+check-further-callbacks = false
+run = 'move-node-to-workspace 4'
+
+[[on-window-detected]]
+if.app-id = 'com.jetbrains.intellij'
+if.during-aerospace-startup = true
+check-further-callbacks = true
+run = 'move-node-to-workspace 5'
+
+[[on-window-detected]]
+if.app-id = 'com.jetbrains.intellij'
+if.during-aerospace-startup = false
+check-further-callbacks = true
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.jetbrains.rustrover'
+if.during-aerospace-startup = true
+check-further-callbacks = true
+run = 'move-node-to-workspace 6'
+
+[[on-window-detected]]
+if.app-id = 'com.jetbrains.rustrover'
+if.during-aerospace-startup = false
+check-further-callbacks = true
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.iCal'
+if.during-aerospace-startup = true
+check-further-callbacks = false
+run = 'move-node-to-workspace C'
+
+[[on-window-detected]]
+if.app-id = 'dev.kdrag0n.MacVirt'
+if.during-aerospace-startup = true
+check-further-callbacks = false
+run = 'move-node-to-workspace C'
+
+[[on-window-detected]]
+if.app-id = 'org.localsend.localsendApp'
+if.during-aerospace-startup = true
+check-further-callbacks = false
+run = 'move-node-to-workspace C'
+
+[[on-window-detected]]
+if.app-id = 'com.spotify.client'
+if.during-aerospace-startup = true
+check-further-callbacks = false
+run = 'move-node-to-workspace S'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.Safari'
+if.during-aerospace-startup = true
+check-further-callbacks = true
+run = 'move-node-to-workspace Z'
