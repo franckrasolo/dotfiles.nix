@@ -8,7 +8,6 @@
     ./aerospace
     ./jankyborders
     ./skhd
-    ./spacebar
   ];
 
   nix.extraOptions = ''
