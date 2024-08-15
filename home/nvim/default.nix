@@ -12,6 +12,7 @@ with pkgs.unstable; {
 
     extraPackages = [
       imagemagick
+      nodejs_20
     ];
   };
 
