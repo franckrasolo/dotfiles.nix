@@ -76,6 +76,9 @@ alt-shift-c = 'workspace C'
 alt-shift-s = 'workspace S'
 alt-shift-z = 'workspace Z'
 
+alt-leftSquareBracket  = 'workspace prev'
+alt-rightSquareBracket = 'workspace next'
+
 alt-cmd-0 = 'move-node-to-workspace 0'
 alt-cmd-1 = 'move-node-to-workspace 1'
 alt-cmd-2 = 'move-node-to-workspace 2'
