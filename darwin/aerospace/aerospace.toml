@@ -92,6 +92,9 @@ alt-cmd-9 = 'move-node-to-workspace 9'
 alt-cmd-c = 'move-node-to-workspace C'
 alt-cmd-s = 'move-node-to-workspace S'
 
+alt-cmd-leftSquareBracket  = 'move-node-to-workspace prev'
+alt-cmd-rightSquareBracket = 'move-node-to-workspace next'
+
 alt-tab = 'workspace-back-and-forth'
 alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 
