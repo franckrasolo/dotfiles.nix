@@ -59,7 +59,7 @@ alt-shift-backspace = 'balance-sizes'
 alt-shift-minus = 'resize smart -50'
 alt-shift-equal = 'resize smart +50'
 
-alt-f = 'fullscreen'
+alt-f = 'exec-and-forget ${XDG_CONFIG_HOME}/aerospace/toggle-floating-centered.sh'
 alt-shift-f = 'macos-native-fullscreen'
 
 alt-shift-0 = 'workspace 0'
@@ -98,11 +98,31 @@ alt-cmd-rightSquareBracket = 'move-node-to-workspace next'
 alt-tab = 'workspace-back-and-forth'
 alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 
+alt-shift-period = 'mode floating'
 alt-shift-semicolon = 'mode service'
 
-[mode.service.binding]
-enter = ['reload-config', 'mode main']
+[mode.floating.binding]
+alt-f = [
+    'exec-and-forget ${XDG_CONFIG_HOME}/aerospace/toggle-floating-centered.sh',
+    'mode main'
+]
+alt-shift-semicolon = 'mode service'
 esc = 'mode main'
+
+h = 'exec-and-forget ${XDG_CONFIG_HOME}/aerospace/move-floating.sh -32 0'
+j = 'exec-and-forget ${XDG_CONFIG_HOME}/aerospace/move-floating.sh 0 32'
+k = 'exec-and-forget ${XDG_CONFIG_HOME}/aerospace/move-floating.sh 0 -32'
+l = 'exec-and-forget ${XDG_CONFIG_HOME}/aerospace/move-floating.sh 32 0'
+
+shift-h = 'exec-and-forget ${XDG_CONFIG_HOME}/aerospace/resize-floating-centered.sh -128 0'
+shift-j = 'exec-and-forget ${XDG_CONFIG_HOME}/aerospace/resize-floating-centered.sh 0 -128'
+shift-k = 'exec-and-forget ${XDG_CONFIG_HOME}/aerospace/resize-floating-centered.sh 0 128'
+shift-l = 'exec-and-forget ${XDG_CONFIG_HOME}/aerospace/resize-floating-centered.sh 128 0'
+
+[mode.service.binding]
+enter = 'reload-config'
+esc = 'mode main'
+alt-shift-period = 'mode floating'
 r = ['layout tiling', 'move up', 'mode main']
 
 alt-shift-h = ['join-with left',  'mode main']
