@@ -41,6 +41,8 @@ local mod = "ALT|SHIFT"
 local config = wezterm.config_builder()
 config:set_strict_mode(true)
 
+config.automatically_reload_config = true
+
 config.font = wezterm.font { family = "Cascadia Code", weight = "DemiBold", italic = false }
 config.font_size = 15.7
 
