@@ -1,6 +1,4 @@
 local wezterm = require "wezterm"
-local action = wezterm.action
-local mod = "ALT|SHIFT"
 
 -- adjust font & window size on startup
 wezterm.on('gui-startup', function(cmd)
@@ -37,69 +35,77 @@ wezterm.on('gui-startup', function(cmd)
 	end
 end)
 
-return {
-  font = wezterm.font { family = "Cascadia Code", weight = "DemiBold", italic = false },
-  font_size = 15.7,
+local action = wezterm.action
+local mod = "ALT|SHIFT"
+
+local config = wezterm.config_builder()
+config:set_strict_mode(true)
+
+config.font = wezterm.font { family = "Cascadia Code", weight = "DemiBold", italic = false }
+config.font_size = 15.7
+
 --[[
-  font = wezterm.font { family = "JetBrainsMono Nerd Font", weight = "DemiBold", italic = false },
-  font = wezterm.font { family = "Monaspace Argon", weight = "DemiBold", italic = false, stretch = "UltraCondensed",
+config.font = wezterm.font { family = "JetBrainsMono Nerd Font", weight = "DemiBold", italic = false },
+config.font = wezterm.font { family = "Monaspace Argon", weight = "DemiBold", italic = false, stretch = "UltraCondensed",
     harfbuzz_features = {
       'calt=1', 'clig=1', 'liga=1',
       'ss01=1', 'ss02=1', 'ss03=1', 'ss04=1', 'ss05=1', 'ss06=1', 'ss07=1', 'ss08=1', 'ss09=1',
     }
   },
-  font_size = 15.0,
+config.font_size = 15.0,
 ]]
-  line_height = 1.075,
 
-  color_scheme = "UltraDark",
-  colors = {
-    selection_bg = "#99CD8C",
-    selection_fg = "black",
+config.line_height = 1.075
 
-    copy_mode_inactive_highlight_bg = { Color = "#E8BF6A" },
-    copy_mode_inactive_highlight_fg = { AnsiColor = "Black" },
-  },
-  freetype_load_target = "Light",
-  freetype_render_target = "HorizontalLcd",
+config.color_scheme = "UltraDark"
+config.colors = {
+  selection_bg = "#99CD8C",
+  selection_fg = "black",
 
-  text_background_opacity = 1.0,
-  window_background_opacity = 0.875,
-  window_decorations = "RESIZE",
-  adjust_window_size_when_changing_font_size = false,
-  native_macos_fullscreen_mode = true,
-  window_padding = {
-    left = "0px",
-    right = "0px",
-    top = "0px",
-    bottom = "0px",
-  },
-
-  use_fancy_tab_bar = true,
-  hide_tab_bar_if_only_one_tab = true,
-  show_tabs_in_tab_bar = true,
-  show_new_tab_button_in_tab_bar = true,
-
-  enable_scroll_bar = false,
-  scrollback_lines = 100000,
-
-  send_composed_key_when_left_alt_is_pressed = true,
-
-  keys = {
-    {
-      mods = "CMD|SHIFT",
-      key = "K",
-      action = action.Multiple {
-        action.ClearScrollback "ScrollbackAndViewport",
-        action.SendKey { mods = "CTRL", key = "L" },
-      },
-    },
-    { mods = mod, key = "|", action = action.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
-    { mods = mod, key = "_", action = action.SplitVertical({ domain = "CurrentPaneDomain" }) },
-    { mods = mod, key = "LeftArrow", action = action.ActivatePaneDirection "Left" },
-    { mods = mod, key = "RightArrow", action = action.ActivatePaneDirection "Right" },
-    { mods = mod, key = "UpArrow", action = action.ActivatePaneDirection "Up" },
-    { mods = mod, key = "DownArrow", action = action.ActivatePaneDirection "Down" },
-    { mods = mod, key = "Enter", action = action.TogglePaneZoomState },
-  }
+  copy_mode_inactive_highlight_bg = { Color = "#E8BF6A" },
+  copy_mode_inactive_highlight_fg = { AnsiColor = "Black" },
 }
+
+config.freetype_load_target = "Light"
+config.freetype_render_target = "HorizontalLcd"
+
+config.text_background_opacity = 1.0
+config.window_background_opacity = 0.875
+config.window_decorations = "RESIZE"
+config.adjust_window_size_when_changing_font_size = false
+config.native_macos_fullscreen_mode = true
+config.window_padding = {
+  left = "0px",
+  right = "0px",
+  top = "0px",
+  bottom = "0px",
+}
+
+config.use_fancy_tab_bar = true
+config.hide_tab_bar_if_only_one_tab = true
+config.show_tabs_in_tab_bar = true
+config.show_new_tab_button_in_tab_bar = true
+
+config.enable_scroll_bar = false
+config.scrollback_lines = 100000
+
+config.send_composed_key_when_left_alt_is_pressed = true
+config.keys = {
+  {
+    mods = "CMD|SHIFT",
+    key = "K",
+    action = action.Multiple {
+      action.ClearScrollback "ScrollbackAndViewport",
+      action.SendKey { mods = "CTRL", key = "L" },
+    },
+  },
+  { mods = mod, key = "|", action = action.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
+  { mods = mod, key = "_", action = action.SplitVertical({ domain = "CurrentPaneDomain" }) },
+  { mods = mod, key = "LeftArrow", action = action.ActivatePaneDirection "Left" },
+  { mods = mod, key = "RightArrow", action = action.ActivatePaneDirection "Right" },
+  { mods = mod, key = "UpArrow", action = action.ActivatePaneDirection "Up" },
+  { mods = mod, key = "DownArrow", action = action.ActivatePaneDirection "Down" },
+  { mods = mod, key = "Enter", action = action.TogglePaneZoomState },
+}
+
+return config
