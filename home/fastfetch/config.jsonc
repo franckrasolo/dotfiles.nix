@@ -16,7 +16,9 @@
         }
     },
     "display": {
-        "keyWidth": 18,
+        "key": {
+            "width": 18
+        },
         "separator": ""
     },
     "modules": [
