@@ -103,7 +103,7 @@ config.keys = {
     },
   },
   { mods = mod, key = "|", action = action.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
-  { mods = mod, key = "_", action = action.SplitVertical({ domain = "CurrentPaneDomain" }) },
+  { mods = mod, key = "\"", action = action.SplitVertical({ domain = "CurrentPaneDomain" }) },
   { mods = mod, key = "LeftArrow", action = action.ActivatePaneDirection "Left" },
   { mods = mod, key = "RightArrow", action = action.ActivatePaneDirection "Right" },
   { mods = mod, key = "UpArrow", action = action.ActivatePaneDirection "Up" },
