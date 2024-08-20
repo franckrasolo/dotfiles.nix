@@ -1,0 +1,16 @@
+--background="#00000000"
+--pad-horiz=0
+--pad-vert=0
+--theme="DarkNeon"
+
+--shadow-blur-radius=0
+--shadow-color="#34BF91FF"
+--shadow-offset-x=0
+--shadow-offset-y=0
+
+--line-pad=3
+--tab-width=2
+
+--no-line-number
+#--no-round-corner
+#--no-window-controls

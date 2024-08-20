@@ -7,6 +7,7 @@
     (import ./direnv { inherit user; })
     ./fzf
     (import ./nvim { inherit config pkgs user; })
+    ./silicon
     (import ./zsh { inherit config pkgs user; })
   ];
 
