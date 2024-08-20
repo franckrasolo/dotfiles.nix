@@ -8,6 +8,7 @@ return {
   opts = {
     disable_defaults = true,
     debug = false,
+    no_line_number = true,
 
     language = function()
       return vim.bo.filetype

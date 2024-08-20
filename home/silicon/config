@@ -11,6 +11,5 @@
 --line-pad=3
 --tab-width=2
 
---no-line-number
 #--no-round-corner
 #--no-window-controls
