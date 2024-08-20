@@ -29,6 +29,7 @@ return {
           vim.fn.mkdir(screenshots_dir, "p")
         end
         require("nvim-silicon").file()
+        vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<esc>", true, false, true), "n", false)
       end,
     }
   },
