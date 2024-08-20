@@ -35,9 +35,6 @@ wezterm.on('gui-startup', function(cmd)
 	end
 end)
 
-local action = wezterm.action
-local mod = "ALT|SHIFT"
-
 local config = wezterm.config_builder()
 config:set_strict_mode(true)
 
@@ -93,6 +90,10 @@ config.enable_scroll_bar = false
 config.scrollback_lines = 100000
 
 config.send_composed_key_when_left_alt_is_pressed = true
+
+local action = wezterm.action
+local mod = "ALT|SHIFT"
+
 config.keys = {
   {
     mods = "CMD|SHIFT",
