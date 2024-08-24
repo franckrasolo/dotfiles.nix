@@ -3,3 +3,5 @@
 -- Add any additional options here
 
 vim.opt.winbar = "%=%m %f" -- shows filename in top right corner
+
+vim.g.autoformat = false   -- do not automatically format on save
