@@ -6,3 +6,15 @@ vim.api.nvim_create_autocmd("BufWritePost", {
   pattern = { "aerospace.toml" },
   command = "!aerospace reload-config",
 })
+
+vim.api.nvim_create_autocmd("SessionLoadPost", {
+  pattern = "*",
+  callback = function()
+    local overseer = require("overseer")
+    overseer.run_template({ name = "run tests" }, function(task)
+      if task then
+        task:add_component { "restart_on_save", paths = { vim.fn.getcwd() }, delay = 100 }
+      end
+    end)
+  end
+})
