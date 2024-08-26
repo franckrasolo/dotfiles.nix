@@ -25,7 +25,7 @@ return {
     task_list = {
       default_detail = 2,
       direction = "right",
-      min_width = { 20, 0.25 },
+      min_width = { 25, 0.225 },
       bindings = {
         ["="] = "IncreaseDetail",
         ["-"] = "DecreaseDetail",
