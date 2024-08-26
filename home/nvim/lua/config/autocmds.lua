@@ -7,6 +7,17 @@ vim.api.nvim_create_autocmd("BufWritePost", {
   command = "!aerospace reload-config",
 })
 
+vim.api.nvim_create_autocmd("BufWinEnter", {
+  pattern = "term://*:just *;#toggleterm#*",
+  callback = function()
+    local close_just_output_with = function(key)
+      vim.keymap.set("n", key, function() vim.cmd.wincmd("q") end, { buffer = true, noremap = true })
+    end
+    close_just_output_with("<esc>")
+    close_just_output_with("q")
+  end
+})
+
 vim.api.nvim_create_autocmd("SessionLoadPost", {
   pattern = "*",
   callback = function()
