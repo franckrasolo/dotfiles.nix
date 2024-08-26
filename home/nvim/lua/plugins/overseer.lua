@@ -20,6 +20,7 @@ return {
     },
     templates = {
       "builtin",
+      "user.run_tests",
     },
     task_list = {
       default_detail = 2,
