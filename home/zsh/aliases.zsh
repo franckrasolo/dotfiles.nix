@@ -50,6 +50,7 @@ alias tcp:ports="lsof -Pwni tcp | grep java"
 
 alias luajit="rlwrap luajit"
 alias tmux="TERM=xterm-256color tmux -f $XDG_CONFIG_HOME/tmux/tmux.conf"
+alias z="zellij --layout welcome"
 
 alias ht="hn top"
 alias hv="hn view --browser"

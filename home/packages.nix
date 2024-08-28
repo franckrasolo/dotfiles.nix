@@ -44,7 +44,6 @@ let
     watch
     watchexec
     xz
-    zellij
     zip
     zoxide
   ];

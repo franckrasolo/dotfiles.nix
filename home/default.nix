@@ -8,6 +8,7 @@
     ./fzf
     (import ./nvim { inherit config pkgs user; })
     ./silicon
+    ./zellij
     (import ./zsh { inherit config pkgs user; })
   ];
 

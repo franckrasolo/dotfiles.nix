@@ -67,6 +67,7 @@ export TASKRC=$XDG_CONFIG_HOME/task/taskrc
 export TIMEWARRIORDB=$XDG_DATA_HOME/timewarrior
 export ZDOTDIR=$XDG_CONFIG_HOME/zsh
 export _ZO_DATA_DIR=$XDG_DATA_HOME
+export ZELLIJ_CONFIG_DIR=$XDG_CONFIG_HOME/zellij
 
 export EDITOR="nvim"
 export LESS="-RX" # with colour support
