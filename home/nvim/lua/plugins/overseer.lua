@@ -33,7 +33,7 @@ return {
         ["<C-->"] = "DecreaseAllDetail",
         ["<C-u>"] = "ScrollOutputUp",
         ["<C-d>"] = "ScrollOutputDown",
-        ["<ESC>"] = "Close",
+        ["<esc>"] = "Close",
         ["q"] = "Close",
       },
     },
