@@ -41,22 +41,6 @@ config:set_strict_mode(true)
 config.automatically_reload_config = true
 config.default_cursor_style = "BlinkingBlock"
 
-config.font = wezterm.font { family = "Cascadia Code", weight = "DemiBold", italic = false }
-config.font_size = 15.7
-
---[[
-config.font = wezterm.font { family = "JetBrainsMono Nerd Font", weight = "DemiBold", italic = false },
-config.font = wezterm.font { family = "Monaspace Argon", weight = "DemiBold", italic = false, stretch = "UltraCondensed",
-    harfbuzz_features = {
-      'calt=1', 'clig=1', 'liga=1',
-      'ss01=1', 'ss02=1', 'ss03=1', 'ss04=1', 'ss05=1', 'ss06=1', 'ss07=1', 'ss08=1', 'ss09=1',
-    }
-  },
-config.font_size = 15.0,
-]]
-
-config.line_height = 1.075
-
 config.color_scheme = "UltraDark"
 config.colors = {
   selection_bg = "#99CD8C",
@@ -65,9 +49,6 @@ config.colors = {
   copy_mode_inactive_highlight_bg = { Color = "#E8BF6A" },
   copy_mode_inactive_highlight_fg = { AnsiColor = "Black" },
 }
-
-config.freetype_load_target = "Light"
-config.freetype_render_target = "HorizontalLcd"
 
 config.text_background_opacity = 1.0
 config.window_background_opacity = 0.875
@@ -90,5 +71,6 @@ config.enable_scroll_bar = false
 config.scrollback_lines = 100000
 
 require("key_bindings")(config)
+require("typography")(config)
 
 return config
