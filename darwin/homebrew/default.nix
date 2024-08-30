@@ -77,7 +77,7 @@
         args = { require_sha = false; }; # missing sha256 checksum
       }
       {
-        name = "logi-options-plus";
+        name = "logi-options+";
         args = { require_sha = false; }; # missing sha256 checksum
       }
       {
