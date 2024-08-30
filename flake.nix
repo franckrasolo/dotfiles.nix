@@ -14,9 +14,13 @@
       url = "github:nix-community/home-manager/release-24.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    # provides the latest build of Zellij until a release truly
+    # fixes https://github.com/zellij-org/zellij/issues/3208
+    zellij.url = "github:a-kenji/zellij-nix";
   };
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, nix-darwin, home-manager }:
+  outputs = { self, nixpkgs, nixpkgs-unstable, nix-darwin, home-manager, zellij }:
     let
       platforms = [ "x86_64-darwin" "aarch64-darwin" ];
 
@@ -30,6 +34,7 @@
             "libxls-1.6.2"
           ];
         };
+        zellij-latest = zellij.packages."${prev.system}".zellij;
       };
       # makes "pkgs.unstable" available in configuration.nix
       overlayModule = ({ config, pkgs, ... }: { nixpkgs.overlays = [ overlay ]; });
