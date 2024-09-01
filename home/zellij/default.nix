@@ -6,4 +6,6 @@
     enableZshIntegration = true;
     package = pkgs.zellij-latest;
   };
+
+  xdg.configFile."zellij".source = ./zellij;
 }
