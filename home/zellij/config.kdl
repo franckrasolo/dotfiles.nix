@@ -297,7 +297,7 @@ theme "riced"
 // Default: "default"
 // (Requires restart)
 //
-// default_layout "default"
+default_layout "riced"
 
 // Choose the mode that zellij uses when starting up.
 // Default: normal
