@@ -287,27 +287,11 @@ scrollback_lines_to_serialize 0
 //     white 255 255 255
 //   }
 // }
-
-themes {
-  default {
-    bg      "#0b2d4f"
-    black   "#071222"
-    fg      "#99abab"
-    white   "#748585"
-    magenta "#f5c2e7"
-    red     "#e43460"
-    orange  "#dbc074"
-    yellow  "#f1e09d"
-    green   "#71d5b0"
-    cyan    "#73d4d6"
-    blue    "#719cd6"
-  }
-}
-
+//
 // Choose the theme that is specified in the themes section.
 // Default: default
 //
-// theme "default"
+theme "riced"
 
 // The name of the default layout to load on startup
 // Default: "default"

@@ -1,0 +1,15 @@
+themes {
+  riced {
+    bg      "#0b2d4f"
+    black   "#071222"
+    fg      "#99abab"
+    white   "#748585"
+    magenta "#f5c2e7"
+    red     "#e43460"
+    orange  "#dbc074"
+    yellow  "#f1e09d"
+    green   "#71d5b0"
+    cyan    "#73d4d6"
+    blue    "#719cd6"
+  }
+}
