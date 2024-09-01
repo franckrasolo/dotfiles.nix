@@ -43,5 +43,6 @@ config.scrollback_lines = 100000
 require("appearance")(config)
 require("key_bindings")(config)
 require("typography")(config)
+require("plugins.tabline")(config)
 
 return config
