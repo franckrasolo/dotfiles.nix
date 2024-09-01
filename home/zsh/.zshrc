@@ -42,5 +42,8 @@ eval "$(pdm --pep582 zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 source <(fx --comp zsh)
 
+# see https://github.com/zellij-org/zellij/issues/2316
+source <(zellij setup --generate-completion zsh | sed '/_zellij "$@"/d')
+
 set +o errexit
 $profiling && zprof || true
