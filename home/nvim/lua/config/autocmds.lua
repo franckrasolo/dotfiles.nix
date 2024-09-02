@@ -8,7 +8,10 @@ vim.api.nvim_create_autocmd("BufWritePost", {
 })
 
 vim.api.nvim_create_autocmd("BufWinEnter", {
-  pattern = "term://*:just *;#toggleterm#*",
+  pattern = {
+    "term://*:cargo *;#toggleterm#*",
+    "term://*:just *;#toggleterm#*",
+  },
   callback = function()
     local close_just_output_with = function(key)
       vim.keymap.set("n", key, function() vim.cmd.wincmd("q") end, { buffer = true, noremap = true })
