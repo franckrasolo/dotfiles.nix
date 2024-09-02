@@ -1,15 +1,30 @@
 return function(config)
-  local action = require("wezterm").action
+  local wezterm = require("wezterm")
+  local action = wezterm.action
   local mod = "ALT|SHIFT"
+
+  local function zellij(args)
+    os.execute("/etc/profiles/per-user/" .. os.getenv("USER") .. "/bin/zellij " .. args)
+  end
 
   config.keys = {
     {
       mods = "CMD|SHIFT",
       key = "K",
-      action = action.Multiple {
-        action.ClearScrollback "ScrollbackAndViewport",
-        action.SendKey { mods = "CTRL", key = "L" },
-      },
+      action = wezterm.action_callback(function(window, pane)
+        if pane:get_foreground_process_info()["name"] == "zellij" then
+          zellij("action clear")
+          zellij("action write 12") -- 12 -> ^L
+        else
+          window:perform_action(
+              action.Multiple {
+                action.ClearScrollback "ScrollbackAndViewport",
+                action.SendKey { mods = "CTRL", key = "L" },
+              },
+              pane
+          )
+        end
+      end)
     },
     { mods = mod, key = "|", action = action.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
     { mods = mod, key = "\"", action = action.SplitVertical({ domain = "CurrentPaneDomain" }) },
