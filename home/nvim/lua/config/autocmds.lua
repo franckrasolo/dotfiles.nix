@@ -13,12 +13,12 @@ vim.api.nvim_create_autocmd("BufWinEnter", {
     "term://*:just *;#toggleterm#*",
   },
   callback = function()
-    local close_just_output_with = function(key)
+    local close_toggleterm_window_with = function(key)
       vim.keymap.set("n", key, function() vim.cmd.wincmd("q") end, { buffer = true, noremap = true })
     end
-    close_just_output_with("<C-f>")
-    close_just_output_with("<esc>")
-    close_just_output_with("q")
+    close_toggleterm_window_with("<C-f>")
+    close_toggleterm_window_with("<esc>")
+    close_toggleterm_window_with("q")
   end
 })
 
