@@ -51,7 +51,9 @@ alias tcp:ports="lsof -Pwni tcp | grep java"
 
 alias luajit="rlwrap luajit"
 alias tmux="TERM=xterm-256color tmux -f $XDG_CONFIG_HOME/tmux/tmux.conf"
-alias z="zellij --layout welcome"
+# workaround to help Zellij's session manager plugin load layouts symlinked to the Nix store
+# https://github.com/zellij-org/zellij/issues/2764#issuecomment-2057927613
+alias z="zellij --layout welcome options --layout-dir $ZELLIJ_CONFIG_DIR/layouts"
 
 alias ht="hn top"
 alias hv="hn view --browser"
