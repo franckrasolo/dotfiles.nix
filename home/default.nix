@@ -6,6 +6,7 @@
     ./bat
     ./direnv
     ./fzf
+    ./lazygit
     ./nvim
     ./silicon
     ./zellij
@@ -25,7 +26,6 @@
       "duti".source        = ./duti;
       "fastfetch".source   = ./fastfetch;
       "git".source         = mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/home/git";
-      "lazygit".source     = mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/home/lazygit";
       "luarocks".source    = ./luarocks;
       "ripgrep".source     = ./ripgrep;
       "wezterm".source     = mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/home/wezterm";

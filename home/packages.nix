@@ -67,7 +67,6 @@ let
     git
     git-crypt
     diff-so-fancy
-    lazygit
   ];
 
   httpTools = [
