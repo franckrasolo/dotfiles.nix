@@ -37,7 +37,7 @@ layout {
 
         mode_normal       "#[bg=$bg,fg=$green,bold] NORMAL#[bg=$black,fg=$bg]"
         mode_locked       "#[bg=$red,fg=$bg,bold] LOCKED #[bg=$black,fg=$red]"
-        mode_resize       "#[bg=orange,fg=$bg,bold] RESIZE#[bg=$black,fg=orange]"
+        mode_resize       "#[bg=$orange,fg=$bg,bold] RESIZE#[bg=$black,fg=$orange]"
         mode_pane         "#[bg=$green,fg=$bg,bold] PANE#[bg=$black,fg=$green]"
         mode_tab          "#[bg=$yellow,fg=$bg,bold] TAB#[bg=$black,fg=$yellow]"
         mode_scroll       "#[bg=$magenta,fg=$bg,bold] SCROLL#[bg=$black,fg=$magenta]"
