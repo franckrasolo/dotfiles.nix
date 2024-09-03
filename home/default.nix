@@ -9,6 +9,7 @@
     ./nvim
     ./silicon
     ./zellij
+    ./zoxide
     ./zsh
   ];
 

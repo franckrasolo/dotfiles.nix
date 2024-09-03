@@ -45,7 +45,6 @@ let
     watchexec
     xz
     zip
-    zoxide
   ];
 
   systemTools = [
