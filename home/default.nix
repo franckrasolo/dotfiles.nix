@@ -4,7 +4,7 @@
   imports = [
     ./packages.nix
     ./bat
-    (import ./direnv { inherit user; })
+    (import ./direnv { inherit pkgs user; })
     ./fzf
     (import ./nvim { inherit config pkgs user; })
     ./silicon

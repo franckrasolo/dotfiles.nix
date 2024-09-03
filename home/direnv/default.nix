@@ -1,10 +1,14 @@
-{ user, ... }:
+{ pkgs, user, ... }:
 
 {
-  programs.direnv = {
+  programs.direnv = with pkgs.unstable; {
     enable = true;
     enableZshIntegration = true;
-    nix-direnv.enable = true;
+    package = direnv;
+    nix-direnv = {
+      enable = true;
+      package = nix-direnv;
+    };
     config = {
       global = {
         disable_stdin = false;
