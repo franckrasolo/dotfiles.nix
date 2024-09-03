@@ -87,7 +87,7 @@
       };
 
       devShells = forAllSystems ({ pkgs }: with pkgs; {
-        default = mkShell rec {
+        default = mkShell {
           shellHook = ''
             # health checks for Nix flake inputs
             nix run "github:DeterminateSystems/flake-checker"
