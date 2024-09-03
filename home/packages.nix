@@ -31,8 +31,6 @@ let
     hyperfine
     just
     lsd
-    ripgrep
-    ripgrep-all
     sd
     skim
     slides

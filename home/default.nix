@@ -8,6 +8,7 @@
     ./fzf
     ./lazygit
     ./nvim
+    ./ripgrep
     ./silicon
     ./zellij
     ./zoxide
@@ -27,7 +28,6 @@
       "fastfetch".source   = ./fastfetch;
       "git".source         = mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/home/git";
       "luarocks".source    = ./luarocks;
-      "ripgrep".source     = ./ripgrep;
       "wezterm".source     = mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/home/wezterm";
       "zathura".source     = mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/home/zathura";
     };

@@ -50,7 +50,6 @@ export PYENV_ROOT=$XDG_DATA_HOME/pyenv
 
 export HTTPIE_CONFIG_DIR=$XDG_CONFIG_HOME/httpie
 export PARALLEL_HOME=$XDG_CONFIG_HOME/parallel
-export RIPGREP_CONFIG_PATH=$XDG_CONFIG_HOME/ripgrep/rg.conf
 
 export PATH=$XDG_BIN_HOME:$HOME/.local/bin:$PATH
 export PATH=$HOME/Library/Application\ Support/JetBrains/Toolbox/scripts:$PATH # for NixIDEA / JetBrains IDEs?
