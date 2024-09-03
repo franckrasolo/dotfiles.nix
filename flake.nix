@@ -73,7 +73,9 @@
             { nix.extraOptions = ''extra-platforms = aarch64-darwin x86_64-darwin''; }
             overlayModule
             ./darwin/configuration.nix
-            home-manager.darwinModules.home-manager
+            home-manager.darwinModules.home-manager {
+              home-manager.extraSpecialArgs = { inherit user; };
+            }
           ];
           specialArgs = { inherit user; };
         };

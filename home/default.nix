@@ -4,12 +4,12 @@
   imports = [
     ./packages.nix
     ./bat
-    (import ./direnv { inherit pkgs user; })
+    ./direnv
     ./fzf
-    (import ./nvim { inherit config pkgs user; })
+    ./nvim
     ./silicon
     ./zellij
-    (import ./zsh { inherit config pkgs user; })
+    ./zsh
   ];
 
   xdg = {

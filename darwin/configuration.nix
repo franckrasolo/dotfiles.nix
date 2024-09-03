@@ -124,7 +124,7 @@
     useGlobalPkgs = true;
     useUserPackages = true;
     users."${user.accountName}" = pkgs.lib.mkMerge [
-      ({ config, ... }: import ../home { inherit config pkgs user; })
+      ../home
       { xdg.configFile."bunches".source = ./bunches; }
     ];
   };
