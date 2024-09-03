@@ -13,7 +13,7 @@ keybinds clear-defaults=true {
     bind "Ctrl g" { SwitchToMode "Normal"; }
   }
   resize {
-    bind "Ctrl i" { SwitchToMode "Normal"; }
+    bind "®" { SwitchToMode "Normal"; } // ® -> 'Alt r'
     bind "h" "Left" { Resize "Increase Left"; }
     bind "j" "Down" { Resize "Increase Down"; }
     bind "k" "Up" { Resize "Increase Up"; }
@@ -170,7 +170,7 @@ keybinds clear-defaults=true {
     bind "Ctrl p" { SwitchToMode "Pane"; }
   }
   shared_except "resize" "locked" {
-    bind "Ctrl i" { SwitchToMode "Resize"; }
+    bind "®" { SwitchToMode "Resize"; } // ® -> 'Alt r'
   }
   shared_except "search" "locked" {
     bind "Ctrl s" { SwitchToMode "Scroll"; }
