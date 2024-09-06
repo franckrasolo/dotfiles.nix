@@ -25,7 +25,7 @@
   nixpkgs.config.allowUnfree = true;
 
   nix.settings = {
-    auto-optimise-store = true;
+    auto-optimise-store = false;
 
     trusted-substituters = [
       "https://cache.iog.io" # for haskell.nix
