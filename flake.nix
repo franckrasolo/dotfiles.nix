@@ -17,9 +17,15 @@
 
     # provides the latest build of Zellij until a release truly
     # fixes https://github.com/zellij-org/zellij/issues/3208
-    zellij.url = "github:a-kenji/zellij-nix";
+    zellij = {
+      url = "github:a-kenji/zellij-nix";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
+    };
 
-    zjstatus.url = "github:dj95/zjstatus";
+    zjstatus = {
+      url = "github:dj95/zjstatus";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
+    };
   };
 
   outputs = { self, nixpkgs, nixpkgs-unstable, nix-darwin, home-manager, zellij, zjstatus }:
