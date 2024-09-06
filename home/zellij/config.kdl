@@ -44,7 +44,7 @@ keybinds clear-defaults=true {
     bind "r" { TogglePaneFrames; SwitchToMode "RenamePane"; }
   }
   move {
-    bind "Ctrl o" { SwitchToMode "Normal"; }
+    bind "µ" { SwitchToMode "Normal"; } // µ -> 'Alt m'
     bind "n" "Tab" { MovePane; }
     bind "p" { MovePaneBackwards; }
     bind "h" "Left" { MovePane "Left"; }
@@ -182,7 +182,7 @@ keybinds clear-defaults=true {
     bind "Ctrl t" { SwitchToMode "Tab"; }
   }
   shared_except "move" "locked" {
-    bind "Ctrl o" { SwitchToMode "Move"; }
+    bind "µ" { SwitchToMode "Move"; } // µ -> 'Alt m'
   }
   shared_except "tmux" "locked" {
     bind "Ctrl b" { SwitchToMode "Tmux"; }
