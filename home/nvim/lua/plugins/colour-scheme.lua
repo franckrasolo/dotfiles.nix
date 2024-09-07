@@ -16,7 +16,7 @@ return {
       },
 
       custom_colors = function(colors)
-        colors.editor.bg = "#000000"
+        colors.editor.bg = "#000700"
         colors.editor.active = colors.editor.bg
         colors.editor.disabled = colors.editor.selection -- "#090A0C"
         colors.editor.accent = colors.main.darkyellow
