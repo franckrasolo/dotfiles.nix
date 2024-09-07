@@ -1,5 +1,6 @@
 vim.api.nvim_create_autocmd("SessionLoadPost", {
-  pattern = "*",
+  once = true,
+  pattern = { "*.go", "*.kt", "*.lua", "*.mojo", "*.moon", "*.py", "*.rs" },
   callback = function()
     local overseer = require("overseer")
     overseer.run_template({ name = "run tests" }, function(task)
