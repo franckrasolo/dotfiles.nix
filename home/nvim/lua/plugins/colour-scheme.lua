@@ -45,11 +45,5 @@ return {
       vim.g.material_style = "deep ocean"
       vim.cmd("colorscheme material")
     end
-  },
-  {
-    "bluz71/vim-moonfly-colors",
-    name = "moonfly",
-    lazy = true,
-    priority = 1000,
-  },
+  }
 }
