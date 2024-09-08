@@ -159,10 +159,10 @@
   navigate = true  # use n and N to move between diff sections
   light = false    # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
 
-  features = side-by-side line-numbers decorations
+  features = line-numbers decorations
   syntax-theme = Dracula
-  plus-style   = syntax "#003800"
-  minus-style  = syntax "#3f0001"
+  plus-style   = syntax "#0B301F"
+  minus-style  = syntax "#370606"
 
 [interactive]
   diffFilter = delta --color-only
