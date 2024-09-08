@@ -71,12 +71,26 @@
 [format]
   pretty = '%C(yellow)%h%Creset %C(magenta)%cd%Creset %d %s'
 
-[merge]
-  tool = splice
+[diff]
+  tool = nvimdiff
 
-[mergetool "splice"]
-  cmd = "nvim -f $BASE $LOCAL $REMOTE $MERGED -c 'SpliceInit'"
+[difftool]
+  prompt = false
+
+[difftool "nvimdiff"]
+  cmd = nvim -d "$LOCAL" "$REMOTE"
+
+[merge]
+  tool = nvimdiff
+
+[mergetool]
+  prompt = true
+  keepBackup = false
   trustExitCode = true
+
+[mergetool "nvimdiff"]
+  layout = "LOCAL,BASE,REMOTE / MERGED"
+  cmd = nvim -f "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
 
 [alias]
   aa = add --all
