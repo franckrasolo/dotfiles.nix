@@ -4,6 +4,10 @@ return function(config)
   local tabline = wezterm.plugin.require("https://github.com/michaelbrusegard/tabline.wez")
   local accent_colors = wezterm.color.get_builtin_schemes()["Catppuccin Mocha"]
 
+  local function icon()
+    return "  "
+  end
+
   tabline.setup {
     options = {
       icons_enabled = true,
@@ -34,7 +38,7 @@ return function(config)
     },
     sections = {
       tabline_a = {},
-      tabline_b = { "mode" },
+      tabline_b = { icon },
       tabline_c = { " " },
       tab_active = {
         { Attribute = { Intensity = "Bold" } },
