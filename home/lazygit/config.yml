@@ -168,7 +168,7 @@ gui:
 
   # Whether to show the divergence from the base branch in the branches view.
   # One of: 'none' | 'onlyArrow'  | 'arrowAndNumber'
-  showDivergenceFromBaseBranch: none
+  showDivergenceFromBaseBranch: onlyArrow
 
   # Height of the command log view
   commandLogSize: 8
@@ -195,19 +195,23 @@ gui:
 
   # How things are filtered when typing '/'.
   # One of 'substring' (default) | 'fuzzy'
-  filterMode: substring
+  filterMode: fuzzy
 
   # Config relating to the spinner.
   spinner:
     # The frames of the spinner animation.
     frames:
-      - '|'
-      - '/'
-      - '-'
-      - '\'
+      - "⠋"
+      - "⠙"
+      - "⠩"
+      - "⠸"
+      - "⠼"
+      - "⠴"
+      - "⠦"
+      - "⠧"
 
     # The "speed" of the spinner in milliseconds.
-    rate: 50
+    rate: 60
 
   # Status panel view.
   # One of 'dashboard' (default) | 'allBranchesLog'
@@ -224,7 +228,7 @@ git:
     # diff-so-fancy
     # delta --dark --paging=never
     # ydiff -p cat -s --wrap --width={{columnWidth}}
-    pager: delta
+    pager: delta --paging=never
 
     # If true, Lazygit will use whatever pager is specified in `$GIT_PAGER`, `$PAGER`, or your *git config*. If the pager ends with something like ` | less` we will strip that part out, because less doesn't play nice with our rendering approach. If the custom pager uses less under the hood, that will also break rendering (hence the `--paging=never` flag for the `delta` pager).
     useConfig: false
@@ -407,7 +411,7 @@ os:
   readFromClipboardCmd: ""
 
 # If true, don't display introductory popups upon opening Lazygit.
-disableStartupPopups: false
+disableStartupPopups: true
 
 # What to do when opening Lazygit outside of a git repo.
 # - 'prompt': (default) ask whether to initialize a new repo or open in the most recent repo
@@ -417,7 +421,7 @@ disableStartupPopups: false
 notARepository: prompt
 
 # If true, display a confirmation when subprocess terminates. This allows you to view the output of the subprocess before returning to Lazygit.
-promptToReturnFromSubprocess: true
+promptToReturnFromSubprocess: false
 
 # Keybindings
 keybinding:
@@ -499,7 +503,7 @@ keybinding:
     decreaseContextInDiffView: '{'
     increaseRenameSimilarityThreshold: )
     decreaseRenameSimilarityThreshold: (
-    openDiffTool: <c-t>
+    openDiffTool: <c-d>
   status:
     checkForUpdate: u
     recentRepos: <enter>
