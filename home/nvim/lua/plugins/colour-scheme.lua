@@ -1,46 +1,52 @@
 return {
-  "marko-cerovac/material.nvim",
-  config = function()
-    require("lualine").setup {
-      options = { theme = "material" }
+  { "LazyVim/LazyVim", opts = { colorscheme = function() require("catppuccin").load() end } },
+  {
+    "catppuccin/nvim",
+    priority = 1000,
+    opts = {
+      flavour = "macchiato",
+      transparent_background = false,
+      show_end_of_buffer = false,
+      term_colors = true,
+      dim_inactive = {
+        enabled = true,
+        shade = "dark",
+        percentage = 0.15,
+      },
+      no_italic = false,
+      no_bold = false,
+      no_underline = false,
+      color_overrides = {
+        macchiato = {
+          base = "#01010F",
+          mantle = "#01010F",
+          crust = "#01010F",
+        },
+      },
+      custom_highlights = {},
+      default_integrations = true,
+      integrations = {
+        dadbod_ui = true,
+        dap = true,
+        dap_ui = true,
+        native_lsp = {
+          virtual_text = {
+            errors = { "italic" },
+            hints = { "italic" },
+            warnings = { "italic" },
+            information = { "italic" },
+          },
+          inlay_hints = {
+            background = true,
+          },
+        },
+        overseer = true,
+        rainbow_delimiters = true,
+        telescope = {
+          enabled = true,
+          style = "classic",
+        }
+      },
     }
-
-    require("material").setup {
-      high_visibility = {
-        darker = true
-      },
-      disable = {
-        background  = false, -- use the terminal background instead
-        term_colors = false, -- do not change terminal colours
-        eob_lines   = false  -- hide end-of-buffer lines
-      },
-
-      custom_colors = function(colors)
-        colors.editor.bg = "#000700"
-        colors.editor.active = colors.editor.bg
-        colors.editor.disabled = colors.editor.selection -- "#090A0C"
-        colors.editor.accent = colors.main.darkyellow
-
-        colors.backgrounds.sidebars = colors.editor.bg
-        colors.backgrounds.floating_windows = colors.editor.bg
-        --colors.backgrounds.non_current_windows = colors.editor.bg_alt
-        colors.backgrounds.non_current_windows = colors.editor.bg
-      end,
-
-      plugins = {
-         "gitsigns",
-         "indent-blankline",
-         "nvim-cmp",
-         "nvim-navic",
-         "nvim-web-devicons",
-         "telescope",
-         "trouble",
-         "which-key",
-      },
-
-      lualine_style = "stealth",
-    }
-
-    vim.cmd("colorscheme material-deep-ocean")
-  end
+  }
 }
