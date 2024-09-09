@@ -14,6 +14,12 @@ return {
     },
     icons = {
       rules = {
+        { pattern = "bookmark commands", icon = "󱚊 ", color = "red" },
+        { pattern = "bookmark this", icon = "󱚌 ", color = "yellow" },
+        { pattern = "bookmarks", icon = "󰂻 ", color = "green" },
+        { pattern = "previous bookmark", icon = "󱚀 ", color = "green" },
+        { pattern = "next bookmark", icon = "󱚂 ", color = "green" },
+        { pattern = "jumps", icon = "󱕘 ", color = "green" },
         { pattern = "previews", icon = " ", color = "blue" },
       }
     }
