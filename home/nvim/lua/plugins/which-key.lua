@@ -12,5 +12,10 @@ return {
     layout = {
       spacing = 1, -- spacing between columns
     },
+    icons = {
+      rules = {
+        { pattern = "previews", icon = " ", color = "blue" },
+      }
+    }
   }
 }
