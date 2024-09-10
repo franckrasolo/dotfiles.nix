@@ -14,7 +14,7 @@ return {
     theme = "catppuccin",
     sections = {
       lualine_a = { { "mode", icon = "", padding = { left = 1, right = 0 } } },
-      lualine_b = {},
+      lualine_b = { "branch" },
       lualine_c = {
         LazyVim.lualine.root_dir(),
         {
