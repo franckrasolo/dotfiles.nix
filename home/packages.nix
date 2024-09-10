@@ -55,6 +55,7 @@ let
 
     lf
     socat
+    termshark
     vifm
     watchman
     xplr
