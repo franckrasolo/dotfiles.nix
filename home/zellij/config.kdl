@@ -160,8 +160,8 @@ keybinds clear-defaults=true {
     bind "Alt Up" { MoveFocus "Up"; }
     bind "≠" { Resize "Increase"; }
     bind "–" { Resize "Decrease"; }
-    bind "{" { PreviousSwapLayout; }
-    bind "}" { NextSwapLayout; }
+    bind "”" { PreviousSwapLayout; }
+    bind "’" { NextSwapLayout; }
   }
   shared_except "normal" "locked" {
     bind "Enter" "Esc" { SwitchToMode "Normal"; }
