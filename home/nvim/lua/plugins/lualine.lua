@@ -35,10 +35,10 @@ return {
           }
         },
       },
-      lualine_y = { { "branch", padding = { left = 0, right = 1 } }, "encoding" },
+      lualine_y = { { "progress", padding = { left = 1, right = 1 } } },
       lualine_z = {
-        { "location", padding = { left = 1, right = 1 } },
-        { "progress", padding = { left = 1, right = 1 } },
+        { "location", separator = "", padding = { left = 0, right = 1 } },
+        { function() return "" end, padding = { left = 0, right = 1 } },
       },
     },
   }
