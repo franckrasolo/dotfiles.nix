@@ -60,6 +60,7 @@ alt-shift-minus = 'resize smart -50'
 alt-shift-equal = 'resize smart +50'
 
 alt-f = 'exec-and-forget ${XDG_CONFIG_HOME}/aerospace/toggle-floating-centered.sh'
+alt-cmd-f = 'fullscreen'
 alt-shift-f = 'macos-native-fullscreen'
 
 alt-shift-0 = 'workspace 0'
