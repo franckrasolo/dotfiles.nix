@@ -27,7 +27,13 @@ return {
           },
         },
         { "filetype", icon_only = true, separator = "", padding = { left = 1, right = 0 } },
-        { LazyVim.lualine.pretty_path() },
+        {
+          LazyVim.lualine.pretty_path {
+            directory_hl = "Conceal",
+            filename_hl = "NeogitGraphBoldWhite",
+            modified_hl = "NeogitChangeBothModified",
+          }
+        },
       },
       lualine_y = { { "branch", padding = { left = 0, right = 1 } }, "encoding" },
       lualine_z = {
