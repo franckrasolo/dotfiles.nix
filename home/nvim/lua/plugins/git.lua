@@ -18,7 +18,7 @@ return {
       vim.api.nvim_set_hl(0, "GitSignsDeletePreview", { bg = "#494B4B" })
       vim.api.nvim_set_hl(0, "GitSignsCurrentLineBlame", { fg = "#464B5D", italic = true })
 
-      vim.keymap.set("n", "<C-x>",
+      vim.keymap.set("n", "<leader>ghx",
           function()
             return (vim.api.nvim_win_get_option(0, "diff") and "<C-w>h<C-w>c") or "<Nop>"
           end,
