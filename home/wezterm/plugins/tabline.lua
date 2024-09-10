@@ -37,8 +37,8 @@ return function(config)
       },
     },
     sections = {
-      tabline_a = {},
-      tabline_b = { icon },
+      tabline_a = { icon },
+      tabline_b = { "mode" },
       tabline_c = { " " },
       tab_active = {
         { Attribute = { Intensity = "Bold" } },
