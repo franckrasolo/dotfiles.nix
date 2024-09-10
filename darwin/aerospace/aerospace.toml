@@ -179,6 +179,11 @@ check-further-callbacks = true
 run = 'move-node-to-workspace 3'
 
 [[on-window-detected]]
+if.app-id = 'org.mozilla.com.zen.browser'
+check-further-callbacks = false
+run = 'move-node-to-workspace 3'
+
+[[on-window-detected]]
 if.app-id = 'com.jetbrains.intellij'
 if.during-aerospace-startup = false
 check-further-callbacks = true
