@@ -24,12 +24,10 @@ return {
       vim.api.nvim_set_hl(0, "GitSignsChangeInline", { bg = "#D4CF94", fg = "#0E2E21", bold = true, italic = true })
       vim.api.nvim_set_hl(0, "GitSignsDeleteInline", { bg = "#D4CF94", fg = "#471613", bold = true, italic = true })
 
-      vim.keymap.set("n", "<leader>ghx",
-          function()
-            return (vim.api.nvim_win_get_option(0, "diff") and "<C-w>h<C-w>c") or "<Nop>"
-          end,
-          { desc = "Close the active diff", expr = true, unique = true, silent = true }
-      )
+      local close_diff = function()
+        return (vim.api.nvim_win_get_option(0, "diff") and "<C-w>h<C-w>c") or "<Nop>"
+      end
+      vim.keymap.set("n", "<leader>gx", close_diff, { desc = "Close Diff", expr = true })
     end
   },
 }
