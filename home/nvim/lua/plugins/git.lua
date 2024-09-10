@@ -10,13 +10,19 @@ return {
         virt_text_pos = "right_align"
       }
 
-      vim.api.nvim_set_hl(0, "DiffAdd", { bg = "#0A4B0A" })
-      vim.api.nvim_set_hl(0, "DiffChange", { bg = "#1B375F" })
-      vim.api.nvim_set_hl(0, "DiffDelete", { bg = "#494B4B" })
-      vim.api.nvim_set_hl(0, "DiffText", { bg = "#1B375F", fg = "#FFFFFF", italic = true })
-      vim.api.nvim_set_hl(0, "GitSignsAddPreview", { bg = "#0A4B0A" })
-      vim.api.nvim_set_hl(0, "GitSignsDeletePreview", { bg = "#494B4B" })
-      vim.api.nvim_set_hl(0, "GitSignsCurrentLineBlame", { fg = "#464B5D", italic = true })
+      vim.api.nvim_set_hl(0, "DiffAdd", { bg = "#0E2E21" })
+      vim.api.nvim_set_hl(0, "DiffChange", { bg = "#1A345A" })
+      vim.api.nvim_set_hl(0, "DiffDelete", { bg = "#471613" })
+      vim.api.nvim_set_hl(0, "DiffText", { bg = "#D4CF94", fg = "#1A345A", bold = true, italic = true })
+
+      vim.api.nvim_set_hl(0, "GitSignsAddLn", { bg = "#0E2E21" })
+      vim.api.nvim_set_hl(0, "GitSignsAddPreview", { bg = "#0E2E21" })
+      vim.api.nvim_set_hl(0, "GitSignsDeletePreview", { bg = "#471613" })
+      vim.api.nvim_set_hl(0, "GitSignsCurrentLineBlame", { fg = "#6C738C", italic = true })
+
+      vim.api.nvim_set_hl(0, "GitSignsAddInline", { bg = "#D4CF94", fg = "#0E2E21", bold = true, italic = true })
+      vim.api.nvim_set_hl(0, "GitSignsChangeInline", { bg = "#D4CF94", fg = "#0E2E21", bold = true, italic = true })
+      vim.api.nvim_set_hl(0, "GitSignsDeleteInline", { bg = "#D4CF94", fg = "#471613", bold = true, italic = true })
 
       vim.keymap.set("n", "<leader>ghx",
           function()
