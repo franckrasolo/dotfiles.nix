@@ -30,5 +30,6 @@ return function(config)
     { mods = mod, key = "Enter", action = action.TogglePaneZoomState },
   }
 
+  config.enable_kitty_keyboard = true
   config.send_composed_key_when_left_alt_is_pressed = true
 end
