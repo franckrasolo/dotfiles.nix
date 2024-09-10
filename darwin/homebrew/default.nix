@@ -63,6 +63,13 @@
         args = { appdir = "/Applications"; };
       }
       "dropbox"
+      {
+        name = "duckduckgo";
+        args = { appdir = "/Applications"; };
+      }
+      "firefox"
+      "opera"
+      "zen-browser"
       "expressvpn"
       {
         name = "hammerspoon";
