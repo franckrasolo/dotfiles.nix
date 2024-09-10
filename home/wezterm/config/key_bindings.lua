@@ -28,6 +28,7 @@ return function(config)
     { mods = mod, key = "UpArrow", action = action.ActivatePaneDirection "Up" },
     { mods = mod, key = "DownArrow", action = action.ActivatePaneDirection "Down" },
     { mods = mod, key = "Enter", action = action.TogglePaneZoomState },
+    { mods = "ALT", key = "Backspace", action = action.SendKey { key = "Delete" } },
   }
 
   config.enable_kitty_keyboard = true
