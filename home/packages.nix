@@ -59,7 +59,6 @@ let
     vifm
     watchman
     xplr
-    yazi
   ];
 
   gitTools = [

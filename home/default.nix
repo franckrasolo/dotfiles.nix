@@ -10,6 +10,7 @@
     ./nvim
     ./ripgrep
     ./silicon
+    ./yazi
     ./zellij
     ./zoxide
     ./zsh
