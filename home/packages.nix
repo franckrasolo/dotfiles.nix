@@ -13,7 +13,7 @@ let
 
   coreTools = [
     cachix
-    coreutils
+    coreutils-prefixed
     devenv
     moreutils
 
