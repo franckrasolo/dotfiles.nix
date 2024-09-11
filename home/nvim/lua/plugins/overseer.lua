@@ -17,7 +17,7 @@ vim.api.nvim_create_autocmd("BufWinEnter", {
     "term://*:just *;#toggleterm#*",
   },
   callback = function()
-    local close_toggleterm_window_with = function(key)
+    local function close_toggleterm_window_with(key)
       vim.keymap.set("n", key, function() vim.cmd.wincmd("q") end, { buffer = true, noremap = true })
     end
     close_toggleterm_window_with("<C-f>")

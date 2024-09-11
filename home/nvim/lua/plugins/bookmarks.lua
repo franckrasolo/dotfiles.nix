@@ -82,7 +82,7 @@ return {
     local api = require("bookmarks.api")
     local picker = require("bookmarks.adapter.picker")
 
-    local browse_bookmarks = function(args)
+    local function browse_bookmarks(args)
       local picker_fn = args.picker_fn or picker.pick_bookmark
       local open_with = args.open_with or "edit"
       local all_lists = args.all_lists or args.all_lists ~= nil
@@ -97,7 +97,7 @@ return {
       end
     end
 
-    local keymap = function(key_binding)
+    local function keymap(key_binding)
       return vim.tbl_extend("force", { mode = { "n", "v" } }, key_binding)
     end
 
