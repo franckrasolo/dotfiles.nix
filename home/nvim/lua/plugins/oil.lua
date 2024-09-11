@@ -21,7 +21,6 @@ return {
     version = "*",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {
-      columns = { "icon" },
       keymaps = {
         ["g?"] = false,
         ["?"] = "actions.show_help",
@@ -31,6 +30,7 @@ return {
         ["q"] = "actions.close",
         ["<esc>"] = "actions.close",
       },
+      columns = { "icon" },
       view_options = {
         show_hidden = true,
         is_always_hidden = function(name, _)
@@ -41,7 +41,10 @@ return {
         padding = 2,
         max_width = 80,
         max_height = 20,
-      }
+      },
+      win_options = {
+        wrap = true,
+      },
     },
     keys = {
       { "-", function() require("oil").toggle_float() end, desc = "Open parent directory" },
