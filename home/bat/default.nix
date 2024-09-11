@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   programs.bat = {
@@ -35,11 +35,15 @@
     };
   };
 
-  # TODO look into why Home Manager's rebuilding of the bat cache doesn't work
-  home.activation.rebuildBatCache = lib.hm.dag.entryAfter [ "installPackages" ] ''
-    $VERBOSE_ECHO "Rebuilding the bat cache..."
-    export BAT_CACHE_PATH=$HOME/.xdg/cache/bat
-    export BAT_CONFIG_DIR=$HOME/.xdg/config/bat
-    $DRY_RUN_CMD ${lib.getExe pkgs.unstable.bat} cache --build
-  '';
+  home.activation.batCache = with lib; mkForce (hm.dag.entryAfter [ "linkGeneration" ] ''
+    export XDG_CACHE_HOME=${escapeShellArg config.xdg.cacheHome}
+    export XDG_CONFIG_HOME=${escapeShellArg config.xdg.configHome}
+
+    export BAT_CACHE_PATH=$XDG_CACHE_HOME/bat
+    export BAT_CONFIG_DIR=$XDG_CONFIG_HOME/bat
+
+    verboseEcho "Rebuilding the bat cache..."
+    cd "${pkgs.emptyDirectory}"
+    run ${lib.getExe config.programs.bat.package} cache --build
+  '');
 }
