@@ -10,19 +10,23 @@ return {
         virt_text_pos = "right_align"
       }
 
-      vim.api.nvim_set_hl(0, "DiffAdd", { bg = "#0E2E21" })
-      vim.api.nvim_set_hl(0, "DiffChange", { bg = "#1A345A" })
-      vim.api.nvim_set_hl(0, "DiffDelete", { bg = "#471613" })
-      vim.api.nvim_set_hl(0, "DiffText", { bg = "#D4CF94", fg = "#1A345A", bold = true, italic = true })
+      local function highlight(group, attributes)
+        vim.api.nvim_set_hl(0, group, attributes)
+      end
 
-      vim.api.nvim_set_hl(0, "GitSignsAddLn", { bg = "#0E2E21" })
-      vim.api.nvim_set_hl(0, "GitSignsAddPreview", { bg = "#0E2E21" })
-      vim.api.nvim_set_hl(0, "GitSignsDeletePreview", { bg = "#471613" })
-      vim.api.nvim_set_hl(0, "GitSignsCurrentLineBlame", { fg = "#6C738C", italic = true })
+      highlight("DiffAdd", { bg = "#0E2E21" })
+      highlight("DiffChange", { bg = "#1A345A" })
+      highlight("DiffDelete", { bg = "#471613" })
+      highlight("DiffText", { bg = "#D4CF94", fg = "#1A345A", bold = true, italic = true })
 
-      vim.api.nvim_set_hl(0, "GitSignsAddInline", { bg = "#D4CF94", fg = "#0E2E21", bold = true, italic = true })
-      vim.api.nvim_set_hl(0, "GitSignsChangeInline", { bg = "#D4CF94", fg = "#0E2E21", bold = true, italic = true })
-      vim.api.nvim_set_hl(0, "GitSignsDeleteInline", { bg = "#D4CF94", fg = "#471613", bold = true, italic = true })
+      highlight("GitSignsAddLn", { bg = "#0E2E21" })
+      highlight("GitSignsAddPreview", { bg = "#0E2E21" })
+      highlight("GitSignsDeletePreview", { bg = "#471613" })
+      highlight("GitSignsCurrentLineBlame", { fg = "#6C738C", italic = true })
+
+      highlight("GitSignsAddInline", { bg = "#D4CF94", fg = "#0E2E21", bold = true, italic = true })
+      highlight("GitSignsChangeInline", { bg = "#D4CF94", fg = "#0E2E21", bold = true, italic = true })
+      highlight("GitSignsDeleteInline", { bg = "#D4CF94", fg = "#471613", bold = true, italic = true })
 
       local function close_diff()
         return (vim.api.nvim_win_get_option(0, "diff") and "<C-w>h<C-w>c") or "<Nop>"
