@@ -48,7 +48,7 @@ return {
       },
     },
     keys = {
-      { "-", function() require("oil").toggle_float() end, desc = "Open parent directory" },
+      { "-", desc = "Open parent directory", function() require("oil").toggle_float() end },
     }
   }
 }
