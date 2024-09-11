@@ -35,8 +35,9 @@
     };
   };
 
-  home.activation.batCache = lib.hm.dag.entryAfter [ "linkGeneration" ] ''
-    $VERBOSE_ECHO "Rebuilding the bat theme cache"
+  # TODO look into why Home Manager's rebuilding of the bat cache doesn't work
+  home.activation.rebuildBatCache = lib.hm.dag.entryAfter [ "installPackages" ] ''
+    $VERBOSE_ECHO "Rebuilding the bat cache..."
     export BAT_CACHE_PATH=$HOME/.xdg/cache/bat
     export BAT_CONFIG_DIR=$HOME/.xdg/config/bat
     $DRY_RUN_CMD ${lib.getExe pkgs.unstable.bat} cache --build
