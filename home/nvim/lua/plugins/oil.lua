@@ -22,15 +22,6 @@ return {
     dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {
       default_file_explorer = true,
-      keymaps = {
-        ["g?"] = false,
-        ["?"] = "actions.show_help",
-        ["~"] = false,
-        ["<C-c>"] = false,
-        ["<C-t>"] = false,
-        ["q"] = "actions.close",
-        ["<esc>"] = "actions.close",
-      },
       columns = { "icon" },
       view_options = {
         show_hidden = true,
@@ -45,6 +36,15 @@ return {
       },
       win_options = {
         wrap = true,
+      },
+      keymaps = {
+        ["g?"] = false,
+        ["?"] = "actions.show_help",
+        ["~"] = false,
+        ["<C-c>"] = false,
+        ["<C-t>"] = false,
+        ["q"] = "actions.close",
+        ["<esc>"] = "actions.close",
       },
     },
     keys = {
