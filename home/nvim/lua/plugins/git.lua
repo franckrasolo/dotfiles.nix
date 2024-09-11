@@ -29,7 +29,7 @@ return {
       highlight("GitSignsDeleteInline", { bg = "#D4CF94", fg = "#471613", bold = true, italic = true })
 
       local function close_diff()
-        return (vim.api.nvim_win_get_option(0, "diff") and "<C-w>h<C-w>c") or "<Nop>"
+        return (vim.api.nvim_win_get_option(0, "diff") and "<C-w>h<C-w>c") or ""
       end
       vim.keymap.set("n", "<leader>gx", close_diff, { desc = "Close Diff", expr = true })
     end
