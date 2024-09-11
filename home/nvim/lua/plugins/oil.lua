@@ -1,3 +1,20 @@
+local always_hidden = require("pl.List") {
+  "..",
+  ".direnv",
+  ".git",
+  ".gradle",
+  ".idea",
+  ".pnpm-store",
+  ".pytest-cache",
+  ".pytest_cache",
+  ".ruff_cache",
+  ".DS_Store",
+  "__pycache__",
+  "bin",
+  "build",
+  "node_modules",
+  "venv",
+}
 return {
   {
     "stevearc/oil.nvim",
@@ -16,6 +33,9 @@ return {
       },
       view_options = {
         show_hidden = true,
+        is_always_hidden = function(name, _)
+          return always_hidden:contains(name)
+        end,
       },
       float = {
         padding = 2,

@@ -8,6 +8,7 @@ with pkgs.unstable; {
 
     extraLuaPackages = ps: with ps; [
       magick
+      penlight
     ];
 
     extraPackages = [
