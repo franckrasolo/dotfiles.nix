@@ -1,5 +1,6 @@
 local always_hidden = require("pl.List") {
   "..",
+  ".astro",
   ".direnv",
   ".git",
   ".gradle",
@@ -8,10 +9,12 @@ local always_hidden = require("pl.List") {
   ".pytest-cache",
   ".pytest_cache",
   ".ruff_cache",
+  ".turbo",
   ".DS_Store",
   "__pycache__",
   "bin",
   "build",
+  "dist",
   "node_modules",
   "venv",
 }
