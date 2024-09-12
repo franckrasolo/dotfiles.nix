@@ -36,7 +36,6 @@ return {
         end
         vim.keymap.set("n", "<leader>ghc", close_diff, { buffer = buffer, desc = "Close Diff", expr = true })
       end
-      vim.keymap.set("n", "<leader>gx", close_diff, { desc = "Close Diff", expr = true })
     end
   },
 }
