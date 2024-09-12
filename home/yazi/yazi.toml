@@ -1,0 +1,4 @@
+[manager]
+ratio = [2, 2, 8]
+sort_by = "natural"
+sort_sensitive = true
