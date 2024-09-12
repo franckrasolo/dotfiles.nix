@@ -53,12 +53,9 @@ let
     nushell
     pueue
 
-    lf
     socat
     termshark
-    vifm
     watchman
-    xplr
   ];
 
   gitTools = [
