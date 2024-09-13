@@ -10,7 +10,7 @@ keybinds clear-defaults=true {
   normal {
   }
   locked {
-    bind "Ctrl g" { SwitchToMode "Normal"; }
+    bind "©" { SwitchToMode "Normal"; } // © -> 'Alt g'
   }
   resize {
     bind "®" { SwitchToMode "Normal"; } // ® -> 'Alt r'
@@ -151,7 +151,7 @@ keybinds clear-defaults=true {
     bind "x" { CloseFocus; SwitchToMode "Normal"; }
   }
   shared_except "locked" {
-    bind "Ctrl g" { SwitchToMode "Locked"; }
+    bind "©" { SwitchToMode "Locked"; } // © -> 'Alt g'
     bind "Ctrl l" { Clear; Write 12; } // 12 -> ^L
     bind "Ctrl n" { NewPane; }
     bind "Alt Left" { MoveFocusOrTab "Left"; }
