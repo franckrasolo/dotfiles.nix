@@ -220,3 +220,8 @@ if.app-id = 'com.apple.Safari'
 if.window-title-regex-substring = 'myC'
 check-further-callbacks = false
 run = 'move-node-to-workspace Z'
+
+[[on-window-detected]]
+if.app-id = 'us.zoom.xos'
+check-further-callbacks = true
+run = 'layout floating'
