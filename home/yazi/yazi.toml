@@ -2,3 +2,7 @@
 ratio = [2, 2, 8]
 sort_by = "natural"
 sort_sensitive = true
+
+[preview]
+max_width = 6000
+max_height = 4000
