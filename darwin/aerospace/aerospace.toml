@@ -222,6 +222,11 @@ check-further-callbacks = false
 run = 'move-node-to-workspace Z'
 
 [[on-window-detected]]
+if.app-id = 'com.apple.finder'
+check-further-callbacks = false
+run = 'layout floating'
+
+[[on-window-detected]]
 if.app-id = 'com.apple.Preview'
 check-further-callbacks = false
 run = 'layout floating'
