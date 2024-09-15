@@ -5,7 +5,7 @@ return function(config)
   local accent_colors = wezterm.color.get_builtin_schemes()["Catppuccin Mocha"]
 
   local function icon()
-    return "  "
+    return " 󰰮 "
   end
 
   tabline.setup {
