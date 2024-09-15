@@ -10,6 +10,7 @@ alias abup="antibody bundle < ${ZDOTDIR}/plugins.txt >| ${ZDOTDIR}/zsh_plugins.z
 alias ff="fastfetch"
 
 alias icat="kitty +kitten icat"
+alias img="timg --clear --center --upscale --pixelation=sixel"
 alias fd="fd --color=always --no-ignore --hidden"
 alias http="xh"
 alias https="xhs"
