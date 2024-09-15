@@ -43,6 +43,24 @@
           ];
         };
 
+        presenterm-with-sixel = with final.unstable.pkgs; presenterm.overrideAttrs (attrs: {
+          cargoBuildFeatures = attrs.cargoBuildFeatures ++ lib.optional stdenv.isDarwin [ "sixel" ];
+          # fix for macOS:
+          #   Crashes at runtime on darwin with:
+          #   Library not loaded: .../out/lib/libsixel.1.dylib
+          #
+          # The sixel-sys crate used by presenterm is dynamically linked to libsixel.
+          #
+          # sources:
+          #   https://github.com/NixOS/nixpkgs/pull/249210/files
+          #   https://github.com/NixOS/nixpkgs/pull/297078/files
+          nativeBuildInputs = attrs.nativeBuildInputs ++ [ makeWrapper ];
+          postInstall = (attrs.postInstall or "") + lib.optionalString stdenv.isDarwin ''
+            wrapProgram $out/bin/presenterm \
+              --prefix DYLD_LIBRARY_PATH : "${lib.makeLibraryPath [ libsixel ]}"
+          '';
+        });
+
         zellij-latest = zellij.packages."${prev.system}".zellij;
         zjstatus = zjstatus.packages.${prev.system}.default;
       };
