@@ -43,7 +43,7 @@
     ${lib.concatStringsSep "\n" (map installRockCommand rocks)}
 
     # restart Hammerspoon to pick up changes
-    killall Hammerspoon || true
+    killall Hammerspoon && sleep 1 || true
     open -a /Applications/Hammerspoon.app
   '';
 }
