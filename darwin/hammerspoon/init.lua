@@ -6,7 +6,10 @@ package.cpath = package.cpath .. ";" .. hs.execute(luarocks .. " path --lr-cpath
 -- install Hammerspoon's command line tool as /opt/homebrew/bin/hs
 hs.ipc.cliInstall()
 
-function reloadConfig(files)
+-- automatically reload changes to Hammerspoon's configuration
+HammerspoonHome = os.getenv("HOME") .. "/.xdg/config/hammerspoon/"
+
+local function reloadConfig(files)
   doReload = false
   for _, file in pairs(files) do
     if file:sub(-4) == ".lua" then
@@ -18,6 +21,4 @@ function reloadConfig(files)
   end
 end
 
--- automatically reload changes to Hammerspoon's configuration
-HammerspoonHome = os.getenv("HOME") .. "/.xdg/config/hammerspoon/"
 fileWatcher = hs.pathwatcher.new(HammerspoonHome, reloadConfig):start()
