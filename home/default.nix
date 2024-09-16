@@ -8,6 +8,7 @@
     ./fzf
     ./lazygit
     ./nvim
+    ./presenterm
     ./ripgrep
     ./silicon
     ./yazi

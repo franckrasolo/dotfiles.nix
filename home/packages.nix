@@ -112,7 +112,6 @@ let
   graphicalTools = [
     graphviz
     plantuml
-    pkgs.presenterm-with-sixel
     timg
   ];
 in

@@ -1,0 +1,124 @@
+---
+extends: catppuccin-macchiato
+default:
+  margin:
+    percent: 8
+  colors:
+    foreground: "d6dcf0"
+    background: "01010F"
+
+slide_title:
+  alignment: center
+  padding_bottom: 1
+  padding_top: 1
+  colors:
+    foreground: "39a59a"
+  bold: true
+
+code:
+  alignment: center
+  minimum_size: 50
+  minimum_margin:
+    percent: 8
+  theme_name: "Catppuccin Mocha"
+  padding:
+    horizontal: 2
+    vertical: 1
+
+execution_output:
+  colors:
+    foreground: "cad3f5"
+    background: "363a4f"
+  status:
+    running:
+      foreground: "91d7e3"
+    success:
+      foreground: "a6da95"
+    failure:
+      foreground: "ed8796"
+    not_started:
+      foreground: "eed49f"
+
+inline_code:
+  colors:
+    foreground: "a6da95"
+
+intro_slide:
+  title:
+    alignment: center
+    colors:
+      foreground: "cad3f5"
+  subtitle:
+    alignment: center
+    colors:
+      foreground: "7dc4e4"
+  event:
+    alignment: center
+    colors:
+      foreground: "a6da95"
+  location:
+    alignment: center
+    colors:
+      foreground: "7dc4e4"
+  date:
+    alignment: center
+    colors:
+      foreground: "eed49f"
+  author:
+    alignment: center
+    colors:
+      foreground: "8bd5ca"
+    bold: true
+    positioning: page_bottom
+  footer: false
+
+headings:
+  h1:
+    prefix: "███"
+    colors:
+      foreground: "8bd5ca"
+  h2:
+    prefix: "███"
+    colors:
+      foreground: "c6a0f6"
+  h3:
+    prefix: "████"
+    colors:
+      foreground: "8aadf4"
+  h4:
+    prefix: "▓▓▓▓▓"
+    colors:
+      foreground: "ed8796"
+  h5:
+    prefix: "▓▓▓▓▓▓"
+    colors:
+      foreground: "a6da95"
+  h6:
+    prefix: "▓▓▓▓▓▓▓"
+    colors:
+      foreground: "eed49f"
+
+block_quote:
+  prefix: "  "
+  colors:
+    foreground: "9ea3b4"
+    background: "181C29"
+    prefix: "eed49f"
+
+typst:
+  colors:
+    foreground: "cad3f5"
+    background: "363a4f"
+
+footer:
+  style: progress_bar
+  colors:
+    foreground: "39a59a"
+
+modals:
+  selection_colors:
+    foreground: "7dc4e4"
+
+mermaid:
+  background: transparent
+  theme: dark
