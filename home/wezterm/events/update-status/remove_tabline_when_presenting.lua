@@ -5,7 +5,7 @@ wezterm.on("update-status", function(window, _)
 
   local process_info = window:active_tab():active_pane():get_foreground_process_info()
 
-  if string.find(table.concat(process_info["argv"]), "present") then
+  if process_info.argv and string.find(table.concat(process_info["argv"]), "present") then
     local tabline = wezterm.plugin.require("https://github.com/michaelbrusegard/tabline.wez")
     tabline.setup {
       options = {},
