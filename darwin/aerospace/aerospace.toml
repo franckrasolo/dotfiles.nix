@@ -232,6 +232,11 @@ check-further-callbacks = false
 run = 'layout floating'
 
 [[on-window-detected]]
+if.window-title-regex-substring = 'Hammerspoon Console'
+check-further-callbacks = false
+run = 'layout floating'
+
+[[on-window-detected]]
 if.app-id = 'us.zoom.xos'
 check-further-callbacks = true
 run = 'layout floating'
