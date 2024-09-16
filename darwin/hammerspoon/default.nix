@@ -1,9 +1,10 @@
-{ config, user, pkgs, lib, ... }:
+{ config, lib, pkgs, user, ... }:
 
 {
   home-manager.users.${user.accountName} = pkgs.lib.mkMerge [
-    ({ config, ... }: with config.lib.file; {
-      xdg.configFile."hammerspoon".source = mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/darwin/hammerspoon";
+    ({ config, ... }: {
+      xdg.configFile."hammerspoon".source =
+        config.lib.file.mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/darwin/hammerspoon";
     })
     {
       home.activation.reloadHammerspoon =
