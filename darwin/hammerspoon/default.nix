@@ -20,6 +20,7 @@
     let
       rocks = [
         "fun"
+        "luasocket"
         "moonscript"
         "penlight"
       ];
