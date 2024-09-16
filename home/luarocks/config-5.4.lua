@@ -9,6 +9,8 @@ config_files = {
    }
 }
 home_tree = luarocks_data_dir
+homeconfdir = luarocks_conf_dir
+
 rocks_trees = {
    {
       name = "user",
