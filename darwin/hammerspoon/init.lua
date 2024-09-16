@@ -22,3 +22,14 @@ local function reloadConfig(files)
 end
 
 fileWatcher = hs.pathwatcher.new(HammerspoonHome, reloadConfig):start()
+
+-- automatically close the Hammerspoon Console when it loses focus
+-- source: https://gist.github.com/asmagill/251f8ea70b61a177a205
+local function closeConsole(name, event, _)
+  if name and name:match("Hammerspoon") and event == hs.application.watcher.deactivated then
+    local console = hs.appfinder.windowFromWindowTitle("Hammerspoon Console")
+    if console then console:close() end
+  end
+end
+
+consoleWatcher = hs.application.watcher.new(closeConsole):start()
