@@ -3,8 +3,9 @@ local wezterm = require("wezterm")
 wezterm.on("update-status", function(window, _)
   if not window:is_focused() then return end
 
-  local process_name = window:active_tab():active_pane():get_foreground_process_info()["name"]
-  if string.find(process_name, "presenterm", 1, true) then
+  local process_info = window:active_tab():active_pane():get_foreground_process_info()
+
+  if string.find(table.concat(process_info["argv"]), "present") then
     local tabline = wezterm.plugin.require("https://github.com/michaelbrusegard/tabline.wez")
     tabline.setup {
       options = {},
