@@ -19,6 +19,7 @@
   system.activationScripts.postUserActivation.text =
     let
       rocks = [
+        "fun"
         "moonscript"
       ];
       installRockCommand = rock: "/etc/profiles/per-user/${user.accountName}/bin/luarocks --local install ${rock}";
