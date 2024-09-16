@@ -111,7 +111,7 @@ let
 
   graphicalTools = [
     graphviz
-    plantuml
+    plantuml-c4
     timg
   ];
 in
