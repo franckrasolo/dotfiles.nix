@@ -21,6 +21,7 @@
       rocks = [
         "fun"
         "moonscript"
+        "penlight"
       ];
       installRockCommand = rock: "/etc/profiles/per-user/${user.accountName}/bin/luarocks --local install ${rock}";
     in ''
