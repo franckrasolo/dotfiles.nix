@@ -1,12 +1,4 @@
--- append LuaRocks package paths to WezTerm/Lua's package paths
-local luarocks = "/etc/profiles/per-user/" .. os.getenv("USER") .. "/bin/luarocks"
-
-function execute(prog)
-  return io.popen(prog):read("*a")
-end
-
-package.path  = package.path  .. ";" .. execute(luarocks .. " path --lr-path"):gsub("\n", "")
-package.cpath = package.cpath .. ";" .. execute(luarocks .. " path --lr-cpath"):gsub("\n", "")
+require("luarocks")
 
 local config = require("wezterm").config_builder()
 config:set_strict_mode(true)
