@@ -10,6 +10,7 @@ config_files = {
 }
 home_tree = luarocks_data_dir
 homeconfdir = luarocks_conf_dir
+local_by_default = true
 
 rocks_trees = {
    {
