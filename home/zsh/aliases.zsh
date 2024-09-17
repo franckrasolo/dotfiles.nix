@@ -6,7 +6,7 @@ autoload -Uz run-help-sudo
 
 unalias run-help && alias help=run-help
 
-alias abup="antibody bundle < ${ZDOTDIR}/plugins.txt >| ${ZDOTDIR}/zsh_plugins.zsh"
+alias abup="antibody bundle < ${ZDOTDIR}/plugins.txt >| ${ZDOTDIR}/plugins.zsh"
 alias ff="fastfetch"
 
 alias icat="kitty +kitten icat"
