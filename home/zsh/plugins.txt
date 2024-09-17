@@ -1,7 +1,7 @@
-robbyrussell/oh-my-zsh path:plugins/vi-mode
+ohmyzsh/ohmyzsh path:plugins/vi-mode
 Tarrasch/zsh-bd
 zsh-users/zsh-autosuggestions branch:develop
 zsh-users/zsh-completions
-spwhitt/nix-zsh-completions
+nix-community/nix-zsh-completions
 z-shell/F-Sy-H
 zsh-users/zsh-history-substring-search
