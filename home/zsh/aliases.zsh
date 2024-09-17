@@ -46,6 +46,7 @@ alias q="pueue"
 
 alias j="just"
 alias jc="just check"
+alias go='XDG_CONFIG_HOME=~/dev/dotfiles.nix/home presenterm $(/bin/ls slides/*.md | fzf --select-1)'
 alias tuple:renice="sudo renice -20 $(pgrep Tuple)"
 
 alias dns:clear_cache="sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
