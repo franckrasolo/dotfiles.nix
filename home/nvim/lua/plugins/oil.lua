@@ -35,9 +35,15 @@ return {
         end,
       },
       float = {
-        padding = 2,
-        max_width = 80,
-        max_height = 20,
+        max_width = 90,
+        max_height = 40,
+        preview_split = "below",
+      },
+      preview = {
+        max_width = 0.8,
+        min_width = 0.65,
+        max_height = 0.9,
+        min_height = { 60, 0.8 },
       },
       win_options = {
         wrap = true,
