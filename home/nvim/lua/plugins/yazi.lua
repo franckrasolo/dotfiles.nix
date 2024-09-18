@@ -2,6 +2,10 @@ return {
   "mikavilpas/yazi.nvim",
   event = "VeryLazy",
   opts = {
+    floating_window_scaling_factor = {
+      width = 0.96,
+      height = 0.8,
+    },
     keymaps = {
       show_help = "<C-h>",
       open_file_in_tab = false,
