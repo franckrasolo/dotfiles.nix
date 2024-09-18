@@ -9,8 +9,8 @@ default:
 
 slide_title:
   alignment: center
-  padding_bottom: 1
-  padding_top: 1
+  padding_bottom: 0
+  padding_top: 0
   colors:
     foreground: "39a59a"
   bold: true
@@ -47,11 +47,12 @@ intro_slide:
   title:
     alignment: center
     colors:
-      foreground: "cad3f5"
+      foreground: "39a59a"
+    bold: true
   subtitle:
     alignment: center
     colors:
-      foreground: "7dc4e4"
+      foreground: "c5edf0"
   event:
     alignment: center
     colors:
