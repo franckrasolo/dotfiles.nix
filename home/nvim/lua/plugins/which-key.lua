@@ -12,6 +12,7 @@ return {
     layout = {
       spacing = 1, -- spacing between columns
     },
+    sort = { "manual", "local", "order", "group", "alphanum", "mod" },
     icons = {
       rules = {
         { pattern = "bookmark commands", icon = "󱚊 ", color = "red" },
