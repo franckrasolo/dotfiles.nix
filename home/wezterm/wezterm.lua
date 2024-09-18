@@ -4,6 +4,7 @@ local config = require("wezterm").config_builder()
 config:set_strict_mode(true)
 config.automatically_reload_config = true
 config.scrollback_lines = 100000
+config.status_update_interval = 500
 
 require("config.appearance")(config)
 require("config.key_bindings")(config)
