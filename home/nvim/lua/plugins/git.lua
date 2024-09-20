@@ -31,6 +31,48 @@ return {
       local default_on_attach = opts.on_attach
       opts.on_attach = function(buffer)
         default_on_attach(buffer)
+
+        local function map(mode, l, desc, r)
+          vim.keymap.set(mode, l, r, { buffer = buffer, desc = desc, silent = true, noremap = true })
+        end
+
+        local function nav_hunk(direction)
+          local gitsigns = package.loaded.gitsigns
+
+          gitsigns.nav_hunk(direction, {
+            navigation_message = false,
+            foldopen = true,
+            greedy = true,
+            preview = false,
+            target = "all",
+            wrap = true,
+          })
+
+          vim.schedule(function()
+            gitsigns.preview_hunk_inline()
+            vim.fn.feedkeys("zz", "n")
+          end)
+        end
+
+        map("n", "]h", "Next Hunk", function()
+          if vim.wo.diff then
+            vim.cmd.normal({ "]c", bang = true })
+          else
+            nav_hunk("next")
+          end
+        end)
+
+        map("n", "[h", "Prev Hunk", function()
+          if vim.wo.diff then
+            vim.cmd.normal({ "[c", bang = true })
+          else
+            nav_hunk("prev")
+          end
+        end)
+
+        map("n", "]H", "Last Hunk", function() nav_hunk("last") end)
+        map("n", "[H", "First Hunk", function() nav_hunk("first") end)
+
         local function close_diff()
           return (vim.api.nvim_win_get_option(0, "diff") and "<C-w>h<C-w>c") or ""
         end
