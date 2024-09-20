@@ -73,10 +73,8 @@ return {
         map("n", "]H", "Last Hunk", function() nav_hunk("last") end)
         map("n", "[H", "First Hunk", function() nav_hunk("first") end)
 
-        local function close_diff()
-          return (vim.api.nvim_win_get_option(0, "diff") and "<C-w>h<C-w>c") or ""
-        end
-        vim.keymap.set("n", "<leader>ghc", close_diff, { buffer = buffer, desc = "Close Diff", expr = true })
+        vim.keymap.del("n", "<leader>ghd", { buffer = buffer })
+        vim.keymap.del("n", "<leader>ghD", { buffer = buffer })
       end
     end
   },
