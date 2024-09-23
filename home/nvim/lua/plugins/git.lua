@@ -144,6 +144,22 @@ return {
         },
       }
     end,
+  },
+  {
+    "sindrets/diffview.nvim",
+    opts = {
+      enhanced_diff_hl = true,
+      view = {
+        default = { -- config for changed files and staged files in diff views
+          layout = "diff2_vertical",
+          disable_diagnostics = false,
+          winbar_info = true,
+        },
+        file_history = {
+          layout = "diff2_vertical",
+          disable_diagnostics = false,
+          winbar_info = true,
+        },
       },
     },
   },
