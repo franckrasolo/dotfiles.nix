@@ -123,7 +123,7 @@ return {
           end,
         },
         {
-          "<leader>gf", desc = "File History",
+          "<leader>gH", desc = "File History",
           function()
             neogit.action("log", "log_current", { "--", vim.fn.expand("%") })()
           end,
