@@ -7,7 +7,7 @@ return {
       height = 0.8,
     },
     keymaps = {
-      show_help = "<C-h>",
+      show_help = "g?",
       open_file_in_tab = false,
       grep_in_directory = "<C-A-/>",
       replace_in_directory = "<C-A-,>",
