@@ -78,4 +78,70 @@ return {
       end
     end
   },
+  {
+    "NeogitOrg/neogit",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "sindrets/diffview.nvim",
+      "nvim-telescope/telescope.nvim",
+    },
+    opts = {
+      kind = "vsplit",
+      graph_style = "unicode",
+      signs = {
+        section = { "", "" },
+        item = { "", "" },
+        hunk = { "󰡍", "󰡏" },
+      },
+      filewatcher = {
+        interval = 1000,
+        enabled = true,
+      },
+      integrations = { diffview = true },
+      sections = {
+        untracked = { folded = true },
+      },
+      commit_editor = {
+        kind = "floating",
+      },
+      mappings = {
+        status = {
+          ["[h"] = "GoToPreviousHunkHeader",
+          ["]h"] = "GoToNextHunkHeader",
+        },
+      },
+    },
+    keys = function()
+      local neogit = require("neogit")
+      return {
+        { "<leader>gs", desc = "Status", "<cmd>Neogit cwd=%:p:h<cr>" },
+        {
+          "<leader>gd", desc = "File Diff",
+          function()
+            local diffview = require("neogit.integrations.diffview")
+            diffview.open("blank", vim.fn.expand("%"), { only = true })
+          end,
+        },
+        {
+          "<leader>gf", desc = "File History",
+          function()
+            neogit.action("log", "log_current", { "--", vim.fn.expand("%") })()
+          end,
+        },
+        {
+          "<leader>gv", desc = "Selection History",
+          function()
+            local file = vim.fn.expand("%")
+            vim.cmd([[execute "normal! \<ESC>"]])
+            local line_start = vim.fn.getpos("'<")[2]
+            local line_end = vim.fn.getpos("'>")[2]
+            neogit.action("log", "log_current", { "-L" .. line_start .. "," .. line_end .. ":" .. file })()
+          end,
+          mode = "v",
+        },
+      }
+    end,
+      },
+    },
+  },
 }
