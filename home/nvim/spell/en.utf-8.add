@@ -5,6 +5,7 @@ JVM
 KMP
 Konsist
 Kotlin
+Neogit
 Neovim
 Quillin
 Rasolo
@@ -14,6 +15,7 @@ aarch64
 classpath
 cmd
 darwin
+diffview
 gitsigns
 ing
 keymaps
