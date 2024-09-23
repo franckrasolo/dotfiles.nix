@@ -11,6 +11,7 @@ return {
       open_file_in_tab = false,
       grep_in_directory = "<C-A-/>",
       replace_in_directory = "<C-A-,>",
+      change_working_directory = "~",
     },
   },
   keys = {
