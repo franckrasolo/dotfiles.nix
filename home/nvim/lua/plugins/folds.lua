@@ -1,4 +1,4 @@
-local augment_fold_with_line_count = function(virt_text, start_lnum, end_lnum, width, truncate)
+local function augment_fold_with_line_count(virt_text, start_lnum, end_lnum, width, truncate)
   local new_virt_text = {}
   local suffix = (" 󰁇 %d"):format(end_lnum - start_lnum)
   local suffix_width = vim.fn.strdisplaywidth(suffix)
