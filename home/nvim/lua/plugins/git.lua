@@ -114,9 +114,9 @@ return {
     keys = function()
       local neogit = require("neogit")
       return {
-        { "<leader>gf", desc = "Fetch", function () neogit.action("fetch", "fetch_pushremote")() end },
-        { "<leader>gp", desc = "Pull", function () neogit.action("pull", "from_pushremote")() end },
-        { "<leader>gP", desc = "Push", function () neogit.action("push", "to_pushremote")() end },
+        { "<leader>gf", desc = "Fetch", function() neogit.action("fetch", "fetch_pushremote")() end },
+        { "<leader>gp", desc = "Pull", function() neogit.action("pull", "from_pushremote")() end },
+        { "<leader>gP", desc = "Push", function() neogit.action("push", "to_pushremote")() end },
         { "<leader>gs", desc = "Status", "<cmd>Neogit cwd=%:p:h<cr>" },
         {
           "<leader>gd", desc = "File Diff",
