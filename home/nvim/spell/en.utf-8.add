@@ -5,6 +5,8 @@ JVM
 KMP
 Konsist
 Kotlin
+Lua
+LuaRocks
 Neogit
 Neovim
 Quillin
@@ -12,6 +14,7 @@ Rasolo
 UX
 Wojda
 aarch64
+catppuccin
 classpath
 cmd
 darwin
