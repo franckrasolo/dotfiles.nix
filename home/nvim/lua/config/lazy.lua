@@ -22,8 +22,7 @@ require("lazy").setup({
     { import = "plugins" },
   },
   defaults = {
-    -- set lazy to `true` to lazy load custom plugins by default
-    lazy = false,
+    lazy = true,
     -- It's recommended to leave version=false for now, since a lot the plugin that support versioning,
     -- have outdated releases, which may break your Neovim install.
     version = false, -- always use the latest git commit
