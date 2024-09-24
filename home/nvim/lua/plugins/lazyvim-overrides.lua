@@ -75,7 +75,7 @@ return {
   {
     "L3MON4D3/LuaSnip",
     build = "make install_jsregexp",
-    init = function()
+    config = function()
       -- additional snippets from friendly-snippets
       local luasnip = require("luasnip")
       luasnip.filetype_extend("kotlin", { "kdoc" })
