@@ -2,7 +2,6 @@ local screenshots_dir = "screenshots"
 
 return {
   "michaelrommel/nvim-silicon",
-  lazy = true,
   cmd = "Silicon",
   config = function(_, opts) require("nvim-silicon").setup(opts) end,
   opts = {
