@@ -10,23 +10,13 @@ return {
         virt_text_pos = "right_align"
       }
 
-      local function highlight(group, attributes)
-        vim.api.nvim_set_hl(0, group, attributes)
-      end
+      vim.api.nvim_set_hl(0, "GitSignsCurrentLineBlame", { fg = "#6C738C", italic = true })
 
-      highlight("DiffAdd", { bg = "#0E2E21" })
-      highlight("DiffChange", { bg = "#1A345A" })
-      highlight("DiffDelete", { bg = "#471613" })
-      highlight("DiffText", { bg = "#D4CF94", fg = "#1A345A", bold = true, italic = true })
+      vim.api.nvim_set_hl(0, "GitSignsAddInline", { bg = "#0E2E21" })
+      vim.api.nvim_set_hl(0, "GitSignsChangeInline", { bg = "#1A345A" })
+      vim.api.nvim_set_hl(0, "GitSignsDeleteInline", { bg = "#471613" })
 
-      highlight("GitSignsAddLn", { bg = "#0E2E21" })
-      highlight("GitSignsAddPreview", { bg = "#0E2E21" })
-      highlight("GitSignsDeletePreview", { bg = "#471613" })
-      highlight("GitSignsCurrentLineBlame", { fg = "#6C738C", italic = true })
-
-      highlight("GitSignsAddInline", { bg = "#D4CF94", fg = "#0E2E21", bold = true, italic = true })
-      highlight("GitSignsChangeInline", { bg = "#D4CF94", fg = "#0E2E21", bold = true, italic = true })
-      highlight("GitSignsDeleteInline", { bg = "#D4CF94", fg = "#471613", bold = true, italic = true })
+      vim.api.nvim_set_hl(0, "NeogitDiffContextHighlight", { bg = "#0F0F1C" })
 
       local default_on_attach = opts.on_attach
       opts.on_attach = function(buffer)
