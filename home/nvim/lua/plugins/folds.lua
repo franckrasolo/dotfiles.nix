@@ -1,30 +1,30 @@
 local augment_fold_with_line_count = function(virt_text, start_lnum, end_lnum, width, truncate)
-    local new_virt_text = {}
-    local suffix = (" 󰁇 %d"):format(end_lnum - start_lnum)
-    local suffix_width = vim.fn.strdisplaywidth(suffix)
-    local target_width = width - suffix_width
-    local current_width = 0
+  local new_virt_text = {}
+  local suffix = (" 󰁇 %d"):format(end_lnum - start_lnum)
+  local suffix_width = vim.fn.strdisplaywidth(suffix)
+  local target_width = width - suffix_width
+  local current_width = 0
 
-    for _, chunk in ipairs(virt_text) do
-        local chunk_text = chunk[1]
-        local chunk_width = vim.fn.strdisplaywidth(chunk_text)
-        if target_width > current_width + chunk_width then
-            table.insert(new_virt_text, chunk)
-        else
-            chunk_text = truncate(chunk_text, target_width - current_width)
-            local hl_group = chunk[2]
-            table.insert(new_virt_text, {chunk_text, hl_group})
-            chunk_width = vim.fn.strdisplaywidth(chunk_text)
-            -- pad the string returned by truncate() if it is shorter than the 2nd argument
-            if current_width + chunk_width < target_width then
-                suffix = suffix .. (" "):rep(target_width - current_width - chunk_width)
-            end
-            break
-        end
-        current_width = current_width + chunk_width
+  for _, chunk in ipairs(virt_text) do
+    local chunk_text = chunk[1]
+    local chunk_width = vim.fn.strdisplaywidth(chunk_text)
+    if target_width > current_width + chunk_width then
+      table.insert(new_virt_text, chunk)
+    else
+      chunk_text = truncate(chunk_text, target_width - current_width)
+      local hl_group = chunk[2]
+      table.insert(new_virt_text, { chunk_text, hl_group })
+      chunk_width = vim.fn.strdisplaywidth(chunk_text)
+      -- pad the string returned by truncate() if it is shorter than the 2nd argument
+      if current_width + chunk_width < target_width then
+        suffix = suffix .. (" "):rep(target_width - current_width - chunk_width)
+      end
+      break
     end
-    table.insert(new_virt_text, { suffix, "Folded" })
-    return new_virt_text
+    current_width = current_width + chunk_width
+  end
+  table.insert(new_virt_text, { suffix, "Folded" })
+  return new_virt_text
 end
 
 return {
@@ -43,12 +43,12 @@ return {
     local capabilities = vim.lsp.protocol.make_client_capabilities()
     capabilities.textDocument.foldingRange = {
       dynamicRegistration = false,
-      lineFoldingOnly = true
+      lineFoldingOnly = true,
     }
 
     for _, ls in ipairs(require("lspconfig").util.available_servers()) do
       require("lspconfig")[ls].setup {
-        capabilities = capabilities
+        capabilities = capabilities,
       }
     end
 
@@ -76,9 +76,9 @@ return {
         local filetype_providers = { git = "indent", NeogitStatus = "" }
 
         return (filetypes_with_lsp[filetype] and "lsp")
-            or filetype_providers[filetype]
-            or ((filetype == "" or buftype == "nofile") and "indent")
-            or { "treesitter", "indent" }
+          or filetype_providers[filetype]
+          or ((filetype == "" or buftype == "nofile") and "indent")
+          or { "treesitter", "indent" }
       end,
     }
   end,
@@ -93,12 +93,12 @@ return {
     end
 
     return {
-    { "zK", desc = "UFO: Preview fold", preview_fold },
-    { "zm", desc = "UFO: Fold more", ufo.closeFoldsWith },
-    { "zr", desc = "UFO: Fold less", ufo.openFoldsExceptKinds },
-    { "zM", desc = "UFO: Close all folds", ufo.closeAllFolds },
-    { "zR", desc = "UFO Open all folds", ufo.openAllFolds },
-    { "zv", desc = "UFO: View cursor line", "<cmd>lua require('ufo').closeAllFolds()<cr>zozO", { noremap = true } },
-  }
+      { "zK", desc = "UFO: Preview fold", preview_fold },
+      { "zm", desc = "UFO: Fold more", ufo.closeFoldsWith },
+      { "zr", desc = "UFO: Fold less", ufo.openFoldsExceptKinds },
+      { "zM", desc = "UFO: Close all folds", ufo.closeAllFolds },
+      { "zR", desc = "UFO Open all folds", ufo.openAllFolds },
+      { "zv", desc = "UFO: View cursor line", "<cmd>lua require('ufo').closeAllFolds()<cr>zozO", { noremap = true } },
+    }
   end,
 }
