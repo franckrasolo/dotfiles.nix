@@ -29,6 +29,7 @@ return {
         dadbod_ui = true,
         dap = true,
         dap_ui = true,
+        diffview = true,
         native_lsp = {
           virtual_text = {
             errors = { "italic" },
