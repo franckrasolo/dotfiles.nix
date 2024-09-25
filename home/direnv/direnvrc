@@ -1,3 +1,14 @@
+# adapted from https://github.com/direnv/direnv/wiki/Customizing-cache-location#human-readable-directories
+
+declare -A direnv_layout_dirs
+
+direnv_layout_dir() {
+  local dir=${PWD/$HOME}
+  local hash=$(shasum --algorithm 1 - <<< $dir | head -c40)
+  local path=${dir//[^a-zA-Z0-9]/-}
+  echo ${direnv_layout_dirs[$PWD]:=${XDG_CACHE_HOME}/direnv/layouts/${hash}${path}}
+}
+
 # adapted from https://github.com/direnv/direnv/issues/73#issuecomment-1192448475
 
 export_alias() {
