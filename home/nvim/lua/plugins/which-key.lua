@@ -22,6 +22,7 @@ return {
         { pattern = "next bookmark", icon = "󱚂 ", color = "green" },
         { pattern = "jumps", icon = "󱕘 ", color = "green" },
         { pattern = "previews", icon = " ", color = "blue" },
+        { pattern = "swap", icon = "󰿡 ", color = "yellow" },
       }
     }
   }
