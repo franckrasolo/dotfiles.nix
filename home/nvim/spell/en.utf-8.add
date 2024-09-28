@@ -11,7 +11,9 @@ Neogit
 Neovim
 Quillin
 Rasolo
+UltraDark
 UX
+WezTerm
 Wojda
 aarch64
 catppuccin
@@ -19,11 +21,13 @@ classpath
 cmd
 darwin
 diffview
+direnv
 gitsigns
 ing
 keymaps
 macOS
 markdownlint
+multicursor
 nvim
 vFunction
 vfunction
