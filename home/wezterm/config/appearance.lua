@@ -1,14 +1,17 @@
+local colour_scheme = require("wezterm").color.get_builtin_schemes()["UltraDark"]
+colour_scheme.background = "black"
+colour_scheme.selection_bg = "#34bf91"
+colour_scheme.selection_fg = "#DFFFE6"
+colour_scheme.copy_mode_inactive_highlight_bg = { Color = colour_scheme.ansi[4] }
+colour_scheme.copy_mode_inactive_highlight_fg = { Color = colour_scheme.brights[1] }
+
 return function(config)
   config.default_cursor_style = "BlinkingBlock"
 
-  config.color_scheme = "UltraDark"
-  config.colors = {
-    selection_bg = "#99CD8C",
-    selection_fg = "black",
-
-    copy_mode_inactive_highlight_bg = { Color = "#E8BF6A" },
-    copy_mode_inactive_highlight_fg = { AnsiColor = "Black" },
+  config.color_schemes = {
+    ["UltraDarker"] = colour_scheme,
   }
+  config.color_scheme = "UltraDarker"
 
   config.text_background_opacity = 1.0
   config.window_background_opacity = 0.875
