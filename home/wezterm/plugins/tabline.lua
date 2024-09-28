@@ -30,22 +30,22 @@ return function(_)
         }
       },
       section_separators = {
-        left = wezterm.nerdfonts.ple_right_half_circle_thick,
-        right = wezterm.nerdfonts.ple_left_half_circle_thick,
+        left = wezterm.nerdfonts.ple_upper_left_triangle,
+        right = wezterm.nerdfonts.ple_lower_right_triangle,
       },
       component_separators = {
-        left = wezterm.nerdfonts.ple_right_half_circle_thin,
-        right = wezterm.nerdfonts.ple_left_half_circle_thin,
+        left = wezterm.nerdfonts.ple_forwardslash_separator,
+        right = wezterm.nerdfonts.ple_forwardslash_separator,
       },
       tab_separators = {
-        left = wezterm.nerdfonts.ple_right_half_circle_thick,
-        right = wezterm.nerdfonts.ple_left_half_circle_thick,
+        left = wezterm.nerdfonts.ple_upper_left_triangle,
+        right = wezterm.nerdfonts.ple_lower_right_triangle,
       },
     },
     sections = {
       tabline_a = { icon },
       tabline_b = { "mode" },
-      tabline_c = { " " },
+      tabline_c = {},
       tab_active = {
         { Foreground = { Color = accent_colors.ansi[3] } },
         "index",
@@ -55,7 +55,7 @@ return function(_)
         { "cwd", max_length = 20, padding = { left = 0, right = 1 } },
         { Foreground = { Color = accent_colors.ansi[3] } },
         { Text = wezterm.nerdfonts.ple_forwardslash_separator },
-        { "process", icons_only = true, process_to_icon = process_to_icon, padding = { left = 1, right = 0 } },
+        { "process", icons_only = true, process_to_icon = process_to_icon, padding = { left = 1, right = 1 } },
       },
       tab_inactive = {
         { Foreground = { Color = accent_colors.ansi[6] } },
@@ -68,7 +68,7 @@ return function(_)
         { Text = wezterm.nerdfonts.ple_forwardslash_separator },
         { Background = { Color = accent_colors.tab_bar.background } },
         { Foreground = { Color = "#727272" } },
-        { "process", icons_only = true, process_to_icon = process_to_icon, padding = { left = 1, right = 0 } },
+        { "process", icons_only = true, process_to_icon = process_to_icon, padding = { left = 1, right = 1 } },
       },
       tabline_x = {},
       tabline_y = { { "datetime", style = "%a %d %b %Y %H:%M:%S", hour_to_icon = "" }, "battery" },
