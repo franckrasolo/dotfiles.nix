@@ -28,7 +28,7 @@ return function(config)
   config.show_tabs_in_tab_bar = true
   config.show_new_tab_button_in_tab_bar = false
   config.tab_bar_at_bottom = false
-  config.tab_max_width = 32
+  config.tab_max_width = 80
   config.unzoom_on_switch_pane = false
 
   config.enable_scroll_bar = false
