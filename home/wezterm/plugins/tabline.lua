@@ -7,7 +7,7 @@ local process_to_icon = {
   ["zsh"] = { wezterm.nerdfonts.oct_terminal, color = { fg = "#A4A9BB" } },
 }
 
-return function(config)
+return function(_)
   local tabline = wezterm.plugin.require("https://github.com/michaelbrusegard/tabline.wez")
 
   local function icon()
