@@ -54,6 +54,7 @@ export PARALLEL_HOME=$XDG_CONFIG_HOME/parallel
 export PATH=$XDG_BIN_HOME:$HOME/.local/bin:$PATH
 export PATH=$HOME/Library/Application\ Support/JetBrains/Toolbox/scripts:$PATH # for NixIDEA / JetBrains IDEs?
 export PATH=$XDG_DATA_HOME/npm/bin:$PATH # for grain
+export PATH=$HOME/.modular/bin:$PATH
 export PATH=$HOME/dev/roc:$PATH
 
 # disable for earthly
