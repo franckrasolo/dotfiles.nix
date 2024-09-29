@@ -10,10 +10,11 @@ return {
         virt_text_pos = "right_align"
       }
 
+      vim.api.nvim_set_hl(0, "DiffText", { bg = "#2A3554", fg = "#C1E0FF" })
       vim.api.nvim_set_hl(0, "GitSignsCurrentLineBlame", { fg = "#6C738C", italic = true })
 
       vim.api.nvim_set_hl(0, "GitSignsAddInline", { bg = "#0E2E21" })
-      vim.api.nvim_set_hl(0, "GitSignsChangeInline", { bg = "#1A345A" })
+      vim.api.nvim_set_hl(0, "GitSignsChangeInline", { bg = "#2A3554" })
       vim.api.nvim_set_hl(0, "GitSignsDeleteInline", { bg = "#471613" })
 
       vim.api.nvim_set_hl(0, "NeogitDiffContextHighlight", { bg = "#0F0F1C" })
