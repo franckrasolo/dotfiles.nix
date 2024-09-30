@@ -17,12 +17,10 @@
       "homebrew/bundle"
       "martido/homebrew-graph"
       "localsend/localsend"
-      "modularml/packages"
       "nikitabobko/tap"
     ];
 
     brews = [
-      "modular"
     ];
 
     casks = [
