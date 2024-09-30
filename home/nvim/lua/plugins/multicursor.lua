@@ -26,24 +26,24 @@ return {
       { mode = { "n", "v" }, "<a-right>", desc = "Next cursor", mc.nextCursor },
       { mode = { "n", "v" }, "<a-left>", desc = "Previous cursor", mc.prevCursor },
 
-      { mode = { "n", "v" }, "<a-a>", desc = "First cursor", mc.firstCursor },
-      { mode = { "n", "v" }, "<a-z>", desc = "Last cursor", mc.lastCursor },
+      { mode = { "n", "v" }, "å", desc = "First cursor", mc.firstCursor }, -- å -> <a-a>
+      { mode = { "n", "v" }, "Ω", desc = "Last cursor", mc.lastCursor },   -- Ω -> <a-z>
 
       -- delete the main cursor
       { mode = { "n", "v" }, "dx", desc = "Delete cursor", mc.deleteCursor },
 
       -- align cursor columns
-      { "<a-=>", desc = "Align cursors", mc.alignCursors },
+      { mode = "v", "≠", desc = "Align cursors", mc.alignCursors }, -- ≠ -> <a-=>
 
       -- split visual selections by regex
       { mode = "v", "/", desc = "Split visual selections by regex", mc.splitCursors },
 
       -- append/insert for each line of visual selections
-      { mode = "v", "<a-I>", desc = "Insert before selections", mc.insertVisual },
-      { mode = "v", "<a-A>", desc = "Append after selections", mc.appendVisual },
+      { mode = "v", "È", desc = "Insert before selections", mc.insertVisual }, -- È -> <a-I>
+      { mode = "v", "Å", desc = "Append after selections", mc.appendVisual },  -- Å -> <a-A>
 
       -- match new cursors within visual selections by regex
-      { mode = "v", "<a-M>", desc = "Regex match new cursors within selections", mc.matchCursors },
+      { mode = "v", "µ", desc = "Regex match new cursors within selections", mc.matchCursors }, -- µ -> <a-m>
 
       -- rotate contents of visual selections
       { mode = "v", "<c-/>", desc = "Rotate selections clockwise", function() mc.transposeCursors(1) end },
