@@ -3,12 +3,16 @@ return {
   config = function()
     require("multicursor-nvim").setup()
 
-    vim.api.nvim_set_hl(0, "MultiCursorCursor", { link = "TodoBgFIX" })
-    vim.api.nvim_set_hl(0, "MultiCursorSign",   { link = "TodoBgFIX" })
-    vim.api.nvim_set_hl(0, "MultiCursorVisual", { link = "TodoBgWARN" })
-    vim.api.nvim_set_hl(0, "MultiCursorDisabledCursor", { link = "@text.todo" })
-    vim.api.nvim_set_hl(0, "MultiCursorDisabledSign",   { link = "@text.todo" })
-    vim.api.nvim_set_hl(0, "MultiCursorDisabledVisual", { link = "Substitute" })
+    local function highlight(group, definition)
+      vim.api.nvim_set_hl(0, group, definition)
+    end
+
+    highlight("MultiCursorCursor", { link = "TodoBgFIX" })
+    highlight("MultiCursorSign",   { link = "TodoBgFIX" })
+    highlight("MultiCursorVisual", { link = "TodoBgWARN" })
+    highlight("MultiCursorDisabledCursor", { link = "@text.todo" })
+    highlight("MultiCursorDisabledSign",   { link = "@text.todo" })
+    highlight("MultiCursorDisabledVisual", { link = "Substitute" })
   end,
   keys = function()
     local mc = require("multicursor-nvim")
