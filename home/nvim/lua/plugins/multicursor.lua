@@ -12,9 +12,9 @@ return {
     local mc = require("multicursor-nvim")
 
     return {
-      -- add cursors above/below the main cursor
-      { mode = { "n", "v" }, "<a-up>", desc = "Add cursor above", function() mc.addCursor("k") end },
-      { mode = { "n", "v" }, "<a-down>", desc = "Add cursor below", function() mc.addCursor("j") end },
+      -- add cursors above/below the main cursor, skipping empty lines
+      { mode = { "n", "v" }, "<a-up>", desc = "Add cursor above", function() mc.lineAddCursor(-1) end },
+      { mode = { "n", "v" }, "<a-down>", desc = "Add cursor below", function() mc.lineAddCursor(1) end },
 
       -- add a cursor and jump to the next word under cursor
       { mode = { "n", "v" }, "<c-n>", desc = "Add cursor + jump to next word", function() mc.addCursor("*") end },
