@@ -49,6 +49,9 @@ return {
       { mode = "v", "<c-/>", desc = "Rotate selections clockwise", function() mc.transposeCursors(1) end },
       { mode = "v", "<c-\\>", desc = "Rotate selections anti-clockwise", function() mc.transposeCursors(-1) end },
 
+      -- clone every cursor and disable the originals
+      { mode = { "n", "v" }, "ç", desc = "Clone cursors", mc.duplicateCursors }, -- ç -> <a-c>
+
       { mode = { "n", "v" }, "<c-q>", desc = "Stop cursors / Add cursor",
         function()
           if mc.cursorsEnabled() then
