@@ -18,11 +18,13 @@ return {
       { mode = { "n", "v" }, "<a-up>", desc = "Add cursor above", function() mc.lineAddCursor(-1) end },
       { mode = { "n", "v" }, "<a-down>", desc = "Add cursor below", function() mc.lineAddCursor(1) end },
 
-      -- add a cursor and jump to the next word under cursor
-      { mode = { "n", "v" }, "<c-n>", desc = "Add cursor + jump to next word", function() mc.addCursor("*") end },
+      -- add a cursor and jump to the next/previous selection/word under cursor
+      { mode = { "n", "v" }, "<c-n>", desc = "Add cursor + jump to next selection/word", function() mc.matchAddCursor(1) end },
+      { mode = { "n", "v" }, "<c-p>", desc = "Add cursor + jump to previous selection/word", function() mc.matchAddCursor(-1) end },
 
-      -- jump to the next word under cursor but do not add a cursor
-      { mode = { "n", "v" }, "<c-s>", desc = "Next word w/o adding a cursor", function() mc.skipCursor("*") end },
+      -- jump to the next/previous selection/word under cursor without adding a cursor
+      { mode = { "n", "v" }, "<c-right>", desc = "Next selection/word w/o adding a cursor", function() mc.matchSkipCursor(1) end },
+      { mode = { "n", "v" }, "<c-left>", desc = "Previous selection/word w/o adding a cursor", function() mc.matchSkipCursor(-1) end },
 
       -- rotate the main cursor
       { mode = { "n", "v" }, "<a-right>", desc = "Next cursor", mc.nextCursor },
