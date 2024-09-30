@@ -111,6 +111,7 @@ let
 
   graphicalTools = [
     graphviz
+    neo
     plantuml-c4
     timg
   ];
