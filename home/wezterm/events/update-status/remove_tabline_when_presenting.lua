@@ -15,7 +15,11 @@ wezterm.on("update-status", function(window, _)
 
   local process_info = window:active_tab():active_pane():get_foreground_process_info()
 
-  if process_info and length(grep(".+present", search(process_info, "executable"))) > 0 then
+  local function predicate(x)
+    return string.find(x, ".+present") or string.find(x, "neo")
+  end
+
+  if process_info and length(grep(predicate, search(process_info, "executable"))) > 0 then
     local tabline = wezterm.plugin.require("https://github.com/michaelbrusegard/tabline.wez")
     tabline.setup {
       options = {},
