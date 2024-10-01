@@ -12,5 +12,5 @@ require("config.typography")(config)
 require("plugins.tabline")(config)
 
 require("events.gui-startup.adjust_font_window_sizes")
-require("events.update-status.remove_tabline_when_presenting")
+require("events.update-status.remove_tabline_conditionally")
 return config
