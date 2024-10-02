@@ -16,6 +16,7 @@ LuaRocks
 Neogit
 Neovide
 Neovim
+Pixi
 PyCharm
 Quillin
 Rasolo
@@ -48,6 +49,7 @@ markdownlint
 multicursor
 nushell
 nvim
+quickfix
 socio-technical
 sociotechnical
 tabline
