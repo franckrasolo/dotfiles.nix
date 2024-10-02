@@ -6,4 +6,7 @@ return {
     "ibhagwan/fzf-lua",
     { "junegunn/fzf", name = "fzf", build = "./install --bin" },
   },
+  opts = {
+    auto_resize_height = true,
+  },
 }
