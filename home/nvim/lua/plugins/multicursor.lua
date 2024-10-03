@@ -27,8 +27,8 @@ return {
       { mode = { "n", "v" }, "<c-p>", desc = "Add cursor + jump to previous selection/word", function() mc.matchAddCursor(-1) end },
 
       -- jump to the next/previous selection/word under cursor without adding a cursor
-      { mode = { "n", "v" }, "<c-right>", desc = "Next selection/word w/o adding a cursor", function() mc.matchSkipCursor(1) end },
-      { mode = { "n", "v" }, "<c-left>", desc = "Previous selection/word w/o adding a cursor", function() mc.matchSkipCursor(-1) end },
+      { mode = { "n", "v" }, "<c-a-n>", desc = "Next selection/word w/o adding a cursor", function() mc.matchSkipCursor(1) end },
+      { mode = { "n", "v" }, "<c-a-p>", desc = "Previous selection/word w/o adding a cursor", function() mc.matchSkipCursor(-1) end },
 
       -- rotate the main cursor
       { mode = { "n", "v" }, "<a-right>", desc = "Next cursor", mc.nextCursor },
