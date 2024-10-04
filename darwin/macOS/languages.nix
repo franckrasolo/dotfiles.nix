@@ -1,7 +1,5 @@
-{ user, ... }:
-
 {
-  home-manager.users.${user.accountName}.targets.darwin.defaults.NSGlobalDomain = {
+  system.defaults.CustomUserPreferences."NSGlobalDomain" = {
     AppleLanguages = [ "en" ];
     AppleLocale    = "en_GB@currency=GBP";
 

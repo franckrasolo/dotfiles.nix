@@ -1,5 +1,3 @@
-{ user, ... }:
-
 {
   system.defaults.CustomUserPreferences."~/Library/Preferences/ByHost/com.apple.controlcenter.plist" = {
     "AirDrop"          = 8;
@@ -31,7 +29,7 @@
     ShowSeconds    = true;
   };
 
-  home-manager.users.${user.accountName}.targets.darwin.defaults."com.apple.menuextra.clock" = {
+  system.defaults.CustomUserPreferences."com.apple.menuextra.clock" = {
     FlashDateSeparators = true;
   };
 }
