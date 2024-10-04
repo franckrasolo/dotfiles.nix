@@ -11,7 +11,7 @@
     "com.apple.sound.beep.sound" = "/System/Library/Sounds/Bottle.aiff";
   };
 
-  system.defaults.CustomUserPreferences."~/Library/Preferences/com.apple.musicrecognition.RecognizeMusicIntent.plist" = {
+  system.defaults.CustomUserPreferences."com.apple.musicrecognition.RecognizeMusicIntent" = {
     "WFShazamMediaActionShowWhenRun" = true;
     "WFShazamMediaActionErrorIfNotRecognized" = true;
     "addToLibrary" = false;
