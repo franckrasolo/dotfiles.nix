@@ -6,7 +6,7 @@
     ./finder.nix
     ./keyboard.nix
     ./languages.nix
-    ./menuExtraClock.nix
+    ./menubar.nix
     ./trackpad.nix
     ./sound.nix
     ./spaces.nix
