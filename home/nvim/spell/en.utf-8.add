@@ -22,6 +22,7 @@ Quillin
 Rasolo
 RustRover
 S3
+Shazaam
 TypeScript
 UltraDark
 UX
@@ -47,7 +48,9 @@ keymaps
 lualine
 macOS
 markdownlint
+menubar
 multicursor
+nix-darwin
 nushell
 nvim
 quickfix
