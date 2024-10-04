@@ -1,6 +1,10 @@
 { user, ... }:
 
 {
+  system.defaults.CustomUserPreferences."~/Library/Preferences/ByHost/com.apple.controlcenter.plist" = {
+    "MusicRecognition" = 9;
+  };
+
   system.defaults.menuExtraClock = {
     IsAnalog   = false;
     Show24Hour = true;

@@ -10,4 +10,10 @@
   system.defaults.".GlobalPreferences" = {
     "com.apple.sound.beep.sound" = "/System/Library/Sounds/Bottle.aiff";
   };
+
+  system.defaults.CustomUserPreferences."~/Library/Preferences/com.apple.musicrecognition.RecognizeMusicIntent.plist" = {
+    "WFShazamMediaActionShowWhenRun" = true;
+    "WFShazamMediaActionErrorIfNotRecognized" = true;
+    "addToLibrary" = false;
+  };
 }
