@@ -60,6 +60,9 @@ return {
       -- clone every cursor and disable the originals
       { mode = { "n", "v" }, "ç", desc = "Clone cursors", mc.duplicateCursors }, -- ç -> <a-c>
 
+      -- restore cursors after clearing them
+      { mode = "n", "©√", desc = "Restore cursors", mc.restoreCursors }, -- ©√ -> <a-g><a-v>
+
       { mode = { "n", "v" }, "<c-q>", desc = "Stop cursors / Add cursor",
         function()
           if mc.cursorsEnabled() then
