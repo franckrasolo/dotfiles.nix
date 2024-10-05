@@ -13,6 +13,10 @@ return function(config)
   }
   config.color_scheme = "UltraDarker"
 
+  -- https://sw.kovidgoyal.net/kitty/graphics-protocol/
+  -- https://github.com/wez/wezterm/issues/986
+  -- https://github.com/zellij-org/zellij/issues/2814
+  config.enable_kitty_graphics = true
   config.text_background_opacity = 1.0
   config.window_background_opacity = 0.875
   config.window_decorations = "RESIZE"
