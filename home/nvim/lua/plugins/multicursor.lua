@@ -41,7 +41,7 @@ return {
       { mode = { "n", "v" }, "dx", desc = "Delete cursor", mc.deleteCursor },
 
       -- align cursor columns
-      { mode = "v", "≠", desc = "Align cursors", mc.alignCursors }, -- ≠ -> <a-=>
+      { mode = { "n", "v" }, "≠", desc = "Align cursors", mc.alignCursors }, -- ≠ -> <a-=>
 
       -- split visual selections by regex
       { mode = "v", "/", desc = "Split visual selections by regex", mc.splitCursors },
