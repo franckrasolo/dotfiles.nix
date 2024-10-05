@@ -18,7 +18,7 @@
 
   # auto-upgrade both the nix package and the daemon service
   services.nix-daemon.enable = true;
-  nix.package = pkgs.nixFlakes;
+  nix.package = pkgs.nixVersions.latest;
   nix.useDaemon = true;
 
   nixpkgs.config.allowBroken = true;
