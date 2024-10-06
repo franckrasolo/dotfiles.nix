@@ -30,6 +30,10 @@ return {
       { mode = { "n", "v" }, "<c-a-n>", desc = "Next selection/word w/o adding a cursor", function() mc.matchSkipCursor(1) end },
       { mode = { "n", "v" }, "<c-a-p>", desc = "Previous selection/word w/o adding a cursor", function() mc.matchSkipCursor(-1) end },
 
+      -- jumplist navigation
+      { mode = { "n", "v" }, "<c-a-i>", desc = "Next cursor positions in the jumplist", mc.jumpForward },
+      { mode = { "n", "v" }, "<c-a-o>", desc = "Previous cursor positions in the jumplist", mc.jumpBackward },
+
       -- rotate the main cursor
       { mode = { "n", "v" }, "<a-right>", desc = "Next cursor", mc.nextCursor },
       { mode = { "n", "v" }, "<a-left>", desc = "Previous cursor", mc.prevCursor },
