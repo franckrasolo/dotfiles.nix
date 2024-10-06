@@ -19,6 +19,7 @@ Neovim
 Pixi
 PyCharm
 Quillin
+REPL
 Rasolo
 RustRover
 S3
@@ -43,6 +44,7 @@ gitsigns
 golang
 helpdesk
 ing
+jumplist
 keymap
 keymaps
 lualine
