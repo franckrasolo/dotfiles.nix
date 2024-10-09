@@ -1,0 +1,16 @@
+config:
+  default: true
+
+  # rule settings listed in alphabetical order
+  MD001: false
+  MD003: false
+  MD024: false
+  MD025: false
+  MD026: false
+  MD036: false
+  MD041: false
+
+  line-length:          # MD013
+    line_length: 100
+
+  no-inline-html: false # MD033
