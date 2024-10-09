@@ -23,7 +23,9 @@ return {
           crust = "#01010F",
         },
       },
-      custom_highlights = { Visual = { bg = "#472955" } },
+      custom_highlights = {
+        Visual = { bg = "#472955" },
+      },
       default_integrations = true,
       integrations = {
         dadbod_ui = true,
