@@ -46,6 +46,7 @@ darwin
 diffview
 direnv
 esc
+flake.nix
 forkhandles
 gitsigns
 golang
@@ -66,6 +67,8 @@ multicursor
 nix-darwin
 nushell
 nvim
+nvim-cmp
+popup
 presenterm
 quickfix
 socio-technical
