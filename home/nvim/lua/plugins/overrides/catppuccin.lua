@@ -24,6 +24,10 @@ return {
         },
       },
       custom_highlights = {
+        Pmenu = { bg = "#110C1E", blend = 0 },
+        PmenuSbar = { bg = "#110C1E" },
+        PmenuSel = { bg = "#472955" },
+        PmenuThumb = { bg = "#472955" },
         Visual = { bg = "#472955" },
       },
       default_integrations = true,
