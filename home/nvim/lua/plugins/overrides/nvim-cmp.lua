@@ -7,10 +7,12 @@ local window_options = {
 
 return {
   "hrsh7th/nvim-cmp",
-  opts = {
-    window = {
+  dependencies = { "hrsh7th/cmp-emoji" },
+  opts = function(_, opts)
+    table.insert(opts.sources, { name = "emoji" })
+    opts.window = {
       completion = window_options,
       documentation = window_options,
     }
-  },
+  end,
 }
