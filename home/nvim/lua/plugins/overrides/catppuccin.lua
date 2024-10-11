@@ -1,3 +1,14 @@
+local colours = {
+  normal = {
+    background = "#01010F",
+  },
+
+  floating = {
+    accent = "#472955",
+    background = "#110C1E",
+  },
+}
+
 return {
   { "LazyVim/LazyVim", opts = { colorscheme = "catppuccin" } },
   {
@@ -18,17 +29,17 @@ return {
       no_underline = false,
       color_overrides = {
         macchiato = {
-          base = "#01010F",
-          mantle = "#01010F",
-          crust = "#01010F",
+          base = colours.normal.background,
+          mantle = colours.normal.background,
+          crust = colours.normal.norbackground,
         },
       },
       custom_highlights = {
-        Pmenu = { bg = "#110C1E", blend = 0 },
-        PmenuSbar = { bg = "#110C1E" },
-        PmenuSel = { bg = "#472955" },
-        PmenuThumb = { bg = "#472955" },
-        Visual = { bg = "#472955" },
+        Pmenu = { bg = colours.floating.background, blend = 0 },
+        PmenuSbar = { link = "Pmenu" },
+        PmenuSel = { bg = colours.floating.accent },
+        PmenuThumb = { link = "PmenuSel" },
+        Visual = { link = "PmenuSel" },
       },
       default_integrations = true,
       integrations = {
