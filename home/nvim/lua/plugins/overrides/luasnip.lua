@@ -10,5 +10,10 @@ return {
     luasnip.filetype_extend("rust", { "rustdoc" })
     luasnip.filetype_extend("sh", { "shelldoc" })
     luasnip.filetype_extend("typescript", { "tsdoc" })
-  end
+
+    require("luasnip.loaders.from_lua").lazy_load {
+      paths = { "./lua/snippets" },
+      fs_event_providers = { libuv = true },
+    }
+  end,
 }
