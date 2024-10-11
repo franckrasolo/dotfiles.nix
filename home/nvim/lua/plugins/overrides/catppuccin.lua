@@ -6,6 +6,7 @@ local colours = {
   floating = {
     accent = "#472955",
     background = "#110C1E",
+    border = "#7D5A9A",
   },
 }
 
@@ -35,10 +36,13 @@ return {
         },
       },
       custom_highlights = {
-        Pmenu = { bg = colours.floating.background, blend = 0 },
-        PmenuSbar = { link = "Pmenu" },
+        FloatBorder = { bg = colours.floating.background, fg = colours.floating.border },
+        NormalFloat = { bg = colours.floating.background, blend = 0 },
+        Pmenu = { link = "NormalFloat" },
+        PmenuSbar = { link = "NormalFloat" },
         PmenuSel = { bg = colours.floating.accent },
         PmenuThumb = { link = "PmenuSel" },
+        TelescopeNormal = { link = "NormalFloat" },
         Visual = { link = "PmenuSel" },
       },
       default_integrations = true,
