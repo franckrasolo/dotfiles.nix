@@ -111,6 +111,7 @@ let
 
   graphicalTools = [
     graphviz
+    libwebp
     neo
     plantuml-c4
     timg
