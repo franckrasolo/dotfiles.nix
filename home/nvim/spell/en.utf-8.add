@@ -51,6 +51,7 @@ flake.nix
 forkhandles
 gitsigns
 golang
+headshot
 helpdesk
 hererocks
 http4k
