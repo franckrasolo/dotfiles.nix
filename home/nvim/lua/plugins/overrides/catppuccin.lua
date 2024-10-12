@@ -36,14 +36,19 @@ return {
         },
       },
       custom_highlights = {
+        AccentFloat = { bg = colours.floating.background },
         FloatBorder = { bg = colours.floating.background, fg = colours.floating.border },
-        NormalFloat = { bg = colours.floating.background, blend = 0 },
-        Pmenu = { link = "NormalFloat" },
-        PmenuSbar = { link = "NormalFloat" },
+        NoicePopup = { link = "AccentFloat" },
+        NormalFloat = { bg = colours.normal.background, blend = 0 },
+        Pmenu = { link = "AccentFloat" },
+        PmenuSbar = { link = "AccentFloat" },
         PmenuSel = { bg = colours.floating.accent },
         PmenuThumb = { link = "PmenuSel" },
-        TelescopeNormal = { link = "NormalFloat" },
+        TelescopeNormal = { link = "AccentFloat" },
         Visual = { link = "PmenuSel" },
+        WhichKey = { link = "AccentFloat" },
+        WhichKeyNormal = { link = "AccentFloat" },
+        WhichKeyTitle = { link = "FloatBorder" },
       },
       default_integrations = true,
       integrations = {
@@ -67,8 +72,8 @@ return {
         telescope = {
           enabled = true,
           style = "classic",
-        }
+        },
       },
-    }
-  }
+    },
+  },
 }

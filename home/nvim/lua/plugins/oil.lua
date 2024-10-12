@@ -47,6 +47,7 @@ return {
       },
       win_options = {
         wrap = true,
+        winhighlight = "NormalFloat:AccentFloat,FloatBorder:FloatBorder",
       },
       keymaps = {
         ["g?"] = false,
