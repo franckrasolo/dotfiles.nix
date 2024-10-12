@@ -10,6 +10,22 @@ local colours = {
   },
 }
 
+-- credit: https://stackoverflow.com/a/73931737/1189538
+local function show_win_options()
+  local win_number = vim.api.nvim_get_current_win()
+  local v = vim.wo[win_number]
+  local all_options = vim.api.nvim_get_all_options_info()
+  local result = ""
+
+  for key, val in pairs(all_options) do
+    if val.global_local == false and val.scope == "win" then
+      result = result .. "\n" .. key .. "=" .. tostring(v[key] or "<not set>")
+    end
+  end
+
+  print(result)
+end
+
 return {
   { "LazyVim/LazyVim", opts = { colorscheme = "catppuccin" } },
   {
@@ -74,6 +90,9 @@ return {
           style = "classic",
         },
       },
+    },
+    keys = {
+      { ",.", desc = "Current window options", show_win_options },
     },
   },
 }
