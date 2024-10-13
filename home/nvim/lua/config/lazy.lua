@@ -22,6 +22,7 @@ require("lazy").setup({
     { import = "plugins" },
     { import = "plugins.languages" },
     { import = "plugins.overrides" },
+    { import = "plugins.ui" },
   },
   defaults = {
     lazy = true,
