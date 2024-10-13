@@ -1,4 +1,5 @@
 /darwin/hammerspoon/Spoons/** linguist-vendored
 
-/home/zathura/** -linguist-detectable
-/home/zsh/**     -linguist-detectable
+/home/nvim/lua/** -linguist-detectable
+/home/zathura/**  -linguist-detectable
+/home/zsh/**      -linguist-detectable
