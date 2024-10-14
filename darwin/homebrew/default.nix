@@ -55,6 +55,7 @@
         name = "daisydisk";
         args = { require_sha = false; }; # missing sha256 checksum
       }
+      "deskpad"
       "discord"
       {
         name = "docker";
