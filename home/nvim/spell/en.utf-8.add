@@ -1,6 +1,7 @@
 ArchUnit
 AWS
 CLion
+DeskPad
 DevOps
 DX
 EditorConfig
@@ -46,6 +47,7 @@ c-n
 darwin
 diffview
 direnv
+double-check
 esc
 flake.nix
 forkhandles
@@ -60,6 +62,7 @@ jumplist
 keymap
 keymaps
 lazy.nvim
+localhost
 lualine
 luasnip4k
 luasnip4k.nvim
@@ -71,12 +74,14 @@ nix-darwin
 nushell
 nvim
 nvim-cmp
+onboarding
 popup
 presenterm
 quickfix
 socio-technical
 sociotechnical
 tabline
+tagline
 vFunction
 vfunction
 wez
