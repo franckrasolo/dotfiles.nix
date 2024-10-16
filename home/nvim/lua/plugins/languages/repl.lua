@@ -50,6 +50,7 @@ return {
       { "g<cr><esc>", desc = "Interrupt REPL", mode = { "n", "v" }, function() iron.send(nil, string.char(03)) end },
 
       { "g<cr><cr>", desc = "Enter", mode = { "n", "v" }, function() iron.send(nil, string.char(13)) end },
+      { "g<cr>k", desc = "Run this buffer", mode = { "n", "v" }, "<cmd>source %<cr>" },
 
       { "g<cr>s",  desc = "send", mode = { "n", "v" }, "" },
       { "g<cr>ss", desc = "Send motion", function() iron.run_motion("send_motion") end },
