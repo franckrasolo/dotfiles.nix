@@ -25,5 +25,9 @@ return {
         { pattern = "swap", icon = "󰿡 ", color = "yellow" },
       }
     }
+  },
+  keys = {
+    { "]l", desc = "Next location ", "<cmd>lnext<cr>", { silent = true, noremap = true } },
+    { "[l", desc = "Previous location ", "<cmd>lprevious<cr>", { silent = true, noremap = true } },
   }
 }
