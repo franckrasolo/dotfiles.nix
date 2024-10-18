@@ -20,7 +20,7 @@ vim.api.nvim_create_autocmd("BufWinEnter", {
     local function close_toggleterm_window_with(key)
       vim.keymap.set("n", key, function() vim.cmd.wincmd("q") end, { buffer = true, noremap = true })
     end
-    close_toggleterm_window_with("<C-f>")
+    close_toggleterm_window_with("<c-f>")
     close_toggleterm_window_with("<esc>")
     close_toggleterm_window_with("q")
   end
@@ -57,10 +57,10 @@ return {
       bindings = {
         ["="] = "IncreaseDetail",
         ["-"] = "DecreaseDetail",
-        ["<C-=>"] = "IncreaseAllDetail",
-        ["<C-->"] = "DecreaseAllDetail",
-        ["<C-u>"] = "ScrollOutputUp",
-        ["<C-d>"] = "ScrollOutputDown",
+        ["<c-=>"] = "IncreaseAllDetail",
+        ["<c-->"] = "DecreaseAllDetail",
+        ["<c-u>"] = "ScrollOutputUp",
+        ["<c-d>"] = "ScrollOutputDown",
         ["<Down>"] = "NextTask",
         ["<Left>"] = "PrevTask",
         ["<Right>"] = "NextTask",

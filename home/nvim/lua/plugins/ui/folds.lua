@@ -64,10 +64,10 @@ return {
         mappings = {
           jumpTop = "[",
           jumpBot = "]",
-          scrollB = "<C-b>",
-          scrollF = "<C-f>",
-          scrollU = "<C-u>",
-          scrollD = "<C-d>",
+          scrollB = "<c-b>",
+          scrollF = "<c-f>",
+          scrollU = "<c-u>",
+          scrollD = "<c-d>",
         },
       },
 

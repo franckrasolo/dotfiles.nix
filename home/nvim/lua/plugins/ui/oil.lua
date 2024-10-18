@@ -54,9 +54,9 @@ return {
         ["?"] = "actions.show_help",
         ["~"] = false,
         ["π"] = "actions.preview", -- π -> 'Alt p'
-        ["<C-c>"] = false,
-        ["<C-p>"] = false,
-        ["<C-t>"] = false,
+        ["<c-c>"] = false,
+        ["<c-p>"] = false,
+        ["<c-t>"] = false,
         ["q"] = "actions.close",
         ["<esc>"] = "actions.close",
       },
