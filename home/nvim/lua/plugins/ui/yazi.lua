@@ -15,8 +15,8 @@ return {
     },
   },
   keys = {
-    { "<leader>f.", desc = "Browse files (cwd)", "<cmd>Yazi<cr>" },
-    { "<leader>f/", desc = "Browse files (project dir)", "<cmd>Yazi cwd<cr>" },
-    { "<leader>f<Up>", desc = "Resume the last Yazi session", "<cmd>Yazi toggle<cr>" },
+    { "<leader>f.", desc = "Yazi: Browse files (cwd)", "<cmd>Yazi<cr>" },
+    { "<leader>f/", desc = "Yazi: Browse files (project dir)", "<cmd>Yazi cwd<cr>" },
+    { "<leader>f<Up>", desc = "Yazi: Resume the last session", "<cmd>Yazi toggle<cr>" },
   }
 }

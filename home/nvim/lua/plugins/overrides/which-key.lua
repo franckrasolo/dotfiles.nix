@@ -23,6 +23,7 @@ return {
         { pattern = "jumps", icon = "󱕘 ", color = "green" },
         { pattern = "previews", icon = " ", color = "blue" },
         { pattern = "swap", icon = "󰿡 ", color = "yellow" },
+        { pattern = "yazi", icon = "󰇥 ", color = "yellow" },
       }
     }
   },
