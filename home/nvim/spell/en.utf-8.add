@@ -16,6 +16,7 @@ Konsist
 Kotlin
 LazyVim
 Lua
+LuaDoc
 LuaRocks
 LuaSnip
 Neogit
@@ -31,6 +32,7 @@ RustRover
 S3
 Shazaam
 StyLua
+Tree-sitter
 TypeScript
 UltraDark
 UX
