@@ -4,6 +4,10 @@ return {
     version = "*",
     priority = 100,
     opts = function()
+      local filetype = require("plenary.filetype")
+      filetype.add_file("just")
+      filetype.add_file("kotlin")
+
       local actions = require("telescope.actions")
 
       local function single_or_multi_select(prompt_bufnr)
