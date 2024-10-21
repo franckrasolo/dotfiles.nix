@@ -107,6 +107,27 @@ return {
       },
     },
 
+    code_blocks = {
+      enable = true,
+      style = "language",
+
+      hl = "dark",
+
+      min_width = 60,
+      pad_amount = 3,
+
+      language_names = nil,
+      language_direction = "right",
+
+      sign = false,
+      sign_hl = nil,
+    },
+
+    inline_codes = {
+      enable = true,
+      hl = "dark",
+    },
+
     block_quotes = {
       enable = true,
       default = {},
@@ -190,6 +211,44 @@ return {
       {
         group_name = "dark",
         value = { bg = "#18182f" },
+      },
+
+      {
+        group_name = "MarkviewCode",
+        value = { bg = "#18182f" },
+      },
+      {
+        group_name = "MarkviewCodeInfo",
+        value = { bg = "#18182f", fg = "#939ab7" },
+      },
+      {
+        group_name = "MarkviewInlineCode",
+        value = { bg = "#18182f" },
+      },
+
+      {
+        group_name = "MarkviewIcon1",
+        value = { bg = "#18182f", fg = "#ed8796" },
+      },
+      {
+        group_name = "MarkviewIcon2",
+        value = { bg = "#18182f", fg = "#f5a97f" },
+      },
+      {
+        group_name = "MarkviewIcon3",
+        value = { bg = "#18182f", fg = "#eed49f" },
+      },
+      {
+        group_name = "MarkviewIcon4",
+        value = { bg = "#18182f", fg = "#a6da95" },
+      },
+      {
+        group_name = "MarkviewIcon5",
+        value = { bg = "#18182f", fg = "#7dc4e4" },
+      },
+      {
+        group_name = "MarkviewIcon6",
+        value = { bg = "#18182f", fg = "#b7bdf8" },
       },
     },
   },
