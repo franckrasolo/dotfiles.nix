@@ -33,7 +33,7 @@ return {
         padding_left = " ",
         padding_right = " ",
 
-        corner_right = "",
+        corner_right = "",
         corner_right_hl = "decorated_h1_inv",
 
         icon = "󰼏  ",
@@ -46,7 +46,7 @@ return {
         padding_left = " ",
         padding_right = " ",
 
-        corner_right = "",
+        corner_right = "",
         corner_right_hl = "decorated_h2_inv",
 
         icon = "󰎨  ",
@@ -59,7 +59,7 @@ return {
         padding_left = " ",
         padding_right = " ",
 
-        corner_right = "",
+        corner_right = "",
         corner_right_hl = "decorated_h3_inv",
 
         icon = "󰼑  ",
@@ -72,7 +72,7 @@ return {
         padding_left = " ",
         padding_right = " ",
 
-        corner_right = "",
+        corner_right = "",
         corner_right_hl = "decorated_h4_inv",
 
         icon = "󰎲  ",
@@ -85,7 +85,7 @@ return {
         padding_left = " ",
         padding_right = " ",
 
-        corner_right = "",
+        corner_right = "",
         corner_right_hl = "decorated_h5_inv",
 
         icon = "󰼓  ",
@@ -98,7 +98,7 @@ return {
         padding_left = " ",
         padding_right = " ",
 
-        corner_right = "",
+        corner_right = "",
         corner_right_hl = "decorated_h6_inv",
 
         icon = "󰎴  ",
