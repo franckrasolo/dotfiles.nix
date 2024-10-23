@@ -8,8 +8,8 @@ DevOps
 DX
 EditorConfig
 Enablement
-GCP
 GitLab
+GCP
 GoLand
 Grafana
 IntelliJ
@@ -31,9 +31,10 @@ NON-INFRINGEMENT
 Pixi
 PyCharm
 Quillin
-REPL
+RabbitMQ
 Rasolo
 RustRover
+REPL
 S3
 Shazaam
 StyLua
@@ -46,6 +47,7 @@ Wojda
 Yazi
 Zsh
 aarch64
+air-gapped
 catppuccin
 classpath
 cmd
@@ -79,6 +81,7 @@ macOS
 markdownlint
 menubar
 multi-cloud
+multi-tenant
 multicursor
 nix-darwin
 nushell
@@ -94,6 +97,7 @@ socio-technical
 sociotechnical
 tabline
 tagline
+toolchains
 vFunction
 vfunction
 wez
