@@ -11,6 +11,7 @@ Enablement
 GCP
 GitLab
 GoLand
+Grafana
 IntelliJ
 JetBrains
 JVM
@@ -49,6 +50,7 @@ catppuccin
 classpath
 cmd
 colorscheme
+containerd
 c-c
 c-n
 darwin
@@ -86,6 +88,7 @@ on-premises
 onboarding
 popup
 presenterm
+problem-solving
 quickfix
 socio-technical
 sociotechnical
