@@ -79,6 +79,7 @@ let
     lua54Packages.luarocks
 
     helix
+    nixd
     nixfmt-rfc-style
     tree-sitter
   ];
