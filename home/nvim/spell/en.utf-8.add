@@ -1,12 +1,15 @@
 ArchUnit
 AWS
+Backend
 CLion
+CTO
 DeskPad
 DevOps
 DX
 EditorConfig
 Enablement
 GCP
+GitLab
 GoLand
 IntelliJ
 JetBrains
@@ -14,6 +17,7 @@ JVM
 KMP
 Konsist
 Kotlin
+Kubernetes
 LazyVim
 Lua
 LuaDoc
@@ -72,11 +76,13 @@ luasnip4k.nvim
 macOS
 markdownlint
 menubar
+multi-cloud
 multicursor
 nix-darwin
 nushell
 nvim
 nvim-cmp
+on-premises
 onboarding
 popup
 presenterm
