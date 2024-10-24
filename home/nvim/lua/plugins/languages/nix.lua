@@ -1,22 +1,21 @@
 return {
   "neovim/nvim-lspconfig",
-  config = function()
+  opts = function(_, opts)
     local flake_dir = "~/dev/dotfiles.nix"
+    local flake_expr = "(builtins.getFlake \"" .. flake_dir .. "\")"
+    local hostname = vim.uv.os_gethostname()
+    local nix_darwin_options = flake_expr .. ".darwinConfigurations." .. hostname .. ".options"
 
-    require("lspconfig").nixd.setup {
+    opts.servers.nixd = {
       cmd = { "nixd" },
       settings = {
         nixd = {
           nixpkgs = {
-            expr = "import <nixpkgs> {}",
+            expr = "import " .. flake_expr .. ".inputs.nixpkgs {}",
           },
           options = {
             nix_darwin = {
-              expr = string.format(
-                "(builtins.getFlake \"%s\").darwinConfigurations.%s.options",
-                flake_dir,
-                vim.uv.os_gethostname()
-              ),
+              expr = nix_darwin_options,
             },
           },
         },
