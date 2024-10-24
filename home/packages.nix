@@ -96,12 +96,12 @@ let
     pur
     ruff
 
-    python312
-#    (python312.withPackages (pkgs: with pkgs; [ pip pynvim ]))
+    python313FreeThreading
+#    (python313FreeThreading.withPackages (pkgs: with pkgs; [ pip pynvim ]))
   ];
 
   dataTools = [
-    python312Packages.demjson3
+    python313FreeThreading.pkgs.demjson3
     fq
     fx
     ijq
