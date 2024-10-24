@@ -74,6 +74,7 @@ keymap
 keymaps
 lazy.nvim
 localhost
+lspconfig
 lualine
 luasnip4k
 luasnip4k.nvim
@@ -83,6 +84,7 @@ menubar
 multi-cloud
 multi-tenant
 multicursor
+nixd
 nix-darwin
 nushell
 nvim
@@ -95,9 +97,11 @@ problem-solving
 quickfix
 socio-technical
 sociotechnical
+system-wide
 tabline
 tagline
 toolchains
+upskill
 vFunction
 vfunction
 wez
