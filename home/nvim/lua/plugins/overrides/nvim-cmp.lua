@@ -6,7 +6,8 @@ local window_options = {
 }
 
 return {
-  "hrsh7th/nvim-cmp",
+  "iguanacucumber/magazine.nvim",
+  name = "nvim-cmp",
   dependencies = { "hrsh7th/cmp-emoji" },
   opts = function(_, opts)
     table.insert(opts.sources, { name = "emoji" })
