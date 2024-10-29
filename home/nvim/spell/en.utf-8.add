@@ -1,6 +1,7 @@
 ArchUnit
 AWS
 Backend
+Crossplane
 CLion
 CTO
 DeskPad
@@ -18,6 +19,7 @@ JVM
 KMP
 Konsist
 Kotlin
+Kubebuilder
 Kubernetes
 LazyVim
 Lua
@@ -39,6 +41,7 @@ S3
 Shazaam
 StyLua
 Tree-sitter
+Typesafe
 TypeScript
 UltraDark
 UX
@@ -95,6 +98,7 @@ popup
 presenterm
 problem-solving
 quickfix
+self-hosted
 socio-technical
 sociotechnical
 system-wide
