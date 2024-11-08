@@ -9,7 +9,7 @@ return {
     local markview = require("markview")
     markview.setup(opts)
 
-    LazyVim.toggle.map("<leader>um", {
+    Snacks.toggle {
       name = "Markdown Preview",
       get = function()
         return markview.state.enable
@@ -21,7 +21,7 @@ return {
           markview.commands.disableAll()
         end
       end,
-    })
+    }:map("<leader>um")
   end,
   opts = {
     headings = {
