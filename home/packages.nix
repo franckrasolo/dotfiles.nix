@@ -3,7 +3,7 @@
 with pkgs.unstable;
 let
   securityTools = [
-    _1password
+    _1password-cli
     age
     gnupg
     openssl

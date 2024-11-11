@@ -66,7 +66,7 @@
       /run/current-system/sw/bin/nix-collect-garbage, \
       ${pkgs.coreutils}/bin/env nix-env -p /nix/var/nix/profiles/system --set /nix/store/*, \
       ${pkgs.coreutils}/bin/env /nix/store/*/activate, \
-      ${coreutils}/bin/cp ${_1password}/bin/op /usr/local/bin/op, \
+      ${coreutils}/bin/cp ${_1password-cli}/bin/op /usr/local/bin/op, \
       /etc/profiles/per-user/${user.accountName}/bin/openconnect, \
       /usr/bin/dscacheutil, \
       /usr/bin/killall, \
@@ -95,7 +95,7 @@
     launchctl setenv KUBECONFIG       ~/.xdg/config/kube
 
     # 1Password integration requires the CLI binary at a specific location
-    sudo ${coreutils}/bin/cp ${_1password}/bin/op /usr/local/bin/op
+    sudo ${coreutils}/bin/cp ${_1password-cli}/bin/op /usr/local/bin/op
 
     # set default handlers for Apple UTIs, URL schemes, file extensions, and MIME types
 #   duti $XDG_CONFIG_HOME/duti/   # must run *after* home-manager
