@@ -39,7 +39,7 @@ return {
         max_height = 40,
         preview_split = "below",
       },
-      preview = {
+      preview_win = {
         max_width = 0.8,
         min_width = 0.65,
         max_height = 0.9,
