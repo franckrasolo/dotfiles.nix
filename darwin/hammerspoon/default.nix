@@ -46,6 +46,7 @@
     ${lib.concatStringsSep "\n" (map installRockCommand rocks)}
 
     # restart Hammerspoon to pick up changes
+    # shellcheck disable=SC2015
     killall Hammerspoon && sleep 1 || true
     open -a /Applications/Hammerspoon.app
   '';
