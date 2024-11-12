@@ -10,7 +10,7 @@
   programs.zsh = {
     enable = true;
     autosuggestion.enable = true;
-    package = pkgs.unstable.zsh;
+    package = pkgs.zsh;
   };
 
   programs.command-not-found.enable = true;

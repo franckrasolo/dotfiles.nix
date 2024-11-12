@@ -48,8 +48,13 @@
   # recreate /run/current-system symlink after boot
   services.activate-system.enable = true;
 
-  environment.darwinConfig   = "$HOME/dev/dotfiles.nix/darwin/configuration.nix";
-  environment.shells         = with pkgs.unstable; [ zsh nushell ];
+  environment.darwinConfig = "$HOME/dev/dotfiles.nix/darwin/configuration.nix";
+
+  environment.shells = [
+    pkgs.zsh
+    pkgs.unstable.nushell
+  ];
+
   environment.systemPackages = with pkgs.unstable; [
     cacert
     duti
@@ -115,7 +120,7 @@
   users.users."${user.accountName}" = {
     description = user.fullName;
     home = user.homeDirectory;
-    shell = pkgs.unstable.zsh;
+    shell = pkgs.zsh;
   };
 
   time.timeZone = "Europe/London";
