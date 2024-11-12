@@ -15,20 +15,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # provides the latest build of Zellij until a release truly
-    # fixes https://github.com/zellij-org/zellij/issues/3208
-    zellij = {
-      url = "github:a-kenji/zellij-nix";
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
-    };
-
     zjstatus = {
       url = "github:dj95/zjstatus";
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
   };
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, nix-darwin, home-manager, zellij, zjstatus }:
+  outputs = { self, nixpkgs, nixpkgs-unstable, nix-darwin, home-manager, zjstatus }:
     let
       platforms = [ "x86_64-darwin" "aarch64-darwin" ];
 
@@ -61,7 +54,6 @@
           '';
         });
 
-        zellij-latest = zellij.packages."${prev.system}".zellij;
         zjstatus = zjstatus.packages.${prev.system}.default;
       };
       # makes "pkgs.unstable" available in configuration.nix

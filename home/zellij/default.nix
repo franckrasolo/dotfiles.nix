@@ -4,7 +4,7 @@
   programs.zellij = {
     enable = true;
     enableZshIntegration = true;
-    package = pkgs.zellij-latest;
+    package = pkgs.unstable.zellij;
   };
 
   xdg.configFile = {
