@@ -45,9 +45,6 @@
   # used for backwards compatibility (check the change log first)
   system.stateVersion = 4;
 
-  # recreate /run/current-system symlink after boot
-  services.activate-system.enable = true;
-
   environment.darwinConfig = "$HOME/dev/dotfiles.nix/darwin/configuration.nix";
 
   environment.shells = [
