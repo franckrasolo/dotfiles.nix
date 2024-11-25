@@ -15,6 +15,10 @@ _targets:
 @update:
   nix flake update --commit-lock-file --commit-lockfile-summary "update Nix flake inputs"
 
+# prints repo statistics
+@stats:
+  tokei
+
 # lists fingerprints of all SSH keys the 1Password SSH agent can access
 @ssh-keys:
   SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock ssh-add -l
