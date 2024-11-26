@@ -15,6 +15,7 @@ vim.api.nvim_create_autocmd({ "BufEnter", "WinEnter" }, {
 
 return {
   "LintaoAmons/bookmarks.nvim",
+  tag = "v1.4.2",
   lazy = false,
   dependencies = {
     { "nvim-telescope/telescope.nvim" },
