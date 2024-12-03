@@ -136,6 +136,7 @@
     font-awesome
     monaspace
     ubuntu_font_family
-    (nerdfonts.override { fonts = [ "Hasklig" "JetBrainsMono" ]; })
+    nerd-fonts.hasklug
+    nerd-fonts.jetbrains-mono
   ];
 }
