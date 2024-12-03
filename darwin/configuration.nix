@@ -54,7 +54,7 @@
 
   environment.systemPackages = with pkgs.unstable; [
     cacert
-    pkgs.duti
+    duti
     net-news-wire
     sketchybar
   ];
