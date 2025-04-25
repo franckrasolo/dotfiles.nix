@@ -15,13 +15,18 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    sops-nix = {
+      url = "github:Mic92/sops-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     zjstatus = {
       url = "github:dj95/zjstatus";
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
   };
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, nix-darwin, home-manager, zjstatus }:
+  outputs = { self, nixpkgs, nixpkgs-unstable, nix-darwin, sops-nix, home-manager, zjstatus }:
     let
       platforms = [ "x86_64-darwin" "aarch64-darwin" ];
 
@@ -77,6 +82,7 @@
           modules = [
             overlayModule
             ./darwin/configuration.nix
+            sops-nix.darwinModules.sops
             home-manager.darwinModules.home-manager
           ];
           specialArgs = { inherit user; };
@@ -89,6 +95,7 @@
             { nix.extraOptions = ''extra-platforms = aarch64-darwin x86_64-darwin''; }
             overlayModule
             ./darwin/configuration.nix
+            sops-nix.darwinModules.sops
             home-manager.darwinModules.home-manager {
               home-manager.extraSpecialArgs = { inherit user; };
             }
