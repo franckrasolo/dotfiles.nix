@@ -1,4 +1,4 @@
-{ pkgs, user, ... }:
+{ pkgs, config, user, ... }:
 
 {
   imports = [
@@ -16,6 +16,24 @@
     experimental-features = nix-command flakes
   '';
 
+  sops = {
+    age = {
+      keyFile = "${user.homeDirectory}/dev/dotfiles.nix/secrets/bootstrap-key.txt";
+      sshKeyPaths = [];
+      generateKey = true;
+    };
+    gnupg.sshKeyPaths = [];
+
+    defaultSopsFile = ../secrets/bootstrap.yaml;
+    secrets.nix-github-api-token = {};
+    templates."github-token" = {
+      content = ''
+        ${config.sops.placeholder.nix-github-api-token}
+      '';
+      owner = user.accountName;
+    };
+  };
+
   # auto-upgrade both the nix package and the daemon service
   services.nix-daemon.enable = true;
   nix.package = pkgs.unstable.nixVersions.latest;
@@ -25,6 +43,8 @@
   nixpkgs.config.allowUnfree = true;
 
   nix.settings = {
+    access-tokens = "";
+
     auto-optimise-store = false;
 
     trusted-substituters = [
@@ -106,9 +126,12 @@
     duti ~/dev/dotfiles.nix/home/duti/
   '';
 
-  system.activationScripts.postUserActivation.text = ''
+  system.activationScripts.postUserActivation.text = with pkgs.unstable; ''
     # load Bunch automations – https://bunchapp.co/
     open 'x-bunch://setPref?configDir=~/.xdg/config/bunches'
+   sudo ${gnused}/bin/sed -i \
+     -E "s/access-tokens = .*/access-tokens = github.com=$(cat ${config.sops.templates.github-token.path})/" \
+     /etc/static/nix/nix.conf
   '';
 
   programs.nix-index.enable = true;
