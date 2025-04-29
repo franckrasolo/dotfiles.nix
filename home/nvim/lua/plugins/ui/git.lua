@@ -1,6 +1,7 @@
 return {
   {
     "lewis6991/gitsigns.nvim",
+    version = "*",
     opts = function(_, opts)
       opts.current_line_blame = true
       opts.current_line_blame_formatter = "<abbrev_sha> — <author_time:%a %d/%m/%Y %H:%M:%S> — <author>: <summary>  "
