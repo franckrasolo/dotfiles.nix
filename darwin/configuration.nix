@@ -60,8 +60,6 @@
 
     max-jobs = 48;  # max 3 jobs per core
     cores    = 16;  # total number of logical cores: sysctl -n hw.ncpu
-
-    download-buffer-size = 512 * 1024 * 1024; # 512 MiB
   };
 
   # used for backwards compatibility (check the change log first)
