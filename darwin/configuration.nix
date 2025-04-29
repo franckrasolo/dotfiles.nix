@@ -10,6 +10,28 @@
     ./skhd
   ];
 
+  # /etc/nix/nix.conf -> /etc/static/nix/nix.conf
+
+  nix.settings = {
+    access-tokens = "";
+
+    auto-optimise-store = false;
+
+    trusted-substituters = [
+      "https://cache.iog.io" # for haskell.nix
+    ];
+
+    trusted-public-keys = [
+      "hydra.iohk.io:f/Ea+s+dFdN+3Y/G+FDgSq+a5NEWhJGzdjvKNGv0/EQ="
+    ];
+
+    allowed-users = [ user.accountName ];
+    trusted-users = [ user.accountName "root" ];
+
+    max-jobs = 48;  # max 3 jobs per core
+    cores    = 16;  # total number of logical cores: sysctl -n hw.ncpu
+  };
+
   nix.extraOptions = ''
     keep-outputs = false
     keep-derivations = false
@@ -42,25 +64,6 @@
   nixpkgs.config.allowBroken = true;
   nixpkgs.config.allowUnfree = true;
 
-  nix.settings = {
-    access-tokens = "";
-
-    auto-optimise-store = false;
-
-    trusted-substituters = [
-      "https://cache.iog.io" # for haskell.nix
-    ];
-
-    trusted-public-keys = [
-      "hydra.iohk.io:f/Ea+s+dFdN+3Y/G+FDgSq+a5NEWhJGzdjvKNGv0/EQ="
-    ];
-
-    allowed-users = [ user.accountName ];
-    trusted-users = [ user.accountName "root" ];
-
-    max-jobs = 48;  # max 3 jobs per core
-    cores    = 16;  # total number of logical cores: sysctl -n hw.ncpu
-  };
 
   # used for backwards compatibility (check the change log first)
   system.stateVersion = 4;
