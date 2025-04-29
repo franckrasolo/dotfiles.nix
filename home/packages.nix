@@ -109,7 +109,7 @@ let
     jnv
     jq
     yq-go
-    tabiew
+    pkgs.tabiew
   ];
 
   graphicalTools = [
