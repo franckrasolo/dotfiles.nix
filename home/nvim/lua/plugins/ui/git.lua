@@ -72,6 +72,7 @@ return {
   },
   {
     "NeogitOrg/neogit",
+    version = "*",
     dependencies = {
       "nvim-lua/plenary.nvim",
       "sindrets/diffview.nvim",
