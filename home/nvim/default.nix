@@ -4,7 +4,14 @@ with pkgs.unstable; {
   programs.neovim = {
     enable = true;
     defaultEditor = true;
-    package = neovim-unwrapped;
+    package = neovim-unwrapped // {
+      meta = {
+        description = "Vim text editor fork focused on extensibility and agility";
+        license = with lib.licenses; [ asl20 vim ];
+        maintainers = with lib.maintainers; [ manveru rvolosatovs ];
+        platforms = lib.platforms.unix;
+      };
+    };
 
     extraLuaPackages = ps: with ps; [
       magick
