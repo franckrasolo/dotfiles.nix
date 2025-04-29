@@ -14,7 +14,6 @@
     };
 
     taps = [
-      "homebrew/bundle"
       "martido/homebrew-graph"
       "localsend/localsend"
       "nikitabobko/tap"
