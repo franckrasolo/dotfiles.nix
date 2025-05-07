@@ -5,37 +5,46 @@ return {
   },
   {
     "neovim/nvim-lspconfig",
-    opts = function()
-      require("lspconfig").harper_ls.setup {
+    config = function()
+      vim.lsp.config("harper_ls", {
         settings = {
           ["harper-ls"] = {
+            codeActions = {
+              ForceStable = true,
+            },
             userDictPath = os.getenv("XDG_CONFIG_HOME") .. "/harper-ls/dictionary.txt",
             fileDictPath = os.getenv("XDG_DATA_HOME") .. "/harper-ls/file_dictionaries",
 
             -- Severity can be "hint", "information", "warning", or "error".
             diagnosticSeverity = "hint",
 
+            dialect = "British",
+            isolateEnglish = false,
+
             linters = {
-              an_a = true,
-              avoid_curses = true,
-              correct_number_suffix = true,
-              linking_verbs = false,
-              long_sentences = true,
-              matcher = true,
-              multiple_sequential_pronouns = true,
-              number_suffix_capitalization = true,
-              repeated_words = true,
-              sentence_capitalization = false,
-              spaces = true,
-              spell_check = true,
-              spelled_numbers = false,
-              terminating_conjunctions = true,
-              unclosed_quotes = true,
-              wrong_quotes = false,
+              AnA = true,
+              AvoidCurses = true,
+              CorrectNumberSuffix = true,
+              LinkingVerbs = false,
+              LongSentences = true,
+              Matcher = true,
+              MultipleSequentialPronouns = true,
+              NumberSuffixCapitalization = true,
+              RepeatedWords = true,
+              SentenceCapitalization = false,
+              Spaces = true,
+              SpellCheck = true,
+              SpelledNumbers = false,
+              TerminatingConjunctions = true,
+              UnclosedQuotes = true,
+              WrongQuotes = false,
             },
-          },
+            markdown = {
+              IgnoreLinkTitle = false,
+            },
+          }
         },
-      }
+      })
     end,
   },
 }
