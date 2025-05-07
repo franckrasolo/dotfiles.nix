@@ -105,6 +105,7 @@ let
     python313FreeThreading.pkgs.demjson3
     fq
     fx
+    gobang
     ijq
     jnv
     jq
