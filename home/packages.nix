@@ -109,6 +109,7 @@ let
     ijq
     jnv
     jq
+    mdq
     yq-go
     pkgs.tabiew
   ];
