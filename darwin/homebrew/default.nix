@@ -66,7 +66,7 @@
       }
       "firefox"
       "opera"
-      "zen-browser"
+      "zen"
       "expressvpn"
       {
         name = "hammerspoon";
