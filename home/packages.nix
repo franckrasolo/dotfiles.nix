@@ -61,6 +61,7 @@ let
   gitTools = [
     git
     git-crypt
+    git-who
     diff-so-fancy
   ];
 
