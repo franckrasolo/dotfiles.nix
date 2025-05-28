@@ -15,7 +15,7 @@ alias fd="fd --color=always --no-ignore --hidden"
 alias http="xh"
 alias https="xhs"
 alias fs="yazi"
-alias ls="eza --color=always --icons --git"
+alias ls="eza --color=always --icons --git --group-directories-first"
 alias time="/usr/bin/time -p"
 alias tree="tree -FpaChlD --du"
 
