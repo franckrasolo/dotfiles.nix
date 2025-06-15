@@ -2,6 +2,22 @@ return {
   "folke/snacks.nvim",
   priority = 1000,
   lazy = false,
+  ---@type snacks.Config
+  opts = {
+    bigfile = { enabled = true },
+    notifier = {
+      enabled = true,
+      timeout = 3000,
+    },
+    quickfile = { enabled = true },
+    statuscolumn = { enabled = true },
+    words = { enabled = true },
+    styles = {
+      notification = {
+        wo = { wrap = true } -- Wrap notifications
+      }
+    }
+  },
   init = function()
     local Snacks = require("snacks")
 
@@ -27,21 +43,6 @@ return {
       end,
     })
   end,
-  opts = {
-    bigfile = { enabled = true },
-    notifier = {
-      enabled = true,
-      timeout = 3000,
-    },
-    quickfile = { enabled = true },
-    statuscolumn = { enabled = true },
-    words = { enabled = true },
-    styles = {
-      notification = {
-        wo = { wrap = true } -- Wrap notifications
-      }
-    }
-  },
   keys = function()
     local Snacks = require("snacks")
 
