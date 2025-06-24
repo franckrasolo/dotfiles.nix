@@ -56,7 +56,7 @@
       "deskpad"
       "discord"
       {
-        name = "docker";
+        name = "docker-desktop";
         args = { appdir = "/Applications"; };
       }
       "dropbox"
@@ -96,7 +96,7 @@
         name = "orbstack";
         args = { appdir = "/Applications"; };
       }
-      "pop"
+      "pop-app"
       "raindropio"
       {
         name = "secretive";
