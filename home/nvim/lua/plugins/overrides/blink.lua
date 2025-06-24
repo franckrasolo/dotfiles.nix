@@ -145,90 +145,90 @@ return {
           },
         },
       },
-      keymap = {
-        preset = "none",
-        ["<C-space>"] = {
-          "show",
-          "show_documentation",
-          "hide_documentation",
-        },
-        ["<C-s>"] = {
-          "show_signature",
-          "hide_signature",
-        },
-        ["<C-y>"] = { "select_and_accept" },
-        ["<C-e>"] = { "cancel", "fallback" },
-        ["<C-p>"] = { "select_prev", "fallback" },
-        ["<C-n>"] = { "select_next", "fallback" },
-        ["<Up>"] = { "select_prev", "fallback" },
-        ["<Down>"] = { "select_next", "fallback" },
-        ["<C-b>"] = {},
-        ["<C-f>"] = {},
-        ["<C-k>"] = {}, -- Obscures expand luasnip
-        ["<c-g>"] = {
-          function() require("blink-cmp").show { providers = { "ripgrep" } } end,
+    },
+    keymap = {
+      preset = "none",
+      ["<C-space>"] = {
+        "show",
+        "show_documentation",
+        "hide_documentation",
+      },
+      ["<C-s>"] = {
+        "show_signature",
+        "hide_signature",
+      },
+      ["<C-y>"] = { "select_and_accept" },
+      ["<C-e>"] = { "cancel", "fallback" },
+      ["<C-p>"] = { "select_prev", "fallback" },
+      ["<C-n>"] = { "select_next", "fallback" },
+      ["<Up>"] = { "select_prev", "fallback" },
+      ["<Down>"] = { "select_next", "fallback" },
+      ["<C-b>"] = {},
+      ["<C-f>"] = {},
+      ["<C-k>"] = {}, -- Obscures expand luasnip
+      ["<c-g>"] = {
+        function() require("blink-cmp").show { providers = { "ripgrep" } } end,
+      },
+    },
+    appearance = {
+      -- sets the fallback highlight groups to nvim-cmp's highlight groups
+      -- useful for when your theme doesn't support blink.cmp
+      -- will be removed in a future release, assuming themes add support
+      use_nvim_cmp_as_default = true,
+      -- set to 'mono' for 'Nerd Font Mono' or 'normal' for 'Nerd Font'
+      -- adjusts spacing to ensure icons are aligned
+      nerd_font_variant = "mono",
+    },
+    completion = {
+      accept = {
+        auto_brackets = {
+          enabled = true,
         },
       },
-      appearance = {
-        -- sets the fallback highlight groups to nvim-cmp's highlight groups
-        -- useful for when your theme doesn't support blink.cmp
-        -- will be removed in a future release, assuming themes add support
-        use_nvim_cmp_as_default = true,
-        -- set to 'mono' for 'Nerd Font Mono' or 'normal' for 'Nerd Font'
-        -- adjusts spacing to ensure icons are aligned
-        nerd_font_variant = "mono",
-      },
-      completion = {
-        accept = {
-          auto_brackets = {
-            enabled = true,
+      menu = {
+        draw = {
+          columns = {
+            { "kind_icon" },
+            { "label", "label_description", gap = 1 },
+            { "source_name" },
           },
-        },
-        menu = {
-          draw = {
-            columns = {
-              { "kind_icon" },
-              { "label", "label_description", gap = 1 },
-              { "source_name" },
-            },
-            treesitter = { "lsp" },
-          },
-        },
-        list = {
-          selection = {
-            preselect = true,
-            auto_insert = false,
-          },
-        },
-        documentation = {
-          auto_show = true,
-          auto_show_delay_ms = 200,
-          window = {
-            border = "single",
-          },
-        },
-        ghost_text = {
-          enabled = vim.g.ai_cmp,
+          treesitter = { "lsp" },
         },
       },
-      fuzzy = {
-        sorts = {
-          "exact",
-          "score",
-          "sort_text",
+      list = {
+        selection = {
+          preselect = true,
+          auto_insert = false,
         },
       },
-      signature = {
-        enabled = true,
+      documentation = {
+        auto_show = true,
+        auto_show_delay_ms = 200,
         window = {
-          treesitter_highlighting = true,
-          show_documentation = true,
+          border = "single",
         },
       },
-      snippets = {
-        expand = function(snippet, _) return LazyVim.cmp.expand(snippet) end,
-        preset = "luasnip",
+      ghost_text = {
+        enabled = vim.g.ai_cmp,
       },
+    },
+    fuzzy = {
+      sorts = {
+        "exact",
+        "score",
+        "sort_text",
+      },
+    },
+    signature = {
+      enabled = true,
+      window = {
+        treesitter_highlighting = true,
+        show_documentation = true,
+      },
+    },
+    snippets = {
+      expand = function(snippet, _) return LazyVim.cmp.expand(snippet) end,
+      preset = "luasnip",
     },
   },
 }
