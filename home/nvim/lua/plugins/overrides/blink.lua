@@ -227,7 +227,7 @@ return {
       },
     },
     snippets = {
-      expand = function(snippet, _) return LazyVim.cmp.expand(snippet) end,
+      expand = function(snippet) return LazyVim.cmp.expand(snippet) end,
       preset = "luasnip",
     },
   },
