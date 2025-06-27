@@ -1,7 +1,6 @@
 return {
   {
     "nvim-telescope/telescope.nvim",
-    version = "*",
     priority = 100,
     opts = function()
       local filetype = require("plenary.filetype")
