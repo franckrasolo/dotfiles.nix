@@ -9,3 +9,4 @@ vim.opt.winbar = "%=%m %f" -- shows filename in top right corner
 vim.g.autoformat = false   -- do not automatically format on save
 
 vim.g.lazyvim_python_lsp = "basedpyright"
+vim.g.lazyvim_python_ruff = "ruff"
