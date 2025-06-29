@@ -14,6 +14,15 @@ return {
   vim.api.nvim_create_autocmd("LspAttach", {
     callback = function(args)
       local client = vim.lsp.get_client_by_id(args.data.client_id)
+
+      -- stop basedpyright clients with the default "openFilesOnly" diagnostic mode
+      if client and client.name == "basedpyright" then
+        local settings = client.config.settings.basedpyright or { analysis = {} }
+        if settings.analysis.diagnosticMode == "openFilesOnly" then
+          vim.lsp.stop_client(client.id, true)
+        end
+      end
+
       -- stop ruff clients with the default "utf-8" offset encoding
       if client and client.name == "ruff" and client.offset_encoding == "utf-8" then
         vim.lsp.stop_client(client.id, true)
