@@ -18,6 +18,6 @@ return {
       if client and client.name == "ruff" and client.offset_encoding == "utf-8" then
         vim.lsp.stop_client(client.id, true)
       end
-    end
-  })
+    end,
+  }),
 }
