@@ -11,13 +11,14 @@ return {
       verboseOutput = true,
 
       analysis = {
-        autoImportCompletions = true,
+        autoImportCompletions = false,
         autoSearchPaths = true,
         diagnosticMode = "workspace",
+        disableTaggedHints = false,
         useLibraryCodeForTypes = true,
 
         inlayHints = {
-          -- callArgumentNames = true,
+          callArgumentNames = true,
           functionReturnTypes = true,
           genericTypes = true,
           variableTypes = true,
