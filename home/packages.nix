@@ -92,12 +92,6 @@ let
   ];
 
   pythonTools = [
-    basedpyright
-    black
-    pdm
-    pur
-    ruff
-
     python313FreeThreading
 #    (python313FreeThreading.withPackages (pkgs: with pkgs; [ pip pynvim ]))
   ];
