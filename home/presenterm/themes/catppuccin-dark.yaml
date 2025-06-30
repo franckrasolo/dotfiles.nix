@@ -100,7 +100,7 @@ headings:
       foreground: "eed49f"
 
 block_quote:
-  prefix: "  "
+  prefix: "▓ "
   colors:
     foreground: "9ea3b4"
     background: "181C29"
