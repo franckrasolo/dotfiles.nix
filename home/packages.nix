@@ -71,6 +71,7 @@ let
   ];
 
   languageTools = [
+    ast-grep
     gettext
     grex
     rlwrap
