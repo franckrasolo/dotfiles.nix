@@ -39,7 +39,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 #eval "$(brew shellenv)"
 eval "$(direnv hook zsh)"
 [ -x $(command -v magic) ] && eval "$(magic completion --shell zsh)"
-eval "$(pdm --pep582 zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 source <(fx --comp zsh)
 
