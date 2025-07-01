@@ -106,6 +106,7 @@ let
     jnv
     jq
     mdq
+    xan
     yq-go
     pkgs.tabiew
   ];
