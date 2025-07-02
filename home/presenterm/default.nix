@@ -12,7 +12,7 @@ let
     file = "themes/${name}.tmTheme";
   };
 in {
-  home.packages = [ pkgs.presenterm-with-sixel ];
+  home.packages = [ pkgs.unstable.presenterm ];
 
   xdg.configFile."presenterm/config.yaml".source = ./config.yaml;
   xdg.configFile."presenterm/themes/catppuccin-dark.yaml".source = ./themes/catppuccin-dark.yaml;
