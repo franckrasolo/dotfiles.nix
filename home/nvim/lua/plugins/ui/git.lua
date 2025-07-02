@@ -4,11 +4,12 @@ return {
     version = "*",
     opts = function(_, opts)
       opts.current_line_blame = true
-      opts.current_line_blame_formatter = "<abbrev_sha> — <author_time:%a %d/%m/%Y %H:%M:%S> — <author>: <summary>  "
+      opts.current_line_blame_formatter =
+        "<abbrev_sha> — <author_time:%a %d/%m/%Y %H:%M:%S> — <author>: <summary>  "
       opts.current_line_blame_opts = {
         delay = 0,
         ignore_whitespace = true,
-        virt_text_pos = "right_align"
+        virt_text_pos = "right_align",
       }
 
       vim.api.nvim_set_hl(0, "DiffText", { bg = "#2A3554", fg = "#C1E0FF" })
@@ -48,7 +49,7 @@ return {
 
         map("n", "]h", "Next Hunk", function()
           if vim.wo.diff then
-            vim.cmd.normal({ "]c", bang = true })
+            vim.cmd.normal { "]c", bang = true }
           else
             nav_hunk("next")
           end
@@ -56,7 +57,7 @@ return {
 
         map("n", "[h", "Prev Hunk", function()
           if vim.wo.diff then
-            vim.cmd.normal({ "[c", bang = true })
+            vim.cmd.normal { "[c", bang = true }
           else
             nav_hunk("prev")
           end
@@ -68,7 +69,7 @@ return {
         vim.keymap.del("n", "<leader>ghd", { buffer = buffer })
         vim.keymap.del("n", "<leader>ghD", { buffer = buffer })
       end
-    end
+    end,
   },
   {
     "NeogitOrg/neogit",
@@ -112,20 +113,23 @@ return {
         { "<leader>gP", desc = "Push", function() neogit.action("push", "to_pushremote")() end },
         { "<leader>gs", desc = "Status", "<cmd>Neogit cwd=%:p:h<cr>" },
         {
-          "<leader>gd", desc = "File Diff",
+          "<leader>gd",
+          desc = "File Diff",
           function()
             local diffview = require("neogit.integrations.diffview")
             diffview.open("blank", vim.fn.expand("%"), { only = true })
           end,
         },
         {
-          "<leader>gH", desc = "File History",
+          "<leader>gH",
+          desc = "File History",
           function()
             neogit.action("log", "log_current", { "--", vim.fn.expand("%") })()
           end,
         },
         {
-          "<leader>gv", desc = "Selection History",
+          "<leader>gv",
+          desc = "Selection History",
           function()
             local file = vim.fn.expand("%")
             vim.cmd([[execute "normal! \<ESC>"]])
