@@ -15,6 +15,7 @@ Docusaurus
 Domain-Driven
 DomainEvent
 DynamoDB
+DDD
 DX
 EditorConfig
 Enablement
@@ -64,6 +65,7 @@ S3
 Shazaam
 StyLua
 SQLModel
+SUT
 Tree-sitter
 Trunk-Based
 Typesafe
@@ -79,6 +81,7 @@ air-gapped
 async
 backend
 basedpyright
+blink.cmp
 catppuccin
 classpath
 cmd
@@ -88,10 +91,13 @@ c-c
 c-n
 darwin
 deserialize
+deserialized
 diffview
 direnv
 domain-driven
 double-check
+enum
+enums
 esc
 filetype
 flake.nix
