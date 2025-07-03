@@ -2,6 +2,7 @@ return {
   "saghen/blink.cmp",
   dependencies = {
     "mikavilpas/blink-ripgrep.nvim",
+    "ribru17/blink-cmp-spell",
     "archie-judd/blink-cmp-words",
     -- optional dependency used for toggling features on/off
     "folke/snacks.nvim",
@@ -14,6 +15,7 @@ return {
         "lsp",
         "path",
         "snippets",
+        "spell",
         "buffer",
         "ripgrep",
         "thesaurus",
@@ -23,11 +25,13 @@ return {
           "http",
           "snippets",
           "buffer",
+          "spell",
           "ripgrep",
         },
         markdown = {
           "snippets",
           "buffer",
+          "spell",
           "ripgrep",
           "obsidian",
           "obsidian_new",
@@ -37,6 +41,7 @@ return {
         },
         text = {
           "buffer",
+          "spell",
           "ripgrep",
           "thesaurus",
           "dictionary",
@@ -46,6 +51,7 @@ return {
           "lsp",
           "path",
           "snippets",
+          "spell",
           "buffer",
           "ripgrep",
         },
@@ -54,6 +60,7 @@ return {
           "lsp",
           "path",
           "snippets",
+          "spell",
           "buffer",
           "ripgrep",
           "thesaurus",
@@ -114,6 +121,26 @@ return {
         obsidian_tags = {
           name = "obsidian_tags",
           module = "blink.compat.source",
+        },
+        spell = {
+          name = "Spell",
+          module = "blink-cmp-spell",
+          opts = {
+            -- Example: only enable source in `@spell` captures, and disable it in `@nospell` captures
+            enable_in_context = function()
+              local curpos = vim.api.nvim_win_get_cursor(0)
+              local captures = vim.treesitter.get_captures_at_pos(0, curpos[1] - 1, curpos[2] - 1)
+              local in_spell_capture = false
+              for _, cap in ipairs(captures) do
+                if cap.capture == "spell" then
+                  in_spell_capture = true
+                elseif cap.capture == "nospell" then
+                  return false
+                end
+              end
+              return in_spell_capture
+            end,
+          },
         },
         thesaurus = {
           name = "thesaurus",
