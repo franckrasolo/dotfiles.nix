@@ -49,7 +49,7 @@ return {
         RepeatedWords = true,
         SentenceCapitalization = false,   -- https://github.com/Automattic/harper/issues/1056
         Spaces = true,
-        SpellCheck = false,
+        SpellCheck = true,
         SpelledNumbers = false,
         TerminatingConjunctions = true,
         ToDoHyphen = false,
