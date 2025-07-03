@@ -28,8 +28,8 @@ return {
       isolateEnglish = false,
 
       -- userDictPath = vim.o.spellfile,
-      userDictPath = os.getenv("XDG_CONFIG_HOME") .. "/harper-ls/dictionary.txt",
-      fileDictPath = os.getenv("XDG_DATA_HOME") .. "/harper-ls/file_dictionaries",
+      userDictPath = vim.fn.stdpath("config") .. "/spell/en.utf-8.add",
+      fileDictPath = vim.fn.getcwd() .. "/.harper",
       maxFileLength = 120000,
 
       linters = {

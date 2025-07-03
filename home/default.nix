@@ -29,7 +29,6 @@
       "duti".source        = ./duti;
       "fastfetch".source   = ./fastfetch;
       "git".source         = mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/home/git";
-      "harper-ls".source   = mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/home/harper-ls";
       "luarocks".source    = ./luarocks;
       "wezterm".source     = mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/home/wezterm";
       "zathura".source     = mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/home/zathura";
