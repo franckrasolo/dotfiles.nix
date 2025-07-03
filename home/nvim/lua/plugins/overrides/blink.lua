@@ -1,8 +1,8 @@
 return {
   "saghen/blink.cmp",
   dependencies = {
-    "mikavilpas/blink-ripgrep.nvim",
     "moyiz/blink-emoji.nvim",
+    "mikavilpas/blink-ripgrep.nvim",
     "ribru17/blink-cmp-spell",
     "archie-judd/blink-cmp-words",
     -- optional dependency used for toggling features on/off
