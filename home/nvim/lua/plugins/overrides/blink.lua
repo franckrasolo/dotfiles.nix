@@ -2,6 +2,7 @@ return {
   "saghen/blink.cmp",
   dependencies = {
     "mikavilpas/blink-ripgrep.nvim",
+    "moyiz/blink-emoji.nvim",
     "ribru17/blink-cmp-spell",
     "archie-judd/blink-cmp-words",
     -- optional dependency used for toggling features on/off
@@ -18,6 +19,7 @@ return {
         "spell",
         "buffer",
         "ripgrep",
+        "emoji",
         "thesaurus",
       },
       per_filetype = {
@@ -33,6 +35,7 @@ return {
           "buffer",
           "spell",
           "ripgrep",
+          "emoji",
           "obsidian",
           "obsidian_new",
           "obsidian_tags",
@@ -45,6 +48,7 @@ return {
           "ripgrep",
           "thesaurus",
           "dictionary",
+          "emoji",
         },
         lua = {
           "lazydev",
@@ -123,7 +127,7 @@ return {
           module = "blink.compat.source",
         },
         spell = {
-          name = "Spell",
+          name = "spell",
           module = "blink-cmp-spell",
           opts = {
             -- Example: only enable source in `@spell` captures, and disable it in `@nospell` captures
@@ -170,6 +174,13 @@ return {
             -- See above
             pointer_symbols = { "!", "&", "^" },
           },
+        },
+        emoji = {
+          name = "emoji",
+          module = "blink-emoji",
+          score_offset = 0,
+          min_keyword_length = 3,
+          opts = { insert = true }, -- insert emoji (default) or complete its name
         },
       },
     },
