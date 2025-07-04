@@ -55,7 +55,7 @@ return {
         AccentFloat = { bg = colours.floating.background },
         FloatBorder = { bg = colours.floating.background, fg = colours.floating.border },
         NoicePopup = { link = "AccentFloat" },
-        NormalFloat = { bg = colours.normal.background, blend = 0 },
+        NormalFloat = { bg = colours.floating.background, blend = 0 },
         Pmenu = { link = "AccentFloat" },
         PmenuSbar = { link = "AccentFloat" },
         PmenuSel = { bg = colours.floating.accent },
