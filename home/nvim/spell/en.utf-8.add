@@ -30,6 +30,7 @@ Homebrew
 IntelliJ
 JetBrains
 JVM
+KCL
 KMP
 Konsist
 Kotlin
@@ -93,6 +94,7 @@ c-n
 darwin
 deserialize
 deserialized
+devenv
 diffview
 direnv
 domain-driven
@@ -127,8 +129,10 @@ menubar
 multi-cloud
 multi-tenant
 multicursor
-nixd
 nix-darwin
+nixd
+nixpkgs
+nixpkgs-unstable
 nushell
 nvim
 nvim-cmp
