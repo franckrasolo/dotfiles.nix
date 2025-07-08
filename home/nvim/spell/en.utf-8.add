@@ -23,9 +23,10 @@ Enablement
 EventBridge
 Fargate
 GitLab
-GCP
 GoLand
 Grafana
+GCP
+GTD
 Homebrew
 IntelliJ
 JetBrains
@@ -77,6 +78,7 @@ UX
 WezTerm
 Wojda
 Yazi
+YAML
 Zsh
 aarch64
 air-gapped
@@ -106,6 +108,7 @@ filetype
 flake.nix
 forkhandles
 generify
+gitlab-ci-ls
 gitsigns
 golang
 headshot
@@ -129,6 +132,7 @@ menubar
 multi-cloud
 multi-tenant
 multicursor
+neowiki
 nix-darwin
 nixd
 nixpkgs
@@ -155,6 +159,8 @@ vFunction
 vfunction
 wez
 which-key
+yaml-language-server
+yamlls
 zsh
 
 
