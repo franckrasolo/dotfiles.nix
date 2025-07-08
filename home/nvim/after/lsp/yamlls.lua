@@ -62,8 +62,8 @@ return {
             url = "https://gitlab.com/gitlab-org/gitlab/-/raw/master/app/assets/javascripts/editor/schema/ci.json",
             fileMatch = {
               "**/*.gitlab-ci.{yaml,yml}",
-              "**/.gitlab/*.{yaml,yml}",
-              "**/{ci,cd}/*.{yaml,yml}",
+              "**/.gitlab/**/*.{yaml,yml}",
+              "**/{ci,cd}/**/*.{yaml,yml}",
               "**/pipeline.{yaml,yml}",
             },
           },
