@@ -20,6 +20,7 @@ DDD
 DX
 EditorConfig
 Enablement
+Eppo
 EventBridge
 Fargate
 GitLab
@@ -75,6 +76,8 @@ Typesafe
 TypeScript
 UltraDark
 UX
+VimEnter
+Welltech
 WezTerm
 Wojda
 Yazi
@@ -90,10 +93,12 @@ catppuccin
 classpath
 cmd
 colorscheme
+config
 containerd
 c-c
 c-n
 darwin
+desc
 deserialize
 deserialized
 devenv
@@ -157,6 +162,7 @@ toolchains
 upskill
 vFunction
 vfunction
+vgit
 wez
 which-key
 yaml-language-server
