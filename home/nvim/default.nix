@@ -21,6 +21,9 @@ with pkgs.unstable; {
     extraPackages = [
       imagemagick
       nodejs_20
+
+      gitlab-ci-ls
+      yaml-language-server
     ];
   };
 
