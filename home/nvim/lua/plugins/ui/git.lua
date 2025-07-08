@@ -108,37 +108,10 @@ return {
     keys = function()
       local neogit = require("neogit")
       return {
-        { "<leader>gf", desc = "Fetch", function() neogit.action("fetch", "fetch_pushremote")() end },
+        { "<leader>gF", desc = "Fetch", function() neogit.action("fetch", "fetch_pushremote")() end },
         { "<leader>gp", desc = "Pull", function() neogit.action("pull", "from_pushremote")() end },
         { "<leader>gP", desc = "Push", function() neogit.action("push", "to_pushremote")() end },
         { "<leader>gs", desc = "Status", "<cmd>Neogit cwd=%:p:h<cr>" },
-        {
-          "<leader>gd",
-          desc = "File Diff",
-          function()
-            local diffview = require("neogit.integrations.diffview")
-            diffview.open("blank", vim.fn.expand("%"), { only = true })
-          end,
-        },
-        {
-          "<leader>gH",
-          desc = "File History",
-          function()
-            neogit.action("log", "log_current", { "--", vim.fn.expand("%") })()
-          end,
-        },
-        {
-          "<leader>gv",
-          desc = "Selection History",
-          function()
-            local file = vim.fn.expand("%")
-            vim.cmd([[execute "normal! \<ESC>"]])
-            local line_start = vim.fn.getpos("'<")[2]
-            local line_end = vim.fn.getpos("'>")[2]
-            neogit.action("log", "log_current", { "-L" .. line_start .. "," .. line_end .. ":" .. file })()
-          end,
-          mode = "v",
-        },
       }
     end,
   },
