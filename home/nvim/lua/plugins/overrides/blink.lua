@@ -71,6 +71,16 @@ return {
           "thesaurus",
           "dictionary",
         },
+        yaml = {
+          "lsp",
+          "path",
+          "snippets",
+          "spell",
+          "buffer",
+          "ripgrep",
+          "emoji",
+          "dictionary",
+        },
       },
       providers = {
         lsp = {
