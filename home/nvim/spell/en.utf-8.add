@@ -11,7 +11,9 @@ CLion
 CTO
 Datadog
 DeskPad
+DevEx
 DevOps
+DevX
 Docusaurus
 Domain-Driven
 DomainEvent
@@ -60,6 +62,7 @@ Pytest
 PyTestArch
 PADR
 PADRs
+QoL
 Quillin
 RabbitMQ
 Rasolo
@@ -143,6 +146,7 @@ nix-darwin
 nixd
 nixpkgs
 nixpkgs-unstable
+noice.nvim
 nushell
 nvim
 nvim-cmp
