@@ -1,6 +1,7 @@
 return {
   "saghen/blink.cmp",
   dependencies = {
+    { "saghen/blink.compat", opts = { debug = false } },
     "moyiz/blink-emoji.nvim",
     "mikavilpas/blink-ripgrep.nvim",
     "ribru17/blink-cmp-spell",
