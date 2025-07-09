@@ -76,6 +76,8 @@ return {
         lsp = {
           name = "LSP",
           module = "blink.cmp.sources.lsp",
+          max_items = 3,
+          score_offset = 50,
         },
         lazydev = {
           name = "LazyDev",
@@ -150,6 +152,7 @@ return {
         thesaurus = {
           name = "thesaurus",
           module = "blink-cmp-words.thesaurus",
+          max_items = 3,
           opts = {
             -- A score offset applied to returned items.
             -- By default the highest score is 0 (item 1 has a score of -1, item 2 of -2 etc..).
@@ -164,6 +167,7 @@ return {
         dictionary = {
           name = "dictionary",
           module = "blink-cmp-words.dictionary",
+          max_items = 3,
           opts = {
             -- The number of characters required to trigger completion.
             -- Set this higher if completion is slow, 3 is default.
