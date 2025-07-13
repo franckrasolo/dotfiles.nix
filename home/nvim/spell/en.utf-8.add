@@ -110,6 +110,7 @@ diffview
 direnv
 domain-driven
 double-check
+entrypoint
 enum
 enums
 esc
@@ -130,6 +131,7 @@ k3s
 keymap
 keymaps
 lazy.nvim
+lazygit
 localhost
 lspconfig
 lualine
@@ -165,6 +167,7 @@ tabline
 tagline
 toolchains
 upskill
+uv
 vFunction
 vfunction
 vgit
