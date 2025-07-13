@@ -291,7 +291,7 @@ git:
     - git log --graph --all --color=always --abbrev-commit --decorate --date=relative --pretty=medium
 
   # If true, do not spawn a separate process when using GPG
-  overrideGpg: false
+  overrideGpg: true
 
   # If true, do not allow force pushes
   disableForcePushing: false
