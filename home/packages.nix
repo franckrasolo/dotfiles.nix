@@ -54,6 +54,7 @@ let
     pueue
 
     socat
+    somo
     termshark
     watchman
   ];
