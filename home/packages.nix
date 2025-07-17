@@ -118,6 +118,10 @@ let
     plantuml-c4
     timg
   ];
+
+  soundTools = [
+    scdl
+  ];
 in
 {
   home.packages = []
@@ -132,5 +136,6 @@ in
     ++ dataTools
     ++ graphicalTools
     ++ [ haxor-news ]
+    ++ soundTools
     ;
 }
