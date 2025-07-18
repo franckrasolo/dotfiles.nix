@@ -33,6 +33,7 @@ GTD
 Homebrew
 IntelliJ
 JetBrains
+JUnit
 JVM
 KCL
 KMP
@@ -157,8 +158,11 @@ onboarding
 popup
 presenterm
 problem-solving
+pyproject.toml
 quickfix
 self-hosted
+serialisable
+serializable
 serverless
 socio-technical
 sociotechnical
@@ -166,6 +170,7 @@ system-wide
 tabline
 tagline
 toolchains
+ty
 upskill
 uv
 vFunction
