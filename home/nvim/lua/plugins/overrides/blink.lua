@@ -86,13 +86,14 @@ return {
         lsp = {
           name = "LSP",
           module = "blink.cmp.sources.lsp",
-          max_items = 3,
-          score_offset = 50,
+          max_items = 5,
+          score_offset = 99,
         },
         lazydev = {
           name = "LazyDev",
           module = "lazydev.integrations.blink",
           score_offset = 100, -- show at a higher priority than lsp
+          fallbacks = { "lsp" },
         },
         ripgrep = {
           module = "blink-ripgrep",
@@ -163,6 +164,7 @@ return {
           name = "thesaurus",
           module = "blink-cmp-words.thesaurus",
           max_items = 3,
+          min_keyword_length = 5,
           opts = {
             -- A score offset applied to returned items.
             -- By default the highest score is 0 (item 1 has a score of -1, item 2 of -2 etc..).
@@ -239,6 +241,7 @@ return {
         },
       },
       menu = {
+        border = "rounded",
         draw = {
           columns = {
             { "kind_icon" },
@@ -258,7 +261,7 @@ return {
         auto_show = true,
         auto_show_delay_ms = 200,
         window = {
-          border = "single",
+          border = "rounded",
         },
       },
       ghost_text = {
@@ -275,10 +278,12 @@ return {
     signature = {
       enabled = true,
       window = {
+        border = "rounded",
         treesitter_highlighting = true,
         show_documentation = true,
       },
     },
+    --- @type blink.cmp.SnippetsConfigPartial
     snippets = {
       expand = function(snippet) return LazyVim.cmp.expand(snippet) end,
       preset = "luasnip",
