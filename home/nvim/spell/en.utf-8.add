@@ -33,6 +33,7 @@ GTD
 Homebrew
 IntelliJ
 JetBrains
+JSON
 JUnit
 JVM
 KCL
@@ -42,6 +43,7 @@ Kotlin
 Kubebuilder
 Kubernetes
 LazyVim
+Liskov
 LocalStack
 Lua
 LuaDoc
@@ -75,6 +77,7 @@ Shazaam
 StyLua
 SQLModel
 SUT
+Test-Driven
 Tree-sitter
 Trunk-Based
 Typesafe
@@ -93,6 +96,8 @@ air-gapped
 async
 backend
 basedpyright
+bi-directional
+bi-directionally
 blink.cmp
 catppuccin
 classpath
