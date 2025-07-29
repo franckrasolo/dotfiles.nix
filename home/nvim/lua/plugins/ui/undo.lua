@@ -1,5 +1,17 @@
 return {
   {
+    "kevinhwang91/nvim-fundo",
+    dependencies = { "kevinhwang91/promise-async" },
+    event = { "BufNewFile", "BufReadPost", "BufReadPre" },
+    config = true,
+    build = function() require("fundo").install() end,
+    init = function() vim.o.undofile = true end,
+    opts = {
+      archives_dir = vim.fn.stdpath("cache") .. "/fundo",
+      limit_archives_size = 512, -- 512 MB
+    },
+  },
+  {
     "jiaoshijie/undotree",
     dependencies = "nvim-lua/plenary.nvim",
     config = true,
