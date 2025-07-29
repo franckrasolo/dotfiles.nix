@@ -104,15 +104,25 @@ return {
           ---@type blink-ripgrep.Options
           opts = {
             prefix_min_len = 3,
-            context_size = 5,
-            max_filesize = "1M",
             project_root_marker = { ".git", "devenv.nix", "pyproject.toml", "package.json" },
-            project_root_fallback = true,
-            search_casing = "--ignore-case",
-            additional_rg_options = {},
             fallback_to_regex_highlighting = true,
-            additional_paths = {},
-            ignore_paths = {},
+
+            backend = {
+              use = "gitgrep-or-ripgrep",
+              ripgrep = {
+                additional_rg_options = {},
+                additional_paths = {},
+                ignore_paths = {},
+
+                -- Number of lines to show around each match in the preview (documentation) window
+                context_size = 5,
+
+                max_filesize = "1M",
+                project_root_fallback = true,
+                search_casing = "--ignore-case",
+
+              },
+            },
           },
           transform_items = function(_, items)
             for _, item in ipairs(items) do
