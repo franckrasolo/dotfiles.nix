@@ -19,6 +19,7 @@
     ];
 
     brews = [
+      "cdktf" # https://github.com/NixOS/nixpkgs/issues/354841
     ];
 
     casks = [
