@@ -1,8 +1,13 @@
+Anti-Pattern
+Anti-Patterns
 ArchUnit
+Auto-pipelines
 ADR
 ADRs
 AWS
 Backend
+BFF
+Clippy
 ConfigCat
 C4-PlantUML
 Crossplane
@@ -93,7 +98,11 @@ YAML
 Zsh
 aarch64
 air-gapped
+anti-pattern
+anti-patterns
 async
+auto-pipeline
+auto-pipelines
 backend
 basedpyright
 bi-directional
@@ -160,6 +169,7 @@ nvim
 nvim-cmp
 on-premises
 onboarding
+pixi
 popup
 presenterm
 problem-solving
