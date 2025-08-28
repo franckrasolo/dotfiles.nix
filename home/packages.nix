@@ -78,8 +78,15 @@ let
     rlwrap
 
     kotlin
-    lua54Packages.lua
-    lua54Packages.luarocks
+    (lua54Packages.lua.withPackages (ps:
+      with ps; [
+        lua
+        luarocks
+        luasocket
+        moonscript
+        penlight
+      ]
+    ))
 
     helix
     nixd

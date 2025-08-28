@@ -20,11 +20,8 @@
     let
       rocks = [
         "fun"
-        "luasocket"
-        "moonscript"
-        "penlight"
       ];
-      installRockCommand = rock: "/etc/profiles/per-user/${user.accountName}/bin/luarocks --local install ${rock}";
+      installRockCommand = rock: "luarocks --local install ${rock}";
     in ''
     # configure Hammerspoon preferences
     defaults write org.hammerspoon.Hammerspoon HSAppleScriptEnabledKey           -bool true
@@ -43,6 +40,7 @@
     osascript -e 'tell application "System Events" to make login item at end with properties { name: "Hammerspoon", path:"/Applications/Hammerspoon.app", hidden:false }'
 
     # install LuaRocks dependencies
+    export PATH=/etc/profiles/per-user/${user.accountName}/bin:$PATH
     ${lib.concatStringsSep "\n" (map installRockCommand rocks)}
 
     # restart Hammerspoon to pick up changes
