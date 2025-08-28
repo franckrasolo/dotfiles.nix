@@ -3,7 +3,7 @@
 {
   services.skhd = {
     enable  = true;
-    package = pkgs.skhd;
+    package = pkgs.unstable.skhd;
     skhdConfig = let
       skhdEnv = rec {
         modMask  = "cmd";
