@@ -24,231 +24,145 @@ return {
     }:map("<leader>um")
   end,
   opts = {
-    headings = {
-      shift_width = 0,
-
-      heading_1 = {
-        style = "label",
-
-        padding_left = " ",
-        padding_right = " ",
-
-        corner_right = "",
-        corner_right_hl = "decorated_h1_inv",
-
-        icon = "󰼏  ",
-        sign = "",
-        hl = "decorated_h1",
-      },
-      heading_2 = {
-        style = "label",
-
-        padding_left = " ",
-        padding_right = " ",
-
-        corner_right = "",
-        corner_right_hl = "decorated_h2_inv",
-
-        icon = "󰎨  ",
-        sign = "",
-        hl = "decorated_h2",
-      },
-      heading_3 = {
-        style = "label",
-
-        padding_left = " ",
-        padding_right = " ",
-
-        corner_right = "",
-        corner_right_hl = "decorated_h3_inv",
-
-        icon = "󰼑  ",
-        hl = "decorated_h3",
-        sign = "",
-      },
-      heading_4 = {
-        style = "label",
-
-        padding_left = " ",
-        padding_right = " ",
-
-        corner_right = "",
-        corner_right_hl = "decorated_h4_inv",
-
-        icon = "󰎲  ",
-        sign = "",
-        hl = "decorated_h4",
-      },
-      heading_5 = {
-        style = "label",
-
-        padding_left = " ",
-        padding_right = " ",
-
-        corner_right = "",
-        corner_right_hl = "decorated_h5_inv",
-
-        icon = "󰼓  ",
-        sign = "",
-        hl = "decorated_h5",
-      },
-      heading_6 = {
-        style = "label",
-
-        padding_left = " ",
-        padding_right = " ",
-
-        corner_right = "",
-        corner_right_hl = "decorated_h6_inv",
-
-        icon = "󰎴  ",
-        sign = "",
-        hl = "decorated_h6",
-      },
-    },
-
-    code_blocks = {
+    markdown = {
       enable = true,
-      style = "language",
 
-      hl = "dark",
+      headings = {
+        shift_width = 0,
 
-      min_width = 60,
-      pad_amount = 3,
+        heading_1 = {
+          style = "label",
 
-      language_names = nil,
-      language_direction = "right",
+          padding_left = " ",
+          padding_right = " ",
 
-      sign = false,
-      sign_hl = nil,
+          corner_right = "",
+          corner_right_hl = "MarkviewPalette1Fg",
+
+          icon = "󰼏  ",
+          sign = "",
+          sign_hl = "MarkviewHeading1Sign",
+          hl = "MarkviewHeading1",
+        },
+        heading_2 = {
+          style = "label",
+
+          padding_left = " ",
+          padding_right = " ",
+
+          corner_right = "",
+          corner_right_hl = "MarkviewPalette2Fg",
+
+          icon = "󰎨  ",
+          sign = "",
+          sign_hl = "MarkviewHeading2Sign",
+          hl = "MarkviewHeading2",
+        },
+        heading_3 = {
+          style = "label",
+
+          padding_left = " ",
+          padding_right = " ",
+
+          corner_right = "",
+          corner_right_hl = "MarkviewPalette3Fg",
+
+          icon = "󰼑  ",
+          hl = "MarkviewHeading3",
+          sign = "",
+        },
+        heading_4 = {
+          style = "label",
+
+          padding_left = " ",
+          padding_right = " ",
+
+          corner_right = "",
+          corner_right_hl = "MarkviewPalette4Fg",
+
+          icon = "󰎲  ",
+          sign = "",
+          hl = "MarkviewHeading4",
+        },
+        heading_5 = {
+          style = "label",
+
+          padding_left = " ",
+          padding_right = " ",
+
+          corner_right = "",
+          corner_right_hl = "MarkviewPalette5Fg",
+
+          icon = "󰼓  ",
+          sign = "",
+          hl = "MarkviewHeading5",
+        },
+        heading_6 = {
+          style = "label",
+
+          padding_left = " ",
+          padding_right = " ",
+
+          corner_right = "",
+          corner_right_hl = "MarkviewPalette6Fg",
+
+          icon = "󰎴  ",
+          sign = "",
+          hl = "MarkviewHeading6",
+        },
+      },
+
+      horizontal_rules = {},
+
+      list_items = {
+        marker_plus = {
+          add_padding = false,
+          marker = "•",
+          marker_hl = "rainbow2",
+        },
+        marker_minus = {
+          add_padding = false,
+          marker = "•",
+          marker_hl = "rainbow2",
+        },
+        marker_star = {
+          add_padding = false,
+          marker = "•",
+          marker_hl = "rainbow2",
+        },
+      },
+
+      block_quotes = {
+        enable = true,
+        default = {},
+        callouts = {},
+      },
+
+      code_blocks = {
+        enable = true,
+        style = "language",
+
+        border_hl = "dark",
+
+        min_width = 60,
+        pad_amount = 3,
+
+        language_names = nil,
+        language_direction = "right",
+
+        sign = false,
+        sign_hl = nil,
+      },
     },
 
-    inline_codes = {
-      enable = true,
-      hl = "dark",
-    },
+    markdown_inline = {
+      checkboxes = {},
+      hyperlinks = {},
+      images = {},
 
-    block_quotes = {
-      enable = true,
-      default = {},
-      callouts = {},
-    },
-
-    horizontal_rules = {},
-    hyperlink = {},
-    image = {},
-
-    list_items = {
-      marker_plus = {
-        add_padding = false,
-        marker = "•",
-        marker_hl = "rainbow2",
-      },
-      marker_minus = {
-        add_padding = false,
-        marker = "•",
-        marker_hl = "rainbow2",
-      },
-      marker_star = {
-        add_padding = false,
-        marker = "•",
-        marker_hl = "rainbow2",
-      },
-    },
-
-    checkboxes = {},
-
-    highlight_groups = {
-      {
-        group_name = "decorated_h1",
-        value = { bg = "#f38ba8", fg = "#313244", bold = true },
-      },
-      {
-        group_name = "decorated_h1_inv",
-        value = { fg = "#f38ba8", bold = true },
-      },
-      {
-        group_name = "decorated_h2",
-        value = { bg = "#fab387", fg = "#313244", bold = true },
-      },
-      {
-        group_name = "decorated_h2_inv",
-        value = { fg = "#fab387", bold = true },
-      },
-      {
-        group_name = "decorated_h3",
-        value = { bg = "#f9e2af", fg = "#313244", bold = true },
-      },
-      {
-        group_name = "decorated_h3_inv",
-        value = { fg = "#f9e2af", bold = true },
-      },
-      {
-        group_name = "decorated_h4",
-        value = { bg = "#a6e3a1", fg = "#313244", bold = true },
-      },
-      {
-        group_name = "decorated_h4_inv",
-        value = { fg = "#a6e3a1", bold = true },
-      },
-      {
-        group_name = "decorated_h5",
-        value = { bg = "#74c7ec", fg = "#313244", bold = true },
-      },
-      {
-        group_name = "decorated_h5_inv",
-        value = { fg = "#74c7ec", bold = true },
-      },
-      {
-        group_name = "decorated_h6",
-        value = { bg = "#b4befe", fg = "#313244", bold = true },
-      },
-      {
-        group_name = "decorated_h6_inv",
-        value = { fg = "#b4befe", bold = true },
-      },
-
-      {
-        group_name = "dark",
-        value = { bg = "#18182f" },
-      },
-
-      {
-        group_name = "MarkviewCode",
-        value = { bg = "#18182f" },
-      },
-      {
-        group_name = "MarkviewCodeInfo",
-        value = { bg = "#18182f", fg = "#939ab7" },
-      },
-      {
-        group_name = "MarkviewInlineCode",
-        value = { bg = "#18182f" },
-      },
-
-      {
-        group_name = "MarkviewIcon1",
-        value = { bg = "#18182f", fg = "#ed8796" },
-      },
-      {
-        group_name = "MarkviewIcon2",
-        value = { bg = "#18182f", fg = "#f5a97f" },
-      },
-      {
-        group_name = "MarkviewIcon3",
-        value = { bg = "#18182f", fg = "#eed49f" },
-      },
-      {
-        group_name = "MarkviewIcon4",
-        value = { bg = "#18182f", fg = "#a6da95" },
-      },
-      {
-        group_name = "MarkviewIcon5",
-        value = { bg = "#18182f", fg = "#7dc4e4" },
-      },
-      {
-        group_name = "MarkviewIcon6",
-        value = { bg = "#18182f", fg = "#b7bdf8" },
+      inline_codes = {
+        enable = true,
+        hl = "dark",
       },
     },
   },
