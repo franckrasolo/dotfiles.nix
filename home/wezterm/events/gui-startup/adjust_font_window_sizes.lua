@@ -6,12 +6,15 @@ wezterm.on("gui-startup", function(cmd)
   local _, _, mux_window = wezterm.mux.spawn_window(cmd or {})
   local gui_window = mux_window:gui_window()
 
-  -- MacBook Pro 16" 2023
+  -- MacBook Pro 14" or 16"
   if screen.width <= 3456 then
-    local margin = 40
-    local status_bar_height = 26
+    local mbp14inches = screen.width <= 3024
+    local margin = mbp14inches and 30 or 40
+    local status_bar_height = mbp14inches and 40 or 26
 
-    gui_window:set_config_overrides { font_size = 18 }
+    gui_window:set_config_overrides {
+      font_size = mbp14inches and 16 or 18
+    }
     gui_window:set_inner_size(
         screen.width - 2 * margin,
         screen.height - status_bar_height - 2 * margin
