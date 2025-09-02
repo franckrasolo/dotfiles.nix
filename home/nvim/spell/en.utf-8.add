@@ -121,6 +121,7 @@ darwin
 desc
 deserialize
 deserialized
+design-first
 devenv
 diffview
 direnv
@@ -170,6 +171,7 @@ nvim
 nvim-cmp
 on-premises
 onboarding
+over-engineering
 pixi
 popup
 presenterm
@@ -185,9 +187,11 @@ sociotechnical
 system-wide
 tabline
 tagline
+test-driven
 toolchains
 ty
 upskill
+user-facing
 uv
 vFunction
 vfunction
