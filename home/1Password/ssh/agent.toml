@@ -2,3 +2,13 @@
 item = "GitHub Personal SSH Key"
 vault = "Personal"
 account = "my.1password.com"
+
+# [[ssh-keys]]
+# item = "GitHub Personal SSH Key"
+# vault = "Vault A"
+# account = "my.1password.com"
+
+# [[ssh-keys]]
+# item = "GitLab Personal SSH Key"
+# vault = "Vault B"
+# account = "my.1password.com"
