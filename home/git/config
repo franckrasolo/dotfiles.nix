@@ -20,6 +20,31 @@
 [init]
   defaultBranch = trunk
 
+#[includeIf "gitdir:~/dev/Org_X/"]
+#  path = ~/dev/Org_X/.git/config
+#
+# - where ~/dev/Org_X/.git/allowed_signers contains:
+#
+# <custom-org-email> ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#
+# - where ~/dev/Org_X/.git/config contains:
+#
+# [user]
+#   email = <actual-org-email>
+#   signingkey = ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+# 
+# [gpg]
+#   format = ssh
+# 
+# [gpg "ssh"]
+#   allowedSignersFile = ~/dev/Org_X/.git/allowed_signers
+# 
+# [commit]
+#   gpgsign = true
+# 
+# [tag]
+#   gpgSign = true
+
 [github]
   user = franckrasolo
 
