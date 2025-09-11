@@ -44,5 +44,8 @@ source <(fx --comp zsh)
 # see https://github.com/zellij-org/zellij/issues/2316
 source <(zellij setup --generate-completion zsh | sed '/_zellij "$@"/d')
 
+# OrbStack command-line tools and integration
+source ~/.orbstack/shell/init.zsh 2>/dev/null || :
+
 set +o errexit
 $profiling && zprof || true
