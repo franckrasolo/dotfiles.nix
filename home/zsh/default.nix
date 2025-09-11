@@ -1,4 +1,4 @@
-{ config, pkgs, user, ... }:
+{ config, pkgs, lib, user, ... }:
 
 {
   home.packages = with pkgs.unstable; [
@@ -20,4 +20,12 @@
 
 #  home.file.".zshenv".source = ./zsh/zshenv;
   home.file.".zshenv".source = config.lib.file.mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/home/zsh/zshenv";
+
+  home.activation.zshPluginsUpdate = with lib; mkForce (hm.dag.entryAfter [ "batCache" ] ''
+    export PATH="${pkgs.unstable.git}/bin:$PATH"
+    export ZDOTDIR="${escapeShellArg config.xdg.configHome}/zsh"
+
+    verboseEcho "Updating zsh plugins..."
+    run ${lib.getExe pkgs.unstable.antibody} bundle < $ZDOTDIR/plugins.txt >| $ZDOTDIR/plugins.zsh
+  '');
 }
