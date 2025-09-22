@@ -1,5 +1,5 @@
 return {
-  "echasnovski/mini.move",
+  "nvim-mini/mini.move",
   opts = {
     mappings = {
       -- move visual selection in visual mode
