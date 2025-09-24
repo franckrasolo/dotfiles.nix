@@ -6,9 +6,12 @@ ADR
 ADRs
 AWS
 Backend
+Behaviour-Driven
+BDD
 BFF
 Clippy
 ConfigCat
+C4
 C4-PlantUML
 Crossplane
 CD
@@ -115,6 +118,7 @@ catppuccin
 classpath
 cmd
 colorscheme
+comma-separated
 command-line
 config
 containerd
@@ -147,6 +151,7 @@ hererocks
 home-manager
 http4k
 ing
+in-memory
 jumplist
 k3s
 keymap
@@ -197,6 +202,7 @@ toolchains
 ty
 upskill
 user-facing
+user-related
 uv
 vFunction
 vfunction
