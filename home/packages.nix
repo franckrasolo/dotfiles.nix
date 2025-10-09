@@ -34,7 +34,7 @@ let
     sd
     skim
     slides
-    stderred # legacyPackages.x86_64-darwin.stderred
+    pkgs.stderred # legacyPackages.x86_64-darwin.stderred
     unrar
     unzip
     tree
