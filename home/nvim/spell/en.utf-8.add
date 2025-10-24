@@ -4,6 +4,7 @@ ArchUnit
 Auto-pipelines
 ADR
 ADRs
+ATDD
 AWS
 Backend
 Behaviour-Driven
@@ -35,6 +36,7 @@ EventBridge
 Fargate
 GitLab
 GoLand
+GraalVM
 Grafana
 GCP
 GTD
@@ -42,6 +44,7 @@ Hands-On
 Homebrew
 IntelliJ
 JetBrains
+JDK
 JSON
 JUnit
 JVM
@@ -59,6 +62,7 @@ LuaDoc
 LuaRocks
 LuaSnip
 LSP
+LTS
 MacBook
 MkDocs
 Neogit
@@ -134,6 +138,7 @@ diffview
 direnv
 domain-driven
 double-check
+end-to-end
 entrypoint
 enum
 enums
