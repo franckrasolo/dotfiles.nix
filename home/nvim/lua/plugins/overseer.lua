@@ -28,6 +28,7 @@ vim.api.nvim_create_autocmd("BufWinEnter", {
 
 return {
   "stevearc/overseer.nvim",
+  version = "1.6.0",
   opts = {
     strategy = {
       "toggleterm",
