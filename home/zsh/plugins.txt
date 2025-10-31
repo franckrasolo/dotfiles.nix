@@ -1,5 +1,4 @@
 ohmyzsh/ohmyzsh path:plugins/vi-mode
-Tarrasch/zsh-bd
 zsh-users/zsh-autosuggestions branch:develop
 zsh-users/zsh-completions
 nix-community/nix-zsh-completions
