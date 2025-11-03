@@ -22,6 +22,7 @@
   home.file.".zshenv".source = config.lib.file.mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/home/zsh/zshenv";
 
   home.activation.zshPluginsUpdate = with lib; mkForce (hm.dag.entryAfter [ "batCache" ] ''
+    export ANTIBODY_HOME="${escapeShellArg config.xdg.cacheHome}/antibody"
     export PATH="${pkgs.unstable.git}/bin:$PATH"
     export ZDOTDIR="${escapeShellArg config.xdg.configHome}/zsh"
 
