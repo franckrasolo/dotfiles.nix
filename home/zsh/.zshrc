@@ -18,8 +18,11 @@ done
 set -o errexit
 set -o pipefail
 
+mkdir -p $XDG_CACHE_HOME/zsh
+mkdir -p $XDG_DATA_HOME/zsh
+
 ZSH_CONFIG_HOME=${ZDOTDIR}
-[ -f "${ZSH_CONFIG_HOME}/plugins.zsh" ] && source "${ZSH_CONFIG_HOME}/plugins.zsh"
+source "${ZSH_CONFIG_HOME}/plugins.zsh"
 
 set -o nounset
 source "${ZSH_CONFIG_HOME}/colours.zsh"
