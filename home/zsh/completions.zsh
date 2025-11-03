@@ -4,11 +4,11 @@ if [ -n "${commands[fzf-share]}" ]; then
   source "$(fzf-share)/completion.zsh"
 fi
 
-ZCOMPDUMP=$XDG_CACHE_HOME/zsh/zcompdump # https://gist.github.com/ctechols/ca1035271ad134841284#file-compinit-zsh
-if [[ -n $ZCOMPDUMP(#qN.mh+24) ]]; then # only update the completion cache once a day
-  compinit -d $ZCOMPDUMP
+# https://gist.github.com/ctechols/ca1035271ad134841284#file-compinit-zsh
+if [[ -n $ZSH_COMPDUMP(#qN.mh+24) ]]; then # only update the completion cache once a day
+  compinit -d $ZSH_COMPDUMP
 else
-  compinit -d $ZCOMPDUMP -C
+  compinit -d $ZSH_COMPDUMP -C
 fi
 
 zmodload -i zsh/complist # completion listing extensions
