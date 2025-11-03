@@ -8,6 +8,7 @@ ATDD
 AWS
 Backend
 Behaviour-Driven
+BuildKit
 BDD
 BFF
 Clippy
@@ -103,9 +104,11 @@ VimEnter
 Welltech
 WezTerm
 Wojda
+XDG
 Yazi
 YAML
 Zsh
+ZSH_COMPDUMP
 aarch64
 air-gapped
 anti-pattern
@@ -156,6 +159,7 @@ hererocks
 home-manager
 http4k
 ing
+inlining
 in-memory
 jumplist
 k3s
@@ -171,6 +175,7 @@ luasnip4k.nvim
 macOS
 markdownlint
 menubar
+msgspec
 multi-cloud
 multi-tenant
 multicursor
@@ -216,6 +221,7 @@ wez
 which-key
 yaml-language-server
 yamlls
+zcompdump
 zsh
 
 
