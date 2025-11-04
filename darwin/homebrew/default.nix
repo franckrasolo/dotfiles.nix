@@ -19,6 +19,7 @@
     ];
 
     brews = [
+      "opencode"
     ];
 
     casks = [
