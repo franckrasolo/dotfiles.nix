@@ -3,7 +3,7 @@
 {
   programs.bat = {
     enable = true;
-    package = pkgs.unstable.bat;
+    package = pkgs.bat;
     config = {
       map-syntax = [
         "*{j,J}ustfile*:Just"
