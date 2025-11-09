@@ -161,7 +161,7 @@
     cascadia-code
     font-awesome
     monaspace
-    ubuntu_font_family
+    ubuntu-classic
     nerd-fonts.hasklug
     nerd-fonts.jetbrains-mono
   ];
