@@ -154,8 +154,8 @@ keybinds clear-defaults=true {
     bind "©" { SwitchToMode "Locked"; } // © -> 'Alt g'
     bind "Ctrl l" { Clear; Write 12; } // 12 -> ^L
     bind "Ctrl Shift Enter" { NewPane; }
-    bind "Alt Left" { MoveFocusOrTab "Left"; }
-    bind "Alt Right" { MoveFocusOrTab "Right"; }
+    bind "Alt Left" "Alt h" { MoveFocusOrTab "Left"; }
+    bind "Alt Right" "Alt l" { MoveFocusOrTab "Right"; }
     bind "Alt Down" { MoveFocus "Down"; }
     bind "Alt Up" { MoveFocus "Up"; }
     bind "Shift Left" "Shift h" { MoveTab "Left"; }
