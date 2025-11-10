@@ -154,12 +154,12 @@ keybinds clear-defaults=true {
     bind "©" { SwitchToMode "Locked"; } // © -> 'Alt g'
     bind "Ctrl l" { Clear; Write 12; } // 12 -> ^L
     bind "Ctrl Shift Enter" { NewPane; }
-    bind "Alt Left" "Alt h" { MoveFocusOrTab "Left"; }
-    bind "Alt Right" "Alt l" { MoveFocusOrTab "Right"; }
+    bind "Alt Left" { MoveFocusOrTab "Left"; }
+    bind "Alt Right" { MoveFocusOrTab "Right"; }
     bind "Alt Down" { MoveFocus "Down"; }
     bind "Alt Up" { MoveFocus "Up"; }
-    bind "Ctrl Alt Left" "Ctrl Alt h" { MoveTab "Left"; }
-    bind "Ctrl Alt Right" "Ctrl Alt l" { MoveTab "Right"; }
+    bind "Ctrl Alt Left" { MoveTab "Left"; }
+    bind "Ctrl Alt Right" { MoveTab "Right"; }
     bind "≠" { Resize "Increase"; }
     bind "–" { Resize "Decrease"; }
     bind "”" { PreviousSwapLayout; }
