@@ -158,8 +158,8 @@ keybinds clear-defaults=true {
     bind "Alt Right" "Alt l" { MoveFocusOrTab "Right"; }
     bind "Alt Down" { MoveFocus "Down"; }
     bind "Alt Up" { MoveFocus "Up"; }
-    bind "Shift Left" "Shift h" { MoveTab "Left"; }
-    bind "Shift Right" "Shift l" { MoveTab "Right"; }
+    bind "Ctrl Alt Left" "Ctrl Alt h" { MoveTab "Left"; }
+    bind "Ctrl Alt Right" "Ctrl Alt l" { MoveTab "Right"; }
     bind "≠" { Resize "Increase"; }
     bind "–" { Resize "Decrease"; }
     bind "”" { PreviousSwapLayout; }
