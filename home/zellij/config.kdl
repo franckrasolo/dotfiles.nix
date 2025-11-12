@@ -36,6 +36,7 @@ keybinds clear-defaults=true {
     bind "J" { NewPane "Down"; SwitchToMode "Normal"; }
     bind "K" { NewPane "Up"; SwitchToMode "Normal"; }
     bind "L" { NewPane "Right"; SwitchToMode "Normal"; }
+    bind "S" { NewPane "stacked"; SwitchToMode "Normal"; }
     bind "x" { CloseFocus; SwitchToMode "Normal"; }
     bind "f" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
     bind "-" { TogglePaneFrames; SwitchToMode "Normal"; }
