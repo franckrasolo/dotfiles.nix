@@ -156,6 +156,7 @@ generify
 gitlab-ci-ls
 gitsigns
 golang
+hardcoded
 headshot
 helpdesk
 hererocks
@@ -200,6 +201,7 @@ popup
 presenterm
 problem-solving
 pyproject.toml
+pytest
 quickfix
 self-hosted
 serialisable
