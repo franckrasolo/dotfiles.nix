@@ -32,9 +32,9 @@ keybinds clear-defaults=true {
     bind "j" "Down" { MoveFocus "Down"; }
     bind "k" "Up" { MoveFocus "Up"; }
     bind "n" { SwitchFocus; }
-    bind "H" { NewPane "Left"; SwitchToMode "Normal"; }
+    bind "H" { NewPane "Right"; SwitchToMode "Normal"; MovePane "Left"; }
     bind "J" { NewPane "Down"; SwitchToMode "Normal"; }
-    bind "K" { NewPane "Up"; SwitchToMode "Normal"; }
+    bind "K" { NewPane "Down"; SwitchToMode "Normal"; MovePane "Up"; }
     bind "L" { NewPane "Right"; SwitchToMode "Normal"; }
     bind "S" { NewPane "stacked"; SwitchToMode "Normal"; }
     bind "x" { CloseFocus; SwitchToMode "Normal"; }
