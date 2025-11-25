@@ -138,13 +138,11 @@ run = ['move-node-to-workspace 0']
 
 [[on-window-detected]]
 if.app-id = 'com.github.wez.wezterm'
-if.during-aerospace-startup = false
 check-further-callbacks = true
 run = ['move-node-to-workspace 1', 'layout tiling', 'fullscreen']
 
 [[on-window-detected]]
 if.app-id = 'com.jetbrains.pycharm'
-if.during-aerospace-startup = false
 check-further-callbacks = true
 run = ['layout floating']
 
@@ -185,13 +183,11 @@ run = ['move-node-to-workspace 3']
 
 [[on-window-detected]]
 if.app-id = 'com.jetbrains.intellij'
-if.during-aerospace-startup = false
 check-further-callbacks = true
 run = ['layout floating']
 
 [[on-window-detected]]
 if.app-id = 'com.jetbrains.rustrover'
-if.during-aerospace-startup = false
 check-further-callbacks = true
 run = ['layout floating']
 
