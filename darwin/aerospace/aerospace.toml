@@ -213,7 +213,7 @@ run = ['move-node-to-workspace S']
 
 [[on-window-detected]]
 if.app-id = 'com.apple.Safari'
-if.window-title-regex-substring = 'myC'
+if.window-title-regex-substring = 'CANAL'
 check-further-callbacks = false
 run = ['move-node-to-workspace Z',  'macos-native-fullscreen']
 
