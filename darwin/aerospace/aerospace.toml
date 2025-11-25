@@ -132,9 +132,24 @@ alt-shift-k = ['join-with up',    'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
 [[on-window-detected]]
+if.app-id = 'com.automattic.beeper.desktop'
+check-further-callbacks = true
+run = ['move-node-to-workspace 0']
+
+[[on-window-detected]]
+if.app-id = 'company.thebrowser.Browser'
+check-further-callbacks = true
+run = ['move-node-to-workspace 0']
+
+[[on-window-detected]]
 if.app-id = 'io.raindrop.macapp'
 check-further-callbacks = true
 run = ['move-node-to-workspace 0']
+
+[[on-window-detected]]
+if.app-id = 'com.electron.wispr-flow'
+check-further-callbacks = false
+run = ['move-node-to-workspace 0',  'layout floating']
 
 [[on-window-detected]]
 if.app-id = 'com.github.wez.wezterm'
@@ -212,10 +227,20 @@ check-further-callbacks = false
 run = ['move-node-to-workspace S']
 
 [[on-window-detected]]
+if.app-id = 'com.rogueamoeba.audiohijack'
+check-further-callbacks = false
+run = ['move-node-to-workspace S', 'layout floating']
+
+[[on-window-detected]]
 if.app-id = 'com.apple.Safari'
 if.window-title-regex-substring = 'CANAL'
 check-further-callbacks = false
 run = ['move-node-to-workspace Z',  'macos-native-fullscreen']
+
+[[on-window-detected]]
+if.app-id = 'com.apple.clock'
+check-further-callbacks = false
+run = ['layout floating']
 
 [[on-window-detected]]
 if.app-id = 'com.apple.finder'
