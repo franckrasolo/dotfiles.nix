@@ -134,109 +134,109 @@ alt-shift-l = ['join-with right', 'mode main']
 [[on-window-detected]]
 if.app-id = 'io.raindrop.macapp'
 check-further-callbacks = true
-run = 'move-node-to-workspace 0'
+run = ['move-node-to-workspace 0']
 
 [[on-window-detected]]
 if.app-id = 'com.github.wez.wezterm'
 if.during-aerospace-startup = false
 check-further-callbacks = true
-run = 'layout tiling'
+run = ['move-node-to-workspace 1', 'layout tiling', 'fullscreen']
 
 [[on-window-detected]]
 if.app-id = 'com.jetbrains.pycharm'
 if.during-aerospace-startup = false
 check-further-callbacks = true
-run = 'layout floating'
+run = ['layout floating']
 
 [[on-window-detected]]
 if.app-id = 'com.microsoft.VSCode'
 check-further-callbacks = true
-run = 'move-node-to-workspace 2'
+run = ['move-node-to-workspace 2']
 
 [[on-window-detected]]
 if.app-id = 'li.zihua.medis2'
 check-further-callbacks = true
-run = 'move-node-to-workspace 2'
+run = ['move-node-to-workspace 2']
 
 [[on-window-detected]]
 if.app-id = 'com.duckduckgo.macos.browser'
 check-further-callbacks = false
-run = 'move-node-to-workspace 3'
+run = ['move-node-to-workspace 3']
 
 [[on-window-detected]]
 if.app-id = 'org.mozilla.firefox'
 check-further-callbacks = false
-run = 'move-node-to-workspace 3'
+run = ['move-node-to-workspace 3']
 
 [[on-window-detected]]
 if.app-id = 'com.operasoftware.Opera'
 check-further-callbacks = false
-run = 'move-node-to-workspace 3'
+run = ['move-node-to-workspace 3']
 
 [[on-window-detected]]
 if.app-id = 'com.apple.Safari'
 check-further-callbacks = true
-run = 'move-node-to-workspace 3'
+run = ['move-node-to-workspace 3']
 
 [[on-window-detected]]
 if.app-id = 'org.mozilla.com.zen.browser'
 check-further-callbacks = false
-run = 'move-node-to-workspace 3'
+run = ['move-node-to-workspace 3']
 
 [[on-window-detected]]
 if.app-id = 'com.jetbrains.intellij'
 if.during-aerospace-startup = false
 check-further-callbacks = true
-run = 'layout floating'
+run = ['layout floating']
 
 [[on-window-detected]]
 if.app-id = 'com.jetbrains.rustrover'
 if.during-aerospace-startup = false
 check-further-callbacks = true
-run = 'layout floating'
+run = ['layout floating']
 
 [[on-window-detected]]
 if.app-id = 'com.apple.iCal'
 check-further-callbacks = false
-run = 'move-node-to-workspace C'
+run = ['move-node-to-workspace C']
 
 [[on-window-detected]]
 if.app-id = 'dev.kdrag0n.MacVirt'
 check-further-callbacks = false
-run = 'move-node-to-workspace C'
+run = ['move-node-to-workspace C']
 
 [[on-window-detected]]
 if.app-id = 'org.localsend.localsendApp'
 check-further-callbacks = false
-run = 'move-node-to-workspace C'
+run = ['move-node-to-workspace C']
 
 [[on-window-detected]]
 if.app-id = 'com.spotify.client'
 check-further-callbacks = false
-run = 'move-node-to-workspace S'
+run = ['move-node-to-workspace S']
 
 [[on-window-detected]]
 if.app-id = 'com.apple.Safari'
 if.window-title-regex-substring = 'myC'
 check-further-callbacks = false
-run = 'move-node-to-workspace Z'
+run = ['move-node-to-workspace Z',  'macos-native-fullscreen']
 
 [[on-window-detected]]
 if.app-id = 'com.apple.finder'
 check-further-callbacks = false
-run = 'layout floating'
+run = ['layout floating']
 
 [[on-window-detected]]
 if.app-id = 'com.apple.Preview'
 check-further-callbacks = false
-run = 'layout floating'
+run = ['layout floating']
 
 [[on-window-detected]]
 if.window-title-regex-substring = 'Hammerspoon Console'
 check-further-callbacks = false
-run = 'layout floating'
+run = ['layout floating']
 
 [[on-window-detected]]
 if.app-id = 'us.zoom.xos'
 check-further-callbacks = true
-run = 'layout floating'
+run = ['layout floating']
