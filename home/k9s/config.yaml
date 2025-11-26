@@ -1,0 +1,106 @@
+k9s:
+  # enable periodic refresh of resource browser windows
+  liveViewAutoRefresh: false
+
+  # UI poll intervals in seconds; default/minimum: 2
+  refreshRate: 2
+
+  # overrides the default k8s api server request timeout; default: 120s
+  apiServerTimeout: 15s
+
+  # number of retries once the connection to the api-server is lost; default: 15
+  maxConnRetry: 5
+
+  # whether modification commands like delete/kill/edit are disabled
+  readOnly: false
+
+  # allows users to specify the default view
+# defaultView: ""
+
+  # whether k9s should exit when CTRL-C is pressed
+  noExitOnCtrlC: false
+
+  # default port forward host
+  portForwardAddress: localhost
+
+  # whether k9s should check for the latest revision from the Github repository releases
+  skipLatestRevCheck: false
+
+  # disable counting pods while in node view
+  disablePodCounting: false
+
+  # when altering kubeconfig or using multiple kube configs, k9s will clean up cluster
+  # configurations that are no longer in use
+# keepMissingClusters: false
+
+  # path to screen dump; default: '%temp_dir%/k9s-screens-%username%' (k9s info)
+  screenDumpDir: "${XDG_STATE_HOME}/k9s/screen-dumps"
+
+  imageScans:
+    enable: false
+    exclusions:
+      # namespaces skipped for image vulnerability scanning
+      namespaces:
+        - kube-system
+      # pods skipped for image vulnerability scanning
+      labels:
+        app:
+          - test
+          - testing
+        env:
+          - dev
+
+  logger:
+    # number of lines to return
+    tail: 200
+    # total number of log lines to allow in the view
+    buffer: 5000
+    # how far to go back in the log timeline in seconds; -1 to tail logs
+    sinceSeconds: 600
+    # toggles wrapping of log lines
+    textWrap: false
+    disableAutoscroll: false
+    # enable column locking when autoscroll is enabled
+#   columnLock: false
+    # toggles timestamps on log lines
+    showTime: true
+
+  shellPod:
+    image: busybox:stable-glibc
+    namespace: default
+    limits:
+      cpu: 100m
+      memory: 100Mi
+    tty: true
+
+  # Global memory/cpu thresholds. When set will alert when thresholds are met.
+  thresholds:
+    cpu:
+      critical: 90
+      warn: 70
+    memory:
+      critical: 90
+      warn: 70
+
+  ui:
+    enableMouse: false
+    # whether to hide the k9s header
+    headless: false
+    # whether to hide the k9S logo
+    logoless: false
+    # whether to hide l9s crumbs. Default false
+    crumbsless: false
+    # whether to suppress the k9s splash screen on start
+    # note: for larger clusters or higher latency connections, there may be no resources
+    #       visible initially until local caches have finished populating
+    splashless: false
+    # toggles icons display as not all terminal support these chars
+    noIcons: false
+    # watch disk artifacts changes and update the UI live
+    reactive: false
+    # default skin for all contexts, unless explicitly overridden in the context config file
+    skin: dracula # => assumes the file skins/dracula.yaml is present in the $XDG_DATA_HOME/k9s/skins directory
+    # default some views (yaml, helm history, describe, value_extender, details, logs) to fullscreen mode
+    defaultsToFullScreen: false
+    # show full resource GVR (Group/Version/Resource) vs just R
+    useFullGVRTitle: true

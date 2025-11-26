@@ -6,6 +6,7 @@
     ./bat
     ./direnv
     ./fzf
+    ./k9s
     ./lazygit
     ./nvim
     ./presenterm
