@@ -1,0 +1,60 @@
+plugins: # using https://github.com/control-theory/gonzo
+  logs-container:
+    description: Logs Analysis
+    shortCut: Ctrl-L
+    command: sh
+    args:
+      - -c
+      - kubectl logs -f --container=$NAME $POD -n $NAMESPACE --context $CONTEXT | gonzo
+    scopes:
+      - container
+    background: false
+    confirm: false
+    dangerous: false
+    override: false
+    overwriteOutput: false
+
+  logs-deployment:
+    description: Logs Analysis
+    shortCut: Ctrl-L
+    command: sh
+    args:
+      - -c
+      - kubectl logs -f deployments/$NAME -n $NAMESPACE --context $CONTEXT | gonzo
+    scopes:
+      - deployment
+    background: false
+    confirm: false
+    dangerous: false
+    override: false
+    overwriteOutput: false
+
+  logs-pod:
+    description: Logs Analysis
+    shortCut: Ctrl-L
+    command: sh
+    args:
+      - -c
+      - kubectl logs -f pods/$NAME -n $NAMESPACE --context $CONTEXT | gonzo
+    scopes:
+      - pod
+    background: false
+    confirm: false
+    dangerous: false
+    override: false
+    overwriteOutput: false
+
+  logs-service:
+    description: Logs Analysis
+    shortCut: Ctrl-L
+    command: sh
+    args:
+      - -c
+      - kubectl logs -f services/$NAME -n $NAMESPACE --context $CONTEXT | gonzo
+    scopes:
+      - service
+    background: false
+    confirm: false
+    dangerous: false
+    override: false
+    overwriteOutput: false
