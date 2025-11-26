@@ -110,6 +110,7 @@ let
     fq
     fx
     gobang
+    gonzo
     hl-log-viewer
     ijq
     jnv
