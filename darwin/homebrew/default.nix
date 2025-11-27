@@ -103,6 +103,7 @@
         name = "secretive";
         args = { appdir = "/Applications"; };
       }
+      "shottr"
       "sonos-s1-controller"
       {
         name = "spotify";
