@@ -1,0 +1,14 @@
+plugins:
+  image-analysis:
+    description: Image Analysis
+    shortCut: i
+    command: dive
+    args:
+      - $COL-IMAGE
+    scopes:
+      - container
+    background: false
+    confirm: false
+    dangerous: false
+    override: false
+    overwriteOutput: false
