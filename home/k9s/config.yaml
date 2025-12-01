@@ -15,7 +15,7 @@ k9s:
   readOnly: false
 
   # allows users to specify the default view
-# defaultView: ""
+  defaultView: pulses
 
   # whether k9s should exit when CTRL-C is pressed
   noExitOnCtrlC: false
