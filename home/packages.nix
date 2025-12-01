@@ -112,6 +112,7 @@ let
     gobang
     hl-log-viewer
     ijq
+    jless
     jnv
     jq
     mdq
