@@ -99,7 +99,7 @@ k9s:
     # watch disk artifacts changes and update the UI live
     reactive: false
     # default skin for all contexts, unless explicitly overridden in the context config file
-    skin: dracula # => assumes the file skins/dracula.yaml is present in the $XDG_DATA_HOME/k9s/skins directory
+    skin: catppuccin-mocha
     # default some views (yaml, helm history, describe, value_extender, details, logs) to fullscreen mode
     defaultsToFullScreen: false
     # show full resource GVR (Group/Version/Resource) vs just R
