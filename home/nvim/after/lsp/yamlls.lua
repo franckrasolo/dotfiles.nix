@@ -49,7 +49,7 @@ return {
           {
             name = "kubernetes",
             description = "Kubernetes schema",
-            url = "https://raw.githubusercontent.com/yannh/kubernetes-json-schema/refs/heads/master/v1.33.2-standalone-strict/all.json",
+            url = "https://github.com/yannh/kubernetes-json-schema/raw/refs/heads/master/v1.34.2-standalone-strict/all.json",
             fileMatch = {
               "**/*.k8s.{yaml,yml}",
               "**/k8s/**/*.{yaml,yml}",
