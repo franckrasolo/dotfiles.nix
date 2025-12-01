@@ -55,6 +55,15 @@ return {
               "**/k8s/**/*.{yaml,yml}",
             },
           },
+          {
+            name = "popeye",
+            description = "Popeye configuration schema",
+            url = "https://github.com/derailed/popeye/raw/refs/heads/master/pkg/config/json/schemas/spinach.json",
+            fileMatch = {
+              "**/popeye.yaml",
+              "**/spinach.yaml",
+            }
+          },
         },
       },
     },
