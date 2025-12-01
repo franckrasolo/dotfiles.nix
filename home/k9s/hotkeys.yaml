@@ -1,8 +1,8 @@
 hotKeys:
   shift-0:
     shortCut:    Shift-0
-    description: Viewing pods
-    command:     pods
+    description: View cluster pulses
+    command:     pulse
 
   shift-1:
     shortCut:    Shift-1
@@ -11,6 +11,10 @@ hotKeys:
 
   shift-2:
     shortCut:    Shift-2
-    description: Xray Deployments
-    command:     xray deploy
+    description: View pods
+    command:     po
 
+  shift-3:
+    shortCut:    Shift-3
+    description: View services
+    command:     svc
