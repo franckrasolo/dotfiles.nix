@@ -5,6 +5,7 @@ with pkgs.unstable;
   home.packages = [
     dive
     gonzo
+    popeye
   ];
 
   programs.k9s = {

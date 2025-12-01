@@ -1,0 +1,15 @@
+plugins:
+  cluster-linting:
+    description: Lint Cluster
+    shortCut: Shift-K
+    command: sh
+    args:
+      - -c
+      - popeye --file ~/.xdg/config/k9s/spinach.yaml | less
+    scopes:
+      - all
+    background: false
+    confirm: false
+    dangerous: false
+    override: false
+    overwriteOutput: true

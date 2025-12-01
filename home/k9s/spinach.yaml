@@ -1,0 +1,77 @@
+popeye:
+  # checks resources against reported metrics usage
+  # note: target clusters must run a metrics server
+  allocations:
+    cpu:
+      underPercUtilization: 200
+      overPercUtilization: 50
+    memory:
+      underPercUtilization: 200
+      overPercUtilization: 50
+
+  # resources excluded from linting
+  excludes:
+    # globally excluded resources and codes
+    global:
+      fqns: [rx:^argo, rx:^kube-]
+      labels:
+        app: [rx:^.*(demo|dev).*$]
+      annotations:
+        kubernetes.io/service-account.name: [k9s, popeye]
+        mode: [dev, stage, staging, rx:test.*]
+        registry: [https://hub.docker.com/]
+      codes: ["300", "206", rx:^41]
+
+    # excluded resources
+    linters:
+      namespaces:
+        codes: ["100", rx:^22]
+        instances:
+          - fqns: [kube-public, kube-system]
+          - fqns: [dummy-ns]
+            codes: ["106"]
+      secrets:
+        instances:
+          - fqns: [classified, confidential, "rx:^gou?v-", rx:^secret-]
+      pods:
+        instances:
+          - labels:
+            app: [rx:^debug-, foobar]
+            codes: ["102", "105"]
+
+  resources:
+    node:
+      # warn when node utilisation is over these percentage thresholds
+      limits:
+        cpu:    90
+        memory: 80
+
+    pod:
+      # warn when container utilisation is over these percentage thresholds
+      limits:
+        cpu:    80
+        memory: 75
+      # warn when the number of restarts is over this threshold
+      restarts: 3
+
+  overrides:
+    # custom severity levels: critical=3, warn=2, info=1
+    - code: 206
+      severity: 1
+
+  # allow pulling images from these registries
+  registries:
+    # Public AWS Elastic Container Registry mirror of Docker Hub
+    - public.ecr.aws
+    # Public Google Container Registry mirror of Docker Hub
+    - mirror.gcr.io
+    # GitHub Container Registry
+    - ghcr.io
+    # Google Artifact Registry
+    - docker.pkg.dev
+    - europe-docker.pkg.dev
+    - us-docker.pkg.dev
+    # Google Container Registry (legacy)
+    - gcr.io
+    - eu.gcr.io
+    - us.gcr.io
