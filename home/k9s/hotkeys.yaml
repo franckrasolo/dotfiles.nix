@@ -14,9 +14,3 @@ hotKeys:
     description: Xray Deployments
     command:     xray deploy
 
-  shift-s:
-    shortCut:    Shift-S
-    override:    true # => will override the default shortcut related action if set to true (default to false)
-    description: Namespaced resources
-    command:     "$RESOURCE_NAME $NAMESPACE"
-    keepHistory: true # whether you can return to the previous view
