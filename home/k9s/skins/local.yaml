@@ -1,0 +1,122 @@
+# derived from catppuccin-mocha by https://github.com/catppuccin/k9s
+
+foreground: &foreground "#cdd6f4"
+# background: &background "#1e1e2e"
+background: &background default
+
+cursor: &cursor "#45475a"
+focused: &focused "#b4befe"
+highlight: &highlight "#89dceb"
+inactive: &inactive "#a6adc8"
+mark: &mark "#f5e0dc"
+num_key: &num_key "#eba0ac"
+
+cyan: &cyan "#89b4fa"
+green: &green "#a6e3a1"
+orange: &orange "#fab387"
+pink: &pink "#f5c2e7"
+purple: &purple "#cba6f7"
+red: &red "#f38ba8"
+yellow: &yellow "#f9e2af"
+
+k9s:
+  body:
+    fgColor: *foreground
+    bgColor: *background
+    logoColor: *purple
+  prompt:
+    fgColor: *foreground
+    # bgColor: "#181825"
+    bgColor: *background
+    suggestColor: *cyan
+  help:
+    fgColor: *foreground
+    bgColor: *background
+    sectionColor: *green
+    keyColor: *cyan
+    numKeyColor: *num_key
+  frame:
+    title:
+      fgColor: "#94e2d5"
+      bgColor: *background
+      highlightColor: *pink
+      counterColor: *yellow
+      filterColor: *green
+    border:
+      fgColor: *purple
+      focusColor: *focused
+    menu:
+      fgColor: *foreground
+      keyColor: *cyan
+      numKeyColor: *num_key
+    crumbs:
+      fgColor: *background
+      bgColor: *num_key
+      activeColor: "#f2cdcd"
+    status:
+      newColor: *cyan
+      modifyColor: *focused
+      addColor: *green
+      pendingColor: *orange
+      errorColor: *red
+      highlightColor: *highlight
+      killColor: *purple
+      completedColor: "#6c7086"
+  info:
+    fgColor: *orange
+    sectionColor: *foreground
+  views:
+    table:
+      fgColor: *foreground
+      bgColor: *background
+      cursorFgColor: "#313244"
+      cursorBgColor: *cursor
+      markColor: *mark
+      header:
+        fgColor: *yellow
+        bgColor: *background
+        sorterColor: *highlight
+    xray:
+      fgColor: *foreground
+      bgColor: *background
+      cursorColor: *cursor
+      cursorTextColor: *background
+      graphicColor: *pink
+    charts:
+      bgColor: *background
+      chartBgColor: *background
+      dialBgColor: *background
+      defaultDialColors:
+        - *green
+        - *red
+      defaultChartColors:
+        - *green
+        - *red
+      resourceColors:
+        cpu:
+          - *purple
+          - *cyan
+        mem:
+          - *yellow
+          - *orange
+    yaml:
+      keyColor: *cyan
+      valueColor: *foreground
+      colonColor: *inactive
+    logs:
+      fgColor: *foreground
+      bgColor: *background
+      indicator:
+        fgColor: *focused
+        bgColor: *background
+        toggleOnColor: *green
+        toggleOffColor: *inactive
+  dialog:
+    fgColor: *yellow
+    bgColor: "#9399b2"
+    buttonFgColor: *background
+    buttonBgColor: "#7f849c"
+    buttonFocusFgColor: *background
+    buttonFocusBgColor: *pink
+    labelFgColor: *mark
+    fieldFgColor: *foreground

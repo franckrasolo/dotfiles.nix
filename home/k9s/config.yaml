@@ -99,7 +99,7 @@ k9s:
     # watch disk artifacts changes and update the UI live
     reactive: false
     # default skin for all contexts, unless explicitly overridden in the context config file
-    skin: catppuccin-mocha
+    skin: local
     # default some views (yaml, helm history, describe, value_extender, details, logs) to fullscreen mode
     defaultsToFullScreen: false
     # show full resource GVR (Group/Version/Resource) vs just R
