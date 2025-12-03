@@ -15,6 +15,6 @@ hotKeys:
     command:     po
 
   shift-3:
-    shortCut:    Shift-3
+    shortCut:    Shift-4
     description: View services
     command:     svc
