@@ -125,6 +125,7 @@ bi-directional
 bi-directionally
 blink.cmp
 catppuccin
+catppuccin-mocha
 classpath
 cmd
 colorscheme
@@ -160,6 +161,7 @@ hardcoded
 headshot
 helpdesk
 hererocks
+high-performance
 home-manager
 http4k
 ing
@@ -167,6 +169,7 @@ inlining
 in-memory
 jumplist
 k3s
+k9s
 keymap
 keymaps
 lazy.nvim
