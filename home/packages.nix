@@ -126,6 +126,7 @@ let
     libwebp
     neo
     plantuml-c4
+    termshot
     timg
   ];
 

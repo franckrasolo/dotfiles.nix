@@ -16,6 +16,7 @@ alias http="xh"
 alias https="xhs"
 alias fs="yazi"
 alias ls="eza --color=always --icons --git --group-directories-first"
+alias tshot="termshot --columns 160 --show-cmd"
 alias time="/usr/bin/time -p"
 alias tree="tree -FpaChlD --du"
 
