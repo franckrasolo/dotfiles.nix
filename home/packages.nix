@@ -38,6 +38,7 @@ let
     unrar
     unzip
     tree
+    util-linux
     viu
     watch
     watchexec
