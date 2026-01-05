@@ -19,6 +19,7 @@
     ];
 
     brews = [
+      "headson"
       "opencode"
     ];
 
