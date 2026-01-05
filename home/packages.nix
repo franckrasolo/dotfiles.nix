@@ -102,8 +102,9 @@ let
   ];
 
   pythonTools = [
-    python313FreeThreading
-#    (python313FreeThreading.withPackages (pkgs: with pkgs; [ pip pynvim ]))
+    python314FreeThreading
+    python314Packages.pip
+#    (python314FreeThreading.withPackages (pkgs: with pkgs; [ pip pynvim ]))
   ];
 
   dataTools = [
