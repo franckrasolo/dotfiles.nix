@@ -117,6 +117,7 @@ let
     jnv
     jq
     mdq
+    otree
     xan
     yq-go
     pkgs.tabiew
