@@ -32,7 +32,7 @@
 
       overlay = final: prev: {
         unstable = import nixpkgs-unstable {
-          inherit (prev) system;
+          inherit (prev.stdenv.hostPlatform) system;
           config.allowBroken = true;
           config.allowUnfree = true;
           config.packageOverrides = prev: import ./pkgs { inherit (prev) pkgs; };
@@ -41,7 +41,7 @@
           ];
         };
 
-        zjstatus = zjstatus.packages.${prev.system}.default;
+        zjstatus = zjstatus.packages.${prev.stdenv.hostPlatform.system}.default;
       };
       # makes "pkgs.unstable" available in configuration.nix
       overlayModule = ({ config, pkgs, ... }: { nixpkgs.overlays = [ overlay ]; });
