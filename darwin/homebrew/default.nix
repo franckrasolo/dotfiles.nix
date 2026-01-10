@@ -115,6 +115,10 @@
       "vlc"
       "wezterm"
       {
+        name = "wispr-flow";
+        args = { appdir = "/Applications"; };
+      }
+      {
         # Zoom must also be installed under /Applications
         name = "zoom";
         args = { appdir = "/Applications"; };
