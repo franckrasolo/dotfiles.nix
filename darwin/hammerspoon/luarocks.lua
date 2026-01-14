@@ -1,1 +1,0 @@
-../../home/luarocks/luarocks.lua

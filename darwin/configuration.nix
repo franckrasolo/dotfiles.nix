@@ -3,9 +3,7 @@
 {
   imports = [
     ./homebrew
-    ./hammerspoon
     ./macOS
-    ./aerospace
     ./jankyborders
     ./skhd
   ];
@@ -55,6 +53,12 @@
       owner = user.accountName;
     };
   };
+
+  system.activationScripts.addGitHubAccessToken.text = with pkgs.unstable; ''
+    sudo ${gnused}/bin/sed -i \
+      -E "s/access-tokens = .*/access-tokens = github.com=$(cat ${config.sops.templates.github-token.path})/" \
+      /etc/static/nix/nix.conf
+  '';
 
   # auto-upgrade both the nix package and the daemon service
   services.nix-daemon.enable = true;
@@ -108,32 +112,6 @@
     ];
   };
 
-  system.activationScripts.preUserActivation.text = with pkgs.unstable; ''
-    export PATH=${user.homeDirectory}/dev/dotfiles.nix/darwin/bin:$PATH
-
-    launchctl setenv XDG_CACHE_HOME   ~/.xdg/cache
-    launchctl setenv XDG_CONFIG_HOME  ~/.xdg/config
-    launchctl setenv XDG_DATA_HOME    ~/.xdg/local/share
-    launchctl setenv XDG_STATE_HOME   ~/.xdg/local/state
-    launchctl setenv GRADLE_USER_HOME ~/.xdg/local/share/gradle
-    launchctl setenv DOCKER_CONFIG    ~/.xdg/config/docker
-    launchctl setenv KUBECONFIG       ~/.xdg/config/kube
-
-    # 1Password integration requires the CLI binary at a specific location
-    sudo ${coreutils}/bin/cp ${_1password-cli}/bin/op /usr/local/bin/op
-
-    # set default handlers for Apple UTIs, URL schemes, file extensions, and MIME types
-#   duti $XDG_CONFIG_HOME/duti/   # must run *after* home-manager
-    duti ~/dev/dotfiles.nix/home/duti/
-  '';
-
-  system.activationScripts.postUserActivation.text = with pkgs.unstable; ''
-    # load Bunch automations – https://bunchapp.co/
-    open 'x-bunch://setPref?configDir=~/.xdg/config/bunches'
-   sudo ${gnused}/bin/sed -i \
-     -E "s/access-tokens = .*/access-tokens = github.com=$(cat ${config.sops.templates.github-token.path})/" \
-     /etc/static/nix/nix.conf
-  '';
 
   programs.nix-index.enable = true;
 
@@ -152,8 +130,8 @@
     useGlobalPkgs = true;
     useUserPackages = true;
     users."${user.accountName}" = pkgs.lib.mkMerge [
+      ./home
       ../home
-      { xdg.configFile."bunches".source = ./bunches; }
     ];
   };
 
