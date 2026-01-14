@@ -91,7 +91,7 @@ let
 
     helix
     nixd
-    nixfmt-rfc-style
+    nixfmt
     tokei
     tree-sitter
   ];
