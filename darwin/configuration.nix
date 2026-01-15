@@ -13,19 +13,21 @@
   # used for backwards compatibility (check the change log first)
   system.stateVersion = 4;
 
-  environment.darwinConfig = "$HOME/dev/dotfiles.nix/darwin/configuration.nix";
+  environment = with pkgs.unstable; {
+    darwinConfig = "$HOME/dev/dotfiles.nix/darwin/configuration.nix";
 
-  environment.shells = with pkgs.unstable; [
-    nushell
-    zsh
-  ];
+    shells = [
+      nushell
+      zsh
+    ];
 
-  environment.systemPackages = with pkgs.unstable; [
-    cacert
-    duti
-    net-news-wire
-    sketchybar
-  ];
+    systemPackages = [
+      cacert
+      duti
+      net-news-wire
+      sketchybar
+    ];
+  };
 
   programs.nix-index.enable = true;
 
