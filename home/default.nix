@@ -24,7 +24,7 @@
     cacheHome  = "${user.homeDirectory}/.xdg/cache";
     configHome = "${user.homeDirectory}/.xdg/config";
     dataHome   = "${user.homeDirectory}/.xdg/local/share";
-    stateHome   = "${user.homeDirectory}/.xdg/local/state";
+    stateHome  = "${user.homeDirectory}/.xdg/local/state";
 
     configFile = with config.lib.file; {
       "1Password".source   = ./1Password;
