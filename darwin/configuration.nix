@@ -7,7 +7,7 @@
     ./nix
     ./jankyborders
     ./skhd
-    ./sops.nix
+    ./security.nix
   ];
 
   # used for backwards compatibility (check the change log first)
