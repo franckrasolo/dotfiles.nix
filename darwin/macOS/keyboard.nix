@@ -21,7 +21,7 @@
 #   "com.apple.keyboard.fnState" = false;
   };
 
-  system.activationScripts.extraUserActivation.text = let
+  system.activationScripts.extraActivation.text = let
     hotkeys = [
       32 # Mission Control
       34

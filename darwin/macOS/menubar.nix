@@ -1,5 +1,7 @@
+{ user, ... }:
+
 {
-  system.defaults.CustomUserPreferences."~/Library/Preferences/ByHost/com.apple.controlcenter.plist" = {
+  system.defaults.CustomUserPreferences."${user.homeDirectory}/Library/Preferences/ByHost/com.apple.controlcenter.plist" = {
     "AirDrop"          = 8;
     "AudioVideoModule" = 8;
     "BentoBox"         = 8;
@@ -15,7 +17,7 @@
     "WiFi"             = 8;
   };
 
-  system.defaults.CustomUserPreferences."~/Library/Preferences/ByHost/com.apple.Spotlight.plist" = {
+  system.defaults.CustomUserPreferences."${user.homeDirectory}/Library/Preferences/ByHost/com.apple.Spotlight.plist" = {
     "MenuItemHidden" = true;
   };
 

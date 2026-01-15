@@ -35,7 +35,7 @@
     };
   };
 
-  home.activation.batCache = with lib; mkForce (hm.dag.entryAfter [ "linkGeneration" ] ''
+  home.activation.batCache = with lib; mkForce (hm.dag.entryAfter [ "prepareUserActivation" ] ''
     export XDG_CACHE_HOME=${escapeShellArg config.xdg.cacheHome}
     export XDG_CONFIG_HOME=${escapeShellArg config.xdg.configHome}
 

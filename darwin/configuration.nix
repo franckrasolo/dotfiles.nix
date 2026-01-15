@@ -37,10 +37,7 @@
     experimental-features = nix-command flakes
   '';
 
-  # auto-upgrade both the nix package and the daemon service
-  services.nix-daemon.enable = true;
   nix.package = pkgs.unstable.nixVersions.latest;
-  nix.useDaemon = true;
 
   nixpkgs.config.allowBroken = true;
   nixpkgs.config.allowUnfree = true;
@@ -81,7 +78,7 @@
   '';
 
   security = {
-    pam.enableSudoTouchIdAuth = true;
+    pam.services.sudo_local.touchIdAuth = true;
 
     # register additional (MITM) certificates
     pki.certificateFiles = [
@@ -89,6 +86,7 @@
     ];
   };
 
+  system.primaryUser = user.accountName;
 
   programs.nix-index.enable = true;
 
