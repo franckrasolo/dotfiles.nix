@@ -15,9 +15,9 @@
 
   environment.darwinConfig = "$HOME/dev/dotfiles.nix/darwin/configuration.nix";
 
-  environment.shells = [
-    pkgs.zsh
-    pkgs.unstable.nushell
+  environment.shells = with pkgs.unstable; [
+    nushell
+    zsh
   ];
 
   environment.systemPackages = with pkgs.unstable; [
