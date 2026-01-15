@@ -29,7 +29,10 @@
     ];
   };
 
-  programs.nix-index.enable = true;
+  programs.nix-index = {
+    enable = true;
+    package = pkgs.unstable.nix-index;
+  };
 
   # create /etc/<shell>rc that loads the nix-darwin environment
   programs.zsh.enable = true;
