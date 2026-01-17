@@ -7,7 +7,6 @@
   home.activation.installLuaRocks =
     let
       rocks = [
-        "fun"
       ];
       installRockCommand = rock: "luarocks --local install ${rock}";
     in
@@ -28,7 +27,7 @@
         # add a login item for Hammerspoon
         osascript -e 'tell application "System Events" to make login item at end with properties { name: "Hammerspoon", path:"/Applications/Hammerspoon.app", hidden:false }'
 
-        # install LuaRocks dependencies
+        # install Lua rocks
         export PATH=/etc/profiles/per-user/${user.accountName}/bin:$PATH
         export XDG_CONFIG_HOME="${user.homeDirectory}/.xdg/config"
         export XDG_DATA_HOME="${user.homeDirectory}/.xdg/local/share"

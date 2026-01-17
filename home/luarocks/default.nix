@@ -1,10 +1,14 @@
 { config, pkgs, ... }:
 
+with pkgs.unstable;
 let
-  lua_version = "5.4";
+  lua = lua5_4_compat;
 
-  luaEnv = pkgs.unstable.lua5_4_compat.withPackages (
+  luaVersion = "5.4";
+
+  luaEnv = lua.withPackages (
     ps: with ps; [
+      (callPackage ./luafun.nix { inherit lua; })
       luasocket
       moonscript
       penlight
@@ -12,17 +16,17 @@ let
   );
 in
 {
-  home.packages = with pkgs.unstable; [
+  home.packages = [
     luaEnv
     lua54Packages.luarocks
   ];
 
   home.sessionVariables = {
-    LUA_PATH = "${luaEnv}/share/lua/${lua_version}/?.lua;${luaEnv}/share/lua/${lua_version}/?/init.lua";
-    LUA_CPATH = "${luaEnv}/lib/lua/${lua_version}/?.so";
+    LUA_PATH = "${luaEnv}/share/lua/${luaVersion}/?.lua;${luaEnv}/share/lua/${luaVersion}/?/init.lua";
+    LUA_CPATH = "${luaEnv}/lib/lua/${luaVersion}/?.so";
   };
 
-  xdg.configFile."luarocks/config-${lua_version}.lua".text = import ./config.nix {
+  xdg.configFile."luarocks/config-${luaVersion}.lua".text = import ./config.nix {
     inherit config luaEnv;
   };
 
