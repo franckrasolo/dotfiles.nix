@@ -8,6 +8,7 @@
     ./fzf
     ./k9s
     ./lazygit
+    ./luarocks
     ./nvim
     ./presenterm
     ./ripgrep
@@ -31,7 +32,6 @@
       "duti".source        = ./duti;
       "fastfetch".source   = ./fastfetch;
       "git".source         = mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/home/git";
-      "luarocks".source    = ./luarocks;
       "wezterm".source     = mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/home/wezterm";
       "zathura".source     = mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/home/zathura";
     };

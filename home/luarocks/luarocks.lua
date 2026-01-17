@@ -1,7 +1,7 @@
--- make LuaRocks packages available to a Lua runtime
+-- make installed Lua rocks available to the Lua runtime
 local luarocks = "/etc/profiles/per-user/" .. os.getenv("USER") .. "/bin/luarocks"
 
-function execute(prog)
+local function execute(prog)
   return io.popen(prog):read("*a")
 end
 

@@ -2,8 +2,7 @@ profiling=false && zmodload zsh/zprof || true # https://getantibody.github.io/ev
 
 typeset -U path cdpath fpath manpath # prevent duplicates in paths
 
-#source $HOME/.nix-profile/etc/profile.d/nix.sh
-source /etc/profiles/per-user/$USER/etc/profile.d/hm-session-vars.sh
+unset __HM_SESS_VARS_SOURCED && source /etc/profiles/per-user/$USER/etc/profile.d/hm-session-vars.sh
 
 # some programs (e.g. ripgrep, taskwarrior) installed by Nix may also have zsh completions
 for profile in ${(z)NIX_PROFILES}; do
