@@ -16,6 +16,7 @@
     taps = [
       "martido/homebrew-graph"
       "nikitabobko/tap"
+      "steipete/tap"
     ];
 
     brews = [
@@ -106,6 +107,7 @@
         name = "secretive";
         args = { appdir = "/Applications"; };
       }
+      "repobar"
       "shottr"
       "sonos-s1-controller"
       {
