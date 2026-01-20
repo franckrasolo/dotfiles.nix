@@ -23,7 +23,6 @@
       "beads"
       "beads_viewer"
       "headson"
-      "opencode"
     ];
 
     casks = [
