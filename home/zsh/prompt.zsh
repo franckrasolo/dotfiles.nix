@@ -4,7 +4,6 @@ path_aliases=(
   "~/.xdg/cache=xdg_cache"
   "~/.xdg/config=xdg_config"
   "~/.xdg/local/share=xdg_data"
-  "~/.xdg/cache/antibody=@antibody"
   "~/.xdg/config/vim/plugged=vim-plugins"
   "~/.nix-defexpr/channels/nixpkgs=@nixpkgs"
   "nix/var/nix/profiles/per-user/$USER/channels/nixpkgs=@nixpkgs"

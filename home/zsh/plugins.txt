@@ -1,6 +1,0 @@
-ohmyzsh/ohmyzsh path:plugins/vi-mode
-zsh-users/zsh-autosuggestions
-zsh-users/zsh-completions
-nix-community/nix-zsh-completions
-z-shell/F-Sy-H branch:main
-zsh-users/zsh-history-substring-search
