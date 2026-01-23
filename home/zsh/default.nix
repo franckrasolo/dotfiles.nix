@@ -9,11 +9,36 @@
 
   programs.zsh = {
     enable = true;
+    package = pkgs.unstable.zsh;
+    dotDir = "${config.xdg.configHome}/zsh";
     autosuggestion.enable = true;
-    package = pkgs.zsh;
+    enableCompletion = true;
     envExtra = ''
       source ~/.zshenv.manual
     '';
+
+    initContent = with pkgs; let
+      zshrc = {
+        first = lib.mkOrder 500 ''
+        '';
+
+        beforeCompletion = lib.mkOrder 550 ''
+        '';
+
+        general = lib.mkOrder 1000 ''
+          source $ZDOTDIR/zshrc
+        '';
+
+        last = lib.mkOrder 1500 ''
+        '';
+      };
+    in
+      lib.mkMerge [
+        zshrc.first
+        zshrc.beforeCompletion
+        zshrc.general
+        zshrc.last
+      ];
   };
 
   programs.command-not-found.enable = true;
