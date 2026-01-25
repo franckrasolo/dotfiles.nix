@@ -72,7 +72,7 @@ return {
       },
 
       provider_selector = function(_, filetype, buftype)
-        local filetypes_with_lsp = { "json", "kcl", "kotlin", "mojo", "python", "rust", "yaml" }
+        local filetypes_with_lsp = { "json", "kotlin", "mojo", "python", "rust", "yaml" }
         local filetype_providers = { git = "indent", NeogitStatus = "" }
 
         return (filetypes_with_lsp[filetype] and "lsp")
