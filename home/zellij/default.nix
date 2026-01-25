@@ -3,7 +3,7 @@
 {
   programs.zellij = {
     enable = true;
-    enableZshIntegration = true;
+    enableZshIntegration = false;
     package = pkgs.unstable.zellij;
   };
 
