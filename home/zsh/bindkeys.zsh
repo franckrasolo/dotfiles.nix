@@ -36,6 +36,8 @@ autoload -Uz edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd " " edit-command-line
 
+bindkey " " magic-space # expand historical commands
+
 revert-line () {
   while zle .undo; do done
 }
