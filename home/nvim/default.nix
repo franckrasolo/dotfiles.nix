@@ -30,7 +30,7 @@ with pkgs.unstable; {
   home.sessionVariables = {
     PAGER  = "less -FR";
     EDITOR = "nvim";
-    VISUAL = "nvr -cc split --remote-wait +'set bufhidden=wipe'";
+    VISUAL = "nvim";
     TERM   = "xterm-256color";
   };
 }

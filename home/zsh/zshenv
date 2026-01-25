@@ -71,6 +71,7 @@ export _ZO_DATA_DIR=$XDG_DATA_HOME
 export ZELLIJ_CONFIG_DIR=$XDG_CONFIG_HOME/zellij
 
 export EDITOR="nvim"
+export VISUAL="nvim"
 export LESS="-RX" # with colour support
 export LESSHISTFILE=-
 export PAGER="less"
@@ -82,7 +83,6 @@ export JUST_CHOOSER=$(echo $(echo '
     --preview="just --show {} | bat --language=Makefile --color=always --style=plain"
   || true
 '))
-export VISUAL="nvr -cc split --remote-wait +'set bufhidden=wipe'"
 
 # colours in man pages paginated with bat
 # - https://github.com/sharkdp/bat#man
