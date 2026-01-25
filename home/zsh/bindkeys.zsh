@@ -31,6 +31,11 @@ unix-word-rubout() {
 zle -N unix-word-rubout
 bindkey "^w" unix-word-rubout
 
+# open command line buffer in editor
+autoload -Uz edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd " " edit-command-line
+
 revert-line () {
   while zle .undo; do done
 }
