@@ -28,9 +28,9 @@ with pkgs.unstable; {
   ];
 
   home.sessionVariables = {
-    PAGER  = "less -FR";
     EDITOR = "nvim";
     VISUAL = "nvim";
+    PAGER  = "less -FR";
     TERM   = "xterm-256color";
   };
 }
