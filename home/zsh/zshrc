@@ -35,6 +35,7 @@ source "${ZSH_CONFIG_HOME}/bindkeys.zsh"
 set +o nounset
 source "${ZSH_CONFIG_HOME}/completions.zsh"
 source "${ZSH_CONFIG_HOME}/prompt.zsh"
+source "${ZSH_CONFIG_HOME}/widgets.zsh"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 #eval "$(brew shellenv)"
