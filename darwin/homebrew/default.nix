@@ -23,6 +23,7 @@
       "beads"
       "beads_viewer"
       "headson"
+      "mise"
     ];
 
     casks = [
