@@ -56,9 +56,9 @@
 
 [core]
   autocrlf = input
+  safecrlf = true
   excludesFile = ~/.xdg/config/git/ignore
   ignoreCase = false
-  safecrlf = true
   whitespace = -indent-with-non-tab,space-before-tab,tab-in-indent,trailing-space,-cr-at-eol
   pager = delta
 
