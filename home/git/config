@@ -94,7 +94,7 @@
   showSignature = true
 
 [format]
-  pretty = '%C(yellow)%h%Creset %C(magenta)%cd%Creset %d %s'
+  pretty = fuller
 
 [diff]
   tool = nvimdiff
