@@ -1,6 +1,6 @@
 local git_trailers = {
   -- location = (vim.env.XDG_CONFIG_HOME or vim.env.HOME .. "/.config") .. "/git/trailers",
-  location = vim.fn.getcwd() .. "/.config/git-trailers",
+  location = vim.fn.getcwd() .. "/.config/git/trailers",
 
   assisted_by = {
     desc = "used for disclosing the use of an AI model, tool, or service when significant parts "
