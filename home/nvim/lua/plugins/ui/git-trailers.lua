@@ -107,6 +107,7 @@ local function multi_select(users, git_trailer, snacks)
     end
   end
 
+  local editor_mode = vim.api.nvim_get_mode().mode
   snacks.picker.pick {
     items = items,
     format = "text",
@@ -137,6 +138,12 @@ local function multi_select(users, git_trailer, snacks)
 
         local line, col = unpack(vim.api.nvim_win_get_cursor(target_win))
         vim.api.nvim_win_set_cursor(target_win, { line, col + 1 })
+      end
+
+      if editor_mode == "i" then
+        vim.schedule(function()
+          vim.cmd("startinsert")
+        end)
       end
     end,
   }
