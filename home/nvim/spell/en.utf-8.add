@@ -1,6 +1,7 @@
 Anti-Pattern
 Anti-Patterns
 ArchUnit
+Assisted-by
 Auto-pipelines
 ADR
 ADRs
@@ -12,6 +13,8 @@ BuildKit
 BDD
 BFF
 Clippy
+Co-authored-by
+Co-developed-by
 ConfigCat
 C4
 C4-PlantUML
@@ -66,6 +69,7 @@ LuaSnip
 LSP
 LTS
 MacBook
+Mentored-by
 MkDocs
 Neogit
 Neovide
@@ -87,12 +91,15 @@ QoL
 Quillin
 RabbitMQ
 Rasolo
+Reported-by
 RustRover
 REPL
 S3
 SchemaStore
 Shazaam
+Signed-off-by
 StyLua
+Suggested-by
 SQLModel
 SUT
 Test-Driven
