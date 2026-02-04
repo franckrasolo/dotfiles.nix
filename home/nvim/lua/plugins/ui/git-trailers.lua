@@ -164,7 +164,7 @@ local function create_git_commit_trailer_autocmd_for(git_trailer)
     pattern = "COMMIT_EDITMSG",
     callback = function()
       local opts = { buffer = true, desc = "Add " .. git_trailer.type }
-      vim.keymap.set({ "i", "n" }, git_trailer.keybinding, select_users, opts)
+      vim.keymap.set({ "i", "n", "v" }, git_trailer.keybinding, select_users, opts)
     end,
   })
 end
