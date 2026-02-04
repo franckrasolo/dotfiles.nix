@@ -108,6 +108,7 @@ let
     jless
     jnv
     jq
+    jqfmt
     mdq
     otree
     xan
