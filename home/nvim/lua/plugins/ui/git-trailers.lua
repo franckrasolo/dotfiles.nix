@@ -135,9 +135,8 @@ local function multi_select(users, git_trailer, snacks)
       if target_win ~= -1 then
         vim.api.nvim_set_current_win(target_win)
 
-        local first_line_content = vim.api.nvim_buf_get_lines(target_buf, 0, 1, false)[1] or ""
-        -- set cursor: {row (1-indexed), col (0-indexed)}
-        vim.api.nvim_win_set_cursor(target_win, { 1, #first_line_content })
+        local line, col = unpack(vim.api.nvim_win_get_cursor(target_win))
+        vim.api.nvim_win_set_cursor(target_win, { line, col + 1 })
       end
     end,
   }
