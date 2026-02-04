@@ -13,7 +13,7 @@ local git_trailers = {
   },
   co_authored_by = {
     desc = "used for indicating that people collaborated synchronously in real-time on a change",
-    file = "co-authors.txt",
+    file = "contributors.txt",
     type = "Co-Author(s)",
     key = "Co-authored-by",
     keybinding = "<c-u>",
@@ -21,7 +21,7 @@ local git_trailers = {
   },
   co_developed_by = {
     desc = "used for indicating that people collaborated synchronously in real-time on a change",
-    file = "co-authors.txt",
+    file = "contributors.txt",
     type = "Co-Developer(s)",
     key = "Co-developed-by",
     keybinding = "<c-d>",
@@ -45,7 +45,7 @@ local git_trailers = {
   },
   signed_off_by = {
     desc = "used for adding signature and acknowledgment of licensing terms when contributing changes",
-    file = "co-authors.txt",
+    file = "contributors.txt",
     type = "Signatory / Signatories",
     key = "Signed-off-by",
     keybinding = "<c-s>",
