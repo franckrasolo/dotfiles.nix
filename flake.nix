@@ -19,14 +19,9 @@
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    zjstatus = {
-      url = "github:dj95/zjstatus";
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
-    };
   };
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, nix-darwin, sops-nix, home-manager, zjstatus }:
+  outputs = { self, nixpkgs, nixpkgs-unstable, nix-darwin, sops-nix, home-manager }:
     let
       platforms = [ "x86_64-darwin" "aarch64-darwin" ];
 
@@ -40,8 +35,6 @@
             "libxls-1.6.2"
           ];
         };
-
-        zjstatus = zjstatus.packages.${prev.stdenv.hostPlatform.system}.default;
       };
       # makes "pkgs.unstable" available in configuration.nix
       overlayModule = ({ config, pkgs, ... }: { nixpkgs.overlays = [ overlay ]; });

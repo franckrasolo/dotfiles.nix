@@ -5,7 +5,7 @@ layout {
   default_tab_template {
     children
     pane size=1 {
-      plugin location="file:${pkgs.zjstatus}/bin/zjstatus.wasm" {
+      plugin location="https://github.com/dj95/zjstatus/releases/latest/download/zjstatus.wasm" {
         color_bg      "#0b2d4f"
         color_black   "#071222"
         color_fg      "#b4bebe"

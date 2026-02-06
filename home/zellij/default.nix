@@ -26,11 +26,5 @@
       ReadApplicationState
       ChangeApplicationState
     }
-
-    "${pkgs.zjstatus}/bin/zjstatus.wasm" {
-      RunCommands
-      ReadApplicationState
-      ChangeApplicationState
-    }
   '';
 }
