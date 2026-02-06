@@ -3,9 +3,9 @@ return {
   ---@type neowiki.Config
   opts = {
     wiki_dirs = {
-      { name = "current repo | <cwd>/.wiki", path = vim.uv.cwd() .. "/.wiki" },
-      { name = "current repo | <cwd>/pages/blog", path = vim.uv.cwd() .. "/pages/blog" },
-      { name = "current repo | <cwd>/pages/docs", path = vim.uv.cwd() .. "/pages/docs" },
+      -- { name = "current repo | <cwd>/.wiki", path = vim.uv.cwd() .. "/.wiki" },
+      -- { name = "current repo | <cwd>/pages/blog", path = vim.uv.cwd() .. "/pages/blog" },
+      -- { name = "current repo | <cwd>/pages/docs", path = vim.uv.cwd() .. "/pages/docs" },
       { name = "dotfiles.nix | <DOTFILES_REPO>/.wiki", path = "~/dev/dotfiles.nix/.wiki" },
       { name = "personal     | <XDG_DATA_HOME>/wiki", path = os.getenv("XDG_DATA_HOME") .. "/wiki" },
     },
