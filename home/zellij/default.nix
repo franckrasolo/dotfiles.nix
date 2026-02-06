@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
   programs.zellij = {
@@ -15,6 +15,18 @@
   };
 
   home.file."Library/Caches/org.Zellij-Contributors.Zellij/permissions.kdl".text = ''
+    "https://github.com/dj95/zjstatus/releases/latest/download/zjstatus.wasm" {
+      RunCommands
+      ReadApplicationState
+      ChangeApplicationState
+    }
+
+    "${config.xdg.dataHome}/mise/installs/nix-zjstatus/latest/bin/zjstatus.wasm" {
+      RunCommands
+      ReadApplicationState
+      ChangeApplicationState
+    }
+
     "${pkgs.zjstatus}/bin/zjstatus.wasm" {
       RunCommands
       ReadApplicationState
