@@ -54,6 +54,15 @@ return {
         win_options = {
           winblend = 0, -- no transparency
         },
+        get_win_title = function(winID) -- ID of the floating window
+          local absolute_path = require("oil").get_current_dir()
+
+          -- fallback to cwd-relative formatting if get_current_dir fails
+          if not absolute_path then return "" end
+
+          -- use Neovim's built-in path logic to handle the relative conversion safely
+          return " " .. vim.fn.fnamemodify(absolute_path, ":~:.") .. " "
+        end,
       },
       preview_win = {
         max_width = 0.8,
