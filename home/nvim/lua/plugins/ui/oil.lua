@@ -70,6 +70,10 @@ return {
         ["?"] = "actions.show_help",
         ["~"] = false,
         ["π"] = "actions.preview", -- π -> 'Alt p'
+        ["<up>"] = "actions.preview_scroll_up",
+        ["<down>"] = "actions.preview_scroll_down",
+        ["<left>"] = "actions.preview_scroll_left",
+        ["<right>"] = "actions.preview_scroll_right",
         ["<c-c>"] = false,
         ["<c-p>"] = false,
         ["<c-t>"] = false,
