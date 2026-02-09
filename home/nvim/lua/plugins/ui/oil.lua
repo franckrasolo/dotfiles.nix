@@ -33,7 +33,6 @@ vim.api.nvim_create_autocmd("User", {
 return {
   {
     "stevearc/oil.nvim",
-    version = "*",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {
       default_file_explorer = true,
@@ -47,9 +46,14 @@ return {
         end,
       },
       float = {
+        border = "rounded",
         max_width = 90,
         max_height = 40,
+        padding = 2,
         preview_split = "below",
+        win_options = {
+          winblend = 0, -- no transparency
+        },
       },
       preview_win = {
         max_width = 0.8,
