@@ -1,5 +1,5 @@
 return {
-  "mizlan/iswap.nvim",
+  "nabn/iswap.nvim",
   event = "VeryLazy",
   opts = {
     -- highlight group for the sniping value
