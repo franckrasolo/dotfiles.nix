@@ -69,6 +69,9 @@ return {
         min_width = 0.65,
         max_height = 0.9,
         min_height = { 60, 0.8 },
+        win_options = {
+          number = true,
+        },
       },
       win_options = {
         wrap = true,
