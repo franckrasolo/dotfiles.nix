@@ -9,6 +9,6 @@ backend = "github:Dicklesworthstone/beads_viewer"
 "platforms.macos-arm64" = { checksum = "sha256:0b70990b1a38ffe6a70e9ab2cce3c353637dc137d8bddffa821fa84f77a6fa31", url = "https://github.com/Dicklesworthstone/beads_viewer/releases/download/v0.14.4/bv_0.14.4_darwin_arm64.tar.gz", url_api = "https://api.github.com/repos/Dicklesworthstone/beads_viewer/releases/assets/350124585"}
 
 [[tools.opencode]]
-version = "1.1.53"
+version = "1.2.5"
 backend = "aqua:anomalyco/opencode"
-"platforms.macos-arm64" = { checksum = "sha256:5e9cc90f4d84de145b4099c7666b0f0782b19e5196795181cac36be33dbc5da9", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.53/opencode-darwin-arm64.zip"}
+"platforms.macos-arm64" = { checksum = "sha256:6e9bdb0490e58e750293fba0ce933ac62604da6f95b35adef41ea7c001c41660", url = "https://github.com/anomalyco/opencode/releases/download/v1.2.5/opencode-darwin-arm64.zip"}
