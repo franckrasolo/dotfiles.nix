@@ -153,6 +153,7 @@ devenv
 diffview
 direnv
 domain-driven
+dotfiles
 double-check
 end-to-end
 entrypoint
