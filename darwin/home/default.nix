@@ -15,9 +15,9 @@
 
   home.activation.prepareUserActivation = with pkgs.unstable; with lib;
     mkForce (hm.dag.entryAfter [ "linkGeneration" ] ''
-      export PATH=/usr/bin:/bin:$PATH                                     # for macOS open and launchctl
-      export PATH=${coreutils}/bin:$PATH                                  # for cp and readlink used by home-manager
-      export PATH=${user.homeDirectory}/dev/dotfiles.nix/darwin/bin:$PATH # for the Homebrew/sudo workaround
+      export PATH=/usr/bin:/bin:$PATH                 # for macOS open and launchctl
+      export PATH=${coreutils}/bin:$PATH              # for cp and readlink used by home-manager
+      export PATH=${user.dotfiles}/darwin/bin:$PATH   # for the Homebrew/sudo workaround
 
       launchctl setenv XDG_CACHE_HOME   ${user.homeDirectory}/.xdg/cache
       launchctl setenv XDG_CONFIG_HOME  ${user.homeDirectory}/.xdg/config

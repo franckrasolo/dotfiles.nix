@@ -31,9 +31,9 @@
       "1Password".source   = ./1Password;
       "duti".source        = ./duti;
       "fastfetch".source   = ./fastfetch;
-      "git".source         = mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/home/git";
-      "wezterm".source     = mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/home/wezterm";
-      "zathura".source     = mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/home/zathura";
+      "git".source         = mkOutOfStoreSymlink "${user.dotfiles}/home/git";
+      "wezterm".source     = mkOutOfStoreSymlink "${user.dotfiles}/home/wezterm";
+      "zathura".source     = mkOutOfStoreSymlink "${user.dotfiles}/home/zathura";
     };
   };
 

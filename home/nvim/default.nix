@@ -21,7 +21,7 @@ with pkgs.unstable; {
   };
 
 #  xdg.configFile."nvim".source = ./.;
-  xdg.configFile."nvim".source = config.lib.file.mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/home/nvim";
+  xdg.configFile."nvim".source = config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/home/nvim";
 
   home.packages = [
     neovim-remote

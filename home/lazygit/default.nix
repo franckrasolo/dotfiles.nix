@@ -7,5 +7,5 @@
     settings = {};
   };
 
-  xdg.configFile."lazygit/config.yml".source = config.lib.file.mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/home/lazygit/config.yml";
+  xdg.configFile."lazygit/config.yml".source = config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/home/lazygit/config.yml";
 }

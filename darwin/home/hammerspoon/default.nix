@@ -2,7 +2,7 @@
 
 {
   xdg.configFile."hammerspoon".source =
-    config.lib.file.mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/darwin/home/hammerspoon";
+    config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/darwin/home/hammerspoon";
 
   home.activation.configureHammerspoon = with lib; mkForce (hm.dag.entryAfter [ "batCache" ] ''
     # configure Hammerspoon preferences

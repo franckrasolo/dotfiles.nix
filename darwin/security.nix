@@ -12,7 +12,7 @@
 
   sops = {
     age = {
-      keyFile = "${user.homeDirectory}/dev/dotfiles.nix/secrets/bootstrap-key.txt";
+      keyFile = "${user.dotfiles}/secrets/bootstrap-key.txt";
       sshKeyPaths = [];
       generateKey = true;
     };

@@ -57,8 +57,8 @@
   programs.command-not-found.enable = true;
 
 #  xdg.configFile."zsh".source = ./.;
-  xdg.configFile."zsh".source = config.lib.file.mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/home/zsh";
+  xdg.configFile."zsh".source = config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/home/zsh";
 
 #  home.file.".zshenv.manual".source = ./zsh/zshenv;
-  home.file.".zshenv.manual".source = config.lib.file.mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/home/zsh/zshenv";
+  home.file.".zshenv.manual".source = config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/home/zsh/zshenv";
 }

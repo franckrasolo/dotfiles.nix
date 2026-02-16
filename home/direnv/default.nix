@@ -22,7 +22,7 @@
           "${user.homeDirectory}/dev/Kotlin/fork-handles"
         ];
         exact = [
-          "${user.homeDirectory}/dev/dotfiles.nix"
+          "${user.dotfiles}"
           "${user.homeDirectory}/dev/Rust/slice.rs"
         ];
       };

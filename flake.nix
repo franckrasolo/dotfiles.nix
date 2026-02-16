@@ -43,6 +43,7 @@
         fullName = "Franck Rasolo";
         accountName = "franck.rasolo";
         homeDirectory = "/Users/${accountName}";
+        dotfiles = "${homeDirectory}/dev/dotfiles.nix";
       };
 
       forAllSystems = f: nixpkgs.lib.genAttrs platforms (system: f {

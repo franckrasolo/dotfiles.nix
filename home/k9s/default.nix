@@ -14,7 +14,7 @@ with pkgs.unstable;
     package = k9s;
   };
 
-  xdg.configFile."k9s".source = mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/home/k9s";
+  xdg.configFile."k9s".source = mkOutOfStoreSymlink "${user.dotfiles}/home/k9s";
 
-  xdg.dataFile."k9s/clusters".source = mkOutOfStoreSymlink "${user.homeDirectory}/dev/dotfiles.nix/home/k9s/clusters";
+  xdg.dataFile."k9s/clusters".source = mkOutOfStoreSymlink "${user.dotfiles}/home/k9s/clusters";
 }

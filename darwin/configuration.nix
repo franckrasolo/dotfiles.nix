@@ -14,7 +14,7 @@
   system.stateVersion = 4;
 
   environment = with pkgs.unstable; {
-    darwinConfig = "$HOME/dev/dotfiles.nix/darwin/configuration.nix";
+    darwinConfig = "${user.dotfiles}/darwin/configuration.nix";
 
     shells = [
       nushell

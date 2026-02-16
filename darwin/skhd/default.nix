@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, user, ... }:
 
 {
   services.skhd = {
@@ -18,7 +18,7 @@
         prevOrLast  = firstOrSecond { first = "prev"; second = "last";  };
       };
     in
-      with builtins; concatStringsSep "\n" (map (f: import f { inherit skhdEnv; }) [
+      with builtins; concatStringsSep "\n" (map (f: import f { inherit skhdEnv user; }) [
         ./exclusions.nix
         ./launchers.nix
       ]);
