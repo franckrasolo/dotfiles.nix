@@ -1,0 +1,13 @@
+[settings]
+locked = false
+lockfile = true
+
+[shell_alias]
+aliases = "mise shell-alias ls"
+tasks = "mise tasks ls --all --extended"
+tools = "mise ls --all-sources"
+
+[tools]
+"aqua:steveyegge/beads" = "latest"
+"github:Dicklesworthstone/beads_viewer" = "latest"
+opencode = "latest"

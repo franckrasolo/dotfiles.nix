@@ -9,6 +9,7 @@
     ./k9s
     ./lazygit
     ./luarocks
+    ./mise
     ./nvim
     ./presenterm
     ./ripgrep

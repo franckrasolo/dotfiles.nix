@@ -1,0 +1,14 @@
+[[tools."aqua:steveyegge/beads"]]
+version = "0.50.3"
+backend = "aqua:steveyegge/beads"
+"platforms.macos-arm64" = { checksum = "sha256:26c15b93d82be45c3fa9b6318ffee9a6ae89841ba7ec4ad5c8db6fe6e42d3d3a", url = "https://github.com/steveyegge/beads/releases/download/v0.50.3/beads_0.50.3_darwin_arm64.tar.gz"}
+
+[[tools."github:Dicklesworthstone/beads_viewer"]]
+version = "0.14.4"
+backend = "github:Dicklesworthstone/beads_viewer"
+"platforms.macos-arm64" = { checksum = "sha256:0b70990b1a38ffe6a70e9ab2cce3c353637dc137d8bddffa821fa84f77a6fa31", url = "https://github.com/Dicklesworthstone/beads_viewer/releases/download/v0.14.4/bv_0.14.4_darwin_arm64.tar.gz", url_api = "https://api.github.com/repos/Dicklesworthstone/beads_viewer/releases/assets/350124585"}
+
+[[tools.opencode]]
+version = "1.1.53"
+backend = "aqua:anomalyco/opencode"
+"platforms.macos-arm64" = { checksum = "sha256:5e9cc90f4d84de145b4099c7666b0f0782b19e5196795181cac36be33dbc5da9", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.53/opencode-darwin-arm64.zip"}
