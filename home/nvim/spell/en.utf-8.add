@@ -167,6 +167,7 @@ generify
 gitlab-ci-ls
 gitsigns
 golang
+hands-on
 hardcoded
 headshot
 helpdesk
@@ -192,6 +193,7 @@ luasnip4k.nvim
 macOS
 markdownlint
 menubar
+monorepo
 msgspec
 multi-cloud
 multi-tenant
