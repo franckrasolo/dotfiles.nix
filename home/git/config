@@ -48,6 +48,9 @@
 [github]
   user = franckrasolo
 
+[includeIf "gitdir:~/dev/GitLab/"]
+  path = ~/dev/GitLab/.git/config
+
 [http]
   sslVerify = true
 
