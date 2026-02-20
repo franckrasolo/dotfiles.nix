@@ -37,7 +37,7 @@ export PATH=$KREW_ROOT/bin:$PATH              # https://krew.sigs.k8s.io/docs/us
 export K9SCONFIG=$XDG_CONFIG_HOME/k9s
 export MINIKUBE_HOME=$XDG_DATA_HOME/minikube
 
-export CC=/etc/profiles/per-user/$USER/bin/gcc
+# export CC=/etc/profiles/per-user/$USER/bin/gcc
 export GRADLE_USER_HOME=$XDG_DATA_HOME/gradle
 export GHCUP_USE_XDG_DIRS=true
 export STACK_ROOT=$XDG_DATA_HOME/stack
