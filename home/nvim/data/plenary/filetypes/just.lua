@@ -1,3 +1,5 @@
+vim.lsp.enable("just")
+
 return {
   extension = {
     ["just"] = "just",
