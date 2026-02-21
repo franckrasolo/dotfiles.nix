@@ -16,6 +16,7 @@ with pkgs.unstable; {
       nodejs_20
 
       gitlab-ci-ls
+      just-lsp
       statix
       yaml-language-server
     ];
