@@ -10,4 +10,5 @@ tools = "mise ls --all-sources"
 [tools]
 "aqua:steveyegge/beads" = "latest"
 "github:Dicklesworthstone/beads_viewer" = "latest"
+"github:remotemobprogramming/mob" = "latest"
 opencode = "latest"

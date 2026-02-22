@@ -8,6 +8,11 @@ version = "0.14.4"
 backend = "github:Dicklesworthstone/beads_viewer"
 "platforms.macos-arm64" = { checksum = "sha256:0b70990b1a38ffe6a70e9ab2cce3c353637dc137d8bddffa821fa84f77a6fa31", url = "https://github.com/Dicklesworthstone/beads_viewer/releases/download/v0.14.4/bv_0.14.4_darwin_arm64.tar.gz", url_api = "https://api.github.com/repos/Dicklesworthstone/beads_viewer/releases/assets/350124585"}
 
+[[tools."github:remotemobprogramming/mob"]]
+version = "5.4.2"
+backend = "github:remotemobprogramming/mob"
+"platforms.macos-arm64" = { checksum = "sha256:2ca73fc8e347f80b47a269bdf64e4265f6d6c5be2229bf5604aea551a67ce72f", url = "https://github.com/remotemobprogramming/mob/releases/download/5.4.2/mob_5.4.2_darwin_universal.tar.gz", url_api = "https://api.github.com/repos/remotemobprogramming/mob/releases/assets/346269527"}
+
 [[tools.opencode]]
 version = "1.2.10"
 backend = "aqua:anomalyco/opencode"
