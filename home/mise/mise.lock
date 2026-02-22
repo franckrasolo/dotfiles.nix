@@ -1,11 +1,7 @@
 [[tools."aqua:steveyegge/beads"]]
 version = "0.55.4"
 backend = "aqua:steveyegge/beads"
-"platforms.linux-arm64" = { checksum = "sha256:273c2a463e10778f3764e7119cf8d4ae014a208a9c1859e0e228633ce66cbeaf", url = "https://github.com/steveyegge/beads/releases/download/v0.55.4/beads_0.55.4_linux_arm64.tar.gz"}
-"platforms.linux-x64" = { checksum = "sha256:e0fa25456dd82890230eef17653448a0bf995104c78864be91c5ed84426a5f49", url = "https://github.com/steveyegge/beads/releases/download/v0.55.4/beads_0.55.4_linux_amd64.tar.gz"}
 "platforms.macos-arm64" = { checksum = "sha256:18afdf4f562323a71687b2f7ed95c27750aee8d361b176a4a79caf176f00c0b9", url = "https://github.com/steveyegge/beads/releases/download/v0.55.4/beads_0.55.4_darwin_arm64.tar.gz"}
-"platforms.macos-x64" = { checksum = "sha256:39a371688b4e622e14eb5bc84f54f90ed7a9a2faac57861156811af4693f8284", url = "https://github.com/steveyegge/beads/releases/download/v0.55.4/beads_0.55.4_darwin_amd64.tar.gz"}
-"platforms.windows-x64" = { checksum = "sha256:7f495947377c2def76fc2f853b6e57d1097b8dc6ab0a3e4c909d904e02ed9b89", url = "https://github.com/steveyegge/beads/releases/download/v0.55.4/beads_0.55.4_windows_amd64.zip"}
 
 [[tools."github:Dicklesworthstone/beads_viewer"]]
 version = "0.14.4"
