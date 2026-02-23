@@ -13,6 +13,11 @@ version = "5.4.2"
 backend = "github:remotemobprogramming/mob"
 "platforms.macos-arm64" = { checksum = "sha256:2ca73fc8e347f80b47a269bdf64e4265f6d6c5be2229bf5604aea551a67ce72f", url = "https://github.com/remotemobprogramming/mob/releases/download/5.4.2/mob_5.4.2_darwin_universal.tar.gz", url_api = "https://api.github.com/repos/remotemobprogramming/mob/releases/assets/346269527"}
 
+[[tools."github:zjrosen/perles"]]
+version = "0.7.91"
+backend = "github:zjrosen/perles"
+"platforms.macos-arm64" = { checksum = "sha256:a6fa58c77c6907a9fca621dbdc78863dcdf66e9570533ee2d0421e8a81d4699e", url = "https://github.com/zjrosen/perles/releases/download/v0.7.91/perles_0.7.91_darwin_arm64.tar.gz", url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/358704177"}
+
 [[tools.opencode]]
 version = "1.2.10"
 backend = "aqua:anomalyco/opencode"
