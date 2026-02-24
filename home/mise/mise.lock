@@ -1,7 +1,7 @@
 [[tools."aqua:steveyegge/beads"]]
-version = "0.55.4"
+version = "0.56.1"
 backend = "aqua:steveyegge/beads"
-"platforms.macos-arm64" = { checksum = "sha256:18afdf4f562323a71687b2f7ed95c27750aee8d361b176a4a79caf176f00c0b9", url = "https://github.com/steveyegge/beads/releases/download/v0.55.4/beads_0.55.4_darwin_arm64.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:aa8a4309de2ab8c27a90c03b652cedc53a45880a5c94cd65881006da3c2f0812", url = "https://github.com/steveyegge/beads/releases/download/v0.56.1/beads_0.56.1_darwin_arm64.tar.gz"}
 
 [[tools."github:Dicklesworthstone/beads_viewer"]]
 version = "0.14.4"
