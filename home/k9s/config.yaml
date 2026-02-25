@@ -34,7 +34,7 @@ k9s:
 # keepMissingClusters: false
 
   # path to screen dump; default: '%temp_dir%/k9s-screens-%username%' (k9s info)
-  screenDumpDir: "${XDG_STATE_HOME}/k9s/screen-dumps"
+  screenDumpDir: ~/.xdg/local/state/k9s/screen-dumps
 
   imageScans:
     enable: false
