@@ -9,13 +9,13 @@ checksum = "sha256:b65e07343275783b669f92b592ddde8234594cfc3027637dc44facfd01c87
 url = "https://github.com/steveyegge/beads/releases/download/v0.59.0/beads_0.59.0_darwin_arm64.tar.gz"
 
 [[tools."github:Dicklesworthstone/beads_viewer"]]
-version = "0.14.4"
+version = "0.15.2"
 backend = "github:Dicklesworthstone/beads_viewer"
 
 [tools."github:Dicklesworthstone/beads_viewer"."platforms.macos-arm64"]
-checksum = "sha256:0b70990b1a38ffe6a70e9ab2cce3c353637dc137d8bddffa821fa84f77a6fa31"
-url = "https://github.com/Dicklesworthstone/beads_viewer/releases/download/v0.14.4/bv_0.14.4_darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/Dicklesworthstone/beads_viewer/releases/assets/350124585"
+checksum = "sha256:4edd972fb78b7f8759443ef4896d3fe874016fc74fae9706b337d9322c4fe2cb"
+url = "https://github.com/Dicklesworthstone/beads_viewer/releases/download/v0.15.2/bv_0.15.2_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/Dicklesworthstone/beads_viewer/releases/assets/369752347"
 
 [[tools."github:hmans/beans"]]
 version = "0.4.0"
@@ -45,9 +45,9 @@ url = "https://github.com/zjrosen/perles/releases/download/v0.8.0/perles_0.8.0_d
 url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/369060451"
 
 [[tools.opencode]]
-version = "1.2.22"
+version = "1.2.24"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:fddbd38cc49666b6c331e7461ad776069eb9ff7a66ad864f7ef9d84ca0c9ac3b"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.2.22/opencode-darwin-arm64.zip"
+checksum = "sha256:858467155943c1030815047cbda2fd5074d1ba9309a00e5dd4585a19b3c4896e"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.2.24/opencode-darwin-arm64.zip"
