@@ -21,7 +21,6 @@
 
     brews = [
       "headson"
-      "mise"
     ];
 
     casks = [

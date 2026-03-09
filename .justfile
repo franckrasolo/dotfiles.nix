@@ -26,3 +26,7 @@ _targets:
 # fixes line separators from CRLF to LF for all Obsidian community plugins and themes
 @fix-line-separators:
   fd '.+' .obsidian/{plugins,themes} --exec dos2unix {} \;
+
+# installs mise as a self-upgradeable tool
+@install-mise:
+  curl https://mise.run | MISE_INSTALL_PATH=$XDG_BIN_HOME/mise sh
