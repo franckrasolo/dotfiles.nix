@@ -71,6 +71,7 @@ LTS
 MacBook
 Mentored-by
 MkDocs
+MRs
 Neogit
 Neovide
 Neovim
@@ -88,6 +89,7 @@ Pytest
 PyTestArch
 PADR
 PADRs
+PRs
 QoL
 Quillin
 RabbitMQ
@@ -108,8 +110,9 @@ Tree-sitter
 Trunk-Based
 Typesafe
 TypeScript
-UltraDark
+TBD
 TOML
+UltraDark
 UUID
 UX
 VimEnter
@@ -123,6 +126,7 @@ Zellij
 Zsh
 ZSH_COMPDUMP
 aarch64
+agentic
 air-gapped
 anti-pattern
 anti-patterns
@@ -216,6 +220,8 @@ onboarding
 over-engineering
 pixi
 popup
+post-deployment
+pre-deployment
 presenterm
 problem-solving
 pyproject.toml
@@ -231,7 +237,9 @@ system-wide
 tabline
 tagline
 test-driven
+toolchain
 toolchains
+trunk-based
 ty
 upskill
 user-facing
