@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, user, ... }:
 
 let
   highlighting = rec {
@@ -17,8 +17,9 @@ in {
     python314Packages.weasyprint
   ];
 
+  xdg.configFile."presenterm/config.yaml".source =
+    config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/home/presenterm/config.yaml";
 
-  xdg.configFile."presenterm/config.yaml".source = ./config.yaml;
   xdg.configFile."presenterm/themes/catppuccin-dark.yaml".source = ./themes/catppuccin-dark.yaml;
   xdg.configFile."presenterm/themes/highlighting/${highlighting.name}.tmTheme".source =
     "${highlighting.src}/${highlighting.file}";
