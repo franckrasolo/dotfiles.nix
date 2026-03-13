@@ -11,7 +11,7 @@ return {
       component_separators = { left = "", right = "" },
       section_separators = { left = "", right = "" },
     },
-    theme = "catppuccin",
+    theme = "catppuccin-nvim",
     sections = {
       lualine_a = { { "mode", icon = "", padding = { left = 1, right = 0 } } },
       lualine_b = { "branch" },

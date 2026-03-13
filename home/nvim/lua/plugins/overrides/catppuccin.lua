@@ -27,7 +27,7 @@ local function show_win_options()
 end
 
 return {
-  { "LazyVim/LazyVim", opts = { colorscheme = "catppuccin" } },
+  { "LazyVim/LazyVim", opts = { colorscheme = "catppuccin-nvim" } },
   {
     "catppuccin/nvim",
     name = "catppuccin",
