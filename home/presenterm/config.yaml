@@ -16,6 +16,18 @@ defaults:
   # the image protocol to use.
   image_protocol: kitty-local
 
+export:
+  dimensions:
+    columns: 110
+    rows: 33
+  pauses: new_slide
+  pdf:
+    fonts:
+      normal: /Library/Fonts/Nix\ Fonts/xssg4awqvnascnr90qvxrqb845gm15j4-cascadia-code-2407.24/share/fonts/truetype/CascadiaCode-Regular.ttf
+      italic: /Library/Fonts/Nix\ Fonts/xssg4awqvnascnr90qvxrqb845gm15j4-cascadia-code-2407.24/share/fonts/truetype/CascadiaCode-Italic.ttf
+      bold: /Library/Fonts/Nix\ Fonts/xssg4awqvnascnr90qvxrqb845gm15j4-cascadia-code-2407.24/share/fonts/truetype/CascadiaCode-Bold.ttf
+      bold_italic: /Library/Fonts/Nix\ Fonts/xssg4awqvnascnr90qvxrqb845gm15j4-cascadia-code-2407.24/share/fonts/truetype/CascadiaCode-BoldItalic.ttf
+
 typst:
   # the pixels per inch when rendering latex/typst formulas.
   ppi: 300

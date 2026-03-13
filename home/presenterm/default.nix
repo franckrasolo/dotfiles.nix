@@ -12,7 +12,11 @@ let
     file = "themes/${name}.tmTheme";
   };
 in {
-  home.packages = [ pkgs.unstable.presenterm ];
+  home.packages = with pkgs.unstable; [
+    presenterm
+    python314Packages.weasyprint
+  ];
+
 
   xdg.configFile."presenterm/config.yaml".source = ./config.yaml;
   xdg.configFile."presenterm/themes/catppuccin-dark.yaml".source = ./themes/catppuccin-dark.yaml;
