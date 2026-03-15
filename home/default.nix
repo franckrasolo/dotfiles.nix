@@ -32,6 +32,7 @@
       "1Password".source   = ./1Password;
       "duti".source        = ./duti;
       "fastfetch".source   = ./fastfetch;
+      "ghostty".source     = mkOutOfStoreSymlink "${user.dotfiles}/home/ghostty";
       "git".source         = mkOutOfStoreSymlink "${user.dotfiles}/home/git";
       "wezterm".source     = mkOutOfStoreSymlink "${user.dotfiles}/home/wezterm";
       "zathura".source     = mkOutOfStoreSymlink "${user.dotfiles}/home/zathura";

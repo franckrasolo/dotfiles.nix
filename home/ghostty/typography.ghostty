@@ -1,0 +1,6 @@
+font-family = "Cascadia Code"
+font-style = "SemiBold"
+font-size = 15.7
+
+adjust-cell-height = 7.5%
+freetype-load-flags = light
