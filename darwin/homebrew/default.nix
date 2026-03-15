@@ -78,6 +78,10 @@
       "jetbrains-toolbox"
       "keycastr"
       "kitty"
+      {
+        name = "lm-studio";
+        args = { appdir = "/Applications"; };
+      }
       "localsend"
       {
         name = "logitech-options";
