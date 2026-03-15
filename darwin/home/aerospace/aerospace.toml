@@ -157,6 +157,16 @@ check-further-callbacks = true
 run = ['move-node-to-workspace 1', 'layout tiling', 'fullscreen']
 
 [[on-window-detected]]
+if.app-id = 'com.cmuxterm.app'
+check-further-callbacks = true
+run = ['move-node-to-workspace 1', 'layout tiling', 'fullscreen']
+
+[[on-window-detected]]
+if.app-id = 'ai.elementlabs.lmstudio'
+check-further-callbacks = true
+run = ['move-node-to-workspace 2', 'layout tiling', 'fullscreen']
+
+[[on-window-detected]]
 if.app-id = 'com.jetbrains.pycharm'
 check-further-callbacks = true
 run = ['layout floating']
