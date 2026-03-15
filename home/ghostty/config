@@ -1,1 +1,3 @@
+config-file = appearance.ghostty
+config-file = key-bindings.ghostty
 config-file = typography.ghostty

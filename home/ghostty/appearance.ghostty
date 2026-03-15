@@ -1,0 +1,15 @@
+background = 000000
+background-opacity = 0.875
+
+cursor-style = block
+cursor-style-blink = true
+
+selection-background = 34bf91
+selection-foreground = DFFFE6
+
+macos-titlebar-style = transparent
+macos-non-native-fullscreen = false
+
+window-decoration = resize
+window-padding-x = 0
+window-padding-y = 0
