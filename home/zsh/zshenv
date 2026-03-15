@@ -29,6 +29,8 @@ export LC_IDENTIFICATION=$LOCALE
 export BAT_CACHE_PATH=$XDG_CACHE_HOME/bat
 export BAT_CONFIG_DIR=$XDG_CONFIG_HOME/bat
 
+export HOMEBREW_CASK_OPTS="--no-quarantine"
+
 export DOCKER_CONFIG=$XDG_CONFIG_HOME/docker  # https://github.com/docker/for-mac/issues/2635
 export KUBECONFIG=$XDG_CONFIG_HOME/kube
 export KUBECTL_EXTERNAL_DIFF="dyff between --omit-header --set-exit-code"

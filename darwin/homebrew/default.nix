@@ -128,7 +128,6 @@
 
     caskArgs = {
       appdir = "~/Applications/Homebrew Apps";
-      no_quarantine = true;
       require_sha = true;
     };
   };
