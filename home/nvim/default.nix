@@ -18,6 +18,7 @@ with pkgs.unstable; {
       gitlab-ci-ls
       just-lsp
       statix
+      tree-sitter-grammars.tree-sitter-ghostty
       yaml-language-server
     ];
   };
