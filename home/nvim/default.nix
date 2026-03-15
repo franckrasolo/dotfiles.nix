@@ -13,7 +13,7 @@ with pkgs.unstable; {
 
     extraPackages = [
       imagemagick
-      nodejs_20
+      nodejs_24
 
       gitlab-ci-ls
       just-lsp
