@@ -8,6 +8,15 @@ backend = "aqua:steveyegge/beads"
 checksum = "sha256:58e5a1c47b1076a626a113ea3aa2d102c37a505ab84c2139aafa268bc7f170d8"
 url = "https://github.com/steveyegge/beads/releases/download/v0.61.0/beads_0.61.0_darwin_arm64.tar.gz"
 
+[[tools.fnox]]
+version = "1.18.0"
+backend = "github:jdx/fnox"
+
+[tools.fnox."platforms.macos-arm64"]
+checksum = "sha256:d06d3b9c7f663300ea7c8df8b6182b765a5c66adef8f087643e9e41c823b3da3"
+url = "https://github.com/jdx/fnox/releases/download/v1.18.0/fnox-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/373167035"
+
 [[tools."github:Dicklesworthstone/beads_viewer"]]
 version = "0.15.2"
 backend = "github:Dicklesworthstone/beads_viewer"

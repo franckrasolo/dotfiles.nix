@@ -1,4 +1,5 @@
 [settings]
+env_shell_expand = true
 locked = false
 lockfile = true
 
@@ -7,10 +8,20 @@ aliases = "mise shell-alias ls"
 tasks = "mise tasks ls --all --extended"
 tools = "mise ls --all-sources"
 
+[plugins]
+fnox-env = "https://github.com/jdx/mise-env-fnox"
+
 [tools]
 "aqua:steveyegge/beads" = "latest"
+fnox = "latest"
 "github:Dicklesworthstone/beads_viewer" = "latest"
 "github:hmans/beans" = "latest"
 "github:remotemobprogramming/mob" = "latest"
 "github:zjrosen/perles" = "latest"
 opencode = "latest"
+
+[env]
+_.fnox-env = { tools = true }
+FNOX_AGE_KEY_FILE = "~/dev/dotfiles.nix/home/fnox/age.txt"
+GITHUB_TOKEN = "$(fnox get GITHUB_API_TOKEN)"
+OP_SERVICE_ACCOUNT_TOKEN = "$(fnox get OP_SERVICE_ACCOUNT_TOKEN)"

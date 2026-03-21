@@ -5,6 +5,7 @@
     ./packages.nix
     ./bat
     ./direnv
+    ./fnox
     ./fzf
     ./k9s
     ./lazygit

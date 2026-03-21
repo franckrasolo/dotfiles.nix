@@ -5,7 +5,7 @@ export  XDG_STATE_HOME=${XDG_STATE_HOME:=$HOME/.xdg/local/state}
 export    XDG_BIN_HOME=${XDG_BIN_HOME:=$HOME/.xdg/local/bin}
 export XDG_RUNTIME_DIR=${XDG_RUNTIME_DIR:=$HOME/.xdg/local/run}
 
-export SOPS_AGE_KEY_FILE=$HOME/dev/dotfiles.nix/secrets/bootstrap-key.txt
+export SOPS_AGE_KEY_FILE=$HOME/dev/dotfiles.nix/home/fnox/age.txt
 export SOPS_AGE_RECIPIENTS="age1dewzp62nhlvgjgfqzj6lrrkp2rj7zg94l9e0962mk9jktxcgjy9q4ht96s"
 
 export GNUPGHOME=$XDG_DATA_HOME/gnupg
