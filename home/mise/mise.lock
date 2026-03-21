@@ -45,13 +45,13 @@ url = "https://github.com/remotemobprogramming/mob/releases/download/5.4.2/mob_5
 url_api = "https://api.github.com/repos/remotemobprogramming/mob/releases/assets/346269527"
 
 [[tools."github:zjrosen/perles"]]
-version = "0.8.0"
+version = "0.8.1"
 backend = "github:zjrosen/perles"
 
 [tools."github:zjrosen/perles"."platforms.macos-arm64"]
-checksum = "sha256:1b00f1d0a055a670f760fd81e4263ada44ffd7ca6b2165cc8e15dd86a0451921"
-url = "https://github.com/zjrosen/perles/releases/download/v0.8.0/perles_0.8.0_darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/369060451"
+checksum = "sha256:0d6cab2675b0197ac60989dd80c7bd0a1bf17acad893e36870ee094b6c4f1ea9"
+url = "https://github.com/zjrosen/perles/releases/download/v0.8.1/perles_0.8.1_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/376783004"
 
 [[tools.opencode]]
 version = "1.2.27"
