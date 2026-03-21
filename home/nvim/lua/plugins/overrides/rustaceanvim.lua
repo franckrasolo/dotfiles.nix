@@ -8,15 +8,18 @@ return {
           files = {
             -- would not be required if rust-analyzer honored .gitignore
             excludeDirs = {
+              ".devenv",
               ".direnv",
               ".git",
               ".github",
               ".gitlab",
               ".idea",
+              ".pnpm",
               "bin",
               "node_modules",
               "target",
               "venv",
+              ".venv",
             }
           }
         }
