@@ -40,8 +40,8 @@ source "${ZSH_CONFIG_HOME}/widgets.zsh"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 #eval "$(brew shellenv)"
 eval "$(direnv hook zsh)"
-eval "$(fnox activate zsh)"
 eval "$(mise activate zsh)"
+eval "$(fnox activate zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 source <(fx --comp zsh)
 
