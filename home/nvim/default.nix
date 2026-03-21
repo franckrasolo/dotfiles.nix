@@ -17,6 +17,7 @@ with pkgs.unstable; {
 
       gitlab-ci-ls
       just-lsp
+      rust-analyzer
       statix
       tree-sitter-grammars.tree-sitter-ghostty
       yaml-language-server
