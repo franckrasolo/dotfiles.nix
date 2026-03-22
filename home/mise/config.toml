@@ -19,3 +19,5 @@ opencode = "latest"
 
 [env]
 FNOX_AGE_KEY_FILE = "~/dev/dotfiles.nix/home/fnox/age.txt"
+FNOX_IF_MISSING = "error"
+FNOX_SHELL_OUTPUT = "none"
