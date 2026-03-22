@@ -53,6 +53,15 @@ checksum = "sha256:2ca73fc8e347f80b47a269bdf64e4265f6d6c5be2229bf5604aea551a67ce
 url = "https://github.com/remotemobprogramming/mob/releases/download/5.4.2/mob_5.4.2_darwin_universal.tar.gz"
 url_api = "https://api.github.com/repos/remotemobprogramming/mob/releases/assets/346269527"
 
+[[tools."github:zeroclaw-labs/zeroclaw"]]
+version = "0.5.7"
+backend = "github:zeroclaw-labs/zeroclaw"
+
+[tools."github:zeroclaw-labs/zeroclaw"."platforms.macos-arm64"]
+checksum = "sha256:5c7efcaf201f3b4187d4c8165eeeaf9b1cd5507344b2b230e6af502be44caaf8"
+url = "https://github.com/zeroclaw-labs/zeroclaw/releases/download/v0.5.7/zeroclaw-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/zeroclaw-labs/zeroclaw/releases/assets/378964550"
+
 [[tools."github:zjrosen/perles"]]
 version = "0.8.1"
 backend = "github:zjrosen/perles"
