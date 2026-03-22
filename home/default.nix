@@ -16,6 +16,7 @@
     ./presenterm
     ./ripgrep
     ./silicon
+    ./wezterm
     ./yazi
     ./zellij
     ./zoxide
@@ -35,7 +36,6 @@
       "duti".source        = ./duti;
       "fastfetch".source   = ./fastfetch;
       "git".source         = mkOutOfStoreSymlink "${user.dotfiles}/home/git";
-      "wezterm".source     = mkOutOfStoreSymlink "${user.dotfiles}/home/wezterm";
       "zathura".source     = mkOutOfStoreSymlink "${user.dotfiles}/home/zathura";
     };
   };
