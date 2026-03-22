@@ -1,9 +1,12 @@
 local colour_scheme = require("wezterm").color.get_builtin_schemes()["UltraDark"]
 colour_scheme.background = "black"
+colour_scheme.cursor_bg = "#FFE3AF"
+colour_scheme.cursor_border = "#FFE3AF"
 colour_scheme.selection_bg = "#34bf91"
 colour_scheme.selection_fg = "#DFFFE6"
 colour_scheme.copy_mode_inactive_highlight_bg = { Color = colour_scheme.ansi[4] }
 colour_scheme.copy_mode_inactive_highlight_fg = { Color = colour_scheme.brights[1] }
+colour_scheme.split = "#253141"
 
 return function(config)
   config.default_cursor_style = "BlinkingBlock"
