@@ -35,6 +35,15 @@ checksum = "sha256:b0fc3be6d8cad16000ef7af2cfbd5fe780f6de3858e5bbe1d7d96dbe8d7e0
 url = "https://github.com/hmans/beans/releases/download/v0.4.2/beans_Darwin_arm64.tar.gz"
 url_api = "https://api.github.com/repos/hmans/beans/releases/assets/371040632"
 
+[[tools."github:nearai/ironclaw"]]
+version = "0.21.0"
+backend = "github:nearai/ironclaw"
+
+[tools."github:nearai/ironclaw"."platforms.macos-arm64"]
+checksum = "sha256:8879c75e0866c12664e968303d468b6a439b24c7eb70f85947133c148902d652"
+url = "https://github.com/nearai/ironclaw/releases/download/v0.21.0/ironclaw-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/nearai/ironclaw/releases/assets/378120148"
+
 [[tools."github:remotemobprogramming/mob"]]
 version = "5.4.2"
 backend = "github:remotemobprogramming/mob"
