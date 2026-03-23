@@ -2,8 +2,8 @@
 
 {
   system.defaults.NSGlobalDomain = {
-    # do not automatically hide and show the menu bar
-    _HIHideMenuBar = false;
+    # hide the menu bar and show it on mouse hover
+    _HIHideMenuBar = true;
 
     # enforce dark mode
     AppleInterfaceStyle = "Dark";
