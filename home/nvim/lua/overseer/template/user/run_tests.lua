@@ -14,6 +14,6 @@ return {
     }
   end,
   condition = {
-    filetype = { "jproperties", "json", "just", "kotlin", "lua", "mojo", "python", "rust", "yaml" },
+    filetype = { "jproperties", "json", "just", "kotlin", "lua", "mojo", "rust", "yaml" },
   },
 }
