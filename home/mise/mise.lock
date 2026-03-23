@@ -17,6 +17,16 @@ checksum = "sha256:e194cb49121ceadecde80dcefa42949546bfa29b78fbd93948fcf811ae15d
 url = "https://github.com/jdx/fnox/releases/download/v1.19.0/fnox-aarch64-apple-darwin.tar.gz"
 url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/379322619"
 
+[[tools."github:Dicklesworthstone/beads_rust"]]
+version = "0.1.31"
+backend = "github:Dicklesworthstone/beads_rust"
+
+[tools."github:Dicklesworthstone/beads_rust"."platforms.macos-arm64"]
+checksum = "sha256:72fb385706d8572c050352ec4682e1af4dc7099b0652b2ef0a4306fb491bcf23"
+url = "https://github.com/Dicklesworthstone/beads_rust/releases/download/v0.1.31/br-v0.1.31-darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/Dicklesworthstone/beads_rust/releases/assets/378987364"
+provenance = "github-attestations"
+
 [[tools."github:Dicklesworthstone/beads_viewer"]]
 version = "0.15.2"
 backend = "github:Dicklesworthstone/beads_viewer"

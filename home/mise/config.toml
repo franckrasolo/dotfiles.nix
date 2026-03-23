@@ -11,6 +11,7 @@ tools = "mise ls --all-sources"
 [tools]
 "aqua:steveyegge/beads" = "latest"
 fnox = "latest"
+"github:Dicklesworthstone/beads_rust" = "latest"
 "github:Dicklesworthstone/beads_viewer" = "latest"
 "github:hmans/beans" = "latest"
 "github:nearai/ironclaw" = "latest"
