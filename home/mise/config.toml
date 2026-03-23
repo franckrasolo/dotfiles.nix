@@ -9,7 +9,6 @@ tasks = "mise tasks ls --all --extended"
 tools = "mise ls --all-sources"
 
 [tools]
-"aqua:steveyegge/beads" = "latest"
 fnox = "latest"
 "github:Dicklesworthstone/beads_rust" = "latest"
 "github:Dicklesworthstone/beads_viewer" = "latest"
