@@ -36,15 +36,6 @@ checksum = "sha256:4edd972fb78b7f8759443ef4896d3fe874016fc74fae9706b337d9322c4fe
 url = "https://github.com/Dicklesworthstone/beads_viewer/releases/download/v0.15.2/bv_0.15.2_darwin_arm64.tar.gz"
 url_api = "https://api.github.com/repos/Dicklesworthstone/beads_viewer/releases/assets/369752347"
 
-[[tools."github:hmans/beans"]]
-version = "0.4.2"
-backend = "github:hmans/beans"
-
-[tools."github:hmans/beans"."platforms.macos-arm64"]
-checksum = "sha256:b0fc3be6d8cad16000ef7af2cfbd5fe780f6de3858e5bbe1d7d96dbe8d7e002a"
-url = "https://github.com/hmans/beans/releases/download/v0.4.2/beans_Darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/hmans/beans/releases/assets/371040632"
-
 [[tools."github:nearai/ironclaw"]]
 version = "0.21.0"
 backend = "github:nearai/ironclaw"
