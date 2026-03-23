@@ -9,13 +9,13 @@ checksum = "sha256:4f441c616240c7063a2257ac26138d06eae060a961f029c81855928eae6ae
 url = "https://github.com/steveyegge/beads/releases/download/v0.62.0/beads_0.62.0_darwin_arm64.tar.gz"
 
 [[tools.fnox]]
-version = "1.18.0"
+version = "1.19.0"
 backend = "github:jdx/fnox"
 
 [tools.fnox."platforms.macos-arm64"]
-checksum = "sha256:d06d3b9c7f663300ea7c8df8b6182b765a5c66adef8f087643e9e41c823b3da3"
-url = "https://github.com/jdx/fnox/releases/download/v1.18.0/fnox-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/373167035"
+checksum = "sha256:e194cb49121ceadecde80dcefa42949546bfa29b78fbd93948fcf811ae15dc09"
+url = "https://github.com/jdx/fnox/releases/download/v1.19.0/fnox-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/379322619"
 
 [[tools."github:Dicklesworthstone/beads_viewer"]]
 version = "0.15.2"
@@ -54,13 +54,13 @@ url = "https://github.com/remotemobprogramming/mob/releases/download/5.4.2/mob_5
 url_api = "https://api.github.com/repos/remotemobprogramming/mob/releases/assets/346269527"
 
 [[tools."github:zeroclaw-labs/zeroclaw"]]
-version = "0.5.7"
+version = "0.5.9"
 backend = "github:zeroclaw-labs/zeroclaw"
 
 [tools."github:zeroclaw-labs/zeroclaw"."platforms.macos-arm64"]
-checksum = "sha256:5c7efcaf201f3b4187d4c8165eeeaf9b1cd5507344b2b230e6af502be44caaf8"
-url = "https://github.com/zeroclaw-labs/zeroclaw/releases/download/v0.5.7/zeroclaw-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/zeroclaw-labs/zeroclaw/releases/assets/378964550"
+checksum = "sha256:a188dd65af418962e7272e86d843841109e923cc0904476af7cf18c36a9fc71b"
+url = "https://github.com/zeroclaw-labs/zeroclaw/releases/download/v0.5.9/zeroclaw-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/zeroclaw-labs/zeroclaw/releases/assets/379397866"
 
 [[tools."github:zjrosen/perles"]]
 version = "0.8.1"
@@ -72,9 +72,9 @@ url = "https://github.com/zjrosen/perles/releases/download/v0.8.1/perles_0.8.1_d
 url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/376783004"
 
 [[tools.opencode]]
-version = "1.2.27"
+version = "1.3.0"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:fa680fa79086c7509d3a2c21e49c9264b803da7c0f1b7807ed842b8e37325597"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.2.27/opencode-darwin-arm64.zip"
+checksum = "sha256:32ea91aa613e15ab3d15e4d294b34f349c048c528fc276e935f6ca38c3344b79"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.3.0/opencode-darwin-arm64.zip"
