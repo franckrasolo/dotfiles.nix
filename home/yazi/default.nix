@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, user, ... }:
 
 {
   programs.yazi = {
@@ -7,6 +7,6 @@
     package = pkgs.unstable.yazi;
   };
 
-  xdg.configFile."yazi/yazi.toml".source  = ./yazi.toml;
-  xdg.configFile."yazi/theme.toml".source = ./theme.toml;
+  xdg.configFile."yazi".source =
+    config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/home/yazi";
 }
