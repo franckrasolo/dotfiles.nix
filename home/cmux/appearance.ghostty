@@ -1,11 +1,11 @@
-background = 000000
+background = #000000
 background-opacity = 0.875
 
 cursor-style = block
 cursor-style-blink = true
 
-selection-background = 34bf91
-selection-foreground = DFFFE6
+selection-background = #34bf91
+selection-foreground = #DFFFE6
 
 macos-titlebar-style = transparent
 macos-non-native-fullscreen = false
