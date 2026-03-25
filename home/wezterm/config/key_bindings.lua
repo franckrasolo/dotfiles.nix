@@ -21,6 +21,10 @@ return function(config)
         end
       end)
     },
+
+    { mods = "CTRL|SHIFT", key = "LeftArrow", action = action.MoveTabRelative(-1) },
+    { mods = "CTRL|SHIFT", key = "RightArrow", action = action.MoveTabRelative(1) },
+
     { mods = mod, key = "|", action = action.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
     { mods = mod, key = "\"", action = action.SplitVertical({ domain = "CurrentPaneDomain" }) },
     { mods = mod, key = "LeftArrow", action = action.ActivatePaneDirection "Left" },
@@ -28,6 +32,7 @@ return function(config)
     { mods = mod, key = "UpArrow", action = action.ActivatePaneDirection "Up" },
     { mods = mod, key = "DownArrow", action = action.ActivatePaneDirection "Down" },
     { mods = mod, key = "Enter", action = action.TogglePaneZoomState },
+
     { mods = "ALT", key = "Backspace", action = action.SendKey { key = "Delete" } },
   }
 
