@@ -24,6 +24,7 @@ return function(config)
 
     { mods = "CTRL|SHIFT", key = "LeftArrow", action = action.MoveTabRelative(-1) },
     { mods = "CTRL|SHIFT", key = "RightArrow", action = action.MoveTabRelative(1) },
+    { mods = "CMD", key = "w", action = action.CloseCurrentTab { confirm = true } },
 
     { mods = mod, key = "|", action = action.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
     { mods = mod, key = "\"", action = action.SplitVertical({ domain = "CurrentPaneDomain" }) },
@@ -31,10 +32,12 @@ return function(config)
     { mods = mod, key = "RightArrow", action = action.ActivatePaneDirection "Right" },
     { mods = mod, key = "UpArrow", action = action.ActivatePaneDirection "Up" },
     { mods = mod, key = "DownArrow", action = action.ActivatePaneDirection "Down" },
+    { mods = mod, key = "w", action = action.CloseCurrentPane { confirm = true } },
     { mods = mod, key = "Enter", action = action.TogglePaneZoomState },
 
     { mods = "ALT", key = "Backspace", action = action.SendKey { key = "Delete" } },
   }
+  config.skip_close_confirmation_for_processes_named = {}
 
   config.enable_kitty_keyboard = true
   config.send_composed_key_when_left_alt_is_pressed = true
