@@ -63,6 +63,10 @@ checksum = "sha256:0d6cab2675b0197ac60989dd80c7bd0a1bf17acad893e36870ee094b6c4f1
 url = "https://github.com/zjrosen/perles/releases/download/v0.8.1/perles_0.8.1_darwin_arm64.tar.gz"
 url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/376783004"
 
+[[tools."nix:pkl-lsp"]]
+version = "0.6.0"
+backend = "nix:pkl-lsp"
+
 [[tools.opencode]]
 version = "1.3.2"
 backend = "aqua:anomalyco/opencode"

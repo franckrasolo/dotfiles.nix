@@ -1,5 +1,6 @@
 [settings]
 env_shell_expand = true
+experimental = true
 locked = false
 lockfile = true
 
@@ -16,6 +17,7 @@ fnox = "latest"
 "github:remotemobprogramming/mob" = "latest"
 "github:zeroclaw-labs/zeroclaw" = "latest"
 "github:zjrosen/perles" = "latest"
+"nix:pkl-lsp" = "latest"
 opencode = "latest"
 
 [env]

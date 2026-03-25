@@ -20,6 +20,7 @@ with pkgs.unstable; {
       rust-analyzer
       statix
       tree-sitter-grammars.tree-sitter-ghostty
+      tree-sitter-grammars.tree-sitter-pkl
       yaml-language-server
     ];
   };
