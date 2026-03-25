@@ -21,6 +21,8 @@ return {
 
       vim.g.pkl_neovim = {
         start_command = { "pkl-lsp" },
+        pkl_formatter_grammar_version = "2",
+        timeout_ms = 2000,
       }
     end,
   },
