@@ -46,13 +46,13 @@ url = "https://github.com/remotemobprogramming/mob/releases/download/5.4.2/mob_5
 url_api = "https://api.github.com/repos/remotemobprogramming/mob/releases/assets/346269527"
 
 [[tools."github:zeroclaw-labs/zeroclaw"]]
-version = "0.6.2"
+version = "0.6.3"
 backend = "github:zeroclaw-labs/zeroclaw"
 
 [tools."github:zeroclaw-labs/zeroclaw"."platforms.macos-arm64"]
-checksum = "sha256:e66150f8c97807b4a7edda41443fcba25500bd7c78c56b1fd8c4b341b853618d"
-url = "https://github.com/zeroclaw-labs/zeroclaw/releases/download/v0.6.2/zeroclaw-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/zeroclaw-labs/zeroclaw/releases/assets/380688737"
+checksum = "sha256:20bfa6810b486f23f423d0b355530fe34acabf62e928885a92deab324e5b5ea0"
+url = "https://github.com/zeroclaw-labs/zeroclaw/releases/download/v0.6.3/zeroclaw-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/zeroclaw-labs/zeroclaw/releases/assets/382160764"
 
 [[tools."github:zjrosen/perles"]]
 version = "0.8.1"
@@ -68,9 +68,9 @@ version = "0.6.0"
 backend = "nix:pkl-lsp"
 
 [[tools.opencode]]
-version = "1.3.2"
+version = "1.3.3"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:36073ae40f4d036beaf937e693e9407d616c15d5838acdb987600ede5fb50426"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.3.2/opencode-darwin-arm64.zip"
+checksum = "sha256:e7083f016214dd95c1442ba0f168e56c2e3a68e6721d04fa079e66ca85db17a5"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.3.3/opencode-darwin-arm64.zip"
