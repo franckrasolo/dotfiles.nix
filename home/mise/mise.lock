@@ -46,22 +46,22 @@ url = "https://github.com/remotemobprogramming/mob/releases/download/5.4.2/mob_5
 url_api = "https://api.github.com/repos/remotemobprogramming/mob/releases/assets/346269527"
 
 [[tools."github:zeroclaw-labs/zeroclaw"]]
-version = "0.6.3"
+version = "0.6.5"
 backend = "github:zeroclaw-labs/zeroclaw"
 
 [tools."github:zeroclaw-labs/zeroclaw"."platforms.macos-arm64"]
-checksum = "sha256:20bfa6810b486f23f423d0b355530fe34acabf62e928885a92deab324e5b5ea0"
-url = "https://github.com/zeroclaw-labs/zeroclaw/releases/download/v0.6.3/zeroclaw-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/zeroclaw-labs/zeroclaw/releases/assets/382160764"
+checksum = "sha256:dcfe79303d6fd0f6889816051331c92b77b389487c5ce9b00c962800ab68e1c2"
+url = "https://github.com/zeroclaw-labs/zeroclaw/releases/download/v0.6.5/zeroclaw-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/zeroclaw-labs/zeroclaw/releases/assets/382607440"
 
 [[tools."github:zjrosen/perles"]]
-version = "0.8.1"
+version = "0.8.2"
 backend = "github:zjrosen/perles"
 
 [tools."github:zjrosen/perles"."platforms.macos-arm64"]
-checksum = "sha256:0d6cab2675b0197ac60989dd80c7bd0a1bf17acad893e36870ee094b6c4f1ea9"
-url = "https://github.com/zjrosen/perles/releases/download/v0.8.1/perles_0.8.1_darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/376783004"
+checksum = "sha256:dfaaf12acd856b5bb606a40cfb935277d60f663499b3a4925f0fb7ecfc6c714c"
+url = "https://github.com/zjrosen/perles/releases/download/v0.8.2/perles_0.8.2_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/382434959"
 
 [[tools."nix:pkl-lsp"]]
 version = "0.6.0"
