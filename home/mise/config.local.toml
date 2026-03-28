@@ -1,0 +1,13 @@
+[tasks."file:inspect"]
+description = "lists file attributes"
+usage = """
+arg <file> help="Name of the file to inspect"
+"""
+run = "xattr -l {{ usage.file }}"
+
+[tasks."file:trust"]
+description = "removes a file from quarantine"
+usage = """
+arg <file> help="Name of the file to trust"
+"""
+run = "xattr -d com.apple.quarantine {{ usage.file }}"
