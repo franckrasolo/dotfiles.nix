@@ -45,6 +45,15 @@ checksum = "sha256:2ca73fc8e347f80b47a269bdf64e4265f6d6c5be2229bf5604aea551a67ce
 url = "https://github.com/remotemobprogramming/mob/releases/download/5.4.2/mob_5.4.2_darwin_universal.tar.gz"
 url_api = "https://api.github.com/repos/remotemobprogramming/mob/releases/assets/346269527"
 
+[[tools."github:vladkens/macmon"]]
+version = "0.6.1"
+backend = "github:vladkens/macmon"
+
+[tools."github:vladkens/macmon"."platforms.macos-arm64"]
+checksum = "sha256:fd93b1920a6cc9303864b01ff154b61fc2863ef06dd544b8b46be21d782c1c7d"
+url = "https://github.com/vladkens/macmon/releases/download/v0.6.1/macmon-v0.6.1.tar.gz"
+url_api = "https://api.github.com/repos/vladkens/macmon/releases/assets/260344071"
+
 [[tools."github:zeroclaw-labs/zeroclaw"]]
 version = "0.6.5"
 backend = "github:zeroclaw-labs/zeroclaw"
