@@ -19,6 +19,7 @@ fnox = "latest"
 "github:zeroclaw-labs/zeroclaw" = "latest"
 "github:zjrosen/perles" = "latest"
 "nix:pkl-lsp" = "latest"
+node = "lts"
 opencode = "latest"
 
 [env]
