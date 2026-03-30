@@ -13,6 +13,7 @@
     ./luarocks
     ./mise
     ./nvim
+    ./opencode
     ./presenterm
     ./ripgrep
     ./silicon
