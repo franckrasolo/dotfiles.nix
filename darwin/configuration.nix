@@ -37,6 +37,20 @@
   # create /etc/<shell>rc that loads the nix-darwin environment
   programs.zsh.enable = true;
 
+  system.activationScripts.preActivation.text = ''
+    # Fix for /etc/{bashrc,zshenv,zshrc} being restored by macOS on reboot.
+    #
+    # This script runs before the 'etc' activation step, renaming regular files
+    # that would otherwise cause darwin-rebuild to abort.
+
+    for file in /etc/{bashrc,zshenv,zshrc}; do
+      if [ -f "$file" ] && [ ! -L "$file" ]; then
+        # rename stock macOS file to allow nix-darwin to manage it
+        mv "$file" "$file".before-nix-darwin
+      fi
+    done
+  '';
+
   users.users."${user.accountName}" = {
     description = user.fullName;
     home = user.homeDirectory;
