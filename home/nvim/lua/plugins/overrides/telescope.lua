@@ -60,6 +60,14 @@ return {
       }
       return {
         defaults = {
+          -- 1. show the filename/path as the title of the preview window
+          dynamic_preview_title = true,
+
+          -- 2. configure how paths appear in the RESULTS list
+          --    - "smart" omits redundant directory names
+          --    - "truncate" cuts off the start of long paths
+          path_display = { "smart" },
+
           color_devicons = true,
           layout_strategy = "flex",
           layout_config = {
