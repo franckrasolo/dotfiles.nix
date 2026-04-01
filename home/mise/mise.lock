@@ -55,13 +55,13 @@ url = "https://github.com/vladkens/macmon/releases/download/v0.6.1/macmon-v0.6.1
 url_api = "https://api.github.com/repos/vladkens/macmon/releases/assets/260344071"
 
 [[tools."github:zeroclaw-labs/zeroclaw"]]
-version = "0.6.5"
+version = "0.6.7"
 backend = "github:zeroclaw-labs/zeroclaw"
 
 [tools."github:zeroclaw-labs/zeroclaw"."platforms.macos-arm64"]
-checksum = "sha256:dcfe79303d6fd0f6889816051331c92b77b389487c5ce9b00c962800ab68e1c2"
-url = "https://github.com/zeroclaw-labs/zeroclaw/releases/download/v0.6.5/zeroclaw-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/zeroclaw-labs/zeroclaw/releases/assets/382607440"
+checksum = "sha256:8ab97a543287bc7f9a3d4881a60b0727d1fa975575530f6bacb17517d94c67a0"
+url = "https://github.com/zeroclaw-labs/zeroclaw/releases/download/v0.6.7/zeroclaw-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/zeroclaw-labs/zeroclaw/releases/assets/384214724"
 
 [[tools."github:zjrosen/perles"]]
 version = "0.8.2"
