@@ -85,9 +85,9 @@ checksum = "sha256:25495ff85bd89e2d8a24d88566d7e2f827c6b0d3d872b2cebf75371f93fcb
 url = "https://nodejs.org/dist/v24.14.1/node-v24.14.1-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "1.3.9"
+version = "1.3.13"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:b9b4451c2ff278543c8cff53d1eb2d42886aa1462311f3d8458ee0c1caeb0acb"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.3.9/opencode-darwin-arm64.zip"
+checksum = "sha256:cbbdbfa19d19f95538909b0af2a49f8bae70ba4f5b6f40d17c6ebb9d19f23f33"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.3.13/opencode-darwin-arm64.zip"
