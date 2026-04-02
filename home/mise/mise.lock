@@ -10,13 +10,14 @@ url = "https://github.com/jdx/fnox/releases/download/v1.19.0/fnox-aarch64-apple-
 url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/379322619"
 
 [[tools."github:Dicklesworthstone/beads_rust"]]
-version = "0.1.34"
+version = "0.1.35"
 backend = "github:Dicklesworthstone/beads_rust"
 
 [tools."github:Dicklesworthstone/beads_rust"."platforms.macos-arm64"]
-checksum = "sha256:22ec49b6b131775552c542b071cba1882aa6efbc30412cc56cea3a0e1e58a43f"
-url = "https://github.com/Dicklesworthstone/beads_rust/releases/download/v0.1.34/br-v0.1.34-darwin_aarch64.tar.gz"
-url_api = "https://api.github.com/repos/Dicklesworthstone/beads_rust/releases/assets/380230640"
+checksum = "sha256:9ad9de5ec6b5c10d700a8ab989e1ac123db40ebcdee7ab986eaa2dfe964691b0"
+url = "https://github.com/Dicklesworthstone/beads_rust/releases/download/v0.1.35/br-v0.1.35-darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/Dicklesworthstone/beads_rust/releases/assets/386509385"
+provenance = "github-attestations"
 
 [[tools."github:Dicklesworthstone/beads_viewer"]]
 version = "0.15.2"
@@ -46,13 +47,13 @@ url = "https://github.com/remotemobprogramming/mob/releases/download/5.4.2/mob_5
 url_api = "https://api.github.com/repos/remotemobprogramming/mob/releases/assets/346269527"
 
 [[tools."github:vladkens/macmon"]]
-version = "0.6.1"
+version = "0.7.0"
 backend = "github:vladkens/macmon"
 
 [tools."github:vladkens/macmon"."platforms.macos-arm64"]
-checksum = "sha256:fd93b1920a6cc9303864b01ff154b61fc2863ef06dd544b8b46be21d782c1c7d"
-url = "https://github.com/vladkens/macmon/releases/download/v0.6.1/macmon-v0.6.1.tar.gz"
-url_api = "https://api.github.com/repos/vladkens/macmon/releases/assets/260344071"
+checksum = "sha256:e6052137579076c1652eac3f01378bf589cd17d6e7b961107f7734cfa56725e1"
+url = "https://github.com/vladkens/macmon/releases/download/v0.7.0/macmon-v0.7.0.tar.gz"
+url_api = "https://api.github.com/repos/vladkens/macmon/releases/assets/386369311"
 
 [[tools."github:zeroclaw-labs/zeroclaw"]]
 version = "0.6.7"
