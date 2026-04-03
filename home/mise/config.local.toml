@@ -1,3 +1,6 @@
+[tools]
+node = "lts"
+
 [tasks."file:inspect"]
 description = "lists file attributes"
 usage = """
