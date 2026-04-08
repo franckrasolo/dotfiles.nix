@@ -67,6 +67,7 @@
 
 [pager]
   diff = delta
+  log = ov -F --section-delimiter '^commit' --section-header-num 6
 
 [apply]
   whitespace = warn

@@ -31,6 +31,7 @@ let
     hyperfine
     just
     lsd
+    ov
     sd
     skim
     slides
