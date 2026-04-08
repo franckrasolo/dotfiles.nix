@@ -13,6 +13,7 @@ tasks = "mise tasks ls --all --extended"
 tools = "mise ls --all-sources"
 
 [tools]
+"aqua:runkids/skillshare" = "latest"
 fnox = "latest"
 "github:Dicklesworthstone/beads_rust" = "latest"
 "github:Dicklesworthstone/beads_viewer" = "latest"
@@ -22,6 +23,7 @@ fnox = "latest"
 "github:zeroclaw-labs/zeroclaw" = "latest"
 "github:zjrosen/perles" = "latest"
 "nix:pkl-lsp" = "latest"
+"npm:skills" = "latest"
 opencode = "latest"
 pnpm = "latest"
 
