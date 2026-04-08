@@ -32,6 +32,7 @@ let
     just
     lsd
     ov
+    pngpaste
     sd
     skim
     slides
