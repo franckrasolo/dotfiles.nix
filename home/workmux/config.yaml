@@ -1,0 +1,22 @@
+nerdfont: true
+merge_strategy: rebase
+agent: opencode
+
+panes:
+  - command: <agent>
+    focus: true
+  - split: horizontal
+    command: mise tasks ls
+
+files:
+  symlink:
+    - .venv
+    - .gitignore
+
+status_icons:
+  working: "🤖"
+  waiting: "💬"
+  done: "✅"
+
+pre_merge:
+  - mise run check

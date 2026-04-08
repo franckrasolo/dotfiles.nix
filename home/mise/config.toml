@@ -26,6 +26,7 @@ fnox = "latest"
 "npm:skills" = "latest"
 opencode = "latest"
 pnpm = "latest"
+workmux = "latest"
 
 [env]
 FNOX_AGE_KEY_FILE = "~/dev/dotfiles.nix/home/fnox/age.txt"

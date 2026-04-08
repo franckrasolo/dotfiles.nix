@@ -18,6 +18,7 @@
     ./ripgrep
     ./silicon
     ./wezterm
+    ./workmux
     ./yazi
     ./zellij
     ./zoxide

@@ -104,3 +104,12 @@ backend = "aqua:pnpm/pnpm"
 [tools.pnpm."platforms.macos-arm64"]
 checksum = "sha256:ed8a1f140f4de457b01ebe0be3ae28e9a7e28863315dcd53d22ff1e5a32d63ae"
 url = "https://github.com/pnpm/pnpm/releases/download/v10.33.0/pnpm-macos-arm64"
+
+[[tools.workmux]]
+version = "0.1.178"
+backend = "github:raine/workmux"
+
+[tools.workmux."platforms.macos-arm64"]
+checksum = "sha256:46858600fc9fede4a15bbc66225886d3a882b60706c56e00f39229d8a43ab1f2"
+url = "https://github.com/raine/workmux/releases/download/v0.1.178/workmux-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/raine/workmux/releases/assets/391032519"
