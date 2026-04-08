@@ -84,3 +84,11 @@ backend = "aqua:anomalyco/opencode"
 [tools.opencode."platforms.macos-arm64"]
 checksum = "sha256:be968e559051bb622f0b9fc628216670240b7e7441a11b0eb11f79a6f03239a5"
 url = "https://github.com/anomalyco/opencode/releases/download/v1.4.0/opencode-darwin-arm64.zip"
+
+[[tools.pnpm]]
+version = "10.33.0"
+backend = "aqua:pnpm/pnpm"
+
+[tools.pnpm."platforms.macos-arm64"]
+checksum = "sha256:ed8a1f140f4de457b01ebe0be3ae28e9a7e28863315dcd53d22ff1e5a32d63ae"
+url = "https://github.com/pnpm/pnpm/releases/download/v10.33.0/pnpm-macos-arm64"
