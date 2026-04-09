@@ -1,6 +1,6 @@
 { config, user, ... }:
 
 {
-  home.file.".config/workmux".source =
+  xdg.configFile."workmux".source =
     config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/home/workmux";
 }
