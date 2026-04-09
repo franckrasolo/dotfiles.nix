@@ -14,6 +14,7 @@
     ./mise
     ./nvim
     ./opencode
+    ./ov
     ./presenterm
     ./ripgrep
     ./silicon

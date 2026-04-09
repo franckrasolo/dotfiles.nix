@@ -31,7 +31,6 @@ let
     hyperfine
     just
     lsd
-    ov
     pngpaste
     sd
     skim
