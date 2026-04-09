@@ -10,7 +10,7 @@ package_manager = "pnpm"
 [shell_alias]
 aliases = "mise shell-alias ls"
 tasks = "mise tasks ls --all --extended"
-tools = "mise ls --all-sources"
+tools = "mise ls --all-sources --outdated"
 
 [tools]
 "aqua:runkids/skillshare" = "latest"
