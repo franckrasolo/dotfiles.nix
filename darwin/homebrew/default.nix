@@ -92,6 +92,13 @@
         args = { require_sha = false; }; # missing sha256 checksum
       }
       {
+        name = "megacmd-app";
+        args = {
+          appdir = "/Applications";
+          require_sha = false; # missing sha256 checksum
+        };
+      }
+      {
         name = "megasync";
         args = {
           appdir = "/Applications";
