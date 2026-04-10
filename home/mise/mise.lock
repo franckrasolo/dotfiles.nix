@@ -90,12 +90,12 @@ version = "1.4.9"
 backend = "npm:skills"
 
 [[tools.opencode]]
-version = "1.4.1"
+version = "1.4.3"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:d69896dd5ffd669e5a9227dcacac2061ead0aad7d50815500bcacb4a2d2464cc"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.4.1/opencode-darwin-arm64.zip"
+checksum = "sha256:d085c072087fa1cf076058ae28785a31a9368e0f3c42985ea8c558036fcb9b0c"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.4.3/opencode-darwin-arm64.zip"
 
 [[tools.pnpm]]
 version = "10.33.0"
@@ -106,10 +106,10 @@ checksum = "sha256:ed8a1f140f4de457b01ebe0be3ae28e9a7e28863315dcd53d22ff1e5a32d6
 url = "https://github.com/pnpm/pnpm/releases/download/v10.33.0/pnpm-macos-arm64"
 
 [[tools.workmux]]
-version = "0.1.179"
+version = "0.1.180"
 backend = "github:raine/workmux"
 
 [tools.workmux."platforms.macos-arm64"]
-checksum = "sha256:3a7fdd3323c40817f14484f992496623755aa2b97ac09adca82340b66f0f7864"
-url = "https://github.com/raine/workmux/releases/download/v0.1.179/workmux-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/raine/workmux/releases/assets/392208771"
+checksum = "sha256:cd1541bbd06b7f610661f67db57de9881bad0aad8008ffbcdef120f0289e4e6a"
+url = "https://github.com/raine/workmux/releases/download/v0.1.180/workmux-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/raine/workmux/releases/assets/392634484"
