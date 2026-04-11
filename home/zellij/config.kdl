@@ -199,7 +199,9 @@ plugins {
   status-bar location="zellij:status-bar"
   strider location="zellij:strider"
   compact-bar location="zellij:compact-bar"
-  session-manager location="zellij:session-manager"
+  session-manager location="zellij:session-manager" {
+    multi_screen true
+  }
   welcome-screen location="zellij:session-manager" {
     welcome_screen false
   }
