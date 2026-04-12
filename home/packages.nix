@@ -80,9 +80,6 @@ let
     grex
     rlwrap
 
-    javaPackages.compiler.temurin-bin.jdk-25
-    kotlin
-
     helix
     nixd
     nixfmt

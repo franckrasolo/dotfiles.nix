@@ -1,4 +1,20 @@
+[tools.java]
+version = "prefix:temurin-25"
+postinstall = """
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+
+mise_java_version=$MISE_TOOL_VERSION
+macos_java_dir=/Library/Java/JavaVirtualMachines/$mise_java_version
+
+sudo mkdir -p $macos_java_dir
+sudo ln -sf $XDG_DATA_HOME/mise/installs/java/$mise_java_version/Contents $macos_java_dir/Contents
+"""
+
 [tools]
+kotlin = "latest"
 node = "lts"
 
 [tasks."file:inspect"]
