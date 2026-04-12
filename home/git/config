@@ -66,7 +66,7 @@
   pager = delta
 
 [pager]
-  diff = delta
+  diff = delta --features ov-diff
   log = ov -F --section-delimiter '^commit' --section-header-num 6
 
 [apply]
@@ -201,11 +201,19 @@
 [delta]
   navigate = true  # use n and N to move between diff sections
   light = false    # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+  side-by-side = false
+  file-style = orange
 
   features = line-numbers decorations
   syntax-theme = Dracula
   plus-style   = syntax "#0B301F"
   minus-style  = syntax "#370606"
+
+[delta "ov-diff"]
+  # the idea is to overload the pager used by delta when using git diff
+  # we are using the same pattern used by delta when the default pager (less) is used
+  # using ov section feature brings a better experience
+  pager=ov -F --section-delimiter '^(commit|added:|removed:|renamed:|Δ)' --section-header --pattern '•' --section-header-num 1
 
 [interactive]
   diffFilter = delta --color-only
