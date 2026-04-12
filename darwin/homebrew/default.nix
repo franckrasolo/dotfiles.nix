@@ -67,6 +67,7 @@
         name = "duckduckgo";
         args = { appdir = "/Applications"; };
       }
+      "finetune"
       "firefox"
       "opera"
       "zen"
