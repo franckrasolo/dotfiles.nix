@@ -1,6 +1,9 @@
 return {
-  -- "franckrasolo/luasnip4k.nvim",
-  dir = "~/dev/Kotlin/luasnip4k",
-  name = "luasnip4k.nvim",
-  dev = true,
+  -- snippets
+  {
+    -- "franckrasolo/luasnip4k.nvim",
+    dir = "~/dev/Kotlin/luasnip4k",
+    name = "luasnip4k.nvim",
+    dev = true,
+  },
 }
