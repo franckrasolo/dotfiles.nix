@@ -5,8 +5,8 @@ setopt PUSHD_SILENT           # do not print the directory stack after pushd or 
 setopt PUSHD_TO_HOME          # pushd = pushd $HOME
 
 HISTFILE=$XDG_DATA_HOME/zsh/history
-HISTSIZE=10000                # number of entries to keep in memory for the current session
-SAVEHIST=$HISTSIZE            # number of entries to write to the history file
+HISTSIZE=100000               # number of entries to keep in memory for the current session
+SAVEHIST=1000000000           # number of entries to write to the history file
 HISTDUP=erase                 # erase duplicates in the history file
 
 setopt APPEND_HISTORY         # allow multiple terminal sessions to all append to one zsh command history
