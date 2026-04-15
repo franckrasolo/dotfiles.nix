@@ -30,7 +30,7 @@ source "${ZSH_CONFIG_HOME}/aliases.docker.zsh"
 source "${ZSH_CONFIG_HOME}/aliases.git.zsh"
 source "${ZSH_CONFIG_HOME}/aliases.k8s.zsh"
 source "${ZSH_CONFIG_HOME}/aliases.nix.zsh"
-source "${ZSH_CONFIG_HOME}/bindkeys.zsh"
+zvm_after_init_commands+=('source "${ZSH_CONFIG_HOME}/bindkeys.zsh"')
 source "${ZSH_CONFIG_HOME}/completions.zsh"
 source "${ZSH_CONFIG_HOME}/prompt.zsh"
 source "${ZSH_CONFIG_HOME}/widgets.zsh"
