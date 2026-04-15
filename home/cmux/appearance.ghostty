@@ -16,3 +16,7 @@ macos-non-native-fullscreen = false
 window-decoration = resize
 window-padding-x = 0
 window-padding-y = 0
+
+# source: https://github.com/KroneCorylus/ghostty-shader-playground
+custom-shader = ./shaders/cursor_blaze.glsl
+custom-shader = ./shaders/sparks.glsl
