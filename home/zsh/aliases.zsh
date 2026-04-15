@@ -1,10 +1,17 @@
+# 1. safely undefine the default alias if it exists
+(( ${+aliases[run-help]} )) && unalias run-help
+
+# 2. set the help directory (required for full functionality on macOS)
+# This points zsh to the actual help files so it doesn't just default to 'man'.
 HELPDIR=$(nix path-info $(which zsh))/share/zsh/$(zsh --version | awk '{ print $2 }')/help
 
+# 3. autoload functions
 autoload -Uz run-help
 autoload -Uz run-help-git
 autoload -Uz run-help-sudo
 
-unalias run-help && alias help=run-help
+# 4. finally alias run-help
+alias help=run-help
 
 alias ff="fastfetch"
 
