@@ -1,8 +1,13 @@
+# using http://redsymbol.net/articles/unofficial-bash-strict-mode/
+set -o errexit
+set -o pipefail
+
 profiling=false && zmodload zsh/zprof || true # https://getantibody.github.io/even-faster/
 
 typeset -U path cdpath fpath manpath # prevent duplicates in paths
 
 unset __HM_SESS_VARS_SOURCED && source /etc/profiles/per-user/$USER/etc/profile.d/hm-session-vars.sh
+set -o nounset
 
 # some programs (e.g. ripgrep, taskwarrior) installed by Nix may also have zsh completions
 for profile in ${(z)NIX_PROFILES}; do
@@ -13,16 +18,10 @@ for profile in ${(z)NIX_PROFILES}; do
   )
 done
 
-# using http://redsymbol.net/articles/unofficial-bash-strict-mode/
-set -o errexit
-set -o pipefail
-
 mkdir -p $XDG_CACHE_HOME/zsh
 mkdir -p $XDG_DATA_HOME/zsh
 
 ZSH_CONFIG_HOME=${ZDOTDIR}
-
-set -o nounset
 source "${ZSH_CONFIG_HOME}/colours.zsh"
 source "${ZSH_CONFIG_HOME}/options.zsh"
 source "${ZSH_CONFIG_HOME}/aliases.zsh"
@@ -32,8 +31,6 @@ source "${ZSH_CONFIG_HOME}/aliases.git.zsh"
 source "${ZSH_CONFIG_HOME}/aliases.k8s.zsh"
 source "${ZSH_CONFIG_HOME}/aliases.nix.zsh"
 source "${ZSH_CONFIG_HOME}/bindkeys.zsh"
-
-set +o nounset
 source "${ZSH_CONFIG_HOME}/completions.zsh"
 source "${ZSH_CONFIG_HOME}/prompt.zsh"
 source "${ZSH_CONFIG_HOME}/widgets.zsh"
@@ -53,5 +50,7 @@ source <(zellij setup --generate-completion zsh | sed '/_zellij "$@"/d')
 # OrbStack command-line tools and integration
 source ~/.orbstack/shell/init.zsh 2>/dev/null || :
 
-set +o errexit
 $profiling && zprof || true
+
+set +o errexit
+set +o nounset
