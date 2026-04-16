@@ -64,8 +64,8 @@ vec4 saturate(vec4 color, float factor) {
     float gray = dot(color, vec4(0.299, 0.587, 0.114, 0.)); // luminance
     return mix(vec4(gray), color, factor);
 }
-const vec4 TRAIL_COLOR = vec4(1.0, 0.725, 0.161, 1.0);
-const vec4 TRAIL_COLOR_ACCENT = vec4(1.0, 0., 0., 1.0);
+const vec4 TRAIL_COLOR = vec4(0.58, 0.46, 0.16, 1.0);
+const vec4 TRAIL_COLOR_ACCENT = vec4(0.6, 0.44, 0.15, 1.0);
 const float DURATION = 0.3; //IN SECONDS
 
 void mainImage(out vec4 fragColor, in vec2 fragCoord)
@@ -101,14 +101,14 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord)
     // Distance between cursors determine the total length of the parallelogram;
     float lineLength = distance(centerCC, centerCP);
 
-    float mod = .007;
+    float mod = .003;
     //trailblaze
     // HACK: Using the saturate function because I currently don't know how to blend colors without losing saturation.
-    vec4 trail = mix(saturate(TRAIL_COLOR_ACCENT, 1.5), fragColor, 1. - smoothstep(0., sdfTrail + mod, 0.007));
-    trail = mix(saturate(TRAIL_COLOR, 1.5), trail, 1. - smoothstep(0., sdfTrail + mod, 0.006));
-    trail = mix(trail, saturate(TRAIL_COLOR, 1.5), step(sdfTrail + mod, 0.));
+    vec4 trail = mix(saturate(TRAIL_COLOR_ACCENT, 0.85), fragColor, 1. - smoothstep(0., sdfTrail + mod, 0.0025));
+    trail = mix(saturate(TRAIL_COLOR, 0.85), trail, 1. - smoothstep(0., sdfTrail + mod, 0.002));
+    trail = mix(trail, saturate(TRAIL_COLOR, 0.85), step(sdfTrail + mod, 0.));
     //cursorblaze
-    trail = mix(saturate(TRAIL_COLOR_ACCENT, 1.5), trail, 1. - smoothstep(0., sdfCurrentCursor + .002, 0.004));
-    trail = mix(saturate(TRAIL_COLOR, 1.5), trail, 1. - smoothstep(0., sdfCurrentCursor + .002, 0.004));
+    trail = mix(saturate(TRAIL_COLOR_ACCENT, 0.85), trail, 1. - smoothstep(0., sdfCurrentCursor + .0008, 0.001));
+    trail = mix(saturate(TRAIL_COLOR, 0.85), trail, 1. - smoothstep(0., sdfCurrentCursor + .0008, 0.001));
     fragColor = mix(trail, fragColor, 1. - smoothstep(0., sdfCurrentCursor, easedProgress * lineLength));
 }
