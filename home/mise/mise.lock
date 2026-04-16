@@ -55,13 +55,13 @@ url = "https://github.com/remotemobprogramming/mob/releases/download/5.4.2/mob_5
 url_api = "https://api.github.com/repos/remotemobprogramming/mob/releases/assets/346269527"
 
 [[tools."github:vladkens/macmon"]]
-version = "0.7.0"
+version = "0.7.1"
 backend = "github:vladkens/macmon"
 
 [tools."github:vladkens/macmon"."platforms.macos-arm64"]
-checksum = "sha256:e6052137579076c1652eac3f01378bf589cd17d6e7b961107f7734cfa56725e1"
-url = "https://github.com/vladkens/macmon/releases/download/v0.7.0/macmon-v0.7.0.tar.gz"
-url_api = "https://api.github.com/repos/vladkens/macmon/releases/assets/386369311"
+checksum = "sha256:58742991eab3ae8efcefafeef01ae333a111ca2f02513f1769cb6596b2b0bfaf"
+url = "https://github.com/vladkens/macmon/releases/download/v0.7.1/macmon-v0.7.1.tar.gz"
+url_api = "https://api.github.com/repos/vladkens/macmon/releases/assets/397330708"
 
 [[tools."github:zeroclaw-labs/zeroclaw"]]
 version = "0.6.9"
@@ -90,12 +90,12 @@ version = "1.5.0"
 backend = "npm:skills"
 
 [[tools.opencode]]
-version = "1.4.4"
+version = "1.4.6"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:8a0f27c579f2973a515adcca982580aafca3eb227b14ae69f4252c00c7f45774"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.4.4/opencode-darwin-arm64.zip"
+checksum = "sha256:16d781944994eaa98a1037b2c367a4ffb9133ae449b15c48984f339ea2c782a5"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.4.6/opencode-darwin-arm64.zip"
 
 [[tools.pnpm]]
 version = "10.33.0"
@@ -106,10 +106,10 @@ checksum = "sha256:ed8a1f140f4de457b01ebe0be3ae28e9a7e28863315dcd53d22ff1e5a32d6
 url = "https://github.com/pnpm/pnpm/releases/download/v10.33.0/pnpm-macos-arm64"
 
 [[tools.workmux]]
-version = "0.1.182"
+version = "0.1.183"
 backend = "github:raine/workmux"
 
 [tools.workmux."platforms.macos-arm64"]
-checksum = "sha256:8f278d94d78046ea897ad53d5e48ddeb326d1647dde39c74619bf9dc496a76c3"
-url = "https://github.com/raine/workmux/releases/download/v0.1.182/workmux-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/raine/workmux/releases/assets/395656104"
+checksum = "sha256:64896e57fc67d63fb65f4f7026deb0c89ec9cfcec70ca7fcc24d8c3402d99cb5"
+url = "https://github.com/raine/workmux/releases/download/v0.1.183/workmux-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/raine/workmux/releases/assets/397118763"
