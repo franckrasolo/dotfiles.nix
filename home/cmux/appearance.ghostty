@@ -19,4 +19,4 @@ window-padding-y = 0
 
 # source: https://github.com/KroneCorylus/ghostty-shader-playground
 custom-shader = ./shaders/cursor_blaze.glsl
-custom-shader = ./shaders/sparks.glsl
+custom-shader = ./shaders/cursor_glow.glsl
