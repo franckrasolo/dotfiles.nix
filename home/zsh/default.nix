@@ -11,7 +11,7 @@
     package = pkgs.unstable.zsh;
     dotDir = "${config.xdg.configHome}/zsh";
     autosuggestion.enable = true;
-    enableCompletion = true;
+    enableCompletion = false;
     envExtra = ''
       source ~/.zshenv.manual
     '';
@@ -32,7 +32,6 @@
         beforeCompletion = lib.mkOrder 550 ''
           fpath+="${zsh-completions}/share/zsh/site-functions"
           fpath+="${nix-zsh-completions}/share/zsh/site-functions"
-          autoload -Uz compinit && compinit
 
           autoload -Uz ${zsh-defer}/share/zsh-defer/zsh-defer
           ${lib.concatStringsSep "\n" (map (script: "zsh-defer source ${script}") zshPluginScripts)}
