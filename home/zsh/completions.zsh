@@ -108,21 +108,3 @@ zstyle ':vcs_info:*' formats           '%F{5}(%f%s%F{5})%F{3}-%F{5}[%F{2}%b%F{5}
 zstyle ':vcs_info:git:*' branchformat '%b%F{1}:%F{3}%r'
 # precmd () { vcs_info } # run before each prompt
 #PS1='%F{5}[%F{2}%n%F{5}] %F{3}%3~ ${vcs_info_msg_0_}%f%# '
-
-# completion for kitty
-#kitty +complete setup zsh | source /dev/stdin
-
-# completion for dagger
-#dagger completion zsh | tee /usr/local/share/zsh/site-functions/_dagger &> /dev/null
-
-# completion for gradle
-#source /etc/profiles/per-user/$USER/share/zsh/site-functions/_gradle
-#__gradle-completion-init
-
-# completion for kubectl and its alias 'k'
-# source: https://michaelheap.com/kubectl-alias-autocomplete/
-source <(kubectl completion zsh)
-# `kubectl completion zsh` too slow
-# source: https://gist.github.com/weltonrodrigo/ad17620e678c7231330aa73043cee8a2
-#source <(eval HTTPS_PROXY=1:1 kubectl completion zsh)
-compdef k='kubectl'
