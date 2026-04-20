@@ -5,7 +5,7 @@ locked = false
 lockfile = true
 
 [settings.npm]
-package_manager = "pnpm"
+package_manager = "aube"
 
 [shell_alias]
 aliases = "mise shell-alias ls"
@@ -14,6 +14,7 @@ tools = "mise ls --all-sources --outdated"
 
 [tools]
 "aqua:runkids/skillshare" = "latest"
+aube = "latest"
 fnox = "latest"
 "github:Dicklesworthstone/beads_rust" = "latest"
 "github:Dicklesworthstone/beads_viewer" = "latest"
@@ -25,7 +26,6 @@ fnox = "latest"
 "nix:pkl-lsp" = "latest"
 "npm:skills" = "latest"
 opencode = "latest"
-pnpm = "latest"
 workmux = "latest"
 
 [env]
