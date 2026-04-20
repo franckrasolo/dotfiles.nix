@@ -58,6 +58,9 @@
 #  xdg.configFile."zsh".source = ./.;
   xdg.configFile."zsh".source = config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/home/zsh";
 
+  # suppress both "Last login" and MOTD messages in new shells
+  home.file.".hushlogin".text = "";
+
 #  home.file.".zshenv.manual".source = ./zsh/zshenv;
   home.file.".zshenv.manual".source = config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/home/zsh/zshenv";
 }
