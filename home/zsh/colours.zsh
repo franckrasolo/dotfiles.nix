@@ -1,3 +1,5 @@
+autoload -Uz colors && colors
+
 export CLICOLOR=true
 
 # customise 'grep' highlighting using:
