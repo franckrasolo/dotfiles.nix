@@ -23,4 +23,4 @@ keybind = super+shift+k=clear_screen
 
 keybind = alt+backspace=text:\x1b[3~
 
-macos-option-as-alt = left
+macos-option-as-alt = false
