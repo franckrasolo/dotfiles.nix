@@ -5,7 +5,7 @@ cursor-color = #FFE3AF
 cursor-style = block
 cursor-style-blink = true
 
-selection-background = #34bf91
+selection-background = #34BF91
 selection-foreground = #DFFFE6
 
 split-divider-color = #253141
