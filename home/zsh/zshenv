@@ -9,7 +9,7 @@ export SOPS_AGE_KEY_FILE=$HOME/dev/dotfiles.nix/home/fnox/age.txt
 export SOPS_AGE_RECIPIENTS="age1dewzp62nhlvgjgfqzj6lrrkp2rj7zg94l9e0962mk9jktxcgjy9q4ht96s"
 
 export GNUPGHOME=$XDG_DATA_HOME/gnupg
-export GPG_TTY=$(tty)
+[[ -o interactive ]] && export GPG_TTY=${TTY:-$(tty 2>/dev/null)}
 
 LOCALE=en_GB.UTF-8
 export LANGUAGE=$LOCALE
