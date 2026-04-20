@@ -24,8 +24,18 @@ source "${ZSH_CONFIG_HOME}/completions.zsh"
 source "${ZSH_CONFIG_HOME}/prompt.zsh"
 source "${ZSH_CONFIG_HOME}/widgets.zsh"
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
-#eval "$(brew shellenv)"
+# cached `brew shellenv zsh` — regenerated only when the brew binary changes
+() {
+  local brew=/opt/homebrew/bin/brew
+  local cache=$XDG_CACHE_HOME/zsh/brew-shellenv.zsh
+  if [[ -x $brew ]]; then
+    if [[ ! -s $cache || $brew -nt $cache ]]; then
+      mkdir -p ${cache:h}
+      $brew shellenv zsh >| $cache
+    fi
+    source $cache
+  fi
+}
 
 zsh-defer -c 'eval "$(direnv hook zsh)"'
 zsh-defer -c 'eval "$(mise activate zsh)"'
