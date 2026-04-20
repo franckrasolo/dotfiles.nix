@@ -24,6 +24,7 @@
     systemPackages = [
       cacert
       duti
+      ghostty-bin
       net-news-wire
       sketchybar
     ];
