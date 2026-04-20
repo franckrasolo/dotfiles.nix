@@ -7,15 +7,6 @@ typeset -U path cdpath fpath manpath # prevent duplicates in paths
 unset __HM_SESS_VARS_SOURCED && source /etc/profiles/per-user/$USER/etc/profile.d/hm-session-vars.sh
 set -o nounset
 
-# some programs (e.g. ripgrep, taskwarrior) installed by Nix may also have zsh completions
-for profile in ${(z)NIX_PROFILES}; do
-  fpath+=(
-    "$profile/share/zsh/site-functions"
-    "$profile/share/zsh/$(fzf --version | awk '{ print $1 }')/functions"
-    "$profile/share/zsh/vendor-completions"
-  )
-done
-
 mkdir -p $XDG_CACHE_HOME/zsh
 mkdir -p $XDG_DATA_HOME/zsh
 

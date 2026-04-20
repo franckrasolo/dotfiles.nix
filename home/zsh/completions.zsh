@@ -1,3 +1,9 @@
+fpath+=(
+  "/etc/profiles/per-user/$USER/share/zsh/site-functions"
+  "/etc/profiles/per-user/$USER/share/zsh/$ZSH_VERSION/functions"
+  "/etc/profiles/per-user/$USER/share/zsh/vendor-completions"
+)
+
 autoload -Uz compinit
 
 if [ -n "${commands[fzf-share]}" ]; then

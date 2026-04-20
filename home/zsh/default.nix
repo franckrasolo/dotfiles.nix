@@ -30,8 +30,10 @@
         '';
 
         beforeCompletion = lib.mkOrder 550 ''
-          fpath+="${zsh-completions}/share/zsh/site-functions"
-          fpath+="${nix-zsh-completions}/share/zsh/site-functions"
+          fpath+=(
+            "${zsh-completions}/share/zsh/site-functions"
+            "${nix-zsh-completions}/share/zsh/site-functions"
+          )
 
           autoload -Uz ${zsh-defer}/share/zsh-defer/zsh-defer
           ${lib.concatStringsSep "\n" (map (script: "zsh-defer source ${script}") zshPluginScripts)}
