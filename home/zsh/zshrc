@@ -2,8 +2,6 @@
 set -o errexit
 set -o pipefail
 
-profiling=false && zmodload zsh/zprof || true # https://getantibody.github.io/even-faster/
-
 typeset -U path cdpath fpath manpath # prevent duplicates in paths
 
 unset __HM_SESS_VARS_SOURCED && source /etc/profiles/per-user/$USER/etc/profile.d/hm-session-vars.sh
@@ -49,8 +47,6 @@ source <(zellij setup --generate-completion zsh | sed '/_zellij "$@"/d')
 
 # OrbStack command-line tools and integration
 source ~/.orbstack/shell/init.zsh 2>/dev/null || :
-
-$profiling && zprof || true
 
 set +o errexit
 set +o nounset

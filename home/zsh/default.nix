@@ -26,6 +26,7 @@
 
       zshrc = {
         first = lib.mkOrder 500 ''
+          profiling=false && zmodload zsh/zprof || true # https://getantibody.github.io/even-faster/
         '';
 
         beforeCompletion = lib.mkOrder 550 ''
@@ -42,6 +43,7 @@
         '';
 
         last = lib.mkOrder 1500 ''
+          $profiling && zprof || true
         '';
       };
     in
