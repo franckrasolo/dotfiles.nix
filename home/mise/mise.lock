@@ -9,32 +9,31 @@ checksum = "sha256:172caad7ceeb2a8666ebd7ed4a76bd95d511140e97c59e34c71f5b8c74ce5
 url = "https://github.com/runkids/skillshare/releases/download/v0.19.3/skillshare_0.19.3_darwin_arm64.tar.gz"
 
 [[tools.aube]]
-version = "1.0.0-beta.10"
+version = "1.0.0-beta.11"
 backend = "github:endevco/aube"
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:80192365d6fc8f2f9e030fde4f74ab0133a05914cd6211db3c1670fea64636d4"
-url = "https://github.com/endevco/aube/releases/download/v1.0.0-beta.10/aube-v1.0.0-beta.10-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/endevco/aube/releases/assets/401159103"
+checksum = "sha256:9c0ad71d8f394758b0bedca1797649774a0fa209eed7aa66c40c0b1c9e50aae6"
+url = "https://github.com/endevco/aube/releases/download/v1.0.0-beta.11/aube-v1.0.0-beta.11-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/endevco/aube/releases/assets/401716623"
 
 [[tools.fnox]]
-version = "1.20.0"
+version = "1.21.0"
 backend = "github:jdx/fnox"
 
 [tools.fnox."platforms.macos-arm64"]
-checksum = "sha256:84895475983887137ad3cfd7c2018dad30a2024178497ed8aab2ac7ceae662ff"
-url = "https://github.com/jdx/fnox/releases/download/v1.20.0/fnox-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/388763122"
+checksum = "sha256:a83bde20f5545f71f38ada82d196445b4681a1e8aae58214b0d068f897ac7904"
+url = "https://github.com/jdx/fnox/releases/download/v1.21.0/fnox-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/401190784"
 
 [[tools."github:Dicklesworthstone/beads_rust"]]
-version = "0.1.44"
+version = "0.1.45"
 backend = "github:Dicklesworthstone/beads_rust"
 
 [tools."github:Dicklesworthstone/beads_rust"."platforms.macos-arm64"]
-checksum = "sha256:e9d8f1416e2ac04bd2e6b0871f1017425e3145d4433be5e67d727a60a279f0d7"
-url = "https://github.com/Dicklesworthstone/beads_rust/releases/download/v0.1.44/br-v0.1.44-darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/Dicklesworthstone/beads_rust/releases/assets/398715736"
-provenance = "github-attestations"
+checksum = "sha256:f4c61e89dddee19048543ee18729d360e3688f8d712c2f80608709124d67b255"
+url = "https://github.com/Dicklesworthstone/beads_rust/releases/download/v0.1.45/br-0.1.45-darwin_aarch64.tar.gz"
+url_api = "https://api.github.com/repos/Dicklesworthstone/beads_rust/releases/assets/401061116"
 
 [[tools."github:Dicklesworthstone/beads_viewer"]]
 version = "0.15.2"
@@ -99,12 +98,12 @@ version = "1.5.1"
 backend = "npm:skills"
 
 [[tools.opencode]]
-version = "1.14.19"
+version = "1.14.20"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:554a2019225514f669e1b014482a2e27c7e729c3337020301510f32be7162290"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.14.19/opencode-darwin-arm64.zip"
+checksum = "sha256:e6124c5c73576c678d24b09657b73281d96d67fc1c4ddd4714062811c51c81d5"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.14.20/opencode-darwin-arm64.zip"
 
 [[tools.workmux]]
 version = "0.1.184"
