@@ -241,8 +241,7 @@ git:
     # If true, pass '--signoff' flag when committing
     signOff: false
 
-    # Automatic WYSIWYG wrapping of the commit message as you type
-    autoWrapCommitMessage: true
+    autoWrapCommitMessage: false
 
     # If autoWrapCommitMessage is true, the width to wrap to
     autoWrapWidth: 72
