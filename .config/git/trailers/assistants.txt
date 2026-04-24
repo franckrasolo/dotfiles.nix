@@ -1,0 +1,9 @@
+Claude Opus 4.6 <noreply@anthropic.com>
+Claude Opus 4.7 <noreply@anthropic.com>
+Claude Sonnet 4.6 <noreply@anthropic.com>
+GLM 5.1 <noreply@z.ai>
+GPT 5.4 <noreply@openai.com>
+GPT 5.5 <noreply@openai.com>
+Kimi K2.6 <noreply@moonshot.ai>
+MiniMax M2.7 <noreply@minimax.io>
+OpenCode <noreply@opencode.ai>
