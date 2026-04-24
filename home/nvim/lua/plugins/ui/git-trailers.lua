@@ -95,7 +95,7 @@ local function generate_users(git_trailer)
       unique_users[#unique_users + 1] = user
     end
   end
-  return unique_users
+  return vim.fn.sort(unique_users)
 end
 
 local function multi_select(users, git_trailer, snacks)
