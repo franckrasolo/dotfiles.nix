@@ -69,7 +69,7 @@ local git_trailers = {
   },
 }
 
-local function load_entries_for(git_trailer)
+local function load_values_for(git_trailer)
   local path = git_trailers.location .. "/" .. (git_trailer.file or "")
   local stat = vim.uv.fs_stat(path)
   if stat ~= nil and stat.type == "file" then
@@ -79,29 +79,34 @@ local function load_entries_for(git_trailer)
   end
 end
 
-local function generate_users(git_trailer)
+local function generate_values_for(git_trailer)
   local git_log_command = "git -c log.showSignature=false log"
   local log_format = "--format='" .. git_trailer.log_format .. "'"
   local show_unique_results = "sort -u | sed '/^[[:space:]]*$/d'"
-  local list_unique_users = git_log_command .. " " .. log_format .. " | " .. show_unique_results
 
-  local users = vim.fn.extend(vim.fn.systemlist(list_unique_users), load_entries_for(git_trailer))
+  local list_existing_values_command =
+    git_log_command .. " " .. log_format .. " | " .. show_unique_results
 
-  local unique_users = {}
+  local values = vim.fn.extend(
+    vim.fn.systemlist(list_existing_values_command),
+    load_values_for(git_trailer)
+  )
+
+  local unique_values = {}
   local seen = {}
-  for _, user in ipairs(users) do
-    if not seen[user] then
-      seen[user] = true
-      unique_users[#unique_users + 1] = user
+  for _, value in ipairs(values) do
+    if not seen[value] then
+      seen[value] = true
+      unique_values[#unique_values + 1] = value
     end
   end
-  return vim.fn.sort(unique_users)
+  return vim.fn.sort(unique_values)
 end
 
-local function multi_select(users, git_trailer, snacks)
+local function multi_select(values, git_trailer, snacks)
   local items = {}
-  for _, user in ipairs(users) do
-    items[#items + 1] = { text = user }
+  for _, value in ipairs(values) do
+    items[#items + 1] = { text = value }
   end
 
   -- find where comments start (usually first line starting with '#')
@@ -158,13 +163,13 @@ local function multi_select(users, git_trailer, snacks)
 end
 
 local function create_git_commit_trailer_autocmd_for(git_trailer)
-  local function select_users()
-    local users = generate_users(git_trailer)
-    if #users == 0 then return end
+  local function select_values()
+    local values = generate_values_for(git_trailer)
+    if #values == 0 then return end
 
     local ok, snacks = pcall(require, "snacks")
     if ok and snacks.picker then
-      multi_select(users, git_trailer, snacks)
+      multi_select(values, git_trailer, snacks)
     end
   end
 
@@ -172,7 +177,7 @@ local function create_git_commit_trailer_autocmd_for(git_trailer)
     pattern = "COMMIT_EDITMSG",
     callback = function()
       local opts = { buffer = true, desc = "Add " .. git_trailer.type }
-      vim.keymap.set({ "i", "n", "v" }, git_trailer.keybinding, select_users, opts)
+      vim.keymap.set({ "i", "n", "v" }, git_trailer.keybinding, select_values, opts)
     end,
   })
 end
