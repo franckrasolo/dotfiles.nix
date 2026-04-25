@@ -9,13 +9,13 @@ checksum = "sha256:306bc712ce8211bda067da1459d6c7e65ac374cb42372062a913f36d42203
 url = "https://github.com/runkids/skillshare/releases/download/v0.19.5/skillshare_0.19.5_darwin_arm64.tar.gz"
 
 [[tools.aube]]
-version = "1.0.0"
+version = "1.1.0"
 backend = "github:endevco/aube"
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:6d90e5e35a834a6f8b0c7023526bf615751b29c3b2a046f16739f305c786f856"
-url = "https://github.com/endevco/aube/releases/download/v1.0.0/aube-v1.0.0-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/endevco/aube/releases/assets/403722938"
+checksum = "sha256:4d77b4f54c78297e6aef6da4ccb8a2327c31297f1a9f37b84fb746928129c4b2"
+url = "https://github.com/endevco/aube/releases/download/v1.1.0/aube-v1.1.0-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/endevco/aube/releases/assets/404655454"
 
 [[tools.fnox]]
 version = "1.21.0"
@@ -36,13 +36,13 @@ url = "https://github.com/Dicklesworthstone/beads_rust/releases/download/v0.1.45
 url_api = "https://api.github.com/repos/Dicklesworthstone/beads_rust/releases/assets/401061116"
 
 [[tools."github:Dicklesworthstone/beads_viewer"]]
-version = "0.15.2"
+version = "0.16.0"
 backend = "github:Dicklesworthstone/beads_viewer"
 
 [tools."github:Dicklesworthstone/beads_viewer"."platforms.macos-arm64"]
-checksum = "sha256:4edd972fb78b7f8759443ef4896d3fe874016fc74fae9706b337d9322c4fe2cb"
-url = "https://github.com/Dicklesworthstone/beads_viewer/releases/download/v0.15.2/bv_0.15.2_darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/Dicklesworthstone/beads_viewer/releases/assets/369752347"
+checksum = "sha256:0cf05c7f8e59725eca8e5513b914536f3a87dfb38dcec43b0d95d0abddb8cf93"
+url = "https://github.com/Dicklesworthstone/beads_viewer/releases/download/v0.16.0/bv_0.16.0_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/Dicklesworthstone/beads_viewer/releases/assets/404599940"
 
 [[tools."github:nearai/ironclaw"]]
 version = "0.21.0"
@@ -98,12 +98,12 @@ version = "1.5.1"
 backend = "npm:skills"
 
 [[tools.opencode]]
-version = "1.14.22"
+version = "1.14.24"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:cdea83be4d9e12f0fb4b2168b122f01a3d0243593caf4ec81041c5e6d717f8fa"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.14.22/opencode-darwin-arm64.zip"
+checksum = "sha256:5e61cbbd67d6ef8268e840aa031edf5a33f13d42812a39cdde1fb461ce7920a2"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.14.24/opencode-darwin-arm64.zip"
 
 [[tools.workmux]]
 version = "0.1.185"
