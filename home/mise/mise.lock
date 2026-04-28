@@ -9,13 +9,13 @@ checksum = "sha256:306bc712ce8211bda067da1459d6c7e65ac374cb42372062a913f36d42203
 url = "https://github.com/runkids/skillshare/releases/download/v0.19.5/skillshare_0.19.5_darwin_arm64.tar.gz"
 
 [[tools.aube]]
-version = "1.2.1"
+version = "1.3.0"
 backend = "github:endevco/aube"
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:1e5f0aee87ab8e2a43e32d0d418a58d028f567ef1836cd672c71d67b86de9e95"
-url = "https://github.com/endevco/aube/releases/download/v1.2.1/aube-v1.2.1-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/endevco/aube/releases/assets/406063658"
+checksum = "sha256:303696c15502a351e6acbecb24a896b4e69f54bc0041834c974417d227d9481f"
+url = "https://github.com/endevco/aube/releases/download/v1.3.0/aube-v1.3.0-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/endevco/aube/releases/assets/406852645"
 provenance = "github-attestations"
 
 [[tools.fnox]]
@@ -95,7 +95,7 @@ version = "0.6.0"
 backend = "nix:pkl-lsp"
 
 [[tools."npm:skills"]]
-version = "1.5.1"
+version = "1.5.2"
 backend = "npm:skills"
 
 [[tools.opencode]]
@@ -107,10 +107,10 @@ checksum = "sha256:a0a97741cd6b27fb5558942b2d56460c85b76d3a03ad39690a3f928545c31
 url = "https://github.com/anomalyco/opencode/releases/download/v1.14.28/opencode-darwin-arm64.zip"
 
 [[tools.workmux]]
-version = "0.1.188"
+version = "0.1.189"
 backend = "github:raine/workmux"
 
 [tools.workmux."platforms.macos-arm64"]
-checksum = "sha256:034bf4bacac5910ff58921f0d46a7d637c7ecf6fc29c6b9ce313d58b943f3c71"
-url = "https://github.com/raine/workmux/releases/download/v0.1.188/workmux-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/raine/workmux/releases/assets/406093432"
+checksum = "sha256:d5191ea88d93c89d580c6a34d9d95e82ac992fd42837286eb8b42f0c26c5066b"
+url = "https://github.com/raine/workmux/releases/download/v0.1.189/workmux-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/raine/workmux/releases/assets/406759356"
