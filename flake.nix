@@ -19,9 +19,14 @@
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    zsh-patina = {
+      url = "github:michel-kraemer/zsh-patina";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
+    };
   };
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, nix-darwin, sops-nix, home-manager }:
+  outputs = { self, nixpkgs, nixpkgs-unstable, nix-darwin, sops-nix, home-manager, zsh-patina }:
     let
       platforms = [ "x86_64-darwin" "aarch64-darwin" ];
 
@@ -35,6 +40,8 @@
             "libxls-1.6.2"
           ];
         };
+
+        zsh-patina = zsh-patina.packages.${prev.stdenv.hostPlatform.system}.default;
       };
       # makes "pkgs.unstable" available in configuration.nix
       overlayModule = ({ config, pkgs, ... }: { nixpkgs.overlays = [ overlay ]; });

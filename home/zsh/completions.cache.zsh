@@ -30,3 +30,5 @@ _cache_completion workmux workmux completions zsh
 
 # see https://github.com/zellij-org/zellij/issues/2316
 _cache_completion zellij zsh -c "zellij setup --generate-completion zsh | sed '/_zellij \"\$@\"/d'"
+
+_cache_completion zsh-patina zsh-patina completion

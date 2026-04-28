@@ -37,6 +37,8 @@
 
           autoload -Uz ${zsh-defer}/share/zsh-defer/zsh-defer
           ${lib.concatStringsSep "\n" (map (script: "zsh-defer source ${script}") zshPluginScripts)}
+
+          # zsh-defer -c 'eval "$(zsh-patina activate)"'
         '';
 
         general = lib.mkOrder 1000 ''
@@ -60,6 +62,9 @@
 
 #  xdg.configFile."zsh".source = ./.;
   xdg.configFile."zsh".source = config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/home/zsh";
+
+  xdg.configFile."zsh-patina/config.toml".source =
+    config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/home/zsh/zsh-patina.toml";
 
   # suppress both "Last login" and MOTD messages in new shells
   home.file.".hushlogin".text = "";

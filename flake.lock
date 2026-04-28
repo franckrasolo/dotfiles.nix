@@ -80,7 +80,8 @@
         "nix-darwin": "nix-darwin",
         "nixpkgs": "nixpkgs",
         "nixpkgs-unstable": "nixpkgs-unstable",
-        "sops-nix": "sops-nix"
+        "sops-nix": "sops-nix",
+        "zsh-patina": "zsh-patina"
       }
     },
     "sops-nix": {
@@ -100,6 +101,26 @@
       "original": {
         "owner": "Mic92",
         "repo": "sops-nix",
+        "type": "github"
+      }
+    },
+    "zsh-patina": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs-unstable"
+        ]
+      },
+      "locked": {
+        "lastModified": 1777212871,
+        "narHash": "sha256-zUYa1+fbR4H54mbGu/yXOHlJrtgXuEj1mZWREHRMfHM=",
+        "owner": "michel-kraemer",
+        "repo": "zsh-patina",
+        "rev": "9f309a7f78f4ff53dd9e6fe8c6dff85f881628fa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "michel-kraemer",
+        "repo": "zsh-patina",
         "type": "github"
       }
     }

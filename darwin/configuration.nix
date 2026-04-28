@@ -27,6 +27,7 @@
       ghostty-bin
       net-news-wire
       sketchybar
+      pkgs.zsh-patina
     ];
   };
 
