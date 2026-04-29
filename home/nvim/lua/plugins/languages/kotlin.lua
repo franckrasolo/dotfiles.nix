@@ -29,7 +29,7 @@ return {
   -- snippets
   {
     -- "franckrasolo/luasnip4k.nvim",
-    dir = "~/dev/Kotlin/luasnip4k",
+    dir = "~/dev/Kotlin/luasnip4k.nvim",
     name = "luasnip4k.nvim",
     dev = true,
   },
