@@ -9,13 +9,13 @@ checksum = "sha256:306bc712ce8211bda067da1459d6c7e65ac374cb42372062a913f36d42203
 url = "https://github.com/runkids/skillshare/releases/download/v0.19.5/skillshare_0.19.5_darwin_arm64.tar.gz"
 
 [[tools.aube]]
-version = "1.3.0"
+version = "1.4.0"
 backend = "github:endevco/aube"
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:303696c15502a351e6acbecb24a896b4e69f54bc0041834c974417d227d9481f"
-url = "https://github.com/endevco/aube/releases/download/v1.3.0/aube-v1.3.0-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/endevco/aube/releases/assets/406852645"
+checksum = "sha256:21a84f7e3f3ab2415a51728d5b11394f15b07014b121a65e41e1888cf9ed6534"
+url = "https://github.com/endevco/aube/releases/download/v1.4.0/aube-v1.4.0-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/endevco/aube/releases/assets/407768475"
 provenance = "github-attestations"
 
 [[tools.fnox]]
@@ -99,12 +99,12 @@ version = "1.5.2"
 backend = "npm:skills"
 
 [[tools.opencode]]
-version = "1.14.28"
+version = "1.14.29"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:a0a97741cd6b27fb5558942b2d56460c85b76d3a03ad39690a3f928545c31cc3"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.14.28/opencode-darwin-arm64.zip"
+checksum = "sha256:39c483fe12cffe07bfc050d59df534ca1b5d29d9232da237586f1b6a2ef1c7e1"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.14.29/opencode-darwin-arm64.zip"
 
 [[tools.workmux]]
 version = "0.1.189"
