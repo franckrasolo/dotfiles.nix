@@ -9,13 +9,13 @@ checksum = "sha256:306bc712ce8211bda067da1459d6c7e65ac374cb42372062a913f36d42203
 url = "https://github.com/runkids/skillshare/releases/download/v0.19.5/skillshare_0.19.5_darwin_arm64.tar.gz"
 
 [[tools.aube]]
-version = "1.4.0"
+version = "1.5.1"
 backend = "github:endevco/aube"
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:21a84f7e3f3ab2415a51728d5b11394f15b07014b121a65e41e1888cf9ed6534"
-url = "https://github.com/endevco/aube/releases/download/v1.4.0/aube-v1.4.0-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/endevco/aube/releases/assets/407768475"
+checksum = "sha256:5c85530c7194a8d3abbd7fdcbc8e6aff177a1eac6b609e9d8cd68fc24576b677"
+url = "https://github.com/endevco/aube/releases/download/v1.5.1/aube-v1.5.1-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/endevco/aube/releases/assets/408582611"
 provenance = "github-attestations"
 
 [[tools.fnox]]
@@ -28,13 +28,13 @@ url = "https://github.com/jdx/fnox/releases/download/v1.23.0/fnox-aarch64-apple-
 url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/406084771"
 
 [[tools."github:Dicklesworthstone/beads_rust"]]
-version = "0.1.45"
+version = "0.2.5"
 backend = "github:Dicklesworthstone/beads_rust"
 
 [tools."github:Dicklesworthstone/beads_rust"."platforms.macos-arm64"]
-checksum = "sha256:f4c61e89dddee19048543ee18729d360e3688f8d712c2f80608709124d67b255"
-url = "https://github.com/Dicklesworthstone/beads_rust/releases/download/v0.1.45/br-0.1.45-darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/Dicklesworthstone/beads_rust/releases/assets/401061102"
+checksum = "sha256:d857140654ca3990181b1eb57362af1a349da5893948fb470a8573ac5ea8bf29"
+url = "https://github.com/Dicklesworthstone/beads_rust/releases/download/v0.2.5/br-0.2.5-darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/Dicklesworthstone/beads_rust/releases/assets/408626944"
 
 [[tools."github:Dicklesworthstone/beads_viewer"]]
 version = "0.16.0"
@@ -99,18 +99,18 @@ version = "1.5.2"
 backend = "npm:skills"
 
 [[tools.opencode]]
-version = "1.14.29"
+version = "1.14.30"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:39c483fe12cffe07bfc050d59df534ca1b5d29d9232da237586f1b6a2ef1c7e1"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.14.29/opencode-darwin-arm64.zip"
+checksum = "sha256:0369b45f100be4f025c688360db1b28ff8bebfc81d6cb488ce271c4e42dd16cb"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.14.30/opencode-darwin-arm64.zip"
 
 [[tools.workmux]]
-version = "0.1.189"
+version = "0.1.190"
 backend = "github:raine/workmux"
 
 [tools.workmux."platforms.macos-arm64"]
-checksum = "sha256:d5191ea88d93c89d580c6a34d9d95e82ac992fd42837286eb8b42f0c26c5066b"
-url = "https://github.com/raine/workmux/releases/download/v0.1.189/workmux-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/raine/workmux/releases/assets/406759356"
+checksum = "sha256:0c3807c0ceb286ff6454e592e966f75a838dcaeeb952a06a3ea80f23add4ae6f"
+url = "https://github.com/raine/workmux/releases/download/v0.1.190/workmux-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/raine/workmux/releases/assets/408482933"
