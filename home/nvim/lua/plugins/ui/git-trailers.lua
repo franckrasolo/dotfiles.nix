@@ -27,6 +27,14 @@ local git_trailers = {
     keybinding = "<c-d>",
     log_format = "%aN <%aE>%n%(trailers:key=Co-developed-by,valueonly)",
   },
+  context_from = {
+    desc = "used for attributing sources of contexts used by coding agents",
+    file = "contexts.txt",
+    type = "Context Source(s)",
+    key = "Context-from",
+    keybinding = "<c-/>",
+    log_format = "%(trailers:key=Context-from,valueonly)",
+  },
   mentored_by = {
     desc = "used for crediting someone who helped develop a change as part of a mentorship program",
     file = "mentors.txt",
@@ -66,6 +74,14 @@ local git_trailers = {
     key = "Suggested-by",
     keybinding = "<c-g>",
     log_format = "%(trailers:key=Suggested-by,valueonly)",
+  },
+  tooling = {
+    desc = "used for attributing toolings used by coding agents",
+    file = "toolings.txt",
+    type = "Tooling(s)",
+    key = "Tooling",
+    keybinding = "<c-t>",
+    log_format = "%(trailers:key=Tooling,valueonly)",
   },
 }
 
@@ -186,9 +202,11 @@ return {
   create_git_commit_trailer_autocmd_for(git_trailers.assisted_by),
   create_git_commit_trailer_autocmd_for(git_trailers.co_authored_by),
   create_git_commit_trailer_autocmd_for(git_trailers.co_developed_by),
+  create_git_commit_trailer_autocmd_for(git_trailers.context_from),
   create_git_commit_trailer_autocmd_for(git_trailers.mentored_by),
   create_git_commit_trailer_autocmd_for(git_trailers.method),
   create_git_commit_trailer_autocmd_for(git_trailers.reported_by),
   create_git_commit_trailer_autocmd_for(git_trailers.signed_off_by),
   create_git_commit_trailer_autocmd_for(git_trailers.suggested_by),
+  create_git_commit_trailer_autocmd_for(git_trailers.tooling),
 }
