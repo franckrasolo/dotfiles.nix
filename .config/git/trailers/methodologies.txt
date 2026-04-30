@@ -1,0 +1,2 @@
+OpenSpec <https://openspec.dev>
+Superpowers <https://github.com/obra/superpowers>

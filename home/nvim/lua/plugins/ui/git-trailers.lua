@@ -43,13 +43,13 @@ local git_trailers = {
     keybinding = "<c-.>",
     log_format = "%aN <%aE>%n%(trailers:key=Mentored-by,valueonly)",
   },
-  method = {
-    desc = "used for attributing software development methods used by humans or coding agents",
-    file = "methods.txt",
-    type = "Method(s)",
-    key = "Method",
+  methodology = {
+    desc = "used for attributing software development methodologies used by humans or coding agents",
+    file = "methodologies.txt",
+    type = "Methodologies",
+    key = "Methodology",
     keybinding = "<c-m>",
-    log_format = "%(trailers:key=Method,valueonly)",
+    log_format = "%(trailers:key=Methodology,valueonly)",
   },
   reported_by = {
     desc = "used for crediting someone who reported an issue or idea associated with a change",
@@ -204,7 +204,7 @@ return {
   create_git_commit_trailer_autocmd_for(git_trailers.co_developed_by),
   create_git_commit_trailer_autocmd_for(git_trailers.context_from),
   create_git_commit_trailer_autocmd_for(git_trailers.mentored_by),
-  create_git_commit_trailer_autocmd_for(git_trailers.method),
+  create_git_commit_trailer_autocmd_for(git_trailers.methodology),
   create_git_commit_trailer_autocmd_for(git_trailers.reported_by),
   create_git_commit_trailer_autocmd_for(git_trailers.signed_off_by),
   create_git_commit_trailer_autocmd_for(git_trailers.suggested_by),
