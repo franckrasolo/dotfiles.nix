@@ -1,3 +1,5 @@
+min_version = { hard = "2026.4.28" }
+
 [settings]
 env_shell_expand = true
 experimental = true
