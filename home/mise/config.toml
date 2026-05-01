@@ -18,8 +18,6 @@ tools = "mise ls --all-sources --outdated"
 "aqua:runkids/skillshare" = "latest"
 aube = "latest"
 fnox = "latest"
-"github:Dicklesworthstone/beads_rust" = "latest"
-"github:Dicklesworthstone/beads_viewer" = "latest"
 "github:nearai/ironclaw" = "latest"
 "github:remotemobprogramming/mob" = "latest"
 "github:vladkens/macmon" = "latest"
@@ -29,6 +27,10 @@ fnox = "latest"
 "npm:skills" = "latest"
 opencode = "latest"
 workmux = "latest"
+
+[tools."aqua:gastownhall/beads"]
+version = "latest"
+postinstall = "ln -sf $(mise which bd) $XDG_BIN_HOME/bd"
 
 [env]
 FNOX_AGE_KEY_FILE = "~/dev/dotfiles.nix/home/fnox/age.txt"
