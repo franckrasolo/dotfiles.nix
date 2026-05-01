@@ -63,13 +63,13 @@ url = "https://github.com/vladkens/macmon/releases/download/v0.7.1/macmon-v0.7.1
 url_api = "https://api.github.com/repos/vladkens/macmon/releases/assets/397330708"
 
 [[tools."github:zeroclaw-labs/zeroclaw"]]
-version = "0.7.3"
+version = "0.7.4"
 backend = "github:zeroclaw-labs/zeroclaw"
 
 [tools."github:zeroclaw-labs/zeroclaw"."platforms.macos-arm64"]
-checksum = "sha256:4a84c909ae34796a7c4039fd6ad4f4a35371e57fa21bd7e1f8439c17d64e6405"
-url = "https://github.com/zeroclaw-labs/zeroclaw/releases/download/v0.7.3/zeroclaw-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/zeroclaw-labs/zeroclaw/releases/assets/399740965"
+checksum = "sha256:fb54210878c0b0d61c64b0d83674f90715ec0a7bac19c393b37f855044ac00fd"
+url = "https://github.com/zeroclaw-labs/zeroclaw/releases/download/v0.7.4/zeroclaw-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/zeroclaw-labs/zeroclaw/releases/assets/409568038"
 
 [[tools."github:zjrosen/perles"]]
 version = "0.8.4"
@@ -85,18 +85,18 @@ version = "0.6.0"
 backend = "nix:pkl-lsp"
 
 [[tools.opencode]]
-version = "1.14.30"
+version = "1.14.31"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:0369b45f100be4f025c688360db1b28ff8bebfc81d6cb488ce271c4e42dd16cb"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.14.30/opencode-darwin-arm64.zip"
+checksum = "sha256:f3a2386a3ccdb1e8733af766600a0e2c35a001adaaa0d31429ff81c0dcd32180"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.14.31/opencode-darwin-arm64.zip"
 
 [[tools.workmux]]
-version = "0.1.190"
+version = "0.1.196"
 backend = "github:raine/workmux"
 
 [tools.workmux."platforms.macos-arm64"]
-checksum = "sha256:0c3807c0ceb286ff6454e592e966f75a838dcaeeb952a06a3ea80f23add4ae6f"
-url = "https://github.com/raine/workmux/releases/download/v0.1.190/workmux-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/raine/workmux/releases/assets/408482933"
+checksum = "sha256:1548ef71ef09fa13966954e4dda37049b2d332c444e2a551b2787bcc184004bd"
+url = "https://github.com/raine/workmux/releases/download/v0.1.196/workmux-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/raine/workmux/releases/assets/410090138"
