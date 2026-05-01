@@ -84,10 +84,6 @@ url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/398340493
 version = "0.6.0"
 backend = "nix:pkl-lsp"
 
-[[tools."npm:skills"]]
-version = "1.5.2"
-backend = "npm:skills"
-
 [[tools.opencode]]
 version = "1.14.30"
 backend = "aqua:anomalyco/opencode"

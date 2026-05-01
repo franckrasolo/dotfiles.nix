@@ -24,7 +24,6 @@ fnox = "latest"
 "github:zeroclaw-labs/zeroclaw" = "latest"
 "github:zjrosen/perles" = "latest"
 "nix:pkl-lsp" = "latest"
-"npm:skills" = "latest"
 opencode = "latest"
 workmux = "latest"
 
