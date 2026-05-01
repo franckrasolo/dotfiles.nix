@@ -14,6 +14,7 @@
     };
 
     taps = [
+      "beadbox/cask"
       "martido/homebrew-graph"
       "nikitabobko/tap"
     ];
@@ -41,6 +42,7 @@
         name = "audio-hijack";
         args = { require_sha = false; }; # missing sha256 checksum
       }
+      "beadbox"
       {
         name = "beeper";
         args = { require_sha = false; }; # missing sha256 checksum
