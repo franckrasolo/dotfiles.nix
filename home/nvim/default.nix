@@ -19,6 +19,8 @@ with pkgs.unstable; {
       just-lsp
       rust-analyzer
       statix
+      terraform
+      tflint
       tree-sitter-grammars.tree-sitter-ghostty
       tree-sitter-grammars.tree-sitter-pkl
       yaml-language-server
