@@ -124,6 +124,7 @@
         name = "spotify";
         args = { require_sha = false; }; # missing sha256 checksum
       }
+      "tailscale-app"
       "teamviewer"
       "tuple"
       "vlc"
