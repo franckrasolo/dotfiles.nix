@@ -30,6 +30,7 @@ palette = 15=#FFFFFF
 selection-background = #34BF91
 selection-foreground = #DFFFE6
 
+shell-integration-features = no-cursor,no-sudo,title,no-ssh-env,no-ssh-terminfo,path
 split-divider-color = #253141
 window-colorspace = display-p3
 
