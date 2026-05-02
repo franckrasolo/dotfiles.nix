@@ -17,23 +17,24 @@ checksum = "sha256:306bc712ce8211bda067da1459d6c7e65ac374cb42372062a913f36d42203
 url = "https://github.com/runkids/skillshare/releases/download/v0.19.5/skillshare_0.19.5_darwin_arm64.tar.gz"
 
 [[tools.aube]]
-version = "1.5.1"
+version = "1.6.2"
 backend = "github:endevco/aube"
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:5c85530c7194a8d3abbd7fdcbc8e6aff177a1eac6b609e9d8cd68fc24576b677"
-url = "https://github.com/endevco/aube/releases/download/v1.5.1/aube-v1.5.1-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/endevco/aube/releases/assets/408582611"
+checksum = "sha256:4ce92482500f77f0779f288328cb7411f7ae2441b8618eae36a2ab5ea7591a32"
+url = "https://github.com/endevco/aube/releases/download/v1.6.2/aube-v1.6.2-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/endevco/aube/releases/assets/410166750"
 provenance = "github-attestations"
 
 [[tools.fnox]]
-version = "1.23.0"
+version = "1.23.1"
 backend = "github:jdx/fnox"
 
 [tools.fnox."platforms.macos-arm64"]
-checksum = "sha256:98cc2767dac9be1eb61e659ca888e951d4bc9862980c3ddc9838ac049f26ff1f"
-url = "https://github.com/jdx/fnox/releases/download/v1.23.0/fnox-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/406084771"
+checksum = "sha256:f92d60ee4bb669b97a500f000fe053f92f7cbf0817ed4678e5b0f506d1357dd6"
+url = "https://github.com/jdx/fnox/releases/download/v1.23.1/fnox-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/410690610"
+provenance = "github-attestations"
 
 [[tools."github:nearai/ironclaw"]]
 version = "0.21.0"
@@ -54,13 +55,13 @@ url = "https://github.com/remotemobprogramming/mob/releases/download/5.4.2/mob_5
 url_api = "https://api.github.com/repos/remotemobprogramming/mob/releases/assets/346269527"
 
 [[tools."github:vladkens/macmon"]]
-version = "0.7.1"
+version = "0.7.2"
 backend = "github:vladkens/macmon"
 
 [tools."github:vladkens/macmon"."platforms.macos-arm64"]
-checksum = "sha256:58742991eab3ae8efcefafeef01ae333a111ca2f02513f1769cb6596b2b0bfaf"
-url = "https://github.com/vladkens/macmon/releases/download/v0.7.1/macmon-v0.7.1.tar.gz"
-url_api = "https://api.github.com/repos/vladkens/macmon/releases/assets/397330708"
+checksum = "sha256:c79fdc7ab02b456b897dcc3ea041678420d7a1d5bd669aaac36fda3885572ad6"
+url = "https://github.com/vladkens/macmon/releases/download/v0.7.2/macmon-v0.7.2.tar.gz"
+url_api = "https://api.github.com/repos/vladkens/macmon/releases/assets/410521089"
 
 [[tools."github:zeroclaw-labs/zeroclaw"]]
 version = "0.7.4"
@@ -85,18 +86,18 @@ version = "0.6.0"
 backend = "nix:pkl-lsp"
 
 [[tools.opencode]]
-version = "1.14.31"
+version = "1.14.33"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:f3a2386a3ccdb1e8733af766600a0e2c35a001adaaa0d31429ff81c0dcd32180"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.14.31/opencode-darwin-arm64.zip"
+checksum = "sha256:ae9142115ca1998941ce41ee379e502c13a7b4861c80fd5c1a70477a5f85dba3"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.14.33/opencode-darwin-arm64.zip"
 
 [[tools.workmux]]
-version = "0.1.196"
+version = "0.1.198"
 backend = "github:raine/workmux"
 
 [tools.workmux."platforms.macos-arm64"]
-checksum = "sha256:1548ef71ef09fa13966954e4dda37049b2d332c444e2a551b2787bcc184004bd"
-url = "https://github.com/raine/workmux/releases/download/v0.1.196/workmux-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/raine/workmux/releases/assets/410090138"
+checksum = "sha256:39e7938d2e8aecefc0a7dd1845559d58d241f923970a176859a8a175caa2fd86"
+url = "https://github.com/raine/workmux/releases/download/v0.1.198/workmux-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/raine/workmux/releases/assets/410439144"
