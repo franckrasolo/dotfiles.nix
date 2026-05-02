@@ -48,7 +48,7 @@ local git_trailers = {
     file = "methodologies.txt",
     type = "Methodologies",
     key = "Methodology",
-    keybinding = "<c-m>",
+    keybinding = "<c-l>",
     log_format = "%(trailers:key=Methodology,valueonly)",
   },
   reported_by = {
