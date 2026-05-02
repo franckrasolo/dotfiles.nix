@@ -5,10 +5,33 @@ cursor-color = #FFE3AF
 cursor-style = block
 cursor-style-blink = true
 
+# colour palette adapted from WezTerm's built-in UltraDark colour scheme
+
+# ANSI colours (0-7)
+palette = 0=#000000
+palette = 1=#F07178
+palette = 2=#C3E88D
+palette = 3=#FFCB6B
+palette = 4=#82AAFF
+palette = 5=#C792EA
+palette = 6=#89DDFF
+palette = 7=#CCCCCC
+
+# bright colours (8-15)
+palette = 8=#333333
+palette = 9=#F6A9AE
+palette = 10=#DBF1BA
+palette = 11=#FFDFA6
+palette = 12=#B4CCFF
+palette = 13=#DDBDF2
+palette = 14=#B8EAFF
+palette = 15=#FFFFFF
+
 selection-background = #34BF91
 selection-foreground = #DFFFE6
 
 split-divider-color = #253141
+window-colorspace = display-p3
 
 macos-titlebar-style = transparent
 macos-non-native-fullscreen = false
