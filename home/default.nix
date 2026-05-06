@@ -18,6 +18,7 @@
     ./presenterm
     ./ripgrep
     ./silicon
+    ./tmux
     ./wezterm
     ./workmux
     ./yazi
