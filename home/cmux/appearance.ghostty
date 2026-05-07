@@ -37,8 +37,9 @@ window-colorspace = display-p3
 macos-titlebar-style = transparent
 macos-non-native-fullscreen = false
 
-window-padding-x = 0
-window-padding-y = 0
+window-padding-x = 1
+window-padding-y = 1
+window-padding-balance = true
 
 # source: https://github.com/KroneCorylus/ghostty-shader-playground
 custom-shader = ./shaders/cursor_blaze.glsl
