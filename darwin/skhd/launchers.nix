@@ -1,7 +1,6 @@
 { user, ... }:
 
 ''
-lcmd + lshift - y : open -n -a /Applications/Alacritty.app --args --config-file ~/.xdg/config/alacritty/alacritty.toml
 lcmd + lshift - w : open -n -a /opt/homebrew/bin/wezterm
 lcmd + lshift - 1 : open -a /Applications/1Password.app
 lcmd + lshift - a : open -a /Applications/Alfred\ 5.app

@@ -32,7 +32,6 @@
       }
       "aerospace"
       "alfred"
-      "alacritty"
       {
         name = "amadeus-pro";
         args = { require_sha = false; }; # missing sha256 checksum
