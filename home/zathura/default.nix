@@ -2,7 +2,7 @@
 { config, pkgs, user, ... }:
 
 {
-  home.packages = with pkgs.unstable; [
+  home.packages = with pkgs; [
     zathura
   ];
 
