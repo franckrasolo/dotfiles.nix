@@ -37,10 +37,10 @@
     stateHome  = "${user.homeDirectory}/.xdg/local/state";
 
     configFile = with config.lib.file; {
-      "1Password".source   = ./1Password;
-      "duti".source        = ./duti;
-      "fastfetch".source   = ./fastfetch;
-      "git".source         = mkOutOfStoreSymlink "${user.dotfiles}/home/git";
+      "1Password".source = ./1Password;
+      "duti".source      = ./duti;
+      "fastfetch".source = ./fastfetch;
+      "git".source       = mkOutOfStoreSymlink "${user.dotfiles}/home/git";
     };
   };
 
