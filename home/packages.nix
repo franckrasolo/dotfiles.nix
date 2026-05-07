@@ -89,7 +89,6 @@ let
 
   pdfTools = [
     poppler
-    zathura
   ];
 
   pythonTools = [

@@ -22,6 +22,7 @@
     ./wezterm
     ./workmux
     ./yazi
+    ./zathura
     ./zellij
     ./zoxide
     ./zsh
@@ -40,7 +41,6 @@
       "duti".source        = ./duti;
       "fastfetch".source   = ./fastfetch;
       "git".source         = mkOutOfStoreSymlink "${user.dotfiles}/home/git";
-      "zathura".source     = mkOutOfStoreSymlink "${user.dotfiles}/home/zathura";
     };
   };
 
