@@ -147,8 +147,14 @@ with pkgs.unstable;
       set -g status-left "#{E:@catppuccin_status_session}"
       set -g status-right "#{E:@catppuccin_status_date_time}"
 
+      set -g display-panes-active-colour "#f9e2af"
+      set -g display-panes-colour "#6c7086"
+      set -g message-style fg="#{E:@thm_green}",bg=default,bold,italics
       set -g pane-active-border-style 'fg=#{@thm_yellow},bg=default'
       set -g pane-border-style 'fg=#{@thm_surface_0},bg=default'
+
+      setw -g clock-mode-colour "#f9e2af"
+      setw -g clock-mode-style "24-with-seconds"
 
       bind-key r source-file ${tmux_config_dir}/tmux.conf \; display-message "> tmux config reloaded!"
     '';
