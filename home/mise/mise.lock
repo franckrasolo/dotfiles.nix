@@ -9,12 +9,12 @@ checksum = "sha256:fe6e4465751f46d9f3a670c3cf656714a171e44c8bc318fe19054f513b830
 url = "https://github.com/gastownhall/beads/releases/download/v1.0.3/beads_1.0.3_darwin_arm64.tar.gz"
 
 [[tools."aqua:runkids/skillshare"]]
-version = "0.19.7"
+version = "0.19.8"
 backend = "aqua:runkids/skillshare"
 
 [tools."aqua:runkids/skillshare"."platforms.macos-arm64"]
-checksum = "sha256:4e8974590656972e5f0a2219ed7c3dd61e3cc10d398a497c19a304c573267be2"
-url = "https://github.com/runkids/skillshare/releases/download/v0.19.7/skillshare_0.19.7_darwin_arm64.tar.gz"
+checksum = "sha256:4b2993b3bd1ed2b3fafa1080a60ac33817621cf9bd3f1e72cd3337e3aea7ba73"
+url = "https://github.com/runkids/skillshare/releases/download/v0.19.8/skillshare_0.19.8_darwin_arm64.tar.gz"
 
 [[tools.aube]]
 version = "1.9.1"
@@ -64,40 +64,40 @@ url = "https://github.com/vladkens/macmon/releases/download/v0.7.2/macmon-v0.7.2
 url_api = "https://api.github.com/repos/vladkens/macmon/releases/assets/410521089"
 
 [[tools."github:zeroclaw-labs/zeroclaw"]]
-version = "0.7.4"
+version = "0.7.5"
 backend = "github:zeroclaw-labs/zeroclaw"
 
 [tools."github:zeroclaw-labs/zeroclaw"."platforms.macos-arm64"]
-checksum = "sha256:fb54210878c0b0d61c64b0d83674f90715ec0a7bac19c393b37f855044ac00fd"
-url = "https://github.com/zeroclaw-labs/zeroclaw/releases/download/v0.7.4/zeroclaw-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/zeroclaw-labs/zeroclaw/releases/assets/409568038"
+checksum = "sha256:c5dbf3e7e1869a51c888171746f26ea0e82fb44a593d3ed1aa8456f15b12325d"
+url = "https://github.com/zeroclaw-labs/zeroclaw/releases/download/v0.7.5/zeroclaw-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/zeroclaw-labs/zeroclaw/releases/assets/415000664"
 
 [[tools."github:zjrosen/perles"]]
-version = "0.8.4"
+version = "0.8.5"
 backend = "github:zjrosen/perles"
 
 [tools."github:zjrosen/perles"."platforms.macos-arm64"]
-checksum = "sha256:835a7e259d74c79cf68edbe5c05feb69e4eaa2996ec2997ef984dba32eb0195b"
-url = "https://github.com/zjrosen/perles/releases/download/v0.8.4/perles_0.8.4_darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/398340493"
+checksum = "sha256:fb2163cfd95bd62b738fac6a1e411e62fe69154e70e802a62ced8aaf7a719c15"
+url = "https://github.com/zjrosen/perles/releases/download/v0.8.5/perles_0.8.5_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/414871736"
 
 [[tools."nix:pkl-lsp"]]
 version = "0.6.0"
 backend = "nix:pkl-lsp"
 
 [[tools.opencode]]
-version = "1.14.40"
+version = "1.14.41"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:8f328ec9275ec803d63e9ad5ca78dce31dc94e19690cd05e6afe3983676c3211"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.14.40/opencode-darwin-arm64.zip"
+checksum = "sha256:79560a5a3f1cf96538b37ec78ae3f92326ca536a7bb5a2f6e8c1e7e9a2b6fed2"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.14.41/opencode-darwin-arm64.zip"
 
 [[tools.workmux]]
-version = "0.1.202"
+version = "0.1.203"
 backend = "github:raine/workmux"
 
 [tools.workmux."platforms.macos-arm64"]
-checksum = "sha256:602b69dfc9749e65dc72b7d308c2eed0211a118878376fcdddd5dccd10d6c36a"
-url = "https://github.com/raine/workmux/releases/download/v0.1.202/workmux-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/raine/workmux/releases/assets/412912143"
+checksum = "sha256:e454225a1e969d9216e028fac44fa04ebbf9c03cc556f3ae82829b1150411906"
+url = "https://github.com/raine/workmux/releases/download/v0.1.203/workmux-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/raine/workmux/releases/assets/415528842"
