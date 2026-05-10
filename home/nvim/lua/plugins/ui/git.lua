@@ -5,7 +5,7 @@ return {
     opts = function(_, opts)
       opts.current_line_blame = true
       opts.current_line_blame_formatter =
-        "<abbrev_sha> — <author_time:%a %d/%m/%Y %H:%M:%S> — <author>: <summary>  "
+        "<abbrev_sha> • <author_time:%a %d/%m/%Y %H:%M:%S %Z> • <author>: <summary>  "
       opts.current_line_blame_opts = {
         delay = 0,
         ignore_whitespace = true,
