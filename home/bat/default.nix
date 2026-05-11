@@ -16,8 +16,8 @@
         src = pkgs.fetchFromGitHub {
           owner = "nk9";
           repo = "just_sublime";
-          rev = "08bbc62e9e77c82fb0fa6cabc0630cb5cc4bcd0e";
-          hash = "sha256-wSZe0uklnH3SooFR8RqAeGj3WL3W2cqNeSH/nQS3/4s=";
+          rev = "2dcc60286d1af6a4c6c2c03d50bc03230dc56ce3";
+          hash = "sha256-XlxItYVL9I612DhfCGHiUdv6U6Nv9LOlEbJVf1zTwPg=";
         };
         file = "Syntax/Just.sublime-syntax";
       };
@@ -27,8 +27,8 @@
         src = pkgs.fetchFromGitHub {
           owner = "catppuccin";
           repo = "bat";
-          rev = "d714cc1d358ea51bfc02550dabab693f70cccea0";
-          hash = "sha256-Q5B4NDrfCIK3UAMs94vdXnR42k4AXCqZz6sRn8bzmf4=";
+          rev = "6810349b28055dce54076712fc05fc68da4b8ec0";
+          hash = "sha256-lJapSgRVENTrbmpVyn+UQabC9fpV1G1e+CdlJ090uvg=";
         };
         file = "themes/Catppuccin Mocha.tmTheme";
       };
