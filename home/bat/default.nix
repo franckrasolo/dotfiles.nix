@@ -7,6 +7,7 @@
     config = {
       map-syntax = [
         "*{j,J}ustfile*:Just"
+        "*tmux*.conf:Tmux conf"
       ];
       pager = "less -FR";
       theme = "Catppuccin Mocha";
@@ -20,6 +21,15 @@
           hash = "sha256-XlxItYVL9I612DhfCGHiUdv6U6Nv9LOlEbJVf1zTwPg=";
         };
         file = "Syntax/Just.sublime-syntax";
+      };
+      Tmux = {
+        src = pkgs.fetchFromGitHub {
+          owner = "Edditoria";
+          repo = "tmux-sublime";
+          rev = "273258e1f80ea1e9f1bbd3d699afbd5196a0caf1";
+          hash = "sha256-fG4QgbyBB8mKCbeRq4RuJT9y+I+mg8JZtmJPpETuauU=";
+        };
+        file = "Tmux.sublime-syntax";
       };
     };
     themes = {
