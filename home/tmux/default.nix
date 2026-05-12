@@ -125,7 +125,6 @@ with pkgs.unstable;
           set -g @fzf-url-history-limit '500'
         '';
       }
-      tmux-thumbs
       yank
     ];
 
