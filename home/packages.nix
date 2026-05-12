@@ -55,6 +55,7 @@ let
     nushell
     pueue
 
+    snitch
     socat
     somo
     termshark
