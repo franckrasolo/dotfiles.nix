@@ -159,6 +159,10 @@ with pkgs.unstable;
     '';
   };
 
+  home.packages = [
+    tmuxinator
+  ];
+
   xdg.configFile."tmux/tmux.local.conf".source =
     config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/home/tmux/tmux.local.conf";
 
