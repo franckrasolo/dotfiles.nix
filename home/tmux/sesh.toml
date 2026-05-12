@@ -1,0 +1,30 @@
+#:schema https://github.com/joshmedeski/sesh/raw/main/sesh.schema.json
+
+sort_order = ["tmuxinator", "tmux", "config", "zoxide"]
+
+[default_session]
+startup_command = "nvim -c ':Telescope find_files'"
+preview_command = "eza -alh --color=always --icons=always --git --group-directories-first {}"
+
+[[session]]
+name = "tmux config"
+path = "~/dev/dotfiles.nix/home/tmux"
+startup_command = "nvim -O default.nix tmux.local.conf"
+preview_command = "bat --color=always ~/dev/dotfiles.nix/home/tmux/tmux.local.conf ~/dev/dotfiles.nix/home/tmux/default.nix"
+
+[[session]]
+name = "Downloads "
+path = "~/Downloads"
+startup_command = "yazi"
+
+[[wildcard]]
+pattern = "~/dev/**"
+startup_command = "nvim"
+windows = ["opencode", "shell"]
+
+[[window]]
+name = "opencode"
+startup_script = "opencode"
+
+[[window]]
+name = "shell"

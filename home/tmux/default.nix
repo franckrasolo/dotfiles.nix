@@ -159,9 +159,24 @@ with pkgs.unstable;
     '';
   };
 
+  programs.fzf.tmux.enableShellIntegration = true;
+
+  programs.sesh = {
+    enable = true;
+    enableAlias = false;
+    enableTmuxIntegration = false;
+    icons = true;
+    package = sesh;
+    fzfPackage = fzf;
+    zoxidePackage = zoxide;
+  };
+
   home.packages = [
     tmuxinator
   ];
+
+  xdg.configFile."sesh/sesh.toml".source =
+    config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/home/tmux/sesh.toml";
 
   xdg.configFile."tmux/tmux.local.conf".source =
     config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/home/tmux/tmux.local.conf";
