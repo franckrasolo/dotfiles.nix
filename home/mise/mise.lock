@@ -9,21 +9,21 @@ checksum = "sha256:0c53479fea070a1cabe8eb31e3824d74c5643b1deca71a5fe832ebd38e9ef
 url = "https://github.com/gastownhall/beads/releases/download/v1.0.4/beads_1.0.4_darwin_arm64.tar.gz"
 
 [[tools."aqua:runkids/skillshare"]]
-version = "0.19.8"
+version = "0.19.10"
 backend = "aqua:runkids/skillshare"
 
 [tools."aqua:runkids/skillshare"."platforms.macos-arm64"]
-checksum = "sha256:4b2993b3bd1ed2b3fafa1080a60ac33817621cf9bd3f1e72cd3337e3aea7ba73"
-url = "https://github.com/runkids/skillshare/releases/download/v0.19.8/skillshare_0.19.8_darwin_arm64.tar.gz"
+checksum = "sha256:6856b03af24b239e4520f8df137286f9d78396d352fee9765b9bab8f8d6c328a"
+url = "https://github.com/runkids/skillshare/releases/download/v0.19.10/skillshare_0.19.10_darwin_arm64.tar.gz"
 
 [[tools.aube]]
-version = "1.10.4"
+version = "1.11.0"
 backend = "github:endevco/aube"
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:963d276cef7f039a5750bf18d30af7c2457f6d5804fa24bd784458e22a4d1a14"
-url = "https://github.com/endevco/aube/releases/download/v1.10.4/aube-v1.10.4-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/endevco/aube/releases/assets/417151945"
+checksum = "sha256:6daea9de3d0b6b2e2ba401a0c86d68f05269a5e4432e3100f1739641700da901"
+url = "https://github.com/endevco/aube/releases/download/v1.11.0/aube-v1.11.0-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/endevco/aube/releases/assets/417806408"
 provenance = "github-attestations"
 
 [[tools.fnox]]
@@ -44,6 +44,7 @@ backend = "github:nearai/ironclaw"
 checksum = "sha256:8879c75e0866c12664e968303d468b6a439b24c7eb70f85947133c148902d652"
 url = "https://github.com/nearai/ironclaw/releases/download/v0.21.0/ironclaw-aarch64-apple-darwin.tar.gz"
 url_api = "https://api.github.com/repos/nearai/ironclaw/releases/assets/378120148"
+github_attestations = "unavailable"
 
 [[tools."github:remotemobprogramming/mob"]]
 version = "5.4.2"
@@ -53,6 +54,7 @@ backend = "github:remotemobprogramming/mob"
 checksum = "sha256:2ca73fc8e347f80b47a269bdf64e4265f6d6c5be2229bf5604aea551a67ce72f"
 url = "https://github.com/remotemobprogramming/mob/releases/download/5.4.2/mob_5.4.2_darwin_universal.tar.gz"
 url_api = "https://api.github.com/repos/remotemobprogramming/mob/releases/assets/346269527"
+github_attestations = "unavailable"
 
 [[tools."github:vladkens/macmon"]]
 version = "0.7.2"
@@ -62,6 +64,7 @@ backend = "github:vladkens/macmon"
 checksum = "sha256:c79fdc7ab02b456b897dcc3ea041678420d7a1d5bd669aaac36fda3885572ad6"
 url = "https://github.com/vladkens/macmon/releases/download/v0.7.2/macmon-v0.7.2.tar.gz"
 url_api = "https://api.github.com/repos/vladkens/macmon/releases/assets/410521089"
+github_attestations = "unavailable"
 
 [[tools."github:zeroclaw-labs/zeroclaw"]]
 version = "0.7.5"
@@ -71,6 +74,7 @@ backend = "github:zeroclaw-labs/zeroclaw"
 checksum = "sha256:c5dbf3e7e1869a51c888171746f26ea0e82fb44a593d3ed1aa8456f15b12325d"
 url = "https://github.com/zeroclaw-labs/zeroclaw/releases/download/v0.7.5/zeroclaw-aarch64-apple-darwin.tar.gz"
 url_api = "https://api.github.com/repos/zeroclaw-labs/zeroclaw/releases/assets/415000664"
+github_attestations = "unavailable"
 
 [[tools."github:zjrosen/perles"]]
 version = "0.8.5"
@@ -80,6 +84,7 @@ backend = "github:zjrosen/perles"
 checksum = "sha256:fb2163cfd95bd62b738fac6a1e411e62fe69154e70e802a62ced8aaf7a719c15"
 url = "https://github.com/zjrosen/perles/releases/download/v0.8.5/perles_0.8.5_darwin_arm64.tar.gz"
 url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/414871736"
+github_attestations = "unavailable"
 
 [[tools."nix:pkl-lsp"]]
 version = "0.6.0"
@@ -101,3 +106,4 @@ backend = "github:raine/workmux"
 checksum = "sha256:b2c51a91c942305c1eef699f6b0f142069f2a83944067b984021bf230644f8c5"
 url = "https://github.com/raine/workmux/releases/download/v0.1.204/workmux-darwin-arm64.tar.gz"
 url_api = "https://api.github.com/repos/raine/workmux/releases/assets/416175974"
+github_attestations = "unavailable"
