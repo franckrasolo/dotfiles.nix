@@ -54,6 +54,10 @@ return {
         ["<c-q>"] = actions.smart_send_to_qflist + actions.open_qflist,
         ["<cr>"] = single_or_multi_select,
         ["<c-d>"] = actions.delete_buffer,
+        ["<C-b>"] = actions.preview_scrolling_up,
+        ["<C-f>"] = actions.preview_scrolling_down,
+        ["<PageUp>"] = actions.preview_scrolling_up,
+        ["<PageDown>"] = actions.preview_scrolling_down,
 
         ["π"] = require("telescope.actions.layout").toggle_preview, -- π -> <Alt-p>
         ["∏"] = focus_preview, -- ∏ -> <Alt-Shift-p>
