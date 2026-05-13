@@ -53,7 +53,7 @@ return {
         ["<c-l>"] = actions.smart_send_to_loclist + actions.open_loclist,
         ["<c-q>"] = actions.smart_send_to_qflist + actions.open_qflist,
         ["<cr>"] = single_or_multi_select,
-        ["<c-bs>"] = actions.delete_buffer,
+        ["<c-d>"] = actions.delete_buffer,
 
         ["π"] = require("telescope.actions.layout").toggle_preview, -- π -> <Alt-p>
         ["∏"] = focus_preview, -- ∏ -> <Alt-Shift-p>
