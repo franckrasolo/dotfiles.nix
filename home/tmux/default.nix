@@ -156,7 +156,11 @@ with pkgs.unstable;
       setw -g clock-mode-colour "#f9e2af"
       setw -g clock-mode-style "24-with-seconds"
 
-      bind-key r source-file ${tmux_config_dir}/tmux.conf \; display-message "> tmux config reloaded!"
+      set -g popup-style "bg=#110C1E,fg=#{@thm_fg}"
+      set -g popup-border-style "bg=#110C1E,fg=#7D5A9A"
+      set -g popup-border-lines "rounded"
+
+      bind r source-file ${tmux_config_dir}/tmux.conf \; display-message "> tmux config reloaded!"
     '';
   };
 
