@@ -23,6 +23,15 @@
         };
         file = "Syntax/Just.sublime-syntax";
       };
+      KDL1 = {
+        src = pkgs.fetchFromGitHub {
+          owner = "eugenesvk";
+          repo = "sublime-KDL";
+          rev = "06dbd737d9961d141c5c46397a5285c205fb9bf6";
+          hash = "sha256-6RH8xAYDkeYtIJL0AcnUyti2DH5P0v6Jv67mkkxySKY=";
+        };
+        file = "KDL1.sublime-syntax";
+      };
       Tmux = {
         src = pkgs.fetchFromGitHub {
           owner = "Edditoria";
