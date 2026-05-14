@@ -7,6 +7,7 @@
     config = {
       map-syntax = [
         "*{j,J}ustfile*:Just"
+        "*mise*.lock:TOML"
         "*tmux*.conf:Tmux conf"
       ];
       pager = "less -FR";
