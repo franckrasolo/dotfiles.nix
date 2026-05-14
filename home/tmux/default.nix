@@ -18,6 +18,7 @@ let
     ,#{?#{==:#{pane_current_command},yazi},󰇥 #W
     ,#{?#{==:#{pane_current_command},opencode}, #W
     ,#{?#{==:#{pane_current_command},tmux},󰕴 #W
+    ,#{?#{==:#{pane_current_command},tv},󱧻 #W
     ,#{?#{==:#{pane_current_command},workmux},󰵼 #W
     ,#{?#{==:#{pane_current_command},zellij},󰫈 #W
     ,#{?#{==:#{pane_current_command},cdktn},󱁢 #W
@@ -44,7 +45,7 @@ let
     ,#{?#{==:#{pane_current_command},java},󰬷 #W
     ,#{?#{==:#{pane_current_command},kotlin},󱈙 #W
     ${fallback}
-    }}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+    }}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
   '';
   accent_colour = "#{?client_prefix,#{E:@thm_maroon},#{E:@thm_yellow}}";
   tmux_config_dir = "${config.xdg.configHome}/tmux";

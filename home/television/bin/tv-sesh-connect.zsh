@@ -1,0 +1,17 @@
+#!/usr/bin/env zsh
+
+# source: https://github.com/joshmedeski/sesh/issues/368#issuecomment-4306792135
+
+set -euo pipefail
+
+session_name=${1:?session name is required}
+
+export TV_SESH_SESSION_NAME="$session_name"
+
+exec script -q /dev/null zsh -lc '
+if [[ -n ${TMUX:-} ]]; then
+  exec sesh connect --switch "$TV_SESH_SESSION_NAME"
+fi
+
+exec sesh connect "$TV_SESH_SESSION_NAME"
+'

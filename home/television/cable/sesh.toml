@@ -1,0 +1,55 @@
+# Television channel for sesh session management
+# https://github.com/joshmedeski/sesh
+
+[metadata]
+name = "sesh"
+description = "Session manager integrating tmux sessions, zoxide directories, and config paths"
+requirements = ["sesh", "zoxide", "fd"]
+
+[source]
+command = [
+  "sesh list --icons",             # all sessions (default)
+  "sesh list --icons -t",          # tmux sessions only
+  "sesh list --icons -c",          # config directories
+  "sesh list --icons -z",          # zoxide directories
+  "fd -H -d 2 -t d -E .Trash . ~", # find directories
+]
+ansi = true
+frecency = false # handeled by sesh
+no_sort = true   # handled by sesh
+output = "{strip_ansi|split: :1..|join: }"
+
+[preview]
+command = "sesh preview '{strip_ansi|split: :1..|join: }'"
+
+[ui]
+layout = "portrait"
+
+[keybindings]
+shortcut = "ctrl-s"
+enter = "actions:connect"
+ctrl-d = ["actions:kill_session", "reload_source"]
+ctrl-r = "actions:rename_session"
+
+[actions.connect]
+description = "Connect to the selected session"
+# uses script from https://github.com/joshmedeski/sesh/issues/368#issuecomment-4306792135
+# fixed in https://github.com/alexpasmantier/television/releases/tag/0.15.7
+command = "tv-sesh-connect '{strip_ansi|split: :1..|join: }'"
+mode = "execute"
+
+[actions.rename_session]
+description = "Rename the selected tmux session"
+shell = "bash"
+command = """
+  session_name=$(echo '{strip_ansi|split: :1..|join: }')
+  read -e -i $session_name -p "Rename session: " new_session_name
+  tmux rename-session -t $session_name $new_session_name
+  tv sesh
+"""
+mode = "execute"
+
+[actions.kill_session]
+description = "Kill the selected tmux session (hit Ctrl+r to reload)"
+command = "tmux kill-session -t '{strip_ansi|split: :1..|join: }'"
+mode = "fork"

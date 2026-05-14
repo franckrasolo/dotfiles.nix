@@ -1,0 +1,29 @@
+[metadata]
+name = "code-markers"
+description = "Browse TODO, FIXME, and other markers in the codebase"
+requirements = ["rg", "bat"]
+
+[source]
+command = "rg -n --color=always ' (TODO|FIXME|HACK|WORKAROUND|TBD|NOTE|REVIEW|XXX|BUG|DEPRECATED|WARN):? ' --glob '!.obsidian/plugins/'"
+ansi = true
+output = "{strip_ansi|split:\\::..2}"
+
+[preview]
+command = "bat -n --color=always --highlight-line '{strip_ansi|split:\\::1}' '{strip_ansi|split:\\::0}'"
+offset = "{strip_ansi|split:\\::1}"
+
+[ui]
+layout = "portrait"
+
+[ui.preview_panel]
+header = "{strip_ansi|split:\\::..2}"
+size = 65
+
+[keybindings]
+shortcut = "ctrl-m"
+enter = "actions:edit"
+
+[actions.edit]
+description = "Open file in editor at the comment"
+command = "${EDITOR:-nvim} '+{strip_ansi|split:\\::1}' '{strip_ansi|split:\\::0}'"
+mode = "fork"

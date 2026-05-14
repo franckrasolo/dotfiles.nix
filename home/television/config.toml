@@ -1,0 +1,128 @@
+tick_rate = 50
+default_channel = "channels"
+
+shell = "zsh"
+history_size = 200
+global_history = false
+
+[ui]
+ui_scale = 95
+orientation = "landscape"
+theme = "catppuccin"
+
+[ui.input_bar]
+position = "top"
+prompt = ""
+border_type = "rounded"
+
+[ui.status_bar]
+separator_open = ""
+separator_close = ""
+hidden = false
+
+[ui.results_panel]
+border_type = "rounded"
+
+[ui.preview_panel]
+size = 70
+#header = ""
+#footer = ""
+scrollbar = true
+border_type = "rounded"
+hidden = false
+
+[ui.help_panel]
+show_categories = true
+hidden = true
+
+[ui.remote_control]
+show_channel_descriptions = true
+sort_alphabetically = true
+disabled = false
+
+[keybindings]
+# Application control
+esc = "quit"
+ctrl-c = "quit"
+
+# Navigation and selection
+down = "select_next_entry"
+ctrl-n = "select_next_entry"
+ctrl-j = "select_next_entry"
+up = "select_prev_entry"
+ctrl-p = "select_prev_entry"
+ctrl-k = "select_prev_entry"
+
+# History navigation
+ctrl-up = "select_prev_history"
+ctrl-down = "select_next_history"
+
+# Multi-selection
+tab = "toggle_selection_down"
+backtab = "toggle_selection_up"
+enter = "confirm_selection"
+
+# Preview panel control
+ctrl-d = "scroll_preview_half_page_down"
+ctrl-u = "scroll_preview_half_page_up"
+ctrl-f = "cycle_previews"
+
+# Data operations
+ctrl-y = "copy_entry_to_clipboard"
+# ctrl-r = "reload_source"
+ctrl-s = "cycle_sources"
+
+# UI Features
+ctrl-r = "toggle_remote_control"
+ctrl-x = "toggle_action_picker"
+ctrl-o = "toggle_preview"
+ctrl-h = "toggle_help"
+ctrl-t = "toggle_layout"
+
+# Input field actions
+backspace = "delete_prev_char"
+# ctrl-backspace = "delete_line"
+ctrl-w = "delete_prev_word"
+delete = "delete_next_char"
+left = "go_to_prev_char"
+right = "go_to_next_char"
+ctrl-a = "go_to_input_start"
+ctrl-e = "go_to_input_end"
+
+[shell_integration]
+fallback_channel = "files"
+
+[shell_integration.channel_triggers]
+"alias" = ["alias", "unalias"]
+"env" = ["export", "unset"]
+"dirs" = ["cd", "eza", "ls", "rmdir", "yazi", "z"]
+"files" = [
+  "bat",
+  "cat",
+  "less",
+  "more",
+  "ov",
+  "head",
+  "tail",
+  "nano",
+  "nvim",
+  "vi",
+  "vim",
+  "cp",
+  "mv",
+  "rm",
+  "touch",
+  "chmod",
+  "chown",
+  "ln",
+  "tar",
+  "zip",
+  "unzip",
+  "gzip",
+  "gunzip",
+  "xz",
+]
+
+[shell_integration.keybindings]
+"smart_autocomplete" = "ctrl-t"
+"command_history" = "ctrl-r"

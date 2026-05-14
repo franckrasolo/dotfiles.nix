@@ -18,6 +18,7 @@
     ./presenterm
     ./ripgrep
     ./silicon
+    ./television
     ./tmux
     ./wezterm
     ./workmux

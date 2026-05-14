@@ -1,0 +1,31 @@
+[metadata]
+name = "dirs"
+description = "A channel to select from directories"
+requirements = ["eza", "fd"]
+
+[source]
+command = ["fd -t d", "fd -t d --hidden"]
+
+[preview]
+command = "eza -la --color=always '{}'"
+
+[ui]
+layout = "portrait"
+
+[ui.preview_panel]
+size = 30
+
+[keybindings]
+shortcut = "ctrl-d"
+enter = "actions.cd"
+ctrl-p = "actions.goto_parent_dir"
+
+[actions.cd]
+description = "Open a shell in the selected directory"
+command = "cd '{}' && $SHELL"
+mode = "execute"
+
+[actions.goto_parent_dir]
+description = "Re-opens tv in the parent directory"
+command = "tv dirs .."
+mode = "execute"

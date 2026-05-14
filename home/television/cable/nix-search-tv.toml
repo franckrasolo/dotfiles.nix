@@ -1,0 +1,28 @@
+[metadata]
+name = "nix-search-tv"
+description = "Search nix options and packages"
+requirements = ["nix-search-tv"]
+
+[source]
+command = "nix-search-tv print"
+
+[preview]
+command = "nix-search-tv preview '{}'"
+
+[ui]
+layout = "portrait"
+
+[keybindings]
+shortcut = "ctrl-n"
+ctrl-r = "actions:run"
+ctrl-s = "actions:shell"
+
+[actions.run]
+description = "Executes the selected package"
+command = "nix run {replace:s/\\/ /#/g}"
+mode = "fork"
+
+[actions.shell]
+description = "Starts an interactive shell session with the selected package in path"
+command = "nix shell {replace:s/\\/ /#/g}"
+mode = "execute"
