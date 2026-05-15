@@ -114,8 +114,9 @@ with pkgs.unstable;
       {
         plugin = resurrect;
         extraConfig = ''
-          set -g @resurrect-strategy-nvim 'session'
           set -g @resurrect-capture-pane-contents 'on'
+          set -g @resurrect-dir "${config.xdg.stateHome}/tmux/resurrect"
+          set -g @resurrect-strategy-nvim 'session'
         '';
       }
       tmux-fzf
