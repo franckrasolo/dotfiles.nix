@@ -6,6 +6,7 @@ DeepSeek V4 Pro <noreply@deepseek.com>
 GLM 5.1 <noreply@z.ai>
 GPT 5.4 <noreply@openai.com>
 GPT 5.5 <noreply@openai.com>
+Gemini 3 <noreply@google.com>
 Kimi K2.6 <noreply@moonshot.ai>
 MiniMax M2.7 <noreply@minimax.io>
 OpenCode <noreply@opencode.ai>
