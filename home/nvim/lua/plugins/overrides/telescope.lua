@@ -116,19 +116,19 @@ return {
       },
     },
     keys = function()
-      local file_browser = require("telescope").extensions.file_browser
+      local telescope = require("telescope").extensions.file_browser
       return {
         {
           "<leader>f<tab>",
           desc = "Telescope: Browse files (cwd)",
           -- open file_browser with the path of the current buffer
-          function() file_browser.file_browser { path = "%:p:h", select_buffer = true } end,
+          function() telescope.file_browser { path = "%:p:h", select_buffer = true } end,
           { silent = true, noremap = true },
         },
         {
           "<leader>f ",
           desc = "Telescope: Browse files (project dir)",
-          function() file_browser.file_browser { path = vim.uv.cwd() } end,
+          function() telescope.file_browser { path = vim.uv.cwd() } end,
           { silent = true, noremap = true },
         },
       }
