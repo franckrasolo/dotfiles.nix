@@ -38,6 +38,19 @@ return {
         end
       end
 
+      local function selection_strategy(prompt_bufnr)
+        local picker = require("telescope.actions.state").get_current_picker(prompt_bufnr)
+        local picker_name = (picker and picker.prompt_title) or ""
+
+        local pickers_depending_on_select_default = { "Sessions" }
+        -- check if the current picker requires select_default
+        if vim.list_contains(pickers_depending_on_select_default, picker_name) then
+          actions.select_default(prompt_bufnr)
+        else
+          single_or_multi_select(prompt_bufnr)
+        end
+      end
+
       local function focus_preview(prompt_bufnr)
         local picker = require("telescope.actions.state").get_current_picker(prompt_bufnr)
         vim.keymap.set(
@@ -52,7 +65,7 @@ return {
       local keybindings = {
         ["<c-l>"] = actions.smart_send_to_loclist + actions.open_loclist,
         ["<c-q>"] = actions.smart_send_to_qflist + actions.open_qflist,
-        ["<cr>"] = single_or_multi_select,
+        ["<cr>"] = selection_strategy,
         ["<c-d>"] = actions.delete_buffer,
         ["<C-b>"] = actions.preview_scrolling_up,
         ["<C-f>"] = actions.preview_scrolling_down,
