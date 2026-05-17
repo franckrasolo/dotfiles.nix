@@ -1,5 +1,6 @@
 local colours = {
   normal = {
+    accent = "#e9baff",
     background = "#01010F",
   },
 
@@ -57,6 +58,8 @@ return {
         FloatBorder = { bg = colours.floating.background, fg = colours.floating.border },
         NoicePopup = { link = "AccentFloat" },
         NormalFloat = { bg = colours.floating.background, blend = 0 },
+        PersistedTelescopeBranch = { fg = colours.normal.accent, bold = true, italic = true },
+        PersistedTelescopeSelected = { fg = colours.normal.accent },
         Pmenu = { link = "AccentFloat" },
         PmenuSbar = { link = "AccentFloat" },
         PmenuSel = { bg = colours.floating.accent },
