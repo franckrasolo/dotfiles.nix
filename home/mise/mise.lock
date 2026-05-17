@@ -92,12 +92,12 @@ version = "0.6.0"
 backend = "nix:pkl-lsp"
 
 [[tools.opencode]]
-version = "1.15.0"
+version = "1.15.3"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:4f072f8d808167c4e72051cae04ae962c3771538b31ea39e57db9617b4154d2f"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.15.0/opencode-darwin-arm64.zip"
+checksum = "sha256:5087853a26acab7739f676532eaf26f1464345a0ddd96331e490b86debcb4ba2"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.15.3/opencode-darwin-arm64.zip"
 
 [[tools.workmux]]
 version = "0.1.208"
