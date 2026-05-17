@@ -62,6 +62,7 @@ return {
         PmenuSel = { bg = colours.floating.accent },
         PmenuThumb = { link = "PmenuSel" },
         TelescopeNormal = { link = "AccentFloat" },
+        TelescopeSelection = { bg = colours.floating.accent, fg = "none" },
         Visual = { link = "PmenuSel" },
         WhichKey = { link = "AccentFloat" },
         WhichKeyNormal = { link = "AccentFloat" },
