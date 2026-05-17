@@ -69,10 +69,28 @@ return {
       },
       default_integrations = true,
       integrations = {
+        aerial = true,
+        alpha = true,
+        blink_cmp = {
+          style = "bordered",
+        },
         dadbod_ui = true,
         dap = true,
         dap_ui = true,
         diffview = true,
+        flash = true,
+        fzf = true,
+        gitsigns = {
+          enabled = true,
+          transparent = false,
+        },
+        grug_far = true,
+        illuminate = {
+          enabled = true,
+          lsp = true,
+        },
+        lsp_trouble = true,
+        mason = true,
         native_lsp = {
           virtual_text = {
             errors = { "italic" },
@@ -84,12 +102,22 @@ return {
             background = true,
           },
         },
+        neogit = true,
+        neotest = true,
+        noice = true,
         overseer = true,
         rainbow_delimiters = true,
+        snacks = {
+          enabled = true,
+          indent_scope_color = "",
+        },
         telescope = {
           enabled = true,
           style = "classic",
         },
+        treesitter_context = true,
+        ufo = true,
+        which_key = false,
       },
     },
     keys = {
