@@ -1,5 +1,30 @@
 return {
   {
+    "nvim-zh/colorful-winsep.nvim",
+    event = "WinLeave",
+    opts = {
+      border = "rounded",
+      colors = { "#f9e2af" },
+      excluded_ft = { "TelescopePrompt", "mason" },
+      animate = {
+        enabled = false,
+      },
+      indicator_for_2wins = {
+        position = "center",
+        symbols = {
+          start_left = "🮥",
+          end_left = "🮥",
+          start_down = "🮧 ",
+          end_down = "🮧 ",
+          start_up = "🮦",
+          end_up = "🮦",
+          start_right = "🮤",
+          end_right = "🮤",
+        },
+      },
+    },
+  },
+  {
     "sindrets/winshift.nvim",
     opts = {
       highlight_moving_win = true, -- highlight the window being moved
