@@ -1,5 +1,5 @@
 [tools.java]
-version = "prefix:temurin-25"
+version = "temurin-25"
 postinstall = """
 #!/usr/bin/env bash
 
