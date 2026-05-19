@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://github.com/franckrasolo/dotfiles.nix/raw/trunk/home/tmux/tmuxp.schema.json
+
+session_name: ${SESSION_NAME}
+start_directory: ${PWD}
+suppress_history: false
+
+options:
+  automatic-rename: true
+
+windows:
+  - window_name: code
+    layout: main-vertical
+    focus: true
+    options:
+      main-pane-width: 55%
+    panes:
+      - shell_command:
+          - nvim
+        focus: true
+      - opencode
+  - window_name: shell
+    layout: even-horizontal
+    panes:
+      - null

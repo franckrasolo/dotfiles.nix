@@ -1,6 +1,6 @@
 #:schema https://github.com/joshmedeski/sesh/raw/main/sesh.schema.json
 
-sort_order = ["tmuxinator", "tmux", "config", "zoxide"]
+sort_order = ["tmux", "config", "zoxide"]
 
 [default_session]
 startup_command = "nvim -c ':Telescope find_files'"
@@ -19,4 +19,4 @@ startup_command = "yazi"
 
 [[wildcard]]
 pattern = "~/dev/**"
-startup_command = "nvim"
+startup_command = "tmuxp-load {}"
