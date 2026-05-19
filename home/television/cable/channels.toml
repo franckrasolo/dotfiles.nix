@@ -4,7 +4,12 @@ description = "Select a TV channel"
 requirements = ["tv", "bat"]
 
 [source]
-command = ["tv list-channels | grep -vE '^(bash|brew|docker|downloads|files|git|images|opencode|path|zoxide|zsh)'"]
+command = [
+  '''
+    excluded_channels=$(ls $XDG_CONFIG_HOME/television/cable/notready | sed 's/\.toml$//' && echo "bash\ngit")
+    tv list-channels | grep -v $excluded_channels
+  '''
+]
 no_sort = true
 
 [preview]
