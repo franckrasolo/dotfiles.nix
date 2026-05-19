@@ -179,6 +179,7 @@ with pkgs.unstable;
 
   home.packages = [
     tmuxp
+    tmux-xpanes
   ];
 
   home.file.".xdg/local/bin/tmuxp-load".source = ./bin/tmuxp-load.zsh;
