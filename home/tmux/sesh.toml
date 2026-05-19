@@ -20,11 +20,3 @@ startup_command = "yazi"
 [[wildcard]]
 pattern = "~/dev/**"
 startup_command = "nvim"
-windows = ["opencode", "shell"]
-
-[[window]]
-name = "opencode"
-startup_script = "opencode"
-
-[[window]]
-name = "shell"
