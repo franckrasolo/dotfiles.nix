@@ -1,4 +1,4 @@
-{ config, pkgs, user, ... }:
+{ config, pkgs, ... }:
 
 let
   resolve_command = { fallback ? ", #W" } : ''
@@ -182,13 +182,8 @@ with pkgs.unstable;
   ];
 
   home.file.".xdg/local/bin/tmuxp-load".source = ./bin/tmuxp-load.zsh;
-
-  xdg.configFile."sesh/sesh.toml".source =
-    config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/home/tmux/sesh.toml";
-
-  xdg.configFile."tmux/tmux.local.conf".source =
-    config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/home/tmux/tmux.local.conf";
-
+  xdg.configFile."sesh/sesh.toml".source = ./sesh.toml;
+  xdg.configFile."tmux/tmux.local.conf".source = ./tmux.local.conf;
   xdg.configFile."tmuxp/default.yaml".source = ./tmuxp.yaml;
 
   programs.zsh.shellAliases = {
