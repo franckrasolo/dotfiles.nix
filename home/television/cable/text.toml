@@ -23,7 +23,6 @@ header = '{strip_ansi|split:\::..2}'
 size = 25
 
 [keybindings]
-shortcut = "ctrl-t"
 enter = "actions:edit"
 
 [actions.edit]

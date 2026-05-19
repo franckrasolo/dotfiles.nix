@@ -16,7 +16,6 @@ layout = "portrait"
 size = 30
 
 [keybindings]
-shortcut = "ctrl-d"
 enter = "actions.cd"
 ctrl-p = "actions.goto_parent_dir"
 

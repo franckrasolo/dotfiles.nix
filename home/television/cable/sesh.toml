@@ -26,7 +26,6 @@ command = "sesh preview '{strip_ansi|split: :1..|join: }'"
 layout = "portrait"
 
 [keybindings]
-shortcut = "ctrl-s"
 enter = "actions:connect"
 ctrl-d = ["actions:kill_session", "reload_source"]
 ctrl-r = "actions:rename_session"

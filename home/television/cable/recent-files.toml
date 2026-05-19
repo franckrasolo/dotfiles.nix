@@ -19,7 +19,6 @@ layout = "portrait"
 size = 75
 
 [keybindings]
-shortcut = "ctrl-r"
 enter = "actions:edit"
 
 [actions.edit]

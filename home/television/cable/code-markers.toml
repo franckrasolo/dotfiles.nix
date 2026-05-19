@@ -20,7 +20,6 @@ header = "{strip_ansi|split:\\::..2}"
 size = 65
 
 [keybindings]
-shortcut = "ctrl-m"
 enter = "actions:edit"
 
 [actions.edit]

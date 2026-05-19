@@ -13,7 +13,6 @@ command = "nix-search-tv preview '{}'"
 layout = "portrait"
 
 [keybindings]
-shortcut = "ctrl-n"
 ctrl-r = "actions:run"
 ctrl-s = "actions:shell"
 
