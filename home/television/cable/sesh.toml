@@ -8,11 +8,12 @@ requirements = ["sesh", "zoxide", "fd"]
 
 [source]
 command = [
-  "sesh list --icons",             # all sessions (default)
-  "sesh list --icons -t",          # tmux sessions only
-  "sesh list --icons -c",          # config directories
-  "sesh list --icons -z",          # zoxide directories
-  "fd -H -d 2 -t d -E .Trash . ~", # find directories
+   # list tmux sessions, configured sessions, and zoxide entries not bound to a session
+  '''
+    sesh list --icons --tmux &&
+    sesh list --icons --config &&
+    sesh list --icons --zoxide | grep -v "$(sesh list --tmux | sed 's/_/\\./' && echo _)"
+  '''
 ]
 ansi = true
 frecency = false # handeled by sesh
