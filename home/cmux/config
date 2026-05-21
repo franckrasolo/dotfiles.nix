@@ -3,3 +3,5 @@ config-file = key-bindings.ghostty
 config-file = typography.ghostty
 
 copy-on-select = clipboard
+
+quit-after-last-window-closed = true
