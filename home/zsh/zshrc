@@ -37,10 +37,8 @@ source "${ZSH_CONFIG_HOME}/widgets.zsh"
   fi
 }
 
-zsh-defer -c 'eval "$(direnv hook zsh)"'
 zsh-defer -c 'eval "$(mise activate zsh)"'
 zsh-defer -c 'eval "$(fnox activate zsh)"'
-zsh-defer -c 'eval "$(zoxide init --cmd cd zsh)"'
 zsh-defer source "${ZSH_CONFIG_HOME}/completions.cache.zsh"
 
 # OrbStack command-line tools and integration
