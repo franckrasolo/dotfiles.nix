@@ -64,7 +64,7 @@ with pkgs.unstable;
     focusEvents = true;
     historyLimit = 100000;
     keyMode = "vi";
-    mouse = false;
+    mouse = true;
     newSession = false;
     resizeAmount = 15;
     secureSocket = false;
