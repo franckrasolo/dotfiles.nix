@@ -10,12 +10,12 @@ url = "https://github.com/gastownhall/beads/releases/download/v1.0.4/beads_1.0.4
 provenance = "github-attestations"
 
 [[tools."aqua:runkids/skillshare"]]
-version = "0.19.16"
+version = "0.19.19"
 backend = "aqua:runkids/skillshare"
 
 [tools."aqua:runkids/skillshare"."platforms.macos-arm64"]
-checksum = "sha256:bfd61577db8bdbff7f9809fe0918d00fec351d87ff5d8b680aab8ca30570b7a5"
-url = "https://github.com/runkids/skillshare/releases/download/v0.19.16/skillshare_0.19.16_darwin_arm64.tar.gz"
+checksum = "sha256:5cd15b2adc533132410bd65f74aca7229da93fac6ab420cc58343b5ec0a94ff6"
+url = "https://github.com/runkids/skillshare/releases/download/v0.19.19/skillshare_0.19.19_darwin_arm64.tar.gz"
 
 [[tools.aube]]
 version = "1.15.0"
@@ -74,31 +74,31 @@ url = "https://github.com/zeroclaw-labs/zeroclaw/releases/download/v0.7.5/zerocl
 url_api = "https://api.github.com/repos/zeroclaw-labs/zeroclaw/releases/assets/415000664"
 
 [[tools."github:zjrosen/perles"]]
-version = "0.8.5"
+version = "0.8.6"
 backend = "github:zjrosen/perles"
 
 [tools."github:zjrosen/perles"."platforms.macos-arm64"]
-checksum = "sha256:fb2163cfd95bd62b738fac6a1e411e62fe69154e70e802a62ced8aaf7a719c15"
-url = "https://github.com/zjrosen/perles/releases/download/v0.8.5/perles_0.8.5_darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/414871736"
+checksum = "sha256:1d60157e0f381d87451acb55e11af22ef22a8560bac599d038c3aa811c866264"
+url = "https://github.com/zjrosen/perles/releases/download/v0.8.6/perles_0.8.6_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/426759702"
 
 [[tools."nix:pkl-lsp"]]
 version = "0.6.0"
 backend = "nix:pkl-lsp"
 
 [[tools.opencode]]
-version = "1.15.6"
+version = "1.15.10"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:1de7b7c1d67e9a309020c5f5be8d76818ef10f5f0370b46f81a75b2336bba230"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.15.6/opencode-darwin-arm64.zip"
+checksum = "sha256:b9074b933e0db458243f7ba20d8c3bf6a85e679b400c62df0eafd3abadd725ed"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.15.10/opencode-darwin-arm64.zip"
 
 [[tools.workmux]]
-version = "0.1.209"
+version = "0.1.211"
 backend = "github:raine/workmux"
 
 [tools.workmux."platforms.macos-arm64"]
-checksum = "sha256:6bcc18d31aacac3d0fca67158dfcd3289bd33b75deac1f13afdc51117bc1e187"
-url = "https://github.com/raine/workmux/releases/download/v0.1.209/workmux-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/raine/workmux/releases/assets/424511784"
+checksum = "sha256:76c97c737382d8eb6f431ce4cc2c52d300dd1bb43e0bd099461d268ed91cd95a"
+url = "https://github.com/raine/workmux/releases/download/v0.1.211/workmux-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/raine/workmux/releases/assets/427384490"
