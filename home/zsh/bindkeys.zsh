@@ -61,11 +61,6 @@ if [ -n "${commands[fzf-share]}" ]; then
   source "$(fzf-share)/key-bindings.zsh"
 fi
 
-fzf-history-widget-accept() { fzf-history-widget && zle accept-line }
-
-zle     -N   fzf-history-widget-accept
-bindkey "^r" fzf-history-widget-accept
-
 # history search in vi mode
 bindkey -M vicmd "k" history-substring-search-up
 bindkey -M vicmd "j" history-substring-search-down
