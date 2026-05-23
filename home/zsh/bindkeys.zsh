@@ -10,14 +10,14 @@ autoload -U select-word-style
 select-word-style normal
 export WORDCHARS="~!#$%^&*(){}[]<>+"
 
-bindkey "^b" backward-word
-bindkey "^w" forward-word
+bindkey "^p" backward-word
+bindkey "^n" forward-word
 
-bindkey "^[[1;5D" backward-word
-bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word # Ctrl-Left
+bindkey "^[[1;5C" forward-word  # Ctrl-Right
 
 # line editing
-#bindkey "^[?" backward-kill-word # Ctrl+backspace must send the 'Esc+?' escape sequence
+bindkey "^?" backward-delete-char # Backspace
 bindkey "^h" backward-kill-word   # Ctrl+Backspace
 bindkey "^x"  kill-word
 bindkey "^k"  kill-line
