@@ -90,7 +90,7 @@ ctrl-a = "go_to_input_start"
 ctrl-e = "go_to_input_end"
 
 [shell_integration]
-fallback_channel = "files"
+fallback_channel = "channels"
 
 [shell_integration.channel_triggers]
 "alias" = ["alias", "unalias"]
