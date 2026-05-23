@@ -143,7 +143,7 @@ with pkgs.unstable;
       source-file ${tmux_config_dir}/tmux.local.conf
 
       set -g detach-on-destroy off  # don't exit from tmux when closing a session
-      set -g display-time 750       # restore the original 750ms duration
+      set -g display-time 1000      # display messages for a second
       set -sg escape-time 100       # ~5-100ms. https://superuser.com/a/1809494 explains why
       set -g renumber-windows on    # renumber all windows when any window is closed
       set -g set-clipboard on       # use system clipboard
