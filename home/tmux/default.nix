@@ -131,13 +131,16 @@ with pkgs.unstable;
     ];
 
     extraConfig = ''
+      set -as terminal-features ",*:RGB"        # true colour
+      set -as terminal-features ",*:bmouse"     # basic mouse does not send motion events
+      set -as terminal-features ",*:clipboard"  # clipboard pass-through
+      set -as terminal-features ",*:hyperlinks" # clickable hyperlinks
+      set -as terminal-features ",*:usstyle"    # undercurls
+
       set -g status-position top
       set -g status-justify centre
 
       source-file ${tmux_config_dir}/tmux.local.conf
-
-      # add TrueColor support
-      set -ag terminal-overrides ",xterm-256color:Ms=\\E]52;c;%p2%s\\7,Referer:Tc"
 
       set -g detach-on-destroy off  # don't exit from tmux when closing a session
       set -g display-time 750       # restore the original 750ms duration
