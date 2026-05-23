@@ -137,6 +137,9 @@ with pkgs.unstable;
       set -as terminal-features ",*:hyperlinks" # clickable hyperlinks
       set -as terminal-features ",*:usstyle"    # undercurls
 
+      # use the maximum available space of the latest attached client
+      set -g window-size latest
+
       set -g status-position top
       set -g status-justify centre
 

@@ -26,6 +26,7 @@ fnox = "latest"
 "nix:pkl-lsp" = "latest"
 opencode = "latest"
 workmux = "latest"
+television = "latest"
 
 [tools."aqua:gastownhall/beads"]
 version = "latest"

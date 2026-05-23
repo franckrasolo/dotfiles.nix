@@ -33,9 +33,7 @@ ctrl-r = "actions:rename_session"
 
 [actions.connect]
 description = "Connect to the selected session"
-# uses script from https://github.com/joshmedeski/sesh/issues/368#issuecomment-4306792135
-# fixed in https://github.com/alexpasmantier/television/releases/tag/0.15.7
-command = "tv-sesh-connect '{strip_ansi|split: :1..|join: }'"
+command = "sesh connect '{strip_ansi|split: :1..|join: }'"
 mode = "execute"
 
 [actions.rename_session]
