@@ -1,0 +1,18 @@
+[metadata]
+name = "mise-tasks"
+description = "A channel to select a mise task"
+
+[source]
+command = "mise tasks ls --local"
+no_sort = true
+
+[ui]
+layout = "portrait"
+
+[keybindings]
+enter = "actions:run"
+
+[actions.run]
+description = "Runs the selected task"
+command = "mise run {split: :0}"
+mode = "execute"
