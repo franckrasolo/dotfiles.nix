@@ -42,7 +42,7 @@
     zsh-patina,
   }:
     let
-      platforms = [ "x86_64-darwin" "aarch64-darwin" ];
+      platforms = [ "aarch64-darwin" ];
 
       overlay = final: prev: {
         unstable = import nixpkgs-unstable {
@@ -73,18 +73,6 @@
     in
     {
       darwinConfigurations = {
-        mbp64 = nix-darwin.lib.darwinSystem {
-          system  = "x86_64-darwin";
-          inputs  = { inherit nix-darwin nixpkgs; };
-          modules = [
-            overlayModule
-            ./darwin/configuration.nix
-            sops-nix.darwinModules.sops
-            home-manager.darwinModules.home-manager
-          ];
-          specialArgs = { inherit user; };
-        };
-
         m3max = nix-darwin.lib.darwinSystem rec {
           system  = "aarch64-darwin";
           inputs  = { inherit nix-darwin nixpkgs; };
@@ -110,7 +98,6 @@
       };
 
       checks = {
-        x86_64-darwin.mbp64  = self.nix-darwin-configurations.mbp64.system;
         aarch64-darwin.m3max = self.nix-darwin-configurations.m3max.system;
       };
 
