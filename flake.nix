@@ -20,6 +20,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    unf = {
+      url = "git+https://git.atagen.co/atagen/unf";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
+    };
+
     zsh-patina = {
       url = "github:michel-kraemer/zsh-patina";
       inputs.nixpkgs.follows = "nixpkgs-unstable";
@@ -33,6 +38,7 @@
     nix-darwin,
     sops-nix,
     home-manager,
+    unf,
     zsh-patina,
   }:
     let
@@ -79,7 +85,7 @@
           specialArgs = { inherit user; };
         };
 
-        m3max = nix-darwin.lib.darwinSystem {
+        m3max = nix-darwin.lib.darwinSystem rec {
           system  = "aarch64-darwin";
           inputs  = { inherit nix-darwin nixpkgs; };
           modules = [
@@ -88,7 +94,15 @@
             ./darwin/configuration.nix
             sops-nix.darwinModules.sops
             home-manager.darwinModules.home-manager {
-              home-manager.extraSpecialArgs = { inherit user; };
+              home-manager.extraSpecialArgs = {
+                inherit user;
+
+                sops-nix-options = unf.lib.json {
+                  inherit self;
+                  pkgs = nixpkgs.legacyPackages.${system};
+                  modules = [ sops-nix.darwinModules.default ];
+                };
+              };
             }
           ];
           specialArgs = { inherit user; };

@@ -1,5 +1,4 @@
-
-{ config, pkgs, user, ... }:
+{ config, pkgs, sops-nix-options, user, ... }:
 
 with pkgs.unstable;
 {
@@ -20,6 +19,9 @@ with pkgs.unstable;
       experimental = {
         render_docs_indexes = {
           home-manager-stable = "https://home-manager.dev/manual/25.11/options.xhtml";
+        };
+        options_file = {
+          sops-nix = sops-nix-options;
         };
       };
 
