@@ -26,7 +26,15 @@
     };
   };
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, nix-darwin, sops-nix, home-manager, zsh-patina }:
+  outputs = {
+    self,
+    nixpkgs,
+    nixpkgs-unstable,
+    nix-darwin,
+    sops-nix,
+    home-manager,
+    zsh-patina,
+  }:
     let
       platforms = [ "x86_64-darwin" "aarch64-darwin" ];
 
