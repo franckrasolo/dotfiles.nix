@@ -31,21 +31,12 @@
     };
   };
 
-  outputs = {
-    self,
-    nixpkgs,
-    nixpkgs-unstable,
-    nix-darwin,
-    sops-nix,
-    home-manager,
-    unf,
-    zsh-patina,
-  }:
+  outputs = { self, nixpkgs, ... } @ inputs:
     let
       platforms = [ "aarch64-darwin" ];
 
       overlay = final: prev: {
-        unstable = import nixpkgs-unstable {
+        unstable = import inputs.nixpkgs-unstable {
           inherit (prev.stdenv.hostPlatform) system;
           config.allowBroken = true;
           config.allowUnfree = true;
@@ -55,7 +46,7 @@
           ];
         };
 
-        zsh-patina = zsh-patina.packages.${prev.stdenv.hostPlatform.system}.default;
+        zsh-patina = inputs.zsh-patina.packages.${prev.stdenv.hostPlatform.system}.default;
       };
       # makes "pkgs.unstable" available in configuration.nix
       overlayModule = ({ config, pkgs, ... }: { nixpkgs.overlays = [ overlay ]; });
@@ -73,22 +64,22 @@
     in
     {
       darwinConfigurations = {
-        m3max = nix-darwin.lib.darwinSystem rec {
+        m3max = inputs.nix-darwin.lib.darwinSystem {
           system  = "aarch64-darwin";
-          inputs  = { inherit nix-darwin nixpkgs; };
+          inputs  = { inherit (inputs) nix-darwin nixpkgs; };
           modules = [
             { nix.extraOptions = ''extra-platforms = aarch64-darwin x86_64-darwin''; }
             overlayModule
             ./darwin/configuration.nix
-            sops-nix.darwinModules.sops
-            home-manager.darwinModules.home-manager {
+            inputs.sops-nix.darwinModules.sops
+            inputs.home-manager.darwinModules.home-manager {
               home-manager.extraSpecialArgs = {
                 inherit user;
 
-                sops-nix-options = unf.lib.json {
+                sops-nix-options = inputs.unf.lib.json {
                   inherit self;
-                  pkgs = nixpkgs.legacyPackages.${system};
-                  modules = [ sops-nix.darwinModules.default ];
+                  pkgs = nixpkgs.legacyPackages.aarch64-darwin;
+                  modules = [ inputs.sops-nix.darwinModules.default ];
                 };
               };
             }
