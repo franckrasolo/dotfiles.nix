@@ -18,7 +18,6 @@
 
     initContent = with pkgs.unstable; let
       zshPluginScripts = [
-        "${zsh-vi-mode}/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh"
         "${zsh-fzf-tab}/share/fzf-tab/fzf-tab.plugin.zsh"
         "${zsh-f-sy-h}/share/zsh/site-functions/F-Sy-H.plugin.zsh"
         "${zsh-history-substring-search}/share/zsh-history-substring-search/zsh-history-substring-search.zsh"
