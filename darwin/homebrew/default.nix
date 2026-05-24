@@ -125,6 +125,7 @@
       }
       "tailscale-app"
       "teamviewer"
+      "telegram"
       "tuple"
       "vlc"
       "wezterm"
