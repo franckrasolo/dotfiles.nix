@@ -1,3 +1,5 @@
+#:schema https://fnox.jdx.dev/schema.json
+
 default_provider = "onepass"
 
 [providers.age]
