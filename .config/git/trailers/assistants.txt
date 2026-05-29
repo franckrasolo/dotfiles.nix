@@ -1,5 +1,6 @@
 Claude Opus 4.6 <noreply@anthropic.com>
 Claude Opus 4.7 <noreply@anthropic.com>
+Claude Opus 4.8 <noreply@anthropic.com>
 Claude Sonnet 4.6 <noreply@anthropic.com>
 DeepSeek V4 Flash <noreply@deepseek.com>
 DeepSeek V4 Pro <noreply@deepseek.com>
