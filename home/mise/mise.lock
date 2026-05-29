@@ -110,3 +110,11 @@ backend = "github:raine/workmux"
 checksum = "sha256:76c97c737382d8eb6f431ce4cc2c52d300dd1bb43e0bd099461d268ed91cd95a"
 url = "https://github.com/raine/workmux/releases/download/v0.1.211/workmux-darwin-arm64.tar.gz"
 url_api = "https://api.github.com/repos/raine/workmux/releases/assets/427384490"
+
+[[tools.worktrunk]]
+version = "0.54.0"
+backend = "aqua:max-sixty/worktrunk"
+
+[tools.worktrunk."platforms.macos-arm64"]
+checksum = "sha256:ea631e9b3791724d4a7c2490f66d9e50a96f49985bca4624dfca69194fd9c1e3"
+url = "https://github.com/max-sixty/worktrunk/releases/download/v0.54.0/worktrunk-aarch64-apple-darwin.tar.xz"

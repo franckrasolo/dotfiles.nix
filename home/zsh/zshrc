@@ -44,5 +44,8 @@ zsh-defer source "${ZSH_CONFIG_HOME}/completions.cache.zsh"
 # OrbStack command-line tools and integration
 zsh-defer -c 'source ~/.orbstack/shell/init.zsh 2>/dev/null'
 
+# add worktrunk shell extension & completions
+zsh-defer -c 'eval "$(command wt config shell init zsh)"'
+
 set +o errexit
 set +o nounset
