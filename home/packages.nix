@@ -88,10 +88,6 @@ let
     tree-sitter
   ];
 
-  pdfTools = [
-    poppler
-  ];
-
   pythonTools = [
     python314FreeThreading
     python314Packages.pip
@@ -137,7 +133,6 @@ in
     ++ gitTools
     ++ httpTools
     ++ languageTools
-    ++ pdfTools
     ++ pythonTools
     ++ dataTools
     ++ graphicalTools
