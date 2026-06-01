@@ -15,6 +15,7 @@
     ./nvim
     ./opencode
     ./ov
+    ./pdf
     ./presenterm
     ./ripgrep
     ./silicon
@@ -23,7 +24,6 @@
     ./wezterm
     ./workmux
     ./yazi
-    ./zathura
     ./zellij
     ./zoxide
     ./zsh

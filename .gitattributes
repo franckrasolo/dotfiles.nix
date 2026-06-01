@@ -2,5 +2,5 @@
 /home/cmux/shaders/*.glsl linguist-vendored
 
 /home/nvim/lua/** -linguist-detectable
-/home/zathura/**  -linguist-detectable
+/home/pdf/**      -linguist-detectable
 /home/zsh/**      -linguist-detectable

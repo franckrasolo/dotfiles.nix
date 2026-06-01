@@ -7,5 +7,5 @@
   ];
 
   xdg.configFile."zathura".source =
-    config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/home/zathura";
+    config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/home/pdf";
 }
