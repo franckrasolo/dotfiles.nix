@@ -28,6 +28,12 @@
       net-news-wire
       sketchybar
       pkgs.zsh-patina
+
+      # system tools required for creating virtual machines
+      dosfstools
+      e2fsprogs
+      mtools
+      utm
     ];
   };
 
