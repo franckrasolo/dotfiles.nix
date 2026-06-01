@@ -10,21 +10,21 @@ url = "https://github.com/gastownhall/beads/releases/download/v1.0.5/beads_1.0.5
 provenance = "github-attestations"
 
 [[tools."aqua:runkids/skillshare"]]
-version = "0.19.24"
+version = "0.20.2"
 backend = "aqua:runkids/skillshare"
 
 [tools."aqua:runkids/skillshare"."platforms.macos-arm64"]
-checksum = "sha256:4f0601a75f5e9ee256f7f2194948701dac4fc2d428783f65dd13711362ea8173"
-url = "https://github.com/runkids/skillshare/releases/download/v0.19.24/skillshare_0.19.24_darwin_arm64.tar.gz"
+checksum = "sha256:4e28a66ced9492e39404db3bf8e69086fc44ca514f7100e8376403cca87cd2b1"
+url = "https://github.com/runkids/skillshare/releases/download/v0.20.2/skillshare_0.20.2_darwin_arm64.tar.gz"
 
 [[tools.aube]]
-version = "1.16.0"
+version = "1.17.1"
 backend = "github:endevco/aube"
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:0260c9496702c70a9c78d47c6d46dd74e1b7d1b09d1fe403035e9c3b9f0a4c7e"
-url = "https://github.com/endevco/aube/releases/download/v1.16.0/aube-v1.16.0-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/endevco/aube/releases/assets/429786963"
+checksum = "sha256:ef3f429bd94f99afbfd4d49631e10260848b7ffc18cc908199b2eea651fa55cf"
+url = "https://github.com/endevco/aube/releases/download/v1.17.1/aube-v1.17.1-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/endevco/aube/releases/assets/434693494"
 provenance = "github-attestations"
 
 [[tools.fnox]]
@@ -87,12 +87,12 @@ version = "0.6.0"
 backend = "nix:pkl-lsp"
 
 [[tools.opencode]]
-version = "1.15.12"
+version = "1.15.13"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:d654f0e3f52bdba560b1aac021e1fec7ef456d21b0f02c3ba8202843e73dbd45"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.15.12/opencode-darwin-arm64.zip"
+checksum = "sha256:be369a38d15a22e83fad34874d1bc7ddead8084e07df292b28d079287d54ab0c"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.15.13/opencode-darwin-arm64.zip"
 
 [[tools.television]]
 version = "0.15.7"
@@ -112,9 +112,9 @@ url = "https://github.com/raine/workmux/releases/download/v0.1.211/workmux-darwi
 url_api = "https://api.github.com/repos/raine/workmux/releases/assets/427384490"
 
 [[tools.worktrunk]]
-version = "0.54.0"
+version = "0.55.0"
 backend = "aqua:max-sixty/worktrunk"
 
 [tools.worktrunk."platforms.macos-arm64"]
-checksum = "sha256:ea631e9b3791724d4a7c2490f66d9e50a96f49985bca4624dfca69194fd9c1e3"
-url = "https://github.com/max-sixty/worktrunk/releases/download/v0.54.0/worktrunk-aarch64-apple-darwin.tar.xz"
+checksum = "sha256:a62d2e9d2c2967fbb85a7e32c4f33dc3a2c212d2ea84c535df1905cb52e31cde"
+url = "https://github.com/max-sixty/worktrunk/releases/download/v0.55.0/worktrunk-aarch64-apple-darwin.tar.xz"
