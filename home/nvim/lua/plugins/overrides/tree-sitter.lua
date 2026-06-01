@@ -28,7 +28,6 @@ return {
         "jsdoc",
         "json",
         "json5",
-        "jsonc",
         "jsx",
         "just",
         "kotlin",
