@@ -76,22 +76,22 @@
             };
           };
         in
-      {
-        m3max = inputs.nix-darwin.lib.darwinSystem {
-          system  = "aarch64-darwin";
-          inputs  = { inherit (inputs) nix-darwin nixpkgs; };
-          modules = [
-            { nix.extraOptions = ''extra-platforms = aarch64-darwin x86_64-darwin''; }
-            overlayModule
-            ./darwin/configuration.nix
-            inputs.sops-nix.darwinModules.sops
-            inputs.home-manager.darwinModules.home-manager {
-              home-manager.extraSpecialArgs = homeManagerExtraSpecialArgs;
-            }
-          ];
-          specialArgs = { inherit user; };
+        {
+          m3max = inputs.nix-darwin.lib.darwinSystem {
+            system  = "aarch64-darwin";
+            inputs  = { inherit (inputs) nix-darwin nixpkgs; };
+            modules = [
+              { nix.extraOptions = ''extra-platforms = aarch64-darwin x86_64-darwin''; }
+              overlayModule
+              ./darwin/configuration.nix
+              inputs.sops-nix.darwinModules.sops
+              inputs.home-manager.darwinModules.home-manager {
+                home-manager.extraSpecialArgs = homeManagerExtraSpecialArgs;
+              }
+            ];
+            specialArgs = { inherit user; };
+          };
         };
-      };
 
       checks = {
         aarch64-darwin.m3max = self.nix-darwin-configurations.m3max.system;
