@@ -1,4 +1,4 @@
-{ config, pkgs, sops-nix-options, user, ... }:
+{ config, pkgs, user, ... } @ args:
 
 with pkgs.unstable;
 {
@@ -20,7 +20,7 @@ with pkgs.unstable;
         render_docs_indexes = {
           home-manager-stable = "https://home-manager.dev/manual/25.11/options.xhtml";
         };
-        options_file = {
+        options_file = with args; {
           sops-nix = sops-nix-options;
         };
       };
