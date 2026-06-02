@@ -14,7 +14,7 @@ with pkgs.unstable;
     package = nix-search-tv;
 
     settings = {
-      indexes = [ "darwin" "nixpkgs" "nur" ];
+      indexes = [ "darwin" "nixpkgs" "nur" "nixos" ];
 
       experimental = {
         render_docs_indexes = {
