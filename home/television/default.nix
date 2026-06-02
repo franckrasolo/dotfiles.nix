@@ -22,6 +22,7 @@ with pkgs.unstable;
         };
         options_file = with args; {
           sops-nix = sops-nix-options;
+          nixos-lima = nixos-lima-options;
         };
       };
 

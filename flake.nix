@@ -20,6 +20,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nixos-lima = {
+      url = "github:ciderale/nixos-lima";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
+    };
+
     unf = {
       url = "git+https://git.atagen.co/atagen/unf";
       inputs.nixpkgs.follows = "nixpkgs-unstable";
@@ -66,6 +71,7 @@
       darwinConfigurations =
         let
           pkgs = nixpkgs.legacyPackages.aarch64-darwin;
+          nixosModulesPath = "${inputs.nixpkgs-unstable}/nixos/modules";
 
           homeManagerExtraSpecialArgs = {
             inherit user;
@@ -73,6 +79,16 @@
             sops-nix-options = inputs.unf.lib.json {
               inherit self pkgs;
               modules = [ inputs.sops-nix.darwinModules.default ];
+            };
+
+            nixos-lima-options = inputs.unf.lib.json {
+              inherit self pkgs;
+              modules = with inputs.nixos-lima.nixosModules; [
+                lima
+                disk-default
+                impure-config
+              ];
+              specialArgs = { inherit pkgs; modulesPath = nixosModulesPath; };
             };
           };
         in
