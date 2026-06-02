@@ -63,7 +63,20 @@
       });
     in
     {
-      darwinConfigurations = {
+      darwinConfigurations =
+        let
+          pkgs = nixpkgs.legacyPackages.aarch64-darwin;
+
+          homeManagerExtraSpecialArgs = {
+            inherit user;
+
+            sops-nix-options = inputs.unf.lib.json {
+              inherit self pkgs;
+              modules = [ inputs.sops-nix.darwinModules.default ];
+            };
+          };
+        in
+      {
         m3max = inputs.nix-darwin.lib.darwinSystem {
           system  = "aarch64-darwin";
           inputs  = { inherit (inputs) nix-darwin nixpkgs; };
@@ -73,15 +86,7 @@
             ./darwin/configuration.nix
             inputs.sops-nix.darwinModules.sops
             inputs.home-manager.darwinModules.home-manager {
-              home-manager.extraSpecialArgs = {
-                inherit user;
-
-                sops-nix-options = inputs.unf.lib.json {
-                  inherit self;
-                  pkgs = nixpkgs.legacyPackages.aarch64-darwin;
-                  modules = [ inputs.sops-nix.darwinModules.default ];
-                };
-              };
+              home-manager.extraSpecialArgs = homeManagerExtraSpecialArgs;
             }
           ];
           specialArgs = { inherit user; };
