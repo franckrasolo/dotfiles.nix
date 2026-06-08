@@ -98,7 +98,6 @@ let
     python313FreeThreading.pkgs.demjson3
     fq
     fx
-    gobang
     hl-log-viewer
     ijq
     jless
