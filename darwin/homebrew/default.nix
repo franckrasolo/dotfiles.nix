@@ -121,7 +121,7 @@
       "shottr"
       "sonos-s1-controller"
       {
-        name = "speechify-ai-assistant";
+        name = "speechify-voice-ai";
         args = { require_sha = false; }; # missing sha256 checksum
       }
       {
