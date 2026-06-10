@@ -17,7 +17,6 @@ let
     devenv
     moreutils
 
-    delta
     dos2unix
     dua
     dyff

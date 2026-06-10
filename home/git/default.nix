@@ -10,6 +10,11 @@
     ec
   ];
 
+  programs.delta = {
+    enable = true;
+    package = pkgs.unstable.delta;
+  };
+
   xdg.configFile."git".source =
     config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/home/git";
 }
