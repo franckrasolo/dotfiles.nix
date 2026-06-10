@@ -62,14 +62,6 @@ let
     watchman
   ];
 
-  gitTools = [
-    git
-    git-crypt
-    git-lfs
-    git-who
-    diff-so-fancy
-  ];
-
   httpTools = [
     aria2
     xh
@@ -129,7 +121,6 @@ in
     ++ securityTools
     ++ coreTools
     ++ systemTools
-    ++ gitTools
     ++ httpTools
     ++ languageTools
     ++ pythonTools

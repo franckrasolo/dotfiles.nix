@@ -8,6 +8,7 @@
     ./direnv
     ./fnox
     ./fzf
+    ./git
     ./k9s
     ./lazygit
     ./luarocks
@@ -37,11 +38,10 @@
     dataHome   = "${user.homeDirectory}/.xdg/local/share";
     stateHome  = "${user.homeDirectory}/.xdg/local/state";
 
-    configFile = with config.lib.file; {
+    configFile = {
       "1Password".source = ./1Password;
       "duti".source      = ./duti;
       "fastfetch".source = ./fastfetch;
-      "git".source       = mkOutOfStoreSymlink "${user.dotfiles}/home/git";
     };
   };
 
