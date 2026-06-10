@@ -88,9 +88,6 @@ gui:
     selectedLineBgColor:
       - '#245882'
 
-    selectedRangeBgColor:
-      - '#245882'
-
     # Background color of selected line when view doesn't have focus.
     inactiveViewSelectedLineBgColor:
       - bold
