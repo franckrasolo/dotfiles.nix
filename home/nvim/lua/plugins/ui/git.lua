@@ -404,4 +404,23 @@ return {
       }
     end,
   },
+  {
+    "chojs23/ec",
+    opts = {
+      cmd = "ec",
+      close_on_exit = true,
+      float = {
+        width = 0.87,
+        height = 0.87,
+        border = "rounded",
+        title = " Merge Tool (ec) ",
+        title_pos = "center",
+        zindex = 50,
+      },
+      open_cmd = "tabnew",
+    },
+    keys = {
+      { "<leader>gR", ":Ec<CR>", desc = "Resolve Conflicts" },
+    },
+  },
 }
