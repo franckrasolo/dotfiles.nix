@@ -1,10 +1,11 @@
-min_version = { hard = "2026.6.1" }
+min_version = { hard = "2026.6.5" }
 
 [settings]
 env_shell_expand = true
 experimental = true
 locked = false
 lockfile = true
+minimum_release_age = "0s"
 
 [settings.npm]
 package_manager = "aube"
