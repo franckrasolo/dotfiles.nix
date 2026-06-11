@@ -25,7 +25,6 @@
     ./tmux
     ./wezterm
     ./workmux
-    ./yazi
     ./zellij
     ./zoxide
     ./zsh
