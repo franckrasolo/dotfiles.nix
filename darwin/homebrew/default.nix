@@ -23,6 +23,7 @@
     brews = [
       "elio"
       "headson"
+      "rura"
     ];
 
     casks = [
