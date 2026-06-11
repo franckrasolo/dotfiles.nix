@@ -4,7 +4,7 @@
   imports = [
     ./packages.nix
     ./bat
-    ./cmux
+    ./ghostty
     ./direnv
     ./fnox
     ./fzf
