@@ -6,6 +6,7 @@
     ./bat
     ./ghostty
     ./direnv
+    ./file-managers
     ./fnox
     ./fzf
     ./git

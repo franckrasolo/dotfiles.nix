@@ -21,6 +21,7 @@
     ];
 
     brews = [
+      "elio"
       "headson"
     ];
 

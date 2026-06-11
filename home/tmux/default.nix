@@ -10,6 +10,7 @@ let
     ,#{?#{==:#{pane_current_command},mise},󰭼 #W
     ,#{?#{==:#{pane_current_command},nix},󱄅 #W
     ,#{?#{==:#{pane_current_command},btm},󱒉 #W
+    ,#{?#{==:#{pane_current_command},elio},󰻈 #W
     ,#{?#{==:#{pane_current_command},htop},󰝪 #W
     ,#{?#{==:#{pane_current_command},fd},󰱼 #W
     ,#{?#{==:#{pane_current_command},rg},󰱼 #W
@@ -45,7 +46,7 @@ let
     ,#{?#{==:#{pane_current_command},java},󰬷 #W
     ,#{?#{==:#{pane_current_command},kotlin},󱈙 #W
     ${fallback}
-    }}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+    }}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
   '';
   accent_colour = "#{?client_prefix,#{E:@thm_maroon},#{E:@thm_yellow}}";
   tmux_config_dir = "${config.xdg.configHome}/tmux";
