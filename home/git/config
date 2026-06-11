@@ -110,16 +110,15 @@
   cmd = nvim -d "$LOCAL" "$REMOTE"
 
 [merge]
-  tool = nvimdiff
+  tool = ec
 
 [mergetool]
   prompt = true
   keepBackup = false
   trustExitCode = true
 
-[mergetool "nvimdiff"]
-  layout = "LOCAL,BASE,REMOTE / MERGED"
-  cmd = nvim -f "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+[mergetool "ec"]
+  cmd = ec "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
 
 [alias]
   aa = add --all
