@@ -117,7 +117,7 @@
         default = mkShell {
           shellHook = ''
             # health checks for Nix flake inputs
-            nix run https://flakehub.com/f/NixOS/nixpkgs/0.1#flake-checker
+            nix run github:DeterminateSystems/flake-checker
           '';
         };
       });
