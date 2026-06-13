@@ -1,3 +1,4 @@
+Claude Fable 5 <noreply@anthropic.com>
 Claude Opus 4.6 <noreply@anthropic.com>
 Claude Opus 4.7 <noreply@anthropic.com>
 Claude Opus 4.8 <noreply@anthropic.com>
@@ -9,5 +10,10 @@ GPT 5.4 <noreply@openai.com>
 GPT 5.5 <noreply@openai.com>
 Gemini 3.5 Flash <noreply@google.com>
 Kimi K2.6 <noreply@moonshot.ai>
+Kimi K2.7 Code <noreply@moonshot.ai>
+MiMo V2.5 <noreply@xiaomi.com>
 MiniMax M2.7 <noreply@minimax.io>
+MiniMax M3 <noreply@minimax.io>
 OpenCode <noreply@opencode.ai>
+Qwen3.7 Max <noreply@qwen.ai>
+Qwen3.7 Plus <noreply@qwen.ai>
