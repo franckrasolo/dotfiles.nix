@@ -48,7 +48,7 @@
   home = {
     enableNixpkgsReleaseCheck = false;
     extraOutputsToInstall = [ "man" ];
-    stateVersion = "25.05";
+    stateVersion = "26.05";
   };
 
   manual.manpages.enable = true;

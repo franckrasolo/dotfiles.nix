@@ -59,6 +59,8 @@
 
   programs.command-not-found.enable = true;
 
+  xdg.configFile."zsh".enable = lib.mkForce false;
+
 #  xdg.configFile."zsh".source = ./.;
   xdg.configFile."zsh".source = config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/home/zsh";
 
