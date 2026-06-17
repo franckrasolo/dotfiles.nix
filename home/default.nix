@@ -1,4 +1,4 @@
-{ user, ... }:
+{ lib, user, ... }:
 
 {
   imports = [
@@ -48,6 +48,9 @@
   home = {
     enableNixpkgsReleaseCheck = false;
     extraOutputsToInstall = [ "man" ];
+    sessionVariables = {
+      XDG_BIN_HOME = lib.mkForce "${user.homeDirectory}/.xdg/local/bin";
+    };
     stateVersion = "26.05";
   };
 

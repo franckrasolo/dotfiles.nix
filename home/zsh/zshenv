@@ -56,7 +56,7 @@ export PARALLEL_HOME=$XDG_CONFIG_HOME/parallel
 export REDISCLI_RCFILE=$XDG_CONFIG_HOME/valkey/valkeyclirc
 export REDISCLI_HISTFILE=$XDG_DATA_HOME/valkey/valkeycli_history
 
-export PATH=$XDG_BIN_HOME:$HOME/.local/bin:$PATH
+export PATH=$XDG_BIN_HOME:$PATH
 export PATH=$HOME/Library/Application\ Support/JetBrains/Toolbox/scripts:$PATH # for NixIDEA / JetBrains IDEs?
 export PATH=$XDG_DATA_HOME/npm/bin:$PATH # for grain
 export PATH=$HOME/.modular/bin:$PATH
