@@ -6,9 +6,8 @@
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
     nix-darwin = {
-      # TODO: remove fork once https://github.com/nix-darwin/nix-darwin/pull/1789 is merged
-      url = "github:stepbrobd/nix-darwin/bundle";
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
+      url = "github:nix-darwin/nix-darwin/nix-darwin-26.05";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     home-manager = {
