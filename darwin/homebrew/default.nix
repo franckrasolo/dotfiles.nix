@@ -23,6 +23,7 @@
       "elio"
       "headson"
       "rura"
+      "taproom"
     ];
 
     casks = [
