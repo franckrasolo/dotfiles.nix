@@ -50,7 +50,6 @@ let
     bottom
     gdu
     htop
-    fastfetch
     nushell
     pueue
 

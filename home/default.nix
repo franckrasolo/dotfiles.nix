@@ -6,6 +6,7 @@
     ./bat
     ./ghostty
     ./direnv
+    ./fastfetch
     ./file-managers
     ./fnox
     ./fzf
@@ -41,7 +42,6 @@
     configFile = {
       "1Password".source = ./1Password;
       "duti".source      = ./duti;
-      "fastfetch".source = ./fastfetch;
     };
   };
 

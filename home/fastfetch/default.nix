@@ -1,0 +1,228 @@
+{ config, pkgs, ... }:
+
+{
+  programs.fastfetch = {
+    enable = true;
+    package = pkgs.unstable.fastfetch;
+    settings = {
+      "$schema" = "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json";
+      logo = {
+        type = "kitty-direct";
+        source =  "${config.xdg.configHome}/fastfetch/system-vendor-logo.png";
+        width = 36;
+        height = 16;
+        padding = {
+          top = 14;
+        };
+      };
+      display = {
+        key = {
+          width = 18;
+        };
+        separator = "";
+      };
+      modules = [
+        {
+          type = "custom";
+          key = "╭─────────────╮";
+          keyColor = "green";
+        }
+        {
+          type = "host";
+          key = "│ 󰌢 device    ├─";
+          keyColor = "green";
+        }
+        {
+          type = "cpu";
+          key = "│ 󰻠 cpu       ├─";
+          keyColor = "green";
+        }
+        {
+          type = "gpu";
+          key = "│ 󰍛 gpu       ├─";
+          keyColor = "green";
+        }
+        {
+          type = "disk";
+          key = "│  disk      ├─";
+          keyColor = "green";
+        }
+        {
+          type = "memory";
+          key = "│ 󰑭 memory    ├─";
+          keyColor = "green";
+        }
+        {
+          type = "swap";
+          key = "│ 󰓡 swap      ├─";
+          keyColor = "green";
+        }
+        {
+          type = "battery";
+          key = "│  battery   ├─";
+          keyColor = "green";
+        }
+        {
+          type = "poweradapter";
+          key = "│  power     ├─";
+          keyColor = "green";
+        }
+        {
+          type = "display";
+          key = "│ 󰍹 display   ├─";
+          keyColor = "green";
+        }
+        {
+          type = "brightness";
+          key = "│ 󰃞 brightn.  ├─";
+          keyColor = "green";
+        }
+        {
+          type = "sound";
+          key = "│  sound     ├─";
+          keyColor = "green";
+        }
+        {
+          type = "bluetooth";
+          key = "│  bluetooth ├─";
+          keyColor = "green";
+        }
+        {
+          type = "custom";
+          key = "╰─────────────╯";
+          keyColor = "green";
+        }
+        {
+          type = "custom";
+          key = "╭─────────────╮";
+          keyColor = "yellow";
+        }
+        {
+          type = "os";
+          key = "│  system    ├─";
+          keyColor = "yellow";
+        }
+        {
+          type = "kernel";
+          key = "│  kernel    ├─";
+          keyColor = "yellow";
+          format = "{1} {2}";
+        }
+        {
+          type = "uptime";
+          key = "│ 󰅐 uptime    ├─";
+          keyColor = "yellow";
+        }
+        {
+          type = "packages";
+          key = "│ 󰏖 packages  ├─";
+          keyColor = "yellow";
+        }
+        {
+            type = "publicip";
+            key = "│ 󰩠 public    ├─";
+            keyColor = "yellow";
+        }
+        {
+          type = "localip";
+          key = "│ 󰩟 local     ├─";
+          keyColor = "yellow";
+          format = "{1} ({ifname})";
+        }
+        {
+          type = "dns";
+          key = "│   • dns     ├─";
+          keyColor = "yellow";
+          showType = "ipv4";
+        }
+        {
+          type = "localip";
+          key = "│   • mac     ├─";
+          keyColor = "yellow";
+          format = "{mac}";
+          showIpv4 = false;
+          showMac = true;
+        }
+        {
+          type = "wifi";
+          key = "│  wi-fi     ├─";
+          keyColor = "yellow";
+        }
+        {
+          type = "custom";
+          key = "╰─────────────╯";
+          keyColor = "yellow";
+        }
+        {
+          type = "custom";
+          key = "╭─────────────╮";
+          keyColor = "blue";
+        }
+        {
+          type = "title";
+          key = "│  user      ├─";
+          keyColor = "blue";
+          format = "{1}@{2}.local";
+        }
+        {
+          type = "shell";
+          key = "│  shell     ├─";
+          keyColor = "blue";
+        }
+        {
+          type = "terminal";
+          key = "│  terminal  ├─";
+          keyColor = "blue";
+        }
+        {
+          type = "terminalfont";
+          key = "│  tty font  ├─";
+          keyColor = "blue";
+        }
+        {
+          type = "locale";
+          key = "│  locale    ├─";
+          keyColor = "blue";
+        }
+        {
+          type = "de";
+          key = "│  desktop   ├─";
+          keyColor = "blue";
+        }
+        {
+          type = "wm";
+          key = "│  windows   ├─";
+          keyColor = "blue";
+        }
+        {
+          type = "wmtheme";
+          key = "│ 󰉼 theme     ├─";
+          keyColor = "blue";
+        }
+        {
+          type = "colors";
+          key = "| 󰸌 colors    ├─";
+          keyColor = "blue";
+          symbol = "circle";
+        }
+        {
+          type = "player";
+          key = "│ 󰥠 player    ├─";
+          keyColor = "blue";
+        }
+        {
+          type = "media";
+          key = "│ 󰝚 media     ├─";
+          keyColor = "blue";
+        }
+        {
+          type = "custom";
+          key = "╰─────────────╯";
+          keyColor = "blue";
+        }
+      ];
+    };
+  };
+
+  xdg.configFile."fastfetch/system-vendor-logo.png".source = ./system-vendor-logo.png;
+}
