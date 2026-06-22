@@ -49,6 +49,7 @@
         name = "beeper";
         args = { require_sha = false; }; # missing sha256 checksum
       }
+      "bettercmdtab"
       "bunch"
       {
         name = "cloudflare-warp";
