@@ -34,7 +34,7 @@ let
     sd
     skim
     slides
-    pkgs.stderred # legacyPackages.x86_64-darwin.stderred
+    stderred
     unrar
     unzip
     tree
@@ -99,7 +99,7 @@ let
     otree
     xan
     yq-go
-    pkgs.tabiew
+    tabiew
   ];
 
   graphicalTools = [
