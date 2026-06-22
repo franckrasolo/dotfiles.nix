@@ -6,6 +6,7 @@ Claude Sonnet 4.6 <noreply@anthropic.com>
 DeepSeek V4 Flash <noreply@deepseek.com>
 DeepSeek V4 Pro <noreply@deepseek.com>
 GLM 5.1 <noreply@z.ai>
+GLM 5.2 <noreply@z.ai>
 GPT 5.4 <noreply@openai.com>
 GPT 5.5 <noreply@openai.com>
 Gemini 3.5 Flash <noreply@google.com>
