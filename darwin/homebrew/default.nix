@@ -35,6 +35,7 @@
       }
       "aerospace"
       "alfred"
+      "altersend"
       {
         name = "amadeus-pro";
         args = { require_sha = false; }; # missing sha256 checksum
