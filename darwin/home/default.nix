@@ -11,7 +11,10 @@
     linkApps.enable = false;
   };
 
-  xdg.configFile."bunches".source = ./bunches;
+  xdg.configFile = {
+    "bunches".source = ./bunches;
+    "duti".source = ./duti;
+  };
 
   home.activation.prepareUserActivation = with pkgs.unstable; with lib;
     mkForce (hm.dag.entryAfter [ "linkGeneration" ] ''

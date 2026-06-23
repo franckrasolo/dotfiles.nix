@@ -41,7 +41,6 @@
 
     configFile = {
       "1Password".source = ./1Password;
-      "duti".source      = ./duti;
     };
   };
 
