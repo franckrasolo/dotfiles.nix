@@ -18,7 +18,7 @@ with pkgs.unstable;
 
       experimental = {
         render_docs_indexes = {
-          home-manager-stable = "https://home-manager.dev/manual/25.11/options.xhtml";
+          home-manager-stable = "https://home-manager.dev/manual/26.05/options.xhtml";
         };
         options_file = with args; {
           sops-nix = sops-nix-options;
