@@ -13,7 +13,7 @@
       cleanup    = "zap";
     };
 
-    taps = [
+    taps = map (tap: { name = tap; trusted = true; }) [
       "beadbox/cask"
       "martido/homebrew-graph"
       "nikitabobko/tap"
