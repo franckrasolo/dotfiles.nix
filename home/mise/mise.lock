@@ -82,6 +82,15 @@ checksum = "sha256:49d0f09de29655ed6fe2a1a2afbd4c6f8f61faa31da84b0ba95a96e6e7512
 url = "https://github.com/zjrosen/perles/releases/download/v0.8.8/perles_0.8.8_darwin_arm64.tar.gz"
 url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/436619533"
 
+[[tools.herdr]]
+version = "0.7.1"
+backend = "github:ogulcancelik/herdr"
+
+[tools.herdr."platforms.macos-arm64"]
+checksum = "sha256:16f4653f0491ea1e7d2b46b5b02542f18e1b82e88daaf9e2900572e5bb634df8"
+url = "https://github.com/ogulcancelik/herdr/releases/download/v0.7.1/herdr-macos-aarch64"
+url_api = "https://api.github.com/repos/ogulcancelik/herdr/releases/assets/456674306"
+
 [[tools."nix:pkl-lsp"]]
 version = "0.6.0"
 backend = "nix:pkl-lsp"
