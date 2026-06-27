@@ -165,6 +165,7 @@
       Pages = 361309726;
 
       # additional apps
+      DeskBoard2 = 6758047889;
       Gapplin = 768053424;
       Gifski = 1351639930;
       "Jamf Trust" = 1608041266;
