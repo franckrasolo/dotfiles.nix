@@ -10,31 +10,31 @@ url = "https://github.com/gastownhall/beads/releases/download/v1.0.5/beads_1.0.5
 provenance = "github-attestations"
 
 [[tools."aqua:runkids/skillshare"]]
-version = "0.20.20"
+version = "0.20.21"
 backend = "aqua:runkids/skillshare"
 
 [tools."aqua:runkids/skillshare"."platforms.macos-arm64"]
-checksum = "sha256:15dcd45061d270b7569df11a04895139e60e3ad9ba93aa46dcdd3fc222fb33c3"
-url = "https://github.com/runkids/skillshare/releases/download/v0.20.20/skillshare_0.20.20_darwin_arm64.tar.gz"
+checksum = "sha256:97ab327a897de1c0f716991fe7131f33efeb897d8f143b53fe4913cf031758fc"
+url = "https://github.com/runkids/skillshare/releases/download/v0.20.21/skillshare_0.20.21_darwin_arm64.tar.gz"
 
 [[tools.aube]]
-version = "1.25.1"
+version = "1.25.2"
 backend = "github:endevco/aube"
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:3d99c9c6d9d20f271312db39c46022898d765b6a407574f59d6accb0a430ee32"
-url = "https://github.com/jdx/aube/releases/download/v1.25.1/aube-v1.25.1-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/aube/releases/assets/458198306"
+checksum = "sha256:fceb52801a0bf68617f8cea39bc3a7f4965b49c6f64d19425f44020eae6c19e4"
+url = "https://github.com/jdx/aube/releases/download/v1.25.2/aube-v1.25.2-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/aube/releases/assets/463691613"
 provenance = "github-attestations"
 
 [[tools.fnox]]
-version = "1.28.0"
+version = "1.29.0"
 backend = "github:jdx/fnox"
 
 [tools.fnox."platforms.macos-arm64"]
-checksum = "sha256:b6cd517147c6b89797dad9965776e203fc07f7fc279f5c7486f7a79b78feff61"
-url = "https://github.com/jdx/fnox/releases/download/v1.28.0/fnox-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/457021285"
+checksum = "sha256:71dc67c54670d41c239669d2cdbea78b6ebbbc6c174beca7743b93330661e07a"
+url = "https://github.com/jdx/fnox/releases/download/v1.29.0/fnox-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/463662176"
 provenance = "github-attestations"
 
 [[tools."github:nearai/ironclaw"]]
@@ -65,13 +65,13 @@ url = "https://github.com/vladkens/macmon/releases/download/v0.7.2/macmon-v0.7.2
 url_api = "https://api.github.com/repos/vladkens/macmon/releases/assets/410521089"
 
 [[tools."github:zeroclaw-labs/zeroclaw"]]
-version = "0.8.1"
+version = "0.8.2"
 backend = "github:zeroclaw-labs/zeroclaw"
 
 [tools."github:zeroclaw-labs/zeroclaw"."platforms.macos-arm64"]
-checksum = "sha256:d37c15aba3e4e6ec622d305b3d36172964a1239245704fb758e1d01560362841"
-url = "https://github.com/zeroclaw-labs/zeroclaw/releases/download/v0.8.1/zeroclaw-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/zeroclaw-labs/zeroclaw/releases/assets/451775890"
+checksum = "sha256:506a320a5fe6605da1088a80d3ab02b2db59cfa947af0a83d25509d33715ba0e"
+url = "https://github.com/zeroclaw-labs/zeroclaw/releases/download/v0.8.2/zeroclaw-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/zeroclaw-labs/zeroclaw/releases/assets/458303962"
 
 [[tools."github:zjrosen/perles"]]
 version = "0.8.8"
@@ -92,16 +92,16 @@ url = "https://github.com/ogulcancelik/herdr/releases/download/v0.7.1/herdr-maco
 url_api = "https://api.github.com/repos/ogulcancelik/herdr/releases/assets/456674306"
 
 [[tools."nix:pkl-lsp"]]
-version = "0.6.0"
+version = "0.7.1"
 backend = "nix:pkl-lsp"
 
 [[tools.opencode]]
-version = "1.17.11"
+version = "1.17.13"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:40723446013dea8252eea4f180d707f75e805af54ee85a14fd7c126513ba8342"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.17.11/opencode-darwin-arm64.zip"
+checksum = "sha256:dd016d3e26b347d675ab26c45d1e287545912d5c4c49fa0770b622d4a1367e23"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.17.13/opencode-darwin-arm64.zip"
 
 [[tools.television]]
 version = "0.15.9"
@@ -112,18 +112,19 @@ checksum = "sha256:94ae7177d499f74e7544243ffe9c82371183ca11a6363f198a4b3d0e29f82
 url = "https://github.com/alexpasmantier/television/releases/download/0.15.9/tv-0.15.9-aarch64-apple-darwin.tar.gz"
 
 [[tools.workmux]]
-version = "0.1.213"
+version = "0.1.218"
 backend = "github:raine/workmux"
 
 [tools.workmux."platforms.macos-arm64"]
-checksum = "sha256:a8cf8c7b28e62e83a7eca9d512f989c8e9615d7c06e6f4b15f587e69fcde8651"
-url = "https://github.com/raine/workmux/releases/download/v0.1.213/workmux-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/raine/workmux/releases/assets/446012337"
+checksum = "sha256:8e80438706900cb5ff85d53fa5ca27ab45bb45078c31812243b21fc3c06eeb92"
+url = "https://github.com/raine/workmux/releases/download/v0.1.218/workmux-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/raine/workmux/releases/assets/464078684"
 
 [[tools.worktrunk]]
-version = "0.61.0"
+version = "0.65.0"
 backend = "aqua:max-sixty/worktrunk"
 
 [tools.worktrunk."platforms.macos-arm64"]
-checksum = "sha256:adc53a7ebdf89220f7988c0871382cb948115cd89cd6ea2f98d7710069cadde9"
-url = "https://github.com/max-sixty/worktrunk/releases/download/v0.61.0/worktrunk-aarch64-apple-darwin.tar.xz"
+checksum = "sha256:5f8b1e3029a82a521bd571f88b19640a7363ab93b215487a2f674ffcac772be9"
+url = "https://github.com/max-sixty/worktrunk/releases/download/v0.65.0/worktrunk-aarch64-apple-darwin.tar.xz"
+url_api = "https://api.github.com/repos/max-sixty/worktrunk/releases/assets/463973925"
