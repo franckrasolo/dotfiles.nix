@@ -124,7 +124,6 @@ in
     ++ pythonTools
     ++ dataTools
     ++ graphicalTools
-    ++ [ haxor-news ]
     ++ soundTools
     ;
 }
