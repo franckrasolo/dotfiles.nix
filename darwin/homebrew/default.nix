@@ -125,6 +125,7 @@
         args = { appdir = "/Applications"; };
       }
       "shottr"
+      "snapzy"
       "sonos-s1-controller"
       {
         name = "speechify-voice-ai";

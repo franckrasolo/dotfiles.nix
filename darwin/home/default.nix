@@ -4,6 +4,7 @@
   imports = [
     ./aerospace
     ./hammerspoon
+    ./snapzy
   ];
 
   targets.darwin = {
