@@ -9,6 +9,7 @@
     diff-so-fancy
     diffnav
     ec
+    gitu
   ];
 
   programs.delta = {
@@ -22,4 +23,7 @@
 
   xdg.configFile."git/config".source =
     config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/home/git/config";
+
+  xdg.configFile."gitu/config.toml".source =
+    config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/home/git/gitu.toml";
 }
