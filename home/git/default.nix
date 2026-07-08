@@ -18,6 +18,8 @@
 
   xdg.configFile."diffnav/config.yml".source = ./diffnav.yaml;
 
-  xdg.configFile."git".source =
-    config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/home/git";
+  xdg.configFile."git/allowed_signers".source = ./allowed_signers;
+
+  xdg.configFile."git/config".source =
+    config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/home/git/config";
 }
