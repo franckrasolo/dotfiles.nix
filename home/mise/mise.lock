@@ -75,35 +75,35 @@ url = "https://github.com/zeroclaw-labs/zeroclaw/releases/download/v0.8.2/zerocl
 url_api = "https://api.github.com/repos/zeroclaw-labs/zeroclaw/releases/assets/458303962"
 
 [[tools."github:zjrosen/perles"]]
-version = "0.8.8"
+version = "0.8.9"
 backend = "github:zjrosen/perles"
 
 [tools."github:zjrosen/perles"."platforms.macos-arm64"]
-checksum = "sha256:49d0f09de29655ed6fe2a1a2afbd4c6f8f61faa31da84b0ba95a96e6e7512e36"
-url = "https://github.com/zjrosen/perles/releases/download/v0.8.8/perles_0.8.8_darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/436619533"
+checksum = "sha256:d89a062307498e4f0d26047a582ce837a3207e92934c064578445eb4c9900a22"
+url = "https://github.com/zjrosen/perles/releases/download/v0.8.9/perles_0.8.9_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/469699256"
 
 [[tools.herdr]]
-version = "0.7.1"
+version = "0.7.3"
 backend = "github:ogulcancelik/herdr"
 
 [tools.herdr."platforms.macos-arm64"]
-checksum = "sha256:16f4653f0491ea1e7d2b46b5b02542f18e1b82e88daaf9e2900572e5bb634df8"
-url = "https://github.com/ogulcancelik/herdr/releases/download/v0.7.1/herdr-macos-aarch64"
-url_api = "https://api.github.com/repos/ogulcancelik/herdr/releases/assets/456674306"
+checksum = "sha256:b31345392d004ec1f1b2c821e1ad601019fa8385fe1e4c6931321eb58a920773"
+url = "https://github.com/ogulcancelik/herdr/releases/download/v0.7.3/herdr-macos-aarch64"
+url_api = "https://api.github.com/repos/ogulcancelik/herdr/releases/assets/469642056"
 
 [[tools."nix:pkl-lsp"]]
 version = "0.7.1"
 backend = "nix:pkl-lsp"
 
 [[tools.opencode]]
-version = "1.17.14"
+version = "1.17.15"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:ec018c0ac8bcd0669ddbf9bf6bbf09001cede7fc460381db27c2732588afb098"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.17.14/opencode-darwin-arm64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/468352046"
+checksum = "sha256:9667289c143d1fbdd440055af4041bb432f44b07ddf0aef048a8c7f2f7c65e2d"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.17.15/opencode-darwin-arm64.zip"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/469281295"
 
 [[tools.television]]
 version = "0.15.9"
@@ -123,10 +123,10 @@ url = "https://github.com/raine/workmux/releases/download/v0.1.218/workmux-darwi
 url_api = "https://api.github.com/repos/raine/workmux/releases/assets/464078684"
 
 [[tools.worktrunk]]
-version = "0.65.0"
+version = "0.66.0"
 backend = "aqua:max-sixty/worktrunk"
 
 [tools.worktrunk."platforms.macos-arm64"]
-checksum = "sha256:5f8b1e3029a82a521bd571f88b19640a7363ab93b215487a2f674ffcac772be9"
-url = "https://github.com/max-sixty/worktrunk/releases/download/v0.65.0/worktrunk-aarch64-apple-darwin.tar.xz"
-url_api = "https://api.github.com/repos/max-sixty/worktrunk/releases/assets/463973925"
+checksum = "sha256:0773665530753781aabb6da58dfef57eddd485cc5838429328d59f47e497452e"
+url = "https://github.com/max-sixty/worktrunk/releases/download/v0.66.0/worktrunk-aarch64-apple-darwin.tar.xz"
+url_api = "https://api.github.com/repos/max-sixty/worktrunk/releases/assets/469881498"
