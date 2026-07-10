@@ -1,19 +1,16 @@
 Claude Fable 5 <noreply@anthropic.com>
-Claude Opus 4.6 <noreply@anthropic.com>
-Claude Opus 4.7 <noreply@anthropic.com>
 Claude Opus 4.8 <noreply@anthropic.com>
-Claude Sonnet 4.6 <noreply@anthropic.com>
+Claude Sonnet 5 <noreply@anthropic.com>
 DeepSeek V4 Flash <noreply@deepseek.com>
 DeepSeek V4 Pro <noreply@deepseek.com>
-GLM 5.1 <noreply@z.ai>
 GLM 5.2 <noreply@z.ai>
-GPT 5.4 <noreply@openai.com>
-GPT 5.5 <noreply@openai.com>
+GPT 5.6 Luna <noreply@openai.com>
+GPT 5.6 Sol <noreply@openai.com>
+GPT 5.6 Terra <noreply@openai.com>
 Gemini 3.5 Flash <noreply@google.com>
-Kimi K2.6 <noreply@moonshot.ai>
+Grok 4.5 <noreply@x.ai>
 Kimi K2.7 Code <noreply@moonshot.ai>
 MiMo V2.5 <noreply@xiaomi.com>
-MiniMax M2.7 <noreply@minimax.io>
 MiniMax M3 <noreply@minimax.io>
 OpenCode <noreply@opencode.ai>
 Qwen3.7 Max <noreply@qwen.ai>
