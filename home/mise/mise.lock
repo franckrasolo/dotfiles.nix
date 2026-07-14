@@ -38,6 +38,15 @@ url = "https://github.com/jdx/fnox/releases/download/v1.30.0/fnox-aarch64-apple-
 url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/471791310"
 provenance = "github-attestations"
 
+[[tools."github:kucherenko/jscpd"]]
+version = "5.0.12"
+backend = "github:kucherenko/jscpd"
+
+[tools."github:kucherenko/jscpd"."platforms.macos-arm64"]
+checksum = "sha256:e4d8add23658938cb553c3cd8945d1163c206e36732e0cd742c511aad43c33c8"
+url = "https://github.com/kucherenko/jscpd/releases/download/v5.0.12/jscpd-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/kucherenko/jscpd/releases/assets/470469511"
+
 [[tools."github:nearai/ironclaw"]]
 version = "0.21.0"
 backend = "github:nearai/ironclaw"
