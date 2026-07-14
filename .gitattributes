@@ -1,5 +1,5 @@
 /darwin/home/hammerspoon/Spoons/** linguist-vendored
-/home/cmux/shaders/*.glsl linguist-vendored
+/home/ghostty/shaders/*.glsl linguist-vendored
 
 /home/nvim/lua/** -linguist-detectable
 /home/pdf/**      -linguist-detectable

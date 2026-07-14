@@ -3,7 +3,6 @@ vim.filetype.add {
     ghostty = "ghostty",
   },
   pattern = {
-    [".*/cmux/config"] = "ghostty",
     [".*/ghostty/config"] = "ghostty",
   },
 }
