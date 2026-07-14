@@ -157,6 +157,11 @@ check-further-callbacks = false
 run = ['layout floating']
 
 [[on-window-detected]]
+if.app-id = 'com.mitchellh.ghostty'
+check-further-callbacks = true
+run = ['move-node-to-workspace 1', 'layout tiling', 'fullscreen']
+
+[[on-window-detected]]
 if.app-id = 'com.github.wez.wezterm'
 check-further-callbacks = true
 run = ['move-node-to-workspace 1', 'layout tiling', 'fullscreen']
