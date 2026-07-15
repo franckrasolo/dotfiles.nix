@@ -47,15 +47,6 @@ checksum = "sha256:e4d8add23658938cb553c3cd8945d1163c206e36732e0cd742c511aad43c3
 url = "https://github.com/kucherenko/jscpd/releases/download/v5.0.12/jscpd-darwin-arm64.tar.gz"
 url_api = "https://api.github.com/repos/kucherenko/jscpd/releases/assets/470469511"
 
-[[tools."github:nearai/ironclaw"]]
-version = "0.21.0"
-backend = "github:nearai/ironclaw"
-
-[tools."github:nearai/ironclaw"."platforms.macos-arm64"]
-checksum = "sha256:8879c75e0866c12664e968303d468b6a439b24c7eb70f85947133c148902d652"
-url = "https://github.com/nearai/ironclaw/releases/download/v0.21.0/ironclaw-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/nearai/ironclaw/releases/assets/378120148"
-
 [[tools."github:remotemobprogramming/mob"]]
 version = "5.4.2"
 backend = "github:remotemobprogramming/mob"
