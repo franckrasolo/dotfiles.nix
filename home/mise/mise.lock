@@ -19,13 +19,13 @@ checksum = "sha256:97ab327a897de1c0f716991fe7131f33efeb897d8f143b53fe4913cf03175
 url = "https://github.com/runkids/skillshare/releases/download/v0.20.21/skillshare_0.20.21_darwin_arm64.tar.gz"
 
 [[tools.aube]]
-version = "1.26.0"
+version = "1.27.0"
 backend = "github:endevco/aube"
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:f1e9cca3b4837cb497b0588641781ecd426b5a4c26cd610743a8fad756e02d8f"
-url = "https://github.com/jdx/aube/releases/download/v1.26.0/aube-v1.26.0-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/aube/releases/assets/468538559"
+checksum = "sha256:48a2f5949c6719e0cb6e59f85be65d628efbd8ff949a3e66957959717bdc2944"
+url = "https://github.com/jdx/aube/releases/download/v1.27.0/aube-v1.27.0-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/aube/releases/assets/476882612"
 provenance = "github-attestations"
 
 [[tools.fnox]]
@@ -106,13 +106,13 @@ version = "0.7.1"
 backend = "nix:pkl-lsp"
 
 [[tools.opencode]]
-version = "1.17.18"
+version = "1.18.1"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:24327f89c103526c0518fc9b797767f318ab85ef3cee8636e722d6138f33aa3d"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.17.18/opencode-darwin-arm64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/471614269"
+checksum = "sha256:fd2e1abc18a446591314f83821779bbb1a4840b1762ddef22a4b637ea63acdf6"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.1/opencode-darwin-arm64.zip"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/477162547"
 
 [[tools.television]]
 version = "0.15.9"
@@ -123,13 +123,13 @@ checksum = "sha256:94ae7177d499f74e7544243ffe9c82371183ca11a6363f198a4b3d0e29f82
 url = "https://github.com/alexpasmantier/television/releases/download/0.15.9/tv-0.15.9-aarch64-apple-darwin.tar.gz"
 
 [[tools.workmux]]
-version = "0.1.220"
+version = "0.1.222"
 backend = "github:raine/workmux"
 
 [tools.workmux."platforms.macos-arm64"]
-checksum = "sha256:5833f67fc493a03491938d61a986031caf821d9b26f5f6b7483c447cc422f48c"
-url = "https://github.com/raine/workmux/releases/download/v0.1.220/workmux-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/raine/workmux/releases/assets/474471198"
+checksum = "sha256:e01ecdf1c4c9ef18e3cbdc76bad64077db1056481e8e66bf790795955f6389ed"
+url = "https://github.com/raine/workmux/releases/download/v0.1.222/workmux-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/raine/workmux/releases/assets/477648168"
 
 [[tools.worktrunk]]
 version = "0.67.0"

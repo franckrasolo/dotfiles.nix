@@ -9,16 +9,16 @@ checksum = "sha256:7baab4d69a15554e119b86ff78d40e3fdc28819b5b322955c913cebfe3f6a
 url = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jdk_aarch64_mac_hotspot_25.0.3_9.tar.gz"
 
 [[tools.kotlin]]
-version = "2.4.0"
+version = "2.4.10"
 backend = "github:JetBrains/kotlin"
 
 [tools.kotlin.options]
 asset_pattern = "kotlin-compiler-*.zip"
 
 [tools.kotlin."platforms.macos-arm64"]
-checksum = "sha256:ba1b9e6eb6ddc3275079224f2e9ea4a2b02eef7d59ce2d38404f04b22613c20a"
-url = "https://github.com/JetBrains/kotlin/releases/download/v2.4.0/kotlin-compiler-2.4.0.zip"
-url_api = "https://api.github.com/repos/JetBrains/kotlin/releases/assets/437101463"
+checksum = "sha256:473dd66c7a3ef4b182065b3da670466c1bf2773a9dbb0ed8b33a39fe9d4f876d"
+url = "https://github.com/JetBrains/kotlin/releases/download/v2.4.10/kotlin-compiler-2.4.10.zip"
+url_api = "https://api.github.com/repos/JetBrains/kotlin/releases/assets/476575537"
 
 [[tools.node]]
 version = "24.18.0"
