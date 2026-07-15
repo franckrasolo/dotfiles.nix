@@ -28,7 +28,6 @@ fnox = "latest"
 "nix:pkl-lsp" = "latest"
 herdr = "latest"
 opencode = "latest"
-workmux = "latest"
 worktrunk = "latest"
 television = "latest"
 

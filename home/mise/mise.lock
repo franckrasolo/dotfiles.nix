@@ -122,15 +122,6 @@ backend = "aqua:alexpasmantier/television"
 checksum = "sha256:94ae7177d499f74e7544243ffe9c82371183ca11a6363f198a4b3d0e29f82732"
 url = "https://github.com/alexpasmantier/television/releases/download/0.15.9/tv-0.15.9-aarch64-apple-darwin.tar.gz"
 
-[[tools.workmux]]
-version = "0.1.222"
-backend = "github:raine/workmux"
-
-[tools.workmux."platforms.macos-arm64"]
-checksum = "sha256:e01ecdf1c4c9ef18e3cbdc76bad64077db1056481e8e66bf790795955f6389ed"
-url = "https://github.com/raine/workmux/releases/download/v0.1.222/workmux-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/raine/workmux/releases/assets/477648168"
-
 [[tools.worktrunk]]
 version = "0.67.0"
 backend = "aqua:max-sixty/worktrunk"
