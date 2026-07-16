@@ -62,10 +62,6 @@
       }
       "deskpad"
       "discord"
-      {
-        name = "docker-desktop";
-        args = { appdir = "/Applications"; };
-      }
       "dropbox"
       {
         name = "duckduckgo";
