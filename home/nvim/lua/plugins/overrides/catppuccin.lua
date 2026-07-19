@@ -71,7 +71,7 @@ return {
         WhichKeyNormal = { link = "AccentFloat" },
         WhichKeyTitle = { link = "FloatBorder" },
       },
-      default_integrations = true,
+      auto_integrations = true,
       integrations = {
         aerial = true,
         alpha = true,
