@@ -11,21 +11,22 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/466113
 provenance = "github-attestations"
 
 [[tools."aqua:runkids/skillshare"]]
-version = "0.20.21"
+version = "0.20.22"
 backend = "aqua:runkids/skillshare"
 
 [tools."aqua:runkids/skillshare"."platforms.macos-arm64"]
-checksum = "sha256:97ab327a897de1c0f716991fe7131f33efeb897d8f143b53fe4913cf031758fc"
-url = "https://github.com/runkids/skillshare/releases/download/v0.20.21/skillshare_0.20.21_darwin_arm64.tar.gz"
+checksum = "sha256:9ea63bdba7a8c69b43b8799537e4456e954fd471dc0d7f683c634922e64d53ef"
+url = "https://github.com/runkids/skillshare/releases/download/v0.20.22/skillshare_0.20.22_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/runkids/skillshare/releases/assets/483675056"
 
 [[tools.aube]]
-version = "1.29.1"
+version = "1.32.0"
 backend = "github:endevco/aube"
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:191d0d2725aa24291b3eaa551cd16743d0980104508a8feae057d945067578f5"
-url = "https://github.com/jdx/aube/releases/download/v1.29.1/aube-v1.29.1-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/aube/releases/assets/479812346"
+checksum = "sha256:d4c883f6a41f064e587de948645d9128d282b12c3a42eac36920eaf1d63162fe"
+url = "https://github.com/jdx/aube/releases/download/v1.32.0/aube-v1.32.0-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/aube/releases/assets/485361741"
 provenance = "github-attestations"
 
 [[tools.fnox]]
@@ -85,26 +86,26 @@ url = "https://github.com/zjrosen/perles/releases/download/v0.8.9/perles_0.8.9_d
 url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/469699256"
 
 [[tools.herdr]]
-version = "0.7.4"
+version = "0.7.5"
 backend = "github:ogulcancelik/herdr"
 
 [tools.herdr."platforms.macos-arm64"]
-checksum = "sha256:24992e1625dbdcb18354a59e299e4b263c312400b31396cdc07cd46ed57f24a7"
-url = "https://github.com/ogulcancelik/herdr/releases/download/v0.7.4/herdr-macos-aarch64"
-url_api = "https://api.github.com/repos/ogulcancelik/herdr/releases/assets/478145773"
+checksum = "sha256:37350546b0012555943b92eaf962665de4e264395baeb44227b8015e8ff5b0d6"
+url = "https://github.com/ogulcancelik/herdr/releases/download/v0.7.5/herdr-macos-aarch64"
+url_api = "https://api.github.com/repos/ogulcancelik/herdr/releases/assets/484992542"
 
 [[tools."nix:pkl-lsp"]]
 version = "0.8.0"
 backend = "nix:pkl-lsp"
 
 [[tools.opencode]]
-version = "1.18.3"
+version = "1.18.4"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:946f62b155638b911144b7bef520ee4a6442f696297907873463bca3524e40ef"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.18.3/opencode-darwin-arm64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/479301949"
+checksum = "sha256:04fb881b632b323c712dfda6dcbbc6fce736394f07ba76176e52d6665925d4e6"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.4/opencode-darwin-arm64.zip"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/483582182"
 
 [[tools.television]]
 version = "0.15.9"
