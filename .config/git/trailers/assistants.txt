@@ -8,6 +8,7 @@ GPT 5.6 Luna <noreply@openai.com>
 GPT 5.6 Sol <noreply@openai.com>
 GPT 5.6 Terra <noreply@openai.com>
 Gemini 3.5 Flash <noreply@google.com>
+Gemini 3.6 Flash <noreply@google.com>
 Grok 4.5 <noreply@x.ai>
 Kimi K2.6 <noreply@moonshot.ai>
 Kimi K2.7 Code <noreply@moonshot.ai>
@@ -17,3 +18,4 @@ MiniMax M3 <noreply@minimax.io>
 OpenCode <noreply@opencode.ai>
 Qwen3.7 Max <noreply@qwen.ai>
 Qwen3.7 Plus <noreply@qwen.ai>
+Qwen3.8 Max <noreply@qwen.ai>
