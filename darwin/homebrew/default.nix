@@ -69,6 +69,7 @@
       }
       "finetune"
       "firefox"
+      "fluidvoice"
       "opera"
       "zen"
       "expressvpn"

@@ -212,6 +212,11 @@ check-further-callbacks = false
 run = ['move-node-to-workspace 3']
 
 [[on-window-detected]]
+if.app-id = 'com.FluidApp.app' # FluidVoice
+check-further-callbacks = false
+run = ['move-node-to-workspace 4', 'layout floating']
+
+[[on-window-detected]]
 if.app-id = 'com.jetbrains.intellij'
 check-further-callbacks = true
 run = ['layout floating']
