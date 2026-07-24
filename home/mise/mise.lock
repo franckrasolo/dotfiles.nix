@@ -58,13 +58,13 @@ url = "https://github.com/remotemobprogramming/mob/releases/download/5.4.2/mob_5
 url_api = "https://api.github.com/repos/remotemobprogramming/mob/releases/assets/346269527"
 
 [[tools."github:vladkens/macmon"]]
-version = "0.7.2"
+version = "0.8.0"
 backend = "github:vladkens/macmon"
 
 [tools."github:vladkens/macmon"."platforms.macos-arm64"]
-checksum = "sha256:c79fdc7ab02b456b897dcc3ea041678420d7a1d5bd669aaac36fda3885572ad6"
-url = "https://github.com/vladkens/macmon/releases/download/v0.7.2/macmon-v0.7.2.tar.gz"
-url_api = "https://api.github.com/repos/vladkens/macmon/releases/assets/410521089"
+checksum = "sha256:e37f2fdb2fb0fdf7b27bf00159006bac51b6c7b7fef4a3b5433a31db062002cf"
+url = "https://github.com/vladkens/macmon/releases/download/v0.8.0/macmon-v0.8.0.tar.gz"
+url_api = "https://api.github.com/repos/vladkens/macmon/releases/assets/487843666"
 
 [[tools."github:zeroclaw-labs/zeroclaw"]]
 version = "0.8.3"
@@ -116,10 +116,10 @@ checksum = "sha256:94ae7177d499f74e7544243ffe9c82371183ca11a6363f198a4b3d0e29f82
 url = "https://github.com/alexpasmantier/television/releases/download/0.15.9/tv-0.15.9-aarch64-apple-darwin.tar.gz"
 
 [[tools.worktrunk]]
-version = "0.68.0"
+version = "0.69.0"
 backend = "aqua:max-sixty/worktrunk"
 
 [tools.worktrunk."platforms.macos-arm64"]
-checksum = "sha256:9df1029c04ebd197eea0bb088c0232da37d66c3b4d7b23d752c98fbd766f4b2d"
-url = "https://github.com/max-sixty/worktrunk/releases/download/v0.68.0/worktrunk-aarch64-apple-darwin.tar.xz"
-url_api = "https://api.github.com/repos/max-sixty/worktrunk/releases/assets/478537394"
+checksum = "sha256:4d424d682af5251d92b6e2501046c704b3ca607861b25b601197070ae0751977"
+url = "https://github.com/max-sixty/worktrunk/releases/download/v0.69.0/worktrunk-aarch64-apple-darwin.tar.xz"
+url_api = "https://api.github.com/repos/max-sixty/worktrunk/releases/assets/487860361"
