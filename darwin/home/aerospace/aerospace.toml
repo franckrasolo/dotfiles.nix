@@ -167,6 +167,11 @@ check-further-callbacks = true
 run = ['move-node-to-workspace 1', 'layout tiling', 'fullscreen']
 
 [[on-window-detected]]
+if.app-id = 'dev.kdrag0n.MacVirt' # OrbStack
+check-further-callbacks = false
+run = ['move-node-to-workspace 2', 'layout tiling', 'fullscreen']
+
+[[on-window-detected]]
 if.app-id = 'com.arcboxlabs.desktop'
 check-further-callbacks = false
 run = ['move-node-to-workspace 2', 'layout tiling', 'fullscreen']
@@ -233,11 +238,6 @@ run = ['layout floating']
 
 [[on-window-detected]]
 if.app-id = 'com.apple.iCal'
-check-further-callbacks = false
-run = ['move-node-to-workspace C']
-
-[[on-window-detected]]
-if.app-id = 'dev.kdrag0n.MacVirt'
 check-further-callbacks = false
 run = ['move-node-to-workspace C']
 
