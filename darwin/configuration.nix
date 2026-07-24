@@ -27,7 +27,7 @@
       ghostty-bin
       net-news-wire
       sketchybar
-      pkgs.zsh-patina
+      zsh-patina
 
       # system tools required for creating virtual machines
       dosfstools

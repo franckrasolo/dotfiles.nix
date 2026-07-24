@@ -29,11 +29,6 @@
       url = "git+https://git.atagen.co/atagen/unf";
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
-
-    zsh-patina = {
-      url = "github:michel-kraemer/zsh-patina";
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
-    };
   };
 
   outputs = { self, nixpkgs, ... } @ inputs:
@@ -50,8 +45,6 @@
             "libxls-1.6.2"
           ];
         };
-
-        zsh-patina = inputs.zsh-patina.packages.${prev.stdenv.hostPlatform.system}.default;
       };
       # makes "pkgs.unstable" available in configuration.nix
       overlayModule = ({ config, pkgs, ... }: { nixpkgs.overlays = [ overlay ]; });

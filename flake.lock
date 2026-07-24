@@ -124,8 +124,7 @@
         "nixpkgs": "nixpkgs",
         "nixpkgs-unstable": "nixpkgs-unstable",
         "sops-nix": "sops-nix",
-        "unf": "unf",
-        "zsh-patina": "zsh-patina"
+        "unf": "unf"
       }
     },
     "sops-nix": {
@@ -166,26 +165,6 @@
       "original": {
         "type": "git",
         "url": "https://git.atagen.co/atagen/unf"
-      }
-    },
-    "zsh-patina": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs-unstable"
-        ]
-      },
-      "locked": {
-        "lastModified": 1784731649,
-        "narHash": "sha256-RHikS+8bsCJnJfEr8BbgNzxjANI08cH/Ib4hx4NqDVU=",
-        "owner": "michel-kraemer",
-        "repo": "zsh-patina",
-        "rev": "bda9d1e3573166494efcfcfb75e119e442f2fcd1",
-        "type": "github"
-      },
-      "original": {
-        "owner": "michel-kraemer",
-        "repo": "zsh-patina",
-        "type": "github"
       }
     }
   },
