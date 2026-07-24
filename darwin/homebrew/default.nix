@@ -41,6 +41,7 @@
         args = { require_sha = false; }; # missing sha256 checksum
       }
       "arc"
+      "arcbox"
       {
         name = "audio-hijack";
         args = { require_sha = false; }; # missing sha256 checksum
