@@ -30,13 +30,13 @@ url_api = "https://api.github.com/repos/jdx/aube/releases/assets/485361741"
 provenance = "github-attestations"
 
 [[tools.fnox]]
-version = "1.31.0"
+version = "1.31.1"
 backend = "github:jdx/fnox"
 
 [tools.fnox."platforms.macos-arm64"]
-checksum = "sha256:a4f7b576ce0a4ba5d3075db59dc0c2f0749f6fa6d8a08f2b546588d3bf96b44c"
-url = "https://github.com/jdx/fnox/releases/download/v1.31.0/fnox-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/480276462"
+checksum = "sha256:8426d9a2b7fc3a82d73d1a5fb7831d749d195ac811efb598dfbd96222d52c293"
+url = "https://github.com/jdx/fnox/releases/download/v1.31.1/fnox-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/488427417"
 provenance = "github-attestations"
 
 [[tools."github:kucherenko/jscpd"]]
@@ -99,13 +99,13 @@ version = "0.8.0"
 backend = "nix:pkl-lsp"
 
 [[tools.opencode]]
-version = "1.18.4"
+version = "1.18.5"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:04fb881b632b323c712dfda6dcbbc6fce736394f07ba76176e52d6665925d4e6"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.18.4/opencode-darwin-arm64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/483582182"
+checksum = "sha256:85f6f9eece174d3bf0c92588086a65284388b891256c8f4102dc317d476ffca6"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.5/opencode-darwin-arm64.zip"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/488859705"
 
 [[tools.television]]
 version = "0.15.9"
@@ -116,10 +116,10 @@ checksum = "sha256:94ae7177d499f74e7544243ffe9c82371183ca11a6363f198a4b3d0e29f82
 url = "https://github.com/alexpasmantier/television/releases/download/0.15.9/tv-0.15.9-aarch64-apple-darwin.tar.gz"
 
 [[tools.worktrunk]]
-version = "0.69.0"
+version = "0.69.2"
 backend = "aqua:max-sixty/worktrunk"
 
 [tools.worktrunk."platforms.macos-arm64"]
-checksum = "sha256:4d424d682af5251d92b6e2501046c704b3ca607861b25b601197070ae0751977"
-url = "https://github.com/max-sixty/worktrunk/releases/download/v0.69.0/worktrunk-aarch64-apple-darwin.tar.xz"
-url_api = "https://api.github.com/repos/max-sixty/worktrunk/releases/assets/487860361"
+checksum = "sha256:cd451d1101eed9461fefa285269055510179b29690457fbfaf5e667d3ff0a273"
+url = "https://github.com/max-sixty/worktrunk/releases/download/v0.69.2/worktrunk-aarch64-apple-darwin.tar.xz"
+url_api = "https://api.github.com/repos/max-sixty/worktrunk/releases/assets/489103688"
