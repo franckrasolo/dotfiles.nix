@@ -29,6 +29,7 @@ herdr = "latest"
 opencode = "latest"
 worktrunk = "latest"
 television = "latest"
+usage = "latest"
 
 [tools."aqua:gastownhall/beads"]
 version = "latest"

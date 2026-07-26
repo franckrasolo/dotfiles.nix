@@ -115,6 +115,15 @@ backend = "aqua:alexpasmantier/television"
 checksum = "sha256:94ae7177d499f74e7544243ffe9c82371183ca11a6363f198a4b3d0e29f82732"
 url = "https://github.com/alexpasmantier/television/releases/download/0.15.9/tv-0.15.9-aarch64-apple-darwin.tar.gz"
 
+[[tools.usage]]
+version = "4.0.0"
+backend = "aqua:jdx/usage"
+
+[tools.usage."platforms.macos-arm64"]
+checksum = "sha256:b86b3b96590c40156977906758b92238fab506edcbdc5331f9efb034207e2ab4"
+url = "https://github.com/jdx/usage/releases/download/v4.0.0/usage-universal-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/489800167"
+
 [[tools.worktrunk]]
 version = "0.69.2"
 backend = "aqua:max-sixty/worktrunk"
