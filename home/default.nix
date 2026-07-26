@@ -25,7 +25,6 @@
     ./television
     ./tmux
     ./wezterm
-    ./workmux
     ./zellij
     ./zoxide
     ./zsh

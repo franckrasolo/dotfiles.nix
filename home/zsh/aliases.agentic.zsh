@@ -1,1 +1,0 @@
-alias wm="workmux"

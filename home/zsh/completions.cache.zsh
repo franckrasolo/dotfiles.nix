@@ -26,8 +26,6 @@ _cache_completion fx fx --comp zsh
 _cache_completion kubectl eval HTTPS_PROXY=1:1 kubectl completion zsh
 compdef k='kubectl'
 
-_cache_completion workmux workmux completions zsh
-
 # see https://github.com/zellij-org/zellij/issues/2316
 _cache_completion zellij zsh -c "zellij setup --generate-completion zsh | sed '/_zellij \"\$@\"/d'"
 
