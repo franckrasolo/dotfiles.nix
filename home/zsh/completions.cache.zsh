@@ -13,6 +13,8 @@ _cache_completion() {
 #dagger completion zsh | tee /usr/local/share/zsh/site-functions/_dagger &> /dev/null
 
 _cache_completion fx fx --comp zsh
+_cache_completion gh gh completion --shell zsh
+_cache_completion glab glab completion --shell zsh
 
 #source /etc/profiles/per-user/$USER/share/zsh/site-functions/_gradle
 #__gradle-completion-init

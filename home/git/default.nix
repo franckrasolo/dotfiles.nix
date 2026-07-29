@@ -10,6 +10,10 @@
     diffnav
     ec
     gitu
+
+    gh
+    glab
+    tuicr
   ];
 
   programs.delta = {
