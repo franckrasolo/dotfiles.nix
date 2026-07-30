@@ -29,6 +29,7 @@ _cache_completion kubectl eval HTTPS_PROXY=1:1 kubectl completion zsh
 compdef k='kubectl'
 
 _cache_completion mise mise completion zsh
+_cache_completion opencode opencode completion
 
 # see https://github.com/zellij-org/zellij/issues/2316
 _cache_completion zellij zsh -c "zellij setup --generate-completion zsh | sed '/_zellij \"\$@\"/d'"
