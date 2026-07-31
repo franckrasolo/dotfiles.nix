@@ -40,6 +40,15 @@ url = "https://github.com/jdx/fnox/releases/download/v1.31.1/fnox-aarch64-apple-
 url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/488427417"
 provenance = "github-attestations"
 
+[[tools."github:can1357/oh-my-pi"]]
+version = "17.2.1"
+backend = "github:can1357/oh-my-pi"
+
+[tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
+checksum = "sha256:b75eddb19ba9ec401fee5ecb35b3ceb5ddc48708e98b5a113136df5d65f2bed8"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v17.2.1/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/495590139"
+
 [[tools."github:kucherenko/jscpd"]]
 version = "5.0.14"
 backend = "github:kucherenko/jscpd"

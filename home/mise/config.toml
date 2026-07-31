@@ -35,6 +35,12 @@ usage = "latest"
 version = "latest"
 postinstall = "ln -sf $(mise which bd) $XDG_BIN_HOME/bd"
 
+[tools."github:can1357/oh-my-pi"]
+version = "latest"
+postinstall = """
+  omp config init-xdg
+"""
+
 [env]
 FNOX_AGE_KEY_FILE = "~/dev/dotfiles.nix/home/fnox/age.txt"
 FNOX_IF_MISSING = "error"
