@@ -17,6 +17,7 @@ tools = "mise ls --all-sources --outdated"
 
 [tools]
 "aqua:runkids/skillshare" = "latest"
+"aqua:smol-machines/smolvm" = "latest"
 aube = "latest"
 fnox = "latest"
 "github:kucherenko/jscpd" = "latest"

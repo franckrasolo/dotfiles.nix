@@ -31,6 +31,7 @@ compdef k='kubectl'
 _cache_completion mise mise completion zsh
 _cache_completion omp zsh -c "omp completions zsh"
 _cache_completion opencode opencode completion
+_cache_completion smolvm cat $XDG_CONFIG_HOME/zsh/smolvm.zsh
 
 # see https://github.com/zellij-org/zellij/issues/2316
 _cache_completion zellij zsh -c "zellij setup --generate-completion zsh | sed '/_zellij \"\$@\"/d'"

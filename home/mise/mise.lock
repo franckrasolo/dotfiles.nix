@@ -19,6 +19,15 @@ checksum = "sha256:19bf580c557ac22da89c1ef27f14c91ad25cdea376f39396645ef85326848
 url = "https://github.com/runkids/skillshare/releases/download/v0.20.23/skillshare_0.20.23_darwin_arm64.tar.gz"
 url_api = "https://api.github.com/repos/runkids/skillshare/releases/assets/494345667"
 
+[[tools."aqua:smol-machines/smolvm"]]
+version = "1.7.2"
+backend = "aqua:smol-machines/smolvm"
+
+[tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
+checksum = "sha256:ef4815127f6395fd88f7fcfb48dde0adae632ad5d9a0cecaa935cc3287b1ec30"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.7.2/smolvm-1.7.2-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/498212703"
+
 [[tools.aube]]
 version = "1.37.0"
 backend = "github:endevco/aube"
