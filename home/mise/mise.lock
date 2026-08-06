@@ -11,31 +11,31 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/490572
 provenance = "github-attestations"
 
 [[tools."aqua:runkids/skillshare"]]
-version = "0.20.23"
+version = "0.20.24"
 backend = "aqua:runkids/skillshare"
 
 [tools."aqua:runkids/skillshare"."platforms.macos-arm64"]
-checksum = "sha256:19bf580c557ac22da89c1ef27f14c91ad25cdea376f39396645ef85326848d5b"
-url = "https://github.com/runkids/skillshare/releases/download/v0.20.23/skillshare_0.20.23_darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/runkids/skillshare/releases/assets/494345667"
+checksum = "sha256:dfd8d6eeb83b9cae22fc0f479b2fb7e4c356fae5fe2a4404bbba8ef5b4578eb1"
+url = "https://github.com/runkids/skillshare/releases/download/v0.20.24/skillshare_0.20.24_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/runkids/skillshare/releases/assets/500093163"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.7.2"
+version = "1.7.5"
 backend = "aqua:smol-machines/smolvm"
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:ef4815127f6395fd88f7fcfb48dde0adae632ad5d9a0cecaa935cc3287b1ec30"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.7.2/smolvm-1.7.2-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/498212703"
+checksum = "sha256:53676d8d5bdae2ca25ac726dacb581026b419b81229dee8e230199f12a180e56"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.7.5/smolvm-1.7.5-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/503718830"
 
 [[tools.aube]]
-version = "1.37.0"
+version = "1.38.0"
 backend = "github:endevco/aube"
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:6fdc27e146e5d6a45abf60ef7cf2e83d5b7284acbba4cecf6237905bd528a916"
-url = "https://github.com/jdx/aube/releases/download/v1.37.0/aube-v1.37.0-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/aube/releases/assets/496852124"
+checksum = "sha256:d1a2d56a3958ac4783c1f91d99421c9d4960fc61adfd7c7bff620d4c97258741"
+url = "https://github.com/jdx/aube/releases/download/v1.38.0/aube-v1.38.0-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/aube/releases/assets/505460266"
 provenance = "github-attestations"
 provenance_verified = true
 
@@ -51,13 +51,13 @@ provenance = "github-attestations"
 provenance_verified = true
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "17.2.3"
+version = "17.2.10"
 backend = "github:can1357/oh-my-pi"
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:262c77847c42ddfb46bc80d02d2fd8523852f9f13192a8302bb591872ea93e27"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v17.2.3/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/498028551"
+checksum = "sha256:e37fa3d4d3eeb15b71d5b464fde51f913e390978a48dc33b4c527b8eed7237c6"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v17.2.10/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/503913120"
 
 [[tools."github:kucherenko/jscpd"]]
 version = "5.0.14"
@@ -87,23 +87,24 @@ url = "https://github.com/tinylabscom/mvm/releases/download/v0.17.0/mvmctl-aarch
 url_api = "https://api.github.com/repos/tinylabscom/mvm/releases/assets/469950232"
 
 [[tools."github:vladkens/macmon"]]
-version = "0.8.1"
+version = "0.8.2"
 backend = "github:vladkens/macmon"
 
 [tools."github:vladkens/macmon"."platforms.macos-arm64"]
-checksum = "sha256:39abf6e295f3d064bdcac10b16d79c7d8b0843dde3d5c93abbf7284703e4ffe8"
-url = "https://github.com/vladkens/macmon/releases/download/v0.8.1/macmon-v0.8.1.tar.gz"
-url_api = "https://api.github.com/repos/vladkens/macmon/releases/assets/496126639"
+checksum = "sha256:588d5bde79885ba36f693e5150911c10c3ad208a2e418a3f2aa827ac84a2d973"
+url = "https://github.com/vladkens/macmon/releases/download/v0.8.2/macmon-v0.8.2.tar.gz"
+url_api = "https://api.github.com/repos/vladkens/macmon/releases/assets/501564311"
 
 [[tools."github:zeroclaw-labs/zeroclaw"]]
-version = "0.8.3"
+version = "0.8.4"
 backend = "github:zeroclaw-labs/zeroclaw"
 
 [tools."github:zeroclaw-labs/zeroclaw"."platforms.macos-arm64"]
-checksum = "sha256:13b4292d30d2e2eb5200d62ea12879fcbc691fff4102b36439a82d2a0093124a"
-url = "https://github.com/zeroclaw-labs/zeroclaw/releases/download/v0.8.3/zeroclaw-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/zeroclaw-labs/zeroclaw/releases/assets/478625181"
+checksum = "sha256:fac22f9af2f940fd3bb7e77deb42fac7d052dfc81212812694703f7c20d34edf"
+url = "https://github.com/zeroclaw-labs/zeroclaw/releases/download/v0.8.4/zeroclaw-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/zeroclaw-labs/zeroclaw/releases/assets/499270301"
 provenance = "github-attestations"
+provenance_verified = true
 
 [[tools."github:zjrosen/perles"]]
 version = "0.8.91"
@@ -115,26 +116,26 @@ url = "https://github.com/zjrosen/perles/releases/download/v0.8.91/perles_0.8.91
 url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/493584648"
 
 [[tools.herdr]]
-version = "0.7.5"
+version = "0.8.0"
 backend = "github:ogulcancelik/herdr"
 
 [tools.herdr."platforms.macos-arm64"]
-checksum = "sha256:37350546b0012555943b92eaf962665de4e264395baeb44227b8015e8ff5b0d6"
-url = "https://github.com/ogulcancelik/herdr/releases/download/v0.7.5/herdr-macos-aarch64"
-url_api = "https://api.github.com/repos/ogulcancelik/herdr/releases/assets/484992542"
+checksum = "sha256:d53a9f93fccfdfcc55632927bf51002f5add0aa7990bcdf508ffbd84ac658178"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.8.0/herdr-macos-aarch64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/500422629"
 
 [[tools."nix:pkl-lsp"]]
 version = "0.8.0"
 backend = "nix:pkl-lsp"
 
 [[tools.opencode]]
-version = "1.18.11"
+version = "1.18.15"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:188ff6a716bcd40e33ac62f17f4aec9bd760164fa6a2cde66f779a5db4abc7ce"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.18.11/opencode-darwin-arm64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/497843327"
+checksum = "sha256:bd60b57cb9fe0494a5352c807424d36d6d7853cf6dbddb97065c7ccd3c5d391c"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.15/opencode-darwin-arm64.zip"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/504765572"
 
 [[tools.television]]
 version = "0.15.9"
@@ -145,19 +146,19 @@ checksum = "sha256:94ae7177d499f74e7544243ffe9c82371183ca11a6363f198a4b3d0e29f82
 url = "https://github.com/alexpasmantier/television/releases/download/0.15.9/tv-0.15.9-aarch64-apple-darwin.tar.gz"
 
 [[tools.usage]]
-version = "4.1.0"
+version = "5.0.0"
 backend = "aqua:jdx/usage"
 
 [tools.usage."platforms.macos-arm64"]
-checksum = "sha256:3632729a16ebf0d30c47a7e325afee28234aa50a615e7da8dfdf3509345b3693"
-url = "https://github.com/jdx/usage/releases/download/v4.1.0/usage-universal-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/usage/releases/assets/495319719"
+checksum = "sha256:35f1703ed922486387d499265c9d6c0dbc84b8347e565fb31d54ad23fdff712d"
+url = "https://github.com/jdx/usage/releases/download/v5.0.0/usage-universal-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/501428939"
 
 [[tools.worktrunk]]
-version = "0.71.0"
+version = "0.72.0"
 backend = "aqua:max-sixty/worktrunk"
 
 [tools.worktrunk."platforms.macos-arm64"]
-checksum = "sha256:429b31306f50e39d2c90de5da293aa14e6983ffe28a49a4fcedaa3632d28b94c"
-url = "https://github.com/max-sixty/worktrunk/releases/download/v0.71.0/worktrunk-aarch64-apple-darwin.tar.xz"
-url_api = "https://api.github.com/repos/max-sixty/worktrunk/releases/assets/495845661"
+checksum = "sha256:7e6cf79a3ef67559240431aae93c137d9a2b28a8ccdb55b64edead904b21ff73"
+url = "https://github.com/max-sixty/worktrunk/releases/download/v0.72.0/worktrunk-aarch64-apple-darwin.tar.xz"
+url_api = "https://api.github.com/repos/max-sixty/worktrunk/releases/assets/504970653"
