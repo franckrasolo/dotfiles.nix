@@ -1,4 +1,5 @@
 {
   "$schema": "https://opencode.ai/config.json",
+  "enabled_providers": ["opencode", "opencode-go"],
   "plugin": ["superpowers@git+https://github.com/obra/superpowers.git"]
 }
