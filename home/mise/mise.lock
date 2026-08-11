@@ -51,13 +51,13 @@ provenance = "github-attestations"
 provenance_verified = true
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "17.2.12"
+version = "17.2.13"
 backend = "github:can1357/oh-my-pi"
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:ab4ff24c8ba3ae6fd9d4b54969c94f4408cc316675f5534729ae502d8c97df74"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v17.2.12/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/506969040"
+checksum = "sha256:2841151eb3381cfe094aaefef3fb7be3c926075821ba6bf3fa77dcb2ffbb8db7"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v17.2.13/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/510249108"
 
 [[tools."github:kucherenko/jscpd"]]
 version = "5.0.14"
