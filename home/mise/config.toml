@@ -13,7 +13,7 @@ package_manager = "aube"
 [shell_alias]
 aliases = "mise shell-alias ls"
 tasks = "mise tasks ls --all --extended"
-tools = "mise ls --all-sources --outdated"
+tools = "mise ls --global --outdated"
 
 [tools]
 "aqua:runkids/skillshare" = "latest"
