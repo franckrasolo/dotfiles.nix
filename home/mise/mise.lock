@@ -20,13 +20,13 @@ url = "https://github.com/runkids/skillshare/releases/download/v0.20.25/skillsha
 url_api = "https://api.github.com/repos/runkids/skillshare/releases/assets/508164681"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.8.3"
+version = "1.9.0"
 backend = "aqua:smol-machines/smolvm"
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:12f437b8067f2dc8fcf5e532a5578b745ddd16b64da45020e3b1e0e6af1c4b76"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.8.3/smolvm-1.8.3-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/517308084"
+checksum = "sha256:d91044c2f09a975d8e2c9520aa1dcf4272162d4ae63b6a3b02e07207086e2ed9"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.9.0/smolvm-1.9.0-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/522154749"
 
 [[tools.aube]]
 version = "1.41.0"
@@ -51,13 +51,13 @@ provenance = "github-attestations"
 provenance_verified = true
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "17.3.7"
+version = "17.4.0"
 backend = "github:can1357/oh-my-pi"
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:d79a735cded3368ad6e77e988f7dc303afeb0331a2dd6ff4666e694512de2e09"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v17.3.7/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/519186230"
+checksum = "sha256:861ac3d7a76499dbc36e6ec8769b58b61a962daac2b4775ce545474d9030e6ba"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v17.4.0/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/521868293"
 
 [[tools."github:kucherenko/jscpd"]]
 version = "5.0.16"
@@ -116,26 +116,26 @@ url = "https://github.com/zjrosen/perles/releases/download/v0.8.92/perles_0.8.92
 url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/518694748"
 
 [[tools.herdr]]
-version = "0.8.0"
+version = "0.8.2"
 backend = "github:ogulcancelik/herdr"
 
 [tools.herdr."platforms.macos-arm64"]
-checksum = "sha256:d53a9f93fccfdfcc55632927bf51002f5add0aa7990bcdf508ffbd84ac658178"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.8.0/herdr-macos-aarch64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/500422629"
+checksum = "sha256:a5d4f4d504d8b309c91f811050559300faba31258425f53c50852fc96f6ae574"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.8.2/herdr-macos-aarch64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/521169108"
 
 [[tools."nix:pkl-lsp"]]
 version = "0.8.0"
 backend = "nix:pkl-lsp"
 
 [[tools.opencode]]
-version = "1.18.18"
+version = "1.18.19"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:7d668bf26496fec8686d4e51ebb1ac2bd2e393f0c1620aa696c4c242a9e5806a"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.18.18/opencode-darwin-arm64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/512198799"
+checksum = "sha256:0026326bd77a3277ab3726be237410b19389f7829e8bb3c82dfaf9044162067c"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.19/opencode-darwin-arm64.zip"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/521836784"
 
 [[tools.television]]
 version = "0.15.9"
