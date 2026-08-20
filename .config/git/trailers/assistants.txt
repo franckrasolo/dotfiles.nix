@@ -12,5 +12,6 @@ Grok 4.6 <noreply@x.ai>
 Kimi K3 <noreply@moonshot.ai>
 MiMo V2.5 <noreply@xiaomi.com>
 MiniMax M3 <noreply@minimax.io>
+OMP <noreply@omp.sh>
 OpenCode <noreply@opencode.ai>
 Qwen3.8 Max <noreply@qwen.ai>
