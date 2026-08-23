@@ -20,44 +20,44 @@ url = "https://github.com/runkids/skillshare/releases/download/v0.20.25/skillsha
 url_api = "https://api.github.com/repos/runkids/skillshare/releases/assets/508164681"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.9.0"
+version = "1.10.1"
 backend = "aqua:smol-machines/smolvm"
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:d91044c2f09a975d8e2c9520aa1dcf4272162d4ae63b6a3b02e07207086e2ed9"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.9.0/smolvm-1.9.0-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/522154749"
+checksum = "sha256:9be0d949f3685a162b2dce979331a77a43289bbdfab00102f114fda8d805d252"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.10.1/smolvm-1.10.1-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/526214408"
 
 [[tools.aube]]
-version = "1.41.0"
+version = "2.1.0"
 backend = "github:endevco/aube"
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:635720a45125b3cc8afb2979c9a18ed484deecfc91938e9d941e278f529e87e1"
-url = "https://github.com/jdx/aube/releases/download/v1.41.0/aube-v1.41.0-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/aube/releases/assets/517208780"
+checksum = "sha256:4e5d7e7bab65c3c4f5a4db0022d6fe5516e51b1ddbbdf604b537d4a73aa682fd"
+url = "https://github.com/jdx/aube/releases/download/v2.1.0/aube-v2.1.0-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/aube/releases/assets/526711957"
 provenance = "github-attestations"
 provenance_verified = true
 
 [[tools.fnox]]
-version = "1.33.1"
+version = "1.34.0"
 backend = "github:jdx/fnox"
 
 [tools.fnox."platforms.macos-arm64"]
-checksum = "sha256:80a3002841e69aa0be87820e49d25776a5c3ef96c22942aee28f910bf8aba5f6"
-url = "https://github.com/jdx/fnox/releases/download/v1.33.1/fnox-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/517968663"
+checksum = "sha256:60cae86705108b7a2d2950b7182d58aa717f6996e4bb1e31fc1e8219a13a0cc5"
+url = "https://github.com/jdx/fnox/releases/download/v1.34.0/fnox-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/525712276"
 provenance = "github-attestations"
 provenance_verified = true
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "17.4.0"
+version = "18.0.3"
 backend = "github:can1357/oh-my-pi"
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:861ac3d7a76499dbc36e6ec8769b58b61a962daac2b4775ce545474d9030e6ba"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v17.4.0/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/521868293"
+checksum = "sha256:314e84a04e14839a9291cb704c98e747c69fefe2ec43e7c6a74a9e293b1f18b9"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.0.3/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/526043248"
 
 [[tools."github:kucherenko/jscpd"]]
 version = "5.0.16"
@@ -129,13 +129,13 @@ version = "0.8.0"
 backend = "nix:pkl-lsp"
 
 [[tools.opencode]]
-version = "1.18.19"
+version = "1.18.21"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:0026326bd77a3277ab3726be237410b19389f7829e8bb3c82dfaf9044162067c"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.18.19/opencode-darwin-arm64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/521836784"
+checksum = "sha256:72f4b6029af185eb030995cfa062d038914e3142c9aa38f714fe56448e6e87d2"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.21/opencode-darwin-arm64.zip"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/523851271"
 
 [[tools.television]]
 version = "0.15.9"
@@ -146,13 +146,13 @@ checksum = "sha256:94ae7177d499f74e7544243ffe9c82371183ca11a6363f198a4b3d0e29f82
 url = "https://github.com/alexpasmantier/television/releases/download/0.15.9/tv-0.15.9-aarch64-apple-darwin.tar.gz"
 
 [[tools.usage]]
-version = "5.1.0"
+version = "6.1.1"
 backend = "aqua:jdx/usage"
 
 [tools.usage."platforms.macos-arm64"]
-checksum = "sha256:ca35e60afd2895ec0b5be9162dbef155a76384ce43573b1ab8a04fbb46e70cd9"
-url = "https://github.com/jdx/usage/releases/download/v5.1.0/usage-universal-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/usage/releases/assets/507609560"
+checksum = "sha256:0ec220c5083182667c9ba2c456b8e1297132b4d12ade966889ba3fd4e96d5aef"
+url = "https://github.com/jdx/usage/releases/download/v6.1.1/usage-universal-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/526174096"
 
 [[tools.worktrunk]]
 version = "0.74.0"
