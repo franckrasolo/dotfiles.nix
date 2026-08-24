@@ -19,6 +19,7 @@ tools = "mise ls --global --outdated"
 "aqua:runkids/skillshare" = "latest"
 "aqua:smol-machines/smolvm" = "latest"
 aube = "latest"
+bun = "latest"
 fnox = "latest"
 "github:kucherenko/jscpd" = "latest"
 "github:remotemobprogramming/mob" = "latest"
@@ -38,6 +39,7 @@ postinstall = "ln -sf $(mise which bd) $XDG_BIN_HOME/bd"
 
 [tools."github:can1357/oh-my-pi"]
 version = "latest"
+depends = "bun"
 postinstall = """
   omp config init-xdg
 """

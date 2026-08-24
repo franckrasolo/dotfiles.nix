@@ -39,6 +39,14 @@ url_api = "https://api.github.com/repos/jdx/aube/releases/assets/526711957"
 provenance = "github-attestations"
 provenance_verified = true
 
+[[tools.bun]]
+version = "1.4.0"
+backend = "core:bun"
+
+[tools.bun."platforms.macos-arm64"]
+checksum = "sha256:c669e97f6164e1c96e0701748db98dfa77492908cbd8394c7557134a735de381"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.0/bun-darwin-aarch64.zip"
+
 [[tools.fnox]]
 version = "1.34.0"
 backend = "github:jdx/fnox"
