@@ -16,7 +16,6 @@ tasks = "mise tasks ls --all --extended"
 tools = "mise ls --global --outdated"
 
 [tools]
-"aqua:runkids/skillshare" = "latest"
 "aqua:smol-machines/smolvm" = "latest"
 aube = "latest"
 bun = "latest"

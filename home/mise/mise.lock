@@ -10,15 +10,6 @@ url = "https://github.com/gastownhall/beads/releases/download/v1.2.2/beads_1.2.2
 url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/515302581"
 provenance = "github-attestations"
 
-[[tools."aqua:runkids/skillshare"]]
-version = "0.20.25"
-backend = "aqua:runkids/skillshare"
-
-[tools."aqua:runkids/skillshare"."platforms.macos-arm64"]
-checksum = "sha256:631d9313a0638a6d1b7b90a5fc081a8efdfe5d2d87d880bdca04b97448ed304c"
-url = "https://github.com/runkids/skillshare/releases/download/v0.20.25/skillshare_0.20.25_darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/runkids/skillshare/releases/assets/508164681"
-
 [[tools."aqua:smol-machines/smolvm"]]
 version = "1.11.1"
 backend = "aqua:smol-machines/smolvm"
