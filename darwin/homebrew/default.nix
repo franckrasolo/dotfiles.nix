@@ -52,7 +52,6 @@
         name = "beeper";
         args = { require_sha = false; }; # missing sha256 checksum
       }
-      "bettercmdtab"
       "bunch"
       {
         name = "cloudflare-warp";
@@ -69,7 +68,6 @@
         name = "duckduckgo";
         args = { appdir = "/Applications"; };
       }
-      "finetune"
       "firefox"
       "fluidvoice"
       "opera"
@@ -137,6 +135,7 @@
       "telegram"
       "tuple"
       "vlc"
+      "vorssaint"
       "wezterm"
       {
         name = "wispr-flow";
