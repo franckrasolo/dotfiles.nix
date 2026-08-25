@@ -9,6 +9,7 @@ Gemini 3.6 Flash <noreply@google.com>
 Gemini 3.7 Flash <noreply@google.com>
 Grok 4.5 <noreply@x.ai>
 Grok 4.6 <noreply@x.ai>
+Hy3 <noreply@tencent.com>
 Kimi K3 <noreply@moonshot.ai>
 MiMo V2.5 <noreply@xiaomi.com>
 MiniMax M3 <noreply@minimax.io>
