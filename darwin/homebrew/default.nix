@@ -54,10 +54,6 @@
       }
       "bunch"
       {
-        name = "cloudflare-warp";
-        args = { require_sha = false; }; # missing sha256 checksum
-      }
-      {
         name = "daisydisk";
         args = { require_sha = false; }; # missing sha256 checksum
       }
@@ -79,7 +75,6 @@
       }
       "jetbrains-toolbox"
       "keycastr"
-      "kitty"
       {
         name = "lm-studio";
         args = { appdir = "/Applications"; };
@@ -114,15 +109,12 @@
         name = "orbstack";
         args = { appdir = "/Applications"; };
       }
-      "pop-app"
       "raindropio"
       {
         name = "secretive";
         args = { appdir = "/Applications"; };
       }
-      "shottr"
       "snapzy"
-      "sonos-s1-controller"
       {
         name = "speechify-voice-ai";
         args = { require_sha = false; }; # missing sha256 checksum
