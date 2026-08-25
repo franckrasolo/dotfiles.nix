@@ -11,13 +11,13 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/515302
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.11.1"
+version = "1.12.0"
 backend = "aqua:smol-machines/smolvm"
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:af8fae253baaf8202eb13d2f8cafde0ab707d739cc0d178b3695ca6ae26c9b32"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.11.1/smolvm-1.11.1-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/527068854"
+checksum = "sha256:c69d0c90a43898fc0306f66699f8857a122510375c12304a621a84cae39b02d6"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.12.0/smolvm-1.12.0-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/528154648"
 
 [[tools.aube]]
 version = "2.1.0"
@@ -128,13 +128,13 @@ version = "0.8.0"
 backend = "nix:pkl-lsp"
 
 [[tools.opencode]]
-version = "1.18.21"
+version = "1.18.22"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:72f4b6029af185eb030995cfa062d038914e3142c9aa38f714fe56448e6e87d2"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.18.21/opencode-darwin-arm64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/523851271"
+checksum = "sha256:79ce381136a0981953ccc329417678498b25b8d32c2a1a7b55ee5ed25590f94c"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.22/opencode-darwin-arm64.zip"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/527647834"
 
 [[tools.television]]
 version = "0.15.9"
@@ -145,13 +145,13 @@ checksum = "sha256:94ae7177d499f74e7544243ffe9c82371183ca11a6363f198a4b3d0e29f82
 url = "https://github.com/alexpasmantier/television/releases/download/0.15.9/tv-0.15.9-aarch64-apple-darwin.tar.gz"
 
 [[tools.usage]]
-version = "6.2.0"
+version = "6.4.0"
 backend = "aqua:jdx/usage"
 
 [tools.usage."platforms.macos-arm64"]
-checksum = "sha256:6c2d37e3cba67d45fdfeb5edaff81962388bfde09667cc9ed35b0734b7c0a8c1"
-url = "https://github.com/jdx/usage/releases/download/v6.2.0/usage-universal-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/usage/releases/assets/527053103"
+checksum = "sha256:c02f4235446b06f917747e6bdaa6496ea3f63a66c74081a5c1450da2c734f6f1"
+url = "https://github.com/jdx/usage/releases/download/v6.4.0/usage-universal-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/528044147"
 
 [[tools.worktrunk]]
 version = "0.74.0"
