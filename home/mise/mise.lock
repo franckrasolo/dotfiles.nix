@@ -11,13 +11,13 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/515302
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.13.0"
+version = "1.13.1"
 backend = "aqua:smol-machines/smolvm"
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:db1ec1dd17e811e9955a11c3bc7ed2b08848083a359ecd5fb22982b7350fa996"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.13.0/smolvm-1.13.0-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/530384685"
+checksum = "sha256:da877a29ecd663173ac6087e7d6d4405e942c1a5acbd92928b110d4697da07cf"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.13.1/smolvm-1.13.1-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/531973952"
 
 [[tools.aube]]
 version = "2.2.0"
@@ -50,13 +50,13 @@ provenance = "github-attestations"
 provenance_verified = true
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.0.6"
+version = "18.0.7"
 backend = "github:can1357/oh-my-pi"
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:68d911038e061d35c8caa6a71c91a15b60a98f8c5464ad9f47e5d1eaeda6be4c"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.0.6/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/530507147"
+checksum = "sha256:752d466a0c22165f8010f41aea6fd7da7e8fd744d841f53d62bfb6db6f218f4d"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.0.7/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/532182517"
 
 [[tools."github:kucherenko/jscpd"]]
 version = "5.0.16"
@@ -154,10 +154,10 @@ url = "https://github.com/jdx/usage/releases/download/v6.4.1/usage-universal-app
 url_api = "https://api.github.com/repos/jdx/usage/releases/assets/530181631"
 
 [[tools.worktrunk]]
-version = "0.74.0"
+version = "0.75.0"
 backend = "aqua:max-sixty/worktrunk"
 
 [tools.worktrunk."platforms.macos-arm64"]
-checksum = "sha256:d5ac03b8f3df0d144a2c052274b70a6f750a8c1e82b1b2ba348257749fda5ae3"
-url = "https://github.com/max-sixty/worktrunk/releases/download/v0.74.0/worktrunk-aarch64-apple-darwin.tar.xz"
-url_api = "https://api.github.com/repos/max-sixty/worktrunk/releases/assets/514671731"
+checksum = "sha256:c5868d06bddd28b8e49d7b0c42c06e5825ec27e930ce7f3d254a8d8f6511c3b9"
+url = "https://github.com/max-sixty/worktrunk/releases/download/v0.75.0/worktrunk-aarch64-apple-darwin.tar.xz"
+url_api = "https://api.github.com/repos/max-sixty/worktrunk/releases/assets/531753160"
