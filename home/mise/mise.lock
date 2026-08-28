@@ -50,13 +50,13 @@ provenance = "github-attestations"
 provenance_verified = true
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.0.7"
+version = "18.0.9"
 backend = "github:can1357/oh-my-pi"
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:752d466a0c22165f8010f41aea6fd7da7e8fd744d841f53d62bfb6db6f218f4d"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.0.7/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/532182517"
+checksum = "sha256:01c028c89ac59a267df816a0133df9cbd843231798a0177657719468ccbc3045"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.0.9/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/533353502"
 
 [[tools."github:kucherenko/jscpd"]]
 version = "5.0.16"
@@ -128,13 +128,13 @@ version = "0.8.0"
 backend = "nix:pkl-lsp"
 
 [[tools.opencode]]
-version = "1.18.23"
+version = "1.18.24"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:373cf36673836f2ce8847295a0bb2cd2447d03c769b44d84185916bd471b4274"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.18.23/opencode-darwin-arm64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/528740576"
+checksum = "sha256:5d5dde8368239744756605a8bfa9f4609640cb0e5db29449fad9a9ecfd4dcf22"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.24/opencode-darwin-arm64.zip"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/533219245"
 
 [[tools.television]]
 version = "0.15.9"
