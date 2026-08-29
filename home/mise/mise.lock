@@ -50,13 +50,13 @@ provenance = "github-attestations"
 provenance_verified = true
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.0.9"
+version = "18.0.10"
 backend = "github:can1357/oh-my-pi"
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:01c028c89ac59a267df816a0133df9cbd843231798a0177657719468ccbc3045"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.0.9/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/533353502"
+checksum = "sha256:bf026b63aa3b0acb0afbed8083f76bcec134bf56ffdbbe80fb73a7e079fe278a"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.0.10/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/534222613"
 
 [[tools."github:kucherenko/jscpd"]]
 version = "5.0.16"
@@ -128,13 +128,13 @@ version = "0.8.0"
 backend = "nix:pkl-lsp"
 
 [[tools.opencode]]
-version = "1.18.24"
+version = "1.18.25"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:5d5dde8368239744756605a8bfa9f4609640cb0e5db29449fad9a9ecfd4dcf22"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.18.24/opencode-darwin-arm64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/533219245"
+checksum = "sha256:606b09722d98069605e16037fb8c3c7c8ebbfed9ba713079a5efb2e5b065ae27"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.25/opencode-darwin-arm64.zip"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/533313310"
 
 [[tools.television]]
 version = "0.15.9"
@@ -145,13 +145,13 @@ checksum = "sha256:94ae7177d499f74e7544243ffe9c82371183ca11a6363f198a4b3d0e29f82
 url = "https://github.com/alexpasmantier/television/releases/download/0.15.9/tv-0.15.9-aarch64-apple-darwin.tar.gz"
 
 [[tools.usage]]
-version = "6.4.1"
+version = "6.5.0"
 backend = "aqua:jdx/usage"
 
 [tools.usage."platforms.macos-arm64"]
-checksum = "sha256:22f1df952ab0e6a3f982ea3026d45af6ef0264a5a6f623f0ae33bf2bc76ce409"
-url = "https://github.com/jdx/usage/releases/download/v6.4.1/usage-universal-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/usage/releases/assets/530181631"
+checksum = "sha256:54e692f240d11a2e8a34fb3e0273821e35272f5b502226bd958736c16f7e7e3d"
+url = "https://github.com/jdx/usage/releases/download/v6.5.0/usage-universal-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/533960041"
 
 [[tools.worktrunk]]
 version = "0.75.0"
