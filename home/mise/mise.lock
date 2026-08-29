@@ -50,22 +50,24 @@ provenance = "github-attestations"
 provenance_verified = true
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.0.10"
+version = "18.0.11"
 backend = "github:can1357/oh-my-pi"
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:bf026b63aa3b0acb0afbed8083f76bcec134bf56ffdbbe80fb73a7e079fe278a"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.0.10/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/534222613"
+checksum = "sha256:88b4a3e68e19904b8fcc1ba4b319ef68795f4fe06a6d101d564fc482cb0cc252"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.0.11/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/535576888"
 
 [[tools."github:kucherenko/jscpd"]]
-version = "5.0.16"
+version = "5.1.0"
 backend = "github:kucherenko/jscpd"
 
 [tools."github:kucherenko/jscpd"."platforms.macos-arm64"]
-checksum = "sha256:c966d61535e8fba324b88d7d710ec9d324156f577892ae182bf35bcebf9a028e"
-url = "https://github.com/kucherenko/jscpd/releases/download/v5.0.16/jscpd-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/kucherenko/jscpd/releases/assets/519082200"
+checksum = "sha256:14c3f0d5b8b65936ceae3ad2f7b03c397054935786a5cd19d20a9b5f2c4f1d06"
+url = "https://github.com/kucherenko/jscpd/releases/download/v5.1.0/jscpd-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/kucherenko/jscpd/releases/assets/536506079"
+provenance = "github-attestations"
+provenance_verified = true
 
 [[tools."github:remotemobprogramming/mob"]]
 version = "5.4.2"
@@ -106,13 +108,13 @@ provenance = "github-attestations"
 provenance_verified = true
 
 [[tools."github:zjrosen/perles"]]
-version = "0.8.92"
+version = "0.8.94"
 backend = "github:zjrosen/perles"
 
 [tools."github:zjrosen/perles"."platforms.macos-arm64"]
-checksum = "sha256:d4cf8171a3ff8eefe389ed543b156bd6e66da1e8a919052258f774e1baa09bbf"
-url = "https://github.com/zjrosen/perles/releases/download/v0.8.92/perles_0.8.92_darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/518694748"
+checksum = "sha256:4fd4676b9902e7a27bbce0cec9c6d720e959df8437bb531f439e5207a7ec841c"
+url = "https://github.com/zjrosen/perles/releases/download/v0.8.94/perles_0.8.94_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/535934600"
 
 [[tools.herdr]]
 version = "0.8.2"
@@ -145,13 +147,13 @@ checksum = "sha256:94ae7177d499f74e7544243ffe9c82371183ca11a6363f198a4b3d0e29f82
 url = "https://github.com/alexpasmantier/television/releases/download/0.15.9/tv-0.15.9-aarch64-apple-darwin.tar.gz"
 
 [[tools.usage]]
-version = "6.5.0"
+version = "6.6.0"
 backend = "aqua:jdx/usage"
 
 [tools.usage."platforms.macos-arm64"]
-checksum = "sha256:54e692f240d11a2e8a34fb3e0273821e35272f5b502226bd958736c16f7e7e3d"
-url = "https://github.com/jdx/usage/releases/download/v6.5.0/usage-universal-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/usage/releases/assets/533960041"
+checksum = "sha256:ef6f93e61697ed6dc287dc9b28611553a5099b1fabf259a21825f2978e14f3d9"
+url = "https://github.com/jdx/usage/releases/download/v6.6.0/usage-universal-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/537090611"
 
 [[tools.worktrunk]]
 version = "0.75.0"
