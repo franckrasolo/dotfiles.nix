@@ -100,8 +100,10 @@ return {
       },
       mappings = {
         status = {
-          ["[h"] = "GoToPreviousHunkHeader",
-          ["]h"] = "GoToNextHunkHeader",
+          ["<c-[>"] = "PreviousSection",
+          ["<c-]>"] = "NextSection",
+          ["["] = "GoToPreviousHunkHeader",
+          ["]"] = "GoToNextHunkHeader",
         },
       },
     },
