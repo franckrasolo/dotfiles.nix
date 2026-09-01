@@ -41,6 +41,7 @@ version = "latest"
 depends = "bun"
 postinstall = """
   omp config init-xdg
+  omp plugin install git:github.com/DietrichGebert/ponytail
 """
 
 [env]
