@@ -20,13 +20,13 @@ url = "https://github.com/smol-machines/smolvm/releases/download/v1.13.1/smolvm-
 url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/531973952"
 
 [[tools.aube]]
-version = "2.2.0"
+version = "2.2.4"
 backend = "github:endevco/aube"
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:702de7f549cef800a1f35900e638ea4fbe07bce854f234cef869cd5442484c90"
-url = "https://github.com/jdx/aube/releases/download/v2.2.0/aube-v2.2.0-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/aube/releases/assets/529761660"
+checksum = "sha256:aa3f6e8e319c8d9c92393e797cd5576229eacc0740e8cf2b34d4c65bb1e61708"
+url = "https://github.com/jdx/aube/releases/download/v2.2.4/aube-v2.2.4-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/aube/releases/assets/538155490"
 provenance = "github-attestations"
 provenance_verified = true
 
@@ -50,22 +50,22 @@ provenance = "github-attestations"
 provenance_verified = true
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.0.11"
+version = "18.1.2"
 backend = "github:can1357/oh-my-pi"
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:88b4a3e68e19904b8fcc1ba4b319ef68795f4fe06a6d101d564fc482cb0cc252"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.0.11/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/535576888"
+checksum = "sha256:5f2512cce2a154ad2406a4792421c42f022b1335f83dcbde4236f76e50ab35b4"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.1.2/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/540091853"
 
 [[tools."github:kucherenko/jscpd"]]
-version = "5.1.0"
+version = "5.1.1"
 backend = "github:kucherenko/jscpd"
 
 [tools."github:kucherenko/jscpd"."platforms.macos-arm64"]
-checksum = "sha256:14c3f0d5b8b65936ceae3ad2f7b03c397054935786a5cd19d20a9b5f2c4f1d06"
-url = "https://github.com/kucherenko/jscpd/releases/download/v5.1.0/jscpd-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/kucherenko/jscpd/releases/assets/536506079"
+checksum = "sha256:0fc3f35fcac0eadde77803fd3b656d2b3699e7046ed4fb034a5a4bf4b9d71aad"
+url = "https://github.com/kucherenko/jscpd/releases/download/v5.1.1/jscpd-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/kucherenko/jscpd/releases/assets/538185419"
 provenance = "github-attestations"
 provenance_verified = true
 
@@ -147,13 +147,13 @@ checksum = "sha256:94ae7177d499f74e7544243ffe9c82371183ca11a6363f198a4b3d0e29f82
 url = "https://github.com/alexpasmantier/television/releases/download/0.15.9/tv-0.15.9-aarch64-apple-darwin.tar.gz"
 
 [[tools.usage]]
-version = "6.6.0"
+version = "6.6.1"
 backend = "aqua:jdx/usage"
 
 [tools.usage."platforms.macos-arm64"]
-checksum = "sha256:ef6f93e61697ed6dc287dc9b28611553a5099b1fabf259a21825f2978e14f3d9"
-url = "https://github.com/jdx/usage/releases/download/v6.6.0/usage-universal-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/usage/releases/assets/537090611"
+checksum = "sha256:2cd11077e8b62c65687c84eab29dae429985acfdea3847b3775a99677f5d6408"
+url = "https://github.com/jdx/usage/releases/download/v6.6.1/usage-universal-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/539847849"
 
 [[tools.worktrunk]]
 version = "0.75.0"
