@@ -29,6 +29,17 @@ cat << EOF | sed -E 's/^\\s+//' >| $XDG_CONFIG_HOME/npm/npmrc
 EOF
 """
 
+[tools."npm:skills"]
+version = "latest"
+depends = "node"
+postinstall = """
+  skills add herdrdev/herdr --skill herdr --global --yes
+"""
+
+[tasks."skills:update"]
+description = "update skills installed globally at ~/.agents/skills"
+run = "skills update --global"
+
 [tasks."file:inspect"]
 description = "lists file attributes"
 usage = """
