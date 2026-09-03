@@ -39,33 +39,33 @@ checksum = "sha256:c669e97f6164e1c96e0701748db98dfa77492908cbd8394c7557134a735de
 url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.0/bun-darwin-aarch64.zip"
 
 [[tools.fnox]]
-version = "1.34.1"
+version = "1.35.0"
 backend = "github:jdx/fnox"
 
 [tools.fnox."platforms.macos-arm64"]
-checksum = "sha256:b9efa09f551470f8d664a2e040754d14993293e45dc08a69df4a9df782bbd1d4"
-url = "https://github.com/jdx/fnox/releases/download/v1.34.1/fnox-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/531310160"
+checksum = "sha256:e474bde18bcc305360c4e688cad99c36165545824b61921973c4e6fef3ebd111"
+url = "https://github.com/jdx/fnox/releases/download/v1.35.0/fnox-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/542598829"
 provenance = "github-attestations"
 provenance_verified = true
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.1.3"
+version = "18.1.6"
 backend = "github:can1357/oh-my-pi"
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:3f01e1df5a836c6b882966bc527a910e88cafc28096d9756c46e649187950310"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.1.3/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/541264002"
+checksum = "sha256:5df9898235189c9531903d085da8cfa8306dfe20d1ed6c41495787d4f255871d"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.1.6/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/542701406"
 
 [[tools."github:kucherenko/jscpd"]]
-version = "5.1.1"
+version = "5.1.2"
 backend = "github:kucherenko/jscpd"
 
 [tools."github:kucherenko/jscpd"."platforms.macos-arm64"]
-checksum = "sha256:0fc3f35fcac0eadde77803fd3b656d2b3699e7046ed4fb034a5a4bf4b9d71aad"
-url = "https://github.com/kucherenko/jscpd/releases/download/v5.1.1/jscpd-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/kucherenko/jscpd/releases/assets/538185419"
+checksum = "sha256:6bf5a3795a5ccf4a126c84951d19b66d49c729a1e637392af53c86e2accccd80"
+url = "https://github.com/kucherenko/jscpd/releases/download/v5.1.2/jscpd-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/kucherenko/jscpd/releases/assets/542470855"
 provenance = "github-attestations"
 provenance_verified = true
 
@@ -130,13 +130,13 @@ version = "0.8.0"
 backend = "nix:pkl-lsp"
 
 [[tools.opencode]]
-version = "1.18.26"
+version = "1.18.27"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:b05d383149a5a417140e8edebd83064142fa36e74fdfcd5f791919dcb12fd33a"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.18.26/opencode-darwin-arm64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/540146149"
+checksum = "sha256:149b0c6d272d0059b8b5ffcd18c84b24f1d6cbf585942b10e60c601211992eb1"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.27/opencode-darwin-arm64.zip"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/541770165"
 
 [[tools.television]]
 version = "0.15.9"
