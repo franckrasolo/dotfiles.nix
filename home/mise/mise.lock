@@ -11,52 +11,52 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/515302
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.13.1"
+version = "1.14.1"
 backend = "aqua:smol-machines/smolvm"
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:da877a29ecd663173ac6087e7d6d4405e942c1a5acbd92928b110d4697da07cf"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.13.1/smolvm-1.13.1-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/531973952"
+checksum = "sha256:27f2ae7057f235a67a58fd13d0657c268cf9a16f214f8b177427d29daab0ae2f"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.14.1/smolvm-1.14.1-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/547236151"
 
 [[tools.aube]]
-version = "2.2.4"
+version = "2.2.12"
 backend = "github:endevco/aube"
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:aa3f6e8e319c8d9c92393e797cd5576229eacc0740e8cf2b34d4c65bb1e61708"
-url = "https://github.com/jdx/aube/releases/download/v2.2.4/aube-v2.2.4-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/aube/releases/assets/538155490"
+checksum = "sha256:30235658a0f328f095ff7f178f352a6bfef753a8fe505d991bd9f5db3825f2f6"
+url = "https://github.com/aubepkg/aube/releases/download/v2.2.12/aube-v2.2.12-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/546517467"
 provenance = "github-attestations"
 provenance_verified = true
 
 [[tools.bun]]
-version = "1.4.0"
+version = "1.4.2"
 backend = "core:bun"
 
 [tools.bun."platforms.macos-arm64"]
-checksum = "sha256:c669e97f6164e1c96e0701748db98dfa77492908cbd8394c7557134a735de381"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.0/bun-darwin-aarch64.zip"
+checksum = "sha256:90987a3a16d7db556d886ac3d551e7b6d3edf0a1cf43acaed622e8676be1d12f"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-darwin-aarch64.zip"
 
 [[tools.fnox]]
-version = "1.35.0"
+version = "1.35.1"
 backend = "github:jdx/fnox"
 
 [tools.fnox."platforms.macos-arm64"]
-checksum = "sha256:e474bde18bcc305360c4e688cad99c36165545824b61921973c4e6fef3ebd111"
-url = "https://github.com/jdx/fnox/releases/download/v1.35.0/fnox-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/542598829"
+checksum = "sha256:9b733a2b9e3e893e73131cc3c7d64c8596de4c7210b47f3695ed4011d798a1e6"
+url = "https://github.com/jdx/fnox/releases/download/v1.35.1/fnox-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/546210951"
 provenance = "github-attestations"
 provenance_verified = true
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.1.6"
+version = "18.1.13"
 backend = "github:can1357/oh-my-pi"
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:5df9898235189c9531903d085da8cfa8306dfe20d1ed6c41495787d4f255871d"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.1.6/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/542701406"
+checksum = "sha256:a4c5c9cc5b8222184d0d7429b0bb6ac2a92bbe45dd11bf68e4b1360050791909"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.1.13/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/547897009"
 
 [[tools."github:kucherenko/jscpd"]]
 version = "5.1.2"
@@ -97,13 +97,13 @@ url = "https://github.com/vladkens/macmon/releases/download/v0.8.2/macmon-v0.8.2
 url_api = "https://api.github.com/repos/vladkens/macmon/releases/assets/501564311"
 
 [[tools."github:zeroclaw-labs/zeroclaw"]]
-version = "0.8.4"
+version = "0.8.5"
 backend = "github:zeroclaw-labs/zeroclaw"
 
 [tools."github:zeroclaw-labs/zeroclaw"."platforms.macos-arm64"]
-checksum = "sha256:fac22f9af2f940fd3bb7e77deb42fac7d052dfc81212812694703f7c20d34edf"
-url = "https://github.com/zeroclaw-labs/zeroclaw/releases/download/v0.8.4/zeroclaw-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/zeroclaw-labs/zeroclaw/releases/assets/499270301"
+checksum = "sha256:7036f71b11e3dc8fd4de589b130b08faa792b9b2952e752d975c27bc572f7671"
+url = "https://github.com/zeroclaw-labs/zeroclaw/releases/download/v0.8.5/zeroclaw-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/zeroclaw-labs/zeroclaw/releases/assets/545517267"
 provenance = "github-attestations"
 provenance_verified = true
 
@@ -130,13 +130,13 @@ version = "0.8.0"
 backend = "nix:pkl-lsp"
 
 [[tools.opencode]]
-version = "1.18.27"
+version = "1.18.29"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:149b0c6d272d0059b8b5ffcd18c84b24f1d6cbf585942b10e60c601211992eb1"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.18.27/opencode-darwin-arm64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/541770165"
+checksum = "sha256:fe764f7f360c584a83e18dd5f23fb1a6b2725f5ee8854b0252fe558f7798e946"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.29/opencode-darwin-arm64.zip"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/545047483"
 
 [[tools.television]]
 version = "0.15.9"
@@ -147,13 +147,13 @@ checksum = "sha256:94ae7177d499f74e7544243ffe9c82371183ca11a6363f198a4b3d0e29f82
 url = "https://github.com/alexpasmantier/television/releases/download/0.15.9/tv-0.15.9-aarch64-apple-darwin.tar.gz"
 
 [[tools.usage]]
-version = "6.6.1"
+version = "6.8.0"
 backend = "aqua:jdx/usage"
 
 [tools.usage."platforms.macos-arm64"]
-checksum = "sha256:2cd11077e8b62c65687c84eab29dae429985acfdea3847b3775a99677f5d6408"
-url = "https://github.com/jdx/usage/releases/download/v6.6.1/usage-universal-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/usage/releases/assets/539847849"
+checksum = "sha256:f6bfe2e5353e02769d3f6902d06db1cb201f84124df08465fd4826f9ce7ba632"
+url = "https://github.com/jdx/usage/releases/download/v6.8.0/usage-universal-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/547480261"
 
 [[tools.worktrunk]]
 version = "0.76.0"
