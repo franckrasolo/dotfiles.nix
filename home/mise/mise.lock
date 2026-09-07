@@ -50,13 +50,13 @@ provenance = "github-attestations"
 provenance_verified = true
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.1.13"
+version = "18.1.14"
 backend = "github:can1357/oh-my-pi"
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:a4c5c9cc5b8222184d0d7429b0bb6ac2a92bbe45dd11bf68e4b1360050791909"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.1.13/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/547897009"
+checksum = "sha256:66c09cc5ffc8e080335649579c7cc32212d7e2a13d486a14f45d00f3088ea6d2"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.1.14/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/549227320"
 
 [[tools."github:kucherenko/jscpd"]]
 version = "5.1.2"
@@ -117,13 +117,15 @@ url = "https://github.com/zjrosen/perles/releases/download/v0.8.94/perles_0.8.94
 url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/535934600"
 
 [[tools.herdr]]
-version = "0.8.2"
+version = "0.9.0"
 backend = "github:ogulcancelik/herdr"
 
 [tools.herdr."platforms.macos-arm64"]
-checksum = "sha256:a5d4f4d504d8b309c91f811050559300faba31258425f53c50852fc96f6ae574"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.8.2/herdr-macos-aarch64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/521169108"
+checksum = "sha256:32b53df09872628059c789a69f02a6b8e29e14ddf26711421f3463f70c1aef17"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.9.0/herdr-macos-aarch64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/549270162"
+provenance = "github-attestations"
+provenance_verified = true
 
 [[tools."nix:pkl-lsp"]]
 version = "0.8.0"
