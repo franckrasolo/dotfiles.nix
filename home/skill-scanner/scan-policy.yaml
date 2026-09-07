@@ -1,0 +1,14 @@
+# only includes overridden sections
+# omitted sections will use defaults of the preset base policy
+
+policy_name: custom
+preset_base: strict
+
+llm_analysis:
+  max_instruction_body_chars: 150000
+  max_code_file_chars: 100000
+  max_referenced_file_chars: 10000
+  max_total_prompt_chars: 500000
+
+disabled_rules:
+  - MANIFEST_MISSING_LICENSE

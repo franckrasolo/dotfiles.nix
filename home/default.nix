@@ -22,6 +22,7 @@
     ./presenterm
     ./ripgrep
     ./silicon
+    ./skill-scanner
     ./television
     ./tmux
     ./wezterm

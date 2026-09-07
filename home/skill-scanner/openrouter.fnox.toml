@@ -1,0 +1,4 @@
+#:schema https://fnox.jdx.dev/schema.json
+
+[secrets.SKILL_SCANNER_LLM_API_KEY]
+value = "op://Automation/OpenRouter API/key"
