@@ -1,5 +1,7 @@
 [tools]
 kotlin = "latest"
+uv = "latest"
+"pipx:cisco-ai-skill-scanner" = "latest"
 
 [tools.java]
 version = "temurin-25"
