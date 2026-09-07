@@ -42,6 +42,52 @@ postinstall = """
 description = "update skills installed globally at ~/.agents/skills"
 run = "skills update --global"
 
+[tasks."skills:scan-dir"]
+description = "Runs a security analysis of a skills directory"
+usage = """
+arg "<dir>" help="directory containing skills"
+flag "--out <path>" help="path of the generated HTML report"
+"""
+env._.file = "${XDG_CONFIG_HOME}/skill-scanner/openrouter.env"
+run = """
+  fnox --config ${SKILL_SCANNER_FNOX_CONFIG} exec -- \
+    skill-scanner scan-all {{ usage.dir }} \
+      --policy ${XDG_CONFIG_HOME}/skill-scanner/scan-policy.yaml \
+      --recursive \
+      --use-behavioral \
+      --use-llm \
+      --use-osv \
+      --fail-on-severity medium \
+      --format summary \
+      --format html \
+      --output-html {{ usage.out }}
+"""
+quiet = true
+
+[tasks."skills:scan-repo"]
+description = "Runs a security analysis of a skills repository"
+usage = """
+arg <repo> help="GitHub owner/repo or Git URL of the skills repository"
+"""
+env._.file = "${XDG_CONFIG_HOME}/skill-scanner/openrouter.env"
+run = """
+  scan_id="{{ usage.repo | dirname | basename }}:{{ usage.repo | basename }}"
+  mkdir -p ${XDG_DATA_HOME}/skill-scanner
+
+  fnox --config ${SKILL_SCANNER_FNOX_CONFIG} exec -- \
+    skill-scanner scan-repo {{ usage.repo }} \
+      --policy ${XDG_CONFIG_HOME}/skill-scanner/scan-policy.yaml \
+      --recursive \
+      --use-behavioral \
+      --use-llm \
+      --use-osv \
+      --fail-on-severity medium \
+      --format summary \
+      --format html \
+      --output-html ${XDG_DATA_HOME}/skill-scanner/scan:${scan_id}.html
+"""
+quiet = true
+
 [tasks."file:inspect"]
 description = "lists file attributes"
 usage = """
