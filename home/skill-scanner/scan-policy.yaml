@@ -5,9 +5,9 @@ policy_name: custom
 preset_base: strict
 
 llm_analysis:
-  max_code_file_chars: 100000
+  max_code_file_chars: 200000
   max_instruction_body_chars: 150000
-  max_referenced_file_chars: 50000
+  max_referenced_file_chars: 75000
   max_total_prompt_chars: 500000
 
 disabled_rules:
