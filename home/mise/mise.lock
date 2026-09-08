@@ -11,13 +11,13 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/515302
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.14.3"
+version = "1.14.4"
 backend = "aqua:smol-machines/smolvm"
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:d0c962a017fe07a1b58c1437b16e6a2320c00d8a7cae739882103b871ef7af0f"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.14.3/smolvm-1.14.3-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/550416390"
+checksum = "sha256:1262d223913e35e3c5405c6ed4c193e88c72726fd13a33cfa7144a3014173efc"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.14.4/smolvm-1.14.4-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/551587071"
 
 [[tools.aube]]
 version = "2.2.12"
@@ -50,13 +50,13 @@ provenance = "github-attestations"
 provenance_verified = true
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.1.14"
+version = "18.1.15"
 backend = "github:can1357/oh-my-pi"
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:66c09cc5ffc8e080335649579c7cc32212d7e2a13d486a14f45d00f3088ea6d2"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.1.14/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/549227320"
+checksum = "sha256:e1e090262f7470d51360ea943d80c3ef03d6178e573b03d0c3d21af5d424e8be"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.1.15/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/551459270"
 
 [[tools."github:kucherenko/jscpd"]]
 version = "5.2.0"
@@ -132,13 +132,13 @@ version = "0.8.0"
 backend = "nix:pkl-lsp"
 
 [[tools.opencode]]
-version = "1.18.29"
+version = "1.18.30"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:fe764f7f360c584a83e18dd5f23fb1a6b2725f5ee8854b0252fe558f7798e946"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.18.29/opencode-darwin-arm64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/545047483"
+checksum = "sha256:a5e43d6887386efc7d68ce49ae28e3bbdfdee3dfd1d7169b612c3ce67e53b1e8"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.30/opencode-darwin-arm64.zip"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/551875293"
 
 [[tools.television]]
 version = "0.15.9"
@@ -158,10 +158,10 @@ url = "https://github.com/jdx/usage/releases/download/v6.8.0/usage-universal-app
 url_api = "https://api.github.com/repos/jdx/usage/releases/assets/547480261"
 
 [[tools.worktrunk]]
-version = "0.76.0"
+version = "0.77.0"
 backend = "aqua:max-sixty/worktrunk"
 
 [tools.worktrunk."platforms.macos-arm64"]
-checksum = "sha256:7b19bb9d5ec60ea4b9bcb11d92606e0575bdf17a01edfe4b841f4281e5d0f56d"
-url = "https://github.com/max-sixty/worktrunk/releases/download/v0.76.0/worktrunk-aarch64-apple-darwin.tar.xz"
-url_api = "https://api.github.com/repos/max-sixty/worktrunk/releases/assets/540216619"
+checksum = "sha256:43f9b2e65d96954b5fa44eab148b040a5c78cd36abfd81718178928ac1746572"
+url = "https://github.com/max-sixty/worktrunk/releases/download/v0.77.0/worktrunk-aarch64-apple-darwin.tar.xz"
+url_api = "https://api.github.com/repos/max-sixty/worktrunk/releases/assets/551416742"
