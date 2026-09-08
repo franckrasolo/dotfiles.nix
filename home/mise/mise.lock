@@ -11,13 +11,13 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/515302
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.14.2"
+version = "1.14.3"
 backend = "aqua:smol-machines/smolvm"
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:b89db0410bcc2909dcc8ecfd0dd6398c71029cc014bad5753151fe27fbc75d28"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.14.2/smolvm-1.14.2-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/548630148"
+checksum = "sha256:d0c962a017fe07a1b58c1437b16e6a2320c00d8a7cae739882103b871ef7af0f"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.14.3/smolvm-1.14.3-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/550416390"
 
 [[tools.aube]]
 version = "2.2.12"
@@ -59,13 +59,13 @@ url = "https://github.com/can1357/oh-my-pi/releases/download/v18.1.14/omp-darwin
 url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/549227320"
 
 [[tools."github:kucherenko/jscpd"]]
-version = "5.1.2"
+version = "5.2.0"
 backend = "github:kucherenko/jscpd"
 
 [tools."github:kucherenko/jscpd"."platforms.macos-arm64"]
-checksum = "sha256:6bf5a3795a5ccf4a126c84951d19b66d49c729a1e637392af53c86e2accccd80"
-url = "https://github.com/kucherenko/jscpd/releases/download/v5.1.2/jscpd-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/kucherenko/jscpd/releases/assets/542470855"
+checksum = "sha256:b5646c1ab79a67773d3bb54c8ab48751466f39d7df47f7859e6493a6d5acc76a"
+url = "https://github.com/kucherenko/jscpd/releases/download/v5.2.0/jscpd-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/kucherenko/jscpd/releases/assets/550284810"
 provenance = "github-attestations"
 provenance_verified = true
 
