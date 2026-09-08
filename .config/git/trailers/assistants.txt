@@ -17,6 +17,7 @@ MiMo V2.5 <noreply@xiaomi.com>
 MiniMax M3 <noreply@minimax.io>
 Muse Spark 1.3 <noreply@meta.ai>
 OMP <noreply@omp.sh>
+Omen Alpha
 OpenCode <noreply@opencode.ai>
 Pi <noreply@pi.dev>
 Qwen3.8 Max <noreply@qwen.ai>
