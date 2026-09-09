@@ -37,11 +37,11 @@ version = "2.1.0"
 backend = "pipx:cisco-ai-skill-scanner"
 
 [[tools.uv]]
-version = "0.12.11"
+version = "0.12.12"
 backend = "aqua:astral-sh/uv"
 
 [tools.uv."platforms.macos-arm64"]
-checksum = "sha256:e01b69ee15e81918d5e8fc9cf39b3db7f59c5576e5e306cd9b7aeb2c7b7321c3"
-url = "https://github.com/astral-sh/uv/releases/download/0.12.11/uv-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/551278468"
+checksum = "sha256:46740540b63fdee9a6cb2e19baf3f1f475b850c440a33e63455087a6871263f1"
+url = "https://github.com/astral-sh/uv/releases/download/0.12.12/uv-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/553169165"
 provenance = "github-attestations"
