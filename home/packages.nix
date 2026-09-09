@@ -94,6 +94,7 @@ let
     jnv
     jq
     jqfmt
+    markitdown
     mdq
     otree
     xan
