@@ -26,8 +26,6 @@ fnox = "latest"
 "github:zeroclaw-labs/zeroclaw" = "latest"
 "github:zjrosen/perles" = "latest"
 "nix:pkl-lsp" = "latest"
-herdr = "latest"
-opencode = "latest"
 worktrunk = "latest"
 television = "latest"
 usage = "latest"
@@ -42,6 +40,20 @@ depends = "bun"
 postinstall = """
   omp config init-xdg
   omp plugin install git:github.com/DietrichGebert/ponytail
+"""
+
+[tools.opencode]
+version = "latest"
+postinstall = """
+  ln -sf ${XDG_CONFIG_HOME}/opencode ~/.config/opencode
+"""
+
+[tools.herdr]
+version = "latest"
+depends = ["github:can1357/oh-my-pi", "opencode"]
+postinstall = """
+  herdr integration install omp
+  herdr integration install opencode
 """
 
 [env]
