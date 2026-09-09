@@ -23,7 +23,6 @@ let
     eza
     fd
     fzf
-    glow
 #   gnused
     go-task
     gzip
@@ -89,6 +88,7 @@ let
     fq
     fx
     hl-log-viewer
+    glow
     ijq
     jless
     jnv
