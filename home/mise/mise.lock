@@ -11,13 +11,13 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/515302
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.14.5"
+version = "1.14.6"
 backend = "aqua:smol-machines/smolvm"
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:6565e759c5bb8b42f6ec26a6b414f3644575c88bef0cca0f12f5ececd408ef4e"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.14.5/smolvm-1.14.5-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/552602831"
+checksum = "sha256:484b63c6a7c74c4d05dce2e63fcce3d135e0fba56a1d77128024e5736d3384a8"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.14.6/smolvm-1.14.6-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/554025144"
 
 [[tools.aube]]
 version = "2.2.13"
@@ -50,13 +50,13 @@ provenance = "github-attestations"
 provenance_verified = true
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.1.16"
+version = "18.1.17"
 backend = "github:can1357/oh-my-pi"
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:99eed6d45d984d2f13d76832f78782b9aa07862921ab4e98e2d8e31ca8129795"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.1.16/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/553389394"
+checksum = "sha256:1c310974d4be8de4e5b7285e9c52647321b412c219790fe0243cf804d5c9d5cc"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.1.17/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/555681811"
 
 [[tools."github:kucherenko/jscpd"]]
 version = "5.2.0"
