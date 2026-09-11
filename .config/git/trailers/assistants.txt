@@ -1,6 +1,7 @@
 Claude Fable 5.1 <noreply@anthropic.com>
 Claude Opus 5 <noreply@anthropic.com>
 Claude Sonnet 5 <noreply@anthropic.com>
+DeepSeek V4.1 Flash <noreply@deepseek.com>
 GLM 5.3 <noreply@z.ai>
 GLM 5.3 Flash <noreply@z.ai>
 GPT 5.6 Luna <noreply@openai.com>
