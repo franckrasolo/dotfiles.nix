@@ -426,6 +426,7 @@
     }
   },
   "plugin": [
+    "file://{env:XDG_CONFIG_HOME}/opencode/vendor/i-have-adhd/.opencode/plugins/i-have-adhd.mjs",
     "@dietrichgebert/ponytail",
     "superpowers@git+https://github.com/obra/superpowers.git"
   ]

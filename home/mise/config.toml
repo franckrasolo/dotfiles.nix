@@ -39,13 +39,21 @@ version = "latest"
 depends = "bun"
 postinstall = """
   omp config init-xdg
-  omp plugin install git:github.com/DietrichGebert/ponytail
+
+  omp plugin marketplace add ayghri/i-have-adhd 2> /dev/null || true
+  omp plugin install --force i-have-adhd@i-have-adhd
+  omp plugin install --force git:github.com/DietrichGebert/ponytail
+  omp plugin install --force github:obra/superpowers
 """
 
 [tools.opencode]
 version = "latest"
 postinstall = """
   ln -sf ${XDG_CONFIG_HOME}/opencode ~/.config/opencode
+
+  vendor="${XDG_CONFIG_HOME}/opencode/vendor"
+  mkdir -p $vender
+  git -C $vendor sync https://github.com/ayghri/i-have-adhd
 """
 
 [tools.herdr]
