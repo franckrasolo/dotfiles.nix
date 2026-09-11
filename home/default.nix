@@ -13,6 +13,7 @@
     ./git
     ./k9s
     ./lazygit
+    ./leaf
     ./luarocks
     ./mise
     ./nvim

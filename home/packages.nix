@@ -88,7 +88,6 @@ let
     fq
     fx
     hl-log-viewer
-    glow
     ijq
     jless
     jnv

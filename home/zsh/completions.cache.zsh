@@ -28,6 +28,7 @@ _cache_completion glab glab completion --shell zsh
 _cache_completion kubectl eval HTTPS_PROXY=1:1 kubectl completion zsh
 compdef k='kubectl'
 
+_cache_completion leaf leaf --auto-complete zsh:dump
 _cache_completion mise mise completion zsh
 _cache_completion omp zsh -c "omp completions zsh"
 _cache_completion opencode opencode completion

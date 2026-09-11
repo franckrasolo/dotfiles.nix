@@ -78,6 +78,15 @@ checksum = "sha256:2ca73fc8e347f80b47a269bdf64e4265f6d6c5be2229bf5604aea551a67ce
 url = "https://github.com/remotemobprogramming/mob/releases/download/5.4.2/mob_5.4.2_darwin_universal.tar.gz"
 url_api = "https://api.github.com/repos/remotemobprogramming/mob/releases/assets/346269527"
 
+[[tools."github:rivolink/leaf"]]
+version = "1.28.1"
+backend = "github:rivolink/leaf"
+
+[tools."github:rivolink/leaf"."platforms.macos-arm64"]
+checksum = "sha256:90b1906d670c580b1552d5701226b09d9e5d608b1341acf6ec921f44830d3015"
+url = "https://github.com/RivoLink/leaf/releases/download/1.28.1/leaf-macos-arm64"
+url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/537421090"
+
 [[tools."github:tinylabscom/mvm"]]
 version = "0.17.0"
 backend = "github:tinylabscom/mvm"

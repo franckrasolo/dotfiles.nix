@@ -1,0 +1,40 @@
+theme = "ocean"
+
+# Default editor for Ctrl+E
+# Open the editor at the first visible source line at Ctrl+E:
+editor = 'nvim +{$line} +"normal! zz"'
+
+# {$path} offers more customization options:
+# editor = 'code -g {$path}:{$line}'
+
+# Maximum content width (number of columns)
+width = 120
+
+# Watch mode: automatically reload when the file changes
+# Only applies when opening a file (ignored for stdin)
+watch = true
+
+# Additional file types shown in the file picker
+extras = []
+
+# Width of the file picker (fuzzy + file browser)
+# Accepted formats:
+#   "NN%":     percent of terminal width, converted to cells (ceil)
+#   "NNcells": absolute number of terminal cells
+# The final width is always capped by (terminal_width - 2) cells.
+file-picker-width = "78cells"
+
+# Show line numbers inside fenced code blocks
+# Only affects code block gutters, the main document line numbers are independent.
+code-line-numbers = true
+
+# Maximum tab title length (in characters)
+# Controls the tab title of the terminal: "leaf: <filename>".
+# When the filename is long, it is truncated: "leaf: prefix...ext".
+# Priority: LEAF_TAB_TITLE_LENGTH > this setting > default (-1)
+# Minimum accepted: 20. Any other value falls back to no truncation.
+# Default: -1 (no truncation)
+tab-title-length = -1
+
+# Maximum number of recently opened files to keep in history
+file-history-length = 10
