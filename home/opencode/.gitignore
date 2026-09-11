@@ -1,0 +1,7 @@
+node_modules/
+plugins/herdr-agent-state.js
+vendor/
+.ponytail-active
+bun.lock
+herdr-tui-session.js
+package.json
