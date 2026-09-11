@@ -160,6 +160,15 @@
   type = cat-file -t
   dump = cat-file -p
 
+	sync = "!f() { \
+    repo_dir=$(basename \"$1\" .git); \
+    if [ -d \"$repo_dir\" ]; then \
+      cd \"$repo_dir\" && git pull; \
+    else \
+      git clone \"$1\"; \
+    fi \
+  }; f"
+
 [color]
   ui     = true
   branch = auto
