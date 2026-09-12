@@ -17,6 +17,7 @@
     ./luarocks
     ./mise
     ./nvim
+    ./omp
     ./opencode
     ./ov
     ./pdf
