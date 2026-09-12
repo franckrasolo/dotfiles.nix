@@ -1,4 +1,4 @@
-min_version = { hard = "2026.9.3" }
+min_version = { hard = "2026.9.5" }
 
 [settings]
 env_shell_expand = true
