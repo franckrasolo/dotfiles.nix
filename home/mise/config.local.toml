@@ -35,7 +35,7 @@ EOF
 version = "latest"
 depends = "node"
 postinstall = """
-  skills add herdrdev/herdr --skill herdr --global --yes
+  skills add herdrdev/herdr --skill herdr --agent opencode --global --yes
 """
 
 [tasks."skills:update"]
