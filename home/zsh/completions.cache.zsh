@@ -15,6 +15,7 @@ _cache_completion() {
 _cache_completion fx fx --comp zsh
 _cache_completion gh gh completion --shell zsh
 _cache_completion glab glab completion --shell zsh
+_cache_completion herdr herdr completion zsh
 
 #source /etc/profiles/per-user/$USER/share/zsh/site-functions/_gradle
 #__gradle-completion-init
