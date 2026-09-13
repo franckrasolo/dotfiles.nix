@@ -306,6 +306,7 @@ position = "bottom-right"
 enabled = true
 
 # Optional custom mp3 sound files. Relative paths are resolved from this config file's directory.
+# Royalty-free sound effects: https://pixabay.com/sound-effects/search/
 # path = "sounds/notification.mp3"    #  one mp3 file for all sound notifications
 done_path = "sounds/done.mp3"       # overrides only finished notifications
 request_path = "sounds/request.mp3" # overrides only needs-attention notifications
