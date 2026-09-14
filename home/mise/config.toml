@@ -35,6 +35,16 @@ usage = "latest"
 version = "latest"
 postinstall = "ln -sf $(mise which bd) $XDG_BIN_HOME/bd"
 
+[tools.opencode]
+version = "latest"
+postinstall = """
+  ln -sf ${XDG_CONFIG_HOME}/opencode ~/.config/opencode
+
+  vendor="${XDG_CONFIG_HOME}/opencode/vendor"
+  mkdir -p $vender
+  git -C $vendor sync https://github.com/ayghri/i-have-adhd
+"""
+
 [tools."github:can1357/oh-my-pi"]
 version = "latest"
 depends = "bun"
@@ -45,16 +55,6 @@ postinstall = """
   omp plugin install --force i-have-adhd@i-have-adhd
   omp plugin install --force git:github.com/DietrichGebert/ponytail
   omp plugin install --force github:obra/superpowers
-"""
-
-[tools.opencode]
-version = "latest"
-postinstall = """
-  ln -sf ${XDG_CONFIG_HOME}/opencode ~/.config/opencode
-
-  vendor="${XDG_CONFIG_HOME}/opencode/vendor"
-  mkdir -p $vender
-  git -C $vendor sync https://github.com/ayghri/i-have-adhd
 """
 
 [tools.pi]
