@@ -44,6 +44,14 @@ version = "2.1.0"
 backend = "pipx:cisco-ai-skill-scanner"
 specifiers = ["latest"]
 
+[[tools."pipx:cisco-ai-skill-scanner"]]
+version = "2.1.0"
+backend = "pipx:cisco-ai-skill-scanner"
+specifiers = ["latest"]
+
+[tools."pipx:cisco-ai-skill-scanner".options]
+uvx = "false"
+
 [[tools.uv]]
 version = "0.12.13"
 backend = "aqua:astral-sh/uv"
