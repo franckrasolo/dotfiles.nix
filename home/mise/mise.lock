@@ -168,15 +168,14 @@ url = "https://github.com/alexpasmantier/television/releases/download/0.15.9/tv-
 url_api = "https://api.github.com/repos/alexpasmantier/television/releases/assets/447568866"
 
 [[tools.usage]]
-version = "6.9.0"
+version = "6.9.1"
 backend = "aqua:jdx/usage"
 specifiers = ["latest"]
 
 [tools.usage."platforms.macos-arm64"]
-checksum = "sha256:9e5315149d5a08d7d1b863b4e94729aa36240353f2847529d06ac21fac7c6c01"
-url = "https://github.com/jdx/usage/releases/download/v6.9.0/usage-universal-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/usage/releases/assets/559448529"
-signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
+checksum = "sha256:ddbb2c29ec16aca2cb44e0b0f64ba204b603ec50ed773ffda3db723e9aae73fe"
+url = "https://github.com/jdx/usage/releases/download/v6.9.1/usage-universal-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/563246662"
 
 [[tools.worktrunk]]
 version = "0.77.0"
