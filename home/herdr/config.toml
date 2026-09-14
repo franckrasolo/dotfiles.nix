@@ -202,7 +202,7 @@ description = "launch OpenCode"
 [[keys.command]]
 key = "prefix+shift+m"
 type = "pane"
-command = "omp"
+command = "fnox exec -- omp"
 description = "launch omp"
 
 [[keys.command]]
