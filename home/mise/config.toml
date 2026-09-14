@@ -72,6 +72,7 @@ depends = ["github:can1357/oh-my-pi", "opencode"]
 postinstall = """
   herdr integration install omp
   herdr integration install opencode
+  herdr integration install pi
 """
 
 [env]
