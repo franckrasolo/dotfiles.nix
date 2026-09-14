@@ -112,6 +112,7 @@ modelRoles:
   default: opencode-go/omen-alpha:high
   tiny: opencode-go/deepseek-v4.1-flash:low
   advisor: opencode-go/glm-5.3:high
+  plan: opencode-go/deepseek-v4.1-flash:high
 retry:
   fallbackChains:
     opencode-go/*:
