@@ -3,6 +3,7 @@
 {
   imports = [
     ./packages.nix
+    ./agent-harnesses
     ./bat
     ./ghostty
     ./direnv
@@ -18,11 +19,8 @@
     ./luarocks
     ./mise
     ./nvim
-    ./omp
-    ./opencode
     ./ov
     ./pdf
-    ./pi
     ./presenterm
     ./ripgrep
     ./silicon
