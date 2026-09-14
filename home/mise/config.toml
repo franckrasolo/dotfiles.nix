@@ -10,6 +10,9 @@ minimum_release_age = "0s"
 [settings.npm]
 package_manager = "aube"
 
+[settings.pypi]
+uvx = false
+
 [shell_alias]
 aliases = "mise shell-alias ls"
 tasks = "mise tasks ls --all --extended"
