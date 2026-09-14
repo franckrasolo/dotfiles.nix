@@ -196,7 +196,7 @@ description = "launch Neovim"
 [[keys.command]]
 key = "prefix+shift+o"
 type = "pane"
-command = "opencode"
+command = "fnox exec -- opencode"
 description = "launch OpenCode"
 
 [[keys.command]]
