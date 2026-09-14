@@ -48,13 +48,13 @@ url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/561018919"
 provenance = "github-attestations"
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.1.19"
+version = "18.1.21"
 backend = "github:can1357/oh-my-pi"
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:defc1d398d6a90f34998d5120fb5b53cf7ae08c10dff91b834cab5a3b0461119"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.1.19/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/560180641"
+checksum = "sha256:e99a06d5741f13a5e161c88617cde2f5a65d422b2eec0cf1a69aecd093b2462f"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.1.21/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/562667069"
 
 [[tools."github:kucherenko/jscpd"]]
 version = "5.2.0"
@@ -77,13 +77,13 @@ url = "https://github.com/remotemobprogramming/mob/releases/download/5.4.2/mob_5
 url_api = "https://api.github.com/repos/remotemobprogramming/mob/releases/assets/346269527"
 
 [[tools."github:rivolink/leaf"]]
-version = "1.28.1"
+version = "1.28.2"
 backend = "github:rivolink/leaf"
 
 [tools."github:rivolink/leaf"."platforms.macos-arm64"]
-checksum = "sha256:90b1906d670c580b1552d5701226b09d9e5d608b1341acf6ec921f44830d3015"
-url = "https://github.com/RivoLink/leaf/releases/download/1.28.1/leaf-macos-arm64"
-url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/537421090"
+checksum = "sha256:db409c712c608e4783073ff12ea6a5417bffd20360b03d7450f0f5bb863aa825"
+url = "https://github.com/RivoLink/leaf/releases/download/1.28.2/leaf-macos-arm64"
+url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/562589926"
 
 [[tools."github:tinylabscom/mvm"]]
 version = "0.17.0"
@@ -115,13 +115,13 @@ provenance = "github-attestations"
 provenance_verified = true
 
 [[tools."github:zjrosen/perles"]]
-version = "0.8.94"
+version = "0.8.95"
 backend = "github:zjrosen/perles"
 
 [tools."github:zjrosen/perles"."platforms.macos-arm64"]
-checksum = "sha256:4fd4676b9902e7a27bbce0cec9c6d720e959df8437bb531f439e5207a7ec841c"
-url = "https://github.com/zjrosen/perles/releases/download/v0.8.94/perles_0.8.94_darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/535934600"
+checksum = "sha256:1633456b2149992f0b26fcadcc2ff9d884de7c3db28f915cbc3dc903e266ea63"
+url = "https://github.com/zjrosen/perles/releases/download/v0.8.95/perles_0.8.95_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/561859940"
 
 [[tools.herdr]]
 version = "0.9.0"
