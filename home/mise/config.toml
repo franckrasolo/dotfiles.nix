@@ -41,7 +41,7 @@ postinstall = """
   ln -sf ${XDG_CONFIG_HOME}/opencode ~/.config/opencode
 
   vendor="${XDG_CONFIG_HOME}/opencode/vendor"
-  mkdir -p $vender
+  mkdir -p $vendor
   git -C $vendor sync https://github.com/f-steff/opencode-env-auth
   git -C $vendor sync https://github.com/ayghri/i-have-adhd
 """
