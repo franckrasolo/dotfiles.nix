@@ -1,5 +1,7 @@
 #:schema https://fnox.jdx.dev/schema.json
 
+import = ["llm-providers.toml"]
+
 default_provider = "onepass"
 
 [providers.age]

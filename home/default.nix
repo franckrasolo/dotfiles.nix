@@ -22,6 +22,7 @@
     ./opencode
     ./ov
     ./pdf
+    ./pi
     ./presenterm
     ./ripgrep
     ./silicon

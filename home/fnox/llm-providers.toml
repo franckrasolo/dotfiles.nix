@@ -1,0 +1,9 @@
+#:schema https://fnox.jdx.dev/schema.json
+
+[secrets.OPENCODE_API_KEY]
+value = "op://Automation/OpenCode API/key"
+env = "exec"
+
+[secrets.OPENROUTER_API_KEY]
+value = "op://Automation/OpenRouter API/key"
+env = "exec"

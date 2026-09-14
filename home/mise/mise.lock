@@ -157,6 +157,16 @@ checksum = "sha256:a5e43d6887386efc7d68ce49ae28e3bbdfdee3dfd1d7169b612c3ce67e53b
 url = "https://github.com/anomalyco/opencode/releases/download/v1.18.30/opencode-darwin-arm64.zip"
 url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/551875293"
 
+[[tools.pi]]
+version = "0.85.1"
+backend = "aqua:earendil-works/pi"
+specifiers = ["latest"]
+
+[tools.pi."platforms.macos-arm64"]
+checksum = "sha256:d5f70e3c0cf7398eac239fd0261ee074d98b7ba7f6b43fe3617f052ed5b79d06"
+url = "https://github.com/earendil-works/pi/releases/download/v0.85.1/pi-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/545797550"
+
 [[tools.television]]
 version = "0.15.9"
 backend = "aqua:alexpasmantier/television"

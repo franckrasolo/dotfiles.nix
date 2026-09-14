@@ -206,6 +206,12 @@ command = "omp"
 description = "launch omp"
 
 [[keys.command]]
+key = "prefix+shift+p"
+type = "pane"
+command = "fnox exec -- pi"
+description = "launch pi"
+
+[[keys.command]]
 key = "prefix+shift+b"
 type = "pane"
 command = "bbrew"

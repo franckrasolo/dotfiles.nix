@@ -57,6 +57,14 @@ postinstall = """
   git -C $vendor sync https://github.com/ayghri/i-have-adhd
 """
 
+[tools.pi]
+version = "latest"
+postinstall = """
+  pi install https://github.com/ayghri/i-have-adhd
+  pi install git:github.com/DietrichGebert/ponytail
+  pi install git:github.com/obra/superpowers
+"""
+
 [tools.herdr]
 version = "latest"
 depends = ["github:can1357/oh-my-pi", "opencode"]

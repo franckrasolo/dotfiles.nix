@@ -1,0 +1,11 @@
+{
+  "lastChangelogVersion": "0.85.1",
+  "theme": "dark",
+  "packages": [
+    "https://github.com/ayghri/i-have-adhd",
+    "git:github.com/DietrichGebert/ponytail",
+    "git:github.com/obra/superpowers"
+  ],
+  "defaultProvider": "opencode-go",
+  "defaultModel": "omen-alpha"
+}
