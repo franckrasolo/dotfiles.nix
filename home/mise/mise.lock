@@ -57,26 +57,25 @@ provenance = "github-attestations"
 signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.1.22"
+version = "18.2.0"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:e75ea51aa20fa67564150d616afd69062f39e0e5ddb3b765741a0c045062c8eb"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.1.22/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/564069233"
+checksum = "sha256:87e028cdcff34e4aa3cbca667c34914496fe3ba6394e818dafabcda3866d8df4"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.2.0/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/564899267"
 
 [[tools."github:kucherenko/jscpd"]]
-version = "5.2.0"
+version = "5.2.1"
 backend = "github:kucherenko/jscpd"
 specifiers = ["latest"]
 
 [tools."github:kucherenko/jscpd"."platforms.macos-arm64"]
-checksum = "sha256:b5646c1ab79a67773d3bb54c8ab48751466f39d7df47f7859e6493a6d5acc76a"
-url = "https://github.com/kucherenko/jscpd/releases/download/v5.2.0/jscpd-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/kucherenko/jscpd/releases/assets/550284810"
+checksum = "sha256:0b166a710f62a674fa0d81850e1f005069e05d8b1170e8ffed36baa0305f5340"
+url = "https://github.com/kucherenko/jscpd/releases/download/v5.2.1/jscpd-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/kucherenko/jscpd/releases/assets/565085640"
 provenance = "github-attestations"
-provenance_verified = true
 
 [[tools."github:remotemobprogramming/mob"]]
 version = "5.4.2"
