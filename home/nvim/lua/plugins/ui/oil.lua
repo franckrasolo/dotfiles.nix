@@ -74,6 +74,7 @@ return {
         },
       },
       win_options = {
+        signcolumn = "yes:2", -- for oil-git-status.nvim
         spell = false,
         wrap = true,
         winhighlight = "NormalFloat:AccentFloat,FloatBorder:FloatBorder",
@@ -96,6 +97,23 @@ return {
     },
     keys = {
       { "-", desc = "Open parent directory", function() require("oil").toggle_float() end },
-    }
-  }
+    },
+  },
+  {
+    "refractalize/oil-git-status.nvim",
+    dependencies = { "stevearc/oil.nvim" },
+    event = "VeryLazy",
+    init = function()
+      vim.api.nvim_create_autocmd("User", {
+        pattern = "OilEnter",
+        callback = function()
+          vim.opt_local.statuscolumn = ""
+          vim.schedule(function()
+            require("oil-git-status").refresh_buffer(vim.api.nvim_get_current_buf())
+          end)
+        end,
+      })
+    end,
+    config = true,
+  },
 }
