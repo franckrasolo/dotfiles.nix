@@ -74,6 +74,7 @@ return {
         },
       },
       win_options = {
+        spell = false,
         wrap = true,
         winhighlight = "NormalFloat:AccentFloat,FloatBorder:FloatBorder",
       },
