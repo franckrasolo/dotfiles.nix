@@ -1,6 +1,6 @@
 #compdef smolvm
 
-# zsh completion for the Smol Machines smolvm CLI (v1.14.3).
+# zsh completion for the Smol Machines smolvm CLI (v1.16.0).
 # Generated from recursive `smolvm <subcommand> --help` output and
 # https://github.com/smol-machines/smol/blob/main/docs/cli.md
 #
@@ -25,6 +25,7 @@ _smolvm_machine_cmds=(
   'start:Start a machine'
   'branch:Branch a running branchable machine into an independent child (CoW memory + disks)'
   'checkpoint:Save a running machine, including RAM, as a portable checkpoint'
+  'checkpoint-prune:Remove unused objects from a checkpoint store'
   'branch-release:Assign parameters and release one held branch-pool slot'
   'stop:Stop a running machine'
   'delete:Delete a machine configuration'
@@ -181,6 +182,7 @@ _smolvm_machine() {
         start)            _smolvm_machine_start ;;
         branch|fork)      _smolvm_machine_branch ;;
         checkpoint)       _smolvm_machine_checkpoint ;;
+        checkpoint-prune) _smolvm_machine_checkpoint_prune ;;
         branch-release|fork-release) _smolvm_machine_branch_release ;;
         stop)             _smolvm_machine_stop ;;
         delete|rm)        _smolvm_machine_delete ;;
@@ -372,6 +374,8 @@ _smolvm_machine_run() {
     '--ssh-agent[Forward host SSH agent into the VM (git/ssh without exposing keys)]' \
     '*--secret-env[Inject a secret from a host env var, resolved at launch (repeatable)]:GUEST_VAR=HOST_VAR:_smolvm_secret_env' \
     '*--secret-file[Inject a secret from a host file, resolved at launch (repeatable)]:GUEST_VAR=/abs/path:_smolvm_secret_file' \
+    '--nested[Expose host virtualization extensions so the guest can run KVM/nested hypervisors (slower than native)]' \
+    '--oci-cache[Cache the pulled OCI image on the host so repeat ephemeral runs skip the registry pull]' \
     '--unprivileged[Run the workload as an unprivileged container (restricted capabilities, read-only cgroup)]' \
     '--cuda[Remote guest CUDA Driver-API calls to the host NVIDIA GPU over vsock]' \
     '--auto-graph[Ask compatible CUDA frameworks to graph safe compiled regions (implies --cuda)]' \
@@ -451,6 +455,7 @@ _smolvm_machine_create() {
     '--gpu[Enable GPU acceleration (Vulkan via virtio-gpu)]' \
     '--gpu-vram[GPU shared-memory region size in MiB (default 4096, ignored without --gpu)]:MiB:' \
     '--rosetta[Enable Rosetta 2 for x86_64 binary translation on Apple Silicon]' \
+    '--nested[Expose host virtualization extensions so the guest can run KVM/nested hypervisors (slower than native)]' \
     '*--expose-socket[Expose a guest Unix socket to the host (repeatable)]:GUEST_PATH[\:HOST_PATH]:' \
     '*--mount-socket[Mount a host Unix socket into the guest, HOST_PATH\:GUEST_PATH (repeatable)]:host socket:_files' \
     '*--init[Run command on every VM start (repeatable)]:command:_command_names -e' \
@@ -461,6 +466,7 @@ _smolvm_machine_create() {
     '--auto-graph[Ask compatible CUDA frameworks to graph safe compiled regions (implies --cuda)]' \
     '--docker-socket[Expose the guest Docker daemon socket to the host as a Unix socket]' \
     '*--secret-env[Inject a secret from a host env var, resolved at each launch (repeatable)]:GUEST_VAR=HOST_VAR:_smolvm_secret_env' \
+    '(-w --workdir)'{-w,--workdir}'[Set working directory inside the machine]:dir:_files -/' \
     '*--secret-file[Inject a secret from a host file, resolved at each launch (repeatable)]:GUEST_VAR=/abs/path:_smolvm_secret_file' \
     '(-s --smolfile)'{-s,--smolfile}'[Load configuration from a Smolfile (TOML)]:Smolfile:_smolvm_smolfile' \
     '(-I --image)--from[Create from a .smolmachine pack or restore a .smolcheckpoint]:artifact:_smolvm_smolmachine' \
@@ -517,10 +523,17 @@ _smolvm_machine_checkpoint() {
     '(-n --name)'{-n,--name}'[Running machine to checkpoint]:machine:_smolvm_machine_names' \
     '(-o --output)'{-o,--output}'[Destination .smolcheckpoint file]:file:_files' \
     '--staging-dir[Directory under which large temporary checkpoint assets are staged]:dir:_files -/' \
+    '--export-from[Export a stored checkpoint directory as one portable .smolcheckpoint file]:file:_files' \
+    '--store[Chunk store directory; with it, output becomes a self-contained directory]:dir:_files -/' \
     '--proxy[Proxy URL used for the in-VM image pull]:URL:' \
     '--no-proxy[Comma-separated NO_PROXY list that bypasses the proxy during image pull]:list:'
 }
 
+_smolvm_machine_checkpoint_prune() {
+  _arguments \
+    $_smolvm_help_opt \
+    '--store[Store used by machine checkpoint --store]:dir:_files -/'
+}
 _smolvm_machine_branch_release() {
   _arguments \
     $_smolvm_help_opt \
