@@ -13,7 +13,7 @@
     defaults write org.hammerspoon.Hammerspoon HSPreferencesDarkModeKey          -bool true
     defaults write org.hammerspoon.Hammerspoon MJKeepConsoleOnTopKey             -bool false
     defaults write org.hammerspoon.Hammerspoon MJShowDockIconKey                 -bool false
-    defaults write org.hammerspoon.Hammerspoon MJShowMenuIconKey                 -bool true
+    defaults write org.hammerspoon.Hammerspoon MJShowMenuIconKey                 -bool false
     defaults write org.hammerspoon.Hammerspoon MJSkipDockMenuIconProblemAlertKey -bool false
     defaults write org.hammerspoon.Hammerspoon SUEnableAutomaticChecks           -bool true
     defaults write org.hammerspoon.Hammerspoon HSUploadCrashData                 -bool true
