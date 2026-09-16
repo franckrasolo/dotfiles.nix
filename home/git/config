@@ -160,6 +160,8 @@
   type = cat-file -t
   dump = cat-file -p
 
+  authors = shortlog -sn --all
+
 	sync = "!f() { \
     repo_dir=$(basename \"$1\" .git); \
     if [ -d \"$repo_dir\" ]; then \
