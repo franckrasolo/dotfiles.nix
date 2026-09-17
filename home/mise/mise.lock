@@ -56,14 +56,14 @@ provenance = "github-attestations"
 signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.2.1"
+version = "18.2.3"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:ac673868a1598b4beda98dc6ce2148f24afabc42816c702b2dac5f79f0d861de"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.2.1/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/566718879"
+checksum = "sha256:5c9f8e359eed201aa2848a34184c3b12641ab3e29d303738fabc97add2f129fe"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.2.3/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/569176648"
 
 [[tools."github:kucherenko/jscpd"]]
 version = "5.2.1"
@@ -129,16 +129,15 @@ url = "https://github.com/zjrosen/perles/releases/download/v0.8.95/perles_0.8.95
 url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/561859940"
 
 [[tools.herdr]]
-version = "0.9.0"
+version = "0.9.1"
 backend = "github:ogulcancelik/herdr"
 specifiers = ["latest"]
 
 [tools.herdr."platforms.macos-arm64"]
-checksum = "sha256:32b53df09872628059c789a69f02a6b8e29e14ddf26711421f3463f70c1aef17"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.9.0/herdr-macos-aarch64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/549270162"
+checksum = "sha256:5fc7a7e7adfaca56fa80aa89dcb025693357268dab8285b9ce2d08a2313c89de"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.9.1/herdr-macos-aarch64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/568559677"
 provenance = "github-attestations"
-provenance_verified = true
 
 [[tools."nix:pkl-lsp"]]
 version = "0.8.0"
@@ -186,11 +185,11 @@ url = "https://github.com/jdx/usage/releases/download/v6.9.1/usage-universal-app
 url_api = "https://api.github.com/repos/jdx/usage/releases/assets/563246662"
 
 [[tools.worktrunk]]
-version = "0.77.0"
+version = "0.78.0"
 backend = "aqua:max-sixty/worktrunk"
 specifiers = ["latest"]
 
 [tools.worktrunk."platforms.macos-arm64"]
-checksum = "sha256:43f9b2e65d96954b5fa44eab148b040a5c78cd36abfd81718178928ac1746572"
-url = "https://github.com/max-sixty/worktrunk/releases/download/v0.77.0/worktrunk-aarch64-apple-darwin.tar.xz"
-url_api = "https://api.github.com/repos/max-sixty/worktrunk/releases/assets/551416742"
+checksum = "sha256:6f7a04e5391a9ff9065c31ef3ca41e2082ccd3aa3cf62c30dd45e2c607effed8"
+url = "https://github.com/max-sixty/worktrunk/releases/download/v0.78.0/worktrunk-aarch64-apple-darwin.tar.xz"
+url_api = "https://api.github.com/repos/max-sixty/worktrunk/releases/assets/568795954"
