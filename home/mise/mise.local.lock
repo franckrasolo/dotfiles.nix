@@ -39,13 +39,13 @@ aube = { path = ".mise/locks/mise.local/npm-skills/1.5.26", digest = "sha256:b35
 backend = "npm:skills"
 specifiers = ["latest"]
 
-[[tools."pipx:cisco-ai-skill-scanner"]]
+[[tools."pypi:cisco-ai-skill-scanner"]]
 version = "2.1.0"
-backend = "pipx:cisco-ai-skill-scanner"
+backend = "pypi:cisco-ai-skill-scanner"
 specifiers = ["latest"]
 
-[tools."pipx:cisco-ai-skill-scanner".options]
-uvx = "false"
+[tools."pypi:cisco-ai-skill-scanner".options]
+uvx_args = "--prerelease allow"
 
 [[tools.uv]]
 version = "0.12.15"

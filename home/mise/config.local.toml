@@ -1,7 +1,7 @@
 [tools]
 kotlin = "latest"
 uv = "latest"
-"pipx:cisco-ai-skill-scanner" = { version = "latest", uvx = false }
+"pypi:cisco-ai-skill-scanner" = { version = "latest", uvx_args = "--prerelease allow" }
 
 [tools.java]
 version = "temurin-25"
