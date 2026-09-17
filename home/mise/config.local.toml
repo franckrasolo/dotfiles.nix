@@ -1,6 +1,7 @@
 [tools]
 kotlin = "latest"
 uv = "latest"
+"pypi:omnigent" = { version = "latest", uvx_args = "--prerelease allow" }
 "pypi:cisco-ai-skill-scanner" = { version = "latest", uvx_args = "--prerelease allow" }
 
 [tools.java]

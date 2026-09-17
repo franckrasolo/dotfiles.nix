@@ -47,6 +47,14 @@ specifiers = ["latest"]
 [tools."pypi:cisco-ai-skill-scanner".options]
 uvx_args = "--prerelease allow"
 
+[[tools."pypi:omnigent"]]
+version = "0.14.0"
+backend = "pypi:omnigent"
+specifiers = ["latest"]
+
+[tools."pypi:omnigent".options]
+uvx_args = "--prerelease allow"
+
 [[tools.uv]]
 version = "0.12.15"
 backend = "aqua:astral-sh/uv"
