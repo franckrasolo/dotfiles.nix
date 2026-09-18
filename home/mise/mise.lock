@@ -25,7 +25,7 @@ url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/565
 
 [[tools.aube]]
 version = "2.2.17"
-backend = "github:endevco/aube"
+backend = "packslip:github.com/aubepkg/aube"
 specifiers = ["latest"]
 
 [tools.aube."platforms.macos-arm64"]
@@ -33,6 +33,7 @@ checksum = "sha256:83b2906a998ea62eb4890abb8d45010f0ced1674a2bb6b436c2e352d47bb3
 url = "https://github.com/aubepkg/aube/releases/download/v2.2.17/aube-v2.2.17-aarch64-apple-darwin.tar.gz"
 url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/566095262"
 provenance = "github-attestations"
+signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release-plz.yml"
 
 [[tools.bun]]
 version = "1.4.2"
@@ -45,7 +46,7 @@ url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-darwin-aa
 
 [[tools.fnox]]
 version = "1.35.2"
-backend = "github:jdx/fnox"
+backend = "packslip:github.com/jdx/fnox"
 specifiers = ["latest"]
 
 [tools.fnox."platforms.macos-arm64"]
@@ -130,7 +131,7 @@ url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/561859940
 
 [[tools.herdr]]
 version = "0.9.1"
-backend = "github:ogulcancelik/herdr"
+backend = "aqua:herdrdev/herdr"
 specifiers = ["latest"]
 
 [tools.herdr."platforms.macos-arm64"]
@@ -176,13 +177,14 @@ url_api = "https://api.github.com/repos/alexpasmantier/television/releases/asset
 
 [[tools.usage]]
 version = "6.9.1"
-backend = "aqua:jdx/usage"
+backend = "packslip:github.com/jdx/usage"
 specifiers = ["latest"]
 
 [tools.usage."platforms.macos-arm64"]
 checksum = "sha256:ddbb2c29ec16aca2cb44e0b0f64ba204b603ec50ed773ffda3db723e9aae73fe"
 url = "https://github.com/jdx/usage/releases/download/v6.9.1/usage-universal-apple-darwin.tar.gz"
 url_api = "https://api.github.com/repos/jdx/usage/releases/assets/563246662"
+signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
 
 [[tools.worktrunk]]
 version = "0.78.0"
