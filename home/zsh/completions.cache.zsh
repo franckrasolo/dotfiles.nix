@@ -10,8 +10,6 @@ _cache_completion() {
   source $cache
 }
 
-#dagger completion zsh | tee /usr/local/share/zsh/site-functions/_dagger &> /dev/null
-
 _cache_completion aube aube completion zsh
 _cache_completion bd bd completion zsh
 _cache_completion dive dive completion zsh
@@ -21,11 +19,6 @@ _cache_completion gh gh completion --shell zsh
 _cache_completion glab glab completion --shell zsh
 _cache_completion herdr herdr completion zsh
 _cache_completion k3d k3d completion zsh
-
-#source /etc/profiles/per-user/$USER/share/zsh/site-functions/_gradle
-#__gradle-completion-init
-
-#kitty +complete setup zsh | source /dev/stdin
 
 # source: https://michaelheap.com/kubectl-alias-autocomplete/
 #
