@@ -12,11 +12,15 @@ _cache_completion() {
 
 #dagger completion zsh | tee /usr/local/share/zsh/site-functions/_dagger &> /dev/null
 
+_cache_completion aube aube completion zsh
+_cache_completion bd bd completion zsh
+_cache_completion dive dive completion zsh
 _cache_completion fnox fnox completion zsh
 _cache_completion fx fx --comp zsh
 _cache_completion gh gh completion --shell zsh
 _cache_completion glab glab completion --shell zsh
 _cache_completion herdr herdr completion zsh
+_cache_completion k3d k3d completion zsh
 
 #source /etc/profiles/per-user/$USER/share/zsh/site-functions/_gradle
 #__gradle-completion-init
@@ -31,10 +35,13 @@ _cache_completion kubectl eval HTTPS_PROXY=1:1 kubectl completion zsh
 compdef k='kubectl'
 
 _cache_completion leaf leaf --auto-complete zsh:dump
+_cache_completion limactl limactl completion zsh
 _cache_completion mise mise completion zsh
 _cache_completion omp zsh -c "omp completions zsh"
 _cache_completion opencode opencode completion
 _cache_completion smolvm cat $XDG_CONFIG_HOME/zsh/smolvm.zsh
+_cache_completion tv tv completions zsh
+_cache_completion usage usage --completions zsh
 
 # see https://github.com/zellij-org/zellij/issues/2316
 _cache_completion zellij zsh -c "zellij setup --generate-completion zsh | sed '/_zellij \"\$@\"/d'"
