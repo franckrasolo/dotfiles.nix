@@ -14,14 +14,14 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/566378
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.16.1"
+version = "1.16.2"
 backend = "aqua:smol-machines/smolvm"
 specifiers = ["latest"]
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:44b50573962b34ee979bb74a5756bd10583e20fd1d3739baa28147d13b5a26f3"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.16.1/smolvm-1.16.1-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/565579415"
+checksum = "sha256:247f95abcc4e1e9a50c0a0a826a6a855dc35092372ab085ccc898fc033ab84ae"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.16.2/smolvm-1.16.2-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/573569345"
 
 [[tools.aube]]
 version = "2.2.17"
@@ -57,24 +57,24 @@ provenance = "github-attestations"
 signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.2.5"
+version = "18.2.6"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:9602f93f94bd1ee5d69f9c7b8c373dbed47abe59f5a39315ef2f0fd3c517f743"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.2.5/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/571337894"
+checksum = "sha256:d498da40d577e1ffa681ca8632c2ea40a9f722a08b880412011d37dffee9513a"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.2.6/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/573171924"
 
 [[tools."github:kucherenko/jscpd"]]
-version = "5.2.1"
+version = "5.3.0"
 backend = "github:kucherenko/jscpd"
 specifiers = ["latest"]
 
 [tools."github:kucherenko/jscpd"."platforms.macos-arm64"]
-checksum = "sha256:0b166a710f62a674fa0d81850e1f005069e05d8b1170e8ffed36baa0305f5340"
-url = "https://github.com/kucherenko/jscpd/releases/download/v5.2.1/jscpd-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/kucherenko/jscpd/releases/assets/565085640"
+checksum = "sha256:54c10b999d9ff934b82f20244f20f57322bb57688d82ecf9f7b1b8fd51b4d24b"
+url = "https://github.com/kucherenko/jscpd/releases/download/v5.3.0/jscpd-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/kucherenko/jscpd/releases/assets/572631018"
 provenance = "github-attestations"
 
 [[tools."github:remotemobprogramming/mob"]]
@@ -176,14 +176,13 @@ url = "https://github.com/alexpasmantier/television/releases/download/0.15.9/tv-
 url_api = "https://api.github.com/repos/alexpasmantier/television/releases/assets/447568866"
 
 [[tools.usage]]
-version = "6.9.1"
+version = "6.10.0"
 backend = "packslip:github.com/jdx/usage"
 specifiers = ["latest"]
 
 [tools.usage."platforms.macos-arm64"]
-checksum = "sha256:ddbb2c29ec16aca2cb44e0b0f64ba204b603ec50ed773ffda3db723e9aae73fe"
-url = "https://github.com/jdx/usage/releases/download/v6.9.1/usage-universal-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/usage/releases/assets/563246662"
+checksum = "sha256:f2c89cf9446b50c0129943e76a4a25188cbf42c116c66c7d3f913f5cc7d5123c"
+url = "https://github.com/jdx/usage/releases/download/v6.10.0/usage-universal-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
 
 [[tools.worktrunk]]
