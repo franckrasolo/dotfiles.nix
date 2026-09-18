@@ -73,6 +73,8 @@ postinstall = """
   herdr integration install omp
   herdr integration install opencode
   herdr integration install pi
+
+  herdr plugin install crierr/herdr-arrange --yes
 """
 
 [env]

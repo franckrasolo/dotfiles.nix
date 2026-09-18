@@ -126,6 +126,18 @@ navigate_pane_right = "l"
 # Custom commands
 
 [[keys.command]]
+key = "prefix+m"
+type = "plugin_action"
+command = "herdr-arrange.open"
+description = "arrange panes"
+
+[[keys.command]]
+key = "prefix+ctrl+m"
+type = "plugin_action"
+command = "herdr-arrange.open-tree"
+description = "move pane to…"
+
+[[keys.command]]
 key = "prefix+ctrl+c"
 type = "popup"
 width = "90%"

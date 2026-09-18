@@ -1,4 +1,5 @@
 [tools]
+go = "latest"
 kotlin = "latest"
 uv = "latest"
 "pypi:omnigent" = { version = "latest", uvx_args = "--prerelease allow" }
