@@ -73,6 +73,7 @@ return {
   },
   {
     "NeogitOrg/neogit",
+    commit = "2d94da0032e201865a5b65a6bc008dd6fce8f52e",
     dependencies = {
       "nvim-lua/plenary.nvim",
       "sindrets/diffview.nvim",
