@@ -10,6 +10,7 @@
   "provider": {
     "opencode": {
       "blacklist": [
+        "claude-fable-5",
         "claude-haiku-4-5",
         "claude-opus-4-5",
         "claude-opus-4-6",
@@ -54,6 +55,8 @@
         "kimi-k2.7-code",
         "minimax-m2.5",
         "minimax-m2.7",
+        "muse-spark-1.2",
+        "muse-spark-1.2-contributor-free",
         "qwen3.5-plus",
         "qwen3.6-plus"
       ]
@@ -67,6 +70,7 @@
         "kimi-k2.6",
         "kimi-k2.7-code",
         "minimax-m2.7",
+        "muse-spark-1.2-contributor",
         "qwen3.6-plus",
         "qwen3.7-max",
         "qwen3.7-plus"
@@ -78,10 +82,16 @@
         "~anthropic/claude-haiku-latest",
         "~anthropic/claude-opus-latest",
         "~anthropic/claude-sonnet-latest",
+        "~deepseek/deepseek-flash-latest",
+        "~deepseek/deepseek-pro-latest",
         "~deepseek/deepseek-v4-flash-latest",
         "~google/gemini-flash-latest",
         "~google/gemini-pro-latest",
         "~moonshotai/kimi-latest",
+        "~openai/gpt-astra-latest",
+        "~openai/gpt-luna-latest",
+        "~openai/gpt-sol-latest",
+        "~openai/gpt-terra-latest",
         "~openai/gpt-latest",
         "~openai/gpt-mini-latest",
         "~x-ai/grok-latest",
@@ -142,10 +152,10 @@
         "deepseek/deepseek-v3.2-exp",
         "deepseek/deepseek-v4-flash",
         "deepseek/deepseek-v4-flash-0731",
+        "deepseek/deepseek-v4-flash-0731:free",
         "deepseek/deepseek-v4-flash-vision-exp",
         "deepseek/deepseek-v4-pro",
         "deepseek/deepseek-v4-pro-0813",
-        "deepseek/deepseek-v4.1-flash",
 
         "dots-studio/dots-3-note-preview:free",
 
@@ -173,8 +183,6 @@
         "google/gemma-3-12b-it",
         "google/gemma-3-27b-it",
         "google/gemma-3-4b-it",
-        "google/gemma-4-26b-a4b-it",
-        "google/gemma-4-26b-a4b-it:free",
         "google/lyria-3-clip-preview",
         "google/lyria-3-pro-preview",
 
@@ -187,6 +195,10 @@
         "inclusionai/ling-3.0-flash-fin",
         "inclusionai/ling-3.0-flash-fin:free",
         "inclusionai/ling-3.0-flash-sante:free",
+        "inclusionai/ling-3.0-flash-vl",
+        "inclusionai/ling-3.0-flash-vl:free",
+        "inference-net/schematron-v2-small",
+        "inference-net/schematron-v2-turbo",
         "kwaipilot/kat-coder-pro-v2",
         "kwaipilot/kat-coder-pro-v2.5",
         "liquid/lfm-2.5-2.6b:free",
@@ -335,6 +347,7 @@
         "poolside/laguna-s-2.1:free",
         "poolside/laguna-xs-2.1",
         "poolside/laguna-xs-2.1:free",
+        "prism-ml/ternary-bonsai-2-27b",
 
         "qwen/qwen-2.5-72b-instruct",
         "qwen/qwen-2.5-7b-instruct",
@@ -388,7 +401,9 @@
         "rekaai/reka-flash-3",
         "relace/relace-apply-3",
         "relace/relace-search",
+        "sakana/fugu-max",
         "sakana/fugu-ultra",
+        "sakana/fugu-ultra-v2",
         "sakana/sakana-namazu",
         "sao10k/l3-lunaris-8b",
         "sao10k/l3.1-euryale-70b",
@@ -406,10 +421,13 @@
         "thinkingmachines/inkling-small",
         "thinkingmachines/inkling-small:free",
         "thinkingmachines/inkling:free",
+        "unbiased/pareto",
         "undi95/remm-slerp-l2-13b",
         "upstage/solar-pro-3",
         "upstage/solar-pro4",
         "writer/palmyra-x5",
+        "xiaomi/mimo-v2.5",
+        "xiaomi/mimo-v2.5-pro",
 
         "x-ai/grok-4.20",
         "x-ai/grok-4.20-multi-agent",
@@ -427,7 +445,8 @@
         "z-ai/glm-5",
         "z-ai/glm-5-turbo",
         "z-ai/glm-5.1",
-        "z-ai/glm-5.2"
+        "z-ai/glm-5.2",
+        "z-ai/glm-5.2:free"
       ]
     }
   }
