@@ -7,5 +7,9 @@
     "git:github.com/obra/superpowers"
   ],
   "defaultProvider": "opencode-go",
-  "defaultModel": "omen-alpha"
+  "defaultModel": "omen-alpha",
+  "modelThinkingLevels": {
+    "opencode-go/omen-alpha": "high"
+  },
+  "quietStartup": true
 }
