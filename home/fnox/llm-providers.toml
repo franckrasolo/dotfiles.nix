@@ -1,5 +1,9 @@
 #:schema https://fnox.jdx.dev/schema.json
 
+[secrets.AI_GATEWAY_API_KEY]
+value = "op://Automation/Vercel AI Gateway API/key"
+env = "exec"
+
 [secrets.OPENCODE_API_KEY]
 value = "op://Automation/OpenCode API/key"
 env = "exec"

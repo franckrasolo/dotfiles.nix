@@ -10,6 +10,7 @@ enabledProviders:
   - opencode-go
   - opencode-zen
   - openrouter
+  - vercel-ai-gateway
 disabledProviders:
   - abliteration
   - aiand
@@ -68,7 +69,6 @@ disabledProviders:
   - together
   - umans
   - venice
-  - vercel-ai-gateway
   - wafer-serverless
   - xai
   - xai-oauth
