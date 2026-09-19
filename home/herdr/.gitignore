@@ -1,4 +1,7 @@
 plugins/github/
+sounds/
+!sounds/done.mp3
+!sounds/request.mp3
 herdr-client.log
 herdr-client.sock
 herdr-server.log
