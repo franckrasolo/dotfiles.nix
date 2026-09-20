@@ -64,6 +64,15 @@ specifiers = ["latest"]
 [tools."pypi:omnigent".options]
 uvx_args = "--prerelease allow"
 
+[[tools."pypi:termaid"]]
+version = "0.9.0"
+backend = "pypi:termaid"
+specifiers = ["latest"]
+uv = { path = ".mise/locks/mise.local/pypi-termaid/0.9.0~53f1461d", digest = "sha256:c3c308441983e9f327ac862203a58bd48891814bfaaeee117bf3e5f02fc9511d" }
+
+[tools."pypi:termaid".options]
+extras = "rich,tui"
+
 [[tools.uv]]
 version = "0.12.17"
 backend = "aqua:astral-sh/uv"
