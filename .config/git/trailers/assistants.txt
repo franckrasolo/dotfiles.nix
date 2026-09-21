@@ -21,4 +21,6 @@ OMP <noreply@omp.sh>
 Omen Alpha
 OpenCode <noreply@opencode.ai>
 Pi <noreply@pi.dev>
+Qwen3.8 Flash <noreply@qwen.ai>
 Qwen3.8 Max <noreply@qwen.ai>
+Qwen3.8 Omni Flash <noreply@qwen.ai>
