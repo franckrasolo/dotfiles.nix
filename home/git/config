@@ -110,6 +110,7 @@
   cmd = nvim -d "$LOCAL" "$REMOTE"
 
 [merge]
+  conflictStyle = zdiff3
   tool = ec
 
 [mergetool]
@@ -119,6 +120,9 @@
 
 [mergetool "ec"]
   cmd = ec "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+
+[rerere]
+  enabled = true
 
 [alias]
   aa = add --all
@@ -228,10 +232,8 @@
 [interactive]
   diffFilter = delta --color-only
 
-[merge]
-  conflictstyle = diff3
-
 [diff]
+  algorithm = histogram
   colorMoved = default
 
 [delta "decorations"]
@@ -245,6 +247,7 @@
   line-numbers-right-style = cyan
   line-numbers-minus-style = 124
   line-numbers-plus-style  = 28
+
 [filter "lfs"]
 	process = git-lfs filter-process
 	required = true
