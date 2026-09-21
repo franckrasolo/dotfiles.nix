@@ -83,6 +83,8 @@ disabledProviders:
 skills:
   customDirectories:
     - .agents/skills/library/ai/agentic-engineering
+    - .agents/skills/library/domain-driven-design
+    - .agents/skills/library/platform-engineering
 symbolPreset: nerd
 statusLine:
   separator: powerline-thin
