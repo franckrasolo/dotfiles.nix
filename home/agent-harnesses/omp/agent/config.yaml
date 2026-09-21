@@ -80,6 +80,9 @@ disabledProviders:
   - zai
   - zenmux
   - zhipu-coding-plan
+skills:
+  customDirectories:
+    - .agents/skills/library/ai/agentic-engineering
 symbolPreset: nerd
 statusLine:
   separator: powerline-thin
