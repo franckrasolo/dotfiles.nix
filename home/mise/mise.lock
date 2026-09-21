@@ -57,14 +57,14 @@ provenance = "github-attestations"
 signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.2.6"
+version = "18.2.7"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:d498da40d577e1ffa681ca8632c2ea40a9f722a08b880412011d37dffee9513a"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.2.6/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/573171924"
+checksum = "sha256:2b2ff2084a34f61a018634c03929aaa9117009d107dbef553d8fc51eb5c28b14"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.2.7/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/578016052"
 
 [[tools."github:kucherenko/jscpd"]]
 version = "5.3.0"
@@ -186,11 +186,11 @@ url = "https://github.com/jdx/usage/releases/download/v6.10.0/usage-universal-ap
 signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
 
 [[tools.worktrunk]]
-version = "0.78.0"
+version = "0.79.0"
 backend = "aqua:max-sixty/worktrunk"
 specifiers = ["latest"]
 
 [tools.worktrunk."platforms.macos-arm64"]
-checksum = "sha256:6f7a04e5391a9ff9065c31ef3ca41e2082ccd3aa3cf62c30dd45e2c607effed8"
-url = "https://github.com/max-sixty/worktrunk/releases/download/v0.78.0/worktrunk-aarch64-apple-darwin.tar.xz"
-url_api = "https://api.github.com/repos/max-sixty/worktrunk/releases/assets/568795954"
+checksum = "sha256:4d77ec416c3873c1364aa135022303723f9333372f693193537abe74e88aaec1"
+url = "https://github.com/max-sixty/worktrunk/releases/download/v0.79.0/worktrunk-aarch64-apple-darwin.tar.xz"
+url_api = "https://api.github.com/repos/max-sixty/worktrunk/releases/assets/577903081"
