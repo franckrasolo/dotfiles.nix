@@ -1,7 +1,7 @@
 [user]
   name  = Franck Rasolo
   email = franckrasolo@users.noreply.github.com
-  # safe to commit: https://stackoverflow.com/a/48067999/1189538
+  # public key, safe to commit: https://stackoverflow.com/a/48067999/1189538
   signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEL6SY+GmIe3OH8TY2udJkwTwwsamEGTnjrlkA42G7Ij
 
 [gpg]
