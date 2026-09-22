@@ -110,6 +110,7 @@
         args = { appdir = "/Applications"; };
       }
       "raindropio"
+      "recordly"
       {
         name = "secretive";
         args = { appdir = "/Applications"; };
