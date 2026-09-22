@@ -41,9 +41,8 @@ postinstall = """
   ln -sf ${XDG_CONFIG_HOME}/opencode ~/.config/
 
   vendor="${XDG_CONFIG_HOME}/opencode/vendor"
-  mkdir -p $vendor
-  git -C $vendor sync https://github.com/f-steff/opencode-env-auth
-  git -C $vendor sync https://github.com/ayghri/i-have-adhd
+  git sync $vendor https://github.com/f-steff/opencode-env-auth
+  git sync $vendor https://github.com/ayghri/i-have-adhd
 """
 
 [tools."github:can1357/oh-my-pi"]
