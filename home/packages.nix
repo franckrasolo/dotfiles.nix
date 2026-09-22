@@ -113,6 +113,11 @@ let
   soundTools = [
     scdl
   ];
+
+  videoTools = [
+    ffmpeg-headless
+    python314Packages.yt-dlp
+  ];
 in
 {
   home.packages = []
@@ -125,5 +130,6 @@ in
     ++ dataTools
     ++ graphicalTools
     ++ soundTools
+    ++ videoTools
     ;
 }
