@@ -24,15 +24,13 @@ url = "https://github.com/smol-machines/smolvm/releases/download/v1.17.0/smolvm-
 url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/580004678"
 
 [[tools.aube]]
-version = "2.2.17"
+version = "2.3.0"
 backend = "packslip:github.com/aubepkg/aube"
 specifiers = ["latest"]
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:83b2906a998ea62eb4890abb8d45010f0ced1674a2bb6b436c2e352d47bb338f"
-url = "https://github.com/aubepkg/aube/releases/download/v2.2.17/aube-v2.2.17-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/566095262"
-provenance = "github-attestations"
+checksum = "sha256:717638c2fb87e3230d84c548ee9509f3dd880966744702c3e0d0345f1937c9b1"
+url = "https://github.com/aubepkg/aube/releases/download/v2.3.0/aube-v2.3.0-aarch64-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release-plz.yml"
 
 [[tools.bun]]
@@ -55,14 +53,14 @@ url = "https://github.com/jdx/fnox/releases/download/v1.35.3/fnox-aarch64-apple-
 signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.2.8"
+version = "18.2.11"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:cf8d34a7fe6f60de1acbe74f29c82026e4c07888e9d89f7ebceeb922159e5787"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.2.8/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/579521033"
+checksum = "sha256:faeffd57674cffa253e2f127d72ddfe6dcd81e1eb91eb5d2148913e62a010a28"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.2.11/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/583033821"
 
 [[tools."github:kucherenko/jscpd"]]
 version = "5.3.1"
@@ -154,14 +152,14 @@ url = "https://github.com/anomalyco/opencode/releases/download/v1.18.32/opencode
 url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/579999982"
 
 [[tools.pi]]
-version = "0.87.0"
+version = "0.87.1"
 backend = "aqua:earendil-works/pi"
 specifiers = ["latest"]
 
 [tools.pi."platforms.macos-arm64"]
-checksum = "sha256:fd0409795d03f89ad5d57a772f3a45cc23373e0e24148cd44a08d78109f6093e"
-url = "https://github.com/earendil-works/pi/releases/download/v0.87.0/pi-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/579609760"
+checksum = "sha256:4f8d288b78c9768d3a4ac6f61f06cd34394b82ac17d5b42d1e44a437add401b7"
+url = "https://github.com/earendil-works/pi/releases/download/v0.87.1/pi-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/582094198"
 
 [[tools.television]]
 version = "0.15.9"
