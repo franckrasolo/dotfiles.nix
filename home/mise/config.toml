@@ -38,7 +38,7 @@ postinstall = "ln -sf $(mise which bd) $XDG_BIN_HOME/bd"
 [tools.opencode]
 version = "latest"
 postinstall = """
-  ln -sf ${XDG_CONFIG_HOME}/opencode ~/.config/opencode
+  ln -sf ${XDG_CONFIG_HOME}/opencode ~/.config/
 
   vendor="${XDG_CONFIG_HOME}/opencode/vendor"
   mkdir -p $vendor
