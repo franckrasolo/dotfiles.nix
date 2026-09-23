@@ -114,10 +114,14 @@ task:
   isolation:
     commits: ai
 modelRoles:
-  default: opencode-go/omen-alpha:high
+  default: opencode-go/deepseek-v4.1-flash:high
   tiny: opencode-go/deepseek-v4.1-flash:low
   advisor: opencode-go/glm-5.3:high
   plan: opencode-go/deepseek-v4.1-flash:high
+  task: opencode-go/deepseek-v4.1-flash:max
+  smol: opencode-go/deepseek-v4.1-flash:low
+  slow: opencode-go/glm-5.3:high
+  vision: opencode-zen/gpt-6-sol:high
 retry:
   fallbackChains:
     opencode-go/*:
