@@ -14,14 +14,14 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/566378
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.17.0"
+version = "1.18.0"
 backend = "aqua:smol-machines/smolvm"
 specifiers = ["latest"]
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:93829b337541e96780090755346221bb23fbf36f688e39c8008792c8affea84b"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.17.0/smolvm-1.17.0-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/580004678"
+checksum = "sha256:85bbae4a319d36bc42caddd8aa4e348095c0b646a02aa0ca8f789355b96837d8"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.18.0/smolvm-1.18.0-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/584894242"
 
 [[tools.aube]]
 version = "2.3.0"
@@ -53,14 +53,14 @@ url = "https://github.com/jdx/fnox/releases/download/v1.35.3/fnox-aarch64-apple-
 signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.2.11"
+version = "18.3.0"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:faeffd57674cffa253e2f127d72ddfe6dcd81e1eb91eb5d2148913e62a010a28"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.2.11/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/583033821"
+checksum = "sha256:d61fb411f24146bed48dd901b13b5912a297d899ee691dda69c4b5b7ab8c35dc"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.3.0/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/584985854"
 
 [[tools."github:kucherenko/jscpd"]]
 version = "5.3.2"
@@ -116,14 +116,14 @@ provenance = "github-attestations"
 provenance_verified = true
 
 [[tools."github:zjrosen/perles"]]
-version = "0.8.95"
+version = "0.8.96"
 backend = "github:zjrosen/perles"
 specifiers = ["latest"]
 
 [tools."github:zjrosen/perles"."platforms.macos-arm64"]
-checksum = "sha256:1633456b2149992f0b26fcadcc2ff9d884de7c3db28f915cbc3dc903e266ea63"
-url = "https://github.com/zjrosen/perles/releases/download/v0.8.95/perles_0.8.95_darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/561859940"
+checksum = "sha256:99ee8165e03c3dfd8f18809843ebe05a37c3634da582e0ddaf8bc5dbd3b590c3"
+url = "https://github.com/zjrosen/perles/releases/download/v0.8.96/perles_0.8.96_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/585127080"
 
 [[tools.herdr]]
 version = "0.9.1"
