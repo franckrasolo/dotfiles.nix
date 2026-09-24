@@ -1,8 +1,8 @@
 #compdef smolvm
 
-# zsh completion for the Smol Machines smolvm CLI (v1.16.0).
-# Generated from recursive `smolvm <subcommand> --help` output and
-# https://github.com/smol-machines/smol/blob/main/docs/cli.md
+# zsh completion for the Smol Machines smolvm CLI (v1.18.2).
+# Generated from recursive `smolvm <subcommand> --help` output; re-diff the
+# command/flag inventory against it after a CLI upgrade.
 #
 # Works both as an autoloadable fpath file (e.g. symlinked as `_smolvm`)
 # and when sourced directly (registers itself via compdef).
@@ -26,8 +26,11 @@ _smolvm_machine_cmds=(
   'branch:Branch a running branchable machine into an independent child (CoW memory + disks)'
   'checkpoint:Save a running machine, including RAM, as a portable checkpoint'
   'checkpoint-prune:Remove unused objects from a checkpoint store'
+  'checkpoint-log:Show the history a checkpoint carries, or every checkpoint in a store'
   'branch-release:Assign parameters and release one held branch-pool slot'
   'stop:Stop a running machine'
+  'pause:Save RAM and disk durably, then stop at the saved execution boundary'
+  'resume:Resume saved execution in the same machine'
   'delete:Delete a machine configuration'
   'rm:Alias for delete'
   'status:Show machine status'
@@ -100,6 +103,7 @@ _smolvm_cp_path() {
 
 _smolvm_smolmachine() { _files -g '*.smolmachine(-.)' }
 _smolvm_smolcheckpoint() { _files -g '*.smolcheckpoint(-.)' }
+_smolvm_pack_or_checkpoint() { _files -g '*.smolmachine(-.)' -g '*.smolcheckpoint(-.)' }
 _smolvm_smolfile()    { _files -g 'Smolfile*(-.)' -g '*.toml(-.)' }
 
 # --secret-env GUEST_VAR=HOST_VAR: complete exported host variables after "=".
@@ -183,8 +187,11 @@ _smolvm_machine() {
         branch|fork)      _smolvm_machine_branch ;;
         checkpoint)       _smolvm_machine_checkpoint ;;
         checkpoint-prune) _smolvm_machine_checkpoint_prune ;;
+        checkpoint-log)   _smolvm_machine_checkpoint_log ;;
         branch-release|fork-release) _smolvm_machine_branch_release ;;
         stop)             _smolvm_machine_stop ;;
+        pause)            _smolvm_machine_pause ;;
+        resume)           _smolvm_machine_resume ;;
         delete|rm)        _smolvm_machine_delete ;;
         status)           _smolvm_machine_status ;;
         egress-events)    _smolvm_machine_egress_events ;;
@@ -352,9 +359,11 @@ _smolvm_machine_run() {
     '--net[Enable outbound network access]' \
     '--net-backend[Select the networking backend]:backend:((tsi\:"Use libkrun TSI networking" virtio-net\:"Use virtio-net with the host-side smolvm network stack"))' \
     '--dns[Custom DNS resolver for the guest (implies --net)]:IP:' \
+    '--guest-subnet[IPv4 subnet for the guest link, e.g. 10.200.0.0/30 (implies --net, virtio-net)]:CIDR:' \
     '--network[Join a named inter-VM network (implies --net, virtio-net only)]:name:' \
     '*--allow-cidr[Allow egress to specific CIDR range (repeatable, implies --net)]:CIDR:' \
     '*--allow-host[Allow egress to specific hostname, resolved at VM start (repeatable, implies --net)]:hostname:' \
+    '*--credential[Bind a credential the workload may use without ever seeing it: NAME=ENV_VAR@HOST\[,HOST...\] (repeatable, implies --net)]:NAME=ENV_VAR@HOST:' \
     '--outbound-localhost-only[Restrict outbound to localhost only (implies --net)]' \
     '--allow-host-loopback[Let the guest reach services on the host own loopback (implies --net)]' \
     '--docker-socket[Expose the guest Docker daemon socket to the host as a Unix socket]' \
@@ -368,6 +377,7 @@ _smolvm_machine_run() {
     '--storage[Writable data disk size in GiB (default 20)]:GiB:' \
     '--overlay[Container rootfs overlay size in GiB]:GiB:' \
     '--block-io[Host block I/O engine]:engine:_smolvm_block_io' \
+    '*--disk[Attach a host disk image or block device (repeatable), appearing in the guest as /dev/vdc, /dev/vdd, ... in order; append :ro for read-only]:PATH[:ro]:_files' \
     '(-s --smolfile)'{-s,--smolfile}'[Load VM configuration from a Smolfile (TOML)]:Smolfile:_smolvm_smolfile' \
     '(--rebuild-init-cache)--no-init-cache[Skip the init-layer cache: re-run init on every ephemeral run]' \
     '(--no-init-cache)--rebuild-init-cache[Rebuild the cached init layer even if a matching one exists]' \
@@ -442,15 +452,18 @@ _smolvm_machine_create() {
     '--storage[Storage disk size in GiB (for OCI layers and container data)]:GiB:' \
     '--overlay[Overlay disk size in GiB (for persistent rootfs changes)]:GiB:' \
     '--block-io[Host block I/O engine]:engine:_smolvm_block_io' \
+    '*--disk[Attach a host disk image or block device (repeatable), appearing in the guest as /dev/vdc, /dev/vdd, ... in order; append :ro for read-only]:PATH[:ro]:_files' \
     '*'{-v,--volume}'[Mount host dir or S3 bucket (repeatable)]:HOST|REMOTE\:GUEST[\:ro|rw|staged]:_files -/' \
     '--allow-system-mounts[Allow trusted read-only host /etc and /var/log mounts below /host]' \
     '*'{-p,--port}'[Expose port or one-to-one range from VM to host (repeatable)]:HOST[-END]\:GUEST[-END]:' \
     '--net[Enable outbound network access]' \
     '--net-backend[Select the networking backend]:backend:((tsi\:"Use libkrun TSI networking" virtio-net\:"Use virtio-net with the host-side smolvm network stack"))' \
     '--dns[Custom DNS resolver for the guest (implies --net)]:IP:' \
+    '--guest-subnet[IPv4 subnet for the guest link, e.g. 10.200.0.0/30 (implies --net, virtio-net)]:CIDR:' \
     '--network[Join a named inter-VM network (implies --net, virtio-net only)]:name:' \
     '*--allow-cidr[Allow egress to specific CIDR range (repeatable, implies --net)]:CIDR:' \
     '*--allow-host[Allow egress to specific hostname, resolved at VM start (repeatable, implies --net)]:hostname:' \
+    '*--credential[Bind a credential the workload may use without ever seeing it: NAME=ENV_VAR@HOST\[,HOST...\] (repeatable, implies --net)]:NAME=ENV_VAR@HOST:' \
     '--outbound-localhost-only[Restrict outbound to localhost only (implies --net)]' \
     '--gpu[Enable GPU acceleration (Vulkan via virtio-gpu)]' \
     '--gpu-vram[GPU shared-memory region size in MiB (default 4096, ignored without --gpu)]:MiB:' \
@@ -469,7 +482,8 @@ _smolvm_machine_create() {
     '(-w --workdir)'{-w,--workdir}'[Set working directory inside the machine]:dir:_files -/' \
     '*--secret-file[Inject a secret from a host file, resolved at each launch (repeatable)]:GUEST_VAR=/abs/path:_smolvm_secret_file' \
     '(-s --smolfile)'{-s,--smolfile}'[Load configuration from a Smolfile (TOML)]:Smolfile:_smolvm_smolfile' \
-    '(-I --image)--from[Create from a .smolmachine pack or restore a .smolcheckpoint]:artifact:_smolvm_smolmachine' \
+    '(-I --image)--from[Create from a .smolmachine pack or restore a .smolcheckpoint]:artifact:_smolvm_pack_or_checkpoint' \
+    '--at[With --from checkpoint: restore an earlier retained generation — ~N, a generation id, or an id prefix]:generation:' \
     '*:: :->command' && return 0
 
   if [[ $state == command ]]; then
@@ -490,7 +504,9 @@ _smolvm_machine_start() {
     $_smolvm_help_opt \
     '(-n --name)'{-n,--name}'[Machine to start (default: "default")]:machine:_smolvm_machine_names' \
     '--branchable[Start as a branch source: memfd-backed RAM (CoW-cloneable) plus a control socket]' \
+    '--forkable[Alias for --branchable]' \
     '--branch-pool-size[Plan a CUDA branch pool with this many runnable children (implies --branchable)]:children:' \
+    '--fork-pool-size[Alias for --branch-pool-size]:children:' \
     '--cuda-vram-limit-mib[Override the automatic logical VRAM budget per source/child CUDA session (requires --branch-pool-size)]:MiB:' \
     '--proxy[Proxy URL used for the in-VM image pull]:URL:' \
     '--no-proxy[Comma-separated NO_PROXY list that bypasses the proxy during image pull]:list:'
@@ -500,16 +516,20 @@ _smolvm_machine_branch() {
   _arguments \
     $_smolvm_help_opt \
     '--from[The running, branchable source machine to branch from]:machine:_smolvm_machine_names' \
+    '--golden[Alias for --from]:machine:_smolvm_machine_names' \
     '(--name-prefix -n --name)'{-n,--name}'[Name for the new child machine]:name:' \
     '--count[Number of children to create from one checkpoint (default 1)]:count:' \
     '(-n --name)--name-prefix[Name batch children PREFIX-0 through PREFIX-(COUNT-1)]:prefix:' \
     '--parallel[Maximum number of child boots in flight during a batch branch (default 4)]:count:' \
     '--wait-ready[Wait for smolvm-branch-ready in a single-child branch (batch branches always wait)]' \
     '--hold[Keep each child parked at the inherited branch point as an already-booted pool slot]' \
+    '--freeze-source[Leave the source paused as a reusable branch base (later branches reuse its checkpoint)]' \
     '--ready-timeout[Maximum time to wait for the source workload branch boundary (default 10m)]:duration:' \
     '--wait-worker-ready[Count a batch child as branched only once its workload has run smolvm-worker-ready]' \
     '--worker-ready-timeout[Window for --wait-worker-ready (default 5m)]:duration:' \
     '--branchable[Make the child itself branchable (memfd RAM + control socket)]' \
+    '--forkable[Alias for --branchable]' \
+    '--checkpointable[Alias for --branchable]' \
     '--share-weights[Share the source CUDA weights with this child instead of copying them]' \
     '*'{-e,--env}'[Per-branch parameter, delivered as smolvm-branch-ready env (repeatable)]:KEY=VALUE:' \
     '*'{-p,--port}'[Pin the child inbound port forwards (repeatable); otherwise remapped to free ports]:HOST[-END]\:GUEST[-END]:' \
@@ -523,7 +543,9 @@ _smolvm_machine_checkpoint() {
     '(-n --name)'{-n,--name}'[Running machine to checkpoint]:machine:_smolvm_machine_names' \
     '(-o --output)'{-o,--output}'[Destination .smolcheckpoint file]:file:_files' \
     '--staging-dir[Directory under which large temporary checkpoint assets are staged]:dir:_files -/' \
-    '--export-from[Export a stored checkpoint directory as one portable .smolcheckpoint file]:file:_files' \
+    '--export-from[Export a stored checkpoint directory as one portable .smolcheckpoint file]:dir:_files -/' \
+    '--at[With --export-from: which generation to export — ~N, a generation id, or an id prefix]:generation:' \
+    '--history[How many earlier generations to carry (unchanged chunks are shared; 0 exports one generation in the classic layout)]:N:' \
     '--store[Chunk store directory; with it, output becomes a self-contained directory]:dir:_files -/' \
     '--proxy[Proxy URL used for the in-VM image pull]:URL:' \
     '--no-proxy[Comma-separated NO_PROXY list that bypasses the proxy during image pull]:list:'
@@ -533,6 +555,26 @@ _smolvm_machine_checkpoint_prune() {
   _arguments \
     $_smolvm_help_opt \
     '--store[Store used by machine checkpoint --store]:dir:_files -/'
+}
+
+_smolvm_machine_checkpoint_log() {
+  _arguments \
+    $_smolvm_help_opt \
+    '--store[A checkpoint store: lists every checkpoint published into it, oldest first, with its parent]:dir:_files -/' \
+    '--machine[Only checkpoints of this machine (with --store)]:machine:_smolvm_machine_names' \
+    '1:stored checkpoint directory:_files -/'
+}
+
+_smolvm_machine_pause() {
+  _arguments \
+    $_smolvm_help_opt \
+    '(-n --name)'{-n,--name}'[Machine to pause]:machine:_smolvm_machine_names'
+}
+
+_smolvm_machine_resume() {
+  _arguments \
+    $_smolvm_help_opt \
+    '(-n --name)'{-n,--name}'[Machine to resume]:machine:_smolvm_machine_names'
 }
 _smolvm_machine_branch_release() {
   _arguments \
@@ -686,7 +728,7 @@ _smolvm_pack_create() {
     $_smolvm_help_opt \
     '(--from-vm -I --image)'{-I,--image}'[Container image to pack (e.g. alpine:latest, python:3.11-slim)]:image:_files' \
     '(-I --image)--from-vm[Pack from a stopped VM snapshot instead of an OCI image]:machine:_smolvm_machine_names' \
-    '--rebase-from-image[Rebuild lower layers from vm.image instead of preserving imported artifact layers]' \
+    '--rebase-from-image[Re-pull the base image instead of preserving cached or imported layers (may resolve a newer image tag)]' \
     '--include-workspace[Also capture the machine /workspace so a machine made from the pack starts with those files]' \
     '(-o --output)'{-o,--output}'[Output file path for the packed binary]:file:_files' \
     '--cpus[Maximum vCPUs machines from this pack may use (default 4)]:N:' \
@@ -725,6 +767,7 @@ _smolvm_pack_run() {
     '*'{-p,--port}'[Expose port from container to host (repeatable)]:HOST\:GUEST:' \
     '--net[Enable outbound network access]' \
     '--net-backend[Select the networking backend]:backend:((tsi\:"Use libkrun TSI networking" virtio-net\:"Use virtio-net with the host-side smolvm network stack"))' \
+    '--ssh-agent[Forward the host SSH agent into the VM via a vsock bridge]' \
     '--cpus[Number of virtual CPUs (overrides manifest default)]:N:' \
     '--mem[Memory allocation in MiB (overrides manifest default)]:MiB:' \
     '--storage[Storage disk size in GiB (for OCI layers and container data)]:GiB:' \
