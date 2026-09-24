@@ -5,6 +5,7 @@ env_shell_expand = true
 experimental = true
 locked = false
 lockfile = true
+lockfile_platforms = ["macos-arm64"]
 minimum_release_age = "0s"
 
 [settings.npm]
