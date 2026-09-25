@@ -1,3 +1,4 @@
 cache/
 config.yaml.lock
 extensions/herdr-omp-agent-state.ts
+skill-descriptions.db*
