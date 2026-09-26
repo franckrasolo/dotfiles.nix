@@ -36,6 +36,9 @@ _cache_completion smolvm cat $XDG_CONFIG_HOME/zsh/smolvm.zsh
 _cache_completion tv tv completions zsh
 _cache_completion usage usage --completions zsh
 
+_cache_completion pelmgr pelmgr completion zsh
+_cache_completion formae formae completion zsh
+
 # see https://github.com/zellij-org/zellij/issues/2316
 _cache_completion zellij zsh -c "zellij setup --generate-completion zsh | sed '/_zellij \"\$@\"/d'"
 

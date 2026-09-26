@@ -61,6 +61,7 @@ export PATH=$HOME/Library/Application\ Support/JetBrains/Toolbox/scripts:$PATH #
 export PATH=$XDG_DATA_HOME/npm/bin:$PATH # for grain
 export PATH=$HOME/.modular/bin:$PATH
 export PATH=$HOME/dev/roc:$PATH
+export PATH=/opt/pel/bin:$PATH
 
 # disable for earthly
 export SSH_AUTH_SOCK=$HOME/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
