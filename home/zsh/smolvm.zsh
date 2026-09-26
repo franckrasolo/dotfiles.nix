@@ -1,6 +1,6 @@
 #compdef smolvm
 
-# zsh completion for the Smol Machines smolvm CLI (v1.18.2).
+# zsh completion for the Smol Machines smolvm CLI (v1.19.0).
 # Generated from recursive `smolvm <subcommand> --help` output; re-diff the
 # command/flag inventory against it after a CLI upgrade.
 #
@@ -508,6 +508,7 @@ _smolvm_machine_start() {
     '--branch-pool-size[Plan a CUDA branch pool with this many runnable children (implies --branchable)]:children:' \
     '--fork-pool-size[Alias for --branch-pool-size]:children:' \
     '--cuda-vram-limit-mib[Override the automatic logical VRAM budget per source/child CUDA session (requires --branch-pool-size)]:MiB:' \
+    '--egress-interceptor[Route outbound TCP through a host interceptor (requires SMOLVM_INTERCEPTOR_TOKEN, 64 hex digits); other outbound datagrams except DNS are denied]:ADDR:' \
     '--proxy[Proxy URL used for the in-VM image pull]:URL:' \
     '--no-proxy[Comma-separated NO_PROXY list that bypasses the proxy during image pull]:list:'
 }
@@ -635,6 +636,7 @@ _smolvm_machine_update() {
     '--mem[Set memory in MiB]:MiB:' \
     '(--no-net)--net[Enable outbound network access]' \
     '(--net)--no-net[Disable outbound network access]' \
+    '--no-egress-interceptor[Remove the external egress interceptor requirement from a stopped machine]' \
     '*'{-e,--env}'[Add/replace environment variable (repeatable)]:KEY=VALUE:' \
     '*--remove-env[Remove environment variable by key]:KEY:' \
     '(-w --workdir)'{-w,--workdir}'[Set working directory]:dir:_files -/' \
@@ -672,8 +674,8 @@ _smolvm_machine_cp() {
   _arguments \
     $_smolvm_help_opt \
     '--mode[Set the file'\''s mode on upload (octal, e.g. 644)]:octal:' \
-    '--uid[Set the file'\''s owner uid on upload]:uid:' \
-    '--gid[Set the file'\''s owner gid on upload]:gid:' \
+    '--uid[Set the file'\''s owner uid on upload (default: root)]:uid:' \
+    '--gid[Set the file'\''s owner gid on upload (default: root)]:gid:' \
     '1:source (local file or machine\:path):_smolvm_cp_path' \
     '2:destination (local file or machine\:path):_smolvm_cp_path'
 }
@@ -692,7 +694,8 @@ _smolvm_machine_monitor() {
     '--health-cmd[Health check command (run inside the VM via sh -c)]:command:' \
     '--health-timeout[Health check timeout in seconds (default 5)]:seconds:' \
     '--interval[Check interval in seconds (default 5)]:seconds:' \
-    '--health-retries[Health check failures before triggering restart (default 3)]:N:'
+    '--health-retries[Health check failures before triggering restart (default 3)]:N:' \
+    '--egress-interceptor[Rebind the host egress interceptor on each automatic restart (requires SMOLVM_INTERCEPTOR_TOKEN, 64 hex digits)]:ADDR:'
 }
 
 _smolvm_machine_data_dir() {
