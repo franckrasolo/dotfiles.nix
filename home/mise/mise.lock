@@ -14,23 +14,23 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/566378
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.19.1"
+version = "1.19.2"
 backend = "aqua:smol-machines/smolvm"
 specifiers = ["latest"]
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:ea0715c94210e76565e9df8efb94cf19e1ff6fd28ecc55c404dbbd4871aed87b"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.19.1/smolvm-1.19.1-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/590325502"
+checksum = "sha256:878d581badf08cde85c114d52ed35c76e1c01e7d8e57e7c817957a5da5a14798"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.19.2/smolvm-1.19.2-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/591260474"
 
 [[tools.aube]]
-version = "2.4.0"
+version = "2.5.0"
 backend = "packslip:github.com/aubepkg/aube"
 specifiers = ["latest"]
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:93c782fa74a5558c8f67d43b15b1db85598b61df84faf19ba8e72698e38ef9b1"
-url = "https://github.com/aubepkg/aube/releases/download/v2.4.0/aube-v2.4.0-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:cb40e0e58092ae9aa1781127b0770e73995562dc570113179d17705289517495"
+url = "https://github.com/aubepkg/aube/releases/download/v2.5.0/aube-v2.5.0-aarch64-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release-plz.yml"
 
 [[tools.bun]]
@@ -53,14 +53,14 @@ url = "https://github.com/jdx/fnox/releases/download/v1.35.3/fnox-aarch64-apple-
 signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.3.2"
+version = "18.3.4"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:9fccf2cdd7a472c93cb54d99d95d914c86b5f41652054e3cdd0b17c5d28393a6"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.3.2/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/589507782"
+checksum = "sha256:10a79c56fc459245eac41d5b4318cd7fce88a1dea294d00593859346ada7aa8a"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.3.4/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/592158582"
 
 [[tools."github:kucherenko/jscpd"]]
 version = "5.3.2"
