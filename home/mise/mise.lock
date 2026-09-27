@@ -24,13 +24,13 @@ url = "https://github.com/smol-machines/smolvm/releases/download/v1.19.2/smolvm-
 url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/591260474"
 
 [[tools.aube]]
-version = "2.5.0"
+version = "2.5.1"
 backend = "packslip:github.com/aubepkg/aube"
 specifiers = ["latest"]
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:cb40e0e58092ae9aa1781127b0770e73995562dc570113179d17705289517495"
-url = "https://github.com/aubepkg/aube/releases/download/v2.5.0/aube-v2.5.0-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:68ccd6badf7c6c891467680dfdd5545ba44c64dacd98b508dcd5de3a611a49aa"
+url = "https://github.com/aubepkg/aube/releases/download/v2.5.1/aube-v2.5.1-aarch64-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release-plz.yml"
 
 [[tools.bun]]
@@ -53,14 +53,14 @@ url = "https://github.com/jdx/fnox/releases/download/v1.35.3/fnox-aarch64-apple-
 signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.3.4"
+version = "18.3.5"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:10a79c56fc459245eac41d5b4318cd7fce88a1dea294d00593859346ada7aa8a"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.3.4/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/592158582"
+checksum = "sha256:3ad34e91a474ea239674b593a5ff1544727a22f7afd3c8a8729260128a5febd1"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.3.5/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/592995503"
 
 [[tools."github:kucherenko/jscpd"]]
 version = "5.3.2"
