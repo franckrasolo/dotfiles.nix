@@ -27,7 +27,6 @@
     ./skill-scanner
     ./television
     ./terminals
-    ./wezterm
     ./zoxide
     ./zsh
   ];
