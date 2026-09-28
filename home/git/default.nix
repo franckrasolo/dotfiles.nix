@@ -30,4 +30,7 @@
 
   xdg.configFile."gitu/config.toml".source =
     config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/home/git/gitu.toml";
+
+  xdg.configFile."worktrunk/config.toml".source =
+    config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/home/git/worktrunk.toml";
 }
