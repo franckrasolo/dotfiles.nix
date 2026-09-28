@@ -28,7 +28,6 @@
     ./skill-scanner
     ./television
     ./wezterm
-    ./zellij
     ./zoxide
     ./zsh
   ];
