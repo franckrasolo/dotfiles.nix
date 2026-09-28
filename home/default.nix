@@ -5,7 +5,6 @@
     ./packages.nix
     ./agent-harnesses
     ./bat
-    ./ghostty
     ./direnv
     ./fastfetch
     ./file-managers
