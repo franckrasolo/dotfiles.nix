@@ -14,8 +14,6 @@ Hy3 <noreply@tencent.com>
 Hy4 Preview <noreply@tencent.com>
 Kimi K3 <noreply@moonshot.ai>
 Jev <noreply@typesafe.ai>
-MiMo V2.6 Flash <noreply@xiaomi.com>
-MiMo V2.6 Pro <noreply@xiaomi.com>
 MiniMax M3 <noreply@minimax.io>
 Muse Spark 1.3 <noreply@meta.ai>
 OMP <noreply@omp.sh>
