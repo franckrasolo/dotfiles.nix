@@ -39,17 +39,20 @@ postinstall = "ln -sf $(mise which bd) $XDG_BIN_HOME/bd"
 
 [tools.opencode]
 version = "latest"
+depends = ["worktrunk"]
 postinstall = """
   ln -sf ${XDG_CONFIG_HOME}/opencode ~/.config/
 
   vendor="${XDG_CONFIG_HOME}/opencode/vendor"
   git sync $vendor https://github.com/f-steff/opencode-env-auth
   git sync $vendor https://github.com/ayghri/i-have-adhd
+
+  wt config plugins opencode install --yes
 """
 
 [tools."github:can1357/oh-my-pi"]
 version = "latest"
-depends = "bun"
+depends = ["bun", "worktrunk"]
 postinstall = """
   omp config init-xdg
 
@@ -57,14 +60,19 @@ postinstall = """
   omp plugin install --force i-have-adhd@i-have-adhd
   omp plugin install --force git:github.com/DietrichGebert/ponytail
   omp plugin install --force github:obra/superpowers
+
+  wt config plugins omp install --yes
 """
 
 [tools.pi]
 version = "latest"
+depends = ["worktrunk"]
 postinstall = """
   pi install https://github.com/ayghri/i-have-adhd
   pi install git:github.com/DietrichGebert/ponytail
   pi install git:github.com/obra/superpowers
+
+  wt config plugins pi install --yes
 """
 
 [tools.herdr]

@@ -1,4 +1,5 @@
 cache/
 config.yaml.lock
 extensions/herdr-omp-agent-state.ts
+hooks/pre/worktrunk.ts
 skill-descriptions.db*

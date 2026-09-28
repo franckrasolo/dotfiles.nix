@@ -1,4 +1,5 @@
 extensions/herdr-agent-state.ts
+extensions/worktrunk.ts
 git/
 sessions/
 models-store.json
