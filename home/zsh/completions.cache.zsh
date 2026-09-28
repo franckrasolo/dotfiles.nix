@@ -36,6 +36,7 @@ _cache_completion smolvm cat $XDG_CONFIG_HOME/zsh/smolvm.zsh
 _cache_completion tuios tuios completion zsh
 _cache_completion tv tv completions zsh
 _cache_completion usage usage --completions zsh
+_cache_completion wt wt config shell init zsh
 
 _cache_completion pelmgr pelmgr completion zsh
 _cache_completion formae formae completion zsh
