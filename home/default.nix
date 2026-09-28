@@ -27,7 +27,6 @@
     ./silicon
     ./skill-scanner
     ./television
-    ./tmux
     ./wezterm
     ./zellij
     ./zoxide
