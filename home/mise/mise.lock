@@ -53,24 +53,24 @@ checksum = "sha256:90987a3a16d7db556d886ac3d551e7b6d3edf0a1cf43acaed622e8676be1d
 url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-darwin-aarch64.zip"
 
 [[tools.fnox]]
-version = "1.35.3"
+version = "1.36.0"
 backend = "packslip:github.com/jdx/fnox"
 specifiers = ["latest"]
 
 [tools.fnox."platforms.macos-arm64"]
-checksum = "sha256:49965f9739d053f544aa32599494b3e2442dcf8c116d92a6a4afa5575e9decd3"
-url = "https://github.com/jdx/fnox/releases/download/v1.35.3/fnox-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:b1de28349089d62b24518f1a6103005f9f3c82aaf5ca7872e65bf3fc349e4166"
+url = "https://github.com/jdx/fnox/releases/download/v1.36.0/fnox-aarch64-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.4.1"
+version = "18.4.2"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:f5b9bb407e685f92f32e6c14d6dab64570d2a0c85a6a19d74fdce38c64e07d14"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.4.1/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/594729955"
+checksum = "sha256:2b49620ca39d835ff313aadd4ec61931732b5db4251a7781d8a5a2305341c14a"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.4.2/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/595288231"
 
 [[tools."github:kucherenko/jscpd"]]
 version = "5.3.2"
@@ -94,14 +94,14 @@ url = "https://github.com/remotemobprogramming/mob/releases/download/5.4.2/mob_5
 url_api = "https://api.github.com/repos/remotemobprogramming/mob/releases/assets/346269527"
 
 [[tools."github:rivolink/leaf"]]
-version = "1.28.2"
+version = "1.28.3"
 backend = "github:rivolink/leaf"
 specifiers = ["latest"]
 
 [tools."github:rivolink/leaf"."platforms.macos-arm64"]
-checksum = "sha256:db409c712c608e4783073ff12ea6a5417bffd20360b03d7450f0f5bb863aa825"
-url = "https://github.com/RivoLink/leaf/releases/download/1.28.2/leaf-macos-arm64"
-url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/562589926"
+checksum = "sha256:dc54bcc39e73f99853f051389481db7396fec95eff69f85db8878518a3fe13df"
+url = "https://github.com/RivoLink/leaf/releases/download/1.28.3/leaf-macos-arm64"
+url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/595133822"
 
 [[tools."github:vladkens/macmon"]]
 version = "0.8.2"
