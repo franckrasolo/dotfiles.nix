@@ -18,6 +18,7 @@
     ./leaf
     ./luarocks
     ./mise
+    ./multiplexers
     ./nvim
     ./ov
     ./pdf

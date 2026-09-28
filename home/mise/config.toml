@@ -18,6 +18,7 @@ tools = "mise ls --global --outdated"
 
 [tools]
 "aqua:smol-machines/smolvm" = "latest"
+"aqua:Gaurav-Gosain/tuios" = "latest"
 aube = "latest"
 bun = "latest"
 fnox = "latest"
