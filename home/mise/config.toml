@@ -18,7 +18,6 @@ tools = "mise ls --global --outdated"
 
 [tools]
 "aqua:smol-machines/smolvm" = "latest"
-"aqua:Gaurav-Gosain/tuios" = "latest"
 aube = "latest"
 bun = "latest"
 fnox = "latest"
@@ -29,7 +28,6 @@ fnox = "latest"
 "github:zeroclaw-labs/zeroclaw" = "latest"
 "github:zjrosen/perles" = "latest"
 "nix:pkl-lsp" = "latest"
-worktrunk = "latest"
 television = "latest"
 usage = "latest"
 
@@ -39,21 +37,17 @@ postinstall = "ln -sf $(mise which bd) $XDG_BIN_HOME/bd"
 
 [tools.opencode]
 version = "latest"
-depends = ["tuios", "worktrunk"]
 postinstall = """
   ln -sf ${XDG_CONFIG_HOME}/opencode ~/.config/
 
   vendor="${XDG_CONFIG_HOME}/opencode/vendor"
   git sync $vendor https://github.com/f-steff/opencode-env-auth
   git sync $vendor https://github.com/ayghri/i-have-adhd
-
-  tuios integration install opencode
-  wt config plugins opencode install --yes
 """
 
 [tools."github:can1357/oh-my-pi"]
 version = "latest"
-depends = ["bun", "worktrunk"]
+depends = ["bun"]
 postinstall = """
   omp config init-xdg
 
@@ -61,20 +55,14 @@ postinstall = """
   omp plugin install --force i-have-adhd@i-have-adhd
   omp plugin install --force git:github.com/DietrichGebert/ponytail
   omp plugin install --force github:obra/superpowers
-
-  wt config plugins omp install --yes
 """
 
 [tools.pi]
 version = "latest"
-depends = ["tuios", "worktrunk"]
 postinstall = """
   pi install https://github.com/ayghri/i-have-adhd
   pi install git:github.com/DietrichGebert/ponytail
   pi install git:github.com/obra/superpowers
-
-  tuios integration install pi
-  wt config plugins pi install --yes
 """
 
 [tools.herdr]
@@ -86,6 +74,23 @@ postinstall = """
   herdr integration install pi
 
   herdr plugin install crierr/herdr-arrange --yes
+"""
+
+[tools."aqua:Gaurav-Gosain/tuios"]
+version = "latest"
+depends = ["github:can1357/oh-my-pi", "opencode", "pi"]
+postinstall = """
+  tuios integration install opencode
+  tuios integration install pi
+"""
+
+[tools.worktrunk]
+version = "latest"
+depends = ["github:can1357/oh-my-pi", "opencode", "pi"]
+postinstall = """
+  wt config plugins omp install --yes
+  wt config plugins opencode install --yes
+  wt config plugins pi install --yes
 """
 
 [env]
