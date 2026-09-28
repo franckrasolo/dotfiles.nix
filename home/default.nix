@@ -2,12 +2,15 @@
 
 {
   imports = [
-    ./packages.nix
     ./agent-harnesses
+    ./file-managers
+    ./multiplexers
+    ./terminals
+
+    ./packages.nix
     ./bat
     ./direnv
     ./fastfetch
-    ./file-managers
     ./fnox
     ./fzf
     ./git
@@ -16,7 +19,6 @@
     ./leaf
     ./luarocks
     ./mise
-    ./multiplexers
     ./nvim
     ./ov
     ./pdf
@@ -25,7 +27,6 @@
     ./silicon
     ./skill-scanner
     ./television
-    ./terminals
     ./zoxide
     ./zsh
   ];
