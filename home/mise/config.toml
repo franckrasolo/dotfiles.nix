@@ -39,7 +39,7 @@ postinstall = "ln -sf $(mise which bd) $XDG_BIN_HOME/bd"
 
 [tools.opencode]
 version = "latest"
-depends = ["worktrunk"]
+depends = ["tuios", "worktrunk"]
 postinstall = """
   ln -sf ${XDG_CONFIG_HOME}/opencode ~/.config/
 
@@ -47,6 +47,7 @@ postinstall = """
   git sync $vendor https://github.com/f-steff/opencode-env-auth
   git sync $vendor https://github.com/ayghri/i-have-adhd
 
+  tuios integration install opencode
   wt config plugins opencode install --yes
 """
 
@@ -66,12 +67,13 @@ postinstall = """
 
 [tools.pi]
 version = "latest"
-depends = ["worktrunk"]
+depends = ["tuios", "worktrunk"]
 postinstall = """
   pi install https://github.com/ayghri/i-have-adhd
   pi install git:github.com/DietrichGebert/ponytail
   pi install git:github.com/obra/superpowers
 
+  tuios integration install pi
   wt config plugins pi install --yes
 """
 

@@ -1,6 +1,7 @@
 herdr-opencode/
 node_modules/
 plugins/herdr-agent-state.js
+plugins/tuios-agent-state.js
 plugins/worktrunk.ts
 vendor/
 .ponytail-active
