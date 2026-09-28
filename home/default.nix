@@ -12,7 +12,6 @@
     ./fnox
     ./fzf
     ./git
-    ./herdr
     ./k9s
     ./lazygit
     ./leaf
