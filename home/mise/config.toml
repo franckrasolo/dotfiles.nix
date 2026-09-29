@@ -50,6 +50,7 @@ version = "latest"
 depends = ["bun"]
 postinstall = """
   omp config init-xdg
+  omp plugin install --force @ff-labs/pi-fff
 
   omp plugin marketplace add ayghri/i-have-adhd 2> /dev/null || true
   omp plugin install --force i-have-adhd@i-have-adhd
@@ -59,7 +60,10 @@ postinstall = """
 
 [tools.pi]
 version = "latest"
+depends = ["node"]
 postinstall = """
+  pi install npm:@ff-labs/pi-fff
+
   pi install https://github.com/ayghri/i-have-adhd
   pi install git:github.com/DietrichGebert/ponytail
   pi install git:github.com/obra/superpowers

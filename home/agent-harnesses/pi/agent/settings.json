@@ -4,7 +4,8 @@
   "packages": [
     "https://github.com/ayghri/i-have-adhd",
     "git:github.com/DietrichGebert/ponytail",
-    "git:github.com/obra/superpowers"
+    "git:github.com/obra/superpowers",
+    "npm:@ff-labs/pi-fff"
   ],
   "defaultProvider": "opencode-go",
   "defaultModel": "omen-alpha",
