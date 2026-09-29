@@ -65,14 +65,14 @@ signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.ym
 repository_ids = { repository = "1078762196", owner = "216188" }
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.4.3"
+version = "18.4.4"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:1339e8e98b82d3e2341d198b8e17fd8b56ded2a8d83bc76f8086a858aca7c347"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.4.3/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/597239776"
+checksum = "sha256:e76e02821242fb36844676a9dfb79fbe5fb069d93ef3bf62625ec339fe9d092b"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.4.4/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/599047053"
 
 [[tools."github:kucherenko/jscpd"]]
 version = "5.3.3"
@@ -138,14 +138,14 @@ url = "https://github.com/zjrosen/perles/releases/download/v0.8.96/perles_0.8.96
 url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/585127080"
 
 [[tools.herdr]]
-version = "0.9.2"
+version = "0.9.3"
 backend = "aqua:herdrdev/herdr"
 specifiers = ["latest"]
 
 [tools.herdr."platforms.macos-arm64"]
-checksum = "sha256:e5dae9c7d93010968897de10c6e9ea2aacb14965f7b9e3b3d061dba82d2a1944"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.9.2/herdr-macos-aarch64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/598275558"
+checksum = "sha256:5173a3e0ae42d5d1ab7ebfa5d5e6329f7c3d23f8e1a3677c7ce3231da2884157"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.9.3/herdr-macos-aarch64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/599036381"
 
 [[tools."nix:pkl-lsp"]]
 version = "0.8.0"
