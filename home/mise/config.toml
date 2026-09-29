@@ -67,7 +67,7 @@ postinstall = """
 
 [tools.herdr]
 version = "latest"
-depends = ["github:can1357/oh-my-pi", "opencode", "pi"]
+depends = ["go", "github:can1357/oh-my-pi", "opencode", "pi"]
 postinstall = """
   herdr integration install omp
   herdr integration install opencode
