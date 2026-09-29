@@ -27,6 +27,10 @@ _targets:
 @fix-line-separators:
   fd '.+' .obsidian/{plugins,themes} --exec dos2unix {} \;
 
+# checks this Nix system for potential problems
+@check:
+  nix config check --verbose
+
 # installs mise as a self-upgradeable tool
 @install-mise:
   curl https://mise.run | MISE_INSTALL_PATH=$XDG_BIN_HOME/mise sh
