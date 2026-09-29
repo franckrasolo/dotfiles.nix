@@ -3,14 +3,14 @@
 lockfile_version = 2
 
 [[tools."aqua:Gaurav-Gosain/tuios"]]
-version = "0.8.0"
+version = "0.8.1"
 backend = "aqua:Gaurav-Gosain/tuios"
 specifiers = ["latest"]
 
 [tools."aqua:Gaurav-Gosain/tuios"."platforms.macos-arm64"]
-checksum = "sha256:671433256bb256491a8d72555fcdf256797d68abb9de2b0e073b16cd95559821"
-url = "https://github.com/Gaurav-Gosain/tuios/releases/download/v0.8.0/tuios_0.8.0_Darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/Gaurav-Gosain/tuios/releases/assets/593591942"
+checksum = "sha256:58379193bd06b036da242d5d2809672f48a7f406b1afba91c4fb27909584731a"
+url = "https://github.com/Gaurav-Gosain/tuios/releases/download/v0.8.1/tuios_0.8.1_Darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/Gaurav-Gosain/tuios/releases/assets/597815979"
 
 [[tools."aqua:gastownhall/beads"]]
 version = "1.3.0"
@@ -24,24 +24,24 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/566378
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.19.3"
+version = "1.20.2"
 backend = "aqua:smol-machines/smolvm"
 specifiers = ["latest"]
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:1a8dec267e9750ea3fa17dbb429e0c9555e6f32f9a1128633a962f48a713c0c4"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.19.3/smolvm-1.19.3-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/593787046"
+checksum = "sha256:6e3e9fe097f7cc5e1e6584c09a722cf58f7e40984fb840331beffdcbb4ca106d"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.20.2/smolvm-1.20.2-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/597237724"
 
 [[tools.aube]]
-version = "2.5.1"
+version = "2.6.0"
 backend = "packslip:github.com/aubepkg/aube"
 specifiers = ["latest"]
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:68ccd6badf7c6c891467680dfdd5545ba44c64dacd98b508dcd5de3a611a49aa"
-url = "https://github.com/aubepkg/aube/releases/download/v2.5.1/aube-v2.5.1-aarch64-apple-darwin.tar.gz"
-signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release-plz.yml"
+checksum = "sha256:c7480a9ea02c59a61d956d9e778808716d7336df4bd97a6ad99eb7c2fb933b4e"
+url = "https://github.com/aubepkg/aube/releases/download/v2.6.0/aube-v2.6.0-aarch64-apple-darwin.tar.gz"
+signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release.yml"
 
 [[tools.bun]]
 version = "1.4.2"
@@ -63,14 +63,14 @@ url = "https://github.com/jdx/fnox/releases/download/v1.36.0/fnox-aarch64-apple-
 signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.4.2"
+version = "18.4.3"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:2b49620ca39d835ff313aadd4ec61931732b5db4251a7781d8a5a2305341c14a"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.4.2/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/595288231"
+checksum = "sha256:1339e8e98b82d3e2341d198b8e17fd8b56ded2a8d83bc76f8086a858aca7c347"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.4.3/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/597239776"
 
 [[tools."github:kucherenko/jscpd"]]
 version = "5.3.3"
