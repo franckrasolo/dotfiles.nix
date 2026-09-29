@@ -11,6 +11,10 @@ _targets:
 @gc:
   sudo nix-collect-garbage --delete-old
 
+# de-duplicates files in the Nix store
+@optimise:
+  sudo nix store optimise
+
 # updates the top-level flake lock file
 @update:
   nix flake update --commit-lock-file --commit-lockfile-summary "update Nix flake inputs"
