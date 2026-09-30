@@ -1,6 +1,6 @@
 #compdef smolvm
 
-# zsh completion for the Smol Machines smolvm CLI (v1.19.0).
+# zsh completion for the Smol Machines smolvm CLI (v1.22.0).
 # Generated from recursive `smolvm <subcommand> --help` output; re-diff the
 # command/flag inventory against it after a CLI upgrade.
 #
@@ -25,6 +25,7 @@ _smolvm_machine_cmds=(
   'start:Start a machine'
   'branch:Branch a running branchable machine into an independent child (CoW memory + disks)'
   'checkpoint:Save a running machine, including RAM, as a portable checkpoint'
+  'checkpoint-warm:Prepare an incremental checkpoint for fast restores without starting a VM'
   'checkpoint-prune:Remove unused objects from a checkpoint store'
   'checkpoint-log:Show the history a checkpoint carries, or every checkpoint in a store'
   'branch-release:Assign parameters and release one held branch-pool slot'
@@ -37,6 +38,7 @@ _smolvm_machine_cmds=(
   'egress-events:Show egress denials — outbound connections the machine'"'"'s egress policy refused'
   'ls:List all machines'
   'list:Alias for ls'
+  'resize:Grow a running machine'"'"'s CPUs, RAM, or disks without rebooting'
   'update:Modify settings on a stopped machine (mounts, ports, resources, disks)'
   'images:List cached images and storage usage'
   'prune:Remove unused images and layers to free disk space'
@@ -186,6 +188,7 @@ _smolvm_machine() {
         start)            _smolvm_machine_start ;;
         branch|fork)      _smolvm_machine_branch ;;
         checkpoint)       _smolvm_machine_checkpoint ;;
+        checkpoint-warm)  _smolvm_machine_checkpoint_warm ;;
         checkpoint-prune) _smolvm_machine_checkpoint_prune ;;
         checkpoint-log)   _smolvm_machine_checkpoint_log ;;
         branch-release|fork-release) _smolvm_machine_branch_release ;;
@@ -196,6 +199,7 @@ _smolvm_machine() {
         status)           _smolvm_machine_status ;;
         egress-events)    _smolvm_machine_egress_events ;;
         ls|list)          _smolvm_machine_ls ;;
+        resize)           _smolvm_machine_resize ;;
         update)           _smolvm_machine_update ;;
         images)           _smolvm_machine_images ;;
         prune)            _smolvm_machine_prune ;;
@@ -363,6 +367,9 @@ _smolvm_machine_run() {
     '--network[Join a named inter-VM network (implies --net, virtio-net only)]:name:' \
     '*--allow-cidr[Allow egress to specific CIDR range (repeatable, implies --net)]:CIDR:' \
     '*--allow-host[Allow egress to specific hostname, resolved at VM start (repeatable, implies --net)]:hostname:' \
+    '*--allow-host-pattern[Allow egress to an exact hostname or *.domain subdomains (repeatable, implies --net)]:pattern:' \
+    '--use-host-proxy[Pass the host proxy (env or macOS system proxy) into the workload (implies --net)]' \
+    '--trust-host-certs[Trust the host certificate store inside the workload]' \
     '*--credential[Bind a credential the workload may use without ever seeing it: NAME=ENV_VAR@HOST\[,HOST...\] (repeatable, implies --net)]:NAME=ENV_VAR@HOST:' \
     '--outbound-localhost-only[Restrict outbound to localhost only (implies --net)]' \
     '--allow-host-loopback[Let the guest reach services on the host own loopback (implies --net)]' \
@@ -463,6 +470,9 @@ _smolvm_machine_create() {
     '--network[Join a named inter-VM network (implies --net, virtio-net only)]:name:' \
     '*--allow-cidr[Allow egress to specific CIDR range (repeatable, implies --net)]:CIDR:' \
     '*--allow-host[Allow egress to specific hostname, resolved at VM start (repeatable, implies --net)]:hostname:' \
+    '*--allow-host-pattern[Allow egress to an exact hostname or *.domain subdomains (repeatable, implies --net)]:pattern:' \
+    '--use-host-proxy[Pass the host proxy (env or macOS system proxy) into the workload (implies --net)]' \
+    '--trust-host-certs[Trust the host certificate store inside the workload]' \
     '*--credential[Bind a credential the workload may use without ever seeing it: NAME=ENV_VAR@HOST\[,HOST...\] (repeatable, implies --net)]:NAME=ENV_VAR@HOST:' \
     '--outbound-localhost-only[Restrict outbound to localhost only (implies --net)]' \
     '--gpu[Enable GPU acceleration (Vulkan via virtio-gpu)]' \
@@ -475,6 +485,7 @@ _smolvm_machine_create() {
     '*'{-e,--env}'[Set environment variable (repeatable)]:KEY=VALUE:' \
     '(-u --user)'{-u,--user}'[Run the workload as this user, like docker run --user (a name or uid:gid)]:user:' \
     '--ssh-agent[Forward host SSH agent into the VM (git/ssh without exposing keys)]' \
+    '--stop-on-exit[Stop the machine once its workload exits, whatever the exit status]' \
     '--cuda[Remote guest CUDA Driver-API calls to the host NVIDIA GPU over vsock]' \
     '--auto-graph[Ask compatible CUDA frameworks to graph safe compiled regions (implies --cuda)]' \
     '--docker-socket[Expose the guest Docker daemon socket to the host as a Unix socket]' \
@@ -484,6 +495,8 @@ _smolvm_machine_create() {
     '(-s --smolfile)'{-s,--smolfile}'[Load configuration from a Smolfile (TOML)]:Smolfile:_smolvm_smolfile' \
     '(-I --image)--from[Create from a .smolmachine pack or restore a .smolcheckpoint]:artifact:_smolvm_pack_or_checkpoint' \
     '--at[With --from checkpoint: restore an earlier retained generation — ~N, a generation id, or an id prefix]:generation:' \
+    '--restore-cache-entries[Recently restored checkpoints to keep ready (0 turns the cache off, default 3)]:N:' \
+    '--restore-cache-gib[Space the kept restored checkpoints may hold together in GiB (default 16)]:GiB:' \
     '*:: :->command' && return 0
 
   if [[ $state == command ]]; then
@@ -546,7 +559,7 @@ _smolvm_machine_checkpoint() {
     '--staging-dir[Directory under which large temporary checkpoint assets are staged]:dir:_files -/' \
     '--export-from[Export a stored checkpoint directory as one portable .smolcheckpoint file]:dir:_files -/' \
     '--at[With --export-from: which generation to export — ~N, a generation id, or an id prefix]:generation:' \
-    '--history[How many earlier generations to carry (unchanged chunks are shared; 0 exports one generation in the classic layout)]:N:' \
+    '--history[How many earlier generations to carry (default 32; unchanged chunks are shared; 0 exports one generation in the classic layout)]:N:' \
     '--store[Chunk store directory; with it, output becomes a self-contained directory]:dir:_files -/' \
     '--proxy[Proxy URL used for the in-VM image pull]:URL:' \
     '--no-proxy[Comma-separated NO_PROXY list that bypasses the proxy during image pull]:list:'
@@ -556,6 +569,14 @@ _smolvm_machine_checkpoint_prune() {
   _arguments \
     $_smolvm_help_opt \
     '--store[Store used by machine checkpoint --store]:dir:_files -/'
+}
+
+_smolvm_machine_checkpoint_warm() {
+  _arguments \
+    $_smolvm_help_opt \
+    '--from[Incremental .smolcheckpoint directory to prepare]:checkpoint:_files -/' \
+    '--restore-cache-entries[Recently restored checkpoints to keep ready (0 turns the cache off, default 3)]:N:' \
+    '--restore-cache-gib[Space the kept restored checkpoints may hold together in GiB (default 16)]:GiB:'
 }
 
 _smolvm_machine_checkpoint_log() {
@@ -623,6 +644,16 @@ _smolvm_machine_ls() {
     '(-q --quiet)'{-q,--quiet}'[Print only machine names, one per line]'
 }
 
+_smolvm_machine_resize() {
+  _arguments \
+    $_smolvm_help_opt \
+    '(-n --name)'{-n,--name}'[Machine to resize (default: "default")]:machine:_smolvm_machine_names' \
+    '--cpus[Target online vCPU count]:COUNT:' \
+    '--mem[Target usable RAM in MiB (grow only)]:MiB:' \
+    '--storage[Storage disk size in GiB (expand only)]:GiB:' \
+    '--overlay[Overlay disk size in GiB (expand only)]:GiB:'
+}
+
 _smolvm_machine_update() {
   _arguments \
     $_smolvm_help_opt \
@@ -637,6 +668,11 @@ _smolvm_machine_update() {
     '(--no-net)--net[Enable outbound network access]' \
     '(--net)--no-net[Disable outbound network access]' \
     '--no-egress-interceptor[Remove the external egress interceptor requirement from a stopped machine]' \
+    '*--allow-host[Allow egress to a hostname and its subdomains (repeatable; virtio-net only)]:hostname:' \
+    '*--allow-host-pattern[Allow egress to an exact hostname or *.domain subdomains (repeatable)]:pattern:' \
+    '*--allow-cidr[Allow egress to a CIDR range (repeatable)]:CIDR:' \
+    '*--remove-allow-host[Remove an allowed hostname or pattern, written as it was added]:hostname|pattern:' \
+    '*--remove-allow-cidr[Remove an allowed CIDR range]:CIDR:' \
     '*'{-e,--env}'[Add/replace environment variable (repeatable)]:KEY=VALUE:' \
     '*--remove-env[Remove environment variable by key]:KEY:' \
     '(-w --workdir)'{-w,--workdir}'[Set working directory]:dir:_files -/' \
@@ -736,6 +772,7 @@ _smolvm_pack_create() {
     '(-o --output)'{-o,--output}'[Output file path for the packed binary]:file:_files' \
     '--cpus[Maximum vCPUs machines from this pack may use (default 4)]:N:' \
     '--mem[Maximum memory in MiB machines from this pack may use (default 8192)]:MiB:' \
+    '--storage[Storage disk size in GiB for the temporary pack VM (default: sized from the image)]:GiB:' \
     '--oci-platform[Target OCI platform for multi-arch images (default: host architecture)]:platform:(linux/arm64 linux/amd64)' \
     '--entrypoint[Override the image entrypoint]:command:' \
     '--no-sign[Skip code signing (macOS only)]' \
