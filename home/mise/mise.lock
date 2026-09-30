@@ -3,14 +3,14 @@
 lockfile_version = 3
 
 [[tools."aqua:Gaurav-Gosain/tuios"]]
-version = "0.8.1"
+version = "0.8.2"
 backend = "aqua:Gaurav-Gosain/tuios"
 specifiers = ["latest"]
 
 [tools."aqua:Gaurav-Gosain/tuios"."platforms.macos-arm64"]
-checksum = "sha256:58379193bd06b036da242d5d2809672f48a7f406b1afba91c4fb27909584731a"
-url = "https://github.com/Gaurav-Gosain/tuios/releases/download/v0.8.1/tuios_0.8.1_Darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/Gaurav-Gosain/tuios/releases/assets/597815979"
+checksum = "sha256:a28b707d27579e58b88a849c76f3b694bf3291ffed9bdeb583bf726842ce7706"
+url = "https://github.com/Gaurav-Gosain/tuios/releases/download/v0.8.2/tuios_0.8.2_Darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/Gaurav-Gosain/tuios/releases/assets/600977584"
 
 [[tools."aqua:gastownhall/beads"]]
 version = "1.3.0"
