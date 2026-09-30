@@ -121,7 +121,7 @@ modelRoles:
   task: opencode-go/deepseek-v4.1-flash:max
   smol: opencode-go/deepseek-v4.1-flash:low
   slow: opencode-go/glm-5.3:high
-  vision: opencode-zen/gpt-6-sol:high
+  vision: opencode-zen/gpt-6.1-sol:medium
 retry:
   fallbackChains:
     opencode-go/*:
