@@ -65,24 +65,24 @@ signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.ym
 repository_ids = { repository = "1078762196", owner = "216188" }
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.4.4"
+version = "18.4.5"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:e76e02821242fb36844676a9dfb79fbe5fb069d93ef3bf62625ec339fe9d092b"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.4.4/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/599047053"
+checksum = "sha256:64f5d0a99a2c5b5d9b453a7666257306244ac4c6fd8fdbe0e760bf3449fc8ea6"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.4.5/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/601615741"
 
 [[tools."github:kucherenko/jscpd"]]
-version = "5.3.3"
+version = "5.4.0"
 backend = "github:kucherenko/jscpd"
 specifiers = ["latest"]
 
 [tools."github:kucherenko/jscpd"."platforms.macos-arm64"]
-checksum = "sha256:a90634a456876a8985abd4c4e6674355f4d76f2166fec10d0f295ee5e17c5d6c"
-url = "https://github.com/kucherenko/jscpd/releases/download/v5.3.3/jscpd-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/kucherenko/jscpd/releases/assets/595512987"
+checksum = "sha256:75022b94cd6c05523a7a1639c3fff769d9a97f8c7ef3f6a614c6bee53b7e3bdd"
+url = "https://github.com/kucherenko/jscpd/releases/download/v5.4.0/jscpd-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/kucherenko/jscpd/releases/assets/601533635"
 provenance = "github-attestations"
 
 [[tools."github:remotemobprogramming/mob"]]
@@ -163,14 +163,14 @@ url = "https://github.com/anomalyco/opencode/releases/download/v1.18.33/opencode
 url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/594449070"
 
 [[tools.pi]]
-version = "0.99.1"
+version = "0.99.2"
 backend = "aqua:earendil-works/pi"
 specifiers = ["latest"]
 
 [tools.pi."platforms.macos-arm64"]
-checksum = "sha256:4692aba1dcd48219b61edb4ecebc3c33f6199ebe65299228fce5ba69c31a23a6"
-url = "https://github.com/earendil-works/pi/releases/download/v0.99.1/pi-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/598875653"
+checksum = "sha256:564707a7378dae4cce29d92693b45b49d3a3a25187dddcc6d8c2e4aca4fb3719"
+url = "https://github.com/earendil-works/pi/releases/download/v0.99.2/pi-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/601628127"
 
 [[tools.television]]
 version = "0.15.9"
