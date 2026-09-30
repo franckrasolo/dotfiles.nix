@@ -76,6 +76,7 @@ zoom_size = 99
 panel_padding = 2
 clock_format = '15:04:05'
 dim_unfocused = 0
+dim_multifocus = false
 background = 'off'
 pane_background = ''
 desktop_background = ''
@@ -108,6 +109,7 @@ width = 24
 workspaces = ''
 sections = 'sessions,spacer:5,agents,spacer:5,terminals,spacer:5,files,spacer:5'
 folder_click = 'navigate'
+editor = 'nvim'
 file_delete = 'trash'
 background = ''
 agent_rest_fold = '1h'
@@ -126,6 +128,8 @@ quiet_hours = ''
 [notifications.agent.sounds]
 done = ''
 needs_input = ''
+
+[notifications.mail]
 
 # ============================================================================
 # KEYBINDINGS
@@ -229,6 +233,8 @@ switch_workspace_9 = ['opt+9']
 
 [keybindings.layout]
 equalize_splits = ['=']
+focus_down = ['j']
+focus_up = ['k']
 preselect_down = ['opt+j']
 preselect_left = ['opt+h']
 preselect_right = ['opt+l']
@@ -276,6 +282,7 @@ restore_minimized_8 = ['shift+8', '*']
 restore_minimized_9 = ['shift+9', '(']
 
 [keybindings.prefix_mode]
+hints = ['F']
 launcher = ['a']
 next_session = [')']
 prefix_close_session = ['X']
@@ -286,6 +293,7 @@ prefix_detach = ['d']
 prefix_equalize_splits = ['=']
 prefix_exit_mode = ['esc']
 prefix_explore = ['e']
+prefix_file_search = ['f']
 prefix_fullscreen = ['z']
 prefix_help = ['?']
 prefix_inbox = ['i']
@@ -331,6 +339,7 @@ terminal_focus_down = ['down']
 terminal_focus_left = ['left']
 terminal_focus_right = ['right']
 terminal_focus_up = ['up']
+toggle_scratch = ['g']
 
 [keybindings.window_prefix]
 window_prefix_cancel = ['esc']
@@ -439,6 +448,7 @@ cursor_down = ['j', 'down']
 cursor_up = ['k', 'up']
 exit = ['esc', 's']
 expand = ['l', 'right']
+file_search = ['ctrl+f']
 first = ['g', 'home']
 help = ['?']
 jump_1 = ['1']
@@ -470,6 +480,7 @@ file_create = ['a']
 file_cut = ['x']
 file_delete = ['d']
 file_delete_forever = ['D']
+file_edit = ['shift+enter']
 file_open = ['enter']
 file_paste = ['p']
 file_rename = ['r']
@@ -519,6 +530,7 @@ peek_type = ['tab']
 mail_back = ['esc', 'q']
 mail_down = ['j', 'down', 'ctrl+n']
 mail_focus_pane = ['o']
+mail_new = ['n']
 mail_open = ['enter']
 mail_page_down = ['pgdown']
 mail_page_up = ['pgup']
@@ -568,6 +580,17 @@ radius = 10
 dim = 75
 edge = 'hard'
 shake = false
+
+[hints]
+builtins = 'all'
+patterns = []
+alphabet = 'asdfghjkl'
+dim = 60
+all_panes = false
+
+[scratch]
+width = '80%'
+height = '80%'
 
 # ============================================================================
 # DOCK COMPONENTS
