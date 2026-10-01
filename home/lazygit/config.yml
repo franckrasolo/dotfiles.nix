@@ -321,6 +321,24 @@ git:
   # length. Set to 40 to disable truncation.
   truncateCopiedCommitHashesTo: 12
 
+customCommands:
+  - key: "<ctrl+alt+c>"
+    context: "global"
+    description: "Create empty commit"
+    loadingText: "Creating an empty commit"
+    prompts:
+      - type: "input"
+        title: "Message: summary for this empty commit"
+        key: "Summary"
+      - type: "input"
+        title: "Body: why this empty commit? (optional)"
+        key: "Body"
+    command: >-
+      git commit --allow-empty --only
+      --message {{.Form.Summary | quote}}
+      {{if .Form.Body}}--message {{.Form.Body | quote}}{{end}}
+    output: "log"
+
 # Periodic update checks
 update:
   # One of: 'prompt' (default) | 'background' | 'never'
