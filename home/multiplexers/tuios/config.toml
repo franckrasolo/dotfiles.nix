@@ -464,6 +464,104 @@ terminal_scroll_up = ['shift+up']
 command_palette = ['ctrl+p']
 launcher = ['alt+space']
 
+[[keybindings.command]]
+key = 'prefix+ctrl+c'
+type = 'popup'
+command = 'tuicr'
+description = 'Code Review'
+width = '85%'
+height = '85%'
+
+[[keybindings.command]]
+key = 'prefix+ctrl+d'
+type = 'popup'
+command = 'git diff | diffnav --watch'
+description = 'DiffNav'
+width = '85%'
+height = '85%'
+
+[[keybindings.command]]
+key = 'prefix+ctrl+g'
+type = 'popup'
+command = 'lazygit'
+description = 'LazyGit'
+width = '85%'
+height = '85%'
+
+[[keybindings.command]]
+key = 'prefix+ctrl+y'
+type = 'popup'
+command = 'yazi'
+description = 'Yazi'
+width = '85%'
+height = '85%'
+
+[[keybindings.command]]
+key = 'prefix+ctrl+o'
+type = 'popup'
+command = 'btm'
+description = 'bottom'
+width = '85%'
+height = '85%'
+
+[[keybindings.command]]
+key = 'prefix+ctrl+h'
+type = 'popup'
+command = 'htop'
+description = 'htop'
+width = '85%'
+height = '85%'
+
+[[keybindings.command]]
+key = 'prefix+ctrl+r'
+type = 'popup'
+command = 'bbrew'
+description = 'Bold Brew'
+
+[[keybindings.command]]
+key = 'prefix+ctrl+t'
+type = 'popup'
+command = 'taproom'
+description = 'Taproom'
+
+[[keybindings.command]]
+key = 'prefix+ctrl+enter'
+type = 'popup'
+command = 'zsh'
+description = 'terminal'
+width = '85%'
+height = '85%'
+
+[[keybindings.command]]
+key = 'prefix+ctrl+v'
+type = 'pane'
+command = 'nvim'
+description = 'Neovim'
+
+[[keybindings.command]]
+key = 'prefix+ctrl+n'
+type = 'pane'
+command = 'fnox exec -- opencode'
+description = 'OpenCode'
+
+[[keybindings.command]]
+key = 'prefix+ctrl+m'
+type = 'pane'
+command = 'fnox exec -- omp'
+description = 'OMP'
+
+[[keybindings.command]]
+key = 'prefix+ctrl+p'
+type = 'pane'
+command = 'fnox exec -- pi'
+description = 'Pi'
+
+[[keybindings.command]]
+key = 'prefix+ctrl+k'
+type = 'pane'
+command = 'KUBECONFIG=${TUIOS_ACTIVE_PANE_CWD}/.config/kubeconfig.yaml k9s'
+description = 'k9s'
+
 [keybindings.script]
 script_pause = ['ctrl+p']
 
