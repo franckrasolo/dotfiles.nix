@@ -69,14 +69,15 @@ max_fps = 0
 dock_workspace_tab_format = ''
 glyphs = 'unicode'
 gap = 0
+tiling_scheme = 'smart_split'
 master_ratio = 50
 scroll_column_width = 55
 scroll_column_max = 90
 zoom_size = 99
 panel_padding = 2
 clock_format = '15:04:05'
-dim_unfocused = 0
-dim_multifocus = false
+dim_unfocused = 20
+dim_multifocus = true
 background = 'off'
 pane_background = ''
 desktop_background = ''
@@ -209,6 +210,7 @@ select_window_7 = ['7']
 select_window_8 = ['8']
 select_window_9 = ['9']
 start_screensaver = ['S']
+toggle_pip = ['p']
 toggle_zoom = ['z']
 
 [keybindings.workspaces]
@@ -285,6 +287,7 @@ restore_minimized_9 = ['shift+9', '(']
 hints = ['F']
 launcher = ['a']
 next_session = [')']
+paste_image = ['V']
 prefix_close_session = ['X']
 prefix_close_window = ['x']
 prefix_command_palette = ['P']
@@ -543,6 +546,8 @@ agent_detect_seconds = 0
 agent_binaries = []
 respond_from_shell = false
 resume_agents = 'ask'
+persist_scrollback_lines = 0
+persist_scrollback_kb = 0
 
 [startup]
 open_default_window = true
@@ -591,6 +596,11 @@ all_panes = false
 [scratch]
 width = '80%'
 height = '80%'
+
+[pip]
+width = 40
+height = 12
+corner = 'bottom-right'
 
 # ============================================================================
 # DOCK COMPONENTS
