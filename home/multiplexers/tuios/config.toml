@@ -146,7 +146,7 @@ dock_workspace_tab_format = ''
 dock_pill_caps = true
 glyphs = 'unicode'
 gap = 0
-tiling_scheme = 'spiral'
+tiling_scheme = 'alternate'
 master_ratio = 50
 scroll_column_width = 55
 scroll_column_max = 90
@@ -603,7 +603,7 @@ cursor = false
 
 [screensaver]
 enabled = true
-idle_minutes = 1
+idle_minutes = 5
 effect = 'rings'
 
 [spotlight]
