@@ -166,14 +166,15 @@ track = ''
 tint = 'quiet'
 
 [appearance.selection]
-bg = '#45475A'
-fg = ''
-search_bg = '#8A6D2F'
-search_fg = '#F5E7C8'
-match_bg = '#E5A93D'
-match_fg = '#1C1B19'
-cursor_bg = '#39C5CF'
-cursor_fg = '#08222B'
+bg = '#F9E2AF'
+fg = '#45475A'
+bold = true
+search_bg = '#F9E2AF'
+search_fg = '#45475A'
+match_bg = '#FF83D8'
+match_fg = '#1E1E2E'
+cursor_bg = '#FF83D8'
+cursor_fg = '#1E1E2E'
 flash = true
 flash_ms = 420
 flash_style = 'diagonal'
