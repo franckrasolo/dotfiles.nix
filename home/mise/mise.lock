@@ -3,35 +3,35 @@
 lockfile_version = 3
 
 [[tools."aqua:Gaurav-Gosain/tuios"]]
-version = "0.8.3"
+version = "0.8.4"
 backend = "aqua:Gaurav-Gosain/tuios"
 specifiers = ["latest"]
 
 [tools."aqua:Gaurav-Gosain/tuios"."platforms.macos-arm64"]
-checksum = "sha256:2006ef2ce8327efcac8a8cc8587f21e0bf10e0f354cb3c82d2d722aea893bc78"
-url = "https://github.com/Gaurav-Gosain/tuios/releases/download/v0.8.3/tuios_0.8.3_Darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/Gaurav-Gosain/tuios/releases/assets/602486263"
+checksum = "sha256:5192207c6267e9f1c32105ccfe93523cafd98aa97d0bc633651e2c21a4455f94"
+url = "https://github.com/Gaurav-Gosain/tuios/releases/download/v0.8.4/tuios_0.8.4_Darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/Gaurav-Gosain/tuios/releases/assets/603195127"
 
 [[tools."aqua:gastownhall/beads"]]
-version = "1.3.0"
+version = "1.3.1"
 backend = "aqua:gastownhall/beads"
 specifiers = ["latest"]
 
 [tools."aqua:gastownhall/beads"."platforms.macos-arm64"]
-checksum = "sha256:7cc77367d0b84c50243a1108bc1f73648699211257d414b917540bf868e6bb85"
-url = "https://github.com/gastownhall/beads/releases/download/v1.3.0/beads_1.3.0_darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/566378329"
+checksum = "sha256:508ba807996e2b9c992c538a6f405f2fc7d2e16cf8b4e5b0d1bf9fe860367007"
+url = "https://github.com/gastownhall/beads/releases/download/v1.3.1/beads_1.3.1_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/602046065"
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.22.0"
+version = "1.22.1"
 backend = "aqua:smol-machines/smolvm"
 specifiers = ["latest"]
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:8e6f9d7adf9ee87afe59f8c30d81da5be0c2546f53de7275e7eea2eb39d8f186"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.22.0/smolvm-1.22.0-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/600440764"
+checksum = "sha256:fc2df3f1a2026c2fc88e748d9a557fca75ea6f9d95021e6a86a850851a803f9a"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.22.1/smolvm-1.22.1-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/602656758"
 
 [[tools.aube]]
 version = "2.6.1"
@@ -65,14 +65,14 @@ signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.ym
 repository_ids = { repository = "1078762196", owner = "216188" }
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.4.5"
+version = "18.4.8"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:64f5d0a99a2c5b5d9b453a7666257306244ac4c6fd8fdbe0e760bf3449fc8ea6"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.4.5/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/601615741"
+checksum = "sha256:3bde40ca27371ecb86b92f12bf959128f325ef3e4344a361c0adb3d586c02b1a"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.4.8/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/602572344"
 
 [[tools."github:kucherenko/jscpd"]]
 version = "5.4.0"
@@ -128,14 +128,14 @@ provenance = "github-attestations"
 provenance_verified = true
 
 [[tools."github:zjrosen/perles"]]
-version = "0.8.96"
+version = "0.8.97"
 backend = "github:zjrosen/perles"
 specifiers = ["latest"]
 
 [tools."github:zjrosen/perles"."platforms.macos-arm64"]
-checksum = "sha256:99ee8165e03c3dfd8f18809843ebe05a37c3634da582e0ddaf8bc5dbd3b590c3"
-url = "https://github.com/zjrosen/perles/releases/download/v0.8.96/perles_0.8.96_darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/585127080"
+checksum = "sha256:21da13d640aa1daf356ebd28f8766654dc40a482339e68d80a7bc32df86eb897"
+url = "https://github.com/zjrosen/perles/releases/download/v0.8.97/perles_0.8.97_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/602045928"
 
 [[tools.herdr]]
 version = "0.9.3"
@@ -153,14 +153,14 @@ backend = "nix:pkl-lsp"
 specifiers = ["latest"]
 
 [[tools.opencode]]
-version = "1.18.33"
+version = "1.18.34"
 backend = "aqua:anomalyco/opencode"
 specifiers = ["latest"]
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:24b12873e605b3db3387cb355f43ba7451cd6065c180d8c188663337d2eeb553"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.18.33/opencode-darwin-arm64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/594449070"
+checksum = "sha256:8522b70f545184b3a8d97c5ca4f814093b2476d72aebfda8c48bcd072ec31d1b"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.34/opencode-darwin-arm64.zip"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/601909071"
 
 [[tools.pi]]
 version = "0.99.2"
