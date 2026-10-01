@@ -34,6 +34,81 @@
 #               colour a program or the chrome chose always wins
 # ============================================================================
 
+# ============================================================================
+# KEYBINDINGS
+# ============================================================================
+# Set an action to [] to unbind it and hand the key back to the shell.
+# An empty list and a missing line are not the same thing. A line this file
+# does not have gets its default back the next time tuios starts; an action
+# set to [] stays empty.
+#
+# You do not have to edit this by hand. In tuios, open the keybind manager
+# (leader then k, or the command palette) and press ctrl+d on a binding to
+# remove it, or ctrl+x to take its key off every action. From a shell:
+#
+#   tuios keybinds unbind close_window w   # one key off one action
+#   tuios keybinds free alt+left           # off every action
+#
+# `tuios keybinds doctor` says which binding in each scope is live, what
+# clashes with what, and which keys never reach the program in the pane.
+#
+# [keybindings.global] acts in window mode and terminal mode alike. It binds
+# ctrl+p to the command palette and alt+space to the launcher, which costs
+# you fish's history-back and readline's set-mark. To move or drop either:
+#
+#   [keybindings.global]
+#   command_palette = ["ctrl+shift+p"]
+#   launcher = []
+#
+# [keybindings.terminal_mode] binds alt+arrows to move focus between panes.
+# In readline, fish and zsh, alt+left and alt+right move the cursor a word
+# at a time. If you want those back:
+#
+#   [keybindings.terminal_mode]
+#   terminal_focus_left = []
+#   terminal_focus_right = []
+#
+# alt+up and alt+down are unclaimed by the common shells, so they are the
+# safer pair to keep.
+#
+# hold_window_mode binds a key that puts tuios in window-management mode for
+# as long as it is physically held, and hands the previous mode back when it
+# is let go:
+#
+#   [keybindings.mode_control]
+#   hold_window_mode = ["leftalt"]
+#
+# It needs a terminal that speaks the Kitty keyboard protocol (Ghostty, kitty,
+# WezTerm, foot, Alacritty; not Terminal.app), because nothing else reports
+# that a key was released. Naming a modifier key (leftalt, rightalt, leftctrl,
+# leftsuper) asks the terminal for one more thing on top: every keystroke in
+# the session then arrives as an escape code. Any ordinary key (f13 to f63,
+# scrolllock, a spare letter) avoids that. Unbound by default.
+# ============================================================================
+
+# ============================================================================
+# DOCK COMPONENTS
+# ============================================================================
+# The dock is three ordered lists of component names. Leave [dock] out
+# entirely and the bar draws what it always drew; write the lists to
+# reorder it, and omit a name to drop that segment.
+#
+#   [dock]
+#   left   = ["mode", "workspaces", "trail", "tape"]
+#   center = ["windows"]
+#   right  = ["notifications", "copy-help", "cpu", "ram", "clock", "session-controls"]
+#
+# A cell of your own is a command whose first line of stdout is the text:
+#
+#   [dock.custom.branch]
+#   command = "git branch --show-current"
+#   refresh = "event:after-focus-change"   # or once, push, or "30s"
+#
+# and then "custom/branch" in one of the lists above. A component that
+# fails is hidden rather than left showing a stale value;
+# `tuios list-dock-components` says which and why.
+# ============================================================================
+
 [appearance]
 border_style = 'rounded'
 zen_mode = 'disabled'
@@ -131,58 +206,6 @@ done = ''
 needs_input = ''
 
 [notifications.mail]
-
-# ============================================================================
-# KEYBINDINGS
-# ============================================================================
-# Set an action to [] to unbind it and hand the key back to the shell.
-# An empty list and a missing line are not the same thing. A line this file
-# does not have gets its default back the next time tuios starts; an action
-# set to [] stays empty.
-#
-# You do not have to edit this by hand. In tuios, open the keybind manager
-# (leader then k, or the command palette) and press ctrl+d on a binding to
-# remove it, or ctrl+x to take its key off every action. From a shell:
-#
-#   tuios keybinds unbind close_window w   # one key off one action
-#   tuios keybinds free alt+left           # off every action
-#
-# `tuios keybinds doctor` says which binding in each scope is live, what
-# clashes with what, and which keys never reach the program in the pane.
-#
-# [keybindings.global] acts in window mode and terminal mode alike. It binds
-# ctrl+p to the command palette and alt+space to the launcher, which costs
-# you fish's history-back and readline's set-mark. To move or drop either:
-#
-#   [keybindings.global]
-#   command_palette = ["ctrl+shift+p"]
-#   launcher = []
-#
-# [keybindings.terminal_mode] binds alt+arrows to move focus between panes.
-# In readline, fish and zsh, alt+left and alt+right move the cursor a word
-# at a time. If you want those back:
-#
-#   [keybindings.terminal_mode]
-#   terminal_focus_left = []
-#   terminal_focus_right = []
-#
-# alt+up and alt+down are unclaimed by the common shells, so they are the
-# safer pair to keep.
-#
-# hold_window_mode binds a key that puts tuios in window-management mode for
-# as long as it is physically held, and hands the previous mode back when it
-# is let go:
-#
-#   [keybindings.mode_control]
-#   hold_window_mode = ["leftalt"]
-#
-# It needs a terminal that speaks the Kitty keyboard protocol (Ghostty, kitty,
-# WezTerm, foot, Alacritty; not Terminal.app), because nothing else reports
-# that a key was released. Naming a modifier key (leftalt, rightalt, leftctrl,
-# leftsuper) asks the terminal for one more thing on top: every keystroke in
-# the session then arrives as an escape code. Any ordinary key (f13 to f63,
-# scrolllock, a spare letter) avoids that. Unbound by default.
-# ============================================================================
 
 [keybindings]
 leader_key = 'ctrl+b'
@@ -601,29 +624,6 @@ height = '80%'
 width = 40
 height = 12
 corner = 'bottom-right'
-
-# ============================================================================
-# DOCK COMPONENTS
-# ============================================================================
-# The dock is three ordered lists of component names. Leave [dock] out
-# entirely and the bar draws what it always drew; write the lists to
-# reorder it, and omit a name to drop that segment.
-#
-#   [dock]
-#   left   = ["mode", "workspaces", "trail", "tape"]
-#   center = ["windows"]
-#   right  = ["notifications", "copy-help", "cpu", "ram", "clock", "session-controls"]
-#
-# A cell of your own is a command whose first line of stdout is the text:
-#
-#   [dock.custom.branch]
-#   command = "git branch --show-current"
-#   refresh = "event:after-focus-change"   # or once, push, or "30s"
-#
-# and then "custom/branch" in one of the lists above. A component that
-# fails is hidden rather than left showing a stale value;
-# `tuios list-dock-components` says which and why.
-# ============================================================================
 
 [dock]
 [dock.clock]
