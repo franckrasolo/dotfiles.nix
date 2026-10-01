@@ -18,6 +18,7 @@ with pkgs.unstable; {
 
       gitlab-ci-ls
       just-lsp
+      nil
       rust-analyzer
       statix
       terraform
