@@ -119,6 +119,7 @@ window_button_position = 'left'
 hide_scrollbar = false
 scrollback_lines = 10000
 scroll_lines = 3
+right_click_opens_menu = true
 kitty_placeholders = 'auto'
 auto_enter_terminal_on_focus = 'off'
 click_to_type = 'double'
@@ -129,7 +130,7 @@ modal_dim = 30
 whichkey_position = ''
 window_title_position = 'top'
 hide_clock = false
-show_clock = false
+show_clock = true
 show_cpu = false
 show_ram = false
 theme = 'ultra_dark'
@@ -140,17 +141,18 @@ zoom_max_width = 0
 niri_reverse_scroll = false
 niri_scroll_cells = 8
 prefix_repeat_time = 500
-max_fps = 0
+max_fps = 120
 dock_workspace_tab_format = ''
+dock_pill_caps = true
 glyphs = 'unicode'
 gap = 0
-tiling_scheme = 'smart_split'
+tiling_scheme = 'spiral'
 master_ratio = 50
 scroll_column_width = 55
 scroll_column_max = 90
 zoom_size = 99
 panel_padding = 2
-clock_format = '15:04:05'
+clock_format = '15:04'
 dim_unfocused = 20
 dim_multifocus = true
 background = 'off'
@@ -178,9 +180,10 @@ cursor_fg = '#FFFFFF'
 flash = true
 flash_ms = 420
 flash_style = 'diagonal'
+multi_format = 'plain'
 
 [appearance.sidebar]
-enabled = true
+enabled = false
 position = 'right'
 width = 24
 workspaces = ''
@@ -576,7 +579,7 @@ persist_scrollback_kb = 0
 open_default_window = true
 tiled = true
 start_in_terminal_mode = true
-layout = 'bsp'
+layout = 'master-stack'
 daemon = true
 
 [tape]
@@ -595,11 +598,13 @@ controls = 'auto'
 title_format = '{title}'
 font_family = 'Cascadia Code NF'
 font_file = ''
+scale = 2
 cursor = false
 
 [screensaver]
-idle_minutes = 10
-effect = 'random'
+enabled = true
+idle_minutes = 1
+effect = 'rings'
 
 [spotlight]
 enabled = false
@@ -626,4 +631,8 @@ height = 12
 corner = 'bottom-right'
 
 [dock]
+left = ['mode', 'workspaces', 'trail', 'tape']
+center = ['windows']
+right = ['notifications', 'copy-help', 'cpu', 'ram', 'clock', 'session-controls']
+
 [dock.clock]
