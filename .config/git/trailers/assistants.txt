@@ -9,6 +9,7 @@ GPT 6 Astra <noreply@openai.com>
 GPT 6 Luna <noreply@openai.com>
 GPT 6.1 Sol <noreply@openai.com>
 Gemini 3.8 Flash <noreply@google.com>
+Gemini 4 Argon <noreply@google.com>
 Grok 4.7 <noreply@x.ai>
 Hy3 <noreply@tencent.com>
 Hy4 Preview <noreply@tencent.com>
