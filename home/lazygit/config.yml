@@ -339,6 +339,13 @@ customCommands:
       {{if .Form.Body}}--message {{.Form.Body | quote}}{{end}}
     output: "log"
 
+  - key: "<ctrl+alt+p>"
+    context: "global"
+    description: "Push [skip CI]"
+    loadingText: "Pushing without CI"
+    command: "git push --push-option=ci.skip"
+    output: "log"
+
 # Periodic update checks
 update:
   # One of: 'prompt' (default) | 'background' | 'never'

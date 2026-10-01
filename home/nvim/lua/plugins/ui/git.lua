@@ -113,6 +113,7 @@ return {
         { "<leader>gF", desc = "Fetch", neogit.action("fetch", "fetch_pushremote") },
         { "<leader>gp", desc = "Pull", neogit.action("pull", "from_pushremote") },
         { "<leader>gP", desc = "Push", neogit.action("push", "to_pushremote") },
+        { "<leader>gQ", desc = "Skip CI", neogit.action("push", "to_pushremote", { "--push-option=ci.skip" }) },
         { "<leader>gs", desc = "Status", "<cmd>Neogit cwd=%:p:h<cr>" },
       }
     end,
