@@ -74,7 +74,6 @@
         args = { appdir = "/Applications"; };
       }
       "jetbrains-toolbox"
-      "keycastr"
       {
         name = "lm-studio";
         args = { appdir = "/Applications"; };
