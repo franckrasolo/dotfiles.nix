@@ -3,14 +3,14 @@
 lockfile_version = 3
 
 [[tools."aqua:Gaurav-Gosain/tuios"]]
-version = "0.8.4"
+version = "0.8.5"
 backend = "aqua:Gaurav-Gosain/tuios"
 specifiers = ["latest"]
 
 [tools."aqua:Gaurav-Gosain/tuios"."platforms.macos-arm64"]
-checksum = "sha256:5192207c6267e9f1c32105ccfe93523cafd98aa97d0bc633651e2c21a4455f94"
-url = "https://github.com/Gaurav-Gosain/tuios/releases/download/v0.8.4/tuios_0.8.4_Darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/Gaurav-Gosain/tuios/releases/assets/603195127"
+checksum = "sha256:0a2a5b66829282d133b4d222c93045f7d392ee942687c7dd34f6cbd3bc7d4d61"
+url = "https://github.com/Gaurav-Gosain/tuios/releases/download/v0.8.5/tuios_0.8.5_Darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/Gaurav-Gosain/tuios/releases/assets/604937558"
 
 [[tools."aqua:gastownhall/beads"]]
 version = "1.3.1"
@@ -24,14 +24,14 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/602046
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.22.1"
+version = "1.22.2"
 backend = "aqua:smol-machines/smolvm"
 specifiers = ["latest"]
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:fc2df3f1a2026c2fc88e748d9a557fca75ea6f9d95021e6a86a850851a803f9a"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.22.1/smolvm-1.22.1-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/602656758"
+checksum = "sha256:a355139fc8e0d67bdf5d8d915062b98401f4c6a02871cf74306a304fb92183ca"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.22.2/smolvm-1.22.2-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/604911111"
 
 [[tools.aube]]
 version = "2.6.1"
@@ -65,14 +65,14 @@ signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.ym
 repository_ids = { repository = "1078762196", owner = "216188" }
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.4.9"
+version = "18.4.12"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:88c8ff6734bd62b9fe65004f265218eed8e5b8695e64da1172587f5aeb468681"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.4.9/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/603471268"
+checksum = "sha256:1a81bd323ba6d67374adf5645fe52e194671416e15c69ef17ac18e32b42c55ff"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.4.12/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/605964568"
 
 [[tools."github:kucherenko/jscpd"]]
 version = "5.4.0"
@@ -163,14 +163,14 @@ url = "https://github.com/anomalyco/opencode/releases/download/v1.18.34/opencode
 url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/601909071"
 
 [[tools.pi]]
-version = "0.99.2"
+version = "1.0.0"
 backend = "aqua:earendil-works/pi"
 specifiers = ["latest"]
 
 [tools.pi."platforms.macos-arm64"]
-checksum = "sha256:564707a7378dae4cce29d92693b45b49d3a3a25187dddcc6d8c2e4aca4fb3719"
-url = "https://github.com/earendil-works/pi/releases/download/v0.99.2/pi-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/601628127"
+checksum = "sha256:97291e7d2eb2d7d95ab1f67d26de7902302201bc8786c132bbbc9e53fa8526cc"
+url = "https://github.com/earendil-works/pi/releases/download/v1.0.0/pi-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/603916769"
 
 [[tools.television]]
 version = "0.15.9"
