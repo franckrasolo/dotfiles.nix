@@ -153,8 +153,10 @@ scroll_column_max = 90
 zoom_size = 99
 panel_padding = 2
 clock_format = '15:04'
-dim_unfocused = 20
+dim_unfocused = 30
 dim_multifocus = true
+master_position = ''
+master_count = 0
 background = 'off'
 pane_background = ''
 desktop_background = ''
@@ -171,15 +173,15 @@ tint = 'quiet'
 bg = '#F9E2AF'
 fg = '#45475A'
 bold = true
-search_bg = '#F9E2AF'
-search_fg = '#45475A'
-match_bg = '#FF58C9'
+search_bg = '#FFADE5'
+search_fg = '#D40090'
+match_bg = '#D40090'
 match_fg = '#FFFFFF'
 cursor_bg = '#FF58C9'
 cursor_fg = '#FFFFFF'
-flash = true
+flash = false
 flash_ms = 420
-flash_style = 'diagonal'
+flash_style = 'vertical'
 multi_format = 'plain'
 
 [appearance.sidebar]
@@ -430,9 +432,13 @@ tape_prefix_review = ['t']
 tape_prefix_stop = ['s']
 
 [keybindings.layout_prefix]
+add_master = ['i']
+cycle_master_position = ['o']
+focus_master = ['m']
 layout_prefix_cancel = ['esc']
 layout_prefix_load = ['l']
 layout_prefix_save = ['s']
+remove_master = ['d']
 resize_height_50 = ['shift+5']
 resize_height_60 = ['shift+6']
 resize_height_70 = ['shift+7']
@@ -447,6 +453,7 @@ snap_corner_1 = ['1']
 snap_corner_2 = ['2']
 snap_corner_3 = ['3']
 snap_corner_4 = ['4']
+swap_with_master = ['enter']
 
 [keybindings.terminal_mode]
 terminal_exit_mode = ['opt+esc']
@@ -672,12 +679,13 @@ respond_from_shell = false
 resume_agents = 'ask'
 persist_scrollback_lines = 0
 persist_scrollback_kb = 0
+window_size = 'smallest'
 
 [startup]
 open_default_window = true
 tiled = true
 start_in_terminal_mode = true
-layout = 'master-stack'
+layout = 'bsp'
 daemon = true
 
 [tape]
