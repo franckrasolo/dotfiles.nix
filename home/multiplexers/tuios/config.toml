@@ -216,7 +216,7 @@ needs_input = ''
 leader_key = 'ctrl+b'
 
 [keybindings.window_management]
-close_window = ['w', 'x']
+close_window = ['x']
 copy_selection = ['c']
 focus_sidebar = ['s']
 minimize_window = ['m']
