@@ -65,14 +65,14 @@ signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.ym
 repository_ids = { repository = "1078762196", owner = "216188" }
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.5.1"
+version = "18.6.1"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:2abd8161abf1354c592547e669e2a7a9f6e63be1156fa65865d2a7db0b11ff79"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.5.1/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/607783446"
+checksum = "sha256:b5ca5cd17b8cc09ece36845988fd401f7d1002e1ab5b95600e0f328924246d52"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.6.1/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/610156073"
 
 [[tools."github:kucherenko/jscpd"]]
 version = "5.4.0"
@@ -163,14 +163,14 @@ url = "https://github.com/anomalyco/opencode/releases/download/v1.18.34/opencode
 url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/601909071"
 
 [[tools.pi]]
-version = "1.0.1"
+version = "1.0.2"
 backend = "aqua:earendil-works/pi"
 specifiers = ["latest"]
 
 [tools.pi."platforms.macos-arm64"]
-checksum = "sha256:de35e0025b136eb37693054ca658c010b6327a12aaff438ae87c4d1c94f99e6c"
-url = "https://github.com/earendil-works/pi/releases/download/v1.0.1/pi-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/607772279"
+checksum = "sha256:c2f035ea4adba87916f005c99515e3c91674b11d16ba75d95d0881e4781aa3bb"
+url = "https://github.com/earendil-works/pi/releases/download/v1.0.2/pi-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/608828195"
 
 [[tools.television]]
 version = "0.15.9"
