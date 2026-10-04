@@ -1,6 +1,6 @@
 #compdef smolvm
 
-# zsh completion for the Smol Machines smolvm CLI (v1.22.0).
+# zsh completion for the Smol Machines smolvm CLI (v1.23.0).
 # Generated from recursive `smolvm <subcommand> --help` output; re-diff the
 # command/flag inventory against it after a CLI upgrade.
 #
@@ -104,8 +104,8 @@ _smolvm_cp_path() {
 }
 
 _smolvm_smolmachine() { _files -g '*.smolmachine(-.)' }
-_smolvm_smolcheckpoint() { _files -g '*.smolcheckpoint(-.)' }
-_smolvm_pack_or_checkpoint() { _files -g '*.smolmachine(-.)' -g '*.smolcheckpoint(-.)' }
+_smolvm_smolcheckpoint() { _files -g '*.smolcheckpoint(-.)' -g '*.checkpoint(-.)' }
+_smolvm_pack_or_checkpoint() { _files -g '*.smolmachine(-.)' -g '*.smolcheckpoint(-.)' -g '*.checkpoint(-.)' }
 _smolvm_smolfile()    { _files -g 'Smolfile*(-.)' -g '*.toml(-.)' }
 
 # --secret-env GUEST_VAR=HOST_VAR: complete exported host variables after "=".
@@ -346,6 +346,7 @@ _smolvm_machine_run() {
     $_smolvm_help_opt \
     '(--from -I --image)'{-I,--image}'[Container image: registry reference, docker save archive (./img.tar, - for stdin) or rootfs dir; optional with a Smolfile or for bare VM mode]:image:_files' \
     '--max-image-size[Raise the max accepted local image-archive size (default 8GiB)]:size:(8GiB 16GiB 512M)' \
+    '--seed-digest-ttl[Reuse an image digest resolved at most this many seconds ago when seeding, skipping the per-run registry check inside the window (default: resolve on every run)]:seconds:(300 3600 86400)' \
     '--init[Run command before the workload (repeatable; CLI form wins over Smolfile)]:command:_command_names -e' \
     '(-n --name)'{-n,--name}'[Name a persistent machine when used with --detach]:name:' \
     '(-d --detach)'{-d,--detach}'[Start the command in the background and detach, leaving the VM running]' \
@@ -497,6 +498,7 @@ _smolvm_machine_create() {
     '--at[With --from checkpoint: restore an earlier retained generation — ~N, a generation id, or an id prefix]:generation:' \
     '--restore-cache-entries[Recently restored checkpoints to keep ready (0 turns the cache off, default 3)]:N:' \
     '--restore-cache-gib[Space the kept restored checkpoints may hold together in GiB (default 16)]:GiB:' \
+    '--keep-identity[With --from a checkpoint: keep the hostname and machine ID it was saved with instead of giving the new machine its own identity (for rewinding; do not run two machines from one checkpoint with it)]' \
     '*:: :->command' && return 0
 
   if [[ $state == command ]]; then
@@ -521,6 +523,7 @@ _smolvm_machine_start() {
     '--branch-pool-size[Plan a CUDA branch pool with this many runnable children (implies --branchable)]:children:' \
     '--fork-pool-size[Alias for --branch-pool-size]:children:' \
     '--cuda-vram-limit-mib[Override the automatic logical VRAM budget per source/child CUDA session (requires --branch-pool-size)]:MiB:' \
+    '--seed-digest-ttl[Reuse an image digest resolved at most this many seconds ago when seeding the first start, skipping the per-start registry check inside the window (default: resolve on every start)]:seconds:(300 3600 86400)' \
     '--egress-interceptor[Route outbound TCP through a host interceptor (requires SMOLVM_INTERCEPTOR_TOKEN, 64 hex digits); other outbound datagrams except DNS are denied]:ADDR:' \
     '--proxy[Proxy URL used for the in-VM image pull]:URL:' \
     '--no-proxy[Comma-separated NO_PROXY list that bypasses the proxy during image pull]:list:'
@@ -671,6 +674,7 @@ _smolvm_machine_update() {
     '*--allow-host[Allow egress to a hostname and its subdomains (repeatable; virtio-net only)]:hostname:' \
     '*--allow-host-pattern[Allow egress to an exact hostname or *.domain subdomains (repeatable)]:pattern:' \
     '*--allow-cidr[Allow egress to a CIDR range (repeatable)]:CIDR:' \
+    '--outbound-localhost-only[Restrict outbound to localhost\: adds 127.0.0.0/8 and \:\:1/128 to the allowed CIDRs; undo entry by entry with --remove-allow-cidr]' \
     '*--remove-allow-host[Remove an allowed hostname or pattern, written as it was added]:hostname|pattern:' \
     '*--remove-allow-cidr[Remove an allowed CIDR range]:CIDR:' \
     '*'{-e,--env}'[Add/replace environment variable (repeatable)]:KEY=VALUE:' \
@@ -749,8 +753,12 @@ _smolvm_serve_start() {
     '(-v --verbose)'{-v,--verbose}'[Enable debug logging (or set RUST_LOG=debug)]' \
     '*--cors-origin[CORS allowed origin (repeatable); defaults to localhost\:8080 and localhost\:3000]:origin:' \
     '--json-logs[Output logs as structured JSON (for log aggregators)]' \
-    '--seccomp[Seccomp syscall-allowlist mode for VM boot subprocesses (x86_64-Linux only)]:mode:(enforce audit off)' \
-    '--landlock[Landlock filesystem-confinement mode for VM boot subprocesses (Linux only)]:mode:(enforce off)'
+    '--seccomp[Seccomp syscall-allowlist mode for VM boot subprocesses (Linux x86_64/arm64 only)]:mode:(enforce audit off)' \
+    '--landlock[Landlock filesystem-confinement mode for VM boot subprocesses (Linux only)]:mode:(enforce off)' \
+    '--allow-nested-virt[Let machines run with nested virtualization (nestedVirt on create); off by default, enable only for trusted workloads]' \
+    '--egress-watchlist[Flag guest traffic to destinations listed in this file, one label plus dns-sha256/ip-sha256 hash per line; matches are reported as egressSignals, never blocked]:file:_files' \
+    '--mtls-client-cn[Require the mTLS client certificate subject CN to equal this value for API access]:CN:' \
+    '--mtls-allow-peer-blobs[With --mtls-client-cn, also accept other client certificates signed by the client CA, but only for the peer blob routes (/p2p/)]'
 }
 
 _smolvm_serve_openapi() {
