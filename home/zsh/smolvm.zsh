@@ -1,6 +1,6 @@
 #compdef smolvm
 
-# zsh completion for the Smol Machines smolvm CLI (v1.23.0).
+# zsh completion for the Smol Machines smolvm CLI (v1.23.4).
 # Generated from recursive `smolvm <subcommand> --help` output; re-diff the
 # command/flag inventory against it after a CLI upgrade.
 #
@@ -758,7 +758,8 @@ _smolvm_serve_start() {
     '--allow-nested-virt[Let machines run with nested virtualization (nestedVirt on create); off by default, enable only for trusted workloads]' \
     '--egress-watchlist[Flag guest traffic to destinations listed in this file, one label plus dns-sha256/ip-sha256 hash per line; matches are reported as egressSignals, never blocked]:file:_files' \
     '--mtls-client-cn[Require the mTLS client certificate subject CN to equal this value for API access]:CN:' \
-    '--mtls-allow-peer-blobs[With --mtls-client-cn, also accept other client certificates signed by the client CA, but only for the peer blob routes (/p2p/)]'
+    '--mtls-allow-peer-blobs[With --mtls-client-cn, also accept other client certificates signed by the client CA, but only for the peer blob routes (/p2p/)]' \
+    '--shutdown-grace[Seconds a stopping server gives in-flight requests to finish (env SMOLVM_SERVE_SHUTDOWN_GRACE_SECS, default 5, max 3600)]:seconds:(5 30 60 300)'
 }
 
 _smolvm_serve_openapi() {
