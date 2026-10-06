@@ -24,14 +24,14 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/602046
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.23.4"
+version = "1.23.7"
 backend = "aqua:smol-machines/smolvm"
 specifiers = ["latest"]
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:cadd607214c5f6ee9c18d216ffc94163176c05fabe08a3b2574f8689a6f3c888"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.23.4/smolvm-1.23.4-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/612401993"
+checksum = "sha256:38d3f5a834fa0a141f9c9426f2d261adcfdceffbd6012ccb763206054b27e6b2"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.23.7/smolvm-1.23.7-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/616153584"
 
 [[tools.aube]]
 version = "2.6.1"
@@ -54,25 +54,25 @@ checksum = "sha256:90987a3a16d7db556d886ac3d551e7b6d3edf0a1cf43acaed622e8676be1d
 url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-darwin-aarch64.zip"
 
 [[tools.fnox]]
-version = "1.38.1"
+version = "1.39.0"
 backend = "packslip:github.com/jdx/fnox"
 specifiers = ["latest"]
 
 [tools.fnox."platforms.macos-arm64"]
-checksum = "sha256:8fd106fc84628b067fa175fc3bec6272db97e5bbb1e22f59dd2476bfce4e014a"
-url = "https://github.com/jdx/fnox/releases/download/v1.38.1/fnox-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:5604196e7a0aafb949251be1ae088bf0bb524edbfb45748d1be0cbc46e98b8f5"
+url = "https://github.com/jdx/fnox/releases/download/v1.39.0/fnox-aarch64-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
 repository_ids = { repository = "1078762196" }
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.6.1"
+version = "18.7.0"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:b5ca5cd17b8cc09ece36845988fd401f7d1002e1ab5b95600e0f328924246d52"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.6.1/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/610156073"
+checksum = "sha256:1715813a16ad2925a915ef4f8a55a5b82b61759ebcb3768295e8ab26d549d834"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.7.0/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/616528764"
 
 [[tools."github:kucherenko/jscpd"]]
 version = "5.4.0"
@@ -153,24 +153,24 @@ backend = "nix:pkl-lsp"
 specifiers = ["latest"]
 
 [[tools.opencode]]
-version = "1.18.34"
+version = "1.18.35"
 backend = "aqua:anomalyco/opencode"
 specifiers = ["latest"]
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:8522b70f545184b3a8d97c5ca4f814093b2476d72aebfda8c48bcd072ec31d1b"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.18.34/opencode-darwin-arm64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/601909071"
+checksum = "sha256:80b05124357a77cd57945bfde36082a028e829c198d222d5e146617f49a2c4b7"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.35/opencode-darwin-arm64.zip"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/616527957"
 
 [[tools.pi]]
-version = "1.0.3"
+version = "1.0.4"
 backend = "aqua:earendil-works/pi"
 specifiers = ["latest"]
 
 [tools.pi."platforms.macos-arm64"]
-checksum = "sha256:7b1aa89ba13542f1aca61ebd63486d0417b5d2fefd5c41ededd8d083ab719b23"
-url = "https://github.com/earendil-works/pi/releases/download/v1.0.3/pi-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/611958594"
+checksum = "sha256:717dcd38a03849e919f9dec9daa96f5ca102e15ea33d804e5db57b1d47e513bc"
+url = "https://github.com/earendil-works/pi/releases/download/v1.0.4/pi-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/613707162"
 
 [[tools.television]]
 version = "0.15.9"
@@ -183,15 +183,15 @@ url = "https://github.com/alexpasmantier/television/releases/download/0.15.9/tv-
 url_api = "https://api.github.com/repos/alexpasmantier/television/releases/assets/447568866"
 
 [[tools.usage]]
-version = "6.12.0"
+version = "6.12.1"
 backend = "packslip:github.com/jdx/usage"
 specifiers = ["latest"]
 
 [tools.usage."platforms.macos-arm64"]
-checksum = "sha256:1e43be745db2fd81259e2b0e68d689d7f55b93da815f452c2154710f6de6ec52"
-url = "https://github.com/jdx/usage/releases/download/v6.12.0/usage-universal-apple-darwin.tar.gz"
+checksum = "sha256:1f01fb6abe27e5e510778568ae8604720d42986bbeee9ac8cda52c659b84914f"
+url = "https://github.com/jdx/usage/releases/download/v6.12.1/usage-universal-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
-repository_ids = { repository = "677629099", owner = "216188" }
+repository_ids = { repository = "677629099" }
 
 [[tools.worktrunk]]
 version = "0.80.0"
