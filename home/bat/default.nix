@@ -7,6 +7,7 @@
     config = {
       map-syntax = [
         "*{j,J}ustfile*:Just"
+        "{Opkgfile,PklProject}:Pkl"
         "*mise*.lock:TOML"
         "*tmux*.conf:Tmux conf"
       ];
@@ -31,6 +32,15 @@
           hash = "sha256-y08lk8PbnFOvBWRCrMF6WKwOxD0BNPn6XfgXKFRUCeI=";
         };
         file = "KDL1.sublime-syntax";
+      };
+      Pkl = {
+        src = pkgs.fetchFromGitHub {
+          owner = "franckrasolo";
+          repo = "pkl.tmbundle";
+          rev = "47818f8cd0e65991e6cb392ee70cd6cf644adbd4";
+          hash = "sha256-RQcxyV3XLyFbqnYA5WpK8/YjdMCCxrce/v3kLs6/nUE=";
+        };
+        file = "syntaxes/Pkl.sublime-syntax";
       };
       Tmux = {
         src = pkgs.fetchFromGitHub {
