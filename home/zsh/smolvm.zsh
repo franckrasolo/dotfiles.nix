@@ -1,6 +1,6 @@
 #compdef smolvm
 
-# zsh completion for the Smol Machines smolvm CLI (v1.23.4).
+# zsh completion for the Smol Machines smolvm CLI (v1.24.0).
 # Generated from recursive `smolvm <subcommand> --help` output; re-diff the
 # command/flag inventory against it after a CLI upgrade.
 #
@@ -24,11 +24,13 @@ _smolvm_machine_cmds=(
   'create:Create a new named machine configuration'
   'start:Start a machine'
   'branch:Branch a running branchable machine into an independent child (CoW memory + disks)'
+  'fork:Alias for branch'
   'checkpoint:Save a running machine, including RAM, as a portable checkpoint'
   'checkpoint-warm:Prepare an incremental checkpoint for fast restores without starting a VM'
   'checkpoint-prune:Remove unused objects from a checkpoint store'
   'checkpoint-log:Show the history a checkpoint carries, or every checkpoint in a store'
   'branch-release:Assign parameters and release one held branch-pool slot'
+  'fork-release:Alias for branch-release'
   'stop:Stop a running machine'
   'pause:Save RAM and disk durably, then stop at the saved execution boundary'
   'resume:Resume saved execution in the same machine'
@@ -370,7 +372,7 @@ _smolvm_machine_run() {
     '*--allow-host[Allow egress to specific hostname, resolved at VM start (repeatable, implies --net)]:hostname:' \
     '*--allow-host-pattern[Allow egress to an exact hostname or *.domain subdomains (repeatable, implies --net)]:pattern:' \
     '--use-host-proxy[Pass the host proxy (env or macOS system proxy) into the workload (implies --net)]' \
-    '--trust-host-certs[Trust the host certificate store inside the workload]' \
+    '--trust-host-certs[Trust the certificates the host trusts for image pulls and the workload]' \
     '*--credential[Bind a credential the workload may use without ever seeing it: NAME=ENV_VAR@HOST\[,HOST...\] (repeatable, implies --net)]:NAME=ENV_VAR@HOST:' \
     '--outbound-localhost-only[Restrict outbound to localhost only (implies --net)]' \
     '--allow-host-loopback[Let the guest reach services on the host own loopback (implies --net)]' \
@@ -473,7 +475,7 @@ _smolvm_machine_create() {
     '*--allow-host[Allow egress to specific hostname, resolved at VM start (repeatable, implies --net)]:hostname:' \
     '*--allow-host-pattern[Allow egress to an exact hostname or *.domain subdomains (repeatable, implies --net)]:pattern:' \
     '--use-host-proxy[Pass the host proxy (env or macOS system proxy) into the workload (implies --net)]' \
-    '--trust-host-certs[Trust the host certificate store inside the workload]' \
+    '--trust-host-certs[Trust the certificates the host trusts for image pulls and the workload]' \
     '*--credential[Bind a credential the workload may use without ever seeing it: NAME=ENV_VAR@HOST\[,HOST...\] (repeatable, implies --net)]:NAME=ENV_VAR@HOST:' \
     '--outbound-localhost-only[Restrict outbound to localhost only (implies --net)]' \
     '--gpu[Enable GPU acceleration (Vulkan via virtio-gpu)]' \
@@ -482,7 +484,7 @@ _smolvm_machine_create() {
     '--nested[Expose host virtualization extensions so the guest can run KVM/nested hypervisors (slower than native)]' \
     '*--expose-socket[Expose a guest Unix socket to the host (repeatable)]:GUEST_PATH[\:HOST_PATH]:' \
     '*--mount-socket[Mount a host Unix socket into the guest, HOST_PATH\:GUEST_PATH (repeatable)]:host socket:_files' \
-    '*--init[Run command on every VM start (repeatable)]:command:_command_names -e' \
+    '*--init[Run command once, on the machine'\''s first start (repeatable)]:command:_command_names -e' \
     '*'{-e,--env}'[Set environment variable (repeatable)]:KEY=VALUE:' \
     '(-u --user)'{-u,--user}'[Run the workload as this user, like docker run --user (a name or uid:gid)]:user:' \
     '--ssh-agent[Forward host SSH agent into the VM (git/ssh without exposing keys)]' \
@@ -621,7 +623,7 @@ _smolvm_machine_delete() {
     $_smolvm_help_opt \
     '(-n --name)'{-n,--name}'[Machine to delete]:machine:_smolvm_machine_names' \
     '(-f --force)'{-f,--force}'[Skip confirmation prompt]' \
-    '--cascade[Also delete children branched from this machine (children before the base)]'
+    '--cascade[Also delete children branched from this machine (children first; implies no confirmation)]'
 }
 
 _smolvm_machine_status() {
@@ -651,7 +653,7 @@ _smolvm_machine_resize() {
   _arguments \
     $_smolvm_help_opt \
     '(-n --name)'{-n,--name}'[Machine to resize (default: "default")]:machine:_smolvm_machine_names' \
-    '--cpus[Target online vCPU count]:COUNT:' \
+    '--cpus[Target online vCPU count (shrink supported on compatible Linux x86_64 runtimes)]:COUNT:' \
     '--mem[Target usable RAM in MiB (grow only)]:MiB:' \
     '--storage[Storage disk size in GiB (expand only)]:GiB:' \
     '--overlay[Overlay disk size in GiB (expand only)]:GiB:'
@@ -756,10 +758,13 @@ _smolvm_serve_start() {
     '--seccomp[Seccomp syscall-allowlist mode for VM boot subprocesses (Linux x86_64/arm64 only)]:mode:(enforce audit off)' \
     '--landlock[Landlock filesystem-confinement mode for VM boot subprocesses (Linux only)]:mode:(enforce off)' \
     '--allow-nested-virt[Let machines run with nested virtualization (nestedVirt on create); off by default, enable only for trusted workloads]' \
-    '--egress-watchlist[Flag guest traffic to destinations listed in this file, one label plus dns-sha256/ip-sha256 hash per line; matches are reported as egressSignals, never blocked]:file:_files' \
+    '--egress-watchlist[Flag or block guest traffic to destinations listed in this file, one label plus dns-sha256/ip-sha256 hash per line; a line ending in block also answers a matching lookup as nonexistent and drops matching connections; matches are reported as egressSignals]:file:_files' \
     '--mtls-client-cn[Require the mTLS client certificate subject CN to equal this value for API access]:CN:' \
     '--mtls-allow-peer-blobs[With --mtls-client-cn, also accept other client certificates signed by the client CA, but only for the peer blob routes (/p2p/)]' \
-    '--shutdown-grace[Seconds a stopping server gives in-flight requests to finish (env SMOLVM_SERVE_SHUTDOWN_GRACE_SECS, default 5, max 3600)]:seconds:(5 30 60 300)'
+    '--shutdown-grace[Seconds a stopping server gives in-flight requests to finish (env SMOLVM_SERVE_SHUTDOWN_GRACE_SECS, default 5, max 3600)]:seconds:(5 30 60 300)' \
+    '--restore-cache-entries[Restored checkpoints to keep extracted after their machines are gone, so restoring one again reuses it (0 keeps none; server default 32)]:N:' \
+    '--restore-cache-gib[Space those kept checkpoints may hold together, in GiB (server default 256)]:GiB:' \
+    '--prepared-checkpoint-cache-gib[Space for captured checkpoints kept beside a machine host, in GiB, so restoring one here skips the download (default 64)]:GiB:'
 }
 
 _smolvm_serve_openapi() {
