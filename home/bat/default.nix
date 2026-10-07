@@ -27,8 +27,8 @@
         src = pkgs.fetchFromGitHub {
           owner = "eugenesvk";
           repo = "sublime-KDL";
-          rev = "06dbd737d9961d141c5c46397a5285c205fb9bf6";
-          hash = "sha256-6RH8xAYDkeYtIJL0AcnUyti2DH5P0v6Jv67mkkxySKY=";
+          rev = "82de4f4ef0c5eae0abde11c9a3fd885f5ecf5814";
+          hash = "sha256-y08lk8PbnFOvBWRCrMF6WKwOxD0BNPn6XfgXKFRUCeI=";
         };
         file = "KDL1.sublime-syntax";
       };
