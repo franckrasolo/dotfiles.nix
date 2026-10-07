@@ -27,6 +27,13 @@ _targets:
 @ssh-keys:
   SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock ssh-add -l
 
+# prints the SHA256 of a Git repo at a specific commit SHA and copies it into the system clipboard
+sha256 owner repo commit_sha:
+  #!/usr/bin/env sh
+  json=$(nix-prefetch-github {{ owner }} {{ repo }} --rev {{ commit_sha }})
+  echo $json | jq --raw-output '.hash'
+  echo $json | jq --join-output '.hash' | pbcopy
+
 # fixes line separators from CRLF to LF for all Obsidian community plugins and themes
 @fix-line-separators:
   fd '.+' .obsidian/{plugins,themes} --exec dos2unix {} \;

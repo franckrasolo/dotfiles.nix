@@ -45,6 +45,10 @@ let
     zip
   ];
 
+  nixTools = [
+    nix-prefetch-github
+  ];
+
   systemTools = [
     bottom
     gdu
@@ -123,6 +127,7 @@ in
   home.packages = []
     ++ securityTools
     ++ coreTools
+    ++ nixTools
     ++ systemTools
     ++ httpTools
     ++ languageTools
