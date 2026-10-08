@@ -6,5 +6,5 @@
   ];
 
   xdg.configFile."ov/config.yaml".source =
-    config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/home/ov/config.yaml";
+    config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/home/pagers/ov/config.yaml";
 }

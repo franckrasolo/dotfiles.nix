@@ -5,10 +5,10 @@
     ./agent-harnesses
     ./file-managers
     ./multiplexers
+    ./pagers
     ./terminals
 
     ./packages.nix
-    ./bat
     ./direnv
     ./fastfetch
     ./fnox
@@ -20,7 +20,6 @@
     ./luarocks
     ./mise
     ./nvim
-    ./ov
     ./pdf
     ./presenterm
     ./ripgrep
