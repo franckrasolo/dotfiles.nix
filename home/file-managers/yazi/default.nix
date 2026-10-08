@@ -12,6 +12,7 @@ in
     package = yazi;
     plugins = with yaziPlugins; {
       piper.package = piper;
+      zoom.package = zoom;
     };
   };
 
