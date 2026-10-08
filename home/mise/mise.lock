@@ -65,14 +65,14 @@ signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.ym
 repository_ids = { repository = "1078762196" }
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.8.4"
+version = "18.8.5"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:9d6f8b5be9d6b46562ee560a2fd90bc5b1f364da66adfc0f89ada82ee1367675"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.8.4/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/620592948"
+checksum = "sha256:fb776bd4e422d37263364952b75348525809bf6553bc1c62c2f004c40e6de3d3"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.8.5/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/622026919"
 
 [[tools."github:kucherenko/jscpd"]]
 version = "5.4.0"
