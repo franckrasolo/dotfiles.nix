@@ -1,4 +1,9 @@
 [[mgr.prepend_keymap]]
+desc = "LazyGit"
+on   = [ "g", "l" ]
+run  = "plugin lazygit"
+
+[[mgr.prepend_keymap]]
 on   = "="
 run  = "plugin zoom 1"
 desc = "Zoom in hovered file"

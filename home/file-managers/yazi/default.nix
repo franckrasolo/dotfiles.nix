@@ -11,6 +11,7 @@ in
     enableZshIntegration = true;
     package = yazi;
     plugins = with yaziPlugins; {
+      lazygit.package = lazygit;
       piper.package = piper;
       zoom.package = zoom;
     };
