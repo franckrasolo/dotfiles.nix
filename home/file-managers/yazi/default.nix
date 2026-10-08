@@ -10,6 +10,11 @@ in
     enable = true;
     enableZshIntegration = true;
     package = yazi;
+    plugins = {
+      piper = {
+        package = yaziPlugins.piper;
+      };
+    };
   };
 
   xdg.configFile = {
