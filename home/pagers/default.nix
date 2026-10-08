@@ -1,6 +1,7 @@
 {
   imports = [
     ./bat
+    ./dog
     ./ov
   ];
 }

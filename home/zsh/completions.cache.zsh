@@ -13,6 +13,7 @@ _cache_completion() {
 _cache_completion aube aube completion zsh
 _cache_completion bd bd completion zsh
 _cache_completion dive dive completion zsh
+_cache_completion dog dog --generate-completion-script zsh
 _cache_completion fnox fnox completion zsh
 _cache_completion fx fx --comp zsh
 _cache_completion gh gh completion --shell zsh

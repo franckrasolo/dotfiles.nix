@@ -35,6 +35,9 @@ usage = "latest"
 version = "latest"
 postinstall = "ln -sf $(mise which bd) $XDG_BIN_HOME/bd"
 
+[tools."github:edden27/dog"]
+version = "latest"
+
 [tools.opencode]
 version = "latest"
 postinstall = """

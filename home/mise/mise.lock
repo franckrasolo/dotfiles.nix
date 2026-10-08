@@ -74,6 +74,16 @@ checksum = "sha256:fb776bd4e422d37263364952b75348525809bf6553bc1c62c2f004c40e6de
 url = "https://github.com/can1357/oh-my-pi/releases/download/v18.8.5/omp-darwin-arm64"
 url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/622026919"
 
+[[tools."github:edden27/dog"]]
+version = "0.1.1"
+backend = "github:edden27/dog"
+specifiers = ["latest"]
+
+[tools."github:edden27/dog"."platforms.macos-arm64"]
+checksum = "sha256:1ec2df6ef7413f421458089983f3e1c359e7f180a19856c7929a83bb3bb12a74"
+url = "https://github.com/edden27/dog/releases/download/v0.1.1/dog-macos-arm64.tar.gz"
+url_api = "https://api.github.com/repos/edden27/dog/releases/assets/604738270"
+
 [[tools."github:kucherenko/jscpd"]]
 version = "5.4.0"
 backend = "github:kucherenko/jscpd"
