@@ -3,14 +3,14 @@
 lockfile_version = 3
 
 [[tools."aqua:Gaurav-Gosain/tuios"]]
-version = "0.9.0"
+version = "0.9.1"
 backend = "aqua:Gaurav-Gosain/tuios"
 specifiers = ["latest"]
 
 [tools."aqua:Gaurav-Gosain/tuios"."platforms.macos-arm64"]
-checksum = "sha256:742df692e036e7a85587fc00fe4c22bcd89a663fd81b80e88fb56d406a6a0b90"
-url = "https://github.com/Gaurav-Gosain/tuios/releases/download/v0.9.0/tuios_0.9.0_Darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/Gaurav-Gosain/tuios/releases/assets/620980082"
+checksum = "sha256:90d029582a96c283c901890ed9b0709ea40ab81154dfbd6167161df92686ade1"
+url = "https://github.com/Gaurav-Gosain/tuios/releases/download/v0.9.1/tuios_0.9.1_Darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/Gaurav-Gosain/tuios/releases/assets/622295829"
 
 [[tools."aqua:gastownhall/beads"]]
 version = "1.3.1"
@@ -24,14 +24,14 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/602046
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.25.0"
+version = "1.25.1"
 backend = "aqua:smol-machines/smolvm"
 specifiers = ["latest"]
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:8e52ac1a4edd73ddfe3fcd4489d2ac0e3b20bb661bb2793752547f05994e5b2a"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.25.0/smolvm-1.25.0-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/621132035"
+checksum = "sha256:3e0aab997bfa59e1a81db2c1cbd32951ab1b5f2ddc0424df2ce1648aa922e6a9"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.25.1/smolvm-1.25.1-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/622265084"
 
 [[tools.aube]]
 version = "2.7.0"
@@ -65,14 +65,14 @@ signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.ym
 repository_ids = { repository = "1078762196" }
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.8.5"
+version = "18.8.6"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:fb776bd4e422d37263364952b75348525809bf6553bc1c62c2f004c40e6de3d3"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.8.5/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/622026919"
+checksum = "sha256:31faa0ee8420a13a783f4ca56d98f974e4a9f9081d269057a099f7eb618d1133"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.8.6/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/622733471"
 
 [[tools."github:edden27/dog"]]
 version = "0.1.1"
