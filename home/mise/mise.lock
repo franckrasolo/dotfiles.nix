@@ -34,15 +34,15 @@ url = "https://github.com/smol-machines/smolvm/releases/download/v1.24.0/smolvm-
 url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/617297522"
 
 [[tools.aube]]
-version = "2.6.1"
+version = "2.7.0"
 backend = "packslip:github.com/aubepkg/aube"
 specifiers = ["latest"]
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:a36856db187dd8f2c3cbf651de1384a2d0748d7cc5507671e6ec02751f00c032"
-url = "https://github.com/aubepkg/aube/releases/download/v2.6.1/aube-v2.6.1-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:d67dcf1ea36629445595417ea6d7de9859fa723e422394cbbcd677d0164a5fa0"
+url = "https://github.com/aubepkg/aube/releases/download/v2.7.0/aube-v2.7.0-aarch64-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release.yml"
-repository_ids = { repository = "1214542327", owner = "324215402" }
+repository_ids = { repository = "1214542327" }
 
 [[tools.bun]]
 version = "1.4.2"
@@ -65,14 +65,14 @@ signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.ym
 repository_ids = { repository = "1078762196" }
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.8.0"
+version = "18.8.3"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:8fb220c84b0e15cee596f5f94bd5c44b477685aca6678a0fdaf75819f607cb98"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.8.0/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/617904828"
+checksum = "sha256:4421538b6a988527eedf08ec32aa83e27ec31227a3f91028d8f59c103e537b60"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.8.3/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/619505798"
 
 [[tools."github:kucherenko/jscpd"]]
 version = "5.4.0"
@@ -106,14 +106,14 @@ url = "https://github.com/RivoLink/leaf/releases/download/1.28.3/leaf-macos-arm6
 url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/595133822"
 
 [[tools."github:vladkens/macmon"]]
-version = "0.8.2"
+version = "0.9.0"
 backend = "github:vladkens/macmon"
 specifiers = ["latest"]
 
 [tools."github:vladkens/macmon"."platforms.macos-arm64"]
-checksum = "sha256:588d5bde79885ba36f693e5150911c10c3ad208a2e418a3f2aa827ac84a2d973"
-url = "https://github.com/vladkens/macmon/releases/download/v0.8.2/macmon-v0.8.2.tar.gz"
-url_api = "https://api.github.com/repos/vladkens/macmon/releases/assets/501564311"
+checksum = "sha256:539d8a39dc4c3823d68410de1c270289790826d983b005b91b2a4441008108bb"
+url = "https://github.com/vladkens/macmon/releases/download/v0.9.0/macmon-v0.9.0.tar.gz"
+url_api = "https://api.github.com/repos/vladkens/macmon/releases/assets/619724766"
 
 [[tools."github:zeroclaw-labs/zeroclaw"]]
 version = "0.8.5"
@@ -163,14 +163,14 @@ url = "https://github.com/anomalyco/opencode/releases/download/v1.18.35/opencode
 url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/616527957"
 
 [[tools.pi]]
-version = "1.0.4"
+version = "1.1.0"
 backend = "aqua:earendil-works/pi"
 specifiers = ["latest"]
 
 [tools.pi."platforms.macos-arm64"]
-checksum = "sha256:717dcd38a03849e919f9dec9daa96f5ca102e15ea33d804e5db57b1d47e513bc"
-url = "https://github.com/earendil-works/pi/releases/download/v1.0.4/pi-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/613707162"
+checksum = "sha256:3455b13de35c15a5893cdebc922678199e90a7ce99b06cbc23f37860e90d63c7"
+url = "https://github.com/earendil-works/pi/releases/download/v1.1.0/pi-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/619962801"
 
 [[tools.television]]
 version = "0.15.9"
