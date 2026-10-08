@@ -24,14 +24,14 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/602046
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.24.0"
+version = "1.25.0"
 backend = "aqua:smol-machines/smolvm"
 specifiers = ["latest"]
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:117f73e4af7481f3c185483323d12136a8d5e1acc5933885a9caa9567ae35f00"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.24.0/smolvm-1.24.0-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/617297522"
+checksum = "sha256:8e52ac1a4edd73ddfe3fcd4489d2ac0e3b20bb661bb2793752547f05994e5b2a"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.25.0/smolvm-1.25.0-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/621132035"
 
 [[tools.aube]]
 version = "2.7.0"

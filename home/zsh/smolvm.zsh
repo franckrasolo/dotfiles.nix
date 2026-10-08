@@ -1,6 +1,6 @@
 #compdef smolvm
 
-# zsh completion for the Smol Machines smolvm CLI (v1.24.0).
+# zsh completion for the Smol Machines smolvm CLI (v1.25.0).
 # Generated from recursive `smolvm <subcommand> --help` output; re-diff the
 # command/flag inventory against it after a CLI upgrade.
 #
@@ -20,7 +20,7 @@ _smolvm_cmds=(
 
 _smolvm_machine_cmds=(
   'run:Run a container image in an ephemeral machine'
-  'exec:Run a command directly in the VM (not in a container)'
+  'exec:Run a command in a machine (inside its image'"'"'s container, if it has one)'
   'create:Create a new named machine configuration'
   'start:Start a machine'
   'branch:Branch a running branchable machine into an independent child (CoW memory + disks)'
@@ -44,17 +44,19 @@ _smolvm_machine_cmds=(
   'update:Modify settings on a stopped machine (mounts, ports, resources, disks)'
   'images:List cached images and storage usage'
   'prune:Remove unused images and layers to free disk space'
-  'shell:Open an interactive shell in a machine (starts it if stopped)'
+  'shell:Open an interactive shell in a running machine'
   'sh:Alias for shell'
   'cp:Copy files between host and machine'
   'sync:Synchronize guest-local staged mounts back to their host directories'
   'monitor:Monitor a machine with health checks and restart policy'
   'data-dir:Print the on-disk data directory path for a named machine'
+  'help:Print help for a command'
 )
 
 _smolvm_serve_cmds=(
   'start:Start the HTTP API server'
   'openapi:Export OpenAPI specification for SDK generation'
+  'help:Print help for a command'
 )
 
 _smolvm_pack_cmds=(
@@ -64,11 +66,13 @@ _smolvm_pack_cmds=(
   'pull:Pull a .smolmachine artifact from a registry'
   'inspect:Inspect a .smolmachine artifact in a registry (without downloading)'
   'prune:Clean up cached pack extractions to free disk space'
+  'help:Print help for a command'
 )
 
 _smolvm_config_cmds=(
   'show:Show current configuration'
   'registries:Manage registry configuration'
+  'help:Print help for a command'
 )
 
 _smolvm_config_registries_cmds=(
@@ -76,6 +80,7 @@ _smolvm_config_registries_cmds=(
   'edit:Edit the registries configuration file in your default editor'
   'show:Show current registries configuration'
   'init:Create an example configuration file'
+  'help:Print help for a command'
 )
 
 # --- helpers ---------------------------------------------------------------
@@ -387,7 +392,9 @@ _smolvm_machine_run() {
     '--storage[Writable data disk size in GiB (default 20)]:GiB:' \
     '--overlay[Container rootfs overlay size in GiB]:GiB:' \
     '--block-io[Host block I/O engine]:engine:_smolvm_block_io' \
+    '--disk-durability[When guest disk writes must reach the host disk (deferred is faster, but a host crash can lose recent writes)]:mode:(full deferred)' \
     '*--disk[Attach a host disk image or block device (repeatable), appearing in the guest as /dev/vdc, /dev/vdd, ... in order; append :ro for read-only]:PATH[:ro]:_files' \
+    '--cache-disk[Mount a shared read-only cache disk image at a guest path (BASE disk image\: BASE\:/GUEST/PATH); this machine writes only to its own local layer]:BASE\:/GUEST/PATH:_files' \
     '(-s --smolfile)'{-s,--smolfile}'[Load VM configuration from a Smolfile (TOML)]:Smolfile:_smolvm_smolfile' \
     '(--rebuild-init-cache)--no-init-cache[Skip the init-layer cache: re-run init on every ephemeral run]' \
     '(--no-init-cache)--rebuild-init-cache[Rebuild the cached init layer even if a matching one exists]' \
@@ -462,6 +469,7 @@ _smolvm_machine_create() {
     '--storage[Storage disk size in GiB (for OCI layers and container data)]:GiB:' \
     '--overlay[Overlay disk size in GiB (for persistent rootfs changes)]:GiB:' \
     '--block-io[Host block I/O engine]:engine:_smolvm_block_io' \
+    '--disk-durability[When guest disk writes must reach the host disk (deferred is faster, but a host crash can lose recent writes)]:mode:(full deferred)' \
     '*--disk[Attach a host disk image or block device (repeatable), appearing in the guest as /dev/vdc, /dev/vdd, ... in order; append :ro for read-only]:PATH[:ro]:_files' \
     '*'{-v,--volume}'[Mount host dir or S3 bucket (repeatable)]:HOST|REMOTE\:GUEST[\:ro|rw|staged]:_files -/' \
     '--allow-system-mounts[Allow trusted read-only host /etc and /var/log mounts below /host]' \
@@ -498,6 +506,7 @@ _smolvm_machine_create() {
     '(-s --smolfile)'{-s,--smolfile}'[Load configuration from a Smolfile (TOML)]:Smolfile:_smolvm_smolfile' \
     '(-I --image)--from[Create from a .smolmachine pack or restore a .smolcheckpoint]:artifact:_smolvm_pack_or_checkpoint' \
     '--at[With --from checkpoint: restore an earlier retained generation — ~N, a generation id, or an id prefix]:generation:' \
+    '--cache-disk[Mount a shared read-only cache disk image at a guest path (BASE disk image\: BASE\:/GUEST/PATH); this machine writes only to its own local layer]:BASE\:/GUEST/PATH:_files' \
     '--restore-cache-entries[Recently restored checkpoints to keep ready (0 turns the cache off, default 3)]:N:' \
     '--restore-cache-gib[Space the kept restored checkpoints may hold together in GiB (default 16)]:GiB:' \
     '--keep-identity[With --from a checkpoint: keep the hostname and machine ID it was saved with instead of giving the new machine its own identity (for rewinding; do not run two machines from one checkpoint with it)]' \
@@ -758,6 +767,7 @@ _smolvm_serve_start() {
     '--seccomp[Seccomp syscall-allowlist mode for VM boot subprocesses (Linux x86_64/arm64 only)]:mode:(enforce audit off)' \
     '--landlock[Landlock filesystem-confinement mode for VM boot subprocesses (Linux only)]:mode:(enforce off)' \
     '--allow-nested-virt[Let machines run with nested virtualization (nestedVirt on create); off by default, enable only for trusted workloads]' \
+    '--cache-disk-dir[Directory of cache disk bases the API may attach (cacheDisk on create) and publish into; a request names a base by file name. Unset\: the API refuses cache disks]:dir:_files -/' \
     '--egress-watchlist[Flag or block guest traffic to destinations listed in this file, one label plus dns-sha256/ip-sha256 hash per line; a line ending in block also answers a matching lookup as nonexistent and drops matching connections; matches are reported as egressSignals]:file:_files' \
     '--mtls-client-cn[Require the mTLS client certificate subject CN to equal this value for API access]:CN:' \
     '--mtls-allow-peer-blobs[With --mtls-client-cn, also accept other client certificates signed by the client CA, but only for the peer blob routes (/p2p/)]' \
