@@ -3,5 +3,6 @@ extensions/tuios-agent-state.ts
 extensions/worktrunk.ts
 git/
 sessions/
+skills/
 models-store.json
 trust.json
