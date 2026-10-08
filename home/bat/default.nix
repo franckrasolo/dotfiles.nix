@@ -36,9 +36,9 @@
       Pkl = {
         src = pkgs.fetchFromGitHub {
           owner = "franckrasolo";
-          repo = "pkl.tmbundle";
-          rev = "47818f8cd0e65991e6cb392ee70cd6cf644adbd4";
-          hash = "sha256-RQcxyV3XLyFbqnYA5WpK8/YjdMCCxrce/v3kLs6/nUE=";
+          repo = "Pkl.sublime-syntax";
+          rev = "48aed14f8bd59448388e8147c4dfbfb579990ded";
+          hash = "sha256-jeNNdQDBmVlTNbCVfHjuzszBfg+5JkdlJnxoR4NePNI=";
         };
         file = "syntaxes/Pkl.sublime-syntax";
       };
