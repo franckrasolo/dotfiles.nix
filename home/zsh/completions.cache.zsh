@@ -37,7 +37,7 @@ _cache_completion mise mise completion zsh
 _cache_completion omp zsh -c "omp completions zsh"
 _cache_completion opencode opencode completion
 _cache_completion pkl pkl shell-completion zsh
-_cache_completion smolvm cat $XDG_CONFIG_HOME/zsh/smolvm.zsh
+_cache_completion smolvm smolvm completion zsh
 _cache_completion tuios tuios completion zsh
 _cache_completion tv tv completions zsh
 _cache_completion usage usage --completions zsh

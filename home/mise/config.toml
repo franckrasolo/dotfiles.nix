@@ -17,7 +17,6 @@ tasks = "mise tasks ls --all --extended"
 tools = "mise ls --global --outdated"
 
 [tools]
-"aqua:smol-machines/smolvm" = "latest"
 aube = "latest"
 bun = "latest"
 fnox = "latest"
@@ -34,6 +33,10 @@ usage = "latest"
 [tools."aqua:gastownhall/beads"]
 version = "latest"
 postinstall = "ln -sf $(mise which bd) $XDG_BIN_HOME/bd"
+
+[tools."aqua:smol-machines/smolvm"]
+version = "latest"
+postinstall = "smolvm completion zsh >| $XDG_CACHE_HOME/zsh/completions/_smolvm.zsh"
 
 [tools."github:edden27/dog"]
 version = "latest"
