@@ -11,8 +11,8 @@ in
     enableZshIntegration = true;
     package = yazi;
     plugins = with yaziPlugins; {
+      faster-piper.package = callPackage ./faster-piper.nix {};
       lazygit.package = lazygit;
-      piper.package = piper;
       zoom.package = zoom;
     };
   };

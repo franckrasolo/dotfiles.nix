@@ -9,4 +9,4 @@ max_height = 4000
 
 [[plugin.prepend_previewers]]
 url = "**/{Opkgfile,PklProject,*.pkl}"
-run = 'piper -- bat --color=always --style=numbers --paging=never --line-range=:50 "$1"'
+run = 'faster-piper -- bat --color=always --paging=never --style=numbers "$1"'
