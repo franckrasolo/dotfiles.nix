@@ -1,5 +1,23 @@
 { config, pkgs, lib, ... }:
 
+let
+  catppuccinMocha = pkgs.fetchFromGitHub {
+    owner = "catppuccin";
+    repo = "bat";
+    rev = "6810349b28055dce54076712fc05fc68da4b8ec0";
+    hash = "sha256-lJapSgRVENTrbmpVyn+UQabC9fpV1G1e+CdlJ090uvg=";
+  };
+
+  catppuccinBlack = pkgs.runCommandLocal "catppuccin-black-theme" { } ''
+    sed 's|#1e1e2e|#000000|' \
+      "${catppuccinMocha}/themes/Catppuccin Mocha.tmTheme" > $out
+  '';
+
+  catppuccinTransparent = pkgs.runCommandLocal "catppuccin-transparent-theme" { } ''
+    aed 's|#1e1e2e|#ff70d200|' \
+      "${catppuccinMocha}/themes/Catppuccin Mocha.tmTheme" > $out
+  '';
+in
 {
   programs.bat = {
     enable = true;
@@ -12,7 +30,7 @@
         "*tmux*.conf:Tmux conf"
       ];
       pager = "less -FR";
-      theme = "Catppuccin Mocha";
+      theme = "Catppuccin Black";
     };
     syntaxes = {
       Just = {
@@ -52,18 +70,10 @@
         file = "Tmux.sublime-syntax";
       };
     };
-    themes = {
-      "Catppuccin Mocha" = {
-        src = pkgs.fetchFromGitHub {
-          owner = "catppuccin";
-          repo = "bat";
-          rev = "6810349b28055dce54076712fc05fc68da4b8ec0";
-          hash = "sha256-lJapSgRVENTrbmpVyn+UQabC9fpV1G1e+CdlJ090uvg=";
-        };
-        file = "themes/Catppuccin Mocha.tmTheme";
-      };
-    };
   };
+
+  xdg.configFile."bat/themes/Catppuccin Black.tmTheme".source = catppuccinBlack;
+  xdg.configFile."bat/themes/Catppuccin Transparent.tmTheme".source = catppuccinTransparent;
 
   home.activation.batCache = with lib; mkForce (hm.dag.entryAfter [ "prepareUserActivation" ] ''
     export XDG_CACHE_HOME=${escapeShellArg config.xdg.cacheHome}
