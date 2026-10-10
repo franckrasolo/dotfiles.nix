@@ -8,5 +8,9 @@ max_width = 6000
 max_height = 4000
 
 [[plugin.prepend_previewers]]
+url = "**/mise*.lock"
+run = 'faster-piper -- bat --color=always --style=plain "$1"'
+
+[[plugin.prepend_previewers]]
 url = "**/{Opkgfile,PklProject,*.pkl}"
 run = 'faster-piper -- tree-sitter highlight --query-paths $XDG_DATA_HOME/tree-sitter/queries/pkl/highlights.scm --scope source.pkl "$1"'
