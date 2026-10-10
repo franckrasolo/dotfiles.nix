@@ -24,14 +24,14 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/602046
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.25.4"
+version = "1.26.1"
 backend = "aqua:smol-machines/smolvm"
 specifiers = ["latest"]
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:706bc7e379eb05392145d994f37d60482f70c2c7dcbbdf8f7cd61d648c810d5e"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.25.4/smolvm-1.25.4-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/626263272"
+checksum = "sha256:3aee6c92aa0552754159494c2f073d5f99cf1c2a12ecc022a08976bd8a1fc5bb"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.26.1/smolvm-1.26.1-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/627894545"
 
 [[tools.aube]]
 version = "2.7.0"
@@ -65,14 +65,14 @@ signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.ym
 repository_ids = { repository = "1078762196" }
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.8.7"
+version = "18.8.8"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:cf0227bdefca0c486bd2aed1771de3ab98930266883eb69d341caf5665caee14"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.8.7/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/625097604"
+checksum = "sha256:19182e8a79eddea11a5e3f93a5d2d250b3e4951bab916409ab0288c4b550c310"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.8.8/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/628244594"
 
 [[tools."github:edden27/dog"]]
 version = "0.1.1"
