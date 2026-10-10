@@ -66,6 +66,17 @@ postinstall = "tv completions zsh >| $XDG_CACHE_HOME/zsh/completions/_tv.zsh"
 version = "latest"
 postinstall = "usage --completions zsh >| $XDG_CACHE_HOME/zsh/completions/_usage.zsh"
 
+[tools.worktrunk]
+version = "latest"
+depends = ["github:can1357/oh-my-pi", "opencode", "pi"]
+postinstall = """
+  wt config shell init zsh >| $XDG_CACHE_HOME/zsh/completions/_wt.zsh
+
+  wt config plugins omp install --yes
+  wt config plugins opencode install --yes
+  wt config plugins pi install --yes
+"""
+
 [tools.opencode]
 version = "latest"
 postinstall = """
@@ -124,17 +135,6 @@ postinstall = """
 
   tuios integration install opencode
   tuios integration install pi
-"""
-
-[tools.worktrunk]
-version = "latest"
-depends = ["github:can1357/oh-my-pi", "opencode", "pi"]
-postinstall = """
-  wt config shell init zsh >| $XDG_CACHE_HOME/zsh/completions/_wt.zsh
-
-  wt config plugins omp install --yes
-  wt config plugins opencode install --yes
-  wt config plugins pi install --yes
 """
 
 [tools."github:zeroclaw-labs/zeroclaw"]
