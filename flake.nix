@@ -29,6 +29,11 @@
       url = "git+https://git.atagen.co/atagen/unf";
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
+
+    tree-sitter-pkl = {
+      url = "github:apple/tree-sitter-pkl";
+      flake = false;
+    };
   };
 
   outputs = { self, nixpkgs, ... } @ inputs:
@@ -45,6 +50,8 @@
             "libxls-1.6.2"
           ];
         };
+
+        tree-sitter-pkl-repo = inputs.tree-sitter-pkl;
       };
       # makes "pkgs.unstable" available in configuration.nix
       overlayModule = ({ config, pkgs, ... }: { nixpkgs.overlays = [ overlay ]; });

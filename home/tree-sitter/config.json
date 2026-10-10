@@ -1,0 +1,50 @@
+{
+  "parser-directories": [
+    "~/.xdg/local/share/tree-sitter/grammars/"
+  ],
+  "theme": {
+    "comment": { "color": "#9399b2", "italic": true },
+    "comment.documentation": { "color": "#9399b2", "italic": true },
+    "keyword.directive": { "color": "#f5c2e7", "italic": true },
+
+    "string": { "color": "#a6e3a1" },
+    "string.escape": { "color": "#f5c2e7" },
+
+    "number": { "color": "#fab387" },
+    "number.float": { "color": "#fab387" },
+    "boolean": { "color": "#fab387" },
+    "constant.builtin": { "color": "#f38ba8" },
+
+    "keyword": { "color": "#cba6f7" },
+    "keyword.function": { "color": "#cba6f7" },
+    "keyword.operator": { "color": "#cba6f7" },
+    "keyword.type": { "color": "#cba6f7" },
+    "keyword.import": { "color": "#cba6f7" },
+    "keyword.conditional": { "color": "#cba6f7" },
+    "keyword.modifier": { "color": "#cba6f7" },
+
+    "function": { "color": "#89b4fa", "italic": true },
+    "function.call": { "color": "#89b4fa" },
+    "function.method": { "color": "#89b4fa", "italic": true },
+    "function.method.call": { "color": "#89b4fa" },
+
+    "variable": { "color": "#cdd6f4" },
+    "variable.member": { "color": "#cdd6f4" },
+    "variable.parameter": { "color": "#eba0ac", "italic": true },
+    "variable.builtin": { "color": "#89b4fa" },
+
+    "property": { "color": "#cdd6f4" },
+
+    "type": { "color": "#f9e2af", "italic": true },
+    "type.definition": { "color": "#f9e2af", "italic": true },
+    "type.builtin": { "color": "#f9e2af" },
+
+    "operator": { "color": "#94e2d5" },
+    "punctuation.delimiter": { "color": "#9399b2" },
+    "punctuation.bracket": { "color": "#9399b2" },
+    "punctuation.accessor": { "color": "#94e2d5" },
+    "punctuation.definition.generic": { "color": "#94e2d5" },
+    "punctuation.definition.annotation": { "color": "#fab387" },
+    "punctuation.special": { "color": "#f5c2e7" }
+  }
+}

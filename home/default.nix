@@ -26,6 +26,7 @@
     ./silicon
     ./skill-scanner
     ./television
+    ./tree-sitter
     ./zoxide
     ./zsh
   ];
