@@ -3,6 +3,7 @@
 {
   imports = [
     ./aerospace
+    ./fontconfig
     ./hammerspoon
     ./snapzy
   ];
