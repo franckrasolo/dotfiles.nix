@@ -18,22 +18,21 @@ tasks = "mise tasks ls --all --extended"
 tools = "mise ls --global --outdated"
 
 [tools]
-aube = "latest"
 bun = "latest"
-fnox = "latest"
 "github:kucherenko/jscpd" = "latest"
-"github:rivolink/leaf" = "latest"
 "github:remotemobprogramming/mob" = "latest"
 "github:vladkens/macmon" = "latest"
-"github:zeroclaw-labs/zeroclaw" = "latest"
-"github:zjrosen/perles" = "latest"
-"nix:pkl-lsp" = "latest"
-television = "latest"
-usage = "latest"
+
+[tools.aube]
+version = "latest"
+postinstall = "aube completion zsh >| $XDG_CACHE_HOME/zsh/completions/_aube.zsh"
 
 [tools."aqua:gastownhall/beads"]
 version = "latest"
-postinstall = "ln -sf $(mise which bd) $XDG_BIN_HOME/bd"
+postinstall = """
+  ln -sf $(mise which bd) $XDG_BIN_HOME/bd
+  bd completion zsh >| $XDG_CACHE_HOME/zsh/completions/_bd.zsh
+"""
 
 [tools."aqua:smol-machines/smolvm"]
 version = "latest"
@@ -41,11 +40,37 @@ postinstall = "smolvm completion zsh >| $XDG_CACHE_HOME/zsh/completions/_smolvm.
 
 [tools."github:edden27/dog"]
 version = "latest"
+postinstall = "dog --generate-completion-script zsh >| $XDG_CACHE_HOME/zsh/completions/_dog.zsh"
+
+[tools.fnox]
+version = "latest"
+postinstall = "fnox completion zsh >| $XDG_CACHE_HOME/zsh/completions/_fnox.zsh"
+
+[tools."github:rivolink/leaf"]
+version = "latest"
+postinstall = "leaf --auto-complete zsh:dump >| $XDG_CACHE_HOME/zsh/completions/_leaf.zsh"
+
+[tools."github:zjrosen/perles"]
+version = "latest"
+postinstall = "perles completion zsh >| $XDG_CACHE_HOME/zsh/completions/_perles.zsh"
+
+[tools."nix:pkl-lsp"]
+version = "latest"
+postinstall = "pkl shell-completion zsh >| $XDG_CACHE_HOME/zsh/completions/_pkl.zsh"
+
+[tools.television]
+version = "latest"
+postinstall = "tv completions zsh >| $XDG_CACHE_HOME/zsh/completions/_tv.zsh"
+
+[tools.usage]
+version = "latest"
+postinstall = "usage --completions zsh >| $XDG_CACHE_HOME/zsh/completions/_usage.zsh"
 
 [tools.opencode]
 version = "latest"
 postinstall = """
   ln -sf ${XDG_CONFIG_HOME}/opencode ~/.config/
+  opencode completion >| $XDG_CACHE_HOME/zsh/completions/_opencode.zsh
 
   vendor="${XDG_CONFIG_HOME}/opencode/vendor"
   git sync $vendor https://github.com/f-steff/opencode-env-auth
@@ -56,6 +81,8 @@ postinstall = """
 version = "latest"
 depends = ["bun"]
 postinstall = """
+  omp completions zsh >| $XDG_CACHE_HOME/zsh/completions/_omp.zsh
+
   omp config init-xdg
   omp plugin install --force @ff-labs/pi-fff
 
@@ -80,6 +107,8 @@ postinstall = """
 version = "latest"
 depends = ["go", "github:can1357/oh-my-pi", "opencode", "pi"]
 postinstall = """
+  herdr completions zsh >| $XDG_CACHE_HOME/zsh/completions/_herdr.zsh
+
   herdr integration install omp
   herdr integration install opencode
   herdr integration install pi
@@ -91,6 +120,8 @@ postinstall = """
 version = "latest"
 depends = ["github:can1357/oh-my-pi", "opencode", "pi"]
 postinstall = """
+  tuios completion zsh >| $XDG_CACHE_HOME/zsh/completions/_tuios.zsh
+
   tuios integration install opencode
   tuios integration install pi
 """
@@ -99,10 +130,16 @@ postinstall = """
 version = "latest"
 depends = ["github:can1357/oh-my-pi", "opencode", "pi"]
 postinstall = """
+  wt config shell init zsh >| $XDG_CACHE_HOME/zsh/completions/_wt.zsh
+
   wt config plugins omp install --yes
   wt config plugins opencode install --yes
   wt config plugins pi install --yes
 """
+
+[tools."github:zeroclaw-labs/zeroclaw"]
+version = "latest"
+postinstall = "zeroclaw completions zsh >| $XDG_CACHE_HOME/zsh/completions/_zeroclaw.zsh"
 
 [env]
 FNOX_AGE_KEY_FILE = "~/dev/dotfiles.nix/home/fnox/age.txt"
