@@ -7,6 +7,7 @@ locked = false
 lockfile = true
 lockfile_platforms = ["macos-arm64"]
 minimum_release_age = "0s"
+self_update.auto = true
 
 [settings.npm]
 package_manager = "aube"
