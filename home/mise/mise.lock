@@ -162,6 +162,14 @@ version = "0.8.0"
 backend = "nix:pkl-lsp"
 specifiers = ["latest"]
 
+[[tools."npm:@opencode/cli"]]
+version = "2.0.26"
+backend = "npm:@opencode/cli"
+specifiers = ["latest"]
+
+[tools."npm:@opencode/cli".options]
+allow_builds = '["@opencode/cli"]'
+
 [[tools.opencode]]
 version = "1.19.0"
 backend = "aqua:anomalyco/opencode"

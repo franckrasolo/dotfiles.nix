@@ -88,6 +88,16 @@ postinstall = """
   git sync $vendor https://github.com/ayghri/i-have-adhd
 """
 
+[tools."npm:@opencode/cli"]
+version = "latest"
+allow_builds = ["@opencode/cli"]
+postinstall = """
+  opencode2 --completions zsh \
+    | sed -e 's/#compdef opencode/#compdef opencode2/' \
+          -e 's/compdef _opencode opencode/compdef _opencode opencode2/' \
+    >| "$XDG_CACHE_HOME/zsh/completions/_opencode2.zsh"
+"""
+
 [tools."github:can1357/oh-my-pi"]
 version = "latest"
 depends = ["bun"]

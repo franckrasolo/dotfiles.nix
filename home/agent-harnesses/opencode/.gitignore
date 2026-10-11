@@ -9,3 +9,4 @@ vendor/
 bun.lock
 herdr-tui-session.js
 package*.json
+service.json
