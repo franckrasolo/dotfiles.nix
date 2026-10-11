@@ -65,14 +65,14 @@ signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.ym
 repository_ids = { repository = "1078762196" }
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.8.8"
+version = "18.9.2"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:19182e8a79eddea11a5e3f93a5d2d250b3e4951bab916409ab0288c4b550c310"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.8.8/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/628244594"
+checksum = "sha256:f0426c1c71f10aa94d9ac5e5b74e384b1286b2947d3325be8e19fdb0f0e04088"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.9.2/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/631564060"
 
 [[tools."github:edden27/dog"]]
 version = "0.1.1"
@@ -106,14 +106,14 @@ url = "https://github.com/remotemobprogramming/mob/releases/download/5.4.2/mob_5
 url_api = "https://api.github.com/repos/remotemobprogramming/mob/releases/assets/346269527"
 
 [[tools."github:rivolink/leaf"]]
-version = "1.28.3"
+version = "1.29.0"
 backend = "github:rivolink/leaf"
 specifiers = ["latest"]
 
 [tools."github:rivolink/leaf"."platforms.macos-arm64"]
-checksum = "sha256:dc54bcc39e73f99853f051389481db7396fec95eff69f85db8878518a3fe13df"
-url = "https://github.com/RivoLink/leaf/releases/download/1.28.3/leaf-macos-arm64"
-url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/595133822"
+checksum = "sha256:a04c5428a207b765d36b6164464671c8b90fefb097e1bb182c23ae6faa0480f3"
+url = "https://github.com/RivoLink/leaf/releases/download/1.29.0/leaf-macos-arm64"
+url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/631717851"
 
 [[tools."github:vladkens/macmon"]]
 version = "0.9.0"
@@ -163,14 +163,14 @@ backend = "nix:pkl-lsp"
 specifiers = ["latest"]
 
 [[tools.opencode]]
-version = "1.18.35"
+version = "1.19.0"
 backend = "aqua:anomalyco/opencode"
 specifiers = ["latest"]
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:80b05124357a77cd57945bfde36082a028e829c198d222d5e146617f49a2c4b7"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.18.35/opencode-darwin-arm64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/616527957"
+checksum = "sha256:0d5f511948d6fbfedf9bb16753c0ac42613dcc8de75d9deb7e8d0cf584c8fba6"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.19.0/opencode-darwin-arm64.zip"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/629459345"
 
 [[tools.pi]]
 version = "1.1.0"
