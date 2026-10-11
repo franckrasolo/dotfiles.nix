@@ -110,7 +110,10 @@ postinstall = """
 
   omp plugin marketplace add ayghri/i-have-adhd 2> /dev/null || true
   omp plugin install --force i-have-adhd@i-have-adhd
-  omp plugin install --force git:github.com/DietrichGebert/ponytail
+
+  omp plugin marketplace add DietrichGebert/ponytail 2> /dev/null || true
+  omp plugin install --force ponytail@ponytail
+
   omp plugin install --force github:obra/superpowers
 """
 
