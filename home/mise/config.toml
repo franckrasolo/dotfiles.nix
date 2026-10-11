@@ -81,6 +81,7 @@ postinstall = """
 version = "latest"
 postinstall = """
   opencode completion >| $XDG_CACHE_HOME/zsh/completions/_opencode.zsh
+  opencode plugin --force @dietrichgebert/ponytail
 """
 
 [tools."npm:@opencode/cli"]
