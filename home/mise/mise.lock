@@ -24,14 +24,14 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/602046
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.26.1"
+version = "1.27.1"
 backend = "aqua:smol-machines/smolvm"
 specifiers = ["latest"]
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:3aee6c92aa0552754159494c2f073d5f99cf1c2a12ecc022a08976bd8a1fc5bb"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.26.1/smolvm-1.26.1-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/627894545"
+checksum = "sha256:ef23d4ef9a908d31238589e81a286b570a1611ab97dc5429e86b31b3268131a9"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.27.1/smolvm-1.27.1-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/632917593"
 
 [[tools.aube]]
 version = "2.7.0"
@@ -65,14 +65,14 @@ signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.ym
 repository_ids = { repository = "1078762196" }
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.9.2"
+version = "18.10.2"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:f0426c1c71f10aa94d9ac5e5b74e384b1286b2947d3325be8e19fdb0f0e04088"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.9.2/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/631564060"
+checksum = "sha256:9752e3d7f7bdab636e21495a6affc196e8ffc3a2dffaf529db2dd73d2bdea255"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.10.2/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/633971259"
 
 [[tools."github:edden27/dog"]]
 version = "0.1.1"
@@ -163,7 +163,8 @@ backend = "nix:pkl-lsp"
 specifiers = ["latest"]
 
 [[tools."npm:@opencode/cli"]]
-version = "2.0.26"
+version = "2.0.27"
+aube = { path = ".mise/locks/npm-opencode-cli/2.0.27~009061c2", digest = "sha256:aad0cd46871ca868f21367bf6096a0b15ec87e61abb1b144a0f9602e7aa39b1a" }
 backend = "npm:@opencode/cli"
 specifiers = ["latest"]
 
