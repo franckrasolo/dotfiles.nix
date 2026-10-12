@@ -346,6 +346,13 @@ customCommands:
     command: "git push --push-option=ci.skip"
     output: "log"
 
+  - key: "<ctrl+alt+s>"
+    context: "commits"
+    description: "Sign this commit and all subsequent ones"
+    loadingText: "Signing this commit and all subsequent ones"
+    command: git rebase --exec "git commit --amend --no-edit -S" {{.SelectedLocalCommit.Sha}}
+    output: "terminal"
+
 # Periodic update checks
 update:
   # One of: 'prompt' (default) | 'background' | 'never'
