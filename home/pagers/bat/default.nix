@@ -14,7 +14,7 @@ let
   '';
 
   catppuccinTransparent = pkgs.runCommandLocal "catppuccin-transparent-theme" { } ''
-    aed 's|#1e1e2e|#ff70d200|' \
+    sed 's|#1e1e2e|#ff70d200|' \
       "${catppuccinMocha}/themes/Catppuccin Mocha.tmTheme" > $out
   '';
 in
