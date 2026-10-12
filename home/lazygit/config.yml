@@ -419,7 +419,6 @@ notARepository: prompt
 # If true, display a confirmation when subprocess terminates. This allows you to view the output of the subprocess before returning to Lazygit.
 promptToReturnFromSubprocess: false
 
-# Keybindings
 keybinding:
   universal:
     quit: q
@@ -455,8 +454,7 @@ keybinding:
     nextMatch: "n"
     prevMatch: "N"
     startSearch: /
-    optionMenu: <disabled>
-    optionMenu-alt1: '?'
+    optionMenu: '?'
     select: <space>
     goInto: <enter>
     confirm: <enter>
