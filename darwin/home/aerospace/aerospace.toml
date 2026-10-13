@@ -231,6 +231,11 @@ check-further-callbacks = false
 run = ['move-node-to-workspace 4', 'layout floating']
 
 [[on-window-detected]]
+if.app-id = 'com.github.cirruslabs.tart'
+check-further-callbacks = false
+run = ['move-node-to-workspace 7',  'macos-native-fullscreen']
+
+[[on-window-detected]]
 if.app-id = 'com.jetbrains.intellij'
 check-further-callbacks = true
 run = ['layout floating']
