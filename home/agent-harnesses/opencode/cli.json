@@ -11,5 +11,6 @@
     "scrollbar": true,
     "thinking": "hide"
   },
-  "animations": true
+  "animations": true,
+  "plugins": ["./herdr-opencode"]
 }

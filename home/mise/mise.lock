@@ -24,14 +24,14 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/602046
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.27.1"
+version = "1.27.4"
 backend = "aqua:smol-machines/smolvm"
 specifiers = ["latest"]
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:ef23d4ef9a908d31238589e81a286b570a1611ab97dc5429e86b31b3268131a9"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.27.1/smolvm-1.27.1-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/632917593"
+checksum = "sha256:4c4940f5c4631ef3aff82b6da6f7f99befd3e216fdf4131dce53a5eb58786421"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.27.4/smolvm-1.27.4-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/638831352"
 
 [[tools.aube]]
 version = "2.7.0"
@@ -65,14 +65,14 @@ signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.ym
 repository_ids = { repository = "1078762196" }
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.10.2"
+version = "18.10.4"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:9752e3d7f7bdab636e21495a6affc196e8ffc3a2dffaf529db2dd73d2bdea255"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.10.2/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/633971259"
+checksum = "sha256:7459333760ef0e265d5d40445ea459da3d18a10ef3ec4958302e1977b52c8a2b"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.10.4/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/638050891"
 
 [[tools."github:edden27/dog"]]
 version = "0.1.1"
@@ -148,14 +148,14 @@ url = "https://github.com/zjrosen/perles/releases/download/v0.8.97/perles_0.8.97
 url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/602045928"
 
 [[tools.herdr]]
-version = "0.9.3"
+version = "0.9.4"
 backend = "aqua:herdrdev/herdr"
 specifiers = ["latest"]
 
 [tools.herdr."platforms.macos-arm64"]
-checksum = "sha256:5173a3e0ae42d5d1ab7ebfa5d5e6329f7c3d23f8e1a3677c7ce3231da2884157"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.9.3/herdr-macos-aarch64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/599036381"
+checksum = "sha256:ea20bfff9cb8c83a996081c926e6ff9370de8e543baa859bca48d19175d895ff"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.9.4/herdr-macos-aarch64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/637474389"
 
 [[tools."nix:pkl-lsp"]]
 version = "0.8.0"
@@ -163,8 +163,8 @@ backend = "nix:pkl-lsp"
 specifiers = ["latest"]
 
 [[tools."npm:@opencode/cli"]]
-version = "2.0.27"
-aube = { path = ".mise/locks/npm-opencode-cli/2.0.27~009061c2", digest = "sha256:aad0cd46871ca868f21367bf6096a0b15ec87e61abb1b144a0f9602e7aa39b1a" }
+version = "2.0.28"
+aube = { path = ".mise/locks/npm-opencode-cli/2.0.28~009061c2", digest = "sha256:147f45b44996f419b7a6b518cbc3a0d92b037314de3076819c6b8b76eae33338" }
 backend = "npm:@opencode/cli"
 specifiers = ["latest"]
 
@@ -182,14 +182,14 @@ url = "https://github.com/anomalyco/opencode/releases/download/v1.19.0/opencode-
 url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/629459345"
 
 [[tools.pi]]
-version = "1.1.0"
+version = "1.2.0"
 backend = "aqua:earendil-works/pi"
 specifiers = ["latest"]
 
 [tools.pi."platforms.macos-arm64"]
-checksum = "sha256:3455b13de35c15a5893cdebc922678199e90a7ce99b06cbc23f37860e90d63c7"
-url = "https://github.com/earendil-works/pi/releases/download/v1.1.0/pi-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/619962801"
+checksum = "sha256:abddf7688b4b6781d9113f63cd578e3c01dcdb87e71f66e7ec1c9ec6c76178d1"
+url = "https://github.com/earendil-works/pi/releases/download/v1.2.0/pi-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/635209981"
 
 [[tools.television]]
 version = "0.15.9"
