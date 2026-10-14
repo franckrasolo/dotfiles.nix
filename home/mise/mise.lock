@@ -3,14 +3,14 @@
 lockfile_version = 3
 
 [[tools."aqua:Gaurav-Gosain/tuios"]]
-version = "0.9.2"
+version = "0.9.3"
 backend = "aqua:Gaurav-Gosain/tuios"
 specifiers = ["latest"]
 
 [tools."aqua:Gaurav-Gosain/tuios"."platforms.macos-arm64"]
-checksum = "sha256:dbd6bfc205d4852c870db2fd0c7031b03eaa83a941979abadc8ff526aed90819"
-url = "https://github.com/Gaurav-Gosain/tuios/releases/download/v0.9.2/tuios_0.9.2_Darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/Gaurav-Gosain/tuios/releases/assets/624362988"
+checksum = "sha256:b7cd721f5542b7adb423091602f44b56229cd5b915a376d9dcd65841890da2fb"
+url = "https://github.com/Gaurav-Gosain/tuios/releases/download/v0.9.3/tuios_0.9.3_Darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/Gaurav-Gosain/tuios/releases/assets/640867876"
 
 [[tools."aqua:gastownhall/beads"]]
 version = "1.3.1"
@@ -24,14 +24,14 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/602046
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.27.4"
+version = "1.28.0"
 backend = "aqua:smol-machines/smolvm"
 specifiers = ["latest"]
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:4c4940f5c4631ef3aff82b6da6f7f99befd3e216fdf4131dce53a5eb58786421"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.27.4/smolvm-1.27.4-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/638831352"
+checksum = "sha256:1b8173b697742154bd50e1121177d4f7db0f87c10210f4c9c557e762967fde62"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.28.0/smolvm-1.28.0-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/641308800"
 
 [[tools.aube]]
 version = "2.7.0"
@@ -148,14 +148,14 @@ url = "https://github.com/zjrosen/perles/releases/download/v0.8.97/perles_0.8.97
 url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/602045928"
 
 [[tools.herdr]]
-version = "0.9.4"
+version = "0.9.5"
 backend = "aqua:herdrdev/herdr"
 specifiers = ["latest"]
 
 [tools.herdr."platforms.macos-arm64"]
-checksum = "sha256:ea20bfff9cb8c83a996081c926e6ff9370de8e543baa859bca48d19175d895ff"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.9.4/herdr-macos-aarch64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/637474389"
+checksum = "sha256:fb77c2232a05a8035421382c894392f4174e4e38a18e48af3dd0290157c3a7e2"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.9.5/herdr-macos-aarch64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/640898230"
 
 [[tools."nix:pkl-lsp"]]
 version = "0.8.0"
@@ -163,8 +163,8 @@ backend = "nix:pkl-lsp"
 specifiers = ["latest"]
 
 [[tools."npm:@opencode/cli"]]
-version = "2.0.28"
-aube = { path = ".mise/locks/npm-opencode-cli/2.0.28~009061c2", digest = "sha256:147f45b44996f419b7a6b518cbc3a0d92b037314de3076819c6b8b76eae33338" }
+version = "2.0.29"
+aube = { path = ".mise/locks/npm-opencode-cli/2.0.29~009061c2", digest = "sha256:3253348e583172c4065f5ad49e5f8bd3f5409401d739595e62997511aed46f7f" }
 backend = "npm:@opencode/cli"
 specifiers = ["latest"]
 
@@ -202,15 +202,14 @@ url = "https://github.com/alexpasmantier/television/releases/download/0.15.9/tv-
 url_api = "https://api.github.com/repos/alexpasmantier/television/releases/assets/447568866"
 
 [[tools.usage]]
-version = "6.12.1"
+version = "7.0.0"
 backend = "packslip:github.com/jdx/usage"
 specifiers = ["latest"]
 
 [tools.usage."platforms.macos-arm64"]
-checksum = "sha256:1f01fb6abe27e5e510778568ae8604720d42986bbeee9ac8cda52c659b84914f"
-url = "https://github.com/jdx/usage/releases/download/v6.12.1/usage-universal-apple-darwin.tar.gz"
+checksum = "sha256:0ff91b37cef4204326708a0b286722e175a9c25614a44c2ff1f887112fa8aea6"
+url = "https://github.com/jdx/usage/releases/download/v7.0.0/usage-universal-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
-repository_ids = { repository = "677629099" }
 
 [[tools.worktrunk]]
 version = "0.80.0"
