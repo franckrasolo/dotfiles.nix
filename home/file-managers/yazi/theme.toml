@@ -1,3 +1,6 @@
+#TODO: enable schema whenever it is updated/fixed
+##:schema https://yazi-rs.github.io/schemas/theme.json
+
 # source: https://github.com/catppuccin/yazi/blob/main/themes/mocha.toml
 [mgr]
 cwd = { fg = "#94e2d5" }
