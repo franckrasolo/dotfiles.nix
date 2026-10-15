@@ -30,6 +30,11 @@
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
 
+    tree-sitter-lust = {
+      url = "github:ArchangelJTW/lust-lang?dir=tree-sitter-lust";
+      flake = false;
+    };
+
     tree-sitter-pkl = {
       url = "github:apple/tree-sitter-pkl";
       flake = false;
@@ -51,6 +56,32 @@
           ];
         };
 
+        # The upstream repo ships only grammar.js; the tree-sitter CLI needs the
+        # generated src/ (grammar.json, parser.c) to load the language.
+        tree-sitter-lust-repo = prev.stdenv.mkDerivation {
+          pname = "tree-sitter-lust";
+          version = "0.1.0";
+          src = inputs.tree-sitter-lust;
+
+          # `tree-sitter generate` runs grammar.js through node.
+          nativeBuildInputs = [ prev.nodejs prev.tree-sitter ];
+
+          dontConfigure = true;
+
+          buildPhase = ''
+            runHook preBuild
+            export HOME=$TMPDIR
+            tree-sitter generate
+            runHook postBuild
+          '';
+
+          installPhase = ''
+            runHook preInstall
+            mkdir -p $out
+            cp -r . $out
+            runHook postInstall
+          '';
+        };
         tree-sitter-pkl-repo = inputs.tree-sitter-pkl;
       };
       # makes "pkgs.unstable" available in configuration.nix

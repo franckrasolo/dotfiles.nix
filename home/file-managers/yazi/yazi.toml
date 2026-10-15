@@ -19,7 +19,7 @@ run = "duckdb"
 
 [[plugin.prepend_previewers]]
 url = "**/*.lust"
-run = 'faster-piper -- bat --color=always --style=plain "$1"'
+run = 'faster-piper -- tree-sitter highlight "$1"'
 
 [[plugin.prepend_previewers]]
 url = "**/*.md"
