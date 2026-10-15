@@ -18,6 +18,10 @@ url = "**/*.{csv,tsv,xlsx}"
 run = "duckdb"
 
 [[plugin.prepend_previewers]]
+url = "**/*.lust"
+run = 'faster-piper -- bat --color=always --style=plain "$1"'
+
+[[plugin.prepend_previewers]]
 url = "**/*.md"
 run = 'faster-piper -- leaf --inline ansi --width 120 "$1"'
 

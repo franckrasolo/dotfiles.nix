@@ -25,6 +25,7 @@ in
     config = {
       map-syntax = [
         "*{j,J}ustfile*:Just"
+        "*.lust:Lua"
         "{Opkgfile,PklProject}:Pkl"
         "*mise*.lock:TOML"
         "*tmux*.conf:Tmux conf"
