@@ -11,6 +11,7 @@ in
     enableZshIntegration = true;
     package = yazi;
     plugins = with yaziPlugins; {
+      duckdb.package = duckdb;
       faster-piper.package = callPackage ./faster-piper.nix {};
       lazygit.package = lazygit;
       zoom.package = zoom;
@@ -18,6 +19,7 @@ in
   };
 
   xdg.configFile = {
+    "yazi/init.lua".source = mkOutOfStoreSymlink "init.lua";
     "yazi/keymap.toml".source = mkOutOfStoreSymlink "keymap.toml";
     "yazi/theme.toml".source = mkOutOfStoreSymlink "theme.toml";
     "yazi/yazi.toml".source = mkOutOfStoreSymlink "yazi.toml";

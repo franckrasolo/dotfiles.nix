@@ -6,6 +6,16 @@ on   = [ "g", "l" ]
 run  = "plugin lazygit"
 
 [[mgr.prepend_keymap]]
+desc = "Scroll one column to the left"
+on = "<C-h>"
+run  = "plugin duckdb -1"
+
+[[mgr.prepend_keymap]]
+desc = "Scroll one column to the right"
+on = "<C-l>"
+run  = "plugin duckdb +1"
+
+[[mgr.prepend_keymap]]
 on   = "="
 run  = "plugin zoom 1"
 desc = "Zoom in hovered file"

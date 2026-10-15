@@ -1,4 +1,5 @@
 [tools]
+duckdb = "latest"
 go = "latest"
 kotlin = "latest"
 uv = "latest"

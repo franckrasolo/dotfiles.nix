@@ -9,6 +9,14 @@ sort_sensitive = true
 max_width = 6000
 max_height = 4000
 
+[[plugin.prepend_preloaders]]
+url = "**/*.{csv,tsv,xlsx}"
+run = "duckdb"
+
+[[plugin.prepend_previewers]]
+url = "**/*.{csv,tsv,xlsx}"
+run = "duckdb"
+
 [[plugin.prepend_previewers]]
 url = "**/*.md"
 run = 'faster-piper -- leaf --inline ansi --width 120 "$1"'
