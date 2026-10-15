@@ -24,14 +24,14 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/602046
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.28.0"
+version = "1.28.1"
 backend = "aqua:smol-machines/smolvm"
 specifiers = ["latest"]
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:1b8173b697742154bd50e1121177d4f7db0f87c10210f4c9c557e762967fde62"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.28.0/smolvm-1.28.0-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/641308800"
+checksum = "sha256:ef1147b798791b564b44bbaa69783df81bedcd151fe620a25be42b5290b51727"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.28.1/smolvm-1.28.1-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/641960127"
 
 [[tools.aube]]
 version = "2.7.0"
@@ -65,14 +65,14 @@ signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.ym
 repository_ids = { repository = "1078762196" }
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.10.4"
+version = "18.11.0"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:7459333760ef0e265d5d40445ea459da3d18a10ef3ec4958302e1977b52c8a2b"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.10.4/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/638050891"
+checksum = "sha256:85fe6ab9aec55a794d96086021136495f7613d6b1c8f2b08c05840d68233716a"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.11.0/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/641806662"
 
 [[tools."github:edden27/dog"]]
 version = "0.1.1"
@@ -106,24 +106,25 @@ url = "https://github.com/remotemobprogramming/mob/releases/download/5.4.2/mob_5
 url_api = "https://api.github.com/repos/remotemobprogramming/mob/releases/assets/346269527"
 
 [[tools."github:rivolink/leaf"]]
-version = "1.29.0"
+version = "1.29.1"
 backend = "github:rivolink/leaf"
 specifiers = ["latest"]
 
 [tools."github:rivolink/leaf"."platforms.macos-arm64"]
-checksum = "sha256:a04c5428a207b765d36b6164464671c8b90fefb097e1bb182c23ae6faa0480f3"
-url = "https://github.com/RivoLink/leaf/releases/download/1.29.0/leaf-macos-arm64"
-url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/631717851"
+checksum = "sha256:c35a30d42600cc9574b44a39ed71fcf382f8513bf58ceb6cd11b9980b49f130c"
+url = "https://github.com/RivoLink/leaf/releases/download/1.29.1/leaf-macos-arm64"
+url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/641708748"
 
 [[tools."github:vladkens/macmon"]]
-version = "0.9.0"
+version = "0.10.0"
 backend = "github:vladkens/macmon"
 specifiers = ["latest"]
 
 [tools."github:vladkens/macmon"."platforms.macos-arm64"]
-checksum = "sha256:539d8a39dc4c3823d68410de1c270289790826d983b005b91b2a4441008108bb"
-url = "https://github.com/vladkens/macmon/releases/download/v0.9.0/macmon-v0.9.0.tar.gz"
-url_api = "https://api.github.com/repos/vladkens/macmon/releases/assets/619724766"
+checksum = "sha256:0ccff60b7bf67bcb9e09cc8f804656a1cafa7eeae7297ee83d10e460ead7d43d"
+url = "https://github.com/vladkens/macmon/releases/download/v0.10.0/macmon-v0.10.0.tar.gz"
+url_api = "https://api.github.com/repos/vladkens/macmon/releases/assets/641677170"
+provenance = "github-attestations"
 
 [[tools."github:zeroclaw-labs/zeroclaw"]]
 version = "0.8.5"
@@ -202,13 +203,13 @@ url = "https://github.com/alexpasmantier/television/releases/download/0.15.9/tv-
 url_api = "https://api.github.com/repos/alexpasmantier/television/releases/assets/447568866"
 
 [[tools.usage]]
-version = "7.0.0"
+version = "7.0.1"
 backend = "packslip:github.com/jdx/usage"
 specifiers = ["latest"]
 
 [tools.usage."platforms.macos-arm64"]
-checksum = "sha256:0ff91b37cef4204326708a0b286722e175a9c25614a44c2ff1f887112fa8aea6"
-url = "https://github.com/jdx/usage/releases/download/v7.0.0/usage-universal-apple-darwin.tar.gz"
+checksum = "sha256:0d5c3a199c6fab5ba33e84e2bfb0fa82c937bf851aa03d07693d4eae800ecdc8"
+url = "https://github.com/jdx/usage/releases/download/v7.0.1/usage-universal-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
 
 [[tools.worktrunk]]

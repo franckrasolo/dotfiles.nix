@@ -59,7 +59,7 @@ backend = "npm:skills"
 specifiers = ["latest"]
 
 [[tools."pypi:cisco-ai-skill-scanner"]]
-version = "2.2.2"
+version = "2.3.0"
 backend = "pypi:cisco-ai-skill-scanner"
 specifiers = ["latest"]
 
