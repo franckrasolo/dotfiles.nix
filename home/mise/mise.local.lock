@@ -13,13 +13,13 @@ url = "https://github.com/duckdb/duckdb/releases/download/v1.5.6/duckdb_cli-osx-
 url_api = "https://api.github.com/repos/duckdb/duckdb/releases/assets/595495619"
 
 [[tools.go]]
-version = "1.27.2"
+version = "1.27.3"
 backend = "core:go"
 specifiers = ["latest"]
 
 [tools.go."platforms.macos-arm64"]
-checksum = "sha256:76812b213b1b2302c978d28fa52fa92d541704b9e7d9d5db8002c50e4018c4c5"
-url = "https://dl.google.com/go/go1.27.2.darwin-arm64.tar.gz"
+checksum = "sha256:dd3908cf20959d798c1e06ebe5b72213f0505ce01373b40ce3110975a6cd99c2"
+url = "https://dl.google.com/go/go1.27.3.darwin-arm64.tar.gz"
 
 [[tools.java]]
 version = "temurin-25.0.4+7.0.LTS"
@@ -53,8 +53,8 @@ checksum = "sha256:6a9724d9b50a5f22b4816cded441b5a8d9ddae546191a5e5b7efa5a5e2ee2
 url = "https://nodejs.org/dist/v24.22.0/node-v24.22.0-darwin-arm64.tar.gz"
 
 [[tools."npm:skills"]]
-version = "1.7.2"
-aube = { path = ".mise/locks/mise.local/npm-skills/1.7.2", digest = "sha256:40fa4e04bc830080478cf881307d5497a093a4e2c34835d41dbad624877a6042" }
+version = "1.7.4"
+aube = { path = ".mise/locks/mise.local/npm-skills/1.7.4", digest = "sha256:0fc828a5def0f23c2336c3e5094fc52f74b3b73e8f86a28c338a63c4324b902b" }
 backend = "npm:skills"
 specifiers = ["latest"]
 
@@ -75,21 +75,21 @@ specifiers = ["latest"]
 uvx_args = "--prerelease allow"
 
 [[tools."pypi:termaid"]]
-version = "0.9.0"
+version = "0.9.1"
 backend = "pypi:termaid"
 specifiers = ["latest"]
-uv = { path = ".mise/locks/mise.local/pypi-termaid/0.9.0~53f1461d", digest = "sha256:c3c308441983e9f327ac862203a58bd48891814bfaaeee117bf3e5f02fc9511d" }
+uv = { path = ".mise/locks/mise.local/pypi-termaid/0.9.1~53f1461d", digest = "sha256:a4a4c72c9a95cd6280e4eac071671f6bac0c3fdc02a75cd9eeb1bc04d260ba13" }
 
 [tools."pypi:termaid".options]
 extras = "rich,tui"
 
 [[tools.uv]]
-version = "0.13.1"
+version = "0.13.3"
 backend = "aqua:astral-sh/uv"
 specifiers = ["latest"]
 
 [tools.uv."platforms.macos-arm64"]
-checksum = "sha256:cfe454573412ff7380d15fc7dae5997ab53ffce72fce0a78e91ddbc84001acd2"
-url = "https://github.com/astral-sh/uv/releases/download/0.13.1/uv-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/639312976"
+checksum = "sha256:bf1e4fb6f5f5079a2902ad3f3a9e2d337575b226a1378f2449d8404353650608"
+url = "https://github.com/astral-sh/uv/releases/download/0.13.3/uv-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/657907636"
 provenance = "github-attestations"

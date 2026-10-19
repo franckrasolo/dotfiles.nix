@@ -1,8 +1,9 @@
 version = 1
-revision = 3
+revision = 5
 requires-python = ">=3.9"
 resolution-markers = [
-    "python_full_version >= '3.10'",
+    "python_full_version >= '3.11'",
+    "python_full_version == '3.10.*'",
     "python_full_version < '3.10'",
 ]
 
@@ -26,7 +27,8 @@ name = "linkify-it-py"
 version = "2.2.0"
 source = { registry = "https://pypi.org/simple/" }
 resolution-markers = [
-    "python_full_version >= '3.10'",
+    "python_full_version >= '3.11'",
+    "python_full_version == '3.10.*'",
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/45/98/7a1a5f31fd5c7ba93e963b168e244b8e3dd705b3d2a718e3c3307583bf57/linkify_it_py-2.2.0.tar.gz", hash = "sha256:907acd2d17ac1fbb9ddb62c8957ccbd6158cac602231a15c3b0cd1e215f03cee", size = 32939, upload-time = "2026-08-29T07:07:08.305Z" }
 wheels = [
@@ -58,7 +60,8 @@ name = "markdown-it-py"
 version = "4.2.0"
 source = { registry = "https://pypi.org/simple/" }
 resolution-markers = [
-    "python_full_version >= '3.10'",
+    "python_full_version >= '3.11'",
+    "python_full_version == '3.10.*'",
 ]
 dependencies = [
     { name = "mdurl" },
@@ -93,7 +96,8 @@ name = "mdit-py-plugins"
 version = "0.6.1"
 source = { registry = "https://pypi.org/simple/" }
 resolution-markers = [
-    "python_full_version >= '3.10'",
+    "python_full_version >= '3.11'",
+    "python_full_version == '3.10.*'",
 ]
 dependencies = [
     { name = "markdown-it-py", version = "4.2.0", source = { registry = "https://pypi.org/simple/" } },
@@ -121,7 +125,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "termaid", extras = ["rich", "tui"], specifier = "==0.9.0" }]
+requires-dist = [{ name = "termaid", extras = ["rich", "tui"], specifier = "==0.9.1" }]
 
 [[package]]
 name = "platformdirs"
@@ -137,14 +141,26 @@ wheels = [
 
 [[package]]
 name = "platformdirs"
-version = "4.11.11"
+version = "4.12.4"
 source = { registry = "https://pypi.org/simple/" }
 resolution-markers = [
-    "python_full_version >= '3.10'",
+    "python_full_version == '3.10.*'",
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/f8/13/f870dd0b42690138e4e37a76b5138e5690ed4365a77071bb092d59037da0/platformdirs-4.11.11.tar.gz", hash = "sha256:b0befe8a90759e4a9a8b9820d434ae226a6549063210b596da0038a7a05aede4", size = 39949, upload-time = "2026-09-19T01:18:47.259Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/90/a1/d5f9002a70298c64a789779077d8dd90c10aa1f47fe40c86802df874f2a6/platformdirs-4.12.4.tar.gz", hash = "sha256:63743c02414e755de4e31b8f68125c1407495b86c5a006e203c01ff8b9924250", size = 60010, upload-time = "2026-10-07T23:30:32.426Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/39/be/3ae887e84c38c4dd1c549cd5825adc93f48069a94fe1cb8ac52a9da16f15/platformdirs-4.11.11-py3-none-any.whl", hash = "sha256:972ea6b2b387155a536226a0750e46923d731d459a387c4a255c583ed2f64547", size = 24992, upload-time = "2026-09-19T01:18:45.825Z" },
+    { url = "https://files.pythonhosted.org/packages/f4/ba/223e00b885e960edd5d4b4d178c88acce019bd5b83786093681b8c393492/platformdirs-4.12.4-py3-none-any.whl", hash = "sha256:78bfb9db2a8471ed7eebe3c3c932da413911042994e699b384fbb4493fa872d7", size = 32596, upload-time = "2026-10-07T23:30:30.825Z" },
+]
+
+[[package]]
+name = "platformdirs"
+version = "4.13.5"
+source = { registry = "https://pypi.org/simple/" }
+resolution-markers = [
+    "python_full_version >= '3.11'",
+]
+sdist = { url = "https://files.pythonhosted.org/packages/58/e6/d0abbb256b44e6a05748c6942511ff67db8dbb068de0c35b24bf1b395b09/platformdirs-4.13.5.tar.gz", hash = "sha256:05831adf87d392760f4b5c3a0a95579ab5a10b18b9b9bd43680dcb47544788a0", size = 62362, upload-time = "2026-10-19T01:02:11.778Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/6c/8a/1d8cb3842909dc193a73835adedf412e32e18f8ffd59f43983949622fe6f/platformdirs-4.13.5-py3-none-any.whl", hash = "sha256:53d3ec4280b815c1e0b02edad7f9ee8fda1ba9c0865dd9c2e6e63849ce82fc1e", size = 32779, upload-time = "2026-10-19T01:02:10.17Z" },
 ]
 
 [[package]]
@@ -172,11 +188,11 @@ wheels = [
 
 [[package]]
 name = "termaid"
-version = "0.9.0"
+version = "0.9.1"
 source = { registry = "https://pypi.org/simple/" }
-sdist = { url = "https://files.pythonhosted.org/packages/3a/6f/56eab35efefdbee574ab59aa1b715781a89ae63888dbdd910c29e3435792/termaid-0.9.0.tar.gz", hash = "sha256:0b183f139638015b0a8d52be214050187ea1e944c2c6f86b404c675c9e3c7ad6", size = 438259, upload-time = "2026-09-15T15:54:01.716Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/6c/5c/e2bc0d27c30de7a55a1c7fac8326454353058385864c5cda4a0d9d19ec59/termaid-0.9.1.tar.gz", hash = "sha256:e81ccdf92590182873b5a6437d709264fd70611a91f130f14418e80fad4c7ecf", size = 444724, upload-time = "2026-10-18T00:27:50.279Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/42/7b/ecd6564a681a84cd9000f028752c1b9226c15df2d992af2af19ab3439dee/termaid-0.9.0-py3-none-any.whl", hash = "sha256:793287486983d1be8cc6bb826340206af0a07676b8c25c0683ef3afe9870ac9d", size = 166741, upload-time = "2026-09-15T15:54:00.043Z" },
+    { url = "https://files.pythonhosted.org/packages/15/fa/1ea6c5417c5f6f23d6dcb86d969eb30672242e14c83ca782a1b3299ea74a/termaid-0.9.1-py3-none-any.whl", hash = "sha256:c14454d3dbfb82eab817dc3b43cf478092002ed177bbc9b1da28a466af3791ee", size = 170485, upload-time = "2026-10-18T00:27:48.576Z" },
 ]
 
 [package.optional-dependencies]
@@ -197,7 +213,8 @@ dependencies = [
     { name = "mdit-py-plugins", version = "0.4.2", source = { registry = "https://pypi.org/simple/" }, marker = "python_full_version < '3.10'" },
     { name = "mdit-py-plugins", version = "0.6.1", source = { registry = "https://pypi.org/simple/" }, marker = "python_full_version >= '3.10'" },
     { name = "platformdirs", version = "4.4.0", source = { registry = "https://pypi.org/simple/" }, marker = "python_full_version < '3.10'" },
-    { name = "platformdirs", version = "4.11.11", source = { registry = "https://pypi.org/simple/" }, marker = "python_full_version >= '3.10'" },
+    { name = "platformdirs", version = "4.12.4", source = { registry = "https://pypi.org/simple/" }, marker = "python_full_version == '3.10.*'" },
+    { name = "platformdirs", version = "4.13.5", source = { registry = "https://pypi.org/simple/" }, marker = "python_full_version >= '3.11'" },
     { name = "pygments" },
     { name = "rich" },
     { name = "typing-extensions" },

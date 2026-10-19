@@ -3,14 +3,14 @@
 lockfile_version = 3
 
 [[tools."aqua:Gaurav-Gosain/tuios"]]
-version = "0.9.3"
+version = "0.10.1"
 backend = "aqua:Gaurav-Gosain/tuios"
 specifiers = ["latest"]
 
 [tools."aqua:Gaurav-Gosain/tuios"."platforms.macos-arm64"]
-checksum = "sha256:b7cd721f5542b7adb423091602f44b56229cd5b915a376d9dcd65841890da2fb"
-url = "https://github.com/Gaurav-Gosain/tuios/releases/download/v0.9.3/tuios_0.9.3_Darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/Gaurav-Gosain/tuios/releases/assets/640867876"
+checksum = "sha256:302e28404b619e54891466be51b9b24818692d1d52fcd227c0042de2dc6ed019"
+url = "https://github.com/Gaurav-Gosain/tuios/releases/download/v0.10.1/tuios_0.10.1_Darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/Gaurav-Gosain/tuios/releases/assets/651253361"
 
 [[tools."aqua:gastownhall/beads"]]
 version = "1.3.1"
@@ -24,25 +24,24 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/602046
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.28.1"
+version = "1.30.1"
 backend = "aqua:smol-machines/smolvm"
 specifiers = ["latest"]
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:ef1147b798791b564b44bbaa69783df81bedcd151fe620a25be42b5290b51727"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.28.1/smolvm-1.28.1-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/641960127"
+checksum = "sha256:e9bef623642a2e241434a24bd2f277fe7304c36c017c4d16772cbf94cd5f1cd3"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.30.1/smolvm-1.30.1-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/649946253"
 
 [[tools.aube]]
-version = "2.7.0"
+version = "2.8.0"
 backend = "packslip:github.com/aubepkg/aube"
 specifiers = ["latest"]
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:d67dcf1ea36629445595417ea6d7de9859fa723e422394cbbcd677d0164a5fa0"
-url = "https://github.com/aubepkg/aube/releases/download/v2.7.0/aube-v2.7.0-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:e131b822724760ea5c94bc59a2ae22eee8be2f866d1634c19f1fa10f62ae19e3"
+url = "https://github.com/aubepkg/aube/releases/download/v2.8.0/aube-v2.8.0-aarch64-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release.yml"
-repository_ids = { repository = "1214542327" }
 
 [[tools.bun]]
 version = "1.4.3"
@@ -54,25 +53,24 @@ checksum = "sha256:80afd4c069b46a6fa8f3ec520bebc750a7843e4a8d5b9583d29ad436c00a3
 url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.3/bun-darwin-aarch64.zip"
 
 [[tools.fnox]]
-version = "1.39.0"
+version = "1.41.0"
 backend = "packslip:github.com/jdx/fnox"
 specifiers = ["latest"]
 
 [tools.fnox."platforms.macos-arm64"]
-checksum = "sha256:5604196e7a0aafb949251be1ae088bf0bb524edbfb45748d1be0cbc46e98b8f5"
-url = "https://github.com/jdx/fnox/releases/download/v1.39.0/fnox-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:fb647bd423858750ae49d93a5a5b4fe797f3e870091c9632728d46ec3835082a"
+url = "https://github.com/jdx/fnox/releases/download/v1.41.0/fnox-aarch64-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
-repository_ids = { repository = "1078762196" }
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.11.1"
+version = "18.12.3"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:bdeb1626b99dc29d844146ea7940d367e61b1032b77e1c77880125f379ca2dda"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.11.1/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/644220412"
+checksum = "sha256:f2a657b3320fcafa23055053940a45b26a8d3254e1412a158838013d670d6ec5"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.12.3/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/657108328"
 
 [[tools."github:edden27/dog"]]
 version = "0.1.1"
@@ -127,26 +125,25 @@ url_api = "https://api.github.com/repos/vladkens/macmon/releases/assets/64167717
 provenance = "github-attestations"
 
 [[tools."github:zeroclaw-labs/zeroclaw"]]
-version = "0.8.5"
+version = "0.8.6"
 backend = "github:zeroclaw-labs/zeroclaw"
 specifiers = ["latest"]
 
 [tools."github:zeroclaw-labs/zeroclaw"."platforms.macos-arm64"]
-checksum = "sha256:7036f71b11e3dc8fd4de589b130b08faa792b9b2952e752d975c27bc572f7671"
-url = "https://github.com/zeroclaw-labs/zeroclaw/releases/download/v0.8.5/zeroclaw-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/zeroclaw-labs/zeroclaw/releases/assets/545517267"
+checksum = "sha256:7355af49b3bdee356198a5d434534dc20de62eb7f2646901e2a82a66296d1899"
+url = "https://github.com/zeroclaw-labs/zeroclaw/releases/download/v0.8.6/zeroclaw-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/zeroclaw-labs/zeroclaw/releases/assets/652661962"
 provenance = "github-attestations"
-provenance_verified = true
 
 [[tools."github:zjrosen/perles"]]
-version = "0.8.97"
+version = "0.8.98"
 backend = "github:zjrosen/perles"
 specifiers = ["latest"]
 
 [tools."github:zjrosen/perles"."platforms.macos-arm64"]
-checksum = "sha256:21da13d640aa1daf356ebd28f8766654dc40a482339e68d80a7bc32df86eb897"
-url = "https://github.com/zjrosen/perles/releases/download/v0.8.97/perles_0.8.97_darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/602045928"
+checksum = "sha256:ea944509bb9f0570209dca98d265d00471acd033d29e02ba0ed91989ea4f523c"
+url = "https://github.com/zjrosen/perles/releases/download/v0.8.98/perles_0.8.98_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/651404623"
 
 [[tools.herdr]]
 version = "0.9.5"
@@ -164,8 +161,8 @@ backend = "nix:pkl-lsp"
 specifiers = ["latest"]
 
 [[tools."npm:@opencode/cli"]]
-version = "2.0.29"
-aube = { path = ".mise/locks/npm-opencode-cli/2.0.29~009061c2", digest = "sha256:3253348e583172c4065f5ad49e5f8bd3f5409401d739595e62997511aed46f7f" }
+version = "2.1.0"
+aube = { path = ".mise/locks/npm-opencode-cli/2.1.0~009061c2", digest = "sha256:4b5b55eeadb6c2e6613fc3395ec846e56c7b37df045822a4a3228624c42f9cf7" }
 backend = "npm:@opencode/cli"
 specifiers = ["latest"]
 
@@ -173,24 +170,24 @@ specifiers = ["latest"]
 allow_builds = '["@opencode/cli"]'
 
 [[tools.opencode]]
-version = "1.19.0"
+version = "1.19.3"
 backend = "aqua:anomalyco/opencode"
 specifiers = ["latest"]
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:0d5f511948d6fbfedf9bb16753c0ac42613dcc8de75d9deb7e8d0cf584c8fba6"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.19.0/opencode-darwin-arm64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/629459345"
+checksum = "sha256:c2d0fecd27acf6e08be02c1f5d384614d07495587766bcc4a6bff3971749bb64"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.19.3/opencode-darwin-arm64.zip"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/647222664"
 
 [[tools.pi]]
-version = "1.2.0"
+version = "1.3.0"
 backend = "aqua:earendil-works/pi"
 specifiers = ["latest"]
 
 [tools.pi."platforms.macos-arm64"]
-checksum = "sha256:abddf7688b4b6781d9113f63cd578e3c01dcdb87e71f66e7ec1c9ec6c76178d1"
-url = "https://github.com/earendil-works/pi/releases/download/v1.2.0/pi-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/635209981"
+checksum = "sha256:1f9ae61cdeae04dd68caf1a1e8ab8ec9b292062f6ccb3252e0a9cbe93b5b16f1"
+url = "https://github.com/earendil-works/pi/releases/download/v1.3.0/pi-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/644855529"
 
 [[tools.television]]
 version = "0.15.9"
@@ -203,13 +200,13 @@ url = "https://github.com/alexpasmantier/television/releases/download/0.15.9/tv-
 url_api = "https://api.github.com/repos/alexpasmantier/television/releases/assets/447568866"
 
 [[tools.usage]]
-version = "7.0.1"
+version = "7.1.0"
 backend = "packslip:github.com/jdx/usage"
 specifiers = ["latest"]
 
 [tools.usage."platforms.macos-arm64"]
-checksum = "sha256:0d5c3a199c6fab5ba33e84e2bfb0fa82c937bf851aa03d07693d4eae800ecdc8"
-url = "https://github.com/jdx/usage/releases/download/v7.0.1/usage-universal-apple-darwin.tar.gz"
+checksum = "sha256:3e221dde416fd4909c8963c1ed9973b63633e89ce8b016d0f63af187cbaa875a"
+url = "https://github.com/jdx/usage/releases/download/v7.1.0/usage-universal-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
 
 [[tools.worktrunk]]
