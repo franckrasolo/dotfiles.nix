@@ -14,5 +14,8 @@
   "animations": true,
   "plugins": [
     "./herdr-opencode"
-  ]
+  ],
+  "prompt": {
+    "paste": "full"
+  }
 }
