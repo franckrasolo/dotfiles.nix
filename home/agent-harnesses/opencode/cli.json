@@ -12,5 +12,7 @@
     "thinking": "hide"
   },
   "animations": true,
-  "plugins": ["./herdr-opencode"]
+  "plugins": [
+    "./herdr-opencode"
+  ]
 }
