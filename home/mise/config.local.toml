@@ -1,5 +1,5 @@
 [tools]
-duckdb = "latest"
+"github:duckdb/duckdb" = "latest"
 go = "latest"
 kotlin = "latest"
 uv = "latest"

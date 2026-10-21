@@ -211,11 +211,10 @@ signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-c
 
 [[tools.worktrunk]]
 version = "0.81.0"
-backend = "aqua:max-sixty/worktrunk"
+backend = "packslip:github.com/max-sixty/worktrunk"
 specifiers = ["latest"]
 
 [tools.worktrunk."platforms.macos-arm64"]
 checksum = "sha256:b9c3f2f8071554cf88500466d65d35e18ad5edad5762479a1f14bcddd5ab7882"
 url = "https://github.com/max-sixty/worktrunk/releases/download/v0.81.0/worktrunk-aarch64-apple-darwin.tar.xz"
-url_api = "https://api.github.com/repos/max-sixty/worktrunk/releases/assets/660537046"
-provenance = "cosign"
+signer = "sigstore-oidc:https://github.com/max-sixty/worktrunk/.github/workflows/release.yaml"
