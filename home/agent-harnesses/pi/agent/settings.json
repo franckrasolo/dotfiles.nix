@@ -10,7 +10,8 @@
   "defaultProvider": "opencode-go",
   "defaultModel": "omen-alpha",
   "modelThinkingLevels": {
-    "opencode-go/omen-alpha": "high"
+    "opencode-go/omen-alpha": "high",
+    "opencode-go/deepseek-v4.1-flash": "low"
   },
   "quietStartup": true
 }
