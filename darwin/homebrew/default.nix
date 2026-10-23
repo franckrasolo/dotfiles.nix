@@ -7,6 +7,7 @@ let
     }
     "firefox"
     "opera"
+    "thebrowsercompany-dia"
     "zen"
   ];
 in
