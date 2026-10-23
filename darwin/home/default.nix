@@ -1,5 +1,6 @@
 { lib, pkgs, user, ... }:
 
+with pkgs.unstable;
 {
   imports = [
     ./aerospace
@@ -18,7 +19,11 @@
     "duti".source = ./duti;
   };
 
-  home.activation.prepareUserActivation = with pkgs.unstable; with lib;
+  home.packages = [
+    bbrew
+  ];
+
+  home.activation.prepareUserActivation = with lib;
     mkForce (hm.dag.entryAfter [ "linkGeneration" ] ''
       export PATH=/usr/bin:/bin:$PATH                 # for macOS open and launchctl
       export PATH=${coreutils}/bin:$PATH              # for cp and readlink used by home-manager
