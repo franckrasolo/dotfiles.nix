@@ -24,14 +24,14 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/602046
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.31.2"
+version = "1.31.4"
 backend = "aqua:smol-machines/smolvm"
 specifiers = ["latest"]
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:c48e722ac4ebb0ffbc062c22fa8401e3484c5f3b5d402b80a5b49e20671344d1"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.31.2/smolvm-1.31.2-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/664830598"
+checksum = "sha256:0bd4e8fa3923fe3721558dc9738ade7f844b0c133dc7921f0008cb45bf37c6a7"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.31.4/smolvm-1.31.4-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/668117126"
 
 [[tools.aube]]
 version = "2.8.1"
@@ -53,13 +53,13 @@ checksum = "sha256:c240d7f0ccb90c263a849fcdb09b7ee62630d921348ed6aafda86b9d577bc
 url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-darwin-aarch64.zip"
 
 [[tools.fnox]]
-version = "1.42.0"
+version = "1.42.1"
 backend = "packslip:github.com/jdx/fnox"
 specifiers = ["latest"]
 
 [tools.fnox."platforms.macos-arm64"]
-checksum = "sha256:347dbb53965757a891fb51baca210c9b3f24dad163f7c5b835e0e1992f9d83b4"
-url = "https://github.com/jdx/fnox/releases/download/v1.42.0/fnox-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:06cd00e066958d49d96ae137f2162b92cfb0a66e4eb5a9e6efad32a306bf8b95"
+url = "https://github.com/jdx/fnox/releases/download/v1.42.1/fnox-aarch64-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
 
 [[tools."github:can1357/oh-my-pi"]]
@@ -161,8 +161,8 @@ backend = "nix:pkl-lsp"
 specifiers = ["latest"]
 
 [[tools."npm:@opencode/cli"]]
-version = "2.1.3"
-aube = { path = ".mise/locks/npm-opencode-cli/2.1.3~009061c2", digest = "sha256:d7745dd3a75b33dfb09165f8eaa512c5496c7663368c7c59e9a61d0ad98aa911" }
+version = "2.1.4"
+aube = { path = ".mise/locks/npm-opencode-cli/2.1.4~009061c2", digest = "sha256:187c80319242b8bff1621fad922121343f6287db16e5902b35571868a17e9fe5" }
 backend = "npm:@opencode/cli"
 specifiers = ["latest"]
 
@@ -170,14 +170,14 @@ specifiers = ["latest"]
 allow_builds = '["@opencode/cli"]'
 
 [[tools.opencode]]
-version = "1.19.3"
+version = "1.19.4"
 backend = "aqua:anomalyco/opencode"
 specifiers = ["latest"]
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:c2d0fecd27acf6e08be02c1f5d384614d07495587766bcc4a6bff3971749bb64"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.19.3/opencode-darwin-arm64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/647222664"
+checksum = "sha256:c400a2f8c8ab7e99478a7f4dd1a466b57bf33888e520d85c55780a5464c4b689"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.19.4/opencode-darwin-arm64.zip"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/665836811"
 
 [[tools.pi]]
 version = "1.4.0"
