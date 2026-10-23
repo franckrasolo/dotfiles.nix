@@ -100,6 +100,7 @@ let
     markitdown
     mdq
     otree
+    rura
     xan
     yq-go
     tabiew

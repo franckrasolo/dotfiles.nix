@@ -23,7 +23,6 @@
       "bbrew"
       "elio"
       "headson"
-      "rura"
       "taproom"
     ];
 
