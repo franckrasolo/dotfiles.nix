@@ -1,3 +1,15 @@
+let
+  internetBrowsers = [
+    "arc"
+    {
+      name = "duckduckgo";
+      args = { appdir = "/Applications"; };
+    }
+    "firefox"
+    "opera"
+    "zen"
+  ];
+in
 {
   homebrew = {
     enable     = true;
@@ -39,7 +51,6 @@
         name = "amadeus-pro";
         args = { require_sha = false; }; # missing sha256 checksum
       }
-      "arc"
       "arcbox"
       {
         name = "audio-hijack";
@@ -58,15 +69,8 @@
       "deskpad"
       "discord"
       "dropbox"
-      {
-        name = "duckduckgo";
-        args = { appdir = "/Applications"; };
-      }
-      "firefox"
-      "fluidvoice"
-      "opera"
-      "zen"
       "expressvpn"
+      "fluidvoice"
       {
         name = "hammerspoon";
         args = { appdir = "/Applications"; };
@@ -137,7 +141,7 @@
         name = "zoom";
         args = { appdir = "/Applications"; };
       }
-    ];
+    ] ++ internetBrowsers;
 
     caskArgs = {
       appdir = "~/Applications/Homebrew Apps";
