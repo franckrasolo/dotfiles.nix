@@ -87,6 +87,7 @@
         name = "logi-options+";
         args = { require_sha = false; }; # missing sha256 checksum
       }
+      "mac-sai"
       "macshot"
       {
         name = "megacmd-app";
