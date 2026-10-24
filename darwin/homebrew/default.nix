@@ -1,5 +1,5 @@
 let
-  internetBrowsers = [
+  webBrowsers = [
     "arc"
     {
       name = "duckduckgo";
@@ -141,7 +141,7 @@ in
         name = "zoom";
         args = { appdir = "/Applications"; };
       }
-    ] ++ internetBrowsers;
+    ] ++ webBrowsers;
 
     caskArgs = {
       appdir = "~/Applications/Homebrew Apps";
