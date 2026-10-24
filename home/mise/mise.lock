@@ -13,34 +13,34 @@ url = "https://github.com/Gaurav-Gosain/tuios/releases/download/v0.10.1/tuios_0.
 url_api = "https://api.github.com/repos/Gaurav-Gosain/tuios/releases/assets/651253361"
 
 [[tools."aqua:gastownhall/beads"]]
-version = "1.3.1"
+version = "1.3.2"
 backend = "aqua:gastownhall/beads"
 specifiers = ["latest"]
 
 [tools."aqua:gastownhall/beads"."platforms.macos-arm64"]
-checksum = "sha256:508ba807996e2b9c992c538a6f405f2fc7d2e16cf8b4e5b0d1bf9fe860367007"
-url = "https://github.com/gastownhall/beads/releases/download/v1.3.1/beads_1.3.1_darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/602046065"
+checksum = "sha256:b29b44499d11944bb5cecdd60b49eaf1481f4c3fe031ab45a2df1a36dadb8445"
+url = "https://github.com/gastownhall/beads/releases/download/v1.3.2/beads_1.3.2_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/670855509"
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.31.4"
+version = "1.32.1"
 backend = "aqua:smol-machines/smolvm"
 specifiers = ["latest"]
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:0bd4e8fa3923fe3721558dc9738ade7f844b0c133dc7921f0008cb45bf37c6a7"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.31.4/smolvm-1.31.4-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/668117126"
+checksum = "sha256:ee11bfa9202c326713c44799f40b95cf819d36c117d25b9dd73363651b8a2618"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.32.1/smolvm-1.32.1-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/671254654"
 
 [[tools.aube]]
-version = "2.8.1"
+version = "2.8.2"
 backend = "packslip:github.com/aubepkg/aube"
 specifiers = ["latest"]
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:f5eca610159c38c5ab6d5766348305b2d391de436349c7abd49a967b289a895f"
-url = "https://github.com/aubepkg/aube/releases/download/v2.8.1/aube-v2.8.1-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:81a509aea6f0ef7339e173e0e6f0f44154fe2a49284a1942255dc5f09429e44b"
+url = "https://github.com/aubepkg/aube/releases/download/v2.8.2/aube-v2.8.2-aarch64-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release.yml"
 
 [[tools.bun]]
