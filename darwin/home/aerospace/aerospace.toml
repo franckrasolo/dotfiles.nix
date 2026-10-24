@@ -206,6 +206,11 @@ check-further-callbacks = true
 run = ['move-node-to-workspace 3']
 
 [[on-window-detected]]
+if.app-id = 'app.zen-browser.zen'
+check-further-callbacks = false
+run = ['move-node-to-workspace 3']
+
+[[on-window-detected]]
 if.app-id = 'org.mozilla.com.zen.browser'
 check-further-callbacks = false
 run = ['move-node-to-workspace 3']
