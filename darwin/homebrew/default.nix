@@ -5,7 +5,6 @@ let
       name = "duckduckgo";
       args = { appdir = "/Applications"; };
     }
-    "firefox"
     "opera"
     "zen"
   ];

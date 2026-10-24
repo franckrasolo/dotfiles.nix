@@ -196,11 +196,6 @@ check-further-callbacks = false
 run = ['move-node-to-workspace 3']
 
 [[on-window-detected]]
-if.app-id = 'org.mozilla.firefox'
-check-further-callbacks = false
-run = ['move-node-to-workspace 3']
-
-[[on-window-detected]]
 if.app-id = 'com.operasoftware.Opera'
 check-further-callbacks = false
 run = ['move-node-to-workspace 3']
