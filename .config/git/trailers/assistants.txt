@@ -12,7 +12,7 @@ Gemini 4 Argon <noreply@google.com>
 Grok 4.7 <noreply@x.ai>
 Hy3 <noreply@tencent.com>
 Hy4 Preview <noreply@tencent.com>
-Kimi K3 <noreply@moonshot.ai>
+Kimi K3.1 Pro <noreply@moonshot.ai>
 Jev <noreply@typesafe.ai>
 MiniMax M3 <noreply@minimax.io>
 Mistral Large 4 <noreply@mistral.ai>
