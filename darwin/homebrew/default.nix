@@ -1,6 +1,7 @@
 let
   webBrowsers = [
     "arc"
+    "crest-browser"
     {
       name = "duckduckgo";
       args = { appdir = "/Applications"; };
