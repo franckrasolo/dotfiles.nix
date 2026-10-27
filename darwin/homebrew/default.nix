@@ -26,9 +26,7 @@ in
     };
 
     taps = map (tap: { name = tap; trusted = true; }) [
-      "beadbox/cask"
       "martido/homebrew-graph"
-      "nikitabobko/tap"
     ];
 
     brews = [
@@ -44,7 +42,7 @@ in
         name = "1password";
         args = { appdir = "/Applications"; };
       }
-      "aerospace"
+      "nikitabobko/tap/aerospace"
       "alfred"
       "altersend"
       {
@@ -56,7 +54,7 @@ in
         name = "audio-hijack";
         args = { require_sha = false; }; # missing sha256 checksum
       }
-      "beadbox"
+      "beadbox/cask/beadbox"
       {
         name = "beeper";
         args = { require_sha = false; }; # missing sha256 checksum
