@@ -79,20 +79,12 @@ postinstall = """
 
 [tools.opencode]
 version = "latest"
-postinstall = """
-  opencode completion >| $XDG_CACHE_HOME/zsh/completions/_opencode.zsh
-  opencode plugin --force @dietrichgebert/ponytail
-"""
-
-[tools."npm:@opencode/cli"]
-version = "latest"
 allow_builds = ["@opencode/cli"]
 postinstall = """
   ln -sf ${XDG_CONFIG_HOME}/opencode ~/.config/
-  opencode2 --completions zsh \
-    | sed -e 's/#compdef opencode/#compdef opencode2/' \
-          -e 's/compdef _opencode opencode/compdef _opencode opencode2/' \
-    >| "$XDG_CACHE_HOME/zsh/completions/_opencode2.zsh"
+  opencode --completions zsh >| "$XDG_CACHE_HOME/zsh/completions/_opencode.zsh"
+
+  opencode plugin add @dietrichgebert/ponytail
 
   vendor="${XDG_CONFIG_HOME}/opencode/vendor"
   git sync $vendor https://github.com/f-steff/opencode-env-auth

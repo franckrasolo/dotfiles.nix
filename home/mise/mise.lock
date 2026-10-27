@@ -163,24 +163,14 @@ version = "0.8.0"
 backend = "nix:pkl-lsp"
 specifiers = ["latest"]
 
-[[tools."npm:@opencode/cli"]]
+[[tools.opencode]]
 version = "2.1.4"
-aube = { path = ".mise/locks/npm-opencode-cli/2.1.4~009061c2", digest = "sha256:187c80319242b8bff1621fad922121343f6287db16e5902b35571868a17e9fe5" }
+aube = { path = ".mise/locks/opencode/2.1.4~009061c2", digest = "sha256:187c80319242b8bff1621fad922121343f6287db16e5902b35571868a17e9fe5" }
 backend = "npm:@opencode/cli"
 specifiers = ["latest"]
 
-[tools."npm:@opencode/cli".options]
+[tools.opencode.options]
 allow_builds = '["@opencode/cli"]'
-
-[[tools.opencode]]
-version = "1.19.4"
-backend = "aqua:anomalyco/opencode"
-specifiers = ["latest"]
-
-[tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:c400a2f8c8ab7e99478a7f4dd1a466b57bf33888e520d85c55780a5464c4b689"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.19.4/opencode-darwin-arm64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/665836811"
 
 [[tools.pi]]
 version = "1.4.0"

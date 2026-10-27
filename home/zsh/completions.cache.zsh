@@ -35,10 +35,7 @@ _cache_completion leaf leaf --auto-complete zsh:dump
 _cache_completion limactl limactl completion zsh
 _cache_completion mise mise completion zsh
 _cache_completion omp zsh -c "omp completions zsh"
-_cache_completion opencode opencode completion
-_cache_completion opencode2 zsh -c "opencode2 --completions zsh \
-  | sed -e 's/#compdef opencode/#compdef opencode2/' \
-        -e 's/compdef _opencode opencode/compdef _opencode opencode2/'"
+_cache_completion opencode opencode --completions zsh
 _cache_completion pkl pkl shell-completion zsh
 _cache_completion smolvm smolvm completion zsh
 _cache_completion tuios tuios completion zsh
