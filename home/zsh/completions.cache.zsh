@@ -34,7 +34,7 @@ compdef k='kubectl'
 _cache_completion leaf leaf --auto-complete zsh:dump
 _cache_completion limactl limactl completion zsh
 _cache_completion mise mise completion zsh
-_cache_completion omp zsh -c "omp completions zsh"
+_cache_completion omp omp completions zsh
 _cache_completion opencode opencode --completions zsh
 _cache_completion pkl pkl shell-completion zsh
 _cache_completion smolvm smolvm completion zsh
