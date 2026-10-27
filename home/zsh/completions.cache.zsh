@@ -21,7 +21,7 @@ _cache_completion glab glab completion --shell zsh
 _cache_completion herdr herdr completion zsh
 
 _cache_completion container container --generate-completion-script zsh
-_cache_completion kiac completion zsh
+_cache_completion kiac kiac completion zsh
 _cache_completion k3d k3d completion zsh
 
 # source: https://michaelheap.com/kubectl-alias-autocomplete/
