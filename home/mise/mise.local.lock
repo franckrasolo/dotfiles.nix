@@ -67,7 +67,7 @@ specifiers = ["latest"]
 uvx_args = "--prerelease allow"
 
 [[tools."pypi:omnigent"]]
-version = "0.19.1"
+version = "0.20.0"
 backend = "pypi:omnigent"
 specifiers = ["latest"]
 
