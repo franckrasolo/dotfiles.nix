@@ -73,20 +73,8 @@ in
       (skipVerification (cask "logi-options+"))
       "mac-sai"
       "macshot"
-      {
-        name = "megacmd-app";
-        args = {
-          appdir = "/Applications";
-          require_sha = false; # missing sha256 checksum
-        };
-      }
-      {
-        name = "megasync";
-        args = {
-          appdir = "/Applications";
-          require_sha = false; # missing sha256 checksum
-        };
-      }
+      (systemApp (skipVerification (cask "megacmd-app")))
+      (systemApp (skipVerification (cask "megasync")))
       "obsidian"
       "onedrive"
       (systemApp (cask "orbstack"))
