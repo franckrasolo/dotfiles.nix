@@ -146,6 +146,11 @@ check-further-callbacks = true
 run = ['move-node-to-workspace 0']
 
 [[on-window-detected]]
+if.app-id = 'com.pauldavis.crest'
+check-further-callbacks = true
+run = ['move-node-to-workspace 0']
+
+[[on-window-detected]]
 if.app-id = 'io.raindrop.macapp'
 check-further-callbacks = true
 run = ['move-node-to-workspace 0']
