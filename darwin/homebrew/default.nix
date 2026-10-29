@@ -1,24 +1,22 @@
+{ lib, ... }:
+
 let
+  cask = name: { name = name; };
+
   # for casks that must be installed system-wide
-  systemApp = cask: {
-    name = cask;
-    args = {
-      appdir = "/Applications";
-    };
+  systemApp = cask: lib.recursiveUpdate cask {
+    args = { appdir = "/Applications"; };
   };
 
   # for casks missing a sha256 checksum
-  skipVerification = cask: {
-    name = cask;
-    args = {
-      require_sha = false;
-    };
+  skipVerification = cask: lib.recursiveUpdate cask {
+    args = { require_sha = false; };
   };
 
   webBrowsers = [
     "arc"
     "crest-browser"
-    (systemApp "duckduckgo")
+    (systemApp (cask "duckduckgo"))
     "opera"
     "zen"
   ];
@@ -51,28 +49,28 @@ in
     casks = [
       # 1Password warns that it will neither fill nor save logins
       # in browsers when it isn't installed under /Applications
-      (systemApp "1password")
+      (systemApp (cask "1password"))
       "nikitabobko/tap/aerospace"
       "alfred"
       "altersend"
-      (skipVerification "amadeus-pro")
+      (skipVerification (cask "amadeus-pro"))
       "arcbox"
-      (skipVerification "audio-hijack")
+      (skipVerification (cask "audio-hijack"))
       "beadbox/cask/beadbox"
-      (skipVerification "beeper")
+      (skipVerification (cask "beeper"))
       "bunch"
-      (skipVerification "daisydisk")
+      (skipVerification (cask "daisydisk"))
       "deskpad"
       "discord"
       "dropbox"
       "expressvpn"
       "fluidvoice"
-      (systemApp "hammerspoon")
+      (systemApp (cask "hammerspoon"))
       "jetbrains-toolbox"
-      (systemApp "lm-studio")
+      (systemApp (cask "lm-studio"))
       "localsend"
-      (skipVerification "logitech-options")
-      (skipVerification "logi-options+")
+      (skipVerification (cask "logitech-options"))
+      (skipVerification (cask "logi-options+"))
       "mac-sai"
       "macshot"
       {
@@ -91,13 +89,13 @@ in
       }
       "obsidian"
       "onedrive"
-      (systemApp "orbstack")
+      (systemApp (cask "orbstack"))
       "raindropio"
       "recordly"
-      (systemApp "secretive")
+      (systemApp (cask "secretive"))
       "snapzy"
-      (skipVerification "speechify-voice-ai")
-      (skipVerification "spotify")
+      (skipVerification (cask "speechify-voice-ai"))
+      (skipVerification (cask "spotify"))
       "tailscale-app"
       "teamviewer"
       "telegram"
@@ -105,8 +103,8 @@ in
       "vlc"
       "vorssaint"
       "wezterm"
-      (systemApp "wispr-flow")
-      (systemApp "zoom")
+      (systemApp (cask "wispr-flow"))
+      (systemApp (cask "zoom"))
     ] ++ webBrowsers;
 
     caskArgs = {
