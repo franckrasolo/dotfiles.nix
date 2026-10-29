@@ -1,11 +1,16 @@
 let
+  # for casks that must be installed system-wide
+  systemApp = cask: {
+    name = cask;
+    args = {
+      appdir = "/Applications";
+    };
+  };
+
   webBrowsers = [
     "arc"
     "crest-browser"
-    {
-      name = "duckduckgo";
-      args = { appdir = "/Applications"; };
-    }
+    (systemApp "duckduckgo")
     "opera"
     "zen"
   ];
@@ -36,12 +41,9 @@ in
     ];
 
     casks = [
-      {
-        # 1Password warns that it will neither fill nor save logins
-        # in browsers when it isn't installed under /Applications
-        name = "1password";
-        args = { appdir = "/Applications"; };
-      }
+      # 1Password warns that it will neither fill nor save logins
+      # in browsers when it isn't installed under /Applications
+      (systemApp "1password")
       "nikitabobko/tap/aerospace"
       "alfred"
       "altersend"
@@ -69,15 +71,9 @@ in
       "dropbox"
       "expressvpn"
       "fluidvoice"
-      {
-        name = "hammerspoon";
-        args = { appdir = "/Applications"; };
-      }
+      (systemApp "hammerspoon")
       "jetbrains-toolbox"
-      {
-        name = "lm-studio";
-        args = { appdir = "/Applications"; };
-      }
+      (systemApp "lm-studio")
       "localsend"
       {
         name = "logitech-options";
@@ -105,16 +101,10 @@ in
       }
       "obsidian"
       "onedrive"
-      {
-        name = "orbstack";
-        args = { appdir = "/Applications"; };
-      }
+      (systemApp "orbstack")
       "raindropio"
       "recordly"
-      {
-        name = "secretive";
-        args = { appdir = "/Applications"; };
-      }
+      (systemApp "secretive")
       "snapzy"
       {
         name = "speechify-voice-ai";
@@ -131,15 +121,8 @@ in
       "vlc"
       "vorssaint"
       "wezterm"
-      {
-        name = "wispr-flow";
-        args = { appdir = "/Applications"; };
-      }
-      {
-        # Zoom must also be installed under /Applications
-        name = "zoom";
-        args = { appdir = "/Applications"; };
-      }
+      (systemApp "wispr-flow")
+      (systemApp "zoom")
     ] ++ webBrowsers;
 
     caskArgs = {
