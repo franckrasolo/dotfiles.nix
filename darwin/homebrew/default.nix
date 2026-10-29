@@ -23,17 +23,17 @@ let
 in
 {
   homebrew = {
-    enable     = true;
+    enable = true;
 
     global = {
       autoUpdate = true;
-      brewfile   = true;
+      brewfile = true;
     };
 
     onActivation = {
       autoUpdate = true;
-      upgrade    = true;
-      cleanup    = "zap";
+      upgrade = true;
+      cleanup = "zap";
     };
 
     taps = map (tap: { name = tap; trusted = true; }) [
