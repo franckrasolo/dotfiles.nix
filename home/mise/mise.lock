@@ -54,25 +54,25 @@ checksum = "sha256:c240d7f0ccb90c263a849fcdb09b7ee62630d921348ed6aafda86b9d577bc
 url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-darwin-aarch64.zip"
 
 [[tools.fnox]]
-version = "1.44.0"
+version = "1.45.0"
 backend = "packslip:github.com/jdx/fnox"
 specifiers = ["latest"]
 
 [tools.fnox."platforms.macos-arm64"]
-checksum = "sha256:8f701970a3a52d3050901650ae8a8c53fd2284fcb8efc9f41cc9b56e88902dd5"
-url = "https://github.com/jdx/fnox/releases/download/v1.44.0/fnox-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:e851212b2f7319ab88ab7784e008bfb091ccee91f2696a328684fc8ce80e4263"
+url = "https://github.com/jdx/fnox/releases/download/v1.45.0/fnox-aarch64-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
 repository_ids = { repository = "1078762196" }
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.13.3"
+version = "18.14.0"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:b449d0d0d779a0b2e655f0ce41d5c414a253de71c67b3affc30a6528fc967314"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.13.3/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/684983857"
+checksum = "sha256:608843959ab34295d52460dd09dd7d548b6c903c08a83c67954c2d4c36fd1f5a"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.14.0/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/689493880"
 
 [[tools."github:edden27/dog"]]
 version = "0.1.1"
@@ -164,8 +164,8 @@ backend = "nix:pkl-lsp"
 specifiers = ["latest"]
 
 [[tools.opencode]]
-version = "2.2.1"
-aube = { path = "locks/opencode/2.2.1~009061c2", digest = "sha256:12e680d2985f65e80cbe830d185bfdc3bf6a32e122ad7f00dcd7431e9583085b" }
+version = "2.2.2"
+aube = { path = "locks/opencode/2.2.2~009061c2", digest = "sha256:e3d9cd446ea72db55e2d3152396713f7ca73637c2efd85db91275db86666a4fa" }
 backend = "npm:@opencode/cli"
 specifiers = ["latest"]
 
