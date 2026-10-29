@@ -1,0 +1,29 @@
+[[keybindings.command]]
+key = "prefix+ctrl+v"
+type = "pane"
+command = "nvim"
+description = "Neovim"
+
+[[keybindings.command]]
+key = "prefix+ctrl+n"
+type = "pane"
+command = "fnox exec -- opencode"
+description = "OpenCode"
+
+[[keybindings.command]]
+key = "prefix+ctrl+m"
+type = "pane"
+command = "fnox exec -- omp"
+description = "OMP"
+
+[[keybindings.command]]
+key = "prefix+ctrl+p"
+type = "pane"
+command = "fnox exec -- pi"
+description = "Pi"
+
+[[keybindings.command]]
+key = "prefix+ctrl+k"
+type = "pane"
+command = "KUBECONFIG=${TUIOS_ACTIVE_PANE_CWD}/.config/kubeconfig.yaml k9s"
+description = "k9s"

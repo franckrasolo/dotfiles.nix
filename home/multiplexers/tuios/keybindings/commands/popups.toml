@@ -1,0 +1,67 @@
+[[keybindings.command]]
+key = "prefix+ctrl+c"
+type = "popup"
+command = "tuicr"
+description = "Code Review"
+width = "85%"
+height = "85%"
+
+[[keybindings.command]]
+key = "prefix+ctrl+d"
+type = "popup"
+command = "git diff | diffnav --watch"
+description = "DiffNav"
+width = "85%"
+height = "85%"
+
+[[keybindings.command]]
+key = "prefix+ctrl+g"
+type = "popup"
+command = "lazygit"
+description = "LazyGit"
+width = "85%"
+height = "85%"
+
+[[keybindings.command]]
+key = "prefix+ctrl+y"
+type = "popup"
+command = "yazi"
+description = "Yazi"
+width = "85%"
+height = "85%"
+
+[[keybindings.command]]
+key = "prefix+ctrl+o"
+type = "popup"
+command = "btm"
+description = "bottom"
+width = "85%"
+height = "85%"
+
+[[keybindings.command]]
+key = "prefix+ctrl+h"
+type = "popup"
+command = "htop"
+description = "htop"
+width = "85%"
+height = "85%"
+
+[[keybindings.command]]
+key = "prefix+ctrl+r"
+type = "popup"
+command = "bbrew"
+description = "Bold Brew"
+
+[[keybindings.command]]
+key = "prefix+ctrl+t"
+type = "popup"
+command = "taproom"
+description = "Taproom"
+
+[[keybindings.command]]
+key = "prefix+ctrl+enter"
+type = "popup"
+command = "zsh"
+description = "terminal"
+width = "85%"
+height = "85%"

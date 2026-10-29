@@ -1,0 +1,115 @@
+# ============================================================================
+# APPEARANCE SETTINGS
+# ============================================================================
+# Many of these can be changed live from the in-app settings page
+# (open it with the leader key followed by ',').
+#
+# border_style: rounded, normal, thick, double, hidden, block, ascii,
+#               outer-half-block, inner-half-block
+# dockbar_position: bottom, top, hidden
+# window_title_position: bottom, top, hidden
+# window_button_style: pill, dots (macOS traffic lights)
+# window_button_position: right, left. Independent of the style; dots and
+#               left is the shipped pair, the macOS arrangement
+# theme: color theme name (e.g. dracula, nord); empty for terminal colors
+# click_to_type: single (a click on a pane starts typing in it), double
+#               (two clicks do), off (a click only focuses)
+# auto_enter_terminal_on_focus: off (Tab keeps cycling windows),
+#               targeted (numbered select and arrows start typing),
+#               all (every covered focus command, including Tab)
+# [appearance.scrollbar]: style = thin, track; thumb/track = a one-cell glyph
+#               (track also takes "none"); tint = border, muted, #RRGGBB
+# background: off (your terminal shows through), theme (the theme's
+#               background), or #RRGGBB, for every surface at once
+# pane_background, desktop_background, window_chrome_background,
+#               dock_background, [appearance.sidebar] background: the same
+#               values for one surface; empty follows background, and a
+#               colour a program or the chrome chose always wins
+# ============================================================================
+
+[appearance]
+border_style = "rounded"
+zen_mode = "disabled"
+links = "all"
+hide_window_buttons = true
+window_button_style = "pill"
+window_button_position = "left"
+hide_scrollbar = false
+scrollback_lines = 10000
+scroll_lines = 3
+right_click_opens_menu = true
+kitty_placeholders = "auto"
+auto_enter_terminal_on_focus = "off"
+click_to_type = "double"
+dockbar_position = "top"
+preferred_shell = ""
+motion = "full"
+modal_dim = 30
+whichkey_position = ""
+window_title_position = "top"
+hide_clock = false
+show_clock = true
+show_cpu = false
+show_ram = false
+theme = "ultra_dark"
+border_focused_color = ""
+border_unfocused_color = ""
+window_title_format = ""
+zoom_max_width = 0
+niri_reverse_scroll = false
+niri_scroll_cells = 8
+prefix_repeat_time = 500
+max_fps = 120
+dock_workspace_tab_format = ""
+dock_pill_caps = true
+glyphs = "unicode"
+gap = 0
+tiling_scheme = "alternate"
+master_ratio = 50
+scroll_column_width = 55
+scroll_column_max = 90
+zoom_size = 99
+panel_padding = 2
+clock_format = "15:04"
+dim_unfocused = 30
+dim_multifocus = true
+master_position = ""
+master_count = 0
+background = "off"
+pane_background = ""
+desktop_background = ""
+window_chrome_background = ""
+dock_background = ""
+
+[appearance.scrollbar]
+style = "track"
+thumb = ""
+track = ""
+tint = "quiet"
+
+[appearance.selection]
+bg = "#F9E2AF"
+fg = "#45475A"
+bold = true
+search_bg = "#FFADE5"
+search_fg = "#D40090"
+match_bg = "#D40090"
+match_fg = "#FFFFFF"
+cursor_bg = "#FF58C9"
+cursor_fg = "#FFFFFF"
+flash = false
+flash_ms = 420
+flash_style = "vertical"
+multi_format = "plain"
+
+[appearance.sidebar]
+enabled = false
+position = "right"
+width = 24
+workspaces = ""
+sections = "sessions,spacer:5,agents,spacer:5,terminals,spacer:5,files,spacer:5"
+folder_click = "navigate"
+editor = ""
+file_delete = "trash"
+background = ""
+agent_rest_fold = "1h"

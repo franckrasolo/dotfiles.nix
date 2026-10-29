@@ -1,0 +1,29 @@
+# ============================================================================
+# DOCK COMPONENTS
+# ============================================================================
+# The dock is three ordered lists of component names. Leave [dock] out
+# entirely and the bar draws what it always drew; write the lists to
+# reorder it, and omit a name to drop that segment.
+#
+#   [dock]
+#   left   = ["mode", "workspaces", "trail", "tape"]
+#   center = ["windows"]
+#   right  = ["notifications", "copy-help", "cpu", "ram", "clock", "session-controls"]
+#
+# A cell of your own is a command whose first line of stdout is the text:
+#
+#   [dock.custom.branch]
+#   command = "git branch --show-current"
+#   refresh = "event:after-focus-change"   # or once, push, or "30s"
+#
+# and then "custom/branch" in one of the lists above. A component that
+# fails is hidden rather than left showing a stale value;
+# `tuios list-dock-components` says which and why.
+# ============================================================================
+
+[dock]
+left = ["mode", "workspaces", "trail", "tape"]
+center = ["windows"]
+right = ["notifications", "copy-help", "cpu", "ram", "clock", "session-controls"]
+
+[dock.clock]

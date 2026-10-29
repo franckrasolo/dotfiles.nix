@@ -1,0 +1,47 @@
+[tape]
+autorun = "ask"
+auto_review = false
+
+[debug]
+show_key_events = false
+
+[screenshot]
+format = "png"
+directory = "~/Pictures/Screenshots/tuios"
+frame = "none"
+background = "auto"
+controls = "auto"
+title_format = "{title}"
+font_family = "Cascadia Code NF"
+font_file = ""
+scale = 2
+cursor = false
+
+[screensaver]
+enabled = true
+idle_minutes = 5
+effect = "rings"
+
+[spotlight]
+enabled = false
+follow = "mouse"
+radius = 10
+dim = 75
+edge = "hard"
+shake = false
+
+[hints]
+builtins = "all"
+patterns = []
+alphabet = "asdfghjkl"
+dim = 60
+all_panes = false
+
+[scratch]
+width = "80%"
+height = "80%"
+
+[pip]
+width = 40
+height = 12
+corner = "bottom-right"
