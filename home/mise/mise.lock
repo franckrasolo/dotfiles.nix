@@ -54,25 +54,25 @@ checksum = "sha256:c240d7f0ccb90c263a849fcdb09b7ee62630d921348ed6aafda86b9d577bc
 url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-darwin-aarch64.zip"
 
 [[tools.fnox]]
-version = "1.43.0"
+version = "1.44.0"
 backend = "packslip:github.com/jdx/fnox"
 specifiers = ["latest"]
 
 [tools.fnox."platforms.macos-arm64"]
-checksum = "sha256:34e69cd24a7605c00ee0e9edce39d8f32b6e68c857c05ad4bb376716c598e66d"
-url = "https://github.com/jdx/fnox/releases/download/v1.43.0/fnox-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:8f701970a3a52d3050901650ae8a8c53fd2284fcb8efc9f41cc9b56e88902dd5"
+url = "https://github.com/jdx/fnox/releases/download/v1.44.0/fnox-aarch64-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
 repository_ids = { repository = "1078762196" }
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.13.2"
+version = "18.13.3"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:38c3645283ceba06f66462830ae15f27270cc7f84575e40a4c6bd68452a63d0f"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.13.2/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/682434495"
+checksum = "sha256:b449d0d0d779a0b2e655f0ce41d5c414a253de71c67b3affc30a6528fc967314"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.13.3/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/684983857"
 
 [[tools."github:edden27/dog"]]
 version = "0.1.1"
@@ -164,8 +164,8 @@ backend = "nix:pkl-lsp"
 specifiers = ["latest"]
 
 [[tools.opencode]]
-version = "2.2.0"
-aube = { path = ".mise/locks/opencode/2.2.0~009061c2", digest = "sha256:feaa9c8f2e3bb04339622da82d2c1ee7b1caac8b806c2d039e6c18af7471ddb7" }
+version = "2.2.1"
+aube = { path = ".mise/locks/opencode/2.2.1~009061c2", digest = "sha256:12e680d2985f65e80cbe830d185bfdc3bf6a32e122ad7f00dcd7431e9583085b" }
 backend = "npm:@opencode/cli"
 specifiers = ["latest"]
 

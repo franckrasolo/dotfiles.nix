@@ -44,13 +44,13 @@ url = "https://github.com/JetBrains/kotlin/releases/download/v2.4.21/kotlin-comp
 url_api = "https://api.github.com/repos/JetBrains/kotlin/releases/assets/621287401"
 
 [[tools.node]]
-version = "24.22.1"
+version = "26.13.0"
 backend = "core:node"
 specifiers = ["lts"]
 
 [tools.node."platforms.macos-arm64"]
-checksum = "sha256:89c682593d76cd44233fa53b1563264e7de9cbb189cad169135c5b4fadfbc0a7"
-url = "https://nodejs.org/dist/v24.22.1/node-v24.22.1-darwin-arm64.tar.gz"
+checksum = "sha256:d38bd5e5a2ddce6bbb5ce45e46e208337da4d51fffe611e567fd32073d6439f6"
+url = "https://nodejs.org/dist/v26.13.0/node-v26.13.0-darwin-arm64.tar.gz"
 
 [[tools."npm:skills"]]
 version = "1.7.4"
