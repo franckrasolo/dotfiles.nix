@@ -165,7 +165,7 @@ specifiers = ["latest"]
 
 [[tools.opencode]]
 version = "2.2.1"
-aube = { path = ".mise/locks/opencode/2.2.1~009061c2", digest = "sha256:12e680d2985f65e80cbe830d185bfdc3bf6a32e122ad7f00dcd7431e9583085b" }
+aube = { path = "locks/opencode/2.2.1~009061c2", digest = "sha256:12e680d2985f65e80cbe830d185bfdc3bf6a32e122ad7f00dcd7431e9583085b" }
 backend = "npm:@opencode/cli"
 specifiers = ["latest"]
 
