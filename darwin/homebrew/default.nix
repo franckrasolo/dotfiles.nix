@@ -7,6 +7,14 @@ let
     };
   };
 
+  # for casks missing a sha256 checksum
+  skipVerification = cask: {
+    name = cask;
+    args = {
+      require_sha = false;
+    };
+  };
+
   webBrowsers = [
     "arc"
     "crest-browser"
@@ -47,25 +55,13 @@ in
       "nikitabobko/tap/aerospace"
       "alfred"
       "altersend"
-      {
-        name = "amadeus-pro";
-        args = { require_sha = false; }; # missing sha256 checksum
-      }
+      (skipVerification "amadeus-pro")
       "arcbox"
-      {
-        name = "audio-hijack";
-        args = { require_sha = false; }; # missing sha256 checksum
-      }
+      (skipVerification "audio-hijack")
       "beadbox/cask/beadbox"
-      {
-        name = "beeper";
-        args = { require_sha = false; }; # missing sha256 checksum
-      }
+      (skipVerification "beeper")
       "bunch"
-      {
-        name = "daisydisk";
-        args = { require_sha = false; }; # missing sha256 checksum
-      }
+      (skipVerification "daisydisk")
       "deskpad"
       "discord"
       "dropbox"
@@ -75,14 +71,8 @@ in
       "jetbrains-toolbox"
       (systemApp "lm-studio")
       "localsend"
-      {
-        name = "logitech-options";
-        args = { require_sha = false; }; # missing sha256 checksum
-      }
-      {
-        name = "logi-options+";
-        args = { require_sha = false; }; # missing sha256 checksum
-      }
+      (skipVerification "logitech-options")
+      (skipVerification "logi-options+")
       "mac-sai"
       "macshot"
       {
@@ -106,14 +96,8 @@ in
       "recordly"
       (systemApp "secretive")
       "snapzy"
-      {
-        name = "speechify-voice-ai";
-        args = { require_sha = false; }; # missing sha256 checksum
-      }
-      {
-        name = "spotify";
-        args = { require_sha = false; }; # missing sha256 checksum
-      }
+      (skipVerification "speechify-voice-ai")
+      (skipVerification "spotify")
       "tailscale-app"
       "teamviewer"
       "telegram"
