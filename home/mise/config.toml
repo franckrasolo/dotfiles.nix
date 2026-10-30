@@ -139,6 +139,7 @@ depends = ["github:can1357/oh-my-pi", "opencode", "pi"]
 postinstall = """
   tuios completion zsh >| $XDG_CACHE_HOME/zsh/completions/_tuios.zsh
 
+  tuios integration install omp
   tuios integration install opencode
   tuios integration install pi
 """

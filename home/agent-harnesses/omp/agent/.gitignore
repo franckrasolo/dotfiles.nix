@@ -2,5 +2,6 @@ cache/
 predict/
 config.yaml.lock
 extensions/herdr-omp-agent-state.ts
+extensions/tuios-omp-agent-state.ts
 hooks/pre/worktrunk.ts
 skill-descriptions.db*
