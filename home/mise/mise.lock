@@ -164,8 +164,8 @@ backend = "nix:pkl-lsp"
 specifiers = ["latest"]
 
 [[tools.opencode]]
-version = "2.2.2"
-aube = { path = "locks/opencode/2.2.2~009061c2", digest = "sha256:e3d9cd446ea72db55e2d3152396713f7ca73637c2efd85db91275db86666a4fa" }
+version = "2.2.3"
+aube = { path = "locks/opencode/2.2.3~009061c2", digest = "sha256:34b6bb1a19a5925ec54cd84319f6c561b933e8608d330d689fb00f7bb7fab2e5" }
 backend = "npm:@opencode/cli"
 specifiers = ["latest"]
 
@@ -193,13 +193,13 @@ url = "https://github.com/alexpasmantier/television/releases/download/0.15.9/tv-
 url_api = "https://api.github.com/repos/alexpasmantier/television/releases/assets/447568866"
 
 [[tools.usage]]
-version = "7.1.3"
+version = "7.1.4"
 backend = "packslip:github.com/jdx/usage"
 specifiers = ["latest"]
 
 [tools.usage."platforms.macos-arm64"]
-checksum = "sha256:4878938599894c051baaf601cb5c7ee351f4276c9da0acbf959e868884f2b99b"
-url = "https://github.com/jdx/usage/releases/download/v7.1.3/usage-universal-apple-darwin.tar.gz"
+checksum = "sha256:cae1865b2bb4eb8c22087381d4fbc29344837960c71dbf865dc55296c19d535d"
+url = "https://github.com/jdx/usage/releases/download/v7.1.4/usage-universal-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
 repository_ids = { repository = "677629099" }
 
