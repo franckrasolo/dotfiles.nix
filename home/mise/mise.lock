@@ -34,13 +34,13 @@ url = "https://github.com/smol-machines/smolvm/releases/download/v1.32.4/smolvm-
 url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/684230255"
 
 [[tools.aube]]
-version = "2.8.4"
+version = "2.8.5"
 backend = "packslip:github.com/aubepkg/aube"
 specifiers = ["latest"]
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:3c755c18237fcefbd4bf113ca7017bb1010cd12d7b756b6e2b5577862d294c71"
-url = "https://github.com/aubepkg/aube/releases/download/v2.8.4/aube-v2.8.4-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:74c22535927c8ecd1ca9937371e9cce40a6b4ae7915ea5e45cfff17eb5dad5ff"
+url = "https://github.com/aubepkg/aube/releases/download/v2.8.5/aube-v2.8.5-aarch64-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release.yml"
 repository_ids = { repository = "1214542327" }
 
@@ -164,8 +164,8 @@ backend = "nix:pkl-lsp"
 specifiers = ["latest"]
 
 [[tools.opencode]]
-version = "2.2.3"
-aube = { path = "locks/opencode/2.2.3~009061c2", digest = "sha256:34b6bb1a19a5925ec54cd84319f6c561b933e8608d330d689fb00f7bb7fab2e5" }
+version = "2.2.5"
+aube = { path = "locks/opencode/2.2.5~009061c2", digest = "sha256:5423c53b1334bf1a0e09a122f05c23b204c2359adc0cce62d1b6270c268bd496" }
 backend = "npm:@opencode/cli"
 specifiers = ["latest"]
 
