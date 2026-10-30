@@ -22,6 +22,7 @@ source "${ZSH_CONFIG_HOME}/aliases.nix.zsh"
 source "${ZSH_CONFIG_HOME}/bindkeys.zsh"
 source "${ZSH_CONFIG_HOME}/completions.zsh"
 source "${ZSH_CONFIG_HOME}/prompt.zsh"
+source "${ZSH_CONFIG_HOME}/tuios.zsh"
 source "${ZSH_CONFIG_HOME}/widgets.zsh"
 
 # cached `brew shellenv zsh` — regenerated only when the brew binary changes
