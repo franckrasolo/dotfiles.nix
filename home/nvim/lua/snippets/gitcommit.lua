@@ -3,6 +3,7 @@
 return {
   s("sp", t("update Neovim spell files")),
   s("upd", t("upgrade dependencies")),
-  s("upm", t("upgrade tools installed by mise")),
+  s("upam", t("upgrade agent image tools managed by mise")),
+  s("upm", t("upgrade tools managed by mise")),
   s("upmr", t("upgrade mise requirement")),
 }
