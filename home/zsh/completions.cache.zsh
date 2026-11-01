@@ -16,6 +16,7 @@ _cache_completion dive dive completion zsh
 _cache_completion dog dog --generate-completion-script zsh
 _cache_completion fnox fnox completion zsh
 _cache_completion fx fx --comp zsh
+_cache_completion gala gala completion zsh
 _cache_completion gh gh completion --shell zsh
 _cache_completion glab glab completion --shell zsh
 _cache_completion herdr herdr completion zsh
