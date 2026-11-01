@@ -3,14 +3,14 @@
 lockfile_version = 3
 
 [[tools."aqua:Gaurav-Gosain/tuios"]]
-version = "0.12.0"
+version = "0.12.1"
 backend = "aqua:Gaurav-Gosain/tuios"
 specifiers = ["latest"]
 
 [tools."aqua:Gaurav-Gosain/tuios"."platforms.macos-arm64"]
-checksum = "sha256:4db23a56e7a536ed9f63556fe1e2604ad7f695ec88d2cbbc6d3539b2e844d6cd"
-url = "https://github.com/Gaurav-Gosain/tuios/releases/download/v0.12.0/tuios_0.12.0_Darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/Gaurav-Gosain/tuios/releases/assets/692441925"
+checksum = "sha256:8d7c0b6ec18fff2a3453c8d50b858edfab208557c0079002715b3f6ee2182f47"
+url = "https://github.com/Gaurav-Gosain/tuios/releases/download/v0.12.1/tuios_0.12.1_Darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/Gaurav-Gosain/tuios/releases/assets/695315245"
 
 [[tools."aqua:gastownhall/beads"]]
 version = "1.3.2"
@@ -65,14 +65,14 @@ signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.ym
 repository_ids = { repository = "1078762196" }
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.14.0"
+version = "18.14.2"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:608843959ab34295d52460dd09dd7d548b6c903c08a83c67954c2d4c36fd1f5a"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.14.0/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/689493880"
+checksum = "sha256:9b7bda0bd8ec8d1fd8f8deda076180deef2d4921ee60e7d2f39044ee7d9437ee"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.14.2/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/696073843"
 
 [[tools."github:edden27/dog"]]
 version = "0.1.1"
