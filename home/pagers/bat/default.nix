@@ -24,6 +24,7 @@ in
     package = pkgs.bat;
     config = {
       map-syntax = [
+        "*.gala:Go"
         "*{j,J}ustfile*:Just"
         "*.lust:Lua"
         "{Opkgfile,PklProject}:Pkl"
