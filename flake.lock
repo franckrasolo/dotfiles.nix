@@ -124,6 +124,7 @@
         "nixpkgs": "nixpkgs",
         "nixpkgs-unstable": "nixpkgs-unstable",
         "sops-nix": "sops-nix",
+        "tree-sitter-lisette": "tree-sitter-lisette",
         "tree-sitter-lust": "tree-sitter-lust",
         "tree-sitter-pkl": "tree-sitter-pkl",
         "unf": "unf"
@@ -146,6 +147,24 @@
       "original": {
         "owner": "Mic92",
         "repo": "sops-nix",
+        "type": "github"
+      }
+    },
+    "tree-sitter-lisette": {
+      "flake": false,
+      "locked": {
+        "dir": "editors/tree-sitter-lisette",
+        "lastModified": 1793137986,
+        "narHash": "sha256-InhiE427v9aLBvd3Sz2gRVnJMsbSX7daN90w7h2ApW0=",
+        "owner": "ivov",
+        "repo": "lisette",
+        "rev": "c2448245b30ed4d3536f0da26807a016076488b2",
+        "type": "github"
+      },
+      "original": {
+        "dir": "editors/tree-sitter-lisette",
+        "owner": "ivov",
+        "repo": "lisette",
         "type": "github"
       }
     },

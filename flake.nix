@@ -30,6 +30,11 @@
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
 
+    tree-sitter-lisette = {
+      url = "github:ivov/lisette?dir=editors/tree-sitter-lisette";
+      flake = false;
+    };
+
     tree-sitter-lust = {
       url = "github:ArchangelJTW/lust-lang?dir=tree-sitter-lust";
       flake = false;
@@ -82,6 +87,7 @@
             runHook postInstall
           '';
         };
+        tree-sitter-lisette-repo = inputs.tree-sitter-lisette;
         tree-sitter-pkl-repo = inputs.tree-sitter-pkl;
       };
       # makes "pkgs.unstable" available in configuration.nix

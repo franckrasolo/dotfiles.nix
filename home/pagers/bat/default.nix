@@ -26,6 +26,7 @@ in
       map-syntax = [
         "*.gala:Go"
         "*{j,J}ustfile*:Just"
+        "*.lis:Rust"
         "*.lust:Lua"
         "{Opkgfile,PklProject}:Pkl"
         "*mise*.lock:TOML"
