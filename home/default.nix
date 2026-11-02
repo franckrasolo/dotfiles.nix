@@ -4,6 +4,7 @@
   imports = [
     ./agent-harnesses
     ./file-managers
+    ./infra
     ./multiplexers
     ./pagers
     ./terminals
@@ -14,7 +15,6 @@
     ./fnox
     ./fzf
     ./git
-    ./k9s
     ./lazygit
     ./leaf
     ./luarocks
