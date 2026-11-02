@@ -24,14 +24,14 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/670855
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.32.4"
+version = "1.33.0"
 backend = "aqua:smol-machines/smolvm"
 specifiers = ["latest"]
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:64bee03d87f6cbf3a1ab0e0926b99cec45fac62900b0a37da15a8271a5c6de59"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.32.4/smolvm-1.32.4-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/684230255"
+checksum = "sha256:2f7772230e1c53a27db589fd3c65190a43eb014bc107b2f9cbd6a85f55e7c3f5"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.33.0/smolvm-1.33.0-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/697693845"
 
 [[tools.aube]]
 version = "2.8.5"
@@ -54,25 +54,25 @@ checksum = "sha256:c240d7f0ccb90c263a849fcdb09b7ee62630d921348ed6aafda86b9d577bc
 url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-darwin-aarch64.zip"
 
 [[tools.fnox]]
-version = "1.45.0"
+version = "1.46.0"
 backend = "packslip:github.com/jdx/fnox"
 specifiers = ["latest"]
 
 [tools.fnox."platforms.macos-arm64"]
-checksum = "sha256:e851212b2f7319ab88ab7784e008bfb091ccee91f2696a328684fc8ce80e4263"
-url = "https://github.com/jdx/fnox/releases/download/v1.45.0/fnox-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:d9d0c44c7a597d1745f6f40b987d2567ac3269b4aad444543a24547d3659b105"
+url = "https://github.com/jdx/fnox/releases/download/v1.46.0/fnox-aarch64-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
 repository_ids = { repository = "1078762196" }
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.14.2"
+version = "18.15.0"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:9b7bda0bd8ec8d1fd8f8deda076180deef2d4921ee60e7d2f39044ee7d9437ee"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.14.2/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/696073843"
+checksum = "sha256:d36dfabf0ee52d6f08efadb59c46f0349545c6f6975522417adae29646e73e34"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.15.0/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/698539455"
 
 [[tools."github:edden27/dog"]]
 version = "0.1.1"
@@ -139,14 +139,14 @@ url_api = "https://api.github.com/repos/zeroclaw-labs/zeroclaw/releases/assets/6
 provenance = "github-attestations"
 
 [[tools."github:zjrosen/perles"]]
-version = "0.8.98"
+version = "0.9.0"
 backend = "github:zjrosen/perles"
 specifiers = ["latest"]
 
 [tools."github:zjrosen/perles"."platforms.macos-arm64"]
-checksum = "sha256:ea944509bb9f0570209dca98d265d00471acd033d29e02ba0ed91989ea4f523c"
-url = "https://github.com/zjrosen/perles/releases/download/v0.8.98/perles_0.8.98_darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/651404623"
+checksum = "sha256:fd125cf13408fdee9315729cc21c707706056d49846703c60aa34310c8cf94a3"
+url = "https://github.com/zjrosen/perles/releases/download/v0.9.0/perles_0.9.0_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/zjrosen/perles/releases/assets/699514657"
 
 [[tools.herdr]]
 version = "0.9.5"
@@ -193,13 +193,13 @@ url = "https://github.com/alexpasmantier/television/releases/download/0.15.9/tv-
 url_api = "https://api.github.com/repos/alexpasmantier/television/releases/assets/447568866"
 
 [[tools.usage]]
-version = "7.1.4"
+version = "7.1.5"
 backend = "packslip:github.com/jdx/usage"
 specifiers = ["latest"]
 
 [tools.usage."platforms.macos-arm64"]
-checksum = "sha256:cae1865b2bb4eb8c22087381d4fbc29344837960c71dbf865dc55296c19d535d"
-url = "https://github.com/jdx/usage/releases/download/v7.1.4/usage-universal-apple-darwin.tar.gz"
+checksum = "sha256:90ac6ec790cebe79c2e234171b9e16b6071e02dc0506f2953315fc5c0222b2d9"
+url = "https://github.com/jdx/usage/releases/download/v7.1.5/usage-universal-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
 repository_ids = { repository = "677629099" }
 
