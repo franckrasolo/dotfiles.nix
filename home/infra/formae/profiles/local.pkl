@@ -1,0 +1,18 @@
+amends "formae:/Config.pkl"
+
+local formae_data_home = "\(read?("env:XDG_DATA_HOME") ?? "~/.local/share")/formae"
+local formae_state_home = "\(read?("env:XDG_STATE_HOME") ?? "~/.local/state")/formae"
+
+agent {
+  datastore {
+    sqlite {
+      filePath = "\(formae_state_home)/data/formae.db"
+    }
+  }
+
+  logging {
+    filePath = "\(formae_state_home)/logs/formae.log"
+  }
+}
+
+pluginDir = "\(formae_data_home)/plugins"
