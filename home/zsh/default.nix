@@ -1,14 +1,16 @@
 { config, pkgs, lib, user, ... }:
 
+with config.lib.file;
+with pkgs.unstable;
 {
-  home.packages = with pkgs.unstable; [
+  home.packages = [
     powerline-go
     vivid
   ];
 
   programs.zsh = {
     enable = true;
-    package = pkgs.unstable.zsh;
+    package = zsh;
     dotDir = "${config.xdg.configHome}/zsh";
     autosuggestion.enable = true;
     enableCompletion = false;
@@ -16,7 +18,7 @@
       source ~/.zshenv.manual
     '';
 
-    initContent = with pkgs.unstable; let
+    initContent = let
       zshPluginScripts = [
         "${zsh-fzf-tab}/share/fzf-tab/fzf-tab.plugin.zsh"
         "${zsh-f-sy-h}/share/zsh/site-functions/F-Sy-H.plugin.zsh"
@@ -62,14 +64,16 @@
   xdg.configFile."zsh".enable = lib.mkForce false;
 
 #  xdg.configFile."zsh".source = ./.;
-  xdg.configFile."zsh".source = config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/home/zsh";
+  xdg.configFile."zsh".source =
+    mkOutOfStoreSymlink "${user.dotfiles}/home/zsh";
 
   xdg.configFile."zsh-patina/config.toml".source =
-    config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/home/zsh/zsh-patina.toml";
+    mkOutOfStoreSymlink "${user.dotfiles}/home/zsh/zsh-patina.toml";
 
   # suppress both "Last login" and MOTD messages in new shells
   home.file.".hushlogin".text = "";
 
 #  home.file.".zshenv.manual".source = ./zsh/zshenv;
-  home.file.".zshenv.manual".source = config.lib.file.mkOutOfStoreSymlink "${user.dotfiles}/home/zsh/zshenv";
+  home.file.".zshenv.manual".source =
+    mkOutOfStoreSymlink "${user.dotfiles}/home/zsh/zshenv";
 }
