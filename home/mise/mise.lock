@@ -65,14 +65,14 @@ signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.ym
 repository_ids = { repository = "1078762196" }
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.16.0"
+version = "18.17.0"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:d4a10d97488d6054d2b18198bd24f461079952c7e0fb75ba66336ca0df0cb99e"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.16.0/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/702972282"
+checksum = "sha256:51f2836f267a8ba6c12cfb50f80e75f0301ccfb1bd53535fc6f9df03199da364"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.17.0/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/715993842"
 
 [[tools."github:edden27/dog"]]
 version = "0.1.1"
@@ -193,13 +193,13 @@ url = "https://github.com/alexpasmantier/television/releases/download/0.15.9/tv-
 url_api = "https://api.github.com/repos/alexpasmantier/television/releases/assets/447568866"
 
 [[tools.usage]]
-version = "7.2.0"
+version = "7.3.0"
 backend = "packslip:github.com/jdx/usage"
 specifiers = ["latest"]
 
 [tools.usage."platforms.macos-arm64"]
-checksum = "sha256:1e666f741c800aa5eda693b1d28cc8caa3ac4ec7e73b6ffff40bb42a13a886d1"
-url = "https://github.com/jdx/usage/releases/download/v7.2.0/usage-universal-apple-darwin.tar.gz"
+checksum = "sha256:3201ab26da21e11cbbf3b75f81da65a502e7774e014bd77956cab13e61e73b87"
+url = "https://github.com/jdx/usage/releases/download/v7.3.0/usage-universal-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
 repository_ids = { repository = "677629099" }
 
