@@ -75,10 +75,10 @@ specifiers = ["latest"]
 uvx_args = "--prerelease allow"
 
 [[tools."pypi:termaid"]]
-version = "0.11.0"
+version = "0.12.0"
 backend = "pypi:termaid"
 specifiers = ["latest"]
-uv = { path = "locks/mise.local/pypi-termaid/0.11.0~53f1461d", digest = "sha256:3a58cb59ff4162ad90afb253511b2bbc35e6682c18cfe6c688843af82ea0f4d4" }
+uv = { path = "locks/mise.local/pypi-termaid/0.12.0~53f1461d", digest = "sha256:c5e6203e7ea44937cb62f728907411cc295c9856e17c6926b1c7e935c156a30e" }
 
 [tools."pypi:termaid".options]
 extras = "rich,tui"
