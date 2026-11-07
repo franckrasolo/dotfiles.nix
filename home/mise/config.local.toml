@@ -104,6 +104,7 @@ run = """
   limit={{ usage.limit | int }}
   rg ".{$((limit + 1))}" --max-columns=$limit --max-columns-preview \
     -g '{{ usage.include }}' \
+    -g '!{{ usage.exclude }}' \
 || true
 """
 
