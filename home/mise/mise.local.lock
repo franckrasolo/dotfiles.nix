@@ -21,6 +21,17 @@ specifiers = ["latest"]
 checksum = "sha256:dd3908cf20959d798c1e06ebe5b72213f0505ce01373b40ce3110975a6cd99c2"
 url = "https://dl.google.com/go/go1.27.3.darwin-arm64.tar.gz"
 
+[[tools.jactionlint]]
+version = "2.5.0"
+backend = "packslip:github.com/jdx/jactionlint"
+specifiers = ["latest"]
+
+[tools.jactionlint."platforms.macos-arm64"]
+checksum = "sha256:15b47d53e3b1aafbd674cca0e8fff0d5952f3cf2a7d7501a8f67576ef76397b4"
+url = "https://github.com/jdx/jactionlint/releases/download/v2.5.0/jactionlint_2.5.0_darwin_arm64.tar.gz"
+signer = "sigstore-oidc:https://github.com/jdx/jactionlint/.github/workflows/release.yaml"
+repository_ids = { repository = "1404951382" }
+
 [[tools.java]]
 version = "temurin-25.0.5+8.0.LTS"
 backend = "core:java"
@@ -82,6 +93,17 @@ uv = { path = "locks/mise.local/pypi-termaid/0.12.0~53f1461d", digest = "sha256:
 
 [tools."pypi:termaid".options]
 extras = "rich,tui"
+
+[[tools.shellcheck]]
+version = "0.11.0"
+backend = "aqua:koalaman/shellcheck"
+specifiers = ["latest"]
+
+[tools.shellcheck."platforms.macos-arm64"]
+checksum = "sha256:56affdd8de5527894dca6dc3d7e0a99a873b0f004d7aabc30ae407d3f48b0a79"
+checksum_source = "mise-versions"
+url = "https://github.com/koalaman/shellcheck/releases/download/v0.11.0/shellcheck-v0.11.0.darwin.aarch64.tar.xz"
+url_api = "https://api.github.com/repos/koalaman/shellcheck/releases/assets/279056932"
 
 [[tools.uv]]
 version = "0.13.7"
