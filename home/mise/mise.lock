@@ -65,14 +65,14 @@ signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.ym
 repository_ids = { repository = "1078762196" }
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.17.0"
+version = "18.18.0"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:51f2836f267a8ba6c12cfb50f80e75f0301ccfb1bd53535fc6f9df03199da364"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.17.0/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/715993842"
+checksum = "sha256:0adae2a341a1e6840b00c96ce0b1c9d2e0257b1ea6782e4302e17b717a6ffb0a"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.18.0/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/719252499"
 
 [[tools."github:edden27/dog"]]
 version = "0.1.1"
@@ -117,14 +117,14 @@ url = "https://github.com/RivoLink/leaf/releases/download/1.29.2/leaf-macos-arm6
 url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/675966700"
 
 [[tools."github:vladkens/macmon"]]
-version = "0.10.0"
+version = "0.11.0"
 backend = "github:vladkens/macmon"
 specifiers = ["latest"]
 
 [tools."github:vladkens/macmon"."platforms.macos-arm64"]
-checksum = "sha256:0ccff60b7bf67bcb9e09cc8f804656a1cafa7eeae7297ee83d10e460ead7d43d"
-url = "https://github.com/vladkens/macmon/releases/download/v0.10.0/macmon-v0.10.0.tar.gz"
-url_api = "https://api.github.com/repos/vladkens/macmon/releases/assets/641677170"
+checksum = "sha256:51a3fc694f303fc6ad3904423be7c0437b3133b3359d2986b4066cbf5753c4f1"
+url = "https://github.com/vladkens/macmon/releases/download/v0.11.0/macmon-v0.11.0-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/vladkens/macmon/releases/assets/718162465"
 provenance = "github-attestations"
 
 [[tools."github:zeroclaw-labs/zeroclaw"]]
@@ -164,8 +164,8 @@ backend = "nix:pkl-lsp"
 specifiers = ["latest"]
 
 [[tools.opencode]]
-version = "2.2.5"
-aube = { path = "locks/opencode/2.2.5~009061c2", digest = "sha256:5423c53b1334bf1a0e09a122f05c23b204c2359adc0cce62d1b6270c268bd496" }
+version = "2.2.6"
+aube = { path = "locks/opencode/2.2.6~009061c2", digest = "sha256:e28e5edefc4d4a5807f2f08163f8e4d2f952a5fc3d734dc5fabc62dd1a9fc869" }
 backend = "npm:@opencode/cli"
 specifiers = ["latest"]
 
