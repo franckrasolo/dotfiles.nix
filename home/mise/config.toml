@@ -14,6 +14,7 @@ package_manager = "aube"
 
 [shell_alias]
 aliases = "mise shell-alias ls"
+fll   = "mise run files:find-long-lines"
 tasks = "mise tasks ls --all --extended"
 tools = "mise ls --global --outdated"
 

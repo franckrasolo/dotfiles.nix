@@ -94,6 +94,19 @@ run = """
 """
 quiet = true
 
+[tasks."files:find-long-lines"]
+description = "finds files with long lines"
+usage = """
+flag "--limit <value>" help="maximum number of characters per line" default="120"
+flag "--include <globs>" help="glob patterns for files to include" default="*"
+flag "--exclude <globs>" help="glob patterns for files to exclude" default=""
+"""
+dir = "{{ env.PWD }}"
+run = """
+  limit={{ usage.limit | int }}
+  rg ".{$((limit + 1))}" -g '{{ usage.include }}' --max-columns=$limit --max-columns-preview
+"""
+
 [tasks."file:inspect"]
 description = "lists file attributes"
 usage = """
