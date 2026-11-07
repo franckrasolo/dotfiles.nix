@@ -68,7 +68,6 @@ run = """
       --format html \
       --output-html {{ usage.out }}
 """
-quiet = true
 
 [tasks."skills:scan-repo"]
 description = "runs a security analysis of a skills repository"
@@ -92,7 +91,6 @@ run = """
       --format html \
       --output-html ${XDG_DATA_HOME}/skill-scanner/scan:${scan_id}.html
 """
-quiet = true
 
 [tasks."files:find-long-lines"]
 description = "finds files with long lines"
