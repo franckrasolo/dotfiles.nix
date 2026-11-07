@@ -102,7 +102,9 @@ flag "--exclude <globs>" help="glob patterns for files to exclude" default=""
 dir = "{{ env.PWD }}"
 run = """
   limit={{ usage.limit | int }}
-  rg ".{$((limit + 1))}" -g '{{ usage.include }}' --max-columns=$limit --max-columns-preview
+  rg ".{$((limit + 1))}" --max-columns=$limit --max-columns-preview \
+    -g '{{ usage.include }}' \
+|| true
 """
 
 [tasks."file:inspect"]
