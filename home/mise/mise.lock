@@ -24,14 +24,14 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/708961
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.33.0"
+version = "1.34.0"
 backend = "aqua:smol-machines/smolvm"
 specifiers = ["latest"]
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:2f7772230e1c53a27db589fd3c65190a43eb014bc107b2f9cbd6a85f55e7c3f5"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.33.0/smolvm-1.33.0-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/697693845"
+checksum = "sha256:92187e599f77682fc9ea6aa7f2eaf50e1cb1320baf4b508357c47aeb8b12820c"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.34.0/smolvm-1.34.0-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/723725696"
 
 [[tools.aube]]
 version = "2.9.0"
@@ -65,14 +65,14 @@ signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.ym
 repository_ids = { repository = "1078762196" }
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.18.0"
+version = "18.18.1"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:0adae2a341a1e6840b00c96ce0b1c9d2e0257b1ea6782e4302e17b717a6ffb0a"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.18.0/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/719252499"
+checksum = "sha256:ce80099f10c5ea4367523767230cb5b920f30cc139b9cf8758c1cc4b2f1f9409"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.18.1/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/722387514"
 
 [[tools."github:edden27/dog"]]
 version = "0.1.1"
@@ -85,14 +85,14 @@ url = "https://github.com/edden27/dog/releases/download/v0.1.1/dog-macos-arm64.t
 url_api = "https://api.github.com/repos/edden27/dog/releases/assets/604738270"
 
 [[tools."github:kucherenko/jscpd"]]
-version = "5.4.2"
+version = "5.4.3"
 backend = "github:kucherenko/jscpd"
 specifiers = ["latest"]
 
 [tools."github:kucherenko/jscpd"."platforms.macos-arm64"]
-checksum = "sha256:b51d22d7c7610d27d8fd022577021ff3266a10f13295a2e545a8b8e126133a88"
-url = "https://github.com/kucherenko/jscpd/releases/download/v5.4.2/jscpd-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/kucherenko/jscpd/releases/assets/659819460"
+checksum = "sha256:e119c4c5388118ad348a799c478589f7ad0fa707c0b7c819d6febc94f6f98522"
+url = "https://github.com/kucherenko/jscpd/releases/download/v5.4.3/jscpd-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/kucherenko/jscpd/releases/assets/723169096"
 provenance = "github-attestations"
 
 [[tools."github:remotemobprogramming/mob"]]
