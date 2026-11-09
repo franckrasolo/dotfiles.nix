@@ -1,0 +1,8 @@
+%YAML 1.2
+---
+name: Lisette
+file_extensions: [lis]
+scope: source.rust.lisette
+contexts:
+  main:
+    - include: scope:source.rust

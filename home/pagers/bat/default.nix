@@ -26,10 +26,7 @@ in
       map-syntax = [
         "*.gala:Go"
         "*{j,J}ustfile*:Just"
-        "*.lis:Rust"
         "*.lust:Lua"
-        "{Opkgfile,PklProject}:Pkl"
-        "*mise*.lock:TOML"
         "*tmux*.conf:Tmux conf"
       ];
       pager = "less -FR";
@@ -72,6 +69,10 @@ in
         };
         file = "Tmux.sublime-syntax";
       };
+      # syntax extensions shared with delta for diffs
+      formae = { src = ./.; file = "formae.sublime-syntax"; };
+      Lisette = { src = ./.; file = "Lisette.sublime-syntax"; };
+      "Mise Lock" = { src = ./.; file = "mise-lock.sublime-syntax"; };
     };
   };
 

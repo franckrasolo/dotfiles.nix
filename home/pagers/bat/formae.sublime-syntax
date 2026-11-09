@@ -1,0 +1,8 @@
+%YAML 1.2
+---
+name: formae
+file_extensions: [Opkgfile, PklProject]
+scope: source.pkl.formae
+contexts:
+  main:
+    - include: scope:source.pkl

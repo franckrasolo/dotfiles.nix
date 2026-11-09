@@ -1,0 +1,16 @@
+%YAML 1.2
+---
+name: Mise Lock
+file_extensions:
+  - mise.lock
+  - mise.base.lock
+  - mise.docs.lock
+  - mise.local.lock
+  - mise.omp.lock
+  - mise.opencode.lock
+  - mise.pi.lock
+  - mise.platform.lock
+scope: source.toml.miselock
+contexts:
+  main:
+    - include: scope:source.toml
