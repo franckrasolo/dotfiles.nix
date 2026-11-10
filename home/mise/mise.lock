@@ -24,14 +24,14 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/708961
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.34.0"
+version = "1.34.1"
 backend = "aqua:smol-machines/smolvm"
 specifiers = ["latest"]
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:92187e599f77682fc9ea6aa7f2eaf50e1cb1320baf4b508357c47aeb8b12820c"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.34.0/smolvm-1.34.0-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/723725696"
+checksum = "sha256:8ebda502e332c739fdfc13b059be982cca66da9253c5229b4586af02c92781d9"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.34.1/smolvm-1.34.1-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/732084195"
 
 [[tools.aube]]
 version = "2.10.0"
@@ -65,14 +65,14 @@ signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.ym
 repository_ids = { repository = "1078762196" }
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.18.6"
+version = "18.18.7"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:ed2e63eb43888eb76cb1409b245b1db4557c94dfad52dc545c9aaca01ebce82d"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.18.6/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/729375455"
+checksum = "sha256:0cecaac781d3c37f32ff7ecf3b6ba94842e7f058358e4748d5071d772f0aa4df"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.18.7/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/732828892"
 
 [[tools."github:edden27/dog"]]
 version = "0.1.1"
@@ -96,14 +96,14 @@ url_api = "https://api.github.com/repos/kucherenko/jscpd/releases/assets/7231690
 provenance = "github-attestations"
 
 [[tools."github:remotemobprogramming/mob"]]
-version = "5.4.2"
+version = "5.4.3"
 backend = "github:remotemobprogramming/mob"
 specifiers = ["latest"]
 
 [tools."github:remotemobprogramming/mob"."platforms.macos-arm64"]
-checksum = "sha256:2ca73fc8e347f80b47a269bdf64e4265f6d6c5be2229bf5604aea551a67ce72f"
-url = "https://github.com/remotemobprogramming/mob/releases/download/5.4.2/mob_5.4.2_darwin_universal.tar.gz"
-url_api = "https://api.github.com/repos/remotemobprogramming/mob/releases/assets/346269527"
+checksum = "sha256:e7dd11a90c928091f7c97bd9ce305a2b4af10b7661dc857bea95df24d0151410"
+url = "https://github.com/remotemobprogramming/mob/releases/download/5.4.3/mob_5.4.3_darwin_universal.tar.gz"
+url_api = "https://api.github.com/repos/remotemobprogramming/mob/releases/assets/732712352"
 
 [[tools."github:rivolink/leaf"]]
 version = "1.29.2"
@@ -164,23 +164,26 @@ backend = "nix:pkl-lsp"
 specifiers = ["latest"]
 
 [[tools.opencode]]
-version = "2.2.6"
-aube = { path = "locks/opencode/2.2.6~009061c2", digest = "sha256:e28e5edefc4d4a5807f2f08163f8e4d2f952a5fc3d734dc5fabc62dd1a9fc869" }
+version = "2.2.7"
+aube = { path = "locks/opencode/2.2.7~009061c2", digest = "sha256:6ad43b812650469739ff2b5236fd2ecb16dd190f86517d4c5320ac444a3d5bb0" }
 backend = "npm:@opencode/cli"
 specifiers = ["latest"]
 
 [tools.opencode.options]
 allow_builds = '["@opencode/cli"]'
 
+[tools.opencode.provenance]
+repository = "github.com/anomalyco/opencode"
+
 [[tools.pi]]
-version = "1.5.1"
+version = "1.5.2"
 backend = "aqua:earendil-works/pi"
 specifiers = ["latest"]
 
 [tools.pi."platforms.macos-arm64"]
-checksum = "sha256:eecbee4fbb6128c625ba44ffe30cfc15884a7791d242017ba9378f57485971d5"
-url = "https://github.com/earendil-works/pi/releases/download/v1.5.1/pi-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/729362966"
+checksum = "sha256:56b5e194d485ced555667b8ba3276157a8272e9ecde9e001e428af80985bdd9b"
+url = "https://github.com/earendil-works/pi/releases/download/v1.5.2/pi-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/731292526"
 
 [[tools.television]]
 version = "0.15.9"
