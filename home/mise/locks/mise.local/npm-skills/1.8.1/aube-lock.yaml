@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       skills:
-        specifier: 1.8.0
-        version: 1.8.0
+        specifier: 1.8.1
+        version: 1.8.1
 
 packages:
 
@@ -33,8 +33,8 @@ packages:
   nostics@1.3.0:
     resolution: {integrity: sha512-wzRsrJwNlFbqIRQt8aCeL2WE8USip/uuvGSOZV1D02CxX8ABTMbw8IywKjH7yWHETMXbWJI4OBpihg9rmz2Vyg==}
 
-  skills@1.8.0:
-    resolution: {integrity: sha512-SOF4o+gtsCq2ggS416zGj+Em2ryAzewVbIIvxlf+72R6g/9HfmINaVQgFqgXdy6fd6y2J6A7IBM8VocK8c0Dmw==}
+  skills@1.8.1:
+    resolution: {integrity: sha512-QK3wlZ5j8wcpLPUOXt7+1Gu1f9JKpv7lBpO0zmqKa5VBrt45/woVo8Max1x4wha3pCNafNHiiodYK6Xi/0alQQ==}
     engines: {node: '>=22.20.0'}
     hasBin: true
 
@@ -67,7 +67,7 @@ snapshots:
 
   nostics@1.3.0: {}
 
-  skills@1.8.0:
+  skills@1.8.1:
     dependencies:
       nostics: 1.3.0
       tar: 7.5.22

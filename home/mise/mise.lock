@@ -65,14 +65,14 @@ signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.ym
 repository_ids = { repository = "1078762196" }
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.18.7"
+version = "18.19.0"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:0cecaac781d3c37f32ff7ecf3b6ba94842e7f058358e4748d5071d772f0aa4df"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.18.7/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/732828892"
+checksum = "sha256:d469628ae8b847617087cc987a628868e4cac53deb5f99451c8cfc4eec5e7e8d"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.19.0/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/737926462"
 
 [[tools."github:edden27/dog"]]
 version = "0.1.1"
@@ -106,15 +106,15 @@ url = "https://github.com/remotemobprogramming/mob/releases/download/5.4.3/mob_5
 url_api = "https://api.github.com/repos/remotemobprogramming/mob/releases/assets/732712352"
 
 [[tools."github:rivolink/leaf"]]
-version = "1.29.2"
+version = "1.29.3"
 backend = "github:rivolink/leaf"
 specifiers = ["latest"]
 
 [tools."github:rivolink/leaf"."platforms.macos-arm64"]
-checksum = "sha256:940b0fcbb57e8fafab0c2ae8a19cee6cefede1e61f72a76a2d93553ae503d85a"
+checksum = "sha256:6df7dfa70a97315cff02b20cbec3edd4f40ea2188d02ee02948212bff52ae1af"
 checksum_source = "mise-versions"
-url = "https://github.com/RivoLink/leaf/releases/download/1.29.2/leaf-macos-arm64"
-url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/675966700"
+url = "https://github.com/RivoLink/leaf/releases/download/1.29.3/leaf-macos-arm64"
+url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/741098140"
 
 [[tools."github:vladkens/macmon"]]
 version = "0.11.0"
@@ -128,14 +128,14 @@ url_api = "https://api.github.com/repos/vladkens/macmon/releases/assets/71816246
 provenance = "github-attestations"
 
 [[tools."github:zeroclaw-labs/zeroclaw"]]
-version = "0.8.7"
+version = "0.9.0"
 backend = "github:zeroclaw-labs/zeroclaw"
 specifiers = ["latest"]
 
 [tools."github:zeroclaw-labs/zeroclaw"."platforms.macos-arm64"]
-checksum = "sha256:77e917dc6c58e9349282a1712685ed8efcc1e495d76c674cb37845bca16ababa"
-url = "https://github.com/zeroclaw-labs/zeroclaw/releases/download/v0.8.7/zeroclaw-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/zeroclaw-labs/zeroclaw/releases/assets/683118829"
+checksum = "sha256:c6f15e56babdb84935135551b4562b3f2c4ef20149fab3d8ab571c4cb3ae8422"
+url = "https://github.com/zeroclaw-labs/zeroclaw/releases/download/v0.9.0/zeroclaw-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/zeroclaw-labs/zeroclaw/releases/assets/737683773"
 provenance = "github-attestations"
 
 [[tools."github:zjrosen/perles"]]
