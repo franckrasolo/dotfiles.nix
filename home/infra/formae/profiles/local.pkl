@@ -1,6 +1,5 @@
 amends "formae:/Config.pkl"
 
-local formae_data_home = "\(read?("env:XDG_DATA_HOME") ?? "~/.local/share")/formae"
 local formae_state_home = "\(read?("env:XDG_STATE_HOME") ?? "~/.local/state")/formae"
 
 agent {
@@ -15,4 +14,4 @@ agent {
   }
 }
 
-pluginDir = "\(formae_data_home)/plugins"
+pluginDir = "\(read?("env:XDG_DATA_HOME") ?? "~/.pel")/formae/plugins"
