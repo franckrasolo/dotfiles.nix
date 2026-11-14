@@ -1,8 +1,10 @@
 [shell_alias]
 fll = "mise run files:find-long-lines"
+github = "go-grip --host 0.0.0.0 --port 80"
 
 [tools]
 "github:duckdb/duckdb" = "latest"
+"github:chrishrb/go-grip" = "latest"
 go = "latest"
 kotlin = "latest"
 uv = "latest"

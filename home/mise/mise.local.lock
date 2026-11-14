@@ -2,6 +2,17 @@
 
 lockfile_version = 4
 
+[[tools."github:chrishrb/go-grip"]]
+version = "0.11.0"
+backend = "github:chrishrb/go-grip"
+specifiers = ["latest"]
+
+[tools."github:chrishrb/go-grip"."platforms.macos-arm64"]
+checksum = "sha256:120d61d9487edc21bd460fa7fa9f4679b2387157e6f005a605cdde9613d5e188"
+checksum_source = "mise-versions"
+url = "https://github.com/chrishrb/go-grip/releases/download/v0.11.0/go-grip-v0.11.0-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/chrishrb/go-grip/releases/assets/688689821"
+
 [[tools."github:duckdb/duckdb"]]
 version = "2.0.0"
 backend = "github:duckdb/duckdb"
