@@ -1,3 +1,6 @@
+[shell_alias]
+fll = "mise run files:find-long-lines"
+
 [tools]
 "github:duckdb/duckdb" = "latest"
 go = "latest"
