@@ -1,4 +1,4 @@
-setupVersion: 2
+setupVersion: 3
 startup:
   quiet: true
   changelogMode: summary
