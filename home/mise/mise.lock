@@ -3,14 +3,14 @@
 lockfile_version = 4
 
 [[tools."aqua:Gaurav-Gosain/tuios"]]
-version = "0.13.1"
+version = "0.13.2"
 backend = "aqua:Gaurav-Gosain/tuios"
 specifiers = ["latest"]
 
 [tools."aqua:Gaurav-Gosain/tuios"."platforms.macos-arm64"]
-checksum = "sha256:80f50555c942ab760d4117406ab95f2734e728fc13c147a420727e171727fe4a"
-url = "https://github.com/Gaurav-Gosain/tuios/releases/download/v0.13.1/tuios_0.13.1_Darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/Gaurav-Gosain/tuios/releases/assets/749740002"
+checksum = "sha256:f322c4362eca6e43e2848729a1d157a6cedf2695f8aabcc3d1f11bb7195a0fce"
+url = "https://github.com/Gaurav-Gosain/tuios/releases/download/v0.13.2/tuios_0.13.2_Darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/Gaurav-Gosain/tuios/releases/assets/752211580"
 
 [[tools."aqua:gastownhall/beads"]]
 version = "1.3.4"
@@ -65,14 +65,14 @@ signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.ym
 repository_ids = { repository = "1078762196" }
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.20.2"
+version = "18.20.3"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:e2de0974ce581bfcf2044ea795c712fa240fdf8304f7bdb4b3d81b154d2b57fc"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.20.2/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/748638313"
+checksum = "sha256:979884efdb84d48ab0401279d3669e71c003922e3e0b50689b8901a4b356e85a"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.20.3/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/753021313"
 
 [[tools."github:edden27/dog"]]
 version = "0.1.1"
@@ -117,14 +117,14 @@ url = "https://github.com/RivoLink/leaf/releases/download/1.29.3/leaf-macos-arm6
 url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/741098140"
 
 [[tools."github:vladkens/macmon"]]
-version = "0.11.0"
+version = "0.12.0"
 backend = "github:vladkens/macmon"
 specifiers = ["latest"]
 
 [tools."github:vladkens/macmon"."platforms.macos-arm64"]
-checksum = "sha256:51a3fc694f303fc6ad3904423be7c0437b3133b3359d2986b4066cbf5753c4f1"
-url = "https://github.com/vladkens/macmon/releases/download/v0.11.0/macmon-v0.11.0-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/vladkens/macmon/releases/assets/718162465"
+checksum = "sha256:cd5a701f8537072aee93eba686bc582897bd00d826f62146b32c8a8d2654641a"
+url = "https://github.com/vladkens/macmon/releases/download/v0.12.0/macmon-v0.12.0-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/vladkens/macmon/releases/assets/751810424"
 provenance = "github-attestations"
 
 [[tools."github:zeroclaw-labs/zeroclaw"]]
