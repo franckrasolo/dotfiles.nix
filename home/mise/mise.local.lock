@@ -44,13 +44,13 @@ signer = "sigstore-oidc:https://github.com/jdx/jactionlint/.github/workflows/rel
 repository_ids = { repository = "1404951382" }
 
 [[tools.java]]
-version = "temurin-25.0.5+8.0.LTS"
+version = "temurin-25.0.5+100000002.0.LTS"
 backend = "core:java"
 specifiers = ["temurin-25"]
 
 [tools.java."platforms.macos-arm64"]
-checksum = "sha256:36dc14d797aaff6d89aab302cd053fdba6207dfdcf772052fa7b023a94b0e857"
-url = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.5%2B8/OpenJDK25U-jdk_aarch64_mac_hotspot_25.0.5_8.tar.gz"
+checksum = "sha256:248353ea41be39d5d2c1c67c7ce0ae4d1668966aacd0c5308464bc1be42f677b"
+url = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.5.1%2B2/OpenJDK25U-jdk_aarch64_mac_hotspot_25.0.5.1_2.tar.gz"
 
 [[tools.kotlin]]
 version = "2.4.21"
@@ -92,7 +92,7 @@ specifiers = ["latest"]
 uvx_args = "--prerelease allow"
 
 [[tools."pypi:omnigent"]]
-version = "0.22.0"
+version = "0.23.0"
 backend = "pypi:omnigent"
 specifiers = ["latest"]
 
@@ -100,10 +100,10 @@ specifiers = ["latest"]
 uvx_args = "--prerelease allow"
 
 [[tools."pypi:termaid"]]
-version = "0.12.1"
+version = "0.13.0"
 backend = "pypi:termaid"
 specifiers = ["latest"]
-uv = { path = "locks/mise.local/pypi-termaid/0.12.1~53f1461d", digest = "sha256:02327c809e35c840b7c01eb7315c878bfff5f97d404e203c2940fed3392d6cb4" }
+uv = { path = "locks/mise.local/pypi-termaid/0.13.0~53f1461d", digest = "sha256:fdf5e9e0d5860f0e32fb5609ea32e38e604c6b189bf7a0e219f8554d20694678" }
 
 [tools."pypi:termaid".options]
 extras = "rich,tui"

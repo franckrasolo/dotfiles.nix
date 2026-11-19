@@ -24,14 +24,14 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/708961
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.35.3"
+version = "1.35.5"
 backend = "aqua:smol-machines/smolvm"
 specifiers = ["latest"]
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:4c2723922283524a2a831734195cc8f104e0715da8f79a5c58b32af454ef4880"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.35.3/smolvm-1.35.3-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/760855242"
+checksum = "sha256:e02f5d025a4149784e89901dee58cbdeee2a912cfcfdf3403bedff932ca4b4c1"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.35.5/smolvm-1.35.5-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/769028277"
 
 [[tools.aube]]
 version = "2.10.1"
@@ -45,34 +45,34 @@ signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/releas
 repository_ids = { repository = "1214542327" }
 
 [[tools.bun]]
-version = "1.4.4"
+version = "1.4.5"
 backend = "core:bun"
 specifiers = ["latest"]
 
 [tools.bun."platforms.macos-arm64"]
-checksum = "sha256:c240d7f0ccb90c263a849fcdb09b7ee62630d921348ed6aafda86b9d577bc510"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-darwin-aarch64.zip"
+checksum = "sha256:b5d6bc2e13caf14e57c89661e89efd073ff16165b41bfe43882616410609cd10"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.5/bun-darwin-aarch64.zip"
 
 [[tools.fnox]]
-version = "1.48.0"
+version = "1.50.0"
 backend = "packslip:github.com/jdx/fnox"
 specifiers = ["latest"]
 
 [tools.fnox."platforms.macos-arm64"]
-checksum = "sha256:1b81153805a485072ecbeb14b2b2aaa24a9bfeb467002a7d725cbfc01cbb1811"
-url = "https://github.com/jdx/fnox/releases/download/v1.48.0/fnox-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:cf8301a5355c3249284b4102c871b0c4b5e5924cd7b61397f7539f4328041eff"
+url = "https://github.com/jdx/fnox/releases/download/v1.50.0/fnox-aarch64-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
 repository_ids = { repository = "1078762196" }
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "18.22.2"
+version = "19.0.0"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:d02253f9f5e13bafa2af6a6a773cf7531019d37379b073a204b1be128b961458"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.22.2/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/761357674"
+checksum = "sha256:a5ee90b2ffcc0c1f031dbd4bedd4ff8e0c884ec8e69b700f4c5d76a1eae89daf"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v19.0.0/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/765506086"
 
 [[tools."github:edden27/dog"]]
 version = "0.1.1"
@@ -96,14 +96,14 @@ url_api = "https://api.github.com/repos/kucherenko/jscpd/releases/assets/7231690
 provenance = "github-attestations"
 
 [[tools."github:remotemobprogramming/mob"]]
-version = "5.4.3"
+version = "5.4.4"
 backend = "github:remotemobprogramming/mob"
 specifiers = ["latest"]
 
 [tools."github:remotemobprogramming/mob"."platforms.macos-arm64"]
-checksum = "sha256:e7dd11a90c928091f7c97bd9ce305a2b4af10b7661dc857bea95df24d0151410"
-url = "https://github.com/remotemobprogramming/mob/releases/download/5.4.3/mob_5.4.3_darwin_universal.tar.gz"
-url_api = "https://api.github.com/repos/remotemobprogramming/mob/releases/assets/732712352"
+checksum = "sha256:906392cd7b4c2eadbd1d171d08aad2c52dee1bea2be825675ef288ae9d28b4dd"
+url = "https://github.com/remotemobprogramming/mob/releases/download/v5.4.4/mob_v5.4.4_darwin_universal.tar.gz"
+url_api = "https://api.github.com/repos/remotemobprogramming/mob/releases/assets/762136412"
 
 [[tools."github:rivolink/leaf"]]
 version = "1.29.3"
