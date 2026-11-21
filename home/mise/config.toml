@@ -31,7 +31,7 @@ postinstall = "aube completion zsh >| $XDG_CACHE_HOME/zsh/completions/_aube.zsh"
 [tools."aqua:gastownhall/beads"]
 version = "latest"
 postinstall = """
-  ln -sf $(mise which bd) $XDG_BIN_HOME/bd
+  ln -sfn $(mise which bd) $XDG_BIN_HOME/bd
   bd completion zsh >| $XDG_CACHE_HOME/zsh/completions/_bd.zsh
 """
 
@@ -82,7 +82,7 @@ postinstall = """
 version = "latest"
 allow_builds = ["@opencode/cli"]
 postinstall = """
-  ln -sf ${XDG_CONFIG_HOME}/opencode ~/.config/
+  ln -sfn ${XDG_CONFIG_HOME}/opencode ~/.config/opencode
   opencode --completions zsh >| "$XDG_CACHE_HOME/zsh/completions/_opencode.zsh"
 
   opencode plugin add @dietrichgebert/ponytail
