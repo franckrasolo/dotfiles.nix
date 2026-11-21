@@ -1,11 +1,9 @@
-{ pkgs, user, ... }:
+{ config, pkgs, user, ... }:
 
 {
   # /etc/nix/nix.conf -> /etc/static/nix/nix.conf
 
   nix.settings = {
-    access-tokens = "";
-
     auto-optimise-store = false;
 
     trusted-substituters = [
@@ -27,6 +25,7 @@
     keep-outputs = false
     keep-derivations = false
     experimental-features = nix-command flakes
+    !include ${config.sops.templates.nix-access-tokens.path}
   '';
 
   nix.package = pkgs.unstable.nixVersions.latest;
