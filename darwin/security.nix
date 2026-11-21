@@ -32,7 +32,8 @@ with pkgs.unstable;
         content = ''
           access-tokens = github.com=${config.sops.placeholder.nix-github-api-token}
         '';
-        owner = user.accountName;
+        owner = "root";
+        mode = "0400";
       };
     };
   };
