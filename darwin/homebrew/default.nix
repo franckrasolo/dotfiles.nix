@@ -72,6 +72,7 @@ in
       (skipVerification (cask "logitech-options"))
       (skipVerification (cask "logi-options+"))
       "mac-sai"
+      "omniaura/tap/mac-runner"
       "macshot"
       (systemApp (skipVerification (cask "megacmd-app")))
       (systemApp (skipVerification (cask "megasync")))
