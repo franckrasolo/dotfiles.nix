@@ -14,6 +14,7 @@ with pkgs.unstable;
 
     # the MacRunner app does not inherit XDG_CONFIG_HOME so gh gets its config from ~/.config/gh
     gh_config_dir="${config.xdg.configHome}/gh"
+    mkdir -p "$gh_config_dir"
     ln -sfn "$gh_config_dir" ~/.config/gh
 
     ${getExe gh} auth logout 2> /dev/null || true
