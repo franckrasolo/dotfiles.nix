@@ -17,8 +17,6 @@ with pkgs.unstable;
     mkdir -p "$gh_config_dir"
     ln -sfn "$gh_config_dir" ~/.config/gh
 
-    ${getExe gh} auth logout 2> /dev/null || true
-
     # gh rewrites config.yml and hosts.yml so they can't be read-only Nix store symlinks
     install -m 600 ${./gh.yaml} "$gh_config_dir/config.yml"
 
