@@ -24,14 +24,14 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/708961
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.35.5"
+version = "1.36.0"
 backend = "aqua:smol-machines/smolvm"
 specifiers = ["latest"]
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:e02f5d025a4149784e89901dee58cbdeee2a912cfcfdf3403bedff932ca4b4c1"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.35.5/smolvm-1.35.5-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/769028277"
+checksum = "sha256:46b953581d9f08b9e3f6629075a053aba7aa902fb76940c1ef0ef7f58166aae4"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.36.0/smolvm-1.36.0-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/774585719"
 
 [[tools.aube]]
 version = "2.10.1"
@@ -65,14 +65,14 @@ signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.ym
 repository_ids = { repository = "1078762196" }
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "19.0.0"
+version = "19.0.1"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:a5ee90b2ffcc0c1f031dbd4bedd4ff8e0c884ec8e69b700f4c5d76a1eae89daf"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v19.0.0/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/765506086"
+checksum = "sha256:2fe420bbd00f81899816e51cbeeb9593afa59d9368d62c9d3e78535d540e32f6"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v19.0.1/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/769581719"
 
 [[tools."github:edden27/dog"]]
 version = "0.1.1"
@@ -176,14 +176,14 @@ allow_builds = '["@opencode/cli"]'
 repository = "github.com/anomalyco/opencode"
 
 [[tools.pi]]
-version = "1.5.2"
+version = "1.6.0"
 backend = "aqua:earendil-works/pi"
 specifiers = ["latest"]
 
 [tools.pi."platforms.macos-arm64"]
-checksum = "sha256:56b5e194d485ced555667b8ba3276157a8272e9ecde9e001e428af80985bdd9b"
-url = "https://github.com/earendil-works/pi/releases/download/v1.5.2/pi-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/731292526"
+checksum = "sha256:6429287b7ae98d726ec577815d14fd680e7c587e89ecc5153b4a145dc4adba33"
+url = "https://github.com/earendil-works/pi/releases/download/v1.6.0/pi-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/771562449"
 
 [[tools.television]]
 version = "0.15.9"

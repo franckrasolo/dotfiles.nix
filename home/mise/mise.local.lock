@@ -14,14 +14,14 @@ url = "https://github.com/chrishrb/go-grip/releases/download/v0.11.0/go-grip-v0.
 url_api = "https://api.github.com/repos/chrishrb/go-grip/releases/assets/688689821"
 
 [[tools."github:duckdb/duckdb"]]
-version = "2.0.0"
+version = "2.0.1"
 backend = "github:duckdb/duckdb"
 specifiers = ["latest"]
 
 [tools."github:duckdb/duckdb"."platforms.macos-arm64"]
-checksum = "sha256:188a36fe8883ef52e69165a0cbb6031ef679c8e6c448a1ce22951964149b7f96"
-url = "https://github.com/duckdb/duckdb/releases/download/v2.0.0/duckdb-cli-osx-arm64.tar.gz"
-url_api = "https://api.github.com/repos/duckdb/duckdb/releases/assets/662551052"
+checksum = "sha256:7809dc1ea9215db53f76bdd539e38186c2310b6a3b5800581bf65876048556aa"
+url = "https://github.com/duckdb/duckdb/releases/download/v2.0.1/duckdb-cli-osx-arm64.tar.gz"
+url_api = "https://api.github.com/repos/duckdb/duckdb/releases/assets/771954432"
 
 [[tools.go]]
 version = "1.27.4"
@@ -44,7 +44,7 @@ signer = "sigstore-oidc:https://github.com/jdx/jactionlint/.github/workflows/rel
 repository_ids = { repository = "1404951382" }
 
 [[tools.java]]
-version = "temurin-25.0.5+100000002.0.LTS"
+version = "temurin-25.0.5.1+2.0.LTS"
 backend = "core:java"
 specifiers = ["temurin-25"]
 
