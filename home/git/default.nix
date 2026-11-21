@@ -1,6 +1,10 @@
 { config, pkgs, user, ... }:
 
 {
+  imports = [
+    ./github
+  ];
+
   home.packages = with pkgs.unstable; [
     git
     git-crypt
@@ -11,7 +15,6 @@
     ec
     gitu
 
-    gh
     glab
     tuicr
   ];
