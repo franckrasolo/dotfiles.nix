@@ -6,6 +6,7 @@
     ./macOS
     ./nix
     ./jankyborders
+    ./macrunner
     ./skhd
     ./security.nix
   ];
