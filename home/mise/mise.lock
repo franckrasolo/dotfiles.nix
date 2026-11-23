@@ -164,8 +164,8 @@ backend = "nix:pkl-lsp"
 specifiers = ["latest"]
 
 [[tools.opencode]]
-version = "2.4.0"
-aube = { path = "locks/opencode/2.4.0~009061c2", digest = "sha256:676823806d31cce5eff595cc3dd6df2fcf6ed6cdba46b1bebe1888fa0f9f9b63" }
+version = "2.4.1"
+aube = { path = "locks/opencode/2.4.1~009061c2", digest = "sha256:b9fc4e48974771958bd8f4b11f0f2e33467c5330f543017ccdb89513462b9dca" }
 backend = "npm:@opencode/cli"
 specifiers = ["latest"]
 
