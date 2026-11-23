@@ -24,14 +24,14 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/708961
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.36.0"
+version = "1.36.1"
 backend = "aqua:smol-machines/smolvm"
 specifiers = ["latest"]
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:46b953581d9f08b9e3f6629075a053aba7aa902fb76940c1ef0ef7f58166aae4"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.36.0/smolvm-1.36.0-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/774585719"
+checksum = "sha256:97cf08b0becc2f75bb84b23aabc29c27904b1d0c659815aafb24bd7d2f7ba186"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.36.1/smolvm-1.36.1-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/776076662"
 
 [[tools.aube]]
 version = "2.10.1"
@@ -65,14 +65,14 @@ signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.ym
 repository_ids = { repository = "1078762196" }
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "19.0.1"
+version = "19.1.1"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:2fe420bbd00f81899816e51cbeeb9593afa59d9368d62c9d3e78535d540e32f6"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v19.0.1/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/769581719"
+checksum = "sha256:d5a3324acd98375a01698a1b0c018be48caed2956c8aa9044ad137fe43bc0400"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v19.1.1/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/781684337"
 
 [[tools."github:edden27/dog"]]
 version = "0.1.1"
@@ -164,8 +164,8 @@ backend = "nix:pkl-lsp"
 specifiers = ["latest"]
 
 [[tools.opencode]]
-version = "2.3.2"
-aube = { path = "locks/opencode/2.3.2~009061c2", digest = "sha256:f67371b7894a6b7f810fff23c77cbe2f5b52832421b3b92ce701dad6714a5b56" }
+version = "2.4.0"
+aube = { path = "locks/opencode/2.4.0~009061c2", digest = "sha256:676823806d31cce5eff595cc3dd6df2fcf6ed6cdba46b1bebe1888fa0f9f9b63" }
 backend = "npm:@opencode/cli"
 specifiers = ["latest"]
 
@@ -207,12 +207,12 @@ signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-c
 repository_ids = { repository = "677629099" }
 
 [[tools.worktrunk]]
-version = "0.82.0"
+version = "0.83.0"
 backend = "packslip:github.com/max-sixty/worktrunk"
 specifiers = ["latest"]
 
 [tools.worktrunk."platforms.macos-arm64"]
-checksum = "sha256:6945bc82e0513d0b974c99fb1d30de24e448697fd533ed6b3f442c66a1b3620c"
-url = "https://github.com/max-sixty/worktrunk/releases/download/v0.82.0/worktrunk-aarch64-apple-darwin.tar.xz"
+checksum = "sha256:5e489089672b553b6277595875ef3479df011755153021c84def90eddaeef7b8"
+url = "https://github.com/max-sixty/worktrunk/releases/download/v0.83.0/worktrunk-aarch64-apple-darwin.tar.xz"
 signer = "sigstore-oidc:https://github.com/max-sixty/worktrunk/.github/workflows/release.yaml"
 repository_ids = { repository = "1078528927" }
