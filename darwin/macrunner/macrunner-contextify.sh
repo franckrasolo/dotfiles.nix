@@ -1,8 +1,10 @@
 #!/bin/sh
 set -eu
 as_user="/run/current-system/sw/bin/macrunner-as-user"
-for run in /Users/_macrunner/.mac-runner/runners/*/run.sh; do
-  [ -f "$run" ] || continue           # skip missing, symlinks, sockets
+runners_dir="${MACRUNNER_RUNNERS_DIR:-/Users/_macrunner/.mac-runner/runners}"
+for run in "$runners_dir"/*/run.sh; do
+  [ -f "$run" ] || continue           # skip missing, sockets
+  [ -L "$run" ] && continue           # never follow a symlink into someone else's file
   if grep -q MACRUNNER_CTX "$run"; then
     continue
   fi
@@ -13,7 +15,6 @@ for run in /Users/_macrunner/.mac-runner/runners/*/run.sh; do
       "$as_user" "$run"
     tail -n +2 "$run"
   } > "$tmp"
-  chown root:wheel "$tmp"
   chmod 0555 "$tmp"
   mv "$tmp" "$run"
 done

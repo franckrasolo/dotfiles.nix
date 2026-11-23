@@ -17,7 +17,7 @@ in
       ${asUser}/bin/macrunner-as-user, \
       /run/current-system/sw/bin/macrunner-as-user
 
-    ${user.accountName} ALL=(root) NOPASSWD: \
+    ${user.accountName} ALL=(_macrunner) NOPASSWD: \
       ${contextify}/bin/macrunner-contextify, \
       /run/current-system/sw/bin/macrunner-contextify
   '';
