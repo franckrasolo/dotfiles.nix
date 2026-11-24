@@ -24,23 +24,23 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/708961
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.36.1"
+version = "1.37.0"
 backend = "aqua:smol-machines/smolvm"
 specifiers = ["latest"]
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:97cf08b0becc2f75bb84b23aabc29c27904b1d0c659815aafb24bd7d2f7ba186"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.36.1/smolvm-1.36.1-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/776076662"
+checksum = "sha256:a36d9e28c9bf091e6325bf5a915b342f25e775587214a4dd872013bd4d8886ed"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.37.0/smolvm-1.37.0-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/784803582"
 
 [[tools.aube]]
-version = "2.10.1"
+version = "2.11.0"
 backend = "packslip:github.com/aubepkg/aube"
 specifiers = ["latest"]
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:28019c741c28bd90314aa679312d4dc887c2e5a6cb59d018e7624ed9f457f5c8"
-url = "https://github.com/aubepkg/aube/releases/download/v2.10.1/aube-v2.10.1-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:30924b4afa4e47e308af74277fa6c318214b12e78583a93b49011118ac8e5ca7"
+url = "https://github.com/aubepkg/aube/releases/download/v2.11.0/aube-v2.11.0-aarch64-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release.yml"
 repository_ids = { repository = "1214542327" }
 
@@ -117,14 +117,14 @@ url = "https://github.com/RivoLink/leaf/releases/download/1.29.3/leaf-macos-arm6
 url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/741098140"
 
 [[tools."github:vladkens/macmon"]]
-version = "0.12.0"
+version = "0.12.1"
 backend = "github:vladkens/macmon"
 specifiers = ["latest"]
 
 [tools."github:vladkens/macmon"."platforms.macos-arm64"]
-checksum = "sha256:cd5a701f8537072aee93eba686bc582897bd00d826f62146b32c8a8d2654641a"
-url = "https://github.com/vladkens/macmon/releases/download/v0.12.0/macmon-v0.12.0-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/vladkens/macmon/releases/assets/751810424"
+checksum = "sha256:93e37628f57023aaf51147d32aeead6fa7ba092bf85bda86581a78e826e0d6fb"
+url = "https://github.com/vladkens/macmon/releases/download/v0.12.1/macmon-v0.12.1-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/vladkens/macmon/releases/assets/784309355"
 provenance = "github-attestations"
 
 [[tools."github:zeroclaw-labs/zeroclaw"]]
@@ -196,13 +196,13 @@ url = "https://github.com/alexpasmantier/television/releases/download/0.15.9/tv-
 url_api = "https://api.github.com/repos/alexpasmantier/television/releases/assets/447568866"
 
 [[tools.usage]]
-version = "7.4.0"
+version = "7.4.1"
 backend = "packslip:github.com/jdx/usage"
 specifiers = ["latest"]
 
 [tools.usage."platforms.macos-arm64"]
-checksum = "sha256:606dbdda615111940c6b39e1cb64dbf4871839304146e8e40e7302312be095d6"
-url = "https://github.com/jdx/usage/releases/download/v7.4.0/usage-universal-apple-darwin.tar.gz"
+checksum = "sha256:c10054cc2649a25c9a88522f8c891166f3a3151fe2cd1b20ebde3194a938ae91"
+url = "https://github.com/jdx/usage/releases/download/v7.4.1/usage-universal-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
 repository_ids = { repository = "677629099" }
 
