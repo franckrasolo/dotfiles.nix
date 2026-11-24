@@ -1055,5 +1055,18 @@
         "zai/glm-5.2-fast": { "disabled": true },
       }
     }
+  },
+  "mcp": {
+    "servers": {
+      "browse": {
+        "type": "local",
+        "command": [ "browse", "mcp" ],
+        "cwd": "{env:HOME}",
+        "pool": true,
+        "environment": {
+          "OPENCODE_BROWSER_RUNTIME": "auto-update"
+        }
+      }
+    }
   }
 }
