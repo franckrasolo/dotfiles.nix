@@ -8,7 +8,7 @@
     "npm:@ff-labs/pi-fff"
   ],
   "defaultProvider": "opencode-go",
-  "defaultModel": "omen-alpha",
+  "defaultModel": "deepseek-v4.1-flash",
   "modelThinkingLevels": {
     "opencode-go/omen-alpha": "high",
     "opencode-go/deepseek-v4.1-flash": "low"
