@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "browse": {
+      "type": "stdio",
+      "command": "browse",
+      "args": ["mcp"]
+    }
+  }
+}

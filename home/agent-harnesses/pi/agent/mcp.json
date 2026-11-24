@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "browse": {
+      "command": "browse",
+      "args": [ "mcp" ]
+    }
+  }
+}
