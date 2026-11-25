@@ -125,7 +125,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "termaid", extras = ["rich", "tui"], specifier = "==0.14.0" }]
+requires-dist = [{ name = "termaid", extras = ["rich", "tui"], specifier = "==0.14.1" }]
 
 [[package]]
 name = "platformdirs"
@@ -188,11 +188,11 @@ wheels = [
 
 [[package]]
 name = "termaid"
-version = "0.14.0"
+version = "0.14.1"
 source = { registry = "https://pypi.org/simple/" }
-sdist = { url = "https://files.pythonhosted.org/packages/9b/22/31d8f888a38848e7e17706992e34ce426318adf385a373fea5bd88718d6f/termaid-0.14.0.tar.gz", hash = "sha256:85758e7e6fe6e81b00a9aeef1dbfc1a462984f7d95bc9feb8ba64539d14af79e", size = 624925, upload-time = "2026-11-25T11:38:49.099Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/1d/8e/f8265c9229f5b1fd80e0b8af1fa09495c822048d434bbf011276686fabf9/termaid-0.14.1.tar.gz", hash = "sha256:7cfe898cea57ba647a1ac172207620a6c80ab0d5ca2418e2b7c97f0c31c68814", size = 362575, upload-time = "2026-11-25T18:56:43.101Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/57/73/726deaa368840d36941d5f1576d6f88528d7961552e65a1c97689f18615e/termaid-0.14.0-py3-none-any.whl", hash = "sha256:cfd2c32bd99533fa4738672aa7e6d8bb9caa3946ae6df671dac4fbe858ca1fdb", size = 212430, upload-time = "2026-11-25T11:38:47.619Z" },
+    { url = "https://files.pythonhosted.org/packages/61/dc/d58e63b99906dcfee4dc4b8bd5d0d4798db648b6c8052353752ff29f2e33/termaid-0.14.1-py3-none-any.whl", hash = "sha256:53a8a2f26c2f439ef5a155fb63a24868f4766b839624029270f63f9c3cee0a68", size = 216905, upload-time = "2026-11-25T18:56:41.723Z" },
 ]
 
 [package.optional-dependencies]

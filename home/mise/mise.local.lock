@@ -75,8 +75,8 @@ checksum = "sha256:aec2514ea1ceb2ba52455e9ec65986f6749a06dd759e5db2a72e6889668c9
 url = "https://nodejs.org/dist/v26.13.1/node-v26.13.1-darwin-arm64.tar.gz"
 
 [[tools."npm:skills"]]
-version = "1.9.0"
-aube = { path = "locks/mise.local/npm-skills/1.9.0", digest = "sha256:7986f7572c57b5b5ca6407f53294cd4f7cda8fa5c8b052c82b24cc2a492c01ac" }
+version = "1.9.1"
+aube = { path = "locks/mise.local/npm-skills/1.9.1", digest = "sha256:7de71b07dedee84e13e20e5814af84ebff9ecd17812dc2ff2c8a554d88b7db48" }
 backend = "npm:skills"
 specifiers = ["latest"]
 
@@ -100,10 +100,10 @@ specifiers = ["latest"]
 uvx_args = "--prerelease allow"
 
 [[tools."pypi:termaid"]]
-version = "0.14.0"
+version = "0.14.1"
 backend = "pypi:termaid"
 specifiers = ["latest"]
-uv = { path = "locks/mise.local/pypi-termaid/0.14.0~53f1461d", digest = "sha256:947c607251e77b2a278a93178f2cf25ba6aabf804a7e7a36f46e97b30659e37c" }
+uv = { path = "locks/mise.local/pypi-termaid/0.14.1~53f1461d", digest = "sha256:9fde99084751f6e8fef3e0e6bc32e82b134e729f3eb32c3801fbba36a3ea8299" }
 
 [tools."pypi:termaid".options]
 extras = "rich,tui"

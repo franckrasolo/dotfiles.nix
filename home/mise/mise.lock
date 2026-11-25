@@ -24,14 +24,14 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/708961
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.37.5"
+version = "1.37.7"
 backend = "aqua:smol-machines/smolvm"
 specifiers = ["latest"]
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:6d47de3761c028ca8b9c401e16ab91b1762b1dbf3254a2beb265bdaa1d759293"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.37.5/smolvm-1.37.5-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/791049209"
+checksum = "sha256:441c466b07543f605ea4aa70e2090d8a5a0de56e89a37ad9714952d1e25fe50c"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.37.7/smolvm-1.37.7-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/794107368"
 
 [[tools.aube]]
 version = "2.11.0"
@@ -65,14 +65,14 @@ signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.ym
 repository_ids = { repository = "1078762196" }
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "19.2.0"
+version = "19.2.1"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:56cf390ea50791ba089878318d0107a959c6f05c3fb9ad7d422023282be3926f"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v19.2.0/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/790808391"
+checksum = "sha256:43943119837612b2da72250ab7efe22ff8ca239eabebd4f702f34e3a144fdd3d"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v19.2.1/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/792397302"
 
 [[tools."github:edden27/dog"]]
 version = "0.1.1"
@@ -164,8 +164,8 @@ backend = "nix:pkl-lsp"
 specifiers = ["latest"]
 
 [[tools.opencode]]
-version = "2.4.1"
-aube = { path = "locks/opencode/2.4.1~009061c2", digest = "sha256:b9fc4e48974771958bd8f4b11f0f2e33467c5330f543017ccdb89513462b9dca" }
+version = "2.4.2"
+aube = { path = "locks/opencode/2.4.2~009061c2", digest = "sha256:e2c041c208838433713c3f73ff7c42a6447e32b5f2d0cefdc7aee3697b8804ff" }
 backend = "npm:@opencode/cli"
 specifiers = ["latest"]
 
