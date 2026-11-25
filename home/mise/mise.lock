@@ -24,14 +24,14 @@ url_api = "https://api.github.com/repos/gastownhall/beads/releases/assets/708961
 provenance = "github-attestations"
 
 [[tools."aqua:smol-machines/smolvm"]]
-version = "1.37.0"
+version = "1.37.5"
 backend = "aqua:smol-machines/smolvm"
 specifiers = ["latest"]
 
 [tools."aqua:smol-machines/smolvm"."platforms.macos-arm64"]
-checksum = "sha256:a36d9e28c9bf091e6325bf5a915b342f25e775587214a4dd872013bd4d8886ed"
-url = "https://github.com/smol-machines/smolvm/releases/download/v1.37.0/smolvm-1.37.0-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/784803582"
+checksum = "sha256:6d47de3761c028ca8b9c401e16ab91b1762b1dbf3254a2beb265bdaa1d759293"
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.37.5/smolvm-1.37.5-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/smol-machines/smolvm/releases/assets/791049209"
 
 [[tools.aube]]
 version = "2.11.0"
@@ -65,14 +65,14 @@ signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.ym
 repository_ids = { repository = "1078762196" }
 
 [[tools."github:can1357/oh-my-pi"]]
-version = "19.1.1"
+version = "19.2.0"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools."github:can1357/oh-my-pi"."platforms.macos-arm64"]
-checksum = "sha256:d5a3324acd98375a01698a1b0c018be48caed2956c8aa9044ad137fe43bc0400"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v19.1.1/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/781684337"
+checksum = "sha256:56cf390ea50791ba089878318d0107a959c6f05c3fb9ad7d422023282be3926f"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v19.2.0/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/790808391"
 
 [[tools."github:edden27/dog"]]
 version = "0.1.1"

@@ -125,7 +125,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "termaid", extras = ["rich", "tui"], specifier = "==0.13.0" }]
+requires-dist = [{ name = "termaid", extras = ["rich", "tui"], specifier = "==0.14.0" }]
 
 [[package]]
 name = "platformdirs"
@@ -153,14 +153,14 @@ wheels = [
 
 [[package]]
 name = "platformdirs"
-version = "4.14.7"
+version = "4.14.8"
 source = { registry = "https://pypi.org/simple/" }
 resolution-markers = [
     "python_full_version >= '3.11'",
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/a6/2c/ec57eede0db493e61443c76ac7b4d24e94a24050afb3d598bf3678487f75/platformdirs-4.14.7.tar.gz", hash = "sha256:5472257c1cf97a14658af52997011c7e59e4aebf3a24950b973c11b579e1b074", size = 75132, upload-time = "2026-11-17T20:03:32.656Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/71/18/0b0d99f5bf164f04a7a9534c3dbdbe4d5fd2b382667685ad40c192c4d3d1/platformdirs-4.14.8.tar.gz", hash = "sha256:96893d686e84e9e6f358a9ea41a8de544df66dbf2ba6cda250e7dc73acf85b9b", size = 87203, upload-time = "2026-11-20T08:14:52.63Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f8/46/3737af9f971f3934794103256d7f1ed6200a62be0c7b7ff09ac4cf6b3422/platformdirs-4.14.7-py3-none-any.whl", hash = "sha256:391513b74707c42335fff3ea17eaac657a7ee9ffcadd809634d34ea594d0122c", size = 89658, upload-time = "2026-11-17T20:03:31.16Z" },
+    { url = "https://files.pythonhosted.org/packages/5b/be/373cc7341f53bfd3acba3e5db62433fd960a45fcf73ad64a5f4d27e74910/platformdirs-4.14.8-py3-none-any.whl", hash = "sha256:1e34af590de4d978631b751eb2202f2fee4497537a17c1720b12fcf57b331392", size = 94267, upload-time = "2026-11-20T08:14:51.306Z" },
 ]
 
 [[package]]
@@ -188,11 +188,11 @@ wheels = [
 
 [[package]]
 name = "termaid"
-version = "0.13.0"
+version = "0.14.0"
 source = { registry = "https://pypi.org/simple/" }
-sdist = { url = "https://files.pythonhosted.org/packages/a0/f5/1c20309f634783e53d3d23fd5dcd7a794304120aaa7cc2b7fd26ff2fe4f3/termaid-0.13.0.tar.gz", hash = "sha256:fed44511be753ccf569099c57ddd0c70c06f54649405f15c3ecec33f7bb3b94c", size = 609296, upload-time = "2026-11-18T18:16:20.445Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/9b/22/31d8f888a38848e7e17706992e34ce426318adf385a373fea5bd88718d6f/termaid-0.14.0.tar.gz", hash = "sha256:85758e7e6fe6e81b00a9aeef1dbfc1a462984f7d95bc9feb8ba64539d14af79e", size = 624925, upload-time = "2026-11-25T11:38:49.099Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/4b/22/5bf0efff3ba5c6fa382b9d3a881935f2dc0a9e6fa33c15791b5f9085f81a/termaid-0.13.0-py3-none-any.whl", hash = "sha256:20ebe45ddc631855e5501b06efe1e6bc6e38213e1e8579df178382214d572f6d", size = 207906, upload-time = "2026-11-18T18:16:18.683Z" },
+    { url = "https://files.pythonhosted.org/packages/57/73/726deaa368840d36941d5f1576d6f88528d7961552e65a1c97689f18615e/termaid-0.14.0-py3-none-any.whl", hash = "sha256:cfd2c32bd99533fa4738672aa7e6d8bb9caa3946ae6df671dac4fbe858ca1fdb", size = 212430, upload-time = "2026-11-25T11:38:47.619Z" },
 ]
 
 [package.optional-dependencies]
@@ -214,7 +214,7 @@ dependencies = [
     { name = "mdit-py-plugins", version = "0.7.0", source = { registry = "https://pypi.org/simple/" }, marker = "python_full_version >= '3.10'" },
     { name = "platformdirs", version = "4.4.0", source = { registry = "https://pypi.org/simple/" }, marker = "python_full_version < '3.10'" },
     { name = "platformdirs", version = "4.12.4", source = { registry = "https://pypi.org/simple/" }, marker = "python_full_version == '3.10.*'" },
-    { name = "platformdirs", version = "4.14.7", source = { registry = "https://pypi.org/simple/" }, marker = "python_full_version >= '3.11'" },
+    { name = "platformdirs", version = "4.14.8", source = { registry = "https://pypi.org/simple/" }, marker = "python_full_version >= '3.11'" },
     { name = "pygments" },
     { name = "rich" },
     { name = "typing-extensions" },

@@ -99,7 +99,9 @@ postinstall = """
   omp completions zsh >| $XDG_CACHE_HOME/zsh/completions/_omp.zsh
 
   omp config init-xdg
-  omp plugin install --force @ff-labs/pi-fff
+  # @ff-labs/pi-fff still imports @earendil-works/pi-tui, removed in omp 19.2.
+  # Re-enable once upstream migrates.
+  # omp plugin install --force @ff-labs/pi-fff
 
   omp plugin marketplace add ayghri/i-have-adhd 2> /dev/null || true
   omp plugin install --force i-have-adhd@i-have-adhd
