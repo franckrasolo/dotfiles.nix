@@ -125,11 +125,11 @@ modelRoles:
 retry:
   fallbackChains:
     opencode-go/*:
-      - opencode-go/omen-alpha
+      - opencode-go/deepseek-v4.1-flash
     opencode-zen/*:
-      - opencode-zen/muse-spark-1.3-contributor-free
+      - opencode-go/deepseek-v4.1-flash
     openrouter/*:
-      - openrouter/deepseek/deepseek-v4.1-flash
+      - opencode-go/deepseek-v4.1-flash
 omitThinking: true
 steeringMode: all
 followUpMode: all
