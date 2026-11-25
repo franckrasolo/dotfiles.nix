@@ -176,14 +176,14 @@ allow_builds = '["@opencode/cli"]'
 repository = "github.com/anomalyco/opencode"
 
 [[tools.pi]]
-version = "1.6.0"
+version = "1.6.1"
 backend = "aqua:earendil-works/pi"
 specifiers = ["latest"]
 
 [tools.pi."platforms.macos-arm64"]
-checksum = "sha256:6429287b7ae98d726ec577815d14fd680e7c587e89ecc5153b4a145dc4adba33"
-url = "https://github.com/earendil-works/pi/releases/download/v1.6.0/pi-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/771562449"
+checksum = "sha256:d8fd8e24c2a5054ae383d83b26f6eb6f950edf613917e434a52394f44cd4d933"
+url = "https://github.com/earendil-works/pi/releases/download/v1.6.1/pi-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/791633927"
 
 [[tools.television]]
 version = "0.15.9"
