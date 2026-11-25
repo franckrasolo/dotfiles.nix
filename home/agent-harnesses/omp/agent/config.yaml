@@ -4,7 +4,7 @@ startup:
   changelogMode: summary
   setupWizard: true
 theme:
-  dark: dark-catppuccin
+  dark: pi-dark
   light: light-catppuccin
 enabledProviders:
   - opencode-go
