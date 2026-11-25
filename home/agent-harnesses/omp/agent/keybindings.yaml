@@ -1,0 +1,4 @@
+app.clipboard.pasteImage:
+  - cmd+v
+app.clipboard.pasteTextRaw:
+  - ctrl+v
